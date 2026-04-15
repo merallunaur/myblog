@@ -1,0 +1,41 @@
+/* 只保留亮色模式，不启用深色模式 */
+:root {
+    --primary: #819C8B;      /* 主色 - 鼠尾草绿 */
+    --secondary: #A6A5C4;    /* 辅助色 - 淡紫灰 */
+    --tertiary: #d3cbc6;     /* 点缀/字体色 - 暖灰 */
+}
+
+/* 强制禁用深色模式，永远使用上面的颜色 */
+body {
+    background-color: #ffffff;
+    color: #333333;
+}
+
+/* 链接颜色用主色 */
+a {
+    color: var(--primary);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--secondary);
+}
+
+/* 分类标签背景用辅助色 */
+.categories a {
+    background-color: var(--tertiary);
+    color: #333333;
+    padding: 3px 8px;
+    border-radius: 4px;
+    font-size: 0.9em;
+    margin-right: 5px;
+}
+
+/* 导航栏链接 */
+header nav a {
+    color: var(--primary);
+}
+
+header nav a:hover {
+    color: var(--secondary);
+}
