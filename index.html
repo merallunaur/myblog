@@ -1,35 +1,131 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="UTF-8">
-    <title>The Conjecture of a Crocodile</title>
-    <style>
-        body {
-            background-color: #819C8B;
-            color: #A6A5C4;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-            font-family: serif;
-        }
+  <meta charset="UTF-8">
+  <title>The Conjecture of a Crocodile</title>
 
-        h1 {
-            text-align: center;
-            color: #A6A5C4;
-        }
+  <style>
+    body {
+      background-color: #81A380;
+      color: #525288;
+      max-width: 720px;
+      margin: 100px auto;
+      line-height: 1.9;
+      font-family: Georgia, serif;
+    }
 
-        a {
-            color: #d3cbc6;
-        }
+    /* 标题 */
+    h1 {
+      text-align: center;
+      font-weight: normal;
+      margin-bottom: 40px;
+      font-size: 28px;
+      letter-spacing: 1px;
+    }
 
-        a:hover {
-            color: white;
-        }
-    </style>
+    /* 引言 */
+    .quote {
+      font-size: 1.05em;
+      opacity: 0.85;
+      margin-bottom: 50px;
+      white-space: pre-line;
+      font-style: italic;
+    }
+
+    /* 分割线 */
+    .divider {
+      border-top: 1px solid #7D5A44;
+      width: 100%;
+      margin: 50px 0;
+      opacity: 0.6;
+    }
+
+    h2 {
+      margin-top: 60px;
+      font-weight: normal;
+      letter-spacing: 1px;
+    }
+
+    .entry {
+      margin-top: 18px;
+      margin-left: 10px;
+    }
+
+    a {
+      color: #7D5A44;
+      text-decoration: none;
+    }
+
+    a:hover {
+      color: white;
+    }
+
+    /* 底部 logo */
+    .footer-logo {
+      text-align: center;
+      margin-top: 100px;
+      opacity: 0.9;
+    }
+
+    .footer-logo img {
+      width: 350px;  /* 👈 放大约5倍 */
+      height: auto;
+    }
+  </style>
 </head>
+
 <body>
-    <h1>The Conjecture of a Crocodile</h1>
+
+<h1>The Conjecture of a Crocodile</h1>
+
+<div class="quote">
+Bacchum in remotis carmina rupibus,
+Vidi docentem, credite posteri,
+Nymphasque discentes et aures Capripedum Satyrorum acutas.
+
+Euhoe, recenti mens trepidat metu,
+Plenoque Bacchi pectore turbidum,
+Laetatur. Euhoe, parce Liber,
+Parce gravi metuende thyrso.
+——Horati Flacci, Carmina II.19
+</div>
+
+<div class="divider"></div>
+
+<!-- 自我介绍 -->
+<h2>
+  <a href="post1.html">The First Trembling of Wings</a>
+</h2>
+
+<!-- 小说集 -->
+<h2>Pearl’s Scream</h2>
+
+<div class="entry">
+  <a href="novel1.html">Poulet aux prunes</a>
+</div>
+
+<div class="entry">
+  <a href="novel2.html">A Clash of Eras——An Interview with Mr Arthur Kirkland</a>
+</div>
+
+<!-- 随笔 -->
+<h2>Ten Thousand Foreseen</h2>
+
+<div class="entry">
+  <a href="essay1.html">About Stare</a>
+</div>
+
+<!-- 旅行 -->
+<h2>When the Moon Pauses</h2>
+
+<div class="entry">
+  <a href="travel1.html">Seoul, Seoul</a>
+</div>
+
+<!-- 底部 logo（重点在这里） -->
+<div class="footer-logo">
+  <img src="logo.gif" alt="logo">
+</div>
+
 </body>
 </html>
