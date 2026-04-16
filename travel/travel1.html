@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Seoul, Seoul / 首爾，首爾</title>
+
+<style>
+body {
+  background-color: #81A380;
+  color: #525288;
+  max-width: 720px;
+  margin: 100px auto;
+  line-height: 1.9;
+  font-family: Georgia, serif;
+  padding: 0 20px;
+}
+
+/* ================= LANGUAGE SYSTEM ================= */
+.zh, .en {
+  display: none;
+}
+
+body.lang-en .en {
+  display: inline;
+}
+
+body.lang-zh .zh {
+  display: inline;
+}
+
+/* switch */
+.lang-switch {
+  position: fixed;
+  top: 18px;
+  right: 18px;
+  border: 1px solid #7D5A44;
+  padding: 6px 12px;
+  cursor: pointer;
+  color: #7D5A44;
+  background: transparent;
+  z-index: 999;
+}
+
+.lang-switch:hover {
+  background: #7D5A44;
+  color: white;
+}
+
+/* title */
+h1 {
+  text-align: center;
+  font-weight: normal;
+  margin-bottom: 60px;
+  font-size: 28px;
+  letter-spacing: 1px;
+}
+
+/* divider */
+.divider {
+  border-top: 1px solid #7D5A44;
+  width: 100%;
+  margin: 60px 0;
+  opacity: 0.6;
+}
+
+/* text */
+p {
+  margin-bottom: 26px;
+}
+
+/* return */
+.return-box {
+  display: inline-block;
+  padding: 6px 14px;
+  border: 1px solid #7D5A44;
+  color: #7D5A44;
+  margin-top: 60px;
+  transition: 0.3s;
+}
+
+.return-box:hover {
+  background: #7D5A44;
+  color: white;
+}
+</style>
+</head>
+
+<body class="lang-en">
+
+<!-- LANGUAGE SWITCH -->
+<div class="lang-switch" onclick="toggleLang()">EN / 繁</div>
+
+<!-- ================= TITLE（可替换） ================= -->
+<h1>
+  <span class="en"><!-- 🔵 English Title -->Seoul, Seoul</span>
+  <span class="zh"><!-- 🔵 中文标题 -->首爾，首爾</span>
+</h1>
+
+<div class="divider"></div>
+
+<!-- ================= BODY（整段可扩展区域） ================= -->
+
+<!-- 🔵 这里是正文 -->
+<p>
+      <div class="bilingual-paragraph">
+        <span class="en">I was born in a small county town in a province known for its extremely difficult college entrance exams. This city, which can be circled in two hours—a city whose life is like the last tooth in an old man's mouth, a city that smells of cow dung and coal—has always been the place I most wanted to leave. My footprints grew wings and flew, accompanied by overlapping feelings of inferiority and conceit. After failing my college entrance exam, I fell like a bird hit by a bullet. In Beijing, I encountered many things I cannot bear to recall. In the end, I dropped out of Beijing University of Chemical Technology and went to South Korea to study and recover. It was also in Korea that I met someone; we were not deeply attracted to each other. I didn't like him—or rather, I find it very difficult to like anyone.</span>
+        <span class="zh">我生在算是一個高考難度級別很大的省的小縣城裡。這座兩小時就能被環繞一周的城市，生命像老人嘴裡最後一顆牙一樣的城市，散發著牛糞和煤炭味道的城市，一直是我最想離開的地方。我的腳印長著翅膀飛行，伴隨著重疊的自卑與自負。高考失常後，我像被子彈擊中的鳥一樣跌落。在北京遇到了很多不忍心回憶的事情。直到最後，我從北京化工退學，去到韓國留學休養。也是在韓國，我遇到過一個人，我們並未被彼此深深吸引。我並不喜歡他，或者說我很難喜歡上任何人。</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">He and I lived on the same slope—he near the top, I near the middle. The long, steep staircase, warmed by the crystalline evening sunlight, was a path I had to take to get home. He would call out to me from behind. If I didn't respond because I was wearing headphones, he would follow me with a smile until I noticed him. I am as timid as I am small; I am nearsighted but don't like wearing glasses, so I would always be startled. After frightening me one time, he asked if I really couldn't hear anything with my headphones on. He liked to talk to me from my left rear. But my left ear has been ringing constantly; I can barely hear anything from it. Yet when I opened my mouth, I said, 'I can hear you. I just don't want to talk to people.'</span>
+        <span class="zh">我和他住在同一道坡的坡中和坡頂，回家必須經過的某條長長的，被晶瑩的夕陽光曬得暖烘烘的陡台階。他在後面叫我，若我戴著耳機沒有響應，他便會笑吟吟地跟在我後面，直到我發現他。我膽子和個子一樣小，近視但不愛戴眼鏡，總會是被嚇一跳。嚇到我之後的某次他問我戴著耳機是不是一點聽不見。他喜歡在我左後方跟我說話，我的左耳實際上一直耳鳴，幾乎聽不見。但開口，又變成了「我能聽見，只是我不想跟人說話。」</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">I get nervous when talking to people I don't know well, and when I get nervous, I stutter. Many people, while talking to me, would look down and play with their phones, wear AirPods, or unconsciously sigh and smack their lips while looking elsewhere. I would get so anxious that I started gesturing, and then they would put away their phones, take a step back, and finish my sentences for me. Much of what I said wasn't what I meant, but no one would listen further. So I slowly let it go. But even as just an ordinary classmate—not even a friend—he would always listen to me patiently, respond to me, and look into my hiding eyes. When my Korean was still poor, we would gather in the classroom before class and read Han Kang's 'I Do Not Bid Farewell.' He would explain the many words I couldn't understand. He spoke Korean with a casual, almost slacker-like tone, as if all the pain spoken from those lips was just a quote written in sand. Every language has its ineffable subtleties. For example, the past tense '-던' is often used to recall something that happened in the past and has completely ended.</span>
+        <span class="zh">我一跟不熟的人說話就緊張，一緊張就結巴，很多人總是在和我說話時低著頭玩手機，戴著airpods，或是邊無意識地嘆氣邊咂嘴邊看向其他地方。我急得開始比劃，他們就收起手機，後退一步，為我補全我的話。很多很多都不是我想說的，但沒有人繼續聽下去。然後我也慢慢覺得算了吧。但即使作為算不得朋友的一般同學，他也總是耐心地傾聽我、響應我、看著我躲起來的眼睛。我韓語還不太好的時候，我們上課前湊在教室裡一起看韓江作家的《不做告別》，他又會把我看不懂的很多單詞給我解釋。他說韓語有種吊兒郎當的感覺，讓人覺得這張嘴裡說出的所有痛苦，都只是寫在流沙上的一句引文。任何語言都有其難以言喻的絕妙之處。比如過去式的던，通常用來表示對過去發生並已經徹底結束的事情的追憶。</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">내가 좋아했던 너와 작별할 수 없었기 때문에, 나의 여생은 작별이 돼 버렸다.<br>
+내가 사랑했던 너，지금 달빛으로 바꾼 6펜스뿐이다.</span>
+        <span class="zh">내가 좋아했던 너와 작별할 수 없었기 때문에, 나의 여생은 작별이 돼 버렸다.<br>
+내가 사랑했던 너，지금 달빛으로 바꾼 6펜스뿐이다.</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">I know that my feelings are as ugly as I am. Back then, when I was in a foreign land, and even now, I just wanted someone to bear the chaotic emotions I had nowhere to place. I was never smart or pretty. I am a bit stupid and unpleasant, ordinary and harsh. I am not likable. I only dated once, in high school. My first love used both mental and physical violence against me. From freshman year to senior year, amidst the isolated, turbid air of the pandemic, with only two months left until the college entrance exam, I discovered that my first love had been cheating on me. Three years, and I was forced into an abrupt breakup. We didn't have a single photo together. The letters I wrote to him never received a reply. When we went out, my hand, which I would reach out to hold, would always be let go by him first. I realized how easy it was to erase all traces of him; it was like waking up from a serious illness. Later, I often fell into unconscious fits of excitement, and when I came to, I would almost always be scrubbing my skin fiercely with a toothbrush. The cause of my hearing loss in my left ear, my stutter, and my failure in the college entrance exam all lie in that memory. I don't know what he planted inside me, but after that, everyone I met seemed eager to hurt me—they would peek into my heart and then leave without looking back, or treat me as a joke, or simply approach me as an 'easy girl' from the very beginning. I suppose I'm not really worth others being good to me.</span>
+        <span class="zh">我知道我的感情和人同等樣醜惡。我身處異國他鄉的當年，以及現在，都只是太想有人承受我無處安放的混亂感情。我本就不是聰明，也不是漂亮的人。是有點笨和噁心的、平平無奇的、尖銳刺耳的人。我並不討任何人喜歡。只在高中戀愛過一次，初戀對我在精神和肉體上使用暴力。高一到高三，混著口罩時期孤立渾濁的空氣，距離高考僅兩個月時間時初戀劈腿被發現，三年，我被動地進行斷崖式分手。我們沒有一張合影，給他的信一次也沒有得到回信。在外面逛街時，我主動牽上的手總會被他先放開。意識到清理他的痕跡如此簡單，我像大病初醒。後來我常陷入無意識的亢奮，反應過來時幾乎都在拿牙刷狠狠刷自己的皮膚。我的左耳聽力喪失原因、結巴原因、高考失利原因便在於這段回憶。不知他在我體內種下了什麼，後來，我遇到的人都迫不及待地想要傷害我，窺探我的內心後就頭也不回地離開，或是將我當成笑話，或者一開始乾脆當成easy girl來對話。我想可能我也不太值得別人對我好。</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">The last time I saw this person in class, he suddenly looked at me for a long time. When I returned his gaze, he was just staring straight into my eyes. Just looking, without saying a word. And my first reaction was that in the next second, he would rush over and strangle my neck. Because of many things in the past, I have become traumatized by normal physical contact—caresses, hugs, kisses, even eye contact. At that moment, I realized that I had lost the ability to enter a new relationship. I was so panicked that I couldn't say a word, couldn't even ask a question. I could only open my mouth wide and gasp for air, like a dying fish on a seafood counter.</span>
+        <span class="zh">最後一次在課上見，這個人突然很長時間地看著我，我回溯他的目光時他只是直直地望向我的眼睛。就那麼看著，一句話不說。而我的第一反應居然是他下一秒要衝過來掐我脖子。因為過去的很多很多事，我對正常的身體接觸：愛撫、擁抱、接吻甚至對視都已經過激了。那一刻，我意識到我已經失去重新踏入感情的能力。我實在太恐慌了，一句話也說不出，也問不出來。只能張著嘴大口呼吸，像生鮮鋪上快要死了的魚。</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">Call me romance-brained or love-obsessed if you will, but nowhere has anyone been willing to listen to me. At home, everyone is busy scrolling through their phones and rarely talk to me. I run desperately, desperately spitting out the rotten parts of my body. I long for the warmth of skin, for the sound of a human voice, but in the end, I only hear my own voice. I can't conjure up sweet narratives in my mind; I only silently endure violence for no reason, until even the violence slowly turns into a love as hot as molten syrup, into a security as pale as maggots and as clinging as moss. I swallow this security without chewing, like maggots clinging to rotten flesh. Even so, I seem to have always hoped that someone would stay by my side with such determination, because it seems I can never be anyone's first choice. I am forever the 'last little dog' in the picture book—only in this version, under the gaze of the shivering little puppy in the cold wind, the dog seller gets drunk and beats the puppy to disability with a stick. The still-living, dying puppy is then fed alive to the next litter of newborn puppies.</span>
+        <span class="zh">說我性緣腦，戀愛腦也罷，在哪裡都沒有人願意聽我說話。在家裡時，每個人也都各自各自刷著手機，很少跟我說話。拼命拼命奔跑，拼命拼命吐著身體已經腐爛的部分。渴望皮膚的溫度，渴望人聲，到最後卻也只有自己聽著自己的聲音。我的腦子裡想不出來甜蜜敘事，只一直無端沉默地承受著暴力，一直到連暴力也乾脆慢慢演變成滾燙糖漿似的疼愛，變成一種蛆般白花花的、苔蘚似的安全感。我不加咀嚼地吞嚥著這份安全感，如同蛆緊咬著爛掉的肉不放。即便如此，我好像一直希望有人能這麼堅定地陪在我身邊，因為我好像永遠都做不成任何人的第一選擇，永遠在做繪本中的「最後一隻小狗」，只是結局是寒風中瑟縮的小狗的凝視下，賣狗的人喝醉了，把小狗狗亂棍打成殘廢。還活著的，奄奄一息的小狗，被生生餵給下一窩剛出生的小狗。</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">My study abroad experience has been an escape from reality. All my emotions are sealed inside a huge, turbid snow globe of glitter, placed on a high-wire circus rope, maintaining a fragile balance through constant self-suppression. One touch, and it would fall and shatter. Studying abroad was a stolen, brief, yet magnificent and grand puppet show in my hopeless life. I was born around the time of heavy snow, the season when plum blossoms bloom. The year I was born, there was no hot water, no heating, no air conditioning in our home. From that day, the cold entered my life. It seemed I could only support and love myself. I took every job I could while in Korea. In three out of four semesters, I received scholarships that covered my tuition, until I graduated last December. Often, while working the front desk at a fried chicken shop, I would also be writing commissioned articles and my thesis. On the streets, there were only drunk people returning from late-night gatherings, but even they were not alone. When my hands shook so much that I couldn't type, I would open Notability and review my lecture notes. When the sky began to lighten, I would throw on a large down jacket over my work uniform. Covered in the smell of cooking oil, I would go to class looking ugly. It seems there was never a time when I was beautiful inside and out. When I first arrived, I could barely understand Korean, and I couldn't go home for the New Year. I wasn't in Seoul then. One day, as I was sitting blankly on the long slope behind the language school, a drunk man asked me for directions. I couldn't understand him, so I could only keep saying '죄송합니다, 죄송합니다...' He suddenly got angry for no reason and started shouting at me. The whites of his wide-open eyes were the color of the yellow fat in fried chicken wings, and that color stuffed itself all the way into my stomach. Butterflies flew out of my stomach, fluttering their wings in my ears with a rustling sound. After he left, I threw up before he did. The auntie at the convenience store, thinking I was a college student heading home alone after a party, came out and gave me a black plastic bag. Inside was hangover medicine. She also told me to come into the store if I didn't know my way home—it would be dangerous for a drunk college student to lose body temperature outside in winter. The hangover medicine packaging looked a lot like Celexa, and on a whim, I wanted to buy it. I took out my coin purse to pay, but she waved her hand and said not to. My hands and feet are cold all year round, and at that moment, I was shivering even more. The coins fell to the ground and rolled all the way down the icy slope after the snow. I rushed to pick them up and fell on the icy path. The coins, mixed with mud, water, and my own vomit, soaked my pants and knees. The muddy water soaked me from the inside out like a rainstorm along the lines of my skin. The 500-won coin, engraved with a soaring crane, pecked at my body like a saw-like beak. Before that, on the day I visited the memorial sites for the victims in Gwangju and Jeju—the day I realized that souls have no nationality, that countless, mighty, rumbling souls hang like apples over the city—after that, on the night the president declared martial law again, the fifth night before my birthday, the night I was so frightened by the military vehicles and helicopters that I couldn't sleep—I held tightly onto my rotting apple. But on the day my coins fell to the ground like eyes, the crane pecked at the apple of my soul, causing me to melt into the ground like a boneless person.</span>
+        <span class="zh">我的留學生涯本就是現實逃避，所有的感情都封在一個巨大的、渾濁的亮片雪花球裡，被放在馬戲團的高空鋼索上，靠不間斷的自我壓抑拉著脆弱的平衡，一碰就會摔下來碎掉。留學是我無可救藥的人生得幸偷來一小段瑰麗而盛大的木偶戲。我出生在大雪時節前後，梅花盛放的季節。出生那一年家裹沒有熱水沒有暖氣沒有空調。從那天寒氣就走進了我的生命。好像我只能支持和愛我自己，在韓期間能打的工我都打了，四個學期裡有三個都拿了減免學費的獎學金，直到去年12月我畢業。我經常在炸雞店前台值班時還在寫商稿和論文，街上只有聚餐到凌晨的醉酒的人，但他們也不是獨自一人。寫到手抖抖的打不了字，就打開notability看課程筆記。天濛濛亮的時候在工服外面直接套一件大羽絨服。一身油味，就那麼醜醜地去上課。好像我沒有由內而外都特別漂亮的時候。剛來的時候聽不太懂韓語，過年也沒法回家。那時候還不在首爾，在語言學校後門長坡上坐著發呆的時候有個喝醉了的男人問我路，我聽不懂，只能一直죄송합니다，죄송합니다……他突然莫名其妙地生氣，對我大喊大叫。睜大的眼白是炸雞雞翅裡脂肪似的黃顏色，順著他的眼睛一路塞進我的胃裡。我的胃裡飛出蝴蝶，在耳朵裡撲閃翅膀嘩啦嘩啦響。他走後我比他更先吐了。便利店的姨母把我當成聚餐後獨自回家的大學生，走出來給我一個黑色塑膠袋，裹面裝著解酒藥，還叫我不認識回家的路就進店裡。冬天大學生喝醉在外面失溫會很危險。解酒藥包裝很像喜太樂，鬼使神差地想買下來。我掏出零錢包準備付錢，她拉扯著說不要。我一年四季都手腳冰涼，那時更冷得發抖。硬幣都掉在地上，順著雪後結著冰的坡面一路滾到坡底。我著急去撿，在冰板路上摔倒。與泥水和我的胃液混合的硬幣將我的褲腳和膝蓋全弄髒了。泥水順著皮膚紋路像暴雨般從內部打濕我。印著翱翔的鶴的500圓硬幣，彷彿鋸子一樣的鶴嘴瘋狂啄著我的身體。在那之前，我去光州和濟州的遇難者紀念地那一天，我意識到靈魂沒有國度，無數的、聲勢浩大的、轟隆隆的靈魂都像蘋果一樣掛在城市上空的那一天。之後，總統再度宣布戒嚴的那一晚，我生日前的第五晚，我被軍車和直升機聲音嚇得無法入睡的那一晚。我都緊抓著我正在腐爛的蘋果不放。然而，在我的硬幣像眼睛一樣掉在地上的那天，鶴啄著我靈魂的蘋果，使我如沒有骨頭的人融化在地上。</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">Unlike your shining, radiant soul, my soul is like a sour apple from a stunted, dusty roadside tree, half of it pecked away by a crane.</span>
+        <span class="zh">與你光華閃耀的靈魂不同，我的靈魂像一顆佝僂的，被馬路揚塵沾滿的行道樹結出的酸澀蘋果，被鶴啄去了一半。</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">I am someone who, once I start walking, cannot stop or turn back. I am someone who crosses deserts in search of a homeland that does not exist. I am someone who climbs onto the deck, in the blackish-blue night, dreaming of becoming food for whales. It seems my winter has been a very long, very cold, dream from which I cannot wake.</span>
+        <span class="zh">我是開始行走一次就無法停止也無法回頭的人，是穿過荒漠尋找不存在的故鄉的人，是登上甲板，在黑得發藍的黑夜中幻想自己成為鯨的食物的人。好像我的冬天一直在做很長、很長、很冰冷、無法醒來的夢。</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">The morning I left Seoul, the weather was beautiful. The walk to the subway station usually took ten minutes, but I took twenty. The subway car had a languid smell of drowsy sunlight. There were many people at first, but fortunately, after passing through Noryangjin, I found a seat. After I sat down, a young couple stood in front of me. The girl was petite, with eyes that bulged like a frog's; her plump skin glowed with a soft luster. The boy wore glasses; all his features except his mouth were long and thin. He was much taller than the girl, so he bent down to listen to her chattering with a smile. I looked away. The mandrill-like man's face and the frog-like woman's face swayed in my mind, dazzling as glass. I continued reading 'I Do Not Bid Farewell':</span>
+        <span class="zh">離開首爾的那天早上天氣很好，本來十分鐘走到地鐵站，我慢慢走了二十分鐘。車廂裡有種繾綣的、陽光昏沉睡入的氣味。一開始人很多，好在過了鷺梁津就有了座位。我坐下後一對年輕情侶站在我身前，女生身材嬌小，眼睛像青蛙一樣凸出來，豐腴的皮膚閃著柔軟的光澤。男生戴著眼鏡，除了嘴巴，所有的五官都細細長長的，他比女生高出很多，於是低下頭笑著聽她嘰嘰喳喳地說話。我將目光轉向別處，山魈一樣的男人的臉和青蛙一樣的女人的臉在我腦海中搖晃，琉璃般刺眼。我依舊讀著《不做告別》：</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"'The past four years have been like a snail that pulled its body out of its shell and advanced along the edge of a blade. The body that wanted to live, the body that was pierced and cut, the body that was repeatedly embraced and thrown away, the body that knelt, the body that begged, constantly excreting what might have been blood, or pus, or tears.'"</span>
+        <span class="zh">「我過去的四年就像從硬殼中掏出身體、在刀刃上前進的蝸牛一樣。想活下來的身體，被刺穿切割的身體，反覆被擁抱、甩開的身體，下跪的身體，哀求的身體，不停地流出不知是血、膿水還是眼淚的身體。」</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">My body is a tombstone that can no longer bear any emotion. My voice is an aged sigh. My eyes are the bones of dead fish in a gutter. Perhaps the purpose of my writing this is, as I have always thought, that I owe him a 'thank you for taking the initiative to talk to me.' Or perhaps it is simply that in real life, no one has talked to me for too long.</span>
+        <span class="zh">我的身體是已經承受不起任何感情的墓碑，聲音是蒼老的嘆息，眼睛是臭水溝裡死掉的魚的骨頭。也許我寫這些的目的，就像我一直想的那樣，我欠他一句「謝謝你主動和我說話」。也許只是在現實生活中，太久沒有人跟我說話了。</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">Soon, I will be starting my PhD. Although I am beyond saving, I want to climb upward—until no one can easily hurt me, until I can no longer remember the place where I was born, until my body, still marked with brush strokes, grows flesh and blood again and is once more embraced. I don't know how many people will read these words. There are large gaps in my childhood and high school memories; I can't remember them at all. I am too far from the period when I desperately craved comfort—so far that I can no longer tell whether my memories are real or not.</span>
+        <span class="zh">馬上我要去讀博士了。雖然我無可救藥，但我想向上爬，直到任何人都不可以輕易傷害我，直到我一點也想不起我出生的地方，直到我還刻著刷痕的身體再次長出血肉，再次被擁抱。我不知道這段話會被多少人看見。我童年和初高中的記憶存在大量空白，一點兒也想不起來。我離瘋狂渴求安慰的時期已經太遠了，遠到我分不清自己記憶的真假。</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">Regardless, it is a good ending, after all—because I haven't hurt anyone.</span>
+        <span class="zh">不管怎麼說也是好結局，畢竟我沒有傷害任何人。</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">I hope everyone is free, brave, and happy. I hope everyone meets someone who will steadfastly stay by their side.</span>
+        <span class="zh">希望所有人自由、勇敢而幸福。希望所有人都能遇到堅定不移地陪在身邊的人。</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">I hope you always belong to yourselves.</span>
+        <span class="zh">希望你們永遠屬於你們自己。</span>
+    </div>
+</div>
+
+<!-- ================= RETURN ================= -->
+<div style="text-align:center;">
+  <a class="return-box" href="../index.html">
+    <span class="en">Return</span>
+    <span class="zh">返回</span>
+  </a>
+</div>
+
+<!-- ================= MUSIC（可替换模块） ================= -->
+<!-- 🔴 MUSIC MODULE START -->
+<audio id="bgm" loop>
+  <source src="../music/6sixpences.mp3" type="audio/mpeg">
+  <!-- 🔵 替换音乐路径即可 -->
+</audio>
+<!-- 🔴 MUSIC MODULE END -->
+
+<script>
+let lang = "en";
+
+function applyLang(mode) {
+  document.body.classList.remove("lang-en", "lang-zh");
+  document.body.classList.add("lang-" + mode);
+}
+
+function toggleLang() {
+  lang = (lang === "en") ? "zh" : "en";
+  applyLang(lang);
+}
+
+applyLang("en");
+
+/* music autoplay */
+document.addEventListener("click", () => {
+  const audio = document.getElementById("bgm");
+  if (!audio) return;
+  audio.volume = 0.6;
+  audio.play().catch(() => {});
+});
+</script>
+
+</body>
+</html>

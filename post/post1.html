@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>The First Trembling of Wings / 第一次振翅</title>
+
+<style>
+body {
+  background-color: #81A380;
+  color: #525288;
+  max-width: 720px;
+  margin: 100px auto;
+  line-height: 1.9;
+  font-family: Georgia, serif;
+  padding: 0 20px;
+}
+
+/* ================= LANGUAGE SYSTEM (STABLE FIX) ================= */
+
+.zh, .en {
+  display: none;
+}
+
+/* 英文模式 */
+body.lang-en .en {
+  display: inline;
+}
+
+/* 中文模式 */
+body.lang-zh .zh {
+  display: inline;
+}
+
+/* ================= SWITCH ================= */
+.lang-switch {
+  position: fixed;
+  top: 18px;
+  right: 18px;
+  border: 1px solid #7D5A44;
+  padding: 6px 12px;
+  cursor: pointer;
+  color: #7D5A44;
+  background: transparent;
+  z-index: 999;
+}
+
+.lang-switch:hover {
+  background: #7D5A44;
+  color: white;
+}
+
+/* title */
+h1 {
+  text-align: center;
+  font-weight: normal;
+  margin-bottom: 60px;
+  font-size: 28px;
+  letter-spacing: 1px;
+}
+
+/* quote */
+.quote {
+  font-style: italic;
+  opacity: 0.9;
+  margin-bottom: 50px;
+  line-height: 1.8;
+}
+
+/* text */
+p {
+  margin-bottom: 26px;
+}
+
+/* divider */
+.divider {
+  border-top: 1px solid #7D5A44;
+  width: 100%;
+  margin: 60px 0;
+  opacity: 0.6;
+}
+
+/* links */
+a {
+  color: #7D5A44;
+  text-decoration: none;
+}
+
+a:hover {
+  color: white;
+}
+
+/* return button */
+.return-box {
+  display: inline-block;
+  padding: 6px 14px;
+  border: 1px solid #7D5A44;
+  color: #7D5A44;
+  margin-top: 60px;
+  transition: 0.3s;
+}
+
+.return-box:hover {
+  background: #7D5A44;
+  color: white;
+  transform: translateX(4px);
+}
+
+/* mobile */
+@media (max-width: 768px) {
+  body {
+    margin: 60px 22px;
+  }
+
+  h1 {
+    font-size: 22px;
+  }
+}
+</style>
+</head>
+
+<body class="lang-en">
+
+<!-- LANGUAGE SWITCH -->
+<div class="lang-switch" onclick="toggleLang()">EN / 繁</div>
+
+<!-- TITLE -->
+<h1>
+  <span class="en">The First Trembling of Wings</span>
+  <span class="zh">第一次振翅</span>
+</h1>
+
+<!-- QUOTE -->
+<div class="quote">
+  <span class="en">
+    This is not an autobiography.<br>
+    It is not a confession.<br>
+    This is a threshold text.<br>
+    A place where identity is not explained,<br>
+    but gradually dissolved into language.
+  </span>
+
+  <span class="zh">
+    這不是一部自傳。<br>
+    這不是一份懺悔。<br>
+    這是得見我的臨界。<br>
+    這裡的身份並非被闡釋，<br>
+    這裡的自我消融於語言。
+  </span>
+</div>
+
+<div class="divider"></div>
+
+<!-- BODY -->
+<p>
+  <span class="en">Know me through my words, not my world. Through my mind, not my skin.</span>
+  <span class="zh">了解我——從我的文字而非世界，從我的大腦而非皮相。</span>
+</p>
+
+<p>
+  <span class="en">Creation is my flesh and blood — I am made of text.</span>
+  <span class="zh">創作是我的血與肉，我就是文字。</span>
+</p>
+
+<p>
+  <span class="en">I am grateful for your presence here, without attachment.</span>
+  <span class="zh">我感激到來而不貪戀。</span>
+</p>
+
+<p>
+  <span class="en">
+    If you wish to reach me:<br>
+    <a href="mailto:merallunaur@gmail.com">merallunaur@gmail.com</a>
+  </span>
+
+  <span class="zh">
+    願意與我產生共鳴：<br>
+    <a href="mailto:merallunaur@gmail.com">merallunaur@gmail.com</a>
+  </span>
+</p>
+
+<!-- RETURN -->
+<div style="text-align:center;">
+  <a class="return-box" href="../index.html">
+    <span class="en">Return</span>
+    <span class="zh">返回</span>
+  </a>
+</div>
+
+<!-- MUSIC -->
+<audio id="bgm" loop>
+  <source src="../music/Promising_Relationship.mp3" type="audio/mpeg">
+</audio>
+
+<script>
+let lang = "en";
+
+function applyLang(mode) {
+  document.body.classList.remove("lang-en", "lang-zh");
+  document.body.classList.add("lang-" + mode);
+}
+
+function toggleLang() {
+  lang = (lang === "en") ? "zh" : "en";
+  applyLang(lang);
+}
+
+/* default */
+applyLang("en");
+
+/* music autoplay */
+document.addEventListener("click", () => {
+  const audio = document.getElementById("bgm");
+  if (!audio) return;
+
+  audio.volume = 0.6;
+  audio.play().catch(() => {});
+});
+</script>
+
+</body>
+</html>
