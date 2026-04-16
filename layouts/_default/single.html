@@ -1,0 +1,19 @@
+{{ define "main" }}
+<article>
+    <h1>{{ .Title }}</h1>
+    <p class="date">{{ .Date.Format "2006-01-02" }}</p>
+    
+    {{ with .Params.categories }}
+    <p class="categories">
+        分类：
+        {{ range . }}
+            <a href="{{ "/categories/" | relURL }}{{ . | urlize }}">{{ . }}</a>
+        {{ end }}
+    </p>
+    {{ end }}
+    
+    <div class="content">
+        {{ .Content }}
+    </div>
+</article>
+{{ end }}
