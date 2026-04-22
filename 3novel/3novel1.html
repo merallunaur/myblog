@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Veriditas / 維里狄塔斯</title>
+
+<style>
+body {
+  background-color: #81A380;
+  color: #525288;
+  max-width: 720px;
+  margin: 100px auto;
+  line-height: 1.9;
+  font-family: Georgia, serif;
+  padding: 0 20px;
+}
+
+/* ================= LANGUAGE SYSTEM ================= */
+.zh, .en {
+  display: none;
+}
+
+body.lang-en .en {
+  display: inline;
+}
+
+body.lang-zh .zh {
+  display: inline;
+}
+
+/* switch */
+.lang-switch {
+  position: fixed;
+  top: 18px;
+  right: 18px;
+  border: 1px solid #7D5A44;
+  padding: 6px 12px;
+  cursor: pointer;
+  color: #7D5A44;
+  background: transparent;
+  z-index: 999;
+}
+
+.lang-switch:hover {
+  background: #7D5A44;
+  color: white;
+}
+
+/* title */
+h1 {
+  text-align: center;
+  font-weight: normal;
+  margin-bottom: 60px;
+  font-size: 28px;
+  letter-spacing: 1px;
+}
+
+/* divider */
+.divider {
+  border-top: 1px solid #7D5A44;
+  width: 100%;
+  margin: 60px 0;
+  opacity: 0.6;
+}
+
+/* text */
+p {
+  margin-bottom: 26px;
+}
+
+/* return */
+.return-box {
+  display: inline-block;
+  padding: 6px 14px;
+  border: 1px solid #7D5A44;
+  color: #7D5A44;
+  margin-top: 60px;
+  transition: 0.3s;
+}
+
+.return-box:hover {
+  background: #7D5A44;
+  color: white;
+}
+</style>
+</head>
+
+<body class="lang-en">
+
+<!-- LANGUAGE SWITCH -->
+<div class="lang-switch" onclick="toggleLang()">EN / 繁</div>
+
+<!-- ================= TITLE（可替换） ================= -->
+<h1>
+  <span class="en"><!-- 🔵 English Title -->Veriditas</span>
+  <span class="zh"><!-- 🔵 中文标题 -->維里狄塔斯</span>
+</h1>
+
+<div class="divider"></div>
+
+<!-- ================= BODY（整段可扩展区域） ================= -->
+
+<!-- 🔵 这里是正文 -->
+<div class="bilingual-paragraph">
+<span class="en">"I accuse, because I have resolved not to let my conscience fall silent. Tonight I sleep, while you make the innocent suffer torture... When truth is buried underground, it gathers strength, and eventually explodes!"<br>— Zola<a href="#fn1" class="footnote-link" id="ref1"><sup>①</sup></a></span>
+<span class="zh">「我控訴，因為我決心不讓自己的良心沉默。今夜我入睡，而您卻讓無辜者承受酷刑……當真理被埋葬在地下，它便會積蓄力量，最終爆炸！」<br>——左拉<a href="#fn1-zh" class="footnote-link" id="ref1-zh"><sup>①</sup></a></span>
+</div>
+
+<div class="section-break">◇</div>
+
+<div class="bilingual-paragraph">
+<span class="en">A friend once said to me: when a person tries to approach truth, the world turns truth into illusion. That day I sat at the small table in the back of the tavern, waiting for him. Paris had been drizzling all day, and at that moment I was separated from it by a fogged pane of glass. A clash had broken out on the street that morning; several university students had been arrested. Blood had splashed at the foot of a lamppost, and over the course of the day, the boiling red had slowly oxidised into a docile wine colour. Beside the blood, which looked like an overturned glass, two lovers, cheek to cheek, poured out their hearts beneath an umbrella.</span>
+<span class="zh">一位朋友曾對我說過：當一個人妄圖靠近真理，世界就會把真理變成幻覺。那天我坐在酒館最裡面的小桌旁等他，巴黎整天陰雨連綿，我與它此刻隔著一層起霧的玻璃鏡。早上街頭發生衝突，幾名大學生被逮捕。血潑在電線杆子腳上，經過一天，滾燙的紅逐漸氧化成溫馴的葡萄酒色。如傾倒酒杯的血跡旁，一對戀人臉頰貼著臉頰，在傘下互訴衷腸。</span>
+</div>
+
+<div class="empty-line"></div>
+
+<div class="bilingual-paragraph">
+<span class="en">A tapping came from the table before me. My friend was late. I poured the cold black coffee down my throat and summoned the waiter, intending to order a black coffee for my friend as well. But my friend pressed down my hand.</span>
+<span class="zh">面前的桌子傳來敲擊聲，朋友姍姍來遲。我將冷掉的黑咖啡倒進喉嚨裡，招來侍者，想為朋友也點一杯黑咖啡。朋友卻壓下我的手：</span>
+</div>
+
+<div class="empty-line"></div>
+
+<div class="bilingual-paragraph">
+<span class="en">"Wine. Any kind will do."</span>
+<span class="zh">「酒。什麼樣的都行。」</span>
+</div>
+
+<div class="empty-line"></div>
+
+<div class="bilingual-paragraph">
+<span class="en">The folds of my friend's clothes as he lifted his hand, like an earthquake, squeezed out the brooch pinned to his left chest. The light refracted from the jewel-pupils of that small creature stung my eyes for no reason. My friend had always been thin, with sunken eyes. His nerves were as fragile as a bundle of burning straw; even the weight of an ant was enough to make him shiver. The red velvet trench coat he wore—the colour of blood, of wine—was nailed to the centre of my field of vision, swaying like a rose branch. My friend was from England; I had never seen more than three colours on him.</span>
+<span class="zh">朋友抬手時牽動的衣褶，如一次地震般擠出左胸前的胸針。自那小動物的寶石瞳孔中折射出的光亮，無端地刺痛我的雙眼。朋友自我認識他就一直很瘦，眼眶深陷。他的神經像一把燃燒著的枯草般脆弱，即使是螞蟻的重量，也足以讓他發冷。他身著的紅絲絨風衣——正如血般葡萄酒的顏色，釘在我的視野中央，似一枝薔薇般搖來搖去。朋友來自英格蘭，我從未見他身上超過三種顏色。</span>
+</div>
+
+<div class="empty-line"></div>
+
+<div class="bilingual-paragraph">
+<span class="en">"Pretty brooch. Is it a lizard?"</span>
+<span class="zh">「漂亮的胸針。是蜥蜴嗎？」</span>
+</div>
+
+<div class="empty-line"></div>
+
+<div class="bilingual-paragraph">
+<span class="en">"A chameleon."</span>
+<span class="zh">「變色龍。」</span>
+</div>
+
+<div class="empty-line"></div>
+
+<div class="bilingual-paragraph">
+<span class="en">My friend snapped his fingers, sat down with unusual ease, and casually flipped through the unpublished documents I had cited for my next article. A flash of premonition struck me; I snatched the papers from his hand.</span>
+<span class="zh">朋友打了個響指，比以往更加輕鬆地坐下，隨手翻看我在下篇報導上援引的未公開文件。一瞬間的預感擊中了我，我將資料從他手中抽走。</span>
+</div>
+
+<div class="empty-line"></div>
+
+<div class="bilingual-paragraph">
+<span class="en">"Relax, Francis."</span>
+<span class="zh">「放鬆，弗朗西斯。」</span>
+</div>
+
+<div class="empty-line"></div>
+
+<div class="bilingual-paragraph">
+<span class="en">My friend was not too surprised. His left hand, wearing a green ring, had been about to land on my shoulder, but instead he picked up his glass and drained it in one go.</span>
+<span class="zh">朋友沒有太驚訝，戴著綠戒指的左手在將要放上我肩膀的瞬間又拿起酒杯，一飲而盡。</span>
+</div>
+
+<div class="empty-line"></div>
+
+<div class="bilingual-paragraph">
+<span class="en">"Oh, it's rum... Well, never mind. You need to relax, Francis."</span>
+<span class="zh">「哦，是朗姆……好吧，別在意。你需要放鬆，弗朗西斯。」</span>
+</div>
+
+<div class="empty-line"></div>
+
+<div class="bilingual-paragraph">
+<span class="en">My friend raised his hand to order a drink for me as well, but after I politely declined, that hand once again fell on my shoulder, its five fingers like hooks, tapping lightly. My friend's easy tone made my hair stand on end. That tone—even when he stood on the witness stand, having changed into a black coat as if attending a funeral—still lay hidden, like dormant insect eggs, beneath his regretful, sorrowful accusations. I had been prosecuted for slandering the military, and he was testifying on my behalf for leaking the documents.</span>
+<span class="zh">朋友抬手想為我也點一杯酒，在我婉言謝絕後那隻手再次落在我的肩膀上，鐵鉤一般的五指輕輕敲擊。朋友輕鬆的語氣使我毛骨悚然。那種語氣，在他站上證人席——如同出席葬禮般換上一件黑色大衣時，仍舊如正在安眠的蟲卵般，藏在他痛惜而略帶哀傷的指控下。我因誹謗軍隊而被起訴，他為我洩露文件作證。</span>
+</div>
+
+<div class="empty-line"></div>
+
+<div class="bilingual-paragraph">
+<span class="en">"Mr. Bonnefoy, on what grounds do you believe you have the right to know the truth?"</span>
+<span class="zh">「波諾弗瓦先生，你憑藉何種信心認為自己有知道真相的權利？」</span>
+</div>
+
+<div class="empty-line"></div>
+
+<div class="bilingual-paragraph">
+<span class="en">I did not wish to involve anyone else, so I defended myself. But the judge interrupted me like this. I was sentenced to life in exile—just like the truth for which I had fought. They gave me a choice: Devil's Island<a href="#fn2" class="footnote-link" id="ref2"><sup>②</sup></a> or the Sahara.</span>
+<span class="zh">我不願牽連任何人，自己為自己辯護。而法官如此打斷了我。我被判處終身流放——一如我為之戰鬥的真理本人。他們讓我選，魔鬼島<a href="#fn2-zh" class="footnote-link" id="ref2-zh"><sup>②</sup></a>或撒哈拉。</span>
+</div>
+
+<div class="empty-line"></div>
+
+<div class="bilingual-paragraph">
+<span class="en">I drank a glass of wine and left Paris.</span>
+<span class="zh">喝下一杯酒，我離開了巴黎。</span>
+</div>
+
+<div class="section-break">◇</div>
+
+<div class="bilingual-paragraph">
+<span class="en">I walked through the yellow sands of the Sahara. I was a stranger. I was a wanderer who hated being a stranger. My last emotion was anger. My anger was in Paris, vanishing into the void like a dog barking in the dead of night. The moment I was handcuffed, my left eyeball throbbed like a sick heart. But the blood pumped from my heart was as cold as the deep blue polar sea, and to keep from drowning, I could only breathe deeply.</span>
+<span class="zh">我走在撒哈拉的黃沙裡。我是異鄉人。我是痛恨異鄉的流浪者。我的最後一種情緒是憤怒。我的憤怒在巴黎，像深夜的一陣犬吠般遁入虛空。被銬住的那一瞬間，我左邊眼球如同一顆生了病的心臟，痛得突突跳。從我心臟泵出的血液卻冷得像極地的深藍海水，為了不溺斃，我只能大口呼吸。</span>
+</div>
+
+<div class="empty-line"></div>
+
+<div class="bilingual-paragraph">
+<span class="en">I left the tavern laughing, lay laughing in the tomb-like prison cell. When I heard my sentence, I was still laughing.</span>
+<span class="zh">我大笑著離開酒館，大笑著躺在墓室般的監獄裡。當聽到我的罪名時，我仍在大笑。</span>
+</div>
+
+<div class="empty-line"></div>
+
+<div class="bilingual-paragraph">
+<span class="en">The moment I boarded the train from Algiers<a href="#fn3" class="footnote-link" id="ref3"><sup>③</sup></a> to the desert's edge, the sea suddenly vanished from my heart—like a blind man who had never seen the ocean. The official escorting me disembarked with me at Biskra<a href="#fn4" class="footnote-link" id="ref4"><sup>④</sup></a> and watched me walk into the endless yellow sand. The chill of dawn gently eroded my senses; I panted heavily, a cold bullet lodged in my nostrils. The grey-brown dunes, outlined by the soft mist, steeped in a crisp, hazy silence like frosted glass, stood like cemetery guards. I kept walking, as if I knew that if I stopped, the quicksand would swallow me. For the first few miles, I could still hear the muffled crack of the herders' whips. The camel bells were a footnote I could not grasp in this long dream. Without a compass, I walked toward the brightest point on the horizon. After sunrise, I tried to walk toward the direction from which the camel bells came. When the wind rose on a clear day, the dunes shifted unpredictably, and the camel bells, like an old woman's sleep-talk, refracted from a seemingly close dune into a distant, unreachable distance. I had drunk little water since boarding the ship in Marseille, yet I sweated constantly. Life was slowly evaporating from my veins. The red sun climbed higher, laughing. I carried nothing but my body. If it were night, when the snakes, lizards, and beetles emerged from the sand, I might catch a few, warm their bodies, and find some metabolic water. But I was at noon—I could tell without a watch. The midday sun would rustle and laugh like the judge who had tried me, occasionally rising into a cough-like buzz in the high heavens. In Egyptian mythology, the power of the sun god Ra reached its peak at this hour—Ra saw everything, illuminated everything, yet burned away all cover and mercy. This was the god's arrogant exposure, not his compassion.</span>
+<span class="zh">從阿爾及爾<a href="#fn3-zh" class="footnote-link" id="ref3-zh"><sup>③</sup></a>港口登上開往沙漠邊緣城市火車的那一剎那，海洋突然從我的心上消失了——就像從未見過海洋的盲人。押送我的官員隨我一同從畢斯克拉<a href="#fn4-zh" class="footnote-link" id="ref4-zh"><sup>④</sup></a>下車，目送我走進漫天黃沙中。清晨的冷徹溫柔地侵蝕我的感官，我呼哧呼哧地喘氣，鼻腔裡揿入一顆冰冷的子彈。被柔順薄霧所勾勒出的灰褐色沙丘，浸潤在毛玻璃般清脆而朦朧的沉默裡，如同一群墓園守衛。我不斷走著，似乎我知道一停下就會被流沙吞噬。開始走的幾里，我尚且能聽到牧民抽打鞭子的悶響，駝鈴是我這個長夢中一句抓不住的注腳。我沒有指南針，便朝著地平線最亮處行走。日出後的一段時間，我又試著朝駝鈴傳來的方向行進。晴天風起後沙丘變幻多端，駝鈴如老婦人的夢囈，在近在眼前的山坡上折射出遙遠的、不可抵達的距離。我從馬賽上船後就很少喝水，卻一直揮汗如雨。生命漸漸從我的血管中蒸發。火紅的太陽大笑著攀升，除了身體我什麼也沒帶。如果是夜晚，等到那些蛇、蜥蜴和甲蟲從沙底鑽出來，我也許能抓上幾隻，加熱它們的身體，找到一點代謝水。但我身處正午——不需要手錶就能辨別。正午的太陽會像審判我的法官般沙沙笑，間或在高天掀起一陣咳嗽似的蜂鳴。在埃及人的傳說中，太陽神拉的力量在此刻達到頂峰——神在此刻看見一切，照亮一切，卻將任何遮蔽與餘地燒毀。這是神狂傲的暴露，而非慈悲。</span>
+</div>
+
+<div class="empty-line"></div>
+
+<div class="bilingual-paragraph">
+<span class="en">I walked alone under the gaze of the god. The stronger the god, the weaker I became. All the things I had left behind in my homeland—the dead, the unresolved, the bloody being-born, the torn—pierced my eyeballs in indescribable forms, like shards of a broken mirror. Many times, I heard footsteps behind me, but when I turned, I saw no one walking with me. I walked for hours. The setting sun slanted past my aching cheek. Yet my senses grew sharper; I felt the footsteps approaching. I had never believed in God, could not even read a prayer to the last page. Was I now to be absolved of my original sin, sent an angel to fetch me, offering my soul to the god I had never seen nor asked anything of? Were there so many gods you worshipped that even every lie could find an altar?</span>
+<span class="zh">我在神的注視下獨行。神愈強壯，我就愈虛弱。那些遺留在故土的、已死的、懸而未決的、正在血肉模糊地出生的、撕裂的一切，以難以描述的無形刺進我的眼球，如同碎裂的鏡子碎片。有很多時刻，我聽見身後傳來腳步聲，轉身卻不見與我同行的那個人。我走了好幾個小時，西沉的太陽斜過我疼痛的臉頰。我的感官卻更加敏銳，覺察那陣腳步聲逐漸逼近。我從未相信過神，連禱文也無法讀到最後一頁。難道現在竟要赦免我的原罪，差遣天使來接我，把我的靈魂獻給那我從未見過，也從未索取過的神？難道你們膜拜的神如此之多，甚至每個謊言都能找到祭壇？</span>
+</div>
+
+<div class="empty-line"></div>
+
+<div class="bilingual-paragraph">
+<span class="en">After sunset, I stopped before a massive dune. I had no strength left to climb; even keeping my eyes open and breathing had become difficult. The sand shifted constantly beneath my feet; the wind was several times wilder than during the day. I closed my eyes, waiting for my childlike ideals to execute me. But contrary to my expectation of unconsciousness, the air around me cooled, and the wind carried moisture and a slightly fishy animal scent to my face. My exhausted nerves and muscles were suddenly re-energised by this unexpected warmth. I ran towards the direction from which the wind blew. One sleeve, unable to bear the heat and movement any longer, tore with a rip. My upper arm was immediately slashed by dry brush, a deep gash. Yet I could hardly feel the pain. Leaping over lizards bounding through the sand, I was surrounded by hissing, starving horned vipers, their tongues flickering; fennec foxes; beetles with their nauseating odour. As soon as night fell, these creatures pressed in around me. For they had no entertainment but to watch the movement of unfamiliar creatures.</span>
+<span class="zh">太陽落山後我在一座巨大的沙丘前停下。我沒有再攀登的力氣，甚至連睜眼與呼吸也變得困難。沙子在我腳下不停移動，風比白日狂烈數倍。我閉上眼睛，等待我那孩童般的理想處決我。然而與預料中的昏迷相反，我身邊的空氣涼了下來，風中把潮濕水汽與略帶腥味的動物氣息拋向我的臉額。我疲憊不堪的神經與肌肉被這突如其來的溫暖重新拉動，朝著風吹來的方向跑去。一隻袖子再也承受不住高溫與運動，刺啦一下撕裂開來，我的大臂旋即被乾枯的灌木劃出一道深深的血痕。此時我卻難以感受疼痛，越過在沙子里蹦跳游泳的蜥蜴，我的身邊聚集著吐著信子、嘶嘶作響、無比飢餓的角蝰，扇動耳朵的狐狸，甲蟲和它們身上令人作嘔的氣味。這些生靈一到夜晚便朝我身邊擠壓。因為除了觀看運動著的陌生生物，它們沒有什麼可以娛樂。</span>
+</div>
+
+<div class="empty-line"></div>
+
+<div class="bilingual-paragraph">
+<span class="en">After crossing another dune, I saw a herd of white antelopes, their fur shimmering silver in the bright moonlight, impossibly beautiful in the darkness-conquered desert. They moved sideways, huddled together, their black horns draped with wet waterweed. By instinct, I tracked their hoofprints, my feet gradually buoyed by the moistening sand. The wind softened, almost whispering. The antelopes stopped not far away, parting slightly, licking each other's strong bodies. I widened my eyes like a sailor who had first spotted land from the crow's nest. An oasis. The dying traveller's last breath, this place never to be found on any map, now lay before me, cold and docile as a sheep. In the embrace of glossy green palm trees, the moonlight shattered on the dark blue mirror of the water into a flock of silver ibises, their slender necks raised, their cries like sad songs. Here, there were village houses that seemed to grow out of the earth, vines hanging from the roofs like the hair of the drowned. Everywhere were corpses, and everywhere was new birth.</span>
+<span class="zh">翻過又一個沙丘後我看到一群白羚羊，皮毛在月光滿耀下銀輝爍爍，在被黑暗攻下的沙漠中美得不可思議。牠們側著身子，緊挨在一起向前走，漆黑的角上掛著濕漉漉水草。我憑著本能追獵著羚羊的蹄印，雙足被逐漸濕潤的沙子承托起。風聲漸弱，近乎低訴。羚羊們在不遠處停下，微微分開了一條縫隙，舔舐彼此健壯的身體。我像是第一個在瞭望台上發現大陸的水手般瞪大了眼睛。綠洲。這個垂死的旅行者吐出的最後一口氣，這個任何地圖上都永不可見的地方，此時正冷漠卻溫馴地伏在我面前，如一隻羊。在油亮的綠棕櫚的懷抱中，月光在深藍如鏡的水面上碎裂成一群銀色朱鷺，紛紛揚起細長的脖子，叫聲似悲歌。這裡有低矮到彷彿從地里長出來的村屋，藤蔓像溺水者的頭髮般從屋頂上垂下來。這裡到處都是屍體，又到處都有新生。</span>
+</div>
+
+<div class="empty-line"></div>
+
+<div class="bilingual-paragraph">
+<span class="en">My thoughts were gradually drawn by the rustle of fine fabric—a young man with golden hair, dressed in a white robe like a Greek's, stood with his back to me, stroking an antelope that was approaching him. I walked toward him involuntarily, stepping on a dry vine. The sound made him turn his head to look at me. Those eyes, hidden beneath low, golden lashes, held a joyful pale green—innocent almost to the point of cruelty in this land that had been born to reject all life. He stared at me expressionlessly, showing no fear or surprise. When I drew closer, the sound of train whistles, the crack of gavels, and the mocking laughter of the sun gradually orchestrated in my ears. The joy of first seeing the oasis was washed away; belated thirst and exhaustion descended again on my body. I reached out to him, and his cold, elegant face suddenly showed a mimosa-like hesitation, but still he came over, supporting my falling body. My wounded arm, like a lion, pounced on his snow-white body. His right cheek was stained with my blood. For a moment, I mistook my sense of smell for hearing, believing I could hear the myrrh fragrance overflowing from his well-proportioned muscles. The rot of Paris vanished from within me.</span>
+<span class="zh">我的思緒逐漸被一陣細碎的衣料摩擦聲牽引——一位穿著如希臘人白色長袍的金髮青年背對著我，撫摸一隻正在接近他的羚羊。我不由自主地朝著他邁步，不小心踩到一根枯藤，發出的聲響驅使他轉過頭來看我。他那雙藏在低垂金色睫毛的眼睛中流淌著喜悅的淺綠色，在這片生來便唾棄任何生命的土地上天真得近乎殘忍。他面無表情地盯著我看，沒有對我表現出任何恐懼和意外。當我更加接近他，火車汽笛聲、法槌敲擊聲與太陽的獰笑聲逐漸在我耳邊合奏著。初見綠洲的喜悅被沖毀，遲來的飢渴與力竭再次降臨在我的身體。我向他伸出手，他那張冷漠而優雅的臉上突然浮現出含羞草般的猶豫，卻還是走過來，扶住我正在倒下的軀幹。我受傷的大臂如一隻獅子，撲向他雪白的身體。他的右頰沾上了我的血。有一瞬間，我將嗅覺錯認成了聽覺，認為自己聽見了他勻稱的肌肉中滿溢的沒藥香氣。巴黎的腐爛從我體內消失了。</span>
+</div>
+
+<div class="empty-line"></div>
+
+<div class="bilingual-paragraph">
+<span class="en">"Ḥtp.k nfr — nunc quiesce, miles."<a href="#fn5" class="footnote-link" id="ref5"><sup>⑤</sup></a></span>
+<span class="zh">"Ḥtp.k nfr — nunc quiesce, miles."<a href="#fn5-zh" class="footnote-link" id="ref5-zh"><sup>⑤</sup></a></span>
+</div>
+
+<div class="empty-line"></div>
+
+<div class="bilingual-paragraph">
+<span class="en">His voice flowed through my body like water, and I closed my eyes.</span>
+<span class="zh">他的聲音如水流過我的全身，我閉上眼睛。</span>
+</div>
+
+<div class="section-break">◇</div>
+
+<div class="bilingual-paragraph">
+<span class="en">This was Veriditas.<a href="#fn6" class="footnote-link" id="ref6"><sup>⑥</sup></a> Most people called it Veritas. The wind in the desert was strong; the wind would swallow a syllable or two, never giving them back. I had met my fellow sufferer, my relic of empire, Arthur Kirkland, here. He had pulled me back from the brink of haemorrhagic shock and dehydration—that night he had hardly slept, alert as a rabbit. Whenever I turned over, he would come close to check on me, driving away the death and sickness that disturbed my sleep. He said that even before I knew his name, I had called out to him repeatedly in my delirium, until finally he had to hold my hand all night to quiet me.</span>
+<span class="zh">這裡是維里狄塔斯<a href="#fn6-zh" class="footnote-link" id="ref6-zh"><sup>⑥</sup></a>，更多的人會叫它維里塔斯。沙漠裡的風很大，風會吞掉一兩個音節，從不還回來。我與我同病相憐的帝國遺物朋友亞瑟·柯克蘭相識於此。他把我從失血性休克和脫水的邊緣拉回來——那天晚上他沒怎麼睡，警覺得像隻兔子。我一翻身他就湊過來看，為我驅趕驚擾我睡眠的死神與病魔。他說我在知道他名字前，就在昏迷中反覆叫著他的名字，最後他不得不整晚握著我的手使我安靜下來。</span>
+</div>
+
+<div class="empty-line"></div>
+
+<div class="bilingual-paragraph">
+<span class="en">He said he too had once been rescued like this—though that was long ago, farther back than childhood, at the moment of his birth from amniotic fluid. The herders had rocked him on camelback, humming desert ballads in low, sweet voices, chanting Isis's spells over his terrible wounds, and that was how he had learned Egyptian. Besides that, he seemed naturally to know several languages. Languages flowed slowly over his parchment-white body like rain, falling without warning. Every day, he applied fresh honey poultices mixed with linseed oil and malachite powder to my wounds. He worked with heavy pressure, not like bandaging, but like carving. In his eyes, I seemed an unfinished work, a violin whose string had snapped at the final note. Whenever he pressed my wound, a dragonfly-like itch descended deep into my muscles. His touch always gave me a pleasure close to dying. He spoke little, never chanted spells, reserved and self-contained as a clean silver vessel meant for sacrifice. But every morning, he would signal with the sound of his washing water that I could join him for a walk. His steps were measured and slow. He would pause briefly before every door opened by the herders, do nothing, and move on to the next when the door was shut again. After this, he would go to the water's edge, use a branch to draw a circle in the sand, and sprinkle salt to drive away the biting midges and leeches within—for the white antelopes that had left their habitat and not yet returned. I was full of curiosity about him, but all my questions were only led by him to another entrance. Whenever I asked, he would answer me in four languages at once. Language became a labyrinth here, and I was constantly under his guidance.</span>
+<span class="zh">他自述也曾被這樣救起——不過那是很久以前，是比孩提時代更遙遠，剛從羊水中誕生的時刻。牧民們在駱駝背上搖晃他，用低啞甜潤的嗓音重複沙漠民謠，對著可怖的傷口唸伊西斯的咒語，他就這樣學會了埃及語。除此之外，他似乎天生懂一些語言，語言在他羊皮卷般潔白的軀幹上緩慢流淌著，如同雨水，毫無徵兆地天降。每日，他都在我的傷口敷上新的蜂蜜敷料，混合亞麻油與孔雀石粉。他工作時力道很重，不像包紮，更似雕刻。在他眼中，我彷彿一件未完成的作品，一把在拉到最後一個音時斷弦的小提琴。每當他按壓我的傷口，如同蜻蜓的瘙養總在我肌肉深處降落。他的觸碰總使我獲得瀕死般的愉悅。他很少說話，也從不唸咒，保留自持得如同一件用來祭祀的乾淨銀器。但每個早上，他又總會用洗漱的水聲作信號，准許我跟他一同漫步。他的步履端正緩慢，在每扇牧民打開的門前短暫停留，什麼都不做，等到門被重新關起便轉去下一戶。做完這些後，他會前往水邊，用樹枝在沙地畫出圓圈，撒鹽驅趕圈中的吸血蠓與水蛭——為了那些離開棲息地，又尚未歸來的白羚羊。我對他充滿好奇，所有的問題卻被只被他引向另一個入口。每當我發問，他就會同時用四種語言混著回答我。語言在此成為一座迷宮，令我無時無刻不在接受他的指引。</span>
+</div>
+
+<div class="empty-line"></div>
+
+<div class="bilingual-paragraph">
+<span class="en">Feeling deceived, I resolved on revenge—to at least displease him. In the early morning Sahara, the stars hung above the orange-ribbon sky, countless, chilling. I slept on the floor by the window; Arthur slept soundly in the bed beside me. He always rose earlier than me, so he had moved the bed to the outside. I had almost never seen him sleep. Now, his pale golden lashes were fluttering with the rhythm of his breath, about to lift the two green, gold-winged birds in his eye sockets. On his wide, plaster-pale forehead, his left hand rested like a fox. Unlike his ascetic, almost perverse white attire, his five fingernails shimmered with an opalescent iridescence, all filed into almond shapes. His body had no excess flesh or lines, exquisitely wrought as a brand-new gallows. Only the faint red sunburn mark like a kiss at the collar reminded me of his real existence.</span>
+<span class="zh">我感到受了愚弄，決心報復——至少讓他不快。清晨的撒哈拉，群星懸在橙絲帶般的天幕上方，不可計數，令人膽寒。我睡窗邊的地板，亞瑟在我身邊的床上酣眠。他總起得比我早，因此把床移到外側。我幾乎從未見過他睡覺。此刻，他極淺的金色睫毛正隨著呼吸的節奏扇動，正要拉起眼眶中那兩隻綠身金翅的鳥。在他石膏般蒼白而寬闊的額頭上，左手如狐狸般棲息著。與他禁慾到變態的潔白裝束不同，五個指甲閃耀著歐珀般流動著的華彩，都修成杏仁的形狀。他的身體沒有任何多餘的贅肉與紋路，精妙得彷彿一架嶄新的絞刑台。唯有袒露的領口印下一個吻般淡紅的曬痕，提醒我他真實的存在。</span>
+</div>
+
+<div class="empty-line"></div>
+
+<div class="bilingual-paragraph">
+<span class="en">I forced myself not to keep looking, took his salt pot, and went outside. The breeze carried the song-like scent of water lilies, caressing my sleepy eyes. The hoofprints of the white antelopes were fresh and wet; they had just left. I imitated his manner, scattering salt on the sand full of breathing holes. The leeches screamed, shrivelled, and died. The arrogance born of intimacy with all things gradually rose in my pounding chest. I began to hum the desert ballad Arthur had hummed during my delirium. Slowly, it turned into a French folk song:</span>
+<span class="zh">我強迫自己不再繼續觀賞，拿起他的鹽罐出門。微風送來如歌聲般的水蓮花氣息，撫愛我惺忪的睡眼。白羚羊的蹄印新鮮濕潤，剛離開不久。我學起他的樣子，在滿是呼吸孔的沙地上撒鹽。水蛭們尖叫著變得乾癟，接著死去。親近萬物所造就的傲慢，逐漸從我怦怦跳著的胸膛中升起，我開始哼著昏迷時亞瑟哼過的沙漠民謠。慢慢地，又變成了法國民歌：</span>
+</div>
+
+<div class="song-lyrics">
+<span class="en">There once was a little boat<br>
+That never, never, never sailed<br>
+Oh hey! Oh hey!<br>
+It set out on a long journey<br>
+Sailing on the Mediterranean Sea<br>
+Oh hey! Oh hey!<br>
+Five or six weeks later<br>
+The food on board was all gone<br>
+Oh hey! Oh hey!<br>
+The men drew lots<br>
+To see who would be eaten<br>
+Oh hey! Oh hey!<br>
+The lot fell on the youngest one<br>
+So he had to be eaten<a href="#fn7" class="footnote-link" id="ref7"><sup>⑦</sup></a></span>
+<span class="zh">從前有一艘小小的船<br>
+它從來、從來、從來沒有航行過<br>
+哦嘿！哦嘿！<br>
+它踏上了一次漫長的旅程<br>
+在地中海上航行<br>
+哦嘿！哦嘿！<br>
+五六個星期之後<br>
+船上的食物全都耗盡了<br>
+哦嘿！哦嘿！<br>
+人們抽籤決定<br>
+看誰將被吃掉<br>
+哦嘿！哦嘿！<br>
+抽中的，是最年輕的那一個<br>
+因此，他必須被吃掉<a href="#fn7-zh" class="footnote-link" id="ref7-zh"><sup>⑦</sup></a></span>
+</div>
+
+<div class="bilingual-paragraph">
+<span class="en">I used a branch to draw a circle larger than Arthur's usual one, enjoying my solitude in the morning, when suddenly I heard unhurried footsteps behind me. The salt pot was gently taken from my hand. I turned and fell into Arthur's gaze, like a fly into a silent pond. My existence finally stirred a veil-like ripple in his eyes. He lowered his eyes, and as he passed me, his shoulder brushed my upper arm; the wound stung. I unconsciously held my breath, watching him crouch down, using his hand to erase the circle I had drawn. The hem of his robe dragged in the mud, growing filthy as if stained with ink.</span>
+<span class="zh">我用樹枝圈了一個比亞瑟平常更大的範圍，正享受清晨中的獨處，我的身後卻突然傳來一陣不急不徐的腳步聲。手中的鹽罐被人輕輕抽走。我回頭便掉入亞瑟的注視，如一隻蒼蠅陷入寂靜的池塘。我的存在終於在他眼中激起一圈有著輕紗質感的漣漪。他垂下眼睛，路過我時肩膀擦過我的大臂，傷口一陣刺痛。我不自覺地屏氣，看著他蹲下身，用手擦去我畫過的圈。衣袍下擺在泥地上拖曳，如沾染上墨痕一般逐漸變得污穢不堪。</span>
+</div>
+
+<div class="empty-line"></div>
+
+<div class="bilingual-paragraph">
+<span class="en">"It seems the antelopes prefer crowding."</span>
+<span class="zh">「看來羚羊們更喜歡擁擠。」</span>
+</div>
+
+<div class="empty-line"></div>
+
+<div class="bilingual-paragraph">
+<span class="en">I stared at the back of his head, covered in soft curls, and let out a light laugh. He suddenly looked up, still staring at me expressionlessly.</span>
+<span class="zh">我盯著他長有柔軟鬈髮的後腦，發出一陣輕笑。他突然抬起頭，依舊無表情地盯著我看。</span>
+</div>
+
+<div class="empty-line"></div>
+
+<div class="bilingual-paragraph">
+<span class="en">"Ce n'est pas une préférence."</span>
+<span class="zh">"Ce n'est pas une préférence."</span>
+</div>
+
+<div class="empty-line"></div>
+
+<div class="bilingual-paragraph">
+<span class="en">He answered my question in only one language—my mother tongue. I held the branch, speechless.</span>
+<span class="zh">他用僅一種語言——我的母語，回答了我的問題。我握著樹枝一言不發。</span>
+</div>
+
+<div class="section-break">◇</div>
+
+<div class="bilingual-paragraph">
+<span class="en">The sun laughed over my head, watching me chop wood, sweat pouring down. My wound had already scabbed over; Arthur allowed me to do tasks requiring more strength, rather than simply drawing water and drawing circles. But he also said that when I was fully healed, I must leave immediately. He would find someone to send me back to Biskra, to stay with civilisation—just as I had come. He remained as aloof as ever, but no longer teased me with language. Thus, I felt his presence more keenly than before, as if I had finally cupped a soap bubble in my soapy hands. I was filled with the joy of new knowledge, trembling whenever I thought of him. His body—now freed from the foreign land, bound to my side—shone with a dazzling brilliance, unlike my decaying, suffering soul: a clear, crystalline morning sun, yet no different from twilight.</span>
+<span class="zh">太陽在我頭頂大笑，目視我揮汗如雨地劈柴。我的傷口已經結痂，亞瑟准許我做一些更需要力量的勞動，而不是簡單的打水和畫圈。但他也讓我在完全康復時馬上離開，他會找人送我回畢斯克拉，同文明待在一起——一如我來時那樣。他依舊同往常一樣保持著間離，但不再用語言捉弄我。因此，我比平時更加能感覺到他的存在，就像我終於用沾滿皂液的手托起一個泡泡。我充滿著新知的喜悅，每每想到他便連連顫抖。他的身體——此刻脫離了異鄉存在，被禁錮到我的身邊。與我頹靡而痛苦的靈魂不同，亞瑟的靈魂華光閃耀，如黎明水晶般清亮的太陽暉光——這種光彩，又與暮色時無異。</span>
+</div>
+
+<div class="empty-line"></div>
+
+<div class="bilingual-paragraph">
+<span class="en">Noon was the quietest time in Veriditas. Ra was in his prime, his light hanging high in the sky, leaving nowhere to hide. As if receiving a revelation of desire, I always heard animal-like moans of coupling in the intervals between axe strikes. The air swelled like a balloon full of seeds. Everything smelled of pleasure, of wine. Every noon, I longed more for Arthur's clean myrrh fragrance. My clothes were too dirty; he had me wear the white robe as well, but the robe itself had no scent. This same linen cloth on my body constantly reminded me that the scent came from his living, exquisite, orderly flesh. I always wanted to approach him, even thinking about his structure the moment I looked at him. I would watch his fingers pulsing like a heart as he wrote, his deep-set eyes, his clearly defined cheekbones, his naturally downturned lips, and his lean, hollow cheeks. His existence was as puzzling as a poem composed of ordinary letters—just like his permission of my intimacy. He never refused when I laid my head on his shoulder or his thigh, yet the way he stroked my hair was the same as when he stroked an animal. When he placed his hand on the tip of my ear, his breath rested on my forehead like a butterfly, fragrant. The air in Veriditas was indeed intoxicating as wine. Because I had drunk wine, I no longer dreamed.</span>
+<span class="zh">正午是維里狄塔斯最安靜的時刻，拉此時正值壯年，光芒高懸天穹，萬物無處遁形。彷彿接受到欲望的啟示，我總在斧子聲響的間隙中傳來動物交配般的呻吟。空氣膨脹似一隻裝滿種子的大氣球。所有東西都聞起來像歡愉，像酒。每逢正午，我就更加渴求亞瑟身上清潔的沒藥香氣。我的衣服太髒，他讓我我也穿上了白袍，而那白袍本身卻沒有任何氣味。我身上這塊同樣的亞麻布每時每刻都在提醒我，這氣味來自他鮮活、精巧、有秩序的肉體。我總是想接近他，甚至在注視他的瞬間也在思考他的構造。我會注視他寫字時如心臟般跳動的手指，深邃的眼眶，輪廓清晰的顴骨，自然向下的唇角以及瘦削凹陷的面頰。他的存在就如用普通的字母組成了一句詩一般令人困惑——正如對我狎昵的允許。他從不拒絕我把腦袋放在他的肩膀，或是大腿上，撫摸我頭髮的動作卻又與撫摸動物時一樣。他將手放在我的耳尖上時，呼吸如一隻棲息在我額頭上的蝴蝶，香氣四溢。維里狄塔斯的空氣的確像酒一樣使人迷醉。因為喝了酒，我不再做夢。</span>
+</div>
+
+<div class="empty-line"></div>
+
+<div class="bilingual-paragraph">
+<span class="en">The scab falling from my wound frightened me; it was an invisible clock. The road I had travelled to get here had probably long been covered by yellow sand, vanished from sight. Arthur seemed more to sense my unease than to see it. He could be as silent as a tree, the hand he extended to me like a root piercing my flesh. At this moment, the symbiosis between us was one-sided and bloody.</span>
+<span class="zh">傷口剝落的血痂使我害怕，那是一輪不可見的時鐘。我來時行過的路恐怕早已被黃沙覆蓋，不見蹤影。比起看見，亞瑟更像感知到我的不安。他可以像一棵樹一般沉默，向我伸出的手如同刺破我皮肉的樹根。此時，他與我之間更像是單側血肉模糊的共生。</span>
+</div>
+
+<div class="empty-line"></div>
+
+<div class="bilingual-paragraph">
+<span class="en">"What if I don't leave?"</span>
+<span class="zh">「如果我不走呢？」</span>
+</div>
+
+<div class="empty-line"></div>
+
+<div class="bilingual-paragraph">
+<span class="en">Someone would always abandon me first. I rested my head on Arthur's lap and asked him. He was still writing, his fingers trembling almost imperceptibly. In that moment, I shamelessly climbed over the back of his hand and pulled those five slender fingers toward my lips. But I only lowered my head, touched his fingernails with my lower lip, and then looked up at him again. Just when I thought he would remain silent as usual, he smiled at me—a fox's smile. For the first time, I noticed two sharp canine teeth on his upper jaw. I had not noticed that his burning smile had drawn a tear from my eye.</span>
+<span class="zh">總有人會先拋棄我。我枕在亞瑟的腿上朝他發問。他依舊寫著東西，手指微不可察地顫抖。就在這個瞬間我無恥地攀上他的手背，將那五根纖細的手指拉向我的嘴唇。我卻只是垂頭，用下嘴唇碰了碰他的指甲，爾後便重新抬眼看著他。正當我以為他會像平時一般保持沉默，他卻對我露出狐狸似的微笑。我第一次發現他上牙有兩顆尖銳的犬齒。我沒有注意到他灼熱的笑容在我眼中激出了一滴淚。</span>
+</div>
+
+<div class="empty-line"></div>
+
+<div class="bilingual-paragraph">
+<span class="en">"Then stay. I can't chop wood alone."</span>
+<span class="zh">「那你就留下來，我砍不動柴。」</span>
+</div>
+
+<div class="empty-line"></div>
+
+<div class="bilingual-paragraph">
+<span class="en">His well-proportioned, flowing muscles were a lie. He suddenly leaned close to me, our noses touching. His breath, like a butterfly, flew from his smiling lips to my cheek.</span>
+<span class="zh">他勻稱流暢的肌肉象徵著謊言。他突然貼近我，與我鼻尖相觸。呼吸如一隻蝴蝶，從他微笑著的嘴唇飛向我的面頰。</span>
+</div>
+
+<div class="empty-line"></div>
+
+<div class="bilingual-paragraph">
+<span class="en">"What have you been through, Francis?"</span>
+<span class="zh">「你經歷了什麼，弗朗西斯？」</span>
+</div>
+
+<div class="empty-line"></div>
+
+<div class="bilingual-paragraph">
+<span class="en">As if being questioned that day, I felt my body stiffen. In a sleep-talk, I said those words to him:</span>
+<span class="zh">我像是被質問那天一般，感到身體僵硬。夢囈般對他說出那句：</span>
+</div>
+
+<div class="empty-line"></div>
+
+<div class="bilingual-paragraph">
+<span class="en">"On what grounds do you believe you have the right to know the truth?"</span>
+<span class="zh">「你憑藉何種信心認為自己有知道真相的權利？」</span>
+</div>
+
+<div class="empty-line"></div>
+
+<div class="bilingual-paragraph">
+<span class="en">Like a child, I chattered endlessly about everything in Paris. Coffee, trams, wine, betrayed friends... Arthur still touched my skin intermittently, his eyes gradually growing innocent and bewildered, like a small animal's, as if this were the first time he had been dragged into the logic of human relationships. I looked into his eyes, and it was like being startled awake by a clap of thunder. It was then that I finally realised how similar appearances, facial structures, and shared languages had deceived me into believing he was the same kind of person as me.</span>
+<span class="zh">我像個孩子似的喋喋不休，說起巴黎的一切生活。咖啡、電車、酒、背叛的朋友……亞瑟仍舊若即若離地觸碰著我的肌膚，眼睛逐漸如小動物般天真而茫然，彷彿這是第一次被拖入人類關係邏輯。我看著他的眼神，如被一聲炸雷驚醒。那時我終於意識到，相似的長相與面部構造，共通的語言，是如何欺騙我，讓我誤認為他與我是同一類人。</span>
+</div>
+
+<div class="empty-line"></div>
+
+<div class="bilingual-paragraph">
+<span class="en">"Who is innocent? Who should be exiled? Whose sacrifice is necessary?"</span>
+<span class="zh">「誰是無辜的？誰該被流放？誰被犧牲是必要的？</span>
+</div>
+
+<div class="empty-line"></div>
+
+<div class="bilingual-paragraph">
+<span class="en">For him, anywhere outside the Sahara was a foreign land. I looked at his sculptural face and closed my mouth in pain. Arthur's bewildered expression vanished in an instant; I even doubted that his confession had been my hallucination. He gently kissed my cheek, as always.</span>
+<span class="zh">撒哈拉以外對他來說才是異鄉。我看著他如雕塑般的面龐，痛苦地閉上嘴。亞瑟那茫然的表情瞬間溜走，我甚至懷疑起自白只是我的幻覺。他輕柔地吻了吻我的面頰，如往常一樣。</span>
+</div>
+
+<div class="section-break">◇</div>
+
+<div class="bilingual-paragraph">
+<span class="en">I heard blood charging through my body like a herd of galloping horses. I did not know how long it had been since I fled Veriditas. At that time, Arthur was still fast asleep. He was a light sleeper; I could not even kiss his forehead before leaving, only touch the hem of his clothes once more. The Sahara night was wild with wind, yet impossibly clear with moonlight. The tremendous noise made it impossible to tell whether the things flying overhead were eagles or warplanes. After that noon, I gradually found it difficult to be around Arthur. Looking at him always reminded me of Paris. Once his wandering green eyes became my habitat, nothing would grow there. But I still had nowhere to go, so I walked back into the desert. My homeland had abandoned me the moment I decided to abandon it. I wore the clothes I had arrived in; they had been washed and folded neatly, only missing one sleeve. The wound on my upper arm had long healed, the scar shaped like an antelope's horn.</span>
+<span class="zh">我聽見血液猶如一群奔馬在身體裡橫衝直撞。自我逃離維里狄塔斯，不知過了多長時間。那時亞瑟還在熟睡。他是個淺睡者，我甚至不能在離開前親吻他的額頭，只能再親一親他的衣角。夜晚的撒哈拉狂風大作，卻不可思議得月色清澄。巨大的風噪讓人分不清天上飛的是蒼鷹還是戰機。那個中午後，我逐漸無法與亞瑟相處，看著他總讓我想起巴黎。他那雙流浪著的綠眼睛一旦成為我的棲息地，便會寸草不生。但我依舊無處可去，只能再次走入沙漠。故鄉在我決定拋棄它時，一樣拋棄了我。我穿著我來時穿的衣服，它們被洗乾淨了，疊得整整齊齊，只是缺了一條袖子。我大臂上的傷口早已痊癒，留下的疤痕形狀像羚羊角。</span>
+</div>
+
+<div class="empty-line"></div>
+
+<div class="bilingual-paragraph">
+<span class="en">I thought of the ocean that had vanished from my heart the moment I stepped off the train. Just as the sea recedes, now the sand was slipping away from under my feet. If my body again craved the gentle caress of the oasis and the murmur of the lake, I would never be able to reach any place. I tried to find my direction by the stars, but the yellow sand burrowed into my eyes like a swarm of venomous bees. Now, at the edge of the world, I called out like a wounded beast. The wind swallowed every syllable I spoke. First I shouted:</span>
+<span class="zh">我想起一走下列車就從我心上消失的海洋。就像海水的退潮一般，如今沙子正從我腳下溜走。如果我的身體再次渴求綠洲溫柔的撫愛與湖水的低訴，我將再也無法到達任何地方。我試圖通過星星判斷自己的方向，黃沙卻鑽進我的眼睛，像一群長著毒針的蜜蜂。現在，我在世界的盡頭呼喚，宛如一頭受傷的野獸。風吞掉了我的全部音節。開始我喊：</span>
+</div>
+
+<div class="empty-line"></div>
+
+<div class="bilingual-paragraph">
+<span class="en">"Veriditas! Veriditas!"</span>
+<span class="zh">「維里狄塔斯！維里狄塔斯！」</span>
+</div>
+
+<div class="empty-line"></div>
+
+<div class="bilingual-paragraph">
+<span class="en">Then:</span>
+<span class="zh">接著是：</span>
+</div>
+
+<div class="empty-line"></div>
+
+<div class="bilingual-paragraph">
+<span class="en">"Paris! Paris!"</span>
+<span class="zh">「巴黎，巴黎！」</span>
+</div>
+
+<div class="empty-line"></div>
+
+<div class="bilingual-paragraph">
+<span class="en">I swallowed countless grains of sand into my throat, coughing up bright red blood:</span>
+<span class="zh">我的喉嚨裡吞進無數沙子，咳出鮮紅的血來：</span>
+</div>
+
+<div class="empty-line"></div>
+
+<div class="bilingual-paragraph">
+<span class="en">"Arthur! Arthur! Ar—thur—"</span>
+<span class="zh">「亞瑟，亞瑟！亞——瑟——」</span>
+</div>
+
+<div class="empty-line"></div>
+
+<div class="bilingual-paragraph">
+<span class="en">The wind suddenly stopped as I shouted his name. I was standing at the top of a dune. Dunes were always changing; now I realised I had been walking in circles. Looking around, except for the sky, I was the highest point in the entire world. Veriditas lay quietly behind me, just as I had first seen it. In the same night, Veriditas still crouched tamely around me, mercifully calling out to me.</span>
+<span class="zh">風突然在我喊出他的名字時停止，我正站在一個沙丘的頂端。沙丘總是變化多端，現在我才意識到自己正原地打轉。放眼望去，除了天空，我是整個世界的最高點。維里狄塔斯正靜靜躺在我的身後，如我第一次見到它那樣。維里狄塔斯在相同的夜晚中依舊溫馴地匍匐在我周圍，仁慈地向我呼喚。</span>
+</div>
+
+<div class="empty-line"></div>
+
+<div class="bilingual-paragraph">
+<span class="en">Suddenly I saw a small figure, a figure waving frantically, as if it would be punished if it stopped. That figure glowed at the edge of Veriditas, then slowly grew larger—until I saw that it was Arthur. He stood in the vast shadow cast by the dune, his movements slow and heavy, his gait almost like a pilgrim's, taking a step and kneeling. His robe had been torn by the wind into several strips of cloth, revealing his bloodied white body. He never once looked up. He raised his arm to shield himself from the sudden, renewed wind and sand.</span>
+<span class="zh">我突然看見一個小小的身影，一個一直在瘋狂招手，彷彿一停下就會遭到懲罰的身影。那個身影在維里狄塔斯邊緣閃著光，接著慢慢變大——直到我看見那是亞瑟。他正站在沙丘投下的巨大陰影裡，動作緩慢而沉重，行走的姿態幾乎如一個走一步跪一步的朝聖者。他的衣袍已經被狂風撕扯成幾條破布，露出滿是血痕的潔白身體。他一次也沒有抬頭。伸出手臂遮擋著突然再起的風沙。</span>
+</div>
+
+<div class="empty-line"></div>
+
+<div class="bilingual-paragraph">
+<span class="en">"Arthur!"</span>
+<span class="zh">「亞瑟！」</span>
+</div>
+
+<div class="empty-line"></div>
+
+<div class="bilingual-paragraph">
+<span class="en">I ran toward him. He looked up at me, expressionless, just as he had the first time I saw him. The distance between us grew shorter and shorter, until I finally touched his body, lifting him by the thighs in my arms. Only when I felt his warm skin could I be sure this was not an illusion. His feet dangled in the air; only my footprints remained on the damp sand at the edge of the oasis. The white antelopes slept huddled by the water. Suddenly I could not tell the time. Was this the day I first arrived, or the day that was fading away? I heard a chorus of bleats; the antelopes suddenly opened their eyes, raised their heads, and stared at me in unison. Arthur lay on my shoulder, motionless. In the vision of sheep, individuals are blurred; boundaries are determined solely by contour and movement. In their eyes, would Arthur and I be the same strange, overgrown alien creature? As I walked, I kissed Arthur's ears, greedily absorbing his myrrh fragrance. He mercifully accepted my taking, just as he had mercifully saved me that night when I was dying.</span>
+<span class="zh">我向著他奔跑，他抬起頭來，一如我第一次看見他時，面無表情地看著我。我與他的距離越來越近，直到我完全觸碰到他的身體，雙手托住他的大腿將他抱起。直到我觸碰他溫熱的皮膚，才能確認這不是幻覺。他雙腳懸空著，唯有我的腳印留在綠洲邊緣濕潤的沙地上。白羚羊在水邊緊挨著睡覺，我突然分不出時間。究竟是我第一次到來的那天，還是正在消亡著的那天？我聽見一群「咩」聲，羚羊們突然睜開眼，抬起頭，齊刷刷地看著我。亞瑟趴在我肩上，一動不動。在羊的視覺中個體是模糊的，邊界全交由輪廓與運動決定。在牠們的眼中，我與亞瑟會不會是同一個詭異的、生長過度的異鄉生物？我一邊走，一邊親吻亞瑟的耳朵，貪婪得吸收他身上的沒藥香氣。他仁慈地接受我的索取，一如那天晚上在我瀕死時刻，仁慈地將我救起。</span>
+</div>
+
+<div class="empty-line"></div>
+
+<div class="bilingual-paragraph">
+<span class="en">I kissed the blood from his body, as if plucking a rose petal. My tears also flowed toward his eyes. He said nothing, but held my cheeks in his hands and kissed me like a small animal. The residual warmth of his lips still flowed through my veins. I drank the discordant desire contained in his eyes like a glass of cold poison. His hands had once stroked my hair—the way he stroked animals—but now they stroked me like a lover. I pressed my lips to his, listening to his restrained breath, like a bow drawn to its limit. When our lips parted, I looked into his eyes again. My love was the ugliest, most disastrous voodoo curse. I would carve my evil spell into his clear, mirror-like eyes, which hid countless languages. I bent down, pressed my forehead to the hollow of his shoulder, and laughed as if weeping. I heard a soft voice:</span>
+<span class="zh">我吻去他身上的血液，如摘去一片玫瑰花瓣。我的淚水同樣流向他的眼睛，他一言不發，卻用手捧住我的雙頰，如小動物一樣吻了吻。他嘴唇殘餘的溫度仍舊在我的血管中流動，我飲下他雙眼中飽含著的不和諧的欲望，如飲下一杯冰冷的毒酒。他的雙手曾撫摸過我的頭髮，曾經撫摸動物的方式，現在卻像撫摸一個情人。我用嘴唇壓著他的嘴唇，聽著他剋制的呼吸，像一張繃到極致的弓。嘴唇分開後，我再次望向他的眼睛。我的愛是一種最醜惡的，招致災禍的巫毒咒語，我會在他清亮如鏡的，藏著無數種語言的眼睛中刻下我的惡咒。我俯下身，將額頭抵在他的肩窩，哭泣似的狂笑。我聽見一句輕柔的：</span>
+</div>
+
+<div class="empty-line"></div>
+
+<div class="bilingual-paragraph">
+<span class="en">"Come."</span>
+<span class="zh">「來吧。」</span>
+</div>
+
+<div class="empty-line"></div>
+
+<div class="bilingual-paragraph">
+<span class="en">Come. Come. Come. Come. Come. Come. Come. Come. Come. Come. Come. Come. Come. Come. Come. Come. Come. Come. Come. Come. Come. Come. Come. Come.</span>
+<span class="zh">來吧。來吧。來吧。來吧。來吧。來吧。來吧。來吧。來吧。來吧。來吧。來吧。來吧。來吧。來吧。來吧。來吧。來吧。來吧。來吧。來吧。來吧。來吧。來吧。</span>
+</div>
+
+<div class="empty-line"></div>
+
+<div class="bilingual-paragraph">
+<span class="en">I possessed Veriditas completely.</span>
+<span class="zh">我完整占有了維里狄塔斯。</span>
+</div>
+
+<div class="empty-line"></div>
+
+<div class="bilingual-paragraph">
+<span class="en">I heard blood charging through my body like a herd of galloping horses, and so I opened my eyes. A moment ago, the warmth of skin-to-skin contact still lingered on my body. Now, I found myself still in the desert, my throat parched, my upper arm bleeding. A beetle crawled over my body; I caught it with my left hand and held it in my palm. The stinking juice of the burst beetle ran through my fingers. I raised my right hand to the night sky. The Sahara howled like a sea. My throat could no longer make any sound; I could only weakly repeat: Arthur, Arthur. Veriditas, Veriditas. Until I too closed my eyes. The last thing in my memory was no language at all, so white and pure.</span>
+<span class="zh">我聽見血液猶如一群奔馬在身體裡橫衝直撞，於是睜開眼。剛剛一瞬間，我的身體上還殘存著肌膚之親的溫度。現在，我卻發現自己仍處在沙漠，喉嚨乾渴，大臂正在流血。一隻甲蟲爬過我的身體，我用左手抓住它，握在手中。甲蟲爆裂的惡臭汁液流過我的手指。我將右手伸向夜空，撒哈拉怒號著，像一片海。我的喉嚨已經發不出任何聲音，只是無力地重複著：亞瑟，亞瑟。維里狄塔斯，維里狄塔斯。直到我也閉上眼睛。我記憶的最後，沒有任何語言，如此潔白無垢。</span>
+</div>
+
+<hr class="divider">
+
+<div class="footnote">
+<div class="footnote-item" id="fn1">
+<span class="en"><a href="#ref1" class="footnote-link">①</a> The Dreyfus affair (1894–1906) was a famous political and judicial scandal in the French Third Republic. Alfred Dreyfus, a Jewish artillery officer, was falsely convicted of treason based on forged evidence, subjected to a secret court-martial, and exiled. French writer Émile Zola published his open letter "J'accuse" in 1898, accusing the military and judicial system of systematically covering up the truth.</span>
+<span class="zh"><a href="#ref1-zh" class="footnote-link">①</a> 德雷夫斯（Affaire Dreyfus，1894–1906），法國第三共和國時期一樁著名的政治與司法冤案。猶太裔軍官阿爾弗雷德·德雷夫斯因偽造證據被誣陷叛國，遭秘密審判並流放。法國作家埃米爾·左拉於1898年發表公開信《我控訴》，指控軍方與司法體系系統性掩蓋真相。</span>
+</div>
+<div class="footnote-item" id="fn2">
+<span class="en"><a href="#ref2" class="footnote-link">②</a> Devil's Island is located off the coast of French Guiana, one of the most notorious sites in the French penal system. Dreyfus was held there in solitary confinement from 1895 to 1899, almost completely isolated from the outside world.</span>
+<span class="zh"><a href="#ref2-zh" class="footnote-link">②</a> 魔鬼島位於法屬圭亞那外海，是法國流放制度中最惡名昭著的地點之一。德雷夫斯於1895年至1899年被單獨囚禁於此，與外界幾乎完全隔絕。</span>
+</div>
+<div class="footnote-item" id="fn3">
+<span class="en"><a href="#ref3" class="footnote-link">③</a> Algiers was an important colonial administrative centre during French Algeria, a meeting point of European rational order and North African geographical and cultural reality. The author considers it a symbol of the "extension of the empire."</span>
+<span class="zh"><a href="#ref3-zh" class="footnote-link">③</a> 阿爾及爾是法屬阿爾及利亞時期的重要殖民行政中心，歐洲理性秩序與北非地理、文化現實交匯之地。作者認為它象徵「帝國的延伸」。</span>
+</div>
+<div class="footnote-item" id="fn4">
+<span class="en"><a href="#ref4" class="footnote-link">④</a> Biskra is located on the northern edge of the Algerian Sahara, often called the "Gateway to the Desert." Since the late 19th century, it has been a stopping point for French colonists, soldiers, the sick, and travellers.</span>
+<span class="zh"><a href="#ref4-zh" class="footnote-link">④</a> 畢斯克拉位於阿爾及利亞撒哈拉北緣，常被稱為「通往沙漠的門戶」。19世紀末以來，它既是法國殖民者、軍人、病人、旅行者的停留地。</span>
+</div>
+<div class="footnote-item" id="fn5">
+<span class="en"><a href="#ref5" class="footnote-link">⑤</a> Ḥtp.k nfr — nunc quiesce, miles. This sentence is a mixture of Middle Egyptian and Latin. It means "You are at peace, now rest, soldier."</span>
+<span class="zh"><a href="#ref5-zh" class="footnote-link">⑤</a> Ḥtp.k nfr — nunc quiesce, miles.該句為中古埃及語與拉丁語的混寫。意為「你得以安息，現在休息吧，戰士。」</span>
+</div>
+<div class="footnote-item" id="fn6">
+<span class="en"><a href="#ref6" class="footnote-link">⑥</a> Veriditas is formed from vērus (truth) and -itas (state of being), emphasising the state of true existence. At the same time, the similar word Viriditas was proposed and repeatedly used by Hildegard von Bingen (1098–1179), a German Benedictine abbess, mystic theologian, composer, and natural philosopher. The latter comes from the Latin viridis (green, flourishing). For Hildegard, it was not "green" in the ordinary sense, but a divine life force, a spiritual greenness, the vitality, nourishment, and renewal that come from God. In her works, sin is ariditas (dryness), virtue is viriditas (greenness). Veritas is the classic Latin form of "truth," commonly used in legal, theological, and institutional contexts, referring to truth that is declared, judged, and recognised.</span>
+<span class="zh"><a href="#ref6-zh" class="footnote-link">⑥</a> 維里狄塔斯（Veriditas）由vērus（真實）與-itas（存在狀態）構成，強調真實存在的狀態。同時，相似的單詞維里狄塔斯（Viriditas）被一位中世紀德國本篤會女修士、神秘神學家、作曲家、自然哲學家，希爾德加德·馮·賓根（Hildegard von Bingen, 1098–1179）提出並反覆使用。後者來自拉丁語viridis（綠色的、生機勃勃的）。在希爾德加德那裡它不是普通意義的「綠色」，而是一種神聖的生命力、靈性之綠、來自上帝的生機、滋養與更新之力。在她的作品中，罪惡是乾枯（ariditas），德性是綠意（viriditas）。維里塔斯（Veritas）是拉丁語中「真理」的經典形式，常用於法律、神學與制度語境，指被宣告、被裁定、被承認的真理。</span>
+</div>
+<div class="footnote-item" id="fn7">
+<span class="en"><a href="#ref7" class="footnote-link">⑦</a> "Il était un petit navire" is a French folk song. Its genre source is the complainte (lament, criminal song). It is not originally a nursery rhyme but belongs to the complainte criminelle, sung in marketplaces, taverns, and docks. In European maritime history from the 16th to 18th centuries, long periods of drifting and food depletion often led sailors to decide on a victim by drawing lots. Drawing lots was seen as a technique for reducing moral responsibility.</span>
+<span class="zh"><a href="#ref7-zh" class="footnote-link">⑦</a> Il était un petit navire，法國童謠。體裁來源為complainte（哀歌、犯罪歌）。《Il était un petit navire》不是最初的童謠，而是屬於complainte criminelle，在集市、酒館、碼頭傳唱。在 16–18 世紀的歐洲航海史中，長時間漂流、食物耗盡常讓船員通過抽籤決定犧牲者。抽籤被認為是一種減少道德責任的技術。</span>
+</div>
+</div>
+
+<!-- ================= RETURN ================= -->
+<div style="text-align:center;">
+  <a class="return-box" href="../index.html">
+    <span class="en">Return</span>
+    <span class="zh">返回</span>
+  </a>
+</div>
+
+<!-- ================= MUSIC（可替换模块） ================= -->
+<!-- 🔴 MUSIC MODULE START -->
+<audio id="bgm" loop>
+  <source src="../music/7Weeks&3Days.mp3" type="audio/mpeg">
+  <!-- 🔵 替换音乐路径即可 -->
+</audio>
+<!-- 🔴 MUSIC MODULE END -->
+
+<script>
+let lang = "en";
+
+function applyLang(mode) {
+  document.body.classList.remove("lang-en", "lang-zh");
+  document.body.classList.add("lang-" + mode);
+}
+
+function toggleLang() {
+  lang = (lang === "en") ? "zh" : "en";
+  applyLang(lang);
+}
+
+applyLang("en");
+
+/* music autoplay */
+document.addEventListener("click", () => {
+  const audio = document.getElementById("bgm");
+  if (!audio) return;
+  audio.volume = 0.6;
+  audio.play().catch(() => {});
+});
+</script>
+
+</body>
+</html>

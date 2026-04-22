@@ -1,0 +1,784 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Rouge Royale / 滿堂紅</title>
+
+<style>
+body {
+  background-color: #81A380;
+  color: #525288;
+  max-width: 720px;
+  margin: 100px auto;
+  line-height: 1.9;
+  font-family: Georgia, serif;
+  padding: 0 20px;
+}
+
+/* ================= LANGUAGE SYSTEM ================= */
+.zh, .en {
+  display: none;
+}
+
+body.lang-en .en {
+  display: inline;
+}
+
+body.lang-zh .zh {
+  display: inline;
+}
+
+/* switch */
+.lang-switch {
+  position: fixed;
+  top: 18px;
+  right: 18px;
+  border: 1px solid #7D5A44;
+  padding: 6px 12px;
+  cursor: pointer;
+  color: #7D5A44;
+  background: transparent;
+  z-index: 999;
+}
+
+.lang-switch:hover {
+  background: #7D5A44;
+  color: white;
+}
+
+/* title */
+h1 {
+  text-align: center;
+  font-weight: normal;
+  margin-bottom: 60px;
+  font-size: 28px;
+  letter-spacing: 1px;
+}
+
+/* divider */
+.divider {
+  border-top: 1px solid #7D5A44;
+  width: 100%;
+  margin: 60px 0;
+  opacity: 0.6;
+}
+
+/* text */
+p {
+  margin-bottom: 26px;
+}
+
+/* return */
+.return-box {
+  display: inline-block;
+  padding: 6px 14px;
+  border: 1px solid #7D5A44;
+  color: #7D5A44;
+  margin-top: 60px;
+  transition: 0.3s;
+}
+
+.return-box:hover {
+  background: #7D5A44;
+  color: white;
+}
+</style>
+</head>
+
+<body class="lang-en">
+
+<!-- LANGUAGE SWITCH -->
+<div class="lang-switch" onclick="toggleLang()">EN / 繁</div>
+
+<!-- ================= TITLE（可替换） ================= -->
+<h1>
+  <span class="en"><!-- 🔵 English Title -->Rouge Royale</span>
+  <span class="zh"><!-- 🔵 中文标题 -->滿堂紅</span>
+</h1>
+
+<div class="divider"></div>
+
+<!-- ================= BODY（整段可扩展区域） ================= -->
+
+<!-- 🔵 这里是正文 -->
+    <div class="section-break">◇</div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">In the spring of 1943, as winter turned to summer, the night was cool as water, and eagles flew in formation. Outside a red-and-white circus tent hidden deep in the forest, a young man with long golden hair stood with his chest held high. He wore an embroidered tailcoat with a red velvet cape, his boots polished black, gleaming like an acrobat's thighs. He closed his eyes, placed two slender fingers between his lips, and blew hard. A short, sharp whistle shot from his mouth like a bullet through the night. The instant the whistle sounded, the Friesian horse<a href="#fn2" class="footnote-link" id="ref2"><sup>②</sup></a> beneath him, which had been walking calmly, suddenly reared up on its front hooves, let out a resonant neigh, and galloped toward the distant wilderness. Gripping the reins tightly, he leaned down with composure, pressing himself against the horse's broad back, his legs clamped around its barrel, almost merging with its chestnut coat. His soft, hydrangea-like eyes became a scope, fixed intently on the obstacle now close at hand, like a snake that never looks away once it has spotted its prey. The fence was almost as high as the horse's legs. With each blink, the fence came several metres closer. He took a deep breath, gathered the wild power of the steed into his palm, and pulled the reins. The horse hesitated, its ears flicking back, its throaty rumble rising from deep to high. Just metres from the fence, the horse tucked its neatly trimmed front hooves and soared like an eagle. In that moment when balance was about to be lost, the man on the horse sat up straight instead, sweeping open his crumpled cape with his left hand like spreading a pair of wings. Blood-red velvet and golden hair flew together in the air. At the apex of the jump, his brows arched high, a young, passionate smile breaking across his face. The horse's hind legs landed heavily after clearing the obstacle, jolting him upward. He leaned down again, turned, and galloped back toward the tent. The wind of his passage once more flung open his cape, exposing him fully to the pale yellow moonlight. One of his lower legs was encased in a tall leather boot. The other—there was only a thin wooden stick, supporting his lopsided body.</span>
+        <span class="zh">1943年，春夏之交。夜涼如水，蒼鷹成行。掩藏在密林中的某個紅白相間的馬戲帳篷外，一個束著金長髮的年輕男子昂首挺胸。他穿著繫有紅絲絨斗篷的刺繡燕尾服，靴子擦得黑亮，像雜技演員的大腿一樣閃閃發光。他閉上眼，將兩根纖長的手指放進嘴唇之間，使勁吹氣。一聲短促的哨音從他口中衝出，如同一顆子彈穿過黑夜。哨聲響起的一剎那，他胯下那匹正在悠悠行走的弗里斯蘭馬<a href="#fn2-zh" class="footnote-link" id="ref2-zh"><sup>②</sup></a>突然前蹄騰空，發出一陣洪亮的嘶鳴，向著遠處的曠野奔去。而他捏緊韁繩，神態自若地俯下身子，趴在它寬闊的背上，雙腿夾緊馬肚，幾乎跟那棗色的皮毛融為一體。他那雙如八仙花般柔軟的雙眼變為一枚瞄準鏡，緊緊盯著近在咫尺的障礙，彷彿一條蛇盯上了自己的獵物就不再把視線挪開。圍欄幾乎跟馬腿齊高，他每眨一次眼，圍欄都會比之前更近幾米。他閉眼做了一次深呼吸，將駿馬體內那股野蠻力量匯聚在自己的掌心，旋即拉起韁繩。馬的身體頓了頓，向後擺動耳朵，喉嚨中的響聲由低沉變得高亢。距離圍欄只有幾米的地方，馬收起修剪整齊的前蹄，雄鷹般騰空而起。在這個將要失去平衡的瞬間，馬背上的男子反倒坐直了身體，左手將皺縮在一起的斗篷揮開，像張開一對翅膀。血色絲絨與他的金髮同時在空中飄揚。到達頂點滯空的瞬間，他的臉上，眉毛揚得很高，年輕而熱烈的笑容乍現。馬的後蹄，在跨越障礙物後重重落地，將他往上顛了顛。他又俯下身，復而調轉方向，向著帳篷近處奔來。奔跑帶起的風再次吹開他的斗篷，令他整個人都暴露在澄黃月光的照耀下。他的一條小腿被馬靴牢牢包裹住。而另一條小腿——那裡只有一根細長的木棍，支撐他搖搖欲墜的半邊身體。</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"Francis!"</span>
+        <span class="zh">「弗朗西斯！」</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">A slightly angry shout drilled into his ears, but to him it sounded like cheers. As he approached the tent, he reined in the horse, its hooves carving tracks into the damp mud. He turned his head, searching for the hand about to reach out to him. That hand, and its owner, stood to his left. Those green eyes stirred his joy. He placed his hand in the smaller one and dismounted. His body, missing a lower leg, swayed, then steadied.</span>
+        <span class="zh">「弗朗西斯！」</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"Did you see that, Artie?"</span>
+        <span class="zh">「瞧見我剛剛那一下了嗎，亞蒂？」</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"Yes, I saw it. Isn't this something you have to do every few nights?"</span>
+        <span class="zh">「瞧見了瞧見了。難道你不是每隔幾晚上都得來這麼一下嗎？」</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"It's not that I want to. It's Achilles.<a href="#fn3" class="footnote-link" id="ref3"><sup>③</sup></a> He can't stand being bored."</span>
+        <span class="zh">「不是我想來。是阿喀琉斯<a href="#fn3-zh" class="footnote-link" id="ref3-zh"><sup>③</sup></a>，牠耐不得寂寞。」</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">The young man named Francis placed his hand on the horse's chin, his forehead resting against its furry skin. The tall steed, sensing his touch, obediently lowered its head and closed its eyes. Francis smiled with satisfaction and let out a smooth whistle. The horse followed his command, trotting softly into the stable. After a moment, it tilted its head and stood still.</span>
+        <span class="zh">名為弗朗西斯的青年把手放在馬的下巴上，額頭抵著馬毛茸茸的皮膚。高大的駿馬在察覺到他的觸摸後順從地低下腦袋，閉上眼。弗朗西斯滿意地笑了笑，吹了個圓滑的哨音。馬跟著他的命令，邁著輕輕的步子走進馬棚。過了一會兒，馬歪著腦袋，不再動了。</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"Are the children all asleep?"</span>
+        <span class="zh">「孩子們都睡著了嗎？」</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"Yes, they're asleep. Weren't you worried about waking them when you were shouting just now?"</span>
+        <span class="zh">「睡著了。你剛剛大喊大叫的時候怎麼不擔心會把他們吵醒呢？」</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"Weren't you shouting for me too? Anyway, enough of that. Any news? When will the next transport come?"</span>
+        <span class="zh">「你不也一樣在大聲喊我？好了，不說這個了。有情報了嗎，下一趟車什麼時候能來？」</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"I heard from Gilbert that lately even potatoes need to be stabbed a few times to check. The children can't be sent to Hungary and Romania for now. The blockade won't be lifted until at least next week."</span>
+        <span class="zh">「聽基爾伯特說最近連馬鈴薯都要拿刀刺幾下，查一查。暫時不能把孩子們送去匈牙利和羅馬尼亞。封鎖最早也要到下週。」</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"Damn Nazis."</span>
+        <span class="zh">「該死的納粹佬。」</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">Francis lowered his head, took an iron cigarette case from the inside pocket of his tailcoat, and looked at Arthur questioningly.</span>
+        <span class="zh">弗朗西斯低下頭，從燕尾服的內口袋裡掏出一個鐵菸盒，用詢問的目光看向亞瑟。</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"I don't want one."</span>
+        <span class="zh">「我不要抽。」</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">Francis turned his back. The damp cigarettes went out several times before finally relighting. He stood downwind, drawing the tobacco's pungent aroma deep into his lungs. When the cigarette burned out, he chuckled, pulled Arthur into his arms, and rested his chin on Arthur's shoulder.</span>
+        <span class="zh">弗朗西斯背過身去。受潮的菸幾度熄滅，最後終於重燃。他站在下風口，把菸草那陣辛辣的香氣通通吸進肺裡。香菸燃盡之時，他輕笑著，將亞瑟拉入懷中，下巴擱在他的肩膀上。</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"Anyway, Arthur. Thank you for still being willing to follow me."</span>
+        <span class="zh">「不管怎麼說，亞瑟。謝謝你還願意跟著我。」</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"I'm not following you. I have nowhere else to go."</span>
+        <span class="zh">「我不是在跟著你，我是無處可去。」</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"Mm, I know."</span>
+        <span class="zh">「嗯，我知道。」</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"It's late. Let's get some sleep."</span>
+        <span class="zh">「時候不早了，睡下吧。」</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">They walked to a draughty carriage beside the big tent. Scattered on the ground were some clothes, a pile of bullets, and a homemade gun. A horse brush and horseshoes lay outside the carriage. Francis bent down and crawled into the carriage, grabbing the gun.</span>
+        <span class="zh">他們走進大帳篷邊上，一輛漏風的馬車裡。地上散著一些衣物，一堆子彈，一桿土槍。馬毛刷和蹄鐵放在馬車外面。弗朗西斯弓腰鑽進車廂裡，抓過那桿槍。</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"Same rule. You sleep first. I'll wake you."</span>
+        <span class="zh">「老規矩，你先睡。我再叫你。」</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"No. This time you sleep first. Last time you never woke me."</span>
+        <span class="zh">「不行，這次你先睡。上次你就一直沒喊我。」</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"That's an order, Arthur."</span>
+        <span class="zh">「這是命令，亞瑟。」</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"Not listening."</span>
+        <span class="zh">「不聽。」</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">Francis sighed helplessly and leaned against the carriage wall. Arthur curled his legs and sat beneath the open carriage door. His eyes shattered into countless sentinels, watching the town, the tent, and the horizon. His lean body tensed, like an arrow drawn on a bowstring, ready to fly. Francis quietly moved over, lifted his head, and laid it on Arthur's lap.</span>
+        <span class="zh">弗朗西斯無奈地嘆了口氣，靠在車廂壁上。亞瑟曲起腿，坐在敞開的馬車車門下。他的眼睛碎裂成無數個哨兵，注意著城鎮，帳篷，以及地平線。瘦削的身體緊繃起來，像一根在弦上蓄勢待發的箭。弗朗西斯悄悄挪過去，抬起腦袋，放在他的大腿上。</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"You know, Arthur? I still dream about the battlefield sometimes. No matter what I do to atone, I'm still a deserter."</span>
+        <span class="zh">「你知道嗎？亞瑟。我偶爾還會夢到戰場上的場景，無論我做什麼彌補，我仍是個逃兵。」</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">He stroked his empty trouser leg, as if petting a beloved dog. The detached prosthetic leaned against the carriage wall, like a sharp wooden sword.</span>
+        <span class="zh">他撫摸自己空蕩的褲管，如同在撫摸自己鍾愛的小狗。卸下的假肢靠在車廂壁上，像一柄鋒利的木劍。</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"But anyway. Thank you for keeping the circus for me. I was only a cavalryman for two years. I've been a deserter for the rest of my life."</span>
+        <span class="zh">「不過，不論如何。謝謝你為我守著馬戲團。我只當了兩年的騎兵，餘生都是逃兵。」</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"Stop talking nonsense. Wake me in two hours to take your shift."</span>
+        <span class="zh">「別說胡話了，兩小時後你來接我的班。」</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">Arthur covered his eyes with his hand, urging him to sleep. In the darkness, Francis let out a soft sigh. Then the carriage filled with the sound of even breathing. He was fast asleep. Arthur lowered his head, his gun lying to one side. He reached out and touched the fine lines under his eyes—lines born of exhaustion and worry. Fine lines, and a scar on his forehead, cutting into his pale skin. With trembling care, he leaned down and kissed the hand he had placed over Francis's eyes.</span>
+        <span class="zh">亞瑟把手蓋在他的眼睛上，催促他盡快入眠。弗朗西斯在黑暗中發出一聲輕嘆。緊接著，車廂內響起均勻的呼吸聲。他睡熟了。亞瑟低下頭，槍橫在一邊。他伸出手指，撫摸他眼下那道，因為過度疲累和思慮出現的細紋。細紋，和額頭上一道傷疤。刺進他蒼白的皮膚上。小心翼翼的顫抖中，他俯下身，吻了吻他蓋在弗朗西斯眼睛上的那隻手。</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"Goodnight. Sweet dreams, Francis."</span>
+        <span class="zh">「晚安，做個好夢。弗朗西斯。」</span>
+    </div>
+
+    <div class="section-break">◇</div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">One thing he did too little of was sleep. There was a destructiveness about him that made Arthur's hair stand on end, yet drew him irresistibly. His behaviour also made others uneasy—whether he was laughing, embracing, or kissing a horse. Everything alive was exposed in those mad eyes. When Arthur inadvertently stared at him too long, he would feel a certain unease. The impulses deep within him coursed through his veins like the wings of a moth. He was a great figure of his era, renowned far and wide. Arthur remembered clearly that he had been picked up by Francis when he was in his teens. The night Francis found him, he and the other circus members were on the move. He discovered Arthur under a bridge—he was gnawing on a relatively intact cabbage. When he saw a stranger, he shrank back into the shadow of the bridge, ready to fight or flee. Francis simply took off his coat and wrapped him in it like an infant. He asked if Arthur would come with him. Receiving an affirmative answer, he took him back, let him wash himself, and dressed him in clean clothes, as if wrapping him anew in a white amniotic sac. From then on, he was reborn, travelling the world with Francis. The knife-throwing skill he later prided himself on came from a short, stout old man with two little moustaches. He could blindfold himself and pierce a cherry tree a hundred metres away. Arthur inherited his accuracy but lacked his strength. The old man always told him:</span>
+        <span class="zh">他做得太少的事情是睡覺。他身上有一種毀滅性，令亞瑟毛骨悚然卻心馳神往。他的舉止也讓別人感到不安——無論他大笑、擁抱或是親吻一匹馬。一切活著的東西在那雙瘋狂的眼睛中無處遁形。當亞瑟不慎，盯著他看了太長時間，他會感到一種不安。他內心深處的衝動，在他的血管裡暢流，彷彿蛾子的翅膀。他是他們那個時代赫赫有名的大人物。亞瑟記得很清楚，他是被弗朗西斯撿來的，那時他十幾歲。弗朗西斯發現他的那個夜晚，他和馬戲團的其他成員正在搬家途中。他在橋洞底下發現了他——那時他正啃著一顆相對完整的捲心菜。碰到陌生人，他縮進橋洞的陰影裡，做好了反抗或逃命的準備。而弗朗西斯只是脫下自己的外套，將他像一個嬰兒似的裹起來。他詢問他是否願意跟他走，得到肯定的答覆後將他帶回去，讓他洗乾淨自己的身體。他將乾淨的外衣套在他身上，彷彿重新將他包裹進一片白色的胎衣。他自此獲得新生，跟著弗朗西斯雲遊四海。他後來引以為傲的飛刀技巧來源於一個身材矮小，留著兩撮小鬍子的胖老頭。他可以蒙著眼睛，刺穿百米開外的一棵櫻桃樹。亞瑟繼承了他的準頭，卻缺少那種力量。那老頭總是跟他說：</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"You'll make it. When you love something, or hate something."</span>
+        <span class="zh">「你會做到的。當你愛著什麼，或者恨著什麼的時候。」</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">Francis was the leader among them, their soul. His horse-taming skills, that artful, savage leaping and galloping, had been passed down through the Bonnefoy family for generations. Whenever the whistle and trumpet sounded, he would come charging up from backstage on horseback, wearing that extravagant gold-embroidered tailcoat, leaping through the fiery ring suspended high above the tent. The flames would brush the horse's mane, burning all the way into his blood vessels. He was not afraid of scraping his knees or shattering his radius. Pain seemed like a quotation from the book of his life. When he landed steadily, he would stand tall and recite Don Quixote<a href="#fn4" class="footnote-link" id="ref4"><sup>④</sup></a> to the audience, waiting for the expected wave of booming laughter. After the performance, he would draw the curtain and let Arthur apply cold herbal paste to his exposed joints. Only in those moments did he truly belong to Arthur. The rest of the time, he belonged to some higher calling. When he learned of his country's fall, he immediately went to war, riding his beloved Achilles. The horse had come to him as a gift when he was ten years old. Now in its prime, he believed their minds were one. His circus had once had four horses, their gallop like thunder. In the end, they died or were wounded.</span>
+        <span class="zh">弗朗西斯是他們之間的領頭羊，他是他們所有人的靈魂。他的馴馬技巧，那種藝術般的野蠻跳躍和狂奔，在波諾弗瓦家世代相傳。只要哨聲與小號聲一響起，總有他穿著那件誇張的金絲刺繡燕尾服，騎著馬從後台衝上來，越過高高懸掛在帳篷頂端的火圈。那陣火，掠過近在咫尺的馬的鬃毛。一直燃燒進他的血管。他毫不害怕膝蓋受傷，橈骨摔得粉碎。彷彿疼痛是出自他人生之書的一句引文。待他穩穩落地，他昂首站定，對著台下大聲念誦《堂吉訶德》<a href="#fn4-zh" class="footnote-link" id="ref4-zh"><sup>④</sup></a>，等待他預期中，觀眾席那陣如潮水般的洪亮大笑。演出結束，他拉上幕布，等著亞瑟把冷冰冰的藥草敷在他清晰可見的關節處。只有在這個時刻，他才像真正屬於亞瑟。其餘的時間，他都屬於某種更高層次的追求。他在得知祖國淪陷之後馬上上了戰場，騎著他最愛的阿喀琉斯。那匹馬在他十歲時作為禮物來到他身邊。如今正值壯年。他相信自己與牠心意相通。他的馬戲團原來有四匹馬，跑起來聲如驚雷。後來死的死傷的傷。</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">After he left, Arthur never thought he would see him again. War is always cruel in how it takes lives. When the war broke out, they were in central Poland, planning to head south all the way to Greece. During the two years Francis was gone, he dragged the tent and hid among the dense net of green formed by tall hills and tree canopies, like an insect hiding beneath overlapping leaves. In those years of exile, many belongings were abandoned—some too heavy, some useless. Some, with the departure and death of members, were left forever in some frozen moment of time. Now, all he had left were the carriage, the tent, the knives he once used in performance, and Francis's flamboyant riding costume. He finally ended up in Lublin,<a href="#fn5" class="footnote-link" id="ref5"><sup>⑤</sup></a> in southeastern Poland, where he had only one cart horse left, exhausted from constant travel. Most of the time, he hid in a birch forest facing the open wilderness. It was so remote that even locals rarely came. He waited, until he had used up all his energy—as if no more blood flowed through his heart. He wished something would naturally carry him away. But if he ran into the military, he would blow their heads off.</span>
+        <span class="zh">他走後，亞瑟從沒想過還能再見到他。戰爭對於生命的掠奪向來殘酷。戰爭爆發時，他們正在波蘭中部，並計劃一路南下到希臘去。弗朗西斯消失的兩年間，他拉著帳篷，在高大的山丘和樹冠擎起的綠色密網間躲藏，宛如一隻昆蟲躲在重疊的葉子下。流亡的幾年間，無數行李被丟下。有的太重，有的沒用。有的隨著成員的離開和死去，永遠留在了某個凝固的時空裡。如今，他身邊只有馬車、帳篷、他曾經表演時用的刀，以及弗朗西斯那件誇張的馭馬服。他最後停留在波蘭東南部的盧布林<a href="#fn5-zh" class="footnote-link" id="fn5-zh"><sup>⑤</sup></a>，那時他已經只剩一匹拉車馬，疲於奔波。大多數時間，他躲在一片正對曠野的白樺林裡。這裡十分偏僻，連本地人都難尋。他等待著，終於用盡了能量——彷彿心臟裡已經沒有血液湧動。他希望有什麼東西能自然而然地帶走他。但如果碰到軍隊，他一定會把他們的腦袋開花。</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">One night in the winter of 1941, Arthur was woken by a neigh. He gripped his small knife tightly, silently praying that the visitor was not a Nazi cavalryman. He took a deep breath, his body trembling as he hid behind the carriage, his palm soaked with cold sweat. But then, when he turned his head, a familiar chestnut horse stepped into the corner of his vision, galloping toward him. Its mane shone like metal under the countless stars. On its back rode a man. Francis was covered in blood, a bandage wrapped around one knee.</span>
+        <span class="zh">1941年冬天的一個夜晚，亞瑟被一陣嘶鳴聲吵醒。他握緊了手中的小刀，暗自祈禱來者不是納粹的騎兵。他深吸一口氣，躲在馬車車廂背後的身體微微顫抖，手心被冷汗浸濕。但是，但是當他側過頭，卻有一匹熟悉的棗紅駿馬踏進他的餘光，向他奔來。牠的鬃毛在不可計數的繁星底下閃著金屬似的光。他的背上馱著一個男人。弗朗西斯渾身是血，一條腿的膝蓋處包著繃帶。</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"Horses are spiritual creatures. No matter where you send them, no matter how far they run, they can always find their way home."</span>
+        <span class="zh">「馬是有靈性的生物，無論你把它們放去何方，牠們跑得多遠，總能找到回家的路。」</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">When Francis regained consciousness, it was three days after Achilles's return. Arthur sat beside him, plucking the feathers from a wild bird he had caught. Francis screamed awake, gripping Arthur's hand so hard it almost left marks.</span>
+        <span class="zh">當弗朗西斯恢復知覺，已經是阿喀琉斯回來的三天後。亞瑟在他身邊，給捕來的野禽拔毛。弗朗西斯尖叫著醒過來，握緊亞瑟的手，幾乎抓出血痕。</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"That wasn't my blood. That wasn't my blood. I ran, Arthur. So many people died before my eyes, and I ran."</span>
+        <span class="zh">「那不是我的血，那不是我的血。我逃了，亞瑟。那麼多人死在我面前，我逃了。」</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">His gaze was hollow, showing no joy or surprise at their reunion. Driven by intense curiosity, he pressed Francis about his experiences late into the night. He had joined the Soviet militia.<a href="#fn6" class="footnote-link" id="ref6"><sup>⑥</sup></a> Of all the prisoners, only he had survived. Only because he looked different from them—a "respectable Western prisoner of war." After he returned to him, the first few months were plagued by nightmares. He constantly relived the scene of his comrades dying before him, breaking out in cold sweat, looking like a man with malaria. Arthur touched his trembling spine. He knew well that what grew in that heavy heart was not fear. He could not, as he had imagined, be a hero, rescuing the horse and those people from his homeland. This went on for months. One night, wearing his tattered tailcoat, he had Achilles carry him out. Arthur was woken by the sound of hooves; he had vanished. Full of worry and expectation, like awaiting a final judgment, he waited for his return. If he wanted to end his own life, he would not blame him. But he was even more unwilling to believe that he was a coward who could not face the past. Time passed slowly. One hour. Two hours. The pocket watch he carried had long stopped working. But during the two years he had lived alone, he had developed the ability to tell time just by looking at the moon. Compared to a clock, the error was never more than two minutes. Three hours later, he heard Achilles's hoarse neigh again. It was now midnight. Francis held the reins firmly with one hand, and with the other, he clutched something wrapped in his cape. He flicked the stray hair from his forehead, revealing a hideous wound there. In his deep eye sockets, two purple flames blazed. The moment Arthur was caught in his gaze, he imagined a vulture—a fierce bird, the eyes of youth. Achilles leapt, clearing a tree root that pierced the ground. Francis leaned down, guarding what he held even more closely. A smile broke across his face, his cheeks flushed, as if he were drunk. Before Arthur, he stopped. Carefully, he untied his cape and handed what was inside to Arthur. Arthur took it and held it in his arms—it was an infant in swaddling clothes, waking with a frown after the journey.</span>
+        <span class="zh">他目光空洞，似乎並未對他們的重逢表達任何的喜悅與驚訝。懷著極度的好奇，他追問弗朗西斯的經歷直至深夜。他參加的是蘇聯民兵<a href="#fn6-zh" class="footnote-link" id="fn6-zh"><sup>⑥</sup></a>。所有的俘虜中，只有他活了下來。只因他長相與他們不同，他是一個「值得尊敬的西方戰俘」。他回到他身邊後，開始的幾個月總是飽受夢魘的困擾。他不停重複著他戰友死在他面前的場景，冷汗直冒，使他看起來像一個瘧疾發作的人。亞瑟輕觸他顫抖著的脊骨。他很清楚，他那顆沉重的心臟中孕育的不是恐懼。他無法似他的想像一樣，做一個英雄，從故土上救走那匹馬，那些人。這樣的日子持續了幾個月。某天夜晚，他穿著那身破破爛爛的燕尾服，讓阿喀琉斯帶著他衝了出去。亞瑟被馬蹄聲驚醒，他已不知去向。滿懷著擔憂與期待，像等待最終審判的降臨，他期盼他歸來。如果他要結束自己的生命，他不怨他，只是他更不願意相信他是一個不敢直面過去的懦夫。時間過得很慢，一個鐘頭，兩個鐘頭。他隨身帶著的那塊懷錶早已不再走動。只是獨自生活的兩年間，他養成了抬頭看一看月亮，就能判斷出時間的本領。如果拿去跟鐘錶比對，誤差絕不會超過兩分鐘。三個鐘頭之後，他又聽到阿喀琉斯那聲低啞的嘶鳴。此時正是午夜，弗朗西斯一隻手牢牢牽著韁繩，另一隻手牢牢抱著斗篷裡裹著的什麼東西。他將額前的碎髮甩到腦袋後面去，露出額頭上那道猙獰的傷口。在他深邃的眼眶裡，兩團紫色的火焰熊熊燃燒。亞瑟在被他盯住的一瞬間，想像到一隻禿鷲般兇猛的鳥，青春的眼睛。阿喀琉斯縱身一躍，跳過穿透地面的一條樹根。而弗朗西斯俯下身，將懷中的東西護得更緊。他綻開一個笑容，臉色紅潤，彷彿剛剛喝得酩酊大醉。在亞瑟面前，他停了下來。小心翼翼地解開斗篷，將裡面的東西遞給他。亞瑟接過來，抱在懷裡——那是一個襁褓中的嬰兒，經歷了旅途奔波，正皺著眉頭醒來。</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"They've started building a concentration camp in Bełżec.<a href="#fn7" class="footnote-link" id="ref7"><sup>⑦</sup></a> The child's parents were taken away. He was hidden in a rice jar. An orphan."</span>
+        <span class="zh">「貝烏熱茨<a href="#fn7-zh" class="footnote-link" id="ref7-zh"><sup>⑦</sup></a>開始建集中營了。這孩子的父母被帶走了。他被放在米缸裡，是個孤兒。」</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">Francis's smile faded. The air became stifling. A giant python of hatred lay coiled beneath his unflappable violet eyes, waiting to strike. From that day on, he began bringing orphans from nearby towns, as well as children whose parents could not save them, and settled them in the reopened circus tent. The children were always frightened by the sound of hooves, so only late at night, when all was quiet, would he release Achilles's restless limbs from the makeshift stable and run under the moonlight. Sometimes, as he passed Arthur, he would wrap an arm around his waist and hold him firmly against his chest—just as he did with every child. The horse's four hooves would land together the moment Arthur sat on him, then suddenly lift again. On some moonlit nights, Arthur sat on horseback, knife in hand, searching for pheasants hiding in the low shrubs. The moment his wrist flicked, it was like releasing a bolt of lightning. The pheasant's wings beat silently in the air, then it fell. He could now hit a pheasant's eye from hundreds of paces away. The Prussian that Francis had met in the militia, Gilbert, along with his comrades, would disguise the children as a choir and a small orchestra and send them to central Europe, which was relatively safe from the war. Gilbert was a member of the White Rose<a href="#fn8" class="footnote-link" id="ref8"><sup>⑧</sup></a> resistance. This went on for over a year. Francis, Arthur, and Gilbert became known to the children as the Three Musketeers. But Francis always denied this; he called himself Don Quixote.</span>
+        <span class="zh">弗朗西斯收起笑容，空氣頃刻間變得悶熱。一條被恨意構築而成的巨蟒，在他那雙處變不驚的紫羅蘭色雙眼下蟄伏著，伺機而動。從那天開始，他便從周邊的鎮子上帶回孤兒，以及父母無力拯救的孩子，將他們安頓在重新開張的馬戲帳篷裡。孩子們聽到馬蹄聲總是很害怕，因此，他只有在夜深人靜的時候，會把阿喀琉斯那躁動不安的四肢從臨時搭起的馬棚底下解放出來，在月光下奔跑。有時，他會在經過亞瑟身邊的一瞬間摟住他的腰，牢牢將他護在自己的胸前——就像他對每個孩子做的那樣。馬的四蹄聲會在他坐上來的瞬間一齊落下，然後又突然回升。某些夜晚的馬背上，亞瑟拿著刀，尋找矮灌木叢裡躲藏的山雞，手腕甩動的瞬間，如同放出一束雷電。山雞的翅膀在空氣中無聲拍打。隨後倒下。他現在能在幾百步之外的地方一舉刺中山雞的眼睛。弗朗西斯在民兵隊時認識的那個普魯士人，基爾伯特，會和他的同伴一起，把孩子們偽裝成唱詩班與合奏樂隊，送去相對免於戰火的中歐。他是「白玫瑰」組織<a href="#fn8-zh" class="footnote-link" id="ref8-zh"><sup>⑧</sup></a>的一員。這種日子過了一年多，弗朗西斯、亞瑟、基爾伯特，成了孩子們口中的「三個火槍手」。但弗朗西斯總否認這一點，他稱自己為堂吉訶德。</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"Life is but a dream. By day we dream of comfort, by night of glory. In the end, it all dissolves into smoke and shadow."</span>
+        <span class="zh">「人生在世就是做夢，晝想安樂，夜思榮升，到得頭來，煙雲空影。」</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">Whenever he mounted his horse to perform the routines from his circus days for the children, he would repeat this line. His lower leg was now a thin wooden stick. Some dance steps... some stunts he had once loved—he would never have the chance to perform them again.</span>
+        <span class="zh">他偶爾騎上馬，給孩子們表演在馬戲團時那一套時總是重複著這一句台詞。他的小腿成了一根細細的木棍。有些舞步……一些他所熱衷的特技，他再無機會表演了。</span>
+    </div>
+
+    <div class="section-break">◇</div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">In October 1943, they celebrated Sukkot<a href="#fn9" class="footnote-link" id="ref9"><sup>⑨</sup></a> with some Jewish children. Arthur managed to find date palm branches, myrtle, and willow. He climbed a tree, cut the branches with a knife, and tied them together. Only the etrog fruit was nowhere to be found. They used oranges instead. The children over thirteen held the two items in their hands and walked in procession beneath the stable. Francis stood to one side, holding Achilles, watching with interest. He always felt at ease when immersed in a foreign culture. If not for the war, they might truly have reached Greece, diving into the historical sea built by philosophers, thinking of nothing. Once an easy dream, now a luxury. After the waving ceremony, he settled the children to sleep. Amid the soft sounds of breathing, he leaned against the tent and let out a long sigh. In November, these eight children would be sent to Hungary. They would be the last eight.</span>
+        <span class="zh">1943年10月，他們為一些猶太孩子慶祝了住棚節<a href="#fn9-zh" class="footnote-link" id="ref9-zh"><sup>⑨</sup></a>。亞瑟設法找到了棗椰樹、香桃木、柳樹。他爬上樹去，用小刀割下它們的枝條，捆紮在一起。只有香櫞果實無處可尋。他們用了橘子代替。13歲以上的孩子把這兩樣東西拿在手裡，在馬棚下繞行。弗朗西斯牽著阿喀琉斯站在一旁，饒有興致地看著這一切。他在置身於異國文化的時候總是感觉很舒適。如果沒有戰爭的阻攔，他們很可能真的能到達希臘，跳進哲人所構築的歷史海裡，什麼都不想。這曾經是一個好實現的想法，如今成了奢望。搖動儀式結束後，他又哄著孩子們睡下。在一片輕巧的呼吸聲中，他靠在帳篷上，長出了一口氣。11月，這八個孩子將被送往匈牙利，這應該是最後八個孩子了。</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"Hey, Arthur."</span>
+        <span class="zh">「嘿，亞瑟。」</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">They were standing side by side. Arthur idly whittled a willow branch with his knife, sharpening it to a fine point. Distracted, the fragile branch snapped in his hand. He pursed his lips and threw it on the ground. Francis still stood downwind, smoking. Of the damp cigarettes in his case, only one remained.</span>
+        <span class="zh">他們此時正並排站著。亞瑟百無聊賴地拿小刀削著一根柳條。把柳條削得又尖又細。一個沒注意，那脆弱的柳枝在他手中斷裂。他撇了撇嘴，把柳條扔在地上。弗朗西斯仍舊站在下風口，吸著菸。菸盒裡受潮的菸——如今只剩一根。</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"Do you think I could get Gilbert to get me some more tobacco?"</span>
+        <span class="zh">「你說，我能讓基爾伯特給我再弄點菸草來嗎？」</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"Don't talk nonsense."</span>
+        <span class="zh">「別說胡話了。」</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">Arthur walked up to him and covered his hand with his own. His tone was light. He reached out a finger and took the last cigarette from the case, putting it between his lips. Then, without hesitation, he leaned close to Francis, lowered his eyes, found the burning tip in Francis's mouth, and pressed his own cigarette against the glowing orange ember. In that instant, their eyes met, exchanging silent words in the quiet. With a soft hiss, the cigarette lit. Arthur took a deep drag, then frowned and threw it down, stamping it out.</span>
+        <span class="zh">亞瑟走近他身旁，將手蓋在他的手上。他的語氣帶上了輕鬆，伸出手指，抽走了菸盒裡最後一根菸，叼在嘴裡。接著，他毫不猶豫地靠近弗朗西斯，垂下眼睛，找準他口中正燃燒著的菸頭，將自己口中的菸抵在橘亮的火星上。這個瞬間，他與他四目相對，在沉默中交換無聲的語言。嘶的一聲，菸燃了。亞瑟深吸了一口，旋即皺起眉頭，把菸丟下去踩滅。</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"It's too harsh."</span>
+        <span class="zh">「真嗆。」</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"What a waste."</span>
+        <span class="zh">「真浪費。」</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"I mean it, Francis. You don't need to smoke anymore. The war is almost over. I can feel it."</span>
+        <span class="zh">「我說真的，弗朗西斯，你不需要抽菸了。戰爭快要結束了。我能感覺到。」</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"Oh? Do you feel it in your heart, or in your stomach?"</span>
+        <span class="zh">「哦？是從你心裡感覺到的，還是從你胃裡感覺到的？」</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"No, Francis. It's you who makes me feel it."</span>
+        <span class="zh">「不是，弗朗西斯，是你讓我感覺到的。」</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">Francis chuckled softly at this, leaning back against the stable. He tilted his head slightly, took the cigarette from his mouth, and flicked off the excess ash.</span>
+        <span class="zh">弗朗西斯聞言輕笑一聲。向後斜倚在馬棚上。他微微側了側頭，將菸從口中拿下來，在空中抖掉多餘的菸灰。</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"Seriously, Arthur. After we send the children away, let's go to Greece."</span>
+        <span class="zh">「說真的，亞瑟。把孩子們送走之後，我們再去希臘吧。」</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"Alright. It's not like I have anywhere else to go."</span>
+        <span class="zh">「好啊。反正我無處可去。」</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">Arthur lifted Francis's arm with one hand and slipped under it. His hand rested on Francis's waist. A silent waltz under the moonlight. Sometimes their steps faltered—Francis's missing leg throwing him off balance. Their heels touched, then pulled away. Where their skin met, it was always cool. He plucked Arthur's green eyes and set them beneath his own, like a murderer's collection. Emerald eyes. Francis pulled him closer, warming Arthur's body with his own, like two people trapped on an ice sheet, encouraging each other with the sound of their breathing in an endless white desert. Suddenly, he placed both hands on Arthur's waist and lifted his light body above his head like a leaf. In the air, Arthur closed his eyes. The lines of moonlight became high-frequency trembling strings, plucked on his body. In that moment, he was love and music. Francis set him down and smiled.</span>
+        <span class="zh">亞瑟用一隻手抬起弗朗西斯的胳膊，鑽進他的臂彎中。他的手放在他的腰上。月光下一支靜默的華爾滋。偶爾扭曲的舞步——那是弗朗西斯的小腿正在失衡。他們的腳跟碰在一起，又馬上移開。皮膚相觸之處總是很涼。他把他綠色的眼睛摘下來放進在自己的眼底。像某個殺人魔的收藏。祖母綠般的雙眼。弗朗西斯將他拉得更近，用自己的身體溫暖亞瑟的身體，就像兩個被困在冰原裡的人，在無盡的白色荒漠中用彼此的呼吸聲打氣。他突然用雙手扶住亞瑟的腰，將他輕盈的身體如一片葉子般舉過頭頂。亞瑟在空中閉上眼睛，月光的線條變成高頻率顫抖著的琴弦，在他的身上撥響。這個瞬間，他是愛和音樂。弗朗西斯把他放在地下，露出一個微笑。</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"Arthur, I—"</span>
+        <span class="zh">「亞瑟，我……」</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">That smile lingered on Francis's face, flying off with his gaze toward the distance, but suddenly dropped to the ground. His expression grew grave, his violet eyes trembling slightly. Arthur frowned, overcome by a sense of foreboding. He followed Francis's gaze—the horizon was on fire. Gunfire and explosions drew closer and closer, until they seemed to pound against their eardrums. Arthur gripped Francis's hand.</span>
+        <span class="zh">那微笑留滯在弗朗西斯的臉上，隨著他投向遠處的目光飛去，卻在某一時刻突然掉落在地上。他的神色凝重起來，紫羅蘭色的雙眼微微顫抖。亞瑟皺眉，被不祥的預感佔據身心。他順著他的目光看去，遠處的地平線燃燒起來。炮聲與槍聲如擂鼓，越來越近，最後彷彿在他們的耳膜上敲擊。亞瑟抓緊弗朗西斯的手。</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"Francis, what's going on?"</span>
+        <span class="zh">「弗朗西斯，這是怎麼回事。」</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"The Nazis are here. We have to leave right away."</span>
+        <span class="zh">「納粹來了，我們必須馬上走。」</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"How could they come so fast? Wasn't everything fine?"</span>
+        <span class="zh">「怎麼會這麼快？不是一直都好好的嗎？」</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"There's no time. Wake the children."</span>
+        <span class="zh">「來不及了，把孩子們叫起來。」</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">Francis moved his body, ducked into the tent, and carried the children into the carriage one by one. The cramped carriage became instantly crowded. The children were still rubbing their eyes. He pushed Arthur inside too, occupying the last space. Then he turned to get Achilles.</span>
+        <span class="zh">弗朗西斯活動身子，鑽進帳篷，將孩子們一個一個抱進馬車車廂裡。狹窄的車廂頃刻間擁擠無比。孩子們還揉著眼睛。他將亞瑟也塞進去，佔據了最後一塊地方。接著，他轉頭去牽阿喀琉斯。</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"Francis, careful!"</span>
+        <span class="zh">「弗朗西斯，小心！」</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">A soldier with a gun suddenly rushed out, speaking in a language Arthur could not understand. Arthur grabbed a knife. There was no time to think. When he came to his senses, the soldier had fallen to the ground, the knife embedded in his forehead. His mouth was open, crying for help into the dark, silent night.</span>
+        <span class="zh">一個拿著槍的士兵突然衝出來，嘴裡念著難懂的語言。亞瑟抓起刀，幾乎沒有思考的餘裕。當他回過神來，那個士兵已經倒在地上，眉心插著那把尖刀。他的嘴張著，朝暗黑死寂中厲聲呼救。</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"They've lost their power. They're retreating."</span>
+        <span class="zh">「他們失勢了，正在撤退。」</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">The joy brought by this news was fleeting. More German soldiers appeared on the horizon. Now they were mute beasts. Arthur gritted his teeth; he had only four knives left. Close combat was unrealistic. At the same time, the blinding headlights of a car lit up in the distance. Some kind of terror was descending.</span>
+        <span class="zh">這個消息帶來的驚喜轉瞬即逝。更多的德國兵出現在地平線上，現在他們是喑啞的野獸。亞瑟咬咬牙，手中的刀只剩四把。近身作戰太不現實。同時，遠處亮起汽車雪亮的燈光。某種恐怖正在降臨。</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"Damn it. It seems the White Rose has a traitor. They're going to wipe us all out."</span>
+        <span class="zh">「可惡，看來『白玫瑰』出了內鬼。他們要對我們趕盡殺絕。」</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"Then let's go quickly, Francis. There's no time."</span>
+        <span class="zh">「那我們快走，弗朗西斯，來不及了。」</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">Francis lowered his head, ignoring his urgent calls. He looked at Francis's face beneath his golden hair—a face that had suddenly grown so arrogantly wondrous. His violet eyes lifted gently, looking straight into Arthur's eyes, using his gaze to reassure him. He gave a sweet smile. Then he closed the carriage door and tied Achilles's reins to the carriage.</span>
+        <span class="zh">弗朗西斯低下頭，無視他急切的呼喚。他看著他在金色長髮下那張遽然狂妄得叫人驚嘆的臉。紫羅蘭的眼睛輕輕抬起，直直地看向亞瑟的眼睛，正用凝望的目光使他安心。他露出一個甜蜜的微笑。接著，他關上馬車車門，將阿喀琉斯的韁繩綁在馬車上。</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"Francis, are you insane? Don't make a pointless sacrifice!"</span>
+        <span class="zh">「弗朗西斯，你瘋了？不要做無謂的犧牲！」</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"You have to get to Chełm.<a href="#fn10" class="footnote-link" id="fn10"><sup>⑩</sup></a> The Home Army is there. Head east and you can seek help from the Red Army."</span>
+        <span class="zh">「你們得到海烏姆<a href="#fn10-zh" class="footnote-link" id="fn10-zh"><sup>⑩</sup></a>去，波蘭家鄉軍在那。一直向東走，可以向紅軍尋求幫助。」</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"Get on the horse. We'll go together."</span>
+        <span class="zh">「你快上馬，我們一起走。」</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">Francis pressed his forehead to Achilles's head. The horse, which shared his heart, obediently lowered its head, hot tears streaming from its closed eyes.</span>
+        <span class="zh">弗朗西斯把額頭貼在阿喀琉斯的頭上。那匹與他心意相通的駿馬聽話地低頭，緊閉的雙眼中熱淚不止。</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"I'm not crazy. The other horses aren't fast enough. There's no time. Besides, this is all forest. You need to hide. Taking my useless leg would only be a burden. Remember to take the path with many fallen leaves. Your footprints won't be found."</span>
+        <span class="zh">「我沒瘋，原來那匹馬跑不快的，來不及了。何況這裡都是林地，你們需要躲藏，帶上我這條廢腿，只會是累贅。記得走落葉多的那條路，腳印不會被發現。」</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">He was eerily calm, as if telling the story of someone else, unrelated to him. He stroked Achilles's head again and whispered in his ear. Then he turned. In the moonlight's shadow, his gaze swept lightly across Arthur's face, as if memorising every line and detail.</span>
+        <span class="zh">他異常冷靜，彷彿在說與他無關的，另一個人的故事。他再次摸了摸阿喀琉斯的腦袋，在翹起的馬耳旁低語。接著，他轉頭。在月光的影子中，他的目光輕掃過亞瑟的臉。彷彿要記住那張臉上的每一個溝壑與細節。</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"I have to hold them off. I also have to atone. Thank you for being willing to stay with me, Arthur."</span>
+        <span class="zh">「我得去拖住他們，還得去贖罪。謝謝你願意陪著我，亞瑟。」</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">He turned his back to him. Raising the hand that held the homemade gun, he waved it in the gunpowder-scented air, as if taking a final bow.</span>
+        <span class="zh">他轉身，留給他一個背影。高舉起那隻握著土槍的手，在充斥著火藥味的空氣中揮了揮，像是進行一場盛大的謝幕。</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"You must know that heaven placed me in this iron age to restore the golden age on earth—what men call the age of light. I am the one chosen to bear hardships, perform great deeds, and achieve mighty feats... I was born at this very time to achieve deeds greater and rarer than any, beside which the brightest of theirs will pale and dim. Life is but a dream. By day we dream of comfort, by night of glory. In the end, it all dissolves into smoke and shadow."</span>
+        <span class="zh">「你想必知道，老天把我生在這黑鐵時代，是為了在世上恢復黃金時代，就是人們常說的光明時代。我這人是專門來承擔艱難險阻、建樹豐功偉績的。……我生逢其時，定要建立更偉大罕見的武功，讓他們當中最光彩奪目者也相形見絀、黯然失色。人生在世就是做夢，晝想安樂，夜思榮升，到得頭來，煙雲空影。」</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">He whistled. Achilles began to gallop. The soldiers, the car—they were now only a few hundred metres from Francis. But Achilles ran like the wind. In the dense thicket, no one noticed their disappearance. Arthur held a crying child, humming a lullaby to soothe him. His gaze now hung in the dense treetops, falling on the place where Francis stood—he was holding the homemade gun, hiding in the shadow of a willow. As if sensing something, Francis looked far in the direction the carriage was heading. One of his eyes was stained with blood. Arthur could not see his face at all, only his satisfied smile. That smile swayed in his vision, slowly blurring into a patch of red—the colour of his blood, the colour of the horse's back, the colour of his cape.</span>
+        <span class="zh">他吹響了哨子。阿喀琉斯開始狂奔。那幾個士兵，那輛汽車，此時距離弗朗西斯僅有幾百米。但阿喀琉斯跑得飛快。在茂密的樹叢中，沒人發現他們消失了。亞瑟抱著一個哭泣不止的孩子，哼唱著搖籃曲安撫他。他的目光，此時懸吊在茂密的樹頂，落在弗朗西斯所在的地方——他正拿著土槍，躲在柳樹的陰影裡。彷彿感應到了什麼，他遠遠地朝馬車前進的方向看了一眼。他的一隻眼睛染著血。亞瑟完全看不着他的臉，只能看到他那滿足的笑容。那個笑容在他的視野中晃動著，逐漸模糊成一片紅色，他血的顏色，馬背的顏色，他那件斗篷的顏色。</span>
+    </div>
+
+    <!-- 注释分割线 -->
+    <hr class="divider">
+
+    <!-- 注释部分 -->
+    <div class="footnote">
+        <div class="footnote-item" id="fn1">
+            <span class="en"><a href="#ref1" class="footnote-link">①</a> Rouge Royale: Literally "royal red" or "all red," signifying complete victory or success in every aspect, commonly used in business, competition, etc. However, the inspiration here comes from Guerlain's men's perfume "Rouge Royale." The fragrance was inspired by the red vests worn by equestrians in horse riding.</span>
+            <span class="zh"><a href="#ref1-zh" class="footnote-link">①</a> 滿堂紅，形容全面勝利或處處成功，常見於商業、競賽等場景。但此處靈感來源為嬌蘭的男士香水「滿堂紅」。這款香水的靈感來自馬術運動中騎手所穿的紅馬甲。</span>
+        </div>
+        <div class="footnote-item" id="fn2">
+            <span class="en"><a href="#ref2" class="footnote-link">②</a> Friesian horse: An ancient horse breed originating from Friesland in the Netherlands, known for its black coat, tall stature, arched neck, and flamboyant gait. Often used in classical riding, ceremonies, and circus performances. Historically used for cavalry and noble ceremonies, symbolising strength, discipline, and noble bloodline.</span>
+            <span class="zh"><a href="#ref2-zh" class="footnote-link">②</a> 弗里斯蘭馬（Friesian horse），原產於荷蘭弗里斯蘭地區的古老馬種，以通體黑色、體型高大、頸部拱起、步態華麗著稱，常用於古典馬術、儀仗與馬戲表演。歷史上常被用於騎兵與貴族儀式，象徵力量、紀律與高貴的血統。</span>
+        </div>
+        <div class="footnote-item" id="fn3">
+            <span class="en"><a href="#ref3" class="footnote-link">③</a> Achilles: One of the greatest heroes in Greek mythology, the central figure of the Iliad. His mother Thetis dipped him in the River Styx, leaving only his heel untouched—his fatal weakness. "Achilles' heel" symbolises the unavoidable fatal flaw of a hero.</span>
+            <span class="zh"><a href="#ref3-zh" class="footnote-link">③</a> 阿喀琉斯（Achilles），希臘神話中最偉大的英雄之一，《伊利亞特》核心人物。因母親忒提斯將其浸入冥河，僅腳踵未被河水浸潤，成為致命弱點。「阿喀琉斯之踵」象徵英雄不可避免的致命缺陷。</span>
+        </div>
+        <div class="footnote-item" id="fn4">
+            <span class="en"><a href="#ref4" class="footnote-link">④</a> Don Quixote: A novel by Spanish author Miguel de Cervantes (1605–1615). The protagonist, Don Quixote, is obsessed with knight-errantry, mistaking reality for epic adventure, symbolising an idealistic, comically noble loser. The line "Life is but a dream..." appears in Part II of Don Quixote, repeatedly quoted to emphasise the illusion of life and the transience of fame.</span>
+            <span class="zh"><a href="#ref4-zh" class="footnote-link">④</a> 《堂吉訶德》為西班牙作家塞萬提斯所著長篇小說（1605–1615）。主人公堂吉訶德沉溺騎士幻想，將現實誤認為史詩冒險，象徵理想主義、滑稽而崇高的失敗者形象。「人生在世就是做夢，晝想安樂，夜思榮升，到得頭來，煙雲空影。」出自《堂吉訶德》第二部，反覆被引用以強調人生虛幻、功名無常。</span>
+        </div>
+        <div class="footnote-item" id="fn5">
+            <span class="en"><a href="#ref5" class="footnote-link">⑤</a> Lublin: An important city in southeastern Poland. During WWII, it was a Nazi-occupied area with several concentration camps and transit facilities nearby, a core region of Operation Reinhard.</span>
+            <span class="zh"><a href="#ref5-zh" class="footnote-link">⑤</a> 盧布林（Lublin），位於波蘭東南部的重要城市。二戰期間為納粹佔領區，附近設有多處集中營與中轉設施，是「萊因哈德行動」的核心區域之一。</span>
+        </div>
+        <div class="footnote-item" id="fn6">
+            <span class="en"><a href="#ref6" class="footnote-link">⑥</a> Soviet militia: Irregular armed forces active in Eastern Europe and Soviet-occupied areas during WWII, with complex membership including local residents, escaped prisoners of war, and foreign volunteers.</span>
+            <span class="zh"><a href="#ref6-zh" class="footnote-link">⑥</a> 蘇聯民兵，二戰期間活躍於東歐與蘇聯佔領區的非正規武裝力量，成員構成複雜，包含本地居民、戰俘逃亡者與外籍志願者。</span>
+        </div>
+        <div class="footnote-item" id="fn7">
+            <span class="en"><a href="#ref7" class="footnote-link">⑦</a> Bełżec: An extermination camp established by the Nazis in southeastern Poland. Between 1942 and 1943, approximately 430,000 Jews were murdered there. It functioned primarily as a direct killing facility rather than a labour camp.</span>
+            <span class="zh"><a href="#ref7-zh" class="footnote-link">⑦</a> 貝烏熱茨（Bełżec），納粹設立的滅絕營之一，位於波蘭東南部，1942–1943年間約有43萬猶太人在此遇害。主要作為直接屠殺設施而非勞改營。</span>
+        </div>
+        <div class="footnote-item" id="fn8">
+            <span class="en"><a href="#ref8" class="footnote-link">⑧</a> White Rose: A German anti-Nazi student resistance organisation during WWII, whose core members included Hans Scholl, Sophie Scholl, and others. They distributed leaflets, appealed to conscience and non-violent resistance. Most of its members were eventually executed. The text extends its network to a Central European underground assistance system.</span>
+            <span class="zh"><a href="#ref8-zh" class="footnote-link">⑧</a> 「白玫瑰」（White Rose）組織，二戰期間德國境內的反納粹學生抵抗組織，核心成員包括漢斯·朔爾、索菲·朔爾等。以散發傳單、呼籲良知與非暴力反抗著稱，最終成員多被處決。文本中將其網絡延伸至中歐地下協助體系。</span>
+        </div>
+        <div class="footnote-item" id="fn9">
+            <span class="en"><a href="#ref9" class="footnote-link">⑨</a> Sukkot: One of the three major pilgrimage festivals in Judaism, commemorating the Israelites' dwelling in temporary shelters during their exodus from Egypt, emphasising exile, refuge, and temporary dwelling. The "four species" for Sukkot include:<br>
+            - Date palm branch (Lulav): righteousness, victory<br>
+            - Myrtle (Hadass): justice, good deeds<br>
+            - Willow (Aravah): humility, mourning<br>
+            - Citron (Etrog): heart and faith<br>
+            In the text, oranges are used as a substitute for the citron.</span>
+            <span class="zh"><a href="#ref9-zh" class="footnote-link">⑨</a> 住棚節（Sukkot），猶太教三大朝聖節之一，紀念以色列人出埃及後在曠野居住帳篷的經歷，強調流亡、庇護與臨時居所。住棚節「四樣植物」包括：<br>
+            - 棗椰樹枝（Lulav）：正直、勝利<br>
+            - 香桃木（Hadass）：正義、善行<br>
+            - 柳樹（Aravah）：謙卑、哀悼<br>
+            - 香櫞（Etrog）：心靈與信仰<br>
+            文本中以橘子替代香櫞。</span>
+        </div>
+        <div class="footnote-item" id="fn10">
+            <span class="en"><a href="#ref10" class="footnote-link">⑩</a> Chełm: Appears in the text as a destination, phonetically close to the German word "Heim" (home, place of return).</span>
+            <span class="zh"><a href="#ref10-zh" class="footnote-link">⑩</a> 海烏姆（Chełm），文本中作為目的地出現，發音上接近德語「Heim」（家、歸宿）。</span>
+        </div>
+
+<!-- ================= RETURN ================= -->
+<div style="text-align:center;">
+  <a class="return-box" href="../index.html">
+    <span class="en">Return</span>
+    <span class="zh">返回</span>
+  </a>
+</div>
+
+<!-- ================= MUSIC（可替换模块） ================= -->
+<!-- 🔴 MUSIC MODULE START -->
+<audio id="bgm" loop>
+  <source src="../music/LaFontaineMolière.mp3" type="audio/mpeg">
+  <!-- 🔵 替换音乐路径即可 -->
+</audio>
+<!-- 🔴 MUSIC MODULE END -->
+
+<script>
+let lang = "en";
+
+function applyLang(mode) {
+  document.body.classList.remove("lang-en", "lang-zh");
+  document.body.classList.add("lang-" + mode);
+}
+
+function toggleLang() {
+  lang = (lang === "en") ? "zh" : "en";
+  applyLang(lang);
+}
+
+applyLang("en");
+
+/* music autoplay */
+document.addEventListener("click", () => {
+  const audio = document.getElementById("bgm");
+  if (!audio) return;
+  audio.volume = 0.6;
+  audio.play().catch(() => {});
+});
+</script>
+
+</body>
+</html>
