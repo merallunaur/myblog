@@ -278,6 +278,52 @@ a:hover {
   margin-top: 10px;
 }
 
+/* ================= MUSIC NOTE ================= */
+
+.music-note {
+  max-width: 620px;
+  margin: 42px auto 58px;
+  padding: 18px 24px 20px;
+
+  text-align: center;
+
+  color: var(--accent);
+  font-size: 12px;
+  line-height: 1.9;
+  letter-spacing: 0.6px;
+  font-style: italic;
+
+  position: relative;
+}
+
+/* 上方装饰线：左右错开 */
+.music-note::before {
+  content: "—  ♪  —";
+  display: block;
+
+  margin-bottom: 12px;
+
+  color: var(--accent);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 14px;
+  font-style: normal;
+  letter-spacing: 3px;
+}
+
+.music-note::after {
+  content: "";
+  position: absolute;
+
+  left: 12%;
+  right: 12%;
+  bottom: 0;
+
+  height: 1px;
+
+  background: var(--accent);
+  opacity: 0.45;
+}
+
 /* ================= MOBILE ================= */
 @media (max-width: 768px) {
   body {
@@ -371,6 +417,13 @@ Parce gravi metuende thyrso.<br>
 </div>
 
 <div class="divider"></div>
+
+<!-- ================= MUSIC NOTE ================= -->
+
+<div class="music-note">
+  <span class="zh">在任何頁面，你都可以點擊兩下播放音樂——每個頁面不同。</span>
+  <span class="en">On every page, double-click to play its music — each page has its own.</span>
+</div>
 
 <!-- ================= BLOCKS ================= -->
 
