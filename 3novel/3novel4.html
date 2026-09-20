@@ -1,0 +1,905 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Aiú</title>
+
+<style>
+body {
+  background-color: #81A380;
+  color: #525288;
+  max-width: 720px;
+  margin: 100px auto;
+  line-height: 1.9;
+  font-family: Georgia, serif;
+  padding: 0 20px;
+}
+
+/* ================= LANGUAGE SYSTEM ================= */
+.zh, .en {
+  display: none;
+}
+
+body.lang-en .en {
+  display: inline;
+}
+
+body.lang-zh .zh {
+  display: inline;
+}
+
+/* switch */
+.lang-switch {
+  position: fixed;
+  top: 18px;
+  right: 18px;
+  border: 1px solid #7D5A44;
+  padding: 6px 12px;
+  cursor: pointer;
+  color: #7D5A44;
+  background: transparent;
+  z-index: 999;
+}
+
+.lang-switch:hover {
+  background: #7D5A44;
+  color: white;
+}
+
+/* title */
+h1 {
+  text-align: center;
+  font-weight: normal;
+  margin-bottom: 60px;
+  font-size: 28px;
+  letter-spacing: 1px;
+}
+
+/* divider */
+.divider {
+  border-top: 1px solid #7D5A44;
+  width: 100%;
+  margin: 60px 0;
+  opacity: 0.6;
+}
+
+/* text */
+p {
+  margin-bottom: 26px;
+}
+
+/* return */
+.return-box {
+  display: inline-block;
+  padding: 6px 14px;
+  border: 1px solid #7D5A44;
+  color: #7D5A44;
+  margin-top: 60px;
+  transition: 0.3s;
+}
+
+.return-box:hover {
+  background: #7D5A44;
+  color: white;
+}
+</style>
+</head>
+
+<body class="lang-en">
+
+<!-- LANGUAGE SWITCH -->
+<div class="lang-switch" onclick="toggleLang()">EN / 繁</div>
+
+<!-- ================= TITLE（可替换） ================= -->
+<h1>
+  <span class="en"><!-- 🔵 English Title -->Aiú</span>
+  <span class="zh"><!-- 🔵 中文标题 -->Aiú</span>
+</h1>
+
+<div class="divider"></div>
+
+<!-- ================= BODY（整段可扩展区域） ================= -->
+
+<!-- 🔵 这里是正文 -->
+    <div class="section-break">◇</div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">Aiú, Arthur.</span>
+        <span class="zh">Aiú，亞瑟。</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">If this body of water were as tame as he was, submitting to its riverbed, he would turn and leave the rainforest, walking into another hard, grey wilderness. But before his eyes, countless ripples tangled, separated, and tangled again under the sun. He was still unskilled at rowing alone; he raised the paddle high and smashed the water surface like a hammer. Sweat fell with his raised arms into the black tributary of the Rio Negro.<a href="#fn1" class="footnote-link" id="ref1"><sup>①</sup></a> Stirring the riverbed, the faint acidity like aged black tea reminded him of his homeland beyond the Atlantic. The creamy peach sweetness of the violet cattleya rested on the tip of his nose; when he turned his neck to search for it, there was nothing to find. The dogbane vine brushed his hat. The Victoria amazonica leaves were too wide; he had to push them aside with the paddle. The thorns of the shallow-water arrowhead snagged threads from his cuff. Sometimes he stopped paddling and used his fountain pen to record names like spells and magical fragrances. Tabernaemontana<a href="#fn2" class="footnote-link" id="ref2"><sup>②</sup></a>—the word he remembered most deeply. A language that drifted in from across the Atlantic and was born alongside the steps of samba. He raised his hand, picked a flower, and tucked it into his notebook. The approaching humid heat still filled him with fear; his skin was burned by the mildly toxic sap, bringing a scorching heat. The resin flowing from pruned plants, the nectar, the green bitterness of broken leaves, mixed with the dry paper smell of the specimen press—the perfume exclusive to botanists.</span>
+        <span class="zh">Aiú，亞瑟。</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">His camp was deeper in the rainforest. Along the way he saw many trees marked with signs. The sound of saws seemed close at hand. Illegal logging, ubiquitous as ants, forced him to explore farther. At dawn he set up his boat amid birdsong and rowed into the river; the mental haze brought by the high fever should have kept him in his tent.</span>
+        <span class="zh">如果這片水域如他一般溫馴、臣服於河床，他就會轉身離開雨林，走入另一片堅硬灰暗的莽原中去。而他眼前無數片水波在太陽底下交纏、分離、再交纏。他對獨自划船還不熟練，高舉著槳葉，像一把錘子似的砸開水面。汗液隨著他抬起的手臂落入內格羅河<a href="#fn1-zh" class="footnote-link" id="ref1-zh"><sup>①</sup></a>黑色的支流。攪動河底，陳年紅茶似的微酸會使他想起大西洋外的故土。堇花卡特蘭散發的奶油蜜桃甜花香停在他的鼻尖上，當他轉動脖子找尋時，卻無物可求。狗牙花藤蔓撫過他的帽子。王蓮的葉子太寬，他不得不用槳撥向一邊去。淺水澤瀉的刺把他的袖口勾出絲來。有時他停下槳，用鋼筆記錄下各種宛如咒語的名字與魔法般的香氣。Tabernaemontana<a href="#fn2-zh" class="footnote-link" id="ref2-zh"><sup>②</sup></a>，他記憶最深的一個詞。從大西洋上飄來，又在桑巴腳步中伴生的語言。他抬起手，摘下一朵夾入筆記本。迫近的潮熱仍使他心生恐懼，皮膚被含有輕微毒素的汁液灼傷，帶來一陣燙熱。修剪植物流出的樹脂、花蜜、破損葉片的青澀氣，混合紙質標本夾的乾燥紙味，是植物學家專屬的香水。</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">Every midnight in the rainforest he had to light a lamp to drive away snakes. Last midnight he suddenly woke; the lamp had gone out at some point, and a boa constrictor had poked its head out from under the tent. Arthur saw it and met its gaze. It showed no intention of attacking. It swayed its head, turned, and swam back into the dense forest. Arthur swallowed. The rainforest was more absurd than he had imagined; death here was as easy as breaking glass. The rainforest was also gentler than he had imagined—there were too many living things, and you would always feel someone watching your back. After being interrupted, he could hardly sleep again. From the symphony composed by tens of thousands of insects and animals, his ears caught a familiar melody. Like a man calling, or a woman, sometimes a child, a dog. Occasionally he heard his own name, but took it for the friction between tree crowns. Closing his eyes, he dozed fitfully for another two or three hours. The sound did not disappear. So he chose to pick up the paddle and slip deeper into the rainforest. Following the direction of that sound. In fact, the sound had no direction; it seemed to come from all sides. Arthur acted on his own instinct. This was hallucination; he did not want to call it fate.</span>
+        <span class="zh">他的營地在雨林更深處。沿路他看見不少畫著記號的樹。鋸聲彷彿近在咫尺。如螞蟻一般無處不在的盜伐活動，逼著他向遠探索。清早他在鳥鳴聲中支起船划入河流，高熱帶來的精神恍惚本該使他待在帳篷裡。</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">Aiú, Arthur.</span>
+        <span class="zh">Aiú，亞瑟。</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">At this moment, his palm left a wet mark on the paper; ink as deep as river water dripped into small black fish, swimming across the page. He was sunk in his own thoughts when a woodcreeper flew onto his head and urgently tapped his hat brim with its beak. Hey, hey, I'm not a tree. Arthur reached out; the bird hopped onto his hand, tilted its head to stare at him, and let out a wet, muffled, melancholy whistle. The tail note was like a firework falling into water, cut short in a long, piercing cry. It seemed to want to tell him something, but he was used to this. Some birds foolishly approach humans and ultimately meet their own destruction. Arthur raised his hand, lifting the bird into the gap between the tree crowns. It circled above his head for a while, then finally gave up and flew into the distance. A smile broke across Arthur's perpetually tense face. He did not notice that the riverbed led straight to a cliff. By the time he came to his senses, it was too late. He rowed desperately backward, but the current only pushed him forward faster. In his last vision remained white water splashing like a bird. He bent down in the rapids, curling his body to protect his head and neck. The boat leaped out of the water and spun down like a swan shot by a bullet. His temple struck the bank, and everything went black.</span>
+        <span class="zh">此刻，他的掌心在紙上留下濕痕，顏色如河水般深的墨水滴落成黑色的小魚，從紙上遊過。他正沉在自己的思緒裡，一隻砍林鳥飛上他的頭頂，用鳥喙急匆匆地敲著他的帽簷。嘿，嘿我不是一棵樹。亞瑟伸出手，鳥兒跳上他的手，歪著頭盯著他，發出濕悶的憂鬱長哨。尾音如掉入水中的煙花，在久久的尖嘯中戛然而止。它像是要告訴他什麼事，而他卻對此習以為常。有些鳥兒會傻傻地親近人類，最後迎來自身的毀滅。亞瑟將手向上抬，將鳥托入樹冠間的縫隙中。它在他頭頂又盤旋了一會兒，最後放棄似的飛向遠處。亞瑟一直緊繃著的臉上綻開笑容，他沒有注意到河床正直直地通向斷崖。等他回過神為時已晚，拼命向後划，水流也只將他更快地推向前方。他最後的視覺裡殘存著飛濺如鳥的白色水花，在急流中彎下腰，捲起身護住頭頸。船跳出水面，又像被子彈射中的天鵝般旋轉著落下。他的額角磕在岸邊，眼前一片漆黑。</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"I am not a tree."</span>
+        <span class="zh">「我不是一棵樹。」</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">Something tapped his forehead, once, twice. Had the woodcreeper come back? The moment he opened his eyes, a kaleidoscopic halo flashed through Arthur's too-clear eyes, and unprepared, he met another pair of eyes. Those eyes looked at him deeply, then curved slightly, like climbing to the high canopy and seeing the moon of the southern hemisphere. Arthur bounced up in fright, but collided with the other's forehead.</span>
+        <span class="zh">有東西一下一下敲著他的額頭。砍林鳥飛回來了嗎？睜眼的瞬間，亞瑟那雙太過清澈的眼中閃過一陣萬花筒似的光暈，毫無準備地對上另一雙眼睛。那雙眼睛深深地看著他，接著微微彎起來，就像爬上高樹層，看見南半球的月亮那般。亞瑟嚇得彈起來，卻撞到了那人的額頭。</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"Who are you?"</span>
+        <span class="zh">「你是誰？」</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">Rubbing his head, which had received a double pain, he put distance between himself and the other. The stranger's eyes bloomed like lotuses when they gazed at you, then closed again. His limbs were as long as rivers, his skin shining with the hard lustre of minerals. His long hair was tied behind his head. The sun was falling from overhead, wrapping him in radiance. He wore work clothes similar to Arthur's and tilted his head, looking at him in confusion. Arthur asked many questions in succession and received no response. The stranger helped him up, spread his hands facing the lake surface. He opened his mouth and uttered his first syllable.</span>
+        <span class="zh">他一边揉着自己迎来双重疼痛的脑袋，一边与对方拉开距离。陌生人的眼睛会在凝视你时如莲花一般绽放，又合拢。四肢如河流般修长，皮肤闪着矿物质的坚硬光泽。他的长发束在脑后，太阳正从头顶落下，将他笼罩在光辉中。他穿着与亚瑟差不多的工装，困惑地歪头看着他。亚瑟接连询问很多句，没有得到任何回应。陌生人将他扶起来，摊开手面对着湖面。他张开嘴，发出第一个音节。</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"Aiú."</span>
+        <span class="zh">「Aiú.」</span>
+    </div>
+
+    <div class="section-break">◇</div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"Where is your camp?"</span>
+        <span class="zh">「你的營地在哪邊？」</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">Francis raised his hand and pointed deep into the jungle. Arthur looked in vain, his gaze struggling within the green egg.</span>
+        <span class="zh">弗朗西斯抬起手，指向叢林深處。亞瑟徒勞張望，目光在綠色的卵中掙扎。</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"Then why did you come?"</span>
+        <span class="zh">「那你是為什麼來？」</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">Francis squinted and smiled at him. His gaze lingered on Arthur's face for a moment, then cast into the jungle behind him. In his eyes remained a long, silent peace, yet intertwined with a curious light. The day after bandaging Arthur's wound, Francis appeared before him carrying a huge backpack and pitched his camp beside his. He had a notebook similar to Arthur's; opening it released a special fragrance. Yet he had an even more sensitive perception than Arthur. He could close his eyes and immediately find the tree he wanted. The way he approached a tree was always wonderful. His steps would first slow, and when he touched the nearest buttress root, he pressed his palm against it. That hand seemed to be caressing a child, sliding from the roots all the way to the trunk. Then he parted the epiphytic vines on the trunk and pressed his ear against it with closed eyes. His breathing would gradually become soft, then inaudible, like the last breath exhaled from the mouth of a dead man. His breath merged into this tree.</span>
+        <span class="zh">弗朗西斯對著他瞇起眼睛笑。目光在亞瑟臉上流連一瞬，又投入他身後的叢林。他的眼神中長久地留存著一種寂靜的平和，卻又與好奇的光芒交相輝映。為亞瑟包紮傷口後的第二天，弗朗西斯背著巨大的行李背包出現在他面前，將營地扎在他旁邊。他有一個跟他差不多的筆記本，一打開就發出一陣特殊香氣。他卻又有比他更加敏感的知覺，他能閉著眼睛，馬上找到想要的樹木。他接近一棵樹的方式總是很奇妙。腳步會先變得緩慢，當接觸到離他最近的一塊板狀根時，便把掌心貼上去。那隻手像是在撫摸孩子那般，一路從根系滑到樹幹。旋即撥開樹幹上的附生藤，閉著眼睛把耳朵貼上去。他的呼吸會漸漸變得輕柔，接著再也聽不見，就像死人口中吐出的最後一口氣。他的呼吸融進了這棵樹。</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">Arthur preferred to approach this place in a rational way. He always used a knife to shave off a piece of bark and stuck it into his notebook with transparent tape. Even though the colour of his eyes was optically rooted in the same source as the colour of the rainforest, his eyes could not pierce into this soil that was, to him, too barren. Rather, he feared this rainforest—he did not fear the deadly poisonous insects and frogs that could take his life, but he feared the rainforest's gaze. When everything was still, he would feel thousands of eyes pressed against his back, only the moisture leaving a wet kiss on his eyelids. Here, apart from living things, there was nothing. Sometimes, he also avoided Francis's gaze. His gaze, and the rainforest's gaze, looked the same.</span>
+        <span class="zh">亞瑟更願意以一種理性的方式靠近這個地方。他總是用刀削去一道樹皮，用透明膠貼在筆記本中。即便他眼睛的顏色，與雨林的顏色在光學上同根同源，他的眼睛也扎不進這片對他來說太過貧瘠的土壤。不如說他恐懼這片雨林——他並不恐懼這裡致命的毒蟲與蛙奪走他的生命，卻害怕雨林的注視。當一切靜止不動，他會感到幾千雙眼睛貼在他的背上，只有水汽在他眼皮上留下濕潤的吻。這裡除了生物，一無所有。有時，他也一樣會逃避弗朗西斯的注視。他的注視，與雨林的注視，看起來是一樣的。</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">When vines or roots tangled around his ankles, Francis would bend his elbow and catch his palm stained with blood-like sap. An anchor fell from the clouds of the rainforest. Francis. Arthur did not actually know his name; apart from that syllable from his dream, whose meaning he did not know, he had never spoken another word. He chose to name him religiously—Francis.<a href="#fn3" class="footnote-link" id="ref3"><sup>③</sup></a> The one who walked alone into the deep mountains to soothe the man-eating wolf, the one who preached to the birds on the mountain. All things loved him; his body had never borne the mark of a bullet of rejection. So complete, carrying a joy unstained by original sin. The joy of creation, pure admiration and the joy of sunlight. Yet his hands were also covered with burns and knife scars. After wandering the rainforest, what chance does a parrot have of finding its way home? What chance does a person have of meeting another person? Regardless of the chance of meeting, humans and living things will ultimately be forced apart for the same reason. But he could not face the gaze alone, so he chose to accompany Francis. That abundant, ethereal, summoning forest had already bitten into his shadow.</span>
+        <span class="zh">當藤蔓或根纏住他的腳踝，弗朗西斯就會屈起手肘，接住他沾著如血般樹汁的手掌，雨林的雲層中從天而降一根錨。弗朗西斯。亞瑟其實並不知道他叫什麼，除了那個來自他夢中的，不知意義的音節，他從未開口說過其他話。他選擇用宗教為他命名，弗朗西斯<a href="#fn3-zh" class="footnote-link" id="ref3-zh"><sup>③</sup></a>。那個獨自走進深山安撫吃人惡狼的人，那個向滿山飛鳥布道的人。萬物都愛他，他的身上從未有過被拒絕的子彈穿透的痕跡。如此完整，帶著未被原罪浸染過的快樂。創世之樂，純粹的讚嘆與陽光下歡愉的樂。而他的雙手，卻也一樣佈滿灼傷和刀痕。在雨林徘徊後，一隻鸚鵡有多大機率找到歸巢的路？一個人有多大機率遇見另一個人？無論相遇時的機緣，人與生物最終都會因為相同的原因被迫分離。但他無法一個人對抗注視，於是選擇與弗朗西斯結伴。那片豐收般的、縹緲的、充滿召喚的森林，已經咬住了他的影子。</span>
+    </div>
+
+    <div class="section-break">◇</div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">On the plane to Rio, Arthur held his bag tightly, seeking a bit of security. Over the past few weeks, he and Francis had collected many plant samples to send back to the research institute in Rio. Through the porthole, the rainforest grew farther and farther behind. Arthur's mood lightened a little. The sun sank into the water; the clouds burned fiery red. Staring at the clouds too long made his eyes sting from the intense colour. Closing his eyes still left blue-violet afterimages. Arthur lowered the window shade and leaned against the window to rest. A hand suddenly grabbed his wrist.</span>
+        <span class="zh">在前往里約的飛機上，亞瑟緊緊抱著自己的包，以此獲取一點安全感。過去幾個星期，他與弗朗西斯一起採集了不少植物樣本，要送回建在里約的研究所。透過舷窗，雨林在身後越來越遠。亞瑟的心情稍微輕鬆了一點。太陽沉入水中，雲層燒得火紅。盯著雲層看太久，眼睛會被這種濃烈的顏色刺痛。閉上眼睛後仍舊會留下藍紫色的殘像。亞瑟放下遮光板，靠著窗閉目養神，一隻手卻突然抓住了他的手腕。</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"What are you doing?"</span>
+        <span class="zh">「幹什麼？」</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">He had grown used to this touch and opened his eyes. Afterimages like moth wings layered over Francis's eyes. The other blinked as if sensing it, smiled at him, and pointed at the window.</span>
+        <span class="zh">他已經習慣了這種觸碰，睜開眼睛。如蛾子翅膀一般的視覺殘像疊在弗朗西斯的眼中，對方像是感覺到了一樣眨眨眼，對他露出一個笑容，指了指窗戶。</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"You want to sit here? Alright then."</span>
+        <span class="zh">「你要坐這？那好吧。」</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">Arthur struggled to stand with his bag, squeezing past the gap in front of Francis's knees. Francis pulled the shade open again; the setting sun softly traced his outline. He propped one hand under his chin, his gaze travelling through the clouds. The deep blue canopy closed its palms from above; his face was hidden in the half-cold, half-warm light, like the boundary between river and forest. Arthur closed his eyes again. The air was filled with the scent of spices, and soft, slow Brazilian Portuguese drifted over. He relaxed his furrowed brow and leaned toward the aisle to sleep. Across the aisle, a girl in her teens, her braid tied with ribbon, was reading a book.</span>
+        <span class="zh">亞瑟舉著包艱難地站起身，從弗朗西斯膝蓋前的空隙之間擠過去。弗朗西斯又拉開遮光板，夕陽柔和地描著他的輪廓。他將一隻手撐在下巴上，目光在雲層中穿行。深藍天幕從上方合起手掌，他的臉隱沒在半冷半暖的光線中，如同河流與森林的分界。亞瑟繼續閉著眼睛。空氣中瀰漫著一股香料的氣味，不時傳來柔和緩慢的巴西葡語。他鬆開緊縮的眉頭，歪向走廊一邊睡覺。走廊那邊一個十幾歲，辮子扎著絲帶的小姑娘正在讀一本書。</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"O rio é uma separação. Atravessá-lo é atravessar a mim mesmo."<a href="#fn4" class="footnote-link" id="ref4"><sup>④</sup></a></span>
+        <span class="zh">"O rio é uma separação. Atravessá-lo é atravessar a mim mesmo."<a href="#fn4-zh" class="footnote-link" id="ref4-zh"><sup>④</sup></a></span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">This language was well suited to reciting poetry.</span>
+        <span class="zh">這種語言很適合念詩。</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">Amid the slight swaying, Arthur drifted in and out of sleep. The plane offered caipirinhas<a href="#fn5" class="footnote-link" id="ref5"><sup>⑤</sup></a> and cajuína;<a href="#fn6" class="footnote-link" id="ref6"><sup>⑥</sup></a> everyone was tipsy. Slight intoxication is hard to distinguish from fatigue. A passenger hummed softly, his voice like a whisper.</span>
+        <span class="zh">輕微的搖晃中亞瑟半夢半醒。飛機上提供凱匹林納酒<a href="#fn5-zh" class="footnote-link" id="ref5-zh"><sup>⑤</sup></a>與卡茹伊納<a href="#fn6-zh" class="footnote-link" id="ref6-zh"><sup>⑥</sup></a>，每個人都醉意盎然。微醺很難與疲乏區分開，一位旅客低聲哼歌，聲音如同輕語。</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"Olha que coisa mais linda<br>
+        Mais cheia de graça<br>
+        É ela, menina<br>
+        Que vem e que passa<br>
+        Num doce balanço<br>
+        A caminho do mar<br>
+        Moça do corpo dourado<br>
+        Do sol de Ipanema<br>
+        O seu balançado é mais que um poema<br>
+        É a coisa mais linda que eu já vi passar<br>
+        Ah, por que estou tão sozinho?<br>
+        Ah, por que tudo é tão triste?<br>
+        Ah, a beleza que existe<br>
+        A beleza que não é só minha"<a href="#fn7" class="footnote-link" id="ref7"><sup>⑦</sup></a></span>
+        <span class="zh">"Olha que coisa mais linda<br>
+        Mais cheia de graça<br>
+        É ela, menina<br>
+        Que vem e que passa<br>
+        Num doce balanço<br>
+        A caminho do mar<br>
+        Moça do corpo dourado<br>
+        Do sol de Ipanema<br>
+        O seu balançado é mais que um poema<br>
+        É a coisa mais linda que eu já vi passar<br>
+        Ah, por que estou tão sozinho?<br>
+        Ah, por que tudo é tão triste?<br>
+        Ah, a beleza que existe<br>
+        A beleza que não é só minha"<a href="#fn7-zh" class="footnote-link" id="ref7-zh"><sup>⑦</sup></a></span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">Francis's shoulder suddenly sank; Arthur's cheek had somehow come to rest against his shoulder, sleeping soundly with closed eyes. He tilted his head in confusion for a moment, then raised his hand and covered Arthur's closed green eyes. Arthur smelled like a little bird. The river-like melody still flowed; he heard the sea swaying inside his body.</span>
+        <span class="zh">弗朗西斯突然肩膀一沉，亞瑟的臉頰不知什麼時候貼上了他的肩膀，閉著眼睛酣眠。他歪頭困惑了一陣，抬起手，捂住他那雙合起來的綠眼睛。亞瑟聞起來像小鳥。如河流般的旋律還在流淌，他聽見身體裡正在搖晃的海。</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"Aiú. Aiú."</span>
+        <span class="zh">「Aiú. Aiú.」</span>
+    </div>
+
+    <div class="section-break">◇</div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">Everyone's city.</span>
+        <span class="zh">所有人的城市。</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">On Avenida Vieira Souto,<a href="#fn8" class="footnote-link" id="ref8"><sup>⑧</sup></a> two police officers chased a child carrying a beer display rack. Ipanema Beach was packed with people; beer was selling hot, almost gone. An old Brazilian national team number 9 jersey<a href="#fn9" class="footnote-link" id="ref9"><sup>⑨</sup></a> fluttered on the child like a flag. At first, his round face showed panic. He guarded his waist pouch and slipped through the crowd's armpits like a marten. The sun projected his running shadow, then closed in an instant. The crowd burst into cheers and applause. Encouraged by the enthusiasm, the child ran onto the congested road, stepping onto the hood of an open-top jeep like a parrot.</span>
+        <span class="zh">在維埃拉·索托大道<a href="#fn8-zh" class="footnote-link" id="ref8-zh"><sup>⑧</sup></a>上，兩個警察追著一個舉著啤酒展架的孩子。伊帕內馬海灘上擠滿了人，啤酒熱銷，所剩無幾。一件老舊的巴西國家隊9號球服<a href="#fn9-zh" class="footnote-link" id="ref9-zh"><sup>⑨</sup></a>，在孩子身上如同旗幟翻飛。起初，他的圓臉上顯現出驚惶的神色，護住自己的腰包，從人群的腋下鑽過去，像一隻貂。太陽放映著他奔跑的影子，又在一瞬間閉幕。人群爆發出歡呼與掌聲。孩子被熱情鼓舞，跑上正擁堵的公路，像一隻鸚鵡似的踩上一輛敞篷吉普的引擎蓋。</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"Hey!"</span>
+        <span class="zh">「嘿！」</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">Arthur's hands left the steering wheel; his gaze followed the child's back. He spread his hands and laughed helplessly. Francis patted his shoulder, turned the radio dial, and tuned to a local jazz station to cool him down. The child landed steadily on the wave-patterned pavement, turned back to make a face at the police, shouted an apology, and quickly disappeared into an alley.</span>
+        <span class="zh">亞瑟的雙手離開方向盤，目光追著那孩子的背影，攤開手無奈地笑。弗朗西斯拍拍他的肩膀，轉動收音機，打開本地爵士電台為他消火。孩子在鑲著波浪形的人行道上穩穩下落，回頭對警察做了個鬼臉，又大聲喊了一句抱歉，飛快地消失在小巷中。</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"Who knows how long the carnival road closures will last."</span>
+        <span class="zh">「狂歡節的道路管制不知道要到什麼時候。」</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">Arthur was a little thirsty and asked Francis to get a soda from the back seat. Francis leaned toward the back seat; water droplets from the glass bottle jumped onto his palm. He lowered his head, looked at his wet hand, and raised the glass bottle to Arthur's cheek.</span>
+        <span class="zh">亞瑟有點口渴，遍叫弗朗西斯從後座拿一瓶汽水。弗朗西斯講身子探向後座，玻璃瓶上的水珠跳到他的掌心。他低著頭，看了看濕漉漉的那隻手，舉起玻璃瓶貼向亞瑟的臉頰。</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"Francis! Are you about the same age as that child?"</span>
+        <span class="zh">「弗朗西斯！你跟那個孩子差不多大嗎？」</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">Arthur snorted, raised his hand, and rubbed his cheek, which stung slightly from the cold. Francis raised an eyebrow. Arthur reached his other hand toward the passenger seat, snatched the soda bottle from Francis's hand, and aimed it at the gap between his collar and neck, thrusting it in. Francis shuddered and pinched Arthur's cheek.</span>
+        <span class="zh">亞瑟哼了一聲，舉起手揉揉冰得有些疼的臉頰。弗朗西斯揚起一邊眉毛。亞瑟把另一隻手伸向副駕駛，奪過弗朗西斯手中的汽水瓶，對準他衣領與脖子之間的縫隙插了進去。弗朗西斯打了個冷顫，把手放在亞瑟臉頰上一捏。</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"Hey!"</span>
+        <span class="zh">「嘿！」</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">Dealing with Francis's smile was a contradictory matter. That smile came from a very deep place, struggling up from some crevice in his chest, needing to find a shape at the lips sufficient to house it. But his face seemed never to have learned how to receive it—those muscles moved clumsily, like a person relearning a long-abandoned craft. An unformed shadow flashed at the corner of his mouth, then was pulled back by something heavier, sinking into that water in the depths of his eyes that could never be reached. Sometimes, his smile was full of a rich lustre, making one feel the heat of blood surging. In Arthur's eyes, time on Francis's face was eternal. His hand pressed against the scabbed wound on his forehead. The trees that had grown around them on the day they first met in the rainforest. These giant trees were still growing, even though tens of millions of years had passed.</span>
+        <span class="zh">對待弗朗西斯的笑容是一件矛盾的事情。那笑意來自很深的地方，從胸腔的某個縫隙間掙扎著浮上來，要在唇邊找到一個足以棲身的形狀。可他的臉龐似乎從未學過該如何承接它——那些肌肉生疏地牽動著，像一個人重新學習早已荒廢的手藝。一個未能成形的影子在嘴角一閃，又被什麼更沉重的東西拽了回去，沉進眼底那片永遠無法被觸及的水域裡。有時，他的笑容又充滿豐潤的光澤，讓人感到血液迸流而引起的發熱。在亞瑟的眼中，弗朗西斯的臉上時光永恆。他的手按向額頭上那塊結痂的傷口。雨林初見的那天在他們周圍生長的樹。這些巨樹如今仍在生長，即便時光已過去幾千萬年。</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">In the great traffic jam, the cars did not move. The parade crowd passed before the car, their clothes covered in kind feathers and tassels, shaking their wings like a flock of birds. On the Two Brothers mountain by the bay, parrots and toucans flew past. Francis reached out; a red-crested cardinal called twice and landed on his hand. Its round body rubbed against his palm for a moment, then flew away calling.</span>
+        <span class="zh">大擁堵中車流一動不動。遊行人群路過車前，衣服上綴滿善良的羽毛與流蘇，如群鳥般聳動翅膀。海灣邊的兩兄弟山頂上，鸚鵡與巨嘴鳥飛過。弗朗西斯伸出手，一隻冠紅蠟嘴雀叫了兩聲，停在他的手上。圓滾滾的身體在他手心蹭了一瞬，又叫著飛走。</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">The air before carnival was full of gasoline. The hand the bird had just perched on was now resting on Arthur's radial artery, tapping lightly.</span>
+        <span class="zh">狂歡節前的空氣充滿汽油。剛剛鳥兒停過的那隻手，此時正搭在亞瑟的橈動脈上輕輕敲打。</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"I am not a tree."</span>
+        <span class="zh">「我不是一棵樹。」</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">Francis turned toward the car door, still holding Arthur's hand. Arthur had to climb over the centre console from the driver's seat and get out on the same side as him. On this street where everyone was sweating, singing, and stamping their feet. Arthur used his belt to tie their hands together. They walked into the crowd, pushed and shoved by the tide of people. Occasionally they joined the crowd and shouted a few times, then another wave of people swept them away. The narrow alley was full of smells; the knife of the chicken croquette vendor fell on the iron plate with a sizzle. Arthur was about to stop and watch, but Francis kept pulling him forward. He had to turn his head and look at the golden hair on the back of his head. His vision was distorted in the running; the low square houses gradually grew towering, crackling as they stretched out lush branches and leaves. Laughter was like birdsong; the footsteps of the people around him became birds flying wildly. Moist vapour floated past the tip of his nose. Arthur widened his eyes, his breathing quickened. With a crack, he stepped on a discarded plastic cup; the residual beer at the bottom splashed onto his shoe.</span>
+        <span class="zh">弗朗西斯將身子轉向車門那側，依然拉著亞瑟的手。亞瑟不得不從駕駛室跨過中央扶手箱，與他同側下車。在這個所有人都流著汗，唱著歌，狠狠跺著腳的街道上。亞瑟用腰帶把他們的手綁在一起。他們走入人群中，被海潮似的人群推來搡去。偶爾加入人群大叫幾聲，然後又一陣人潮把他們捲走了。窄巷子裡充滿氣味，炸雞肉包攤主的刀落在鐵板上，滋啦一聲。亞瑟正想駐足觀看，弗朗西斯卻依舊拉著他前行。他不得不轉過頭，看著他後腦勺上的金髮。他的視覺在奔跑中被扭曲，低矮的方形民居逐漸參天，噼里啪啦地伸出繁茂的枝葉。笑聲如同鳥鳴，身邊的人群腳步變作鳥兒狂亂地飛舞。濕潤的水汽浮過鼻尖。亞瑟睜大眼睛，呼吸加快。啪的一聲踩到一隻被丟棄的塑料杯，杯底殘留的啤酒濺上他的鞋面。</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">The walls on both sides of the narrow alley were covered with faded campaign posters; the smiling face of a strange man was blurred by beer stains. Francis's shoulder brushed the wall; a few dried paper scraps fell into his collar. Arthur stared at a small patch of skin on the back of his neck darkened by the sun. Several children balanced a football on their insteps, juggling it high and kicking it to each other. One child missed; the ball rolled toward a stage set up on an empty lot. They all ran after the rolling ball. Suddenly drums rang out like thunder; the children were startled, but instinctively began to cheer. The drummers' skins were shiny with sweat; the rhythm was urgent, like a rainstorm pounding an iron roof. The crowd formed an irregular circle, stepping on beer crates or carrying children on their shoulders. A woman in a white long dress was spinning; the moment her skirt lifted, sequins shattered the light into millions of sparks, splashing into the darkness. The bells on her ankles rang with every step.</span>
+        <span class="zh">窄巷兩邊的牆壁上貼滿褪色的競選海報，陌生男人的笑臉被啤酒漬泡得模糊。弗朗西斯的肩膀擦過牆壁，幾片乾透的紙屑落進他的衣領。亞瑟盯著他後頸上一小塊被太陽曬深的皮膚。幾個孩子把足球擱在腳背上，高高顛在空中，互相踢給對方。一個孩子沒接住，球滾向搭在空地上的一個舞台。他們都朝著滾落的球跑去了。突然鼓聲如驚雷般響起，孩子們被嚇了一跳，卻又本能地開始歡呼。鼓手們的鼓皮被汗水浸得發亮，節奏急促得像暴雨砸在鐵皮屋頂。人群圍成不規則的圓，踩著啤酒箱，或把孩子扛在肩上。穿白長裙的女人正旋轉，裙擺掀開的瞬間，亮片把燈光碎成千萬粒火星，濺進黑暗裡。腳踝上的鈴鐺每踏一步就響一聲。</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">The drums made Arthur's chest numb; his elbow struck someone's warm ribs, and he heard a vague curse. The woman's sweat ran down her collarbone in the light, pooling in the hollow into a small puddle of light. Francis's fingers began to tap his own thigh, following the beat of the drums. Arthur turned his head and saw a thin trail of sweat on the side of Francis's neck sliding down into the shadow of his collar.</span>
+        <span class="zh">鼓聲震得亞瑟胸腔發麻，手肘撞到某個人溫熱的肋骨，聽到模糊的咒罵。女人的汗水在燈光下淌過鎖骨，在凹陷處匯成一小窪光。弗朗西斯的手指開始敲打自己的大腿，跟上鼓點的節拍。亞瑟側過頭，看見弗朗西斯頸側有一道細細的汗痕正往下滑進衣領的陰影裡。</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"Aiú. Aiú. Aiú."</span>
+        <span class="zh">「Aiú. Aiú. Aiú.」</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">The dance music ended in a whistle. The woman stopped, her chest heaving violently; her skirt fell back to cover her ankles. The crowd burst into cheers, raising beer glasses above their heads. The woman bowed; her makeup had been smeared by sweat, eyeshadow running down her tear troughs into a dark river. Before Francis and Arthur noticed, the crowd suddenly dispersed. The remaining beer was poured on the ground, mixing with muddy water into a brown stream. By the bay, boat whistles were faint, cut to pieces by the lingering sound of the drums. Arthur leaned back in his chair and turned his head to look at Francis. His body leaned slightly forward, elbows on his knees; the protrusion of a vertebra on the back of his neck pushed against a thin layer of skin. The coloured lights cast an arc-shaped shadow from behind him. His fingers no longer tapped but lay flat on his knees, motionless. A gust of wind blew over; scattered samba singing in the distance was blown apart and gathered again. Francis suddenly straightened up and turned his face to look at Arthur. His eyes were a very deep colour in the darkness, almost black.</span>
+        <span class="zh">舞曲在哨聲中結束。女人停下來，胸口劇烈起伏，裙子垂落蓋住腳踝。人群爆發出歡呼，將啤酒杯舉過頭頂。女人彎腰鞠躬，臉上的妝已經被汗水暈開，眼影沿著淚溝淌成暗色的河。在弗朗西斯與亞瑟沒有注意到的時候，人群又突然散去。剩下的啤酒被潑在地上，混著泥水蜿蜒成褐色的小溪。海灣邊船笛隱約，被鼓點的餘響切碎。亞瑟靠在椅背上，側過頭看弗朗西斯。他的身體微微前傾，手肘撐在膝蓋上，後頸那截脊椎骨的凸起頂著一層薄薄的皮膚。彩燈的光從他背後投下弧形的陰影。他的手指不再敲打，而是平放在膝蓋上，紋絲不動。一陣風吹過來，遠處零星的桑巴歌聲被吹散又聚攏。弗朗西斯忽然直起身，轉過臉看亞瑟。他的眼睛在黑暗裡是一種很深的顏色，幾乎接近黑色。</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"You should stay."</span>
+        <span class="zh">「你應該留下。」</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">Arthur suddenly said. Francis turned his head and gazed at him. The traffic had long since started moving again. Feathers of all colours and graffiti-painted vehicles embraced and spun. The car stopped by the fountain of the research institute. Francis got out first but walked straight into the Atlantic rainforest. His silent departure was accompanied by the dying fatigue of the sun, making the bay light up with candle-like lights. At first, Arthur thought the lights came from the avenue they had just driven past—the houses there were more expensive than anyone could imagine. The moment this thought arose, Francis turned his face and gazed at him again. The illusion in the darkness made his eyes rain. He used his eyes to guide Arthur's eyes toward a place where the lights were more abundant. At this moment, Arthur's gaze fell for the first time on the stacked wooden shacks. Electric wires formed spiderwebs on the ceiling. People of different skin colours were climbing onto the tiled roofs, hanging coloured ribbons on tottering pillars. Some were dancing with thumping footsteps. The sound of hawking apples echoed madly off the walls; the smell of feijoada filled the house. The giant Christ statue on the mountain lit up white; there was no moon tonight. At midnight, he found Francis again at the door. He leaned against the doorway, seemingly without a trace of fatigue. His body also gave off the aroma of feijoada, and purple bromeliads were tucked in his hair.</span>
+        <span class="zh">亞瑟突然說。弗朗西斯轉過頭注視著他，車流早就重新開始流動。各色羽毛與塗著塗鴉的車輛相擁著旋轉。車子停在研究院的噴泉旁。弗朗西斯率先下了車，卻逕自走進了大西洋雨林中。他默默無語的離去伴隨著太陽瀕死的疲軟，讓海灣亮起燭火般的燈光。起先，亞瑟以為燈光來自他們剛剛開車經過的那條大道——那裡的房子比任何人想像的都更昂貴。在他冒出這個想法的瞬間，弗朗西斯卻轉過臉，再次注視他。黑暗中的錯覺讓他的眼睛下起了雨。他用眼睛引導著亞瑟的眼睛，朝著燈光更加繁茂的一處去。這時亞瑟的目光第一次落在了壘起來的板材棚屋上。電線如蜘蛛網般結在天頂。不同膚色的人正走上泥瓦頂，把彩帶掛上搖搖欲墜的柱子。一部分人正腳步咚咚地跳舞。走街串巷賣蘋果的聲音在牆壁上瘋狂迴響，黑豆飯的氣味充滿屋子。高山上巨大的耶穌像亮起白光，今夜沒有月亮。半夜，他在門口重新找到了弗朗西斯。他靠著門口，似乎毫無倦意。他的身體也散發著黑豆飯的香氣，髮間插滿紫鳳梨花。</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"Aiú."</span>
+        <span class="zh">「Aiú.」</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">Arthur imitated Francis. He wanted to ask what it meant, but was destined never to receive an answer.</span>
+        <span class="zh">亞瑟學著弗朗西斯。他想問這是什麼意思，但注定得不到回答。</span>
+    </div>
+
+    <div class="section-break">◇</div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">After leaving the samples at the research institute, they returned to the rainforest. The tree roots touched the boat's keel, making a sound like writing. The tributary grew narrower; the trees on both sides almost met overhead, aerial roots brushing Arthur's shoulders. Arthur closed his book and observed everything around him. A huge shadow moved slowly beneath the water surface; a dark back emerged and sank again. The arapaima, "pirarucu." Its tongue had bony teeth that could crush hard-shelled fruits and small crabs. But that huge figure moved almost gently, slowly, almost without threat, sliding under the boat and disappearing into the shadows on the other side.</span>
+        <span class="zh">將樣本留在研究院，他們重新回到了雨林。樹根觸碰船的龍骨，發出的聲音像在寫作。支流越來越窄，兩側的樹木幾乎在頭頂交匯，氣生根拂過亞瑟的肩膀。亞瑟合上書，觀察起他身邊的一切。水面下一個巨大的影子緩緩移過，暗色的背脊浮出又沉下。巨骨舌魚，「皮拉魯庫」。舌頭上長著骨質的牙齒，能碾碎硬殼的果實和小蟹。但那巨大的身影移動得近乎溫柔，緩慢地、幾乎不帶任何威脅地，從船底滑過，消失在另一側的暗影裡。</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">Francis took Arthur's book. The illustrated guide was open at the butterfly page. The boat was entering an even narrower channel. The canopies on both sides almost closed into a dome; sunlight was cut into countless slender columns slanting into the water. Arthur looked up, approaching this rainforest with his eyes. Between those columns of light, on every illuminated leaf and in the crevices of aerial roots, in the leaf axils of epiphytic orchids, thousands of butterflies danced. Blue-violet and bright orange spots flowed across their wings, like shattered stained glass poured into this rainforest. The immense beauty left Arthur motionless. The book slipped from his lap and landed face-down on the boat bottom with a slap. The fine scales between the butterfly wing veins shone with metallic lustre in the sunlight. He reached out; a butterfly landed on his hand. He turned his wrist; the butterfly flew away. His palm was soaked, stained with faint phosphorescence. He put his hand back into the water. The phosphorescence dispersed in the water like melting stars, carried away by the black current.</span>
+        <span class="zh">弗朗西斯抽過亞瑟的書。這本圖鑑正停留在蝴蝶的那一頁。船正行入一段更窄的河道。兩側的樹冠幾乎合攏成穹頂，陽光被切割成無數細長的光柱斜插進水面。亞瑟抬起頭，用眼睛接近這片雨林。那些光柱之間，在每一片被照亮的葉片上與氣生根的縫隙裡，在附生蘭花的葉腋間，成千上萬的蝴蝶飛舞。翅膀上流轉著藍紫色與亮橙色的光斑，如同打碎的彩繪玻璃被傾倒進這片雨林。巨大的美麗使亞瑟一動不動。書從膝頭滑落，啪一聲扣在船底。蝴蝶翅脈間細密的鱗粉在陽光下閃著金屬的光澤。他伸出手，蝴蝶就停在他的手上。轉動手錶，蝴蝶就飛走。他的掌心濕透了，沾下微弱的磷光。他又把手放回水裡。磷光在水中散開，像一片融化的星星，被黑色的水流帶走了。</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">Francis turned his face to look at him and blinked once. Something in his eyes was fluttering gently, like moth wings. His lips parted slightly, as if about to say something, but in the end he only let out a breath. A group of yellow-spotted river turtles were slowly sliding from the shallows into the water; the yellow spots on their carapaces flashed once on the surface, then sank into the darkness. A river dolphin poked its head out not far away; its blunt snout broke the water surface, then slowly sank again. It was pink-grey, the colour of morning mist, its dorsal ridge smooth as a pebble without a dorsal fin. Arthur stared at the place where it had disappeared. The water surface closed, leaving no trace. The river dolphin was the creature closest to myth in the Rio Negro—they would show almost human expressions, linger by boats, and in the afternoon make a sound like air escaping, like a sigh suppressed for too long.</span>
+        <span class="zh">弗朗西斯轉過臉看他，眨了一下眼睛。他的眼睛裡面有某種東西在輕輕地、像蛾翅那樣扇動著。嘴唇微微張開，像是想說些什麼，但最終只是呼出一口氣。一群黃頭側頸龜正從淺灘上緩緩滑入水中，背甲上的黃斑在水面上閃了一瞬，就沉進黑暗。一隻河豚在不遠處探出頭來，圓鈍的吻部劃破水面，又緩緩沉下去。它是粉灰色的，像晨霧的顏色，沒有背鰭的脊背圓滑如卵石。亞瑟盯著它消失的地方，水面合攏，沒有留下任何痕跡。河豚是內格羅河最接近神話的生物——它們會露出近似人類的表情，會在船邊徘徊，會在午後發出氣孔呼氣的聲響，像一聲被壓抑太久的嘆息。</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">Arthur narrowed his eyes and met the river dolphin's gaze for a moment. When he withdrew his gaze, Francis was looking at him. His gaze rested quietly on Arthur's face, carrying a tenderness almost like scrutiny, as if observing something he had long been familiar with but still wanted to see more clearly.</span>
+        <span class="zh">亞瑟瞇起眼睛與河豚對視了一瞬，收回目光時弗朗西斯正看著他。他的目光安靜地落在亞瑟臉上，帶著一種近乎審視的溫柔，像是正在觀察一件他早已熟悉、卻仍想看仔細的東西。</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">There is more than just the two of us in the rainforest.</span>
+        <span class="zh">雨林裡不止我們兩個人。</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">He read this sentence from Francis's eyes. In the distance came the continuous hum of a diesel generator. Birds and beasts screamed without end. Francis suddenly doubled over, clutching his stomach, sweat seeping from his forehead.</span>
+        <span class="zh">他從弗朗西斯的眼睛裡讀出這句話。遠處傳來柴油發電機的持續嗡鳴聲。鳥獸尖叫不止。弗朗西斯突然捂著肚子彎下腰，額頭上滲出汗。</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"What's wrong? Did something bite you?"</span>
+        <span class="zh">「怎麼了？有沒有什麼東西咬了你？」</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">Arthur raised the paddle high and lodged the boat in the mud. Francis's expression looked as if he were enduring immense pain. But he still bent down and got out of the boat, his feet sinking into the mud. His ankles sank and pulled out, making a wet, soft sound. Arthur followed him, parting the ferns taller than a person, walking toward the direction of the sound. The mud underfoot went from soft to hard. The smell of diesel in the air overpowered the floral scent and the smell of rotting leaves. This smell should not exist in the rainforest, nor should this sunlit clearing. In the centre of the clearing stood a logging machine, its tracks sunk in the mud, its saw teeth still biting into a severed mahogany trunk. Beside the machine crouched an extremely thin man. He was chopping residual branches with a short-handled axe, his movements sluggish. He wore a dusty old shirt, the cuffs worn thin, the exposed wrists like two branches soaked and wrinkled by water.</span>
+        <span class="zh">亞瑟高舉槳葉，把船擱在淤泥中。弗朗西斯的表情像在忍耐巨大的疼痛。但他依舊彎著腰下了船，雙腳踩進泥裡。腳踝陷下去又拔起來，發出一種濕軟的聲響。亞瑟跟上他，分開高過人頭的蕨草，朝聲音的方向走。腳下的泥土從軟變硬。空氣裡柴油的氣味壓過了花香和腐葉味。雨林裡本不應該存在這種氣味，存在這種陽光普照的空地。空地中央立著一台伐木機，履帶陷在泥裡，鋸齒還咬著一棵被切斷的紅木樹幹。機器旁邊蹲著一個極瘦的男人。他正用一把短柄斧子劈著殘枝，動作遲鈍。他穿著一件灰撲撲的舊襯衫，袖口磨得稀薄，露出的手腕像兩根被水泡皺的樹枝。</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">Arthur stepped forward. He opened his mouth; the words he wanted to say were already on the tip of his tongue, but the man's gaze suddenly lifted and collided with his. Those eyes were murky and slack. The man's lips moved, uttering a string of syllables—short, murky, like the sound of rocks rubbing against each other. Arthur did not understand. He first tried Portuguese on the man; the man did not react. Then he switched to English; the man lowered his gaze. He opened his mouth and spat out a few heavily accented English words. His tone was chopped up, as if chewing a piece of bread that was too hard.</span>
+        <span class="zh">亞瑟上前一步。他張開嘴，要說的話已經在舌尖上，但那男人的目光忽然抬起來，正撞上他的目光。那雙眼睛渾濁而鬆弛。男人的嘴唇動了動，說出一串音節——短促、渾濁、像岩石相互摩擦的聲響。亞瑟聽不懂。他先對男人試了一遍葡萄牙語，男人沒有反應。又換成英語，男人垂下目光。他張開嘴，吐出幾個帶著濃重口音的英語單詞。他說話時的音調咬得很碎，像在嚼一塊太硬的麵包。</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"I… not understand. I work. That all."</span>
+        <span class="zh">"I… not understand. I work. That all."</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">Arthur pointed at the logging machine behind him, then at the cut tree stumps around them. The man's gaze followed his finger but seemed to be looking at another language he could not learn. Arthur saw the thin cord swinging on his chest—a photograph sealed in transparent tape hung at the end. In the photograph was a round-faced young woman holding a striped kitten, smiling at the camera. Behind her was a wall painted light blue, with several faded plastic stickers stuck to it. Arthur's words suddenly stopped. His mouth was open, half a sentence suspended in the air, not falling. He looked at the photograph, then at the man so thin he seemed about to fall apart. His fingers unconsciously clenched the edge of his notebook; the paper made a very faint sound, like tearing silk.</span>
+        <span class="zh">亞瑟指著他身後的伐木機，又指向周圍那些被切開的樹樁。男人的目光隨著他的手指移動，卻像在看另一種他學不會的語言。亞瑟看見了他胸前晃蕩的那根細繩——繩端繫著一張用透明膠帶封住的照片。照片上是一個圓臉的年輕女人，懷裡抱著一隻條紋小貓，對著鏡頭笑。她身後是一面塗成淺藍色的牆，牆上貼著幾張褪色的塑料貼紙。亞瑟的話忽然停住了。他張著嘴，半句話懸在空氣裡，沒有落下去。他看著那張照片，又看著那個瘦得幾乎要散架的男人。他的手指下意識地攥緊了筆記本的邊緣，紙張發出一聲極輕的、如裂帛般的聲響。</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">Francis walked over, crossed Arthur's shoulder, and went to the man. He crouched down, his line of sight level with those murky eyes. He raised his hand and, very lightly, like touching the edge of a Victoria amazonica leaf, pressed his fingertips to the man's forehead. The man's shoulders trembled. He raised his head and looked at Francis. In those eyes covered with dry mud, something was loosening, pushing up from an invisible depth.</span>
+        <span class="zh">弗朗西斯走過來，越過亞瑟的肩膀，走到那男人面前。他蹲下身，視線與那雙渾濁的眼睛平齊。他抬起手，極輕地、像觸摸一片王蓮葉的邊緣那樣，將指尖貼上男人的額頭。男人的肩膀抖了一下，他抬起頭，看著弗朗西斯，那雙覆蓋著乾泥的眼睛裡有什麼正在鬆動，正從看不見的深處推動著。</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"What… lady do?"</span>
+        <span class="zh">"What… lady do?"</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">The man asked.</span>
+        <span class="zh">男人問。</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"This lady. What she doing?"</span>
+        <span class="zh">"This lady. What she doing?"</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">Francis did not withdraw his hand; his fingertips still touched the man's forehead. He turned his face and glanced at Arthur, then let his gaze fall back on the man's face; the corner of his mouth moved slightly. Arthur was about to retort, but the man stood up, turned, and walked deep into the forest. Arthur wanted to follow, but Francis extended a hand and pressed it against his chest. The man walked a dozen steps, then suddenly stopped. His back blurred for a moment among the ferns and vines, then he waved his hand vigorously into the distance. His arm traced a very slow arc in the air, as if waving goodbye to something. But then the arc froze. His body stiffened in place, his arm suspended in midair.</span>
+        <span class="zh">弗朗西斯沒有收回手，指尖仍然貼著男人的額頭。他轉過臉看了亞瑟一眼，又把目光落回男人臉上，嘴角微微動了一下。亞瑟正要反駁，男人卻站起來，轉過身，朝著林子深處走去。亞瑟想要跟上去，但弗朗西斯伸出一隻手，按在他的胸口。男人走了十幾步，忽然停下來。他的背影在蕨草與藤蔓之間模糊了一瞬，又大力朝遠處揮了一下手。他的手臂在空中劃過一道極緩的弧線，像在揮別什麼。但緊接著那弧線就頓住了。他的身體僵在原地，手臂懸在半空。</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">A tree in the distance was falling. One after another, like dominoes pushed by an invisible finger. The sound of trunks hitting the ground was dull and long. The roar caught up with the line of sight—the bellow of diesel engines, the shriek of saw teeth biting into wood marrow, the low friction of iron cables dragging trunks over the mud. A swarm of metal, tireless insects gnawed at the bones of this forest. The man stood blankly. His arm slowly dropped; as it dropped, it touched the broken end of a sapling cut in two beside him, his fingertip stained with sap. He looked down at his hand and did not wipe away the wet mark.</span>
+        <span class="zh">遠處一棵樹正在倒下。一棵接一棵，像被看不見的手指推倒的骨牌。樹幹砸在地面上的聲響沉悶而綿長。轟鳴聲追上了視線——柴油引擎的怒吼，鋸齒咬進木髓的尖嘯，鐵索拖拽樹幹時刮過泥土的低沉摩擦。一群金屬的、不知疲倦的昆蟲啃食著這片林子的骨骼。男人愣愣地站著，他的手臂慢慢垂下來，垂下時碰到了身側一株被切成兩半的幼樹的斷口，指尖染上樹液。他低頭看著自己的手，沒有擦去這道濕痕。</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">Arthur ran over, wanting to block them with his own body. He knew it was futile. But a soft call entered his ear.</span>
+        <span class="zh">亞瑟跑過去，想用自己的身體擋住他們。他清楚這只是徒勞。但一聲輕喚傳入他的耳朵。</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"Aiú."</span>
+        <span class="zh">「Aiú.」</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">Arthur turned back. Francis stood there, without anger—his face did not even hold the peace Arthur was familiar with, the peace that had long remained in the rainforest. It was something emptier, more eternal. Arthur gazed into Francis's eyes; something was changing there, not his pupils or irises, but something deeper, more fundamental, like silt on a riverbed slowly stirred by an undercurrent. Arthur rubbed his eyes—Francis's figure seemed to have become taller, or wider, or more… dense. The change was too rapid. He saw Francis's arms growing darker, thicker; on the surface of his skin, vertical, undulating patterns were emerging, like the grain of tree bark. Arthur wanted to shout, but no sound came. His instinct recognised what was happening earlier than his consciousness. Francis was still standing there, but he was becoming a tree. His feet sank into the soil; roots were tentatively extending downward. His shoulder blades pushed up the back of his work clothes; those two protruding arcs were widening, intertwining with the surrounding aerial roots, vines, epiphytic orchid roots, like a spider weaving itself into the centre of its own web.</span>
+        <span class="zh">亞瑟回過頭，弗朗西斯站在那裡，沒有憤怒——他的臉上甚至沒有那種亞瑟熟悉的、在雨林中長久留存著的平和。那是一種更空、更加永恆的東西。亞瑟注視著弗朗西斯的眼睛，那裡面有東西正在變化，不是他的瞳孔或虹膜，而是更深處、更底層的某種質地，像河床上的淤泥被一股暗流緩緩掀動。亞瑟揉了揉眼睛——弗朗西斯的身形似乎變得更高了，或者更寬了，或者更……密了。那種變化太迅速。他看見弗朗西斯的手臂正在變深，變粗，表皮上正浮現出一道一道縱向的、起伏的紋路，如同樹皮的走向。亞瑟想要大喊，卻發不出聲音。他的本能比他的意識更早地認出了正在發生的事情。弗朗西斯仍然站在那裡，但他正在變成一棵樹。他的雙腳陷進泥土，根鬚正在試探著向下伸展。他的肩胛骨頂起了工裝布的背面，那兩個凸起的弧度正在變寬，正在和周圍的氣生根、藤蔓、附生蘭花的根系交織在一起，像一隻正在織網的蜘蛛把自己紡進了網的中心。</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">On the black-water river of the Amazon, an arapaima, diving, scraped its chest against a submerged stone and left a scale. That scale later became ore; the ore was carried away by tree roots; the tree was pecked by a toucan's beak; a butterfly landed on the beak. That scale, that ore, that tree, and that butterfly shared the most ancient language. The gaze as he crossed the rainforest—the rainforest itself was gazing through his eyes, touching through his fingers, growing through his silence.</span>
+        <span class="zh">亞馬遜的黑水河上，一條巨骨舌魚在下潛時，把胸膛剮在了一塊水下的石頭上，留下了一片鱗。那片鱗後來成了礦石，礦石被樹根捲走，樹根被巨嘴鳥鳥啄進了喙裡，喙上落了一隻蝴蝶。那片鱗、那塊礦石、那棵樹和那隻蝴蝶共同的、最古老的語言。他穿過雨林時的那種注視，雨林本身在透過他的眼睛注視，透過他的手指觸摸，透過他的沉默生長。</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">Arthur's legs gave way; his knees sank into the leaf litter. His eyes were still open, but his vision began to blur, as if an extremely thin, watery film were growing from his field of vision. He saw—those gazes. They had always been there, on the back of every leaf, in every drop of falling sap, in the faint glow at the tip of every butterfly's wing. Thousands of eyes pressed against his back, and now they were seeping out of his vision, spreading into a chaotic light. His breathing became the sound of tearing.</span>
+        <span class="zh">亞瑟的腿軟了一下，膝蓋陷進腐葉層裡。他的眼睛還睜著，但視線開始模糊，像有一層極薄的、水汽般的膜正從他的視野裡長出來。他看見了——那些注視。它們一直在那裡，在每一片葉子的背面，在每一滴垂落的樹汁裡，在每一隻蝴蝶翅尖的微光裡。千萬雙眼睛貼在他的背上，此刻正從他的視野裡滲出來，瀰漫成一片混沌的光。他的呼吸變成了被撕開的聲響。</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">He fainted. He did not know how long it had been when he woke to the sound of rain falling. Cold raindrops struck his face; Arthur opened his eyes. The clouds pressed low; the rain threads were like countless fine stitches, sewing sky and ground together. The logging machine lay scattered around; no one was in sight. He lay on the ground, his body soaked through by the rain.</span>
+        <span class="zh">他暈了過去。不知過了多久，他在雨水落下來的時候醒來。冰涼的雨珠打在臉上，亞瑟睜開眼。雲層壓得很低，雨絲像無數細密的針腳，把天空與地面縫在一起。伐木機散落在周圍，不見任何人。他躺在地上，身體被雨水泡透。</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">Before his eyes was a giant tree. The trunk was so thick that ten adults with arms outstretched could not embrace it; the bark was covered in deep vertical grooves, and every groove held rainwater, like countless tiny, flowing black rivers. The canopy reached into the sky; the rain-wet leaves gave off a dark green lustre, their edges curled like the rims of porcelain bowls, water droplets rolling down the curled edges and dripping onto Arthur's forehead. He remembered the place where that drop had fallen—the same place Francis's fingers had once touched.</span>
+        <span class="zh">他的眼前是一棵巨大的樹。樹幹粗得十個成年人伸開雙臂也抱不住，樹皮上佈滿縱向的深紋，每一道紋路裡都蓄著雨水，像無數細小的、正在流動的黑色河流。樹冠伸向天空，被雨打濕的葉片泛著暗綠色的光澤，葉緣捲曲如瓷碗的沿口，水珠沿著捲曲的邊緣滾落，滴在亞瑟的額頭上。他記得那個滴落的位置——和弗朗西斯手指曾經觸碰過的地方是同一處。</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">He blinked.</span>
+        <span class="zh">他眨了一下眼睛。</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">Aiú.</span>
+        <span class="zh">Aiú.</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">The tree disappeared. A bird landed on the branch nearest him, tilting its head to look at him. Its feathers shone with a dark purple lustre; its eyes were like two black glass beads washed by rain. It looked at him for a few seconds, then called out—shrill and short, like a needle gently piercing the rain curtain. Its wingtip brushed Arthur's forehead hair, leaving an extremely light wind.</span>
+        <span class="zh">樹消失了。一隻鳥落在離他最近的樹枝上，歪著頭看他。它的羽毛閃著暗紫色的光澤，眼睛像兩顆被雨水洗過的黑色玻璃珠。它看了他幾秒，然後叫了一聲，尖細而短促，像一根針輕輕刺破雨幕。它的翅尖擦過亞瑟的額髮，留下一道極輕的風。</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">He blinked.</span>
+        <span class="zh">他眨了一下眼睛。</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">Aiú.</span>
+        <span class="zh">Aiú.</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">A flower was opening. The petal edges were rimmed with an extremely fine white line; deep in the flower's centre was a goose-yellow, chick-like stamen, heavy and drooping after being wet by rain. The stem was slender yet firm, like a knuckle emerging from the darkness. Rainwater dripped from the petal tips. He reached out, wanting to touch it, but his fingertip stopped one centimetre from the flower. He recognised that form—the same kind that had once been tucked in Francis's pocket. Purple bromeliad.</span>
+        <span class="zh">一朵花正在開放。花瓣邊緣鑲著一圈極細的白色，花心深處有一團鵝黃色的、小雞似的蕊，被雨水打濕後沉甸甸地低垂著。花莖纖弱而堅定，如同一節指節從黑暗中探出。雨水從花瓣尖端滴落。他伸出手，想要觸碰，但指尖在距離花一厘米的地方停住了。他認出了那種形態，是弗朗西斯口袋裡曾經插過的那一種。紫鳳梨花。</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">He blinked.</span>
+        <span class="zh">他眨了一下眼睛。</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">Aiú.</span>
+        <span class="zh">Aiú.</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">A frog crouched on the tree stump before him. It was no bigger than Arthur's thumbnail; its skin was translucent emerald green, and beneath it one could faintly see a densely beating heart. Two enormous eyes occupied the upper half of its head; the pupils were horizontal slits. Raindrops fell on its back, sliding along the texture of its skin, leaving no trace. It looked at him, and that gaze felt familiar to Arthur.</span>
+        <span class="zh">他面前的樹樁上蹲著一隻青蛙。大小不過亞瑟的拇指指甲蓋，皮膚是半透明的翠綠色，能隱約看見下面細密跳動的心臟。兩隻巨大的眼睛佔滿了頭的上半部，瞳孔是水平的細線。雨珠落在它背上，沿著皮膚的紋理滑落，沒有留下一絲痕跡。它看著他，那種注視讓亞瑟感到熟悉。</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">Arthur sat up. Rainwater ran down his chin into his collar. The rain fell harder. He tilted his head back and let the rain rush into his eyes. He opened his eyes one last time. In his field of vision remained only a bright, breathing light. He could no longer see clearly.</span>
+        <span class="zh">亞瑟坐起來。雨水順著他的下巴淌進衣領。雨越下越大。他仰起頭，讓雨水沖進他的眼睛裡。他最後一次睜開眼。視野裡只剩下一團明亮的、正在呼吸著的光。他再也看不清了。</span>
+    </div>
+
+    <!-- 註釋分割線 -->
+    <hr class="divider">
+
+    <!-- 註釋部分 -->
+    <div class="footnote">
+        <div class="footnote-item" id="fn1">
+            <span class="en"><a href="#ref1" class="footnote-link">①</a> The Rio Negro is the largest tributary on the north bank of the Amazon River. Its water is stained black by deep humus, hence its name meaning "black river" in Portuguese and Spanish. The Igapó black-water flooded forests are submerged year-round by acidic black water and have evolved large numbers of endemic plants found nowhere else. The Terra Firme highland primary forests, because they are elevated and do not accumulate water, have globally top-tier diversity of epiphytic orchids, bromeliads, and trees. The white-sand savanna camps (Campinaranas) are a poor white-sand landscape unique to the Rio Negro basin, where large numbers of narrowly endemic new species are frequently discovered. Because it possesses several unique types of riverbank forests, its species uniqueness far exceeds that of white-water tributaries, making it a holy land for botanists.</span>
+            <span class="zh"><a href="#ref1-zh" class="footnote-link">①</a> 內格羅河（Rio Negro）是亞馬遜河北岸最大支流，河水被深厚的腐殖質染成黑色，因此在葡萄牙語和西班牙語中意為黑色的河。其中Igapó黑水河淹林常年被酸性黑水淹沒，演化出大量僅存於此的特有植物。Terra Firme高地原生林因身處高處不積水，附生蘭、鳳梨、喬木多樣性全球頂尖。白砂稀樹營地（Campinaranas）為內格羅盆地獨有貧瘠白砂地貌，大量狹域特有新種高頻發現。因擁有幾類獨有的河岸森林，其物種獨特性遠超白水支流，成為植物學家的聖地。</span>
+        </div>
+        <div class="footnote-item" id="fn2">
+            <span class="en"><a href="#ref2" class="footnote-link">②</a> The scientific name of the dogbane mentioned earlier.</span>
+            <span class="zh"><a href="#ref2-zh" class="footnote-link">②</a> 為前文狗牙花的學名。</span>
+        </div>
+        <div class="footnote-item" id="fn3">
+            <span class="en"><a href="#ref3" class="footnote-link">③</a> Francis, better known as Saint Francis of Assisi (San Francesco di Assisi), founder of the Franciscan Order and the Poor Clares. He is the patron saint of animals, merchants, the Catholic Church movement, and the natural environment.</span>
+            <span class="zh"><a href="#ref3-zh" class="footnote-link">③</a> 弗朗西斯，更為人熟知的應該是聖·方濟各·迪·阿西西（San Francesco di Assisi、Saint Francis of Assisi），聖弗朗西斯科、亞西西的聖方濟各或聖法蘭西斯，天主教方濟各會和方濟各女修會的創始人。他是動物、商人、天主教教會運動以及自然環境的守護聖人。</span>
+        </div>
+        <div class="footnote-item" id="fn4">
+            <span class="en"><a href="#ref4" class="footnote-link">④</a> Translation: The river is a separation. To cross it is to cross myself.</span>
+            <span class="zh"><a href="#ref4-zh" class="footnote-link">④</a> 譯文：河流是一種分離。渡過它，就是渡過我自己。</span>
+        </div>
+        <div class="footnote-item" id="fn5">
+            <span class="en"><a href="#ref5" class="footnote-link">⑤</a> Cachaça is Brazil's most representative distilled spirit, fermented and distilled from fresh sugarcane juice. Its history dates back to the 16th century; together with football and samba, it is known as one of the "Three Treasures of Brazil." White cachaça is bottled directly after distillation or aged briefly in wooden barrels; it is clear and transparent, with fresh grassy and vegetal flavours. Dark cachaça requires aging in wooden barrels for three years or even longer. The aging process uses various native Brazilian woods, giving the liquid unique spice, nut, or herbal flavours. Caipirinha is Brazil's national cocktail. Lime wedges and sugar are muddled in a glass, then ice and cachaça are added. But as a distilled spirit with about 40% alcohol, I can't tell the difference. Maybe I drank a fake one.</span>
+            <span class="zh"><a href="#ref5-zh" class="footnote-link">⑤</a> 卡莎薩(Cachaça)是巴西最具代表性的蒸餾酒，用新鮮甘蔗汁發酵蒸餾而成。它的歷史可以追溯到16世紀，與足球、桑巴並稱為「巴西三寶」。其中白卡莎薩是蒸餾後直接裝瓶或在木桶短時間陳年，清澈透明，帶有新鮮的青草和植物風味。而深色卡莎薩需要在木桶中陳年三年甚至更久。陳年過程會使用多種巴西本地木材，賦予酒液獨特的香料、堅果或草本風味。凱匹林納(Caipirinha)是巴西的國民雞尾酒。將青檸塊和糖在杯中搗碎，加入冰塊和卡莎薩即可。但是作為一款酒精度約40%的蒸餾酒，我喝不出來有啥區別。可能喝到假的了。</span>
+        </div>
+        <div class="footnote-item" id="fn6">
+            <span class="en"><a href="#ref6" class="footnote-link">⑥</a> Cajuína is a non-alcoholic, non-carbonated beverage made from the juicy "cashew apple" part of the cashew. It originated in northeastern Brazil. The production process involves clarifying cashew juice, bottling it, and heating it in a water bath. The taste is refreshing, with a unique cashew flavour.</span>
+            <span class="zh"><a href="#ref6-zh" class="footnote-link">⑥</a> 卡茹伊納（Cajuína）是一種用腰果多汁的「果托」部分製成的非酒精、不含氣飲料。起源於巴西東北部。製作過程是將腰果汁澄清、裝瓶後水浴加熱，口感清爽，帶有獨特的腰果風味。</span>
+        </div>
+        <div class="footnote-item" id="fn7">
+            <span class="en"><a href="#ref7" class="footnote-link">⑦</a> Translation: Look at that loveliest thing / So full of grace / It is her, the girl / Who comes and passes / In a sweet sway / On her way to the sea / Girl of the golden body / From the sun of Ipanema / Your swaying is more than a poem / It is the loveliest thing I have ever seen pass by / Ah, why am I so lonely? / Ah, why is everything so sad? / Ah, the beauty that exists / The beauty that is not only mine. "Garota de Ipanema" (The Girl from Ipanema) and "Ye Lai Xiang" (Fragrance of the Night). The former is the founding masterpiece of Brazilian bossa nova, Brazil's first pop hit to go global, serving as a national cultural calling card and an iconic symbol of Rio. At the 2016 Rio Olympics, Gisele Bündchen walked slowly across the stage to this song, leaving the world an elegant, vital silhouette. The author believes this song's status in Brazil is like that of "Ye Lai Xiang" for Chinese people. Last year the author watched an Argentine tango performance in Hong Kong; during the encore, an Argentine friend sang "Ye Lai Xiang." This song is the pinnacle of Republican-era Shanghai jazz, a benchmark of original Chinese pop jazz, endlessly covered by Teresa Teng, Fei Yu-ching, and Chinese and foreign jazz ensembles. It is one of the earliest old songs to go abroad in batches. When I couldn't help singing along with the lead singer, a Hong Kong woman of about sixty beside me also sang along. Perhaps she, like me, first heard this song from her parents' lips, or from Miss Teresa Teng. I wonder if she also remembered the first time she heard it—mysterious and hazy like the fragrance of the night, at a flower-like age.</span>
+            <span class="zh"><a href="#ref7-zh" class="footnote-link">⑦</a> 譯文：瞧那俏麗的佳人／美麗而又優雅至極／是她，那個女孩／她向我走來／又從我邊上走過／踏著輕盈的舞步，走向大海／那古銅色的皮膚／來自伊帕內瑪的陽光／她走路的姿態比詩歌還要優美／是我見過的最美的事物／唉，為何我如此孤單？／唉，為何我滿眼悲情？／啊，這世上尚存的美／伊帕內瑪女孩(Garota de Ipanema)與夜來香。前者是巴西波薩諾瓦創世代表作，巴西走向世界的第一首流行金曲，作為國家對外文化名片與里約城市專屬符號。2016年里約奧運會，吉賽爾·邦辰正是踏著這首歌緩步走過舞台，為世界留下了一抹優雅的、有生命力的倩影。作者認為這首歌在巴西的地位就像夜來香之於中國人。去年作者在中國香港觀賞一支阿根廷舞團的探戈表演，等到樂隊安可時阿根廷朋友演唱了夜來香。這首歌是民國上海爵士巔峰，中國本土原創流行爵士標杆，鄧麗君、費玉清、中外爵士樂團無限翻唱，是最早批量出海的老歌。當我忍不住跟著主唱一起唱時，我身邊一位大約六十多歲的香港女士也跟著唱。也許她也和我一樣從父母口中，或是從鄧麗君小姐那裡第一次聽見這首歌。不知她是否也會想起第一次聽這首歌，正是如夜來香般神秘朦朧，花一樣的年紀。</span>
+        </div>
+        <div class="footnote-item" id="fn8">
+            <span class="en"><a href="#ref8" class="footnote-link">⑧</a> Avenida Vieira Souto is the main street along Ipanema Beach in Rio, with the Two Brothers Mountain (Dois Irmãos) standing at its end. At dusk the entire avenue is packed with people watching the sunset; when the sun sinks behind the Two Brothers, collective applause is a local custom.</span>
+            <span class="zh"><a href="#ref8-zh" class="footnote-link">⑧</a> 维埃拉·索托大道（Avenida Vieira Souto）是沿着里约伊帕内玛海滩的主要街道，尽头矗立着两兄弟山（Dois Irmãos）。黄昏整条大道挤满看日落的人，太阳沉入两兄弟山时集体鼓掌是当地习俗。</span>
+        </div>
+        <div class="footnote-item" id="fn9">
+            <span class="en"><a href="#ref9" class="footnote-link">⑨</a> This is the author's favourite player, the Brazilian player Ronaldo (Ronaldo Luís Nazário de Lima)'s national team jersey number.</span>
+            <span class="zh"><a href="#ref9-zh" class="footnote-link">⑨</a> 這是作者最喜歡的球員，巴西球員羅納爾多（大羅）的國家隊球衣號碼。</span>
+        </div>
+    </div>
+
+    <hr class="divider">
+
+    <div class="title">我所有文章，尤其是《遠方天氣晴朗》的反饋狀態讓我非常失望。發布一週後的一個下午，我從已有的大綱中決定</div>
+    <div class="subtitle">Afterword</div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">The feedback state of all my articles, especially "The Weather Is Clear Far Away," has left me deeply disappointed. One afternoon, a week after publication, I decided on the next piece from my existing outlines.</span>
+        <span class="zh">我所有文章，尤其是《遠方天氣晴朗》的反饋狀態讓我非常失望。發布一週後的一個下午，我從已有的大綱中決定下一篇文章。</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">In the past, many of my pieces had images existing before words, so they were written very smoothly. That afternoon, although I had the desire to create, not a single image was born in my mind. To be honest, I have always been able to distinguish my creative impulses—including then, part of it came from "I must write a piece to prove myself again," and another part came from "I am hoping the feedback on the new piece will reduce the coldness and pain that 'The Weather Is Clear Far Away' brought me." I am only admitting this and still choosing to force myself. But in reality, for a creator like me, a new piece is also very likely to remain without feedback.</span>
+        <span class="zh">過去我有很多篇目是畫面先於文字存在，因此寫得十分順暢。那個下午雖然有創作欲，卻沒有一篇在我腦中生出畫面。說實話，我一直能分辨我的創作衝動——包括那時，一部分來自「我一定要寫一篇重新證明自己」，另一部分則來自「我在期待新篇的反饋能削減《遠方天氣晴朗》帶給我的冷淡與痛苦」。我只是在承認這點之後依舊會選擇逼迫自己。但實際上，對於我這樣的創作者來說，新篇也很可能依然毫無反饋。</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">However, apart from those relatively complete outline subjects, some scattered images were born in my mind—a botanist rowing a boat into the depths of the Amazon rainforest. The earliest source of this image should be my favourite animated film, Rio. In the stuffy air before rain, in my bedroom, I saw damp, sweating bodies, giant trees, rivers, air… and an indescribable feeling:</span>
+        <span class="zh">但是，除了那些相對完整的大綱題材之外，我腦子裡生出一些零星的畫面——一個植物學家划船進入亞馬遜雨林深處。這個畫面最早的源頭應該是我最喜歡的動畫電影《里約大冒險》。在雨前悶熱的空氣中，我的臥室裡，我看見潮濕流汗的身體、巨大的樹木、河流、空氣……以及一種難以言說的感覺：</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"There are so many living things that you will always feel someone is watching your back."</span>
+        <span class="zh">「生靈太多，以至於你會永遠覺得有人在注視你的背影。」</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">This gaze does not necessarily mean a terrifying presence, but is more like an existence where all things have spirits. Everything is looking at you; the world is alive. This gaze is not coercion either; it is telling you that you are not alone. When the density of life is sufficiently high—for example, in a rainforest—loneliness itself is impossible. You do not need to believe in gods; you only need to be in a sufficiently lush forest, and you will passively enter a state of "being seen"—not seen by some虚无 subject, but seen by the density of existence itself.</span>
+        <span class="zh">這種注視未必意味著恐怖的存在，而是更像一種萬物皆有靈的存在感。一切都在看你，世界是活著的。這種注視也不是脅迫，它是在告訴你你並不孤獨。當生命密度足夠大時——比如在雨林，孤獨本身就是不可能的。你不需要相信神明，只要置身於足夠茂盛的森林，你就會被動地進入一種「被看見」的狀態——不是被某個虛無的主體看見，而是被存在的密度本身看見。</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">In this somewhat nostalgic creation, this piece was completed. Although, due to severe tenosynovitis and migraines, it was much later than I had expected.</span>
+        <span class="zh">在這種有點像懷念的創作中，這篇完成了。儘管因為嚴重的腱鞘炎與偏頭痛，比我預想的晚了很多。</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">At first I wanted to write the Holy Spirit as some kind of personified existence. Later I gradually discovered that he might not be a person at all; he is the collection of life. It is just that he appears in the form Arthur likes most, is most familiar with, and can best understand, even if Arthur himself does not admit it. Because the Holy Spirit is not tempting him with a form he likes, but translating itself. Trees, rivers, birds do not understand human language, so the entire forest can only use the most vivid, most acceptable image in the botanist's senses to communicate with him. I made Francis silent, first because I feel that in many articles, including the original work, Francis is a person who relies heavily on language to flirt. I wanted to try what remains if you take away a character's most proficient means of expression. Many characters are charming precisely because they can talk, and can establish intimacy most directly with sweet words. But if all that is gone, his charm can only come from his non-verbal ways of interacting with others. Second, he himself is composed of tens of thousands of sounds. Compared to language—a system to which humans assign meaning—sound is the original existence of life. The rainforest and the streets are not speaking Portuguese, but they are all making sound. And these sounds share a common rhythm, and this rhythm is also connected to human language. Only then does the repeatedly appearing "Aiú" hold. It is a syllable that all life can emit. It can be a baby's first vowel, the wind's friction through tree crowns, the elongated tail note in birdsong, a person's last breath at death, the echo of river water striking stones… It does not need translation at all; it already existed before becoming language. Moreover, language creates fixed attributes. Just like if you speak French, you belong to France; if you speak Chinese, you belong to China. (Don't pointlessly argue with me here that African colonies also speak French, and Singapore also speaks Chinese. You know I don't mean that.) But Francis does not belong to any country; he belongs to life. So the best way is to let him not enter any language at all, retaining only sound, gaze, movement, touch, breathing… these expressions shared by all life.</span>
+        <span class="zh">最初我想把聖靈寫成某種人格化的存在。後來慢慢發現他或許根本不是一個人，他是生命的集合。只是他會以亞瑟最喜歡、最熟悉、最能理解的樣貌出現，哪怕亞瑟自己都不承認。因為聖靈並非在以他喜歡的樣貌誘惑他，而是在翻譯自己。樹木、河流、鳥兒都不懂人的語言，於是整片森林只能借用植物學家感官裡最鮮活的、最能接受的形象與他交流。我把弗朗西斯設定成不說話，一是因為我覺得很多文章，包括原作裡，弗朗西斯都是一個非常依賴語言進行flirt的人。我想試試看如果把一個角色最擅長的表達方式拿走，他還剩下什麼？很多角色之所以有魅力，就是因為他們會說話，可以用情話最直觀地建立親密。但如果這些都沒有了，他的魅力只能來自他與別人進行非語言互動的方式。二是他本身而是由千萬種聲音組成。比起語言——人類賦予意義的系統。聲音是生命本來的存在。雨林和街道不是在說葡語，可是它們都在發聲。而這些聲音之間會有共同的節律，且這個節律也是與人的語言相通的。這樣文中反覆出現的「Aiú」才成立。它是一個所有生命都可能發出的音節。它可以是嬰兒學會的第一個元音，風穿過樹冠的摩擦，鳥鳴裡拉長的尾音，人臨終時最後一口呼吸，河水撞擊石頭的回響……它根本不需要翻譯，在成為語言之前就已經存在。況且語言會製造固有屬性。就好像你说法語，你就屬於法國，你說中文，你就屬於中國。（別在這裡毫無意義地槓我非洲殖民區也说法語，以及新加坡也說中文。你知道我不是這個意思。）但是弗朗西斯不屬於任何一個國家，而是屬於生命。那麼最好的辦法就是讓他根本不進入任何一種語言，只保留聲音、眼神、動作、觸碰、呼吸……這些所有生命都共有的表達。</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">I once wanted to write the ending as "the anger of life or nature," but this expression gradually lost accuracy in the process of thinking. Anger is an overly anthropomorphic human emotion. My hometown is in the mountainous area of southern Anhui, where there are large tracts of tall moso bamboo forests. The growth of bamboo is rapid and savage; one root will produce countless shoots. If you find a bamboo shoot emerging from your floor, then the next day the entire floor will likely be pierced by countless shoots. But this is not because nature is punishing you, but because nature is doing what it should do—growing freely—and you just happen to be in its path. Nature never takes revenge; life simply continues to grow.</span>
+        <span class="zh">我一度想把結尾寫成「生命或自然的憤怒」，但這種表達在思考過程中逐漸失準。憤怒是一種過度擬人化的人類情緒。我老家在皖南山區，那裡有大片高大的毛竹林。竹子的生長是迅速而野蠻的，一條根上會長出無數筍尖。如果你發現家裡的地板上冒出一根筍頭，那麼第二天很可能整塊地板都會被無數根筍刺穿。但這不是因為大自然在懲罰你，而是大自然做了它應該做的事情——自由地生長，而你恰好就在它的路徑上。自然從不復仇，生命只是繼續生長。</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">Beyond the depiction of the Amazon rainforest, I also added depictions of human culture. If the Holy Spirit is truly composed of the collection of life, then he should not only come from the forest. He should also come from carnival drumbeats, street graffiti, fruits in the market, children's laughter, fishing boats by the river… from humans, because humans are always part of life. The rainforest is his roots, the coast is his breathing, samba is his heartbeat, the crowd is his other kind of canopy.</span>
+        <span class="zh">在對亞馬遜雨林的描寫之外，我也加入了對人文的描寫。聖靈如果真的由生命集合構成，那麼他不應該只來自森林。他也應該來自狂歡節鼓點、街頭塗鴉、市場裡的水果、孩子的笑聲、河邊漁船……來自人類，因為人永遠是生命的一部分。雨林是他的根，海岸是他的呼吸，桑巴是他的心跳，人群是他的另一種樹冠。</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">At the same time, I also began to think about why I have been so长久地 fascinated by Brazil. My father is a Brazil fan, and I myself am a Brazil fan and a loyal viewer of football matches. Four years after four years, another World Cup year. Unlike recent World Cup themes or promotional songs that pursue a certain musical innovation, listening to older World Cup theme songs, you seem to clearly hear the spiritual outlook and character of each country in its melody. The first line of the 2010 South Africa World Cup was "You are a good soldier"—fitting perfectly with the primitive, vigorous fighting instinct of African countries, related to the grasslands, long independence struggles, and repeated explorations of war and chaos. The 2014 Brazil theme song was "We Are One." "Let the world know we are one." Of course I know that in reality Brazil has enormous wealth gaps, crime rates, and social problems. But the Brazil of that era showed the world another spiritual picture: not competition, but coexistence. Not homogenisation, but fusion. This emotion has actually continued into my creation. Why is the Holy Spirit the collection of life? Why carnival, rainforest ecology? Because they all express the same theme. Speaking of Rio and the 2014 Brazil World Cup, many people think the influence of childhood is just nostalgia, but I don't think so. Some works enter a person's life at a particularly delicate age, and then quietly determine what you will be moved by later. What I loved as a child may not have shaped my views, but it often shaped my sensibility—determining what I would find beautiful, what I would yearn for. Why would Brazil's Holy Spirit be the "collection of life"? Perhaps not because I have studied animism, nor because I deliberately designed a philosophical meaning, but because since 2014, I have already been moved by an imagination—that differences in the world do not necessarily mean rupture; they may also mean coexistence.</span>
+        <span class="zh">同時，我也開始思考我為什麼會對巴西如此長久地著迷。我爸爸是巴西球迷，我自己也是巴西球迷與球賽的忠實觀眾。四年又四年，又是一年世界盃。與近幾年世界盃主題或宣傳曲開始追求一定的音樂創新性不同，聽以前的世界盃主題曲，你似乎能從每個國家的旋律裡清晰地聽見那個國家的精神面貌與性格。2010年南非世界盃的第一句是「你是個優秀的戰士」——與非洲國家那種與草原、長久的獨立抗爭與反覆探索的戰亂息息相關的，原始而旺盛的戰鬥本能無比契合。而2014年巴西的主題曲是《We Are One》。「讓世界知道我們是一家。」我當然知道現實中巴西存在巨大的貧富差距、犯罪率和社會問題。但那個時代的巴西向世界展現的是另一種精神圖景：不是競爭，而是共存。不是同質化，而是融合。這種情感其實一直延續到了我的創作裡。為什麼聖靈是生命的集合？為什麼是狂歡節、雨林生態？因為它們都在表達同一個主題。說回《里約大冒險》與2014巴西世界盃，很多人會以為童年的影響只是懷舊，但我覺得不是。有些作品會在一個特別微妙的年齡進入人的生命，然後悄悄決定你以後會被什麼打動。我小時候喜歡的東西未必塑造了我的觀點，但往往塑造了我的感受力——決定了我會覺得什麼是美，什麼值得嚮往。巴西的聖靈為什麼會是「生命集合」？可能不是因為我研究過泛靈論，也不是刻意設計哲學寓意，而是因為從2014年開始，我就已經被一種想象打動了——世界上的差異不一定意味著撕裂，它們也可能意味著共存。</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">I also want to use a stereotypically Brazilian spirit to express my attitude toward "pain." I am not saying these words to people who truly suffer; I understand those who truly experience illness, trauma, and despair. But I always remain vigilant against another phenomenon—treating world-weariness as a label, destruction as personality, packaging pain as profundity. "The more desperate I am, the more special I am." Desire and violence can of course become literary themes. But if a person can ultimately only prove their uniqueness through a sense of destruction, then this uniqueness itself is fragile. Rivers do not stop flowing because a person is desperate; trees do not stop growing because a person feels the world is meaningless. Life never stops to wait for us or to solve existential problems for us; it simply continues to exist. Admiration is actually a severely underrated creative motivation. Many authors write anger, sorrow, fear. But those who truly write out of admiration are few. In this piece, I no longer ask what social significance the Amazon has. When I see that land, I am moved; this being moved is closer to the source of creation than any data analysis. Don't think that world-weariness and pain make you different; in fact, we are all the same. Under the scale of nature, personality is constantly dissolved, reorganised, defined, and redefined. What is truly worthy of awe is not pain, but life itself. And the essence of life is precisely continuity that is not obstructed by emotion. Life does not deny darkness, but darkness is not the endpoint, nor even the protagonist. You do not need to first solve absurdity before you can begin to flow. The most moving thing about Rio, which I loved most as a child, was never what profound truths it told, but that it made one feel how vivid the world is, how vigorous life is. And to be able to be within it is itself something worthy of awe.</span>
+        <span class="zh">我還想借一種刻板上的巴西精神表達自己對「痛苦」的態度。我並非對真正遭受痛苦的人說這些話，我理解那些真正經歷疾病、創傷和絕境的人。但我始終對另一種現象保持警惕——把厭世當作標籤，把毀滅當作個性，把痛苦包裝成深刻。「我越絕望，我就越特別」。慾望與暴力當然可以成為文學主題。但如果一個人最終只能通過毀滅感來證明自己的獨特，那麼這種獨特本身就是脆弱的。河流不會因為一個人絕望而停止流動，樹木不會因為一個人覺得世界沒有意義而停止生長。生命永遠不會停下來等待我們、或者為我們解決存在主義問題，它只是繼續存在。讚嘆其實是一種被嚴重低估的創作動力。很多作者會寫憤怒、悲傷、恐懼。但真正因為讚嘆而寫作的人很少。我在這篇中不再問亞馬遜有什麼社會意義。我看到那片土地的時候會感動，這種感動比任何數據分析都更接近創作的源頭。不要覺得厭世和痛苦就與眾不同，實際上我們都是一樣的。在自然的尺度下，人格會被不斷消弭、重組、定義、再定義。真正值得敬畏的不是痛苦，而是生命本身。而生命的本質恰恰是不受情緒阻礙的延續性。生命不否認黑暗，但黑暗不是終點，甚至不是主角。你不必先解決荒誕再開始流動。我年幼時最愛的《里約大冒險》最動人的地方從來不是它講了多麼深刻的道理，而是它讓人感受到世界如此鮮豔，生命如此旺盛。而能夠身處其中，本身就是一件值得驚嘆的事。</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">Of course, this idea can easily be misunderstood as belittling human existence. I have repeatedly examined this point, and the final answer I reached is no. I am not negating humans, nor am I praising some grand whole that swallows the individual. What I want to express is that humans are not the only scale, but humans are still one of the scales. I do not think individuals should melt into the whole. On the contrary, I have always believed that even if you are a part, two leaves of the same species have different textures. If there were no these concrete, microscopic lives—no individual experience and feeling—then any macro narrative would ultimately become an empty conjecture. Therefore, awe toward the whole and respect for individual experience are not contradictory. They should exist simultaneously. The world is so vast, vivid, and interconnected, and humans are only one form of life within it. Not higher, not lower—just one of them. No single form can monopolise life.</span>
+        <span class="zh">當然，這種想法很容易被誤解為貶低人類的存在。我反覆審視過這一點，最後得出的答案是否定的。我不是在否定人類，也不是在讚美某種吞沒個體的宏大整體。我想表達的是人類不是唯一尺度，但人類依然是尺度之一。我不認為個體應該融化進整體。相反，我始終認為即使你是一部分，同品種的兩片葉子也有不同的紋理。如果沒有這些具體微觀的生命——沒有個人的經驗與感受——那麼任何宏觀敘事最終都只會變成空洞的猜想。因此對整體的敬畏和對個體經驗的尊重並不矛盾。它們應該同時存在。世界如此龐大、鮮活、互相連接，而人類只是其中一種生命形式。不是更高也不是更低，只是其中之一。沒有一種形態能夠獨佔生命。</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">My views and creative philosophy may not be correct or mature, and part of them may be overturned by myself in the future. Therefore, restating my articles in a low-information-density way as commentary, or trying to summarise my creative patterns with a metaphysical taxonomy, is something I very much do not approve of—it cannot even be called feedback. I am far softer, more flexible, and more curious than any of you imagine. I also treat myself far more seriously than any of you expect. Also, do not ask about or express surprise at any of my other attributes, trying to infer my real-life experiences and life from my articles. I refuse to invade each other's life boundaries with anyone. I am willing to bear the responsibility of expression, but I do not need to package expression as eternal laws. At the same time, I do not need to use my own experiences to prove my expression. No one naturally possesses the right of interpretation above all else.</span>
+        <span class="zh">我的觀點與創作哲學未必正確或成熟，未來也可能被我自己推翻一部分。因此以一種信息密度很低的方式複述一遍我的文章進行評論，或是以一種形而上學的分類法試著總結我的創作規律，在我看來是我非常不認可的，甚至稱不上反饋。我遠比你們任何人想象的都更加柔和、靈活而具有好奇心。我也遠比你們任何人預計的都更認真地對待我自己。也不要對我的任何其他屬性發問或表達驚喜，妄圖從我的文章揣測我的現實經歷和生活。我拒絕與任何人的生活邊界互相侵犯。我願意承擔表達的責任，但我不需要把表達包裝成永恆的規律。同時我更不需要用我自己的經歷自證我的表達。沒有誰天然擁有凌駕於一切之上的解釋權。</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">Also, in advance, happy France's birthday to everyone. I hope everyone reads perfect articles.</span>
+        <span class="zh">以及，提前祝大家仏誕日快樂。希望大家都讀到完美的文章。</span>
+    </div>
+
+<!-- ================= RETURN ================= -->
+<div style="text-align:center;">
+  <a class="return-box" href="../index.html">
+    <span class="en">Return</span>
+    <span class="zh">返回</span>
+  </a>
+</div>
+
+<!-- ================= MUSIC（可替换模块） ================= -->
+<!-- 🔴 MUSIC MODULE START -->
+<audio id="bgm" loop>
+  <source src="../music/CordeiroDeNanã.mp3" type="audio/mpeg">
+  <!-- 🔵 替换音乐路径即可 -->
+</audio>
+<!-- 🔴 MUSIC MODULE END -->
+
+<script>
+let lang = "en";
+
+function applyLang(mode) {
+  document.body.classList.remove("lang-en", "lang-zh");
+  document.body.classList.add("lang-" + mode);
+}
+
+function toggleLang() {
+  lang = (lang === "en") ? "zh" : "en";
+  applyLang(lang);
+}
+
+applyLang("en");
+
+/* music autoplay */
+document.addEventListener("click", () => {
+  const audio = document.getElementById("bgm");
+  if (!audio) return;
+  audio.volume = 0.6;
+  audio.play().catch(() => {});
+});
+</script>
+
+</body>
+</html>
