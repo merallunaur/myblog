@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>The Minotaur / 彌諾陶洛斯</title>
+
+<style>
+body {
+  background-color: #81A380;
+  color: #525288;
+  max-width: 720px;
+  margin: 100px auto;
+  line-height: 1.9;
+  font-family: Georgia, serif;
+  padding: 0 20px;
+}
+
+/* ================= LANGUAGE SYSTEM ================= */
+.zh, .en {
+  display: none;
+}
+
+body.lang-en .en {
+  display: inline;
+}
+
+body.lang-zh .zh {
+  display: inline;
+}
+
+/* switch */
+.lang-switch {
+  position: fixed;
+  top: 18px;
+  right: 18px;
+  border: 1px solid #7D5A44;
+  padding: 6px 12px;
+  cursor: pointer;
+  color: #7D5A44;
+  background: transparent;
+  z-index: 999;
+}
+
+.lang-switch:hover {
+  background: #7D5A44;
+  color: white;
+}
+
+/* title */
+h1 {
+  text-align: center;
+  font-weight: normal;
+  margin-bottom: 60px;
+  font-size: 28px;
+  letter-spacing: 1px;
+}
+
+/* divider */
+.divider {
+  border-top: 1px solid #7D5A44;
+  width: 100%;
+  margin: 60px 0;
+  opacity: 0.6;
+}
+
+/* text */
+p {
+  margin-bottom: 26px;
+}
+
+/* return */
+.return-box {
+  display: inline-block;
+  padding: 6px 14px;
+  border: 1px solid #7D5A44;
+  color: #7D5A44;
+  margin-top: 60px;
+  transition: 0.3s;
+}
+
+.return-box:hover {
+  background: #7D5A44;
+  color: white;
+}
+</style>
+</head>
+
+<body class="lang-en">
+
+<!-- LANGUAGE SWITCH -->
+<div class="lang-switch" onclick="toggleLang()">EN / 繁</div>
+
+<!-- ================= TITLE（可替换） ================= -->
+<h1>
+  <span class="en"><!-- 🔵 English Title -->The Minotaur</span>
+  <span class="zh"><!-- 🔵 中文标题 -->彌諾陶洛斯</span>
+</h1>
+
+<div class="divider"></div>
+
+<!-- ================= BODY（整段可扩展区域） ================= -->
+
+<!-- 🔵 这里是正文 -->
+    <div class="section-break">◇</div>
+    <div class="bilingual-paragraph">
+        <span class="en">In the days when the flesh-and-blood deity revered by later generations was still a rigid, fragmented symbol, in the city of Arles in the Rhône Delta region, politics was not the foremost concern of daily life; all manner of curiosities and gossip held sway. The city faced the Mediterranean Sea, separated from the nearest town by a full four days' carriage ride—longer on foot—and thus had little easy contact with the mainland. The people there wore fine linen garments, worshipped many gods, and had been precociously civilised by having been among the first to receive the philosophical spirit from the Balkan Peninsula. For a considerable time, they maintained an admirable breadth of mind and tolerance. However, one spring, a terrible plague took half their lives. Thereafter, the entire city fell into a blind isolation and arrogance, closing itself off from their fellows. No one attempted to break through this barrier; indeed, most of the time, they revelled in the very satisfaction that the barrier itself provided. The flames of hatred and violence blazed high, and great black wings of pride and greed darkened the sun like storm clouds. The church struggled in vain; priests and poets issued their warning words, but the people remained unrepentant.</span>
+        <span class="zh">當後世所敬仰的，有血肉之軀的神尚為一個僵硬的、殘缺的符號，羅訥河三角洲地區的阿爾勒城，政治並非生活首位，各式各樣的趣聞佔據上風。該市面臨地中海，距離最近的城鎮隔了足足四日車程，步行則要更久，因此不與陸上城鎮輕易往來。這裡的人們身著精巧的麻布衣裳，信仰多神教，曾因最先接受來自巴爾幹半島的先哲精神而過早開化，並在相當長的一段時間內保持著令人欽佩的寬厚與包容。然而，在某年春天，由於一場可怕的瘟疫，半數人的生命被奪走。此後，整個城市便陷入一種盲目的孤絕與自大中，對他們的同伴封閉自我，無人嘗試衝破這種障礙，甚至多數時候，他們沉湎於這種障礙本身帶給人的滿足。仇恨與暴力的烈火熊熊燃燒，巨大的、驕傲與貪婪組成的黑色翅膀如同烏雲蔽日。教會苦苦掙扎，牧師和詩人發出警世危言，但人們還是不思悔改。</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">Under the influence of shameless self-confidence and fury, two places were explicitly designated as forbidden zones by the municipal authorities. The first was a two-storey wooden building at the end of the city's main thoroughfare. The entire structure leaned at an odd, almost collapsing angle, and deep into the night, sounds of explosions and the odour of chemicals like sulphur would emanate from it. Its inhabitant, Arthur Kirkland, was very young, yet pale and gaunt. He often wore a loose old velvet coat with gold trim and a pair of dark brown fine linen trousers. His hair, seldom trimmed, fell across his forehead, obstructing those clear, sharp green eyes—eyes that frequently revealed a complex expression of melancholy and fervour. In truth, from the perspective of social etiquette alone, he was an impeccable gentleman. He maintained an appropriate distance from everyone, inspiring a sense of warmth without causing embarrassment. Yet the people feared his eyes. Under the constraints of religious belief and ritual law, every time they looked into those eyes, they seemed still to see a cold, cruel, deep primeval forest.</span>
+        <span class="zh">在無恥的自信與怒氣滲透下，兩個地方被市政明確列為禁區：一是位於城市主幹道盡頭的一座二層木製小樓，整個房屋呈現出一種怪異的，將要倒塌的趨勢，一到深夜就傳出爆炸聲和硫黃一類化學藥劑的氣味。它的居住者亞瑟·柯克蘭年紀很輕，卻蒼白而消瘦，常穿著一件寬大的舊金邊天鵝絨外套，一條深棕色細麻褲子；頭髮疏於修剪，越過前額，攔在那雙通透凌厲的綠眼睛前；那雙眼睛常流露出一種憂鬱、狂熱的複雜神情。事實上，單單從社交禮儀上看，他是位不折不扣的紳士。他與所有人保持著恰當距離，令人倍感親切，又不至於難堪。然而，人們怕他那雙眼睛。在宗教信仰與禮儀律令的束縛下，每望向那雙眼睛，彷彿仍舊能看見寒冷、殘酷、深邃的原始森林。</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">The other place, in the locals' mouths, was even more sinister and terrifying: the Château de Tarascon, completely encircled by the Rhône River, built by the Duke of Anjou. This duke had gained his title through wealth, incurred resentment through wealth, and inspired fear through wealth. Legend had it that his eyes were as yellow as winter's withered grass, and that one summer night, he had suddenly burst into the city with a mysterious infant, secretly ruling it through sorcery. The residents of Arles were generous with their imaginations. 'The duke's immense fortune came from a pact with the devil. That child was hideous; his gaze could hypnotise, his laughter could corrupt, his tears could drive one mad.' Many men returning late from gambling and sleepless housewives claimed that the castle was alive, that it stood guard on the far side of the river, silently peering outward. And within its narrow square windows lurked a repulsive, unfamiliar face, also peering outward. More than twenty years passed. After the duke's death, the castle seemed to fall into disuse. One year, when the stone bridge connecting the city was washed away by the river, the people gradually forgot about it altogether, tacitly agreeing that the devil had reclaimed his own son.</span>
+        <span class="zh">另一個地方在當地人的口中更為陰森可怖，被羅訥河完全環繞的，由安茹公爵建造的塔拉斯孔城堡。這位公爵因富裕而取得頭銜、因富裕而遭人記恨、因富裕而使人恐懼。傳說中他兩眼像冬天的枯草一樣昏黃，在某年夏季的深夜帶著一個神秘的嬰兒，突然闖入這座城市，用巫術暗地裡統治著它。阿爾勒居民樂於慷慨地發揮想像力，「公爵的巨額財富來源於與魔鬼的交易，那孩子樣貌醜陋，他的眼神會把人催眠，笑聲讓人墮落，哭聲讓人徹底陷入瘋狂。」曾有不少賭博夜歸的男子和失眠的主婦聲稱那座城堡具有生命，它守在河的那邊，沉默地向外窺探。並且在城堡那狹窄的方窗中，藏著一張面目可憎的，同樣向外窺探的陌生臉孔。二十多年過去，隨著公爵辭世，城堡彷彿荒廢下來。某年連接城市的石橋被河水沖垮後，人們徹底淡忘了它，默認是魔鬼接走了他的親生子。</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">Apart from the three daily meals, gossip was the cheapest form of entertainment. Many aspects of life were still coloured with romance; people were familiar with all kinds of legends and gave them affectionate names. Arthur Kirkland was honoured with the name Icarus. As for the infant who seemed to have vanished, people would lay their hands warmly on each other's shoulders, glance around, lower their voices, and pronounce a few short syllables:</span>
+        <span class="zh">除了一日三餐外，閒聊是最廉價的娛樂。生活的許多方面都還充滿浪漫色彩，人們熟悉各種各樣的傳說，賦予它們親切的名字。亞瑟·柯克蘭被榮幸地叫做伊卡洛斯。而那個似乎消失了的嬰兒，人們總會把手親親熱熱地搭在彼此的肩上，環顧四周，同時壓低聲音，短促地突出幾個音節：</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"The Minotaur."</span>
+        <span class="zh">「彌諾陶洛斯。」</span>
+    </div>
+
+    <div class="section-break">◇</div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">I would never have set foot here if not for the Caerus.</span>
+        <span class="zh">我不會踏進這裡半步，如果不是因為凱勒斯號。</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">Arthur pressed his hand lightly to his chest and took a deep breath. The smell of cream and egg pancakes—an ordinary family breakfast—reminded him that he had been working in his studio without sleep for at least twelve hours. Before leaving, he had grabbed a baked potato from the cold stove. The Caerus—a delicate, pale blue flying machine the size of a rooster—had finally, after countless adjustments, succeeded in hovering in midair for twelve minutes. But after those twelve minutes, it had flown out of control, crossed the moat, and crashed straight into the walls of the Château de Tarascon, forcing him to cross the river and enter that mysterious realm surrounded by ghost stories. Though the stone bridge had long since broken, the gap between its remnants was not insurmountable. After a moment's hesitation, he managed to leap across the fissure and land within the castle grounds. The heavy stone walls enclosed him on all sides; the cracks between the bricks were thick with moss and cobwebs. The castle's massive, solid form, compared to the delicate houses of the town, resembled a beetle being carried along by ants. Although he had long since devoted himself to science, the long-unfamiliar pressure and fear of the unknown nonetheless made him slow his steps involuntarily. Yet he also noticed that the castle was extremely spacious. If indeed uninhabited, it would make an ideal experimental ground—no need to worry about damaging anyone's pigsty or clothesline, and even less need to fear being pointed at as a freak.</span>
+        <span class="zh">亞瑟把手輕輕按在胸口，深吸了一口氣，奶油和雞蛋餅的味道，尋常人家的早餐，這提醒著他，他已經在工作室内不眠不休了至少十二個小時，出門前他從冷冰冰的爐子上抓了一個烤馬鈴薯。凱勒斯號——一架公雞大小的淡藍色精妙飛行器，在無數次的調試之後終於成功地在空中懸停了十二分鐘。但十二分鐘後它就失控飛過了護城河，直直摔進塔拉斯孔城堡的圍牆内部，使他不得不越過河流，進入那片被鬼怪故事環繞的神秘領域。雖然它的石橋已經斷裂，但中間的空隙並非不可逾越。一番猶豫後，他勉強順利跳過裂隙，落在了城堡領地内。沉甸甸的石頭城墻把他團團包圍，石磚的縫隙中布滿青苔和蜘蛛網。整個城堡渾厚、堅硬的形態，與整個城鎮的靈巧房屋相比像一隻被螞蟻搬運著的甲蟲。儘管他早早就獻身於科學，久違的、來自未知的壓迫與恐懼還是使他不由自主地放緩了腳步。但他同時注意到，城堡極其寬敞，如果真的無人居住，倒是個理想的實驗領地，不用擔心毀壞誰家的豬圈或是晾衣竿，更不用擔心被當成異類指指點點。</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">In the midst of his thoughts, he became aware of a change in the air—a floral fragrance. Wildflowers occasionally emit scents, but rarely so intense; this was the smell of carefully tended flowers, a fragrance he knew all too well. In his hometown, which he had left many years ago, his mother had planted flowers beside the chicken coop to conceal that ugly wooden fence. Beneath her bed was a thick notebook, on whose pages she had drawn various flowers with accompanying annotations of their meanings: 'Purity without shadow,' 'I wish to love you limpidly.' On the day she was executed as a witch, he remembered clearly, that notebook had been burned along with her. To satisfy the vulgar, animalistic appetite for spectacle, the steward had worn a leather glove on one hand and held a torch in the other, with golden spurs strapped to his boots. Several blackened, curled-up bodies of witches hung from the gallows on public display; his golden spurs still gleamed brightly. That must have been fifteen years ago, when he was eight. The steward had crouched beside him like an uncle. As he bent his head to burn ants with a lens, he thought: if his mother really had understood witchcraft, she would have set the steward himself on fire. After that, he always dreamed of magma.</span>
+        <span class="zh">在他思考的間隙覺察到某種變化，空氣的變化，一陣花香。野花偶爾會散發出香氣，但並不會如此濃郁，這種精心養護的香氣他再熟悉不過。他離開多年的故鄉，母親在雞舍邊上種花，用來掩蓋那個醜陋的木頭柵欄。床底下壓著她的一本厚筆記本，上面畫著各種花的圖形，輔以花語註釋。「沒有陰霾的純粹」，「我願意清澈地愛你」。她被當作女巫處死的那天，他清楚地記得，那本筆記和她一起被燒死了。為了滿足愚民般的、動物性的欣賞要求，總管一隻手戴著皮手套，用另外一隻舉著火把，他的皮靴上套著金馬刺。幾具蜷縮的焦黑女巫屍體被吊在絞刑架上示眾，他皮靴上的金馬刺仍舊閃閃發亮。應該是十五年前，他八歲時。總管蹲在他旁邊，像個叔叔那樣。他邊低頭用透鏡燒地上的螞蟻邊想，如果他的母親真的懂巫術，就應該讓火在總管身上燒起來。從那以後，他總是做關於岩漿的夢。</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">He walked heavily into the courtyard. The fragrance came from a vast flower field beside the cobblestone path. Countless branches and leaves intertwined beneath his feet into a green carpet. White cyclamens were the first sentinels of this path, followed by azaleas, and finally large, wild expanses of chicory. He stepped into a sea of light blue, exuding a bitter fragrance.</span>
+        <span class="zh">他步伐沉重地邁進院子裡，香氣來源於卵石路旁的大片花田。無數花的枝葉在他腳下交織成綠毯。白色仙客來是這條路的第一道衛兵，接著是杜鵑，最後便是大片大片野性生長的菊苣，他邁入一整片發出苦澀香氣的淺藍色海洋。</span>
+    </div>
+
+    <div class="song-lyrics">
+        <span class="en">"Through the damp chicory lying in the field,<br>Chicory like the sky."</span>
+        <span class="zh">「穿過躺在田野裡濕答答的菊苣，菊苣如天。」</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">He was humming this song softly.</span>
+        <span class="zh">他正輕聲哼著這首歌。</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">The Caerus, with one wing damaged, its tail rotor still spinning, had its front end driven sharply into the middle of a marble sculpture. A winged horse poised for flight, without a speck of dust on it—the Caerus had pierced straight into its muscular front leg. Arthur stepped forward, carefully extracted the Caerus, and examined it closely in his hand. Same old problem: the parts were never precise enough. The tools he used—hammers, saws, nails—were all rusted or broken. The dozen or so blacksmiths and carpenters in town had all refused to help him. Even if the townsfolk lacked the resolve to execute him directly, as his hometown had done to his mother, they nevertheless actively resisted the invasion of witchcraft. Their ignorance formed a castle, and he was excluded from it. Arthur wiped the sweat from his forehead with the back of his hand and looked up at the sculpture, which was half a head taller than him. The horse raised its head with pride and vigour; a black hole gaped in its foreleg, as if it had just been robbed of its right to run by an arrow.</span>
+        <span class="zh">一翼折損的「凱勒斯號」，尾翼不停轉動，前端尖銳地刺入一座大理石雕塑的中部。一匹展翅欲飛的飛馬，上面一點灰塵也沒有，凱勒斯號直插進它肌肉分明的前腿。亞瑟走上前去，小心翼翼地拔下凱勒斯號，仔細地放在手裡檢查一番，依舊是部件的問題，部件永遠不夠精密。他使用的工具：榔頭、鋸子、鐵釘……都已經生鏽或斷裂。鎮上的十幾位鐵匠和木匠統統拒絕幫助他，即使鎮民沒有直接處死他的魄力，就像他故鄉對他母親做的那樣，卻也積極反抗著巫術的侵襲。他們的無知築成一座城堡，他被排除在外。亞瑟用手背揩去額頭上的汗，抬頭望向那個比他高了半頭的雕塑，馬意氣風發地昂起頭，前腿上掛著一個黑色窟窿，彷彿剛被一支箭奪取了奔跑的權利。</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">He was relieved that the flying machine had not struck someone's head, or he would have met the same fate as his mother.</span>
+        <span class="zh">他慶幸著飛行器沒有砸中某人的腦袋，否則他將落得和他母親一樣的下場。</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">As he fretted over what to do next, the bells began to ring, elevating everything in life to an orderly state. To his surprise, even the usually deafening bells sounded here as faint as a mosquito's whine. Ordinarily, two minutes before each ringing, he would stuff his ears with cotton wadding. Even so, the bells would still disrupt his carefully organised thoughts. Then would follow the sound of Arles's doors opening in unison, the clamour of shouting, cursing, the crying of feverish children. Now he heard only the chirping of sparrows and the dripping of the rope from the well in the garden.</span>
+        <span class="zh">當他正苦惱接下來的行動時，鐘聲響起了，把生活中的一切都提升到井然有序的狀態。他驚喜地發現，連平日裡震耳欲聾的鐘聲，在這裡也細若蚊蚋。通常，每次鐘聲響起前兩分鐘，他就會在耳朵裡塞上破棉絮。而鐘聲還是會毫不客氣地擾亂他整理好的思維。接著是阿爾勒人齊刷刷的開門聲、嘈雜的叫喊聲、罵聲、發燒孩子的哭聲。而現在他只聽到麻雀叫喚，以及花園裡那口井的井繩在滴水。</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">Since his mother's death, certain aspects of his nerves seemed to have grown fragile and sensitive. A gaze pressed against the back of his neck—he did not need to turn around to know it. A curious, pure gaze. The look in a newborn's eyes, as if not yet ready to accept the identity attached to its own body. A complete stranger was standing behind him, staring at him with a burning gaze, like a child staring at a butterfly that had accidentally flown into its room. Yet he felt no fear.</span>
+        <span class="zh">自母親去世，他神經的某些方面似乎變得脆弱而敏感。他的後頸被一道目光貼住，他不用回頭也知道。好奇的、純淨的目光。新生兒眼裡的目光，彷彿還沒準備好接受附著於自己身上的身份。一個純粹的陌生人正站在他身後，用灼熱的目光盯著他，彷彿孩子盯著無意間飛進自己房間的蝴蝶。但他並不感到害怕。</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"Your sculpture—I'm terribly sorry, if..."</span>
+        <span class="zh">「你的雕塑，我很抱歉，如果……」</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">He turned his head. A tall, slender figure darted hastily into the shadow cast by the gate. From behind a stone pillar, a corner of a dark blue silk long cloak was visible.</span>
+        <span class="zh">他轉過頭去，一個頎長的身影急匆匆地閃進大門投下的陰影，石柱後露出深藍色的絲綢長斗篷一角。</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"Hey, your garden is beautiful." He tried to use this as a way to draw closer.</span>
+        <span class="zh">「嘿，你的花園很漂亮。」他試圖用這種方式和對方親近。</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">The exposed corner of the cloak gave a slight tremble.</span>
+        <span class="zh">露出的斗篷輕輕抖了兩下。</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"The sculpture..." The other spoke, his voice low and hoarse, coughing twice after each word. He placed his hands on the stone pillar, his ten fingers long and slender. "You may leave."</span>
+        <span class="zh">「雕塑……」對方開口，聲音低沉沙啞，講一個詞就要咳嗽兩聲。他把雙手扶在石柱上，十指細長，「你可以離開了。」</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"What is your name? I've never seen you before."</span>
+        <span class="zh">「你叫什麼名字，以前沒見過你。」</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">Arthur approached him; he had a natural curiosity about things he did not understand.</span>
+        <span class="zh">亞瑟靠近他，他對自己不瞭解的事物有著天然好奇。</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"That's not important."</span>
+        <span class="zh">「那不重要。」</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">The voice was tinged with anger.</span>
+        <span class="zh">聲音略帶怒意。</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"But—" Arthur cleared his throat. "Last week there was a rumour that the municipal authorities were going to take this place away. If you tell me your name, I can say that it has already been purchased by a certain Monsieur... there might still be time to save it."</span>
+        <span class="zh">「但是。」亞瑟清了清喉嚨，「上週有傳言，市政要把這裡收走。如果你告訴我你的名字，我就會對外說某某先生早已買下它，可能還有挽救的餘地。」</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">He had lied. No one wanted to go near this house, not even the richly dressed among them would go near this considerably valuable castle.</span>
+        <span class="zh">他撒了謊，沒人願意靠近這棟房子，哪怕是那些著裝富麗堂皇的人都對這座價值相當可觀的城堡避之不及。</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">He heard a sigh.</span>
+        <span class="zh">他聽到一聲嘆息。</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"The Minotaur."</span>
+        <span class="zh">「彌諾陶洛斯。」</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"The Minotaur?"</span>
+        <span class="zh">「彌諾陶洛斯？」</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">The man stepped out of the shadow, and Arthur found himself standing before him. He was half a head taller; looking up, their eyes met. He exuded the scent of a forest after rain. His neat, proper attire showed that he had received a good upbringing. His entire face was hidden behind a white mask, like a Venetian mask, with openings only for the eyes and nose, for seeing and breathing. Golden hair cascaded from his shoulders, gleaming like a lion's mane.</span>
+        <span class="zh">那人從陰影向外踏了一步，他發覺自己站在那人面前。他比他高出半個頭，抬頭便能與他目光相接；他身上散發著雨後森林的氣息；整潔得體的衣裝顯示出他曾受過良好的家教；他的整張臉都藏在一副白色的面具下，像是威尼斯人的面具，只挖去了眼睛和鼻子部分，用於觀察和呼吸；金髮從肩膀上灑落，像獅子的鬃毛那樣閃著光。</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"That is not your name. You should tell me your real name."</span>
+        <span class="zh">「那不是你的名字，你應該告訴我你真正的名字。」</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">Arthur looked into one of his eyes. In his bright blue-violet eyes burned a calm, steady flame.</span>
+        <span class="zh">亞瑟看著他的一隻眼睛，他明亮的藍紫色眼睛裡有一團平靜燃燒的火苗。</span>
+    </div>
+
+    <div class="song-lyrics">
+        <span class="en">Through the damp chicory lying in the field, chicory like the sky.</span>
+        <span class="zh">穿過躺在田野裡濕答答的菊苣，菊苣如天。</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"Francis." Beneath the mask, his lips parted slightly.</span>
+        <span class="zh">「弗朗西斯。」面具下他的嘴微微張了張。</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"Francis Bonnefoy."</span>
+        <span class="zh">「弗朗西斯·波諾弗瓦。」</span>
+    </div>
+
+    <div class="section-break">◇</div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">Night granted Francis an invisible shelter, within which all things wandered aimlessly. Night was a language, a secret music. Looking back on his childhood, some evenings he would sit on the porch and speak to those tall stone pillars. He had given each of them a name: Cain, Judas, Joshua—names he had read in the Bible. Though his father had told him that mythological names should not be used casually, he thought that since the townspeople called him by a mythological name, it probably wouldn't matter if he called his pillars the same. The Minotaur—a complex word with too many syllables. He did not know what it meant. His father's face had turned iron grey when asked, avoiding the topic, and had sternly admonished him, time and again, to keep his mask on. Only at night was he permitted to remove it; the thing was not breathable. Those were his rare moments of free breathing, though he was not allowed to set foot beyond the castle walls. Where he lived, the total hours of daylight in a year exceeded those of night—he had read that in an astronomy book. He often kept his eyes wide open, watching the goddess of dawn awaken little by little, thereby making up for the free hours shortened by astronomy. Every star had a name. He thought about how he had two names; would he become two stars after death? If that were the case, could he remove his mask even in the daytime? The light was too strong by day; the stars disappeared. But after he became a star, would he still look like a little boy? If he could, he would like to change his face—even just changing his skin would be acceptable.</span>
+        <span class="zh">黑夜賦予弗朗西斯一種無形的庇護，裡面的一切事物都漫無目的地流亡。黑夜是一種語言，一種隱秘的音樂。回溯他的童年時期，有的夜晚，他坐在門廊上，跟那些高大的石柱對話。他給它們每一根都起了名字。「該隱」「猶大」「約書亞」，從聖經裡讀來的。雖然父親對他說神話裡的名字不能隨便使用，但是他想鎮上的人都用神話裡的名字稱呼他，他這麼叫石柱應該也沒什麼關係。彌諾陶洛斯，一個複雜的詞彙，有太多個音節，他不知道這是什麼意思，父親也臉色鐵青地避而不談，並神色嚴厲地再三叮囑他戴好面具。只有在夜晚，他被准許摘下面具，那東西並不通氣，那是他罕見的能自由呼吸的時刻，儘管他不被允許踏出城墻半步。他所在的地方，一年中白天的時間總和要比黑夜長，他在天文書裡讀到過。他常常睜大眼睛，看著黎明女神一點一點甦醒，以此彌補天文上被縮短的自由時光。每一顆星星都有一個名字，他思考著自己有兩個名字，死後會不會變成兩顆星星。如果真是這樣的話，他是不是可以在白天也摘下面具，白天的光太強，星星也消失不見了。但是他變成星星之後，還會是一個小男孩的樣子嗎。如果可以，他想換一張臉，只是換一張皮膚也能接受。</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">Beneath his feigned lightness and childish innocence lay a deep-seated self-loathing—the ancient sin branded into his very soul. One thing he rarely did was look in the mirror. He had been murdered many times by his own reflection: from the violent collision of gazes to the blue veins that wound along his jawline and finally melted into his skin. He recalled every word he had heard since birth—blessings, prayers, revulsions—arming himself with anger, weaving himself into a hard cocoon. Then he would find himself waking up with his mask on, a wet stain beneath his eyes. He would have to open the cabinet to find a spare. He had many such spare masks; on one of them, he had painted a few little dogs.</span>
+        <span class="zh">在他故作輕鬆的玩笑與孩童的天真背後，深深埋著的是對自己的厭惡。他靈魂裡的，亙古的原罪烙印。他做得太少的事是照鏡子，被自己的倒影多次謀殺，從猛烈撞擊的眼神，到沿著下頜蜿蜒，最後融進皮膚裡的青色血管。他回想著自出生開始接受的每一句話，祝福、祈禱、嫌惡，用憤怒把自己武裝起來，織成一個硬繭。接著他發覺自己戴著面具醒來，眼下一片濕痕，他不得不打開櫃子找一隻備用的。他過去有很多這樣的備用面具，其中一隻被他畫上了幾隻小狗。</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">One autumn evening, the night cool as water, he had slipped out of the castle walls and made a bet with himself. If the first person to see him did not scream, then the good God would win; if someone struck his back with a hot iron, then the devil would win. He encountered only one person that night: a fat old man with a severe night blindness, walking like a duck, holding a walking stick. He passed by without so much as glancing at Francis. Francis had no choice but to declare himself the victor. On his way back to the castle, he broke the lock of a flower shop, stole a small packet of seeds, and scattered them in the backyard. To this day, he did not know what flowers they were; they had been killed by a frost before they could sprout, along with the parsnips and potatoes his father had planted in the yard. They always tried to avoid going out. In those rare moments of his childhood, when his father would lull him to sleep, he would always tell the same story.</span>
+        <span class="zh">某個秋季的晚上，夜涼如水，他曾溜出城墻，跟自己打了個賭。如果第一個看到他的人不大聲叫喊，那麼善良的上帝贏，如果他用烙鐵打他的後背，那麼魔鬼贏。一晚上他只碰到了一個人，一個像鴨子一樣走路的，患有嚴重夜盲症的胖老頭，手裡拿著一根拐杖。他看也沒看弗朗西斯一眼就走了。弗朗西斯只好判定自己勝利，於是在溜回城堡的路上，他撬開花店的鎖，偷了一小包種子出來，將它們撒在後院裡。到現在他也不知道那是什麼花，它們在發芽之前就被一場霜凍奪去了生命，連同父親種在後院的防風草和馬鈴薯。他們總是盡量避免出門，在童年罕見的某些瞬間，父親哄他入睡時總是同一個故事。</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"Outsiders will turn into swimming, dark, evil creatures behind your back, waiting to drag you into a nightmare. When you turn your back on them, you can hear their laughter as they nearly succeed."</span>
+        <span class="zh">「外面的人會在你背後變成游動著的黑色邪惡生物，等著把你拽入噩夢。當你背對著他們，就能聽見他們快要得逞的笑聲。」</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">As he grew older, these rumours crumbled on their own. Yet he often dreamed that he had turned into a black fish, a dim light floating beneath his body, and he turned and swam toward those mad laughs behind him.</span>
+        <span class="zh">隨著他漸漸長大這些謠言不攻自破，然而，他卻常常能夢到自己變成一條黑色的魚，暗淡的光亮就在他的身體下面漂浮，而他掉轉頭，朝著背後那些瘋狂的笑聲游去。</span>
+    </div>
+
+    <div class="section-break">◇</div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"Arthur Kirkland."</span>
+        <span class="zh">「亞瑟·柯克蘭。」</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"At Kirkland?"</span>
+        <span class="zh">「阿特·柯克蘭？」</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"Arthur Kirkland."</span>
+        <span class="zh">「亞瑟·柯克蘭。」</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"Arthur."</span>
+        <span class="zh">「亞瑟。」</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">His vocal cords were stiff from long disuse.</span>
+        <span class="zh">他的聲帶因長期缺乏交流而僵硬。</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"That thing you have in your hands..."</span>
+        <span class="zh">「你手裡的這個……玩意。」</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"In fact, it is not a 'thing.' It is a flying machine, and it just hovered in the air for twelve minutes." Arthur cradled the flying machine in his arms like a cat.</span>
+        <span class="zh">「事實上它不是什麼『玩意』，它是個飛行器，並且剛剛在空中懸停了十二分鐘。」亞瑟把飛行器抱在懷裡，彷彿抱著一隻貓。</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"If not for the fact that no one is willing to sell me tools, it would have stayed up longer." In his natural state of excitement, he could talk endlessly about the process of making it.</span>
+        <span class="zh">「如果不是因為沒有人願意賣給我工具，它會停留更久。」由於亢奮的天性，提到製作過程他總是滔滔不絕。</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"You could use my tools, if you are willing to come inside."</span>
+        <span class="zh">「你倒是可以用我的工具，如果你願意走進來。」</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">Francis crossed his hands uneasily.</span>
+        <span class="zh">弗朗西斯不安地交叉雙手。</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"There is enough here to last several lifetimes."</span>
+        <span class="zh">「這裡的東西，可能幾輩子都用不完。」</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"But first, you must answer one of my questions."</span>
+        <span class="zh">「但是事先你必須回答我一個問題。」</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"Ask away."</span>
+        <span class="zh">「問問看。」</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"Why do you wear that—" He raised his hand and made a gesture beside his own face. Suddenly, his mouth went dry; the word pressed against his throat, heavy as a thousand pounds.</span>
+        <span class="zh">「你為什麼戴著那……」他舉起手，在臉旁比劃了兩下。他突然感到口乾舌燥，那個詞壓在他的喉嚨裡，似有千斤重量。</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"Mask?"</span>
+        <span class="zh">「面具？」</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">Arthur nodded silently. Francis gave a slightly contemptuous laugh.</span>
+        <span class="zh">亞瑟無聲地點點頭。弗朗西斯發出略帶輕蔑的笑聲。</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"Because my looks are too dazzling."</span>
+        <span class="zh">「因為我長相過於耀眼。」</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">He did not press further.</span>
+        <span class="zh">他不再追問下去。</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"Can I see you again? I might have a way to repair that statue."</span>
+        <span class="zh">「我還能再見到你嗎？我也許有辦法補好那個雕像。」</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"In any case, you are always welcome here. With your... flying machine."</span>
+        <span class="zh">「總之，隨時歡迎你到這兒來。帶著你的……飛行器。」</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">Francis looked down at the back of his hand; a ladybug was crawling across the webbing between his thumb and forefinger. He led Arthur through a patch of celery fields and saw him out the other side. There was a stone staircase, barely five metres from the bank.</span>
+        <span class="zh">弗朗西斯低頭看著自己的手背，一隻瓢蟲爬過他的虎口。他領著亞瑟，穿過一片西芹菜地，從另一端離開。那是一條石梯，離岸邊僅有五公尺。</span>
+    </div>
+
+    <div class="section-break">◇</div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">Driven by intense curiosity and conviction, he did everything he could to learn all about Francis. Any rumour about him lacked human empathy. His past held him captive like nails in a cross. He became a bundle of nerves and stiff muscles, a tendon, a bloody instrument made of the wrong organs. He could not read the man's beast-like mode of thinking—the coexistence of love and distrust in every matter, like the fragments of a kaleidoscope reflecting one another. For instance, he allowed a stranger free access to his castle and to conduct his strange experiments there. The castle was like a beehive; at least two rooms were piled high with gold coins and jewels reeking of mildew. In the room where he kept his tools, against one wall were stacked countless small wooden boxes, each with one side removed. Each box was a miniature country, containing taxidermied mice dressed in various costumes: mice on swings, mice basking on hillsides, mice steering cheese boats drifting down a milk-white silk river. He had an entire wall of bird skeletons—birds occasionally flew into the castle's glass windows, and every day he would walk around the castle to see if any new bird had fallen. Even when alone, he wore his mask. The mask was parasitic on his face, like a layer of pale moss. Beneath his neck, he draped himself in various silks. When he moved about the castle, candlelight, moonlight, and sunlight filtering through the narrow skylights would play across him, making him look like a dragonfly. Compared with everyone else, his time moved more calmly. The empty land around the castle was orderly divided into a flower zone, a vegetable zone, and a daydreaming zone. After checking the growth of the plants, he would sit on the porch, his vivid blue-violet eyes fixed on the clouds drifting slowly across the sky in their dreamlike course. One of the porch pillars—probably Joshua—bore countless horizontal lines carved with a knife; this was how he measured time.</span>
+        <span class="zh">懷著極度的好奇和信念，他盡力知曉弗朗西斯的一切，任何關於他的傳聞都缺少人文關懷。他的過去像十字架上的釘子，把他禁錮住。他變作一束神經和僵硬的肌肉，一根肌腱，一套由錯誤器官組成的血淋淋器械。他讀不懂他猛獸般的思維方式，他在每件事物上共存的熱愛與不信任，像萬花筒的碎片，彼此映照。比如，他讓一個陌生人隨意進出他的城堡，並在裡面進行他古里古怪的實驗。城堡像蜂巢，至少有兩個房間堆滿散發著霉味的金幣和珠寶。他放所有工具的房間，其中一面貼著墻壘著無數拆下一面的小木箱，每個木箱都是一個微縮國度，裡面放著穿著各色服裝的老鼠標本。老鼠盪鞦韆，老鼠在山坡上曬太陽，老鼠駕駛著乳酪船，順著白色絲綢做成的牛奶河流漂流。他有一整面墻的鳥類骨骼——鳥偶爾會撞上城堡的玻璃，每天他都圍繞著城堡走一圈，看看有沒有新的鳥兒。他獨自一人時也戴著面具，面具寄生在他的臉上，宛若一層蒼白的苔蘚。他的脖子以下罩在各式各樣的絲綢裡，他在城堡裡走動時，燭光、月光、順著狹窄天窗滲進來的陽光，不時在他身上流轉，他像一隻蜻蜓。與所有其他人相比，他的時間更加從容，城堡周圍的空地井然有序地被劃分為花卉區、蔬菜區，以及發呆區。檢查完植物的長勢後，他就坐在門廊處，用跳動的藍紫色眼睛緊盯著天上夢遊般緩慢移動的雲。門廊的一根柱子，應該是「約書亞」，身上用刀刻著無數道橫線，他以這種方式計算時間。</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"Am I your friend?"</span>
+        <span class="zh">「我是你的朋友嗎？」</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">Every time the bell struck six, Francis insisted that Arthur leave. He always chose the hours when no one else was about for his comings and goings. He would stand on the far side of the river, silently watching him climb the stone stairs and then disappear on the opposite bank. Two months had passed since they first met. At the same time as he grew closer to him, he could distinctly feel the townspeople drawing away from him.</span>
+        <span class="zh">每次，當鐘聲敲六下時，弗朗西斯都執意讓亞瑟離開，他專挑無人的時間段往返。他站在河的那邊，默默注視著他爬上石梯，接著消失在對岸。距離他們相識已經過去兩個月，在他與他親近的同時，他能明顯感覺到鎮民對他的疏遠。</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"Am I your friend?"</span>
+        <span class="zh">「我是你的朋友嗎？」</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">On the occasion of his leave-taking, he asked him. The other was clearly startled by the word.</span>
+        <span class="zh">某次臨行前他問他，對方顯然被這個單詞嚇了一跳。</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"People will be here soon."</span>
+        <span class="zh">「過一會兒就有人來了。」</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">They had said quite a lot to each other over time. Francis's voice had shed its hoarseness and become deep and mellow, like the tone of a cello.</span>
+        <span class="zh">他們過去說了不少話，弗朗西斯的聲音褪去沙啞，變得低沉而渾厚，像大提琴的音色。</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">He reached out to take off his mask, but he refused.</span>
+        <span class="zh">他伸出手去想把他面具拿下卻被他拒絕。</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"I don't know." Francis continued to gaze into his eyes, his left hand gently stroking the velvet of Arthur's coat. In those gentle eyes, he saw his own silhouette from long ago. The wet, golden-red sun was sinking slowly and heavily beyond the hillside.</span>
+        <span class="zh">「我不知道。」弗朗西斯依舊盯著他的眼睛看，左手輕輕捋著他外套上的天鵝絨。他在那雙溫柔的眼睛裡看到了他舊時的剪影。濕漉漉的金紅色太陽在山坡的那一端，緩慢而凝重地下沉。</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"I don't know, but I would not like to say so. I would not like to use that word to burden you with obligation."</span>
+        <span class="zh">「我不知道，但我不願這麼說，我不願用這個詞在你的身上徒增責任。」</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">With a sigh, he lifted his mask from the bottom upward. Before Arthur lay a face cracked into countless pieces, a shattered face, like the fragments of a mirror smashed into a thousand bits. His face was crisscrossed with red scars, like the tangled roots of plants, or branches. As his body rose and fell with each breath, the scars seemed to climb across his face with a life of their own. Set in the midst of those scars were his blue-violet eyes, tinged with an apologetic look.</span>
+        <span class="zh">隨著一聲嘆息，他從下往上掀起他的面具。他的眼前擺著一張皸裂成無數塊的臉，一張破碎的臉，彷彿被摔成無數塊的鏡子碎片。他的臉上布滿縱橫交錯的紅色傷疤，彷彿糾結在一起的植物的根，抑或是枝條。隨著他呼吸時身體的輕微起伏，那些傷疤彷彿有生命地在他臉上攀緣。傷疤中央鑲嵌著他略帶歉意的藍紫色眼睛。</span>
+    </div>
+
+    <div class="song-lyrics">
+        <span class="en">Through the damp chicory lying in the field, chicory like the sky.</span>
+        <span class="zh">穿過躺在田野裡濕答答的菊苣，菊苣如天。</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"I told you, my looks are too dazzling."</span>
+        <span class="zh">「我說過，我的長相過於耀眼。」</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"Indeed. Far too dazzling."</span>
+        <span class="zh">「沒錯，過於耀眼。」</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">Arthur silently stepped forward and pressed his cold hand against Francis's cheek, as if afraid that if he did not, that face would melt away in his own sorrowful tears.</span>
+        <span class="zh">亞瑟默默向前邁了一步，冷冰冰的手貼上他的臉頰，彷彿他再不這樣做，那張臉就要被他憂傷的眼淚融化。</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">The next day, he heard that a household had been robbed by bandits in the night; the mistress had been killed in her sleep, and the bandits had been apprehended.</span>
+        <span class="zh">隔天，他聽說一戶人家夜裡進了強盜，女主人被在睡夢中殺死，強盜已經落網。</span>
+    </div>
+
+    <div class="section-break">◇</div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">Around half past five in the evening, the two sat down together for supper. Francis, while putting a piece of smoked fish into his mouth, flipped through a tattered book. The flickering red light of the setting sun rested on his shoulder. As soon as Arthur arrived, he told him about a strange dream he had had the night before—a dream completely different from his usual ones. He had stepped into a wondrous realm, a soft white realm where the ground felt like cotton. Perhaps it was heaven; he had heard the sound of a harp. When he woke up, he found himself running a low fever. He was someone with an excess of expressiveness; most of the time, Arthur simply sat by, quietly listening to him speak. His heart pounded so violently that he had to hold it with both hands. His cloak stirred in a blue wave with his breathing, and Arthur was submerged in it. Once, he had asked him about that forest-after-rain scent that clung to him. Francis thought for a moment, then pointed to his own head.</span>
+        <span class="zh">傍晚五點半左右，兩個人坐在一起吃晚餐。弗朗西斯一邊把熏魚送進嘴裡，一邊翻看一本破破爛爛的書，他的肩膀上停留著搖曳的微紅日光。他一見到他就跟他說他前一天晚上做了個怪夢，一個全然不同的夢。他踏到一片奇妙的領域，潔白柔軟的領域，地面的觸感像棉花。可能是天國，他聽見了豎琴的聲音。醒來後，他發現自己正發著低燒。他是個表達欲過剩的人，大多數時候，亞瑟都在一旁，靜靜地聽著他說話。他的心臟跳動不已，得用雙手按住。他的斗篷隨著呼吸掀起一陣藍色的波浪，使他沉湎其間。他曾問他，他身上那雨後森林般的氣息來自哪兒，弗朗西斯思索一番後，指了指自己的腦袋。</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"Do you hear a noise?"</span>
+        <span class="zh">「你聽到了聲音嗎？」</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">Francis suddenly sat up straight, squinting as he looked out of the ground-floor window.</span>
+        <span class="zh">弗朗西斯忽然坐直身子，瞇起眼從一層的窗戶向外望去。</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">Arthur seemed to hear something too: a burst of harsh laughter, in the quiet morning enough to make one's hair stand on end.</span>
+        <span class="zh">亞瑟似乎也聽到了聲音，一陣刺耳的嬉笑，在寧靜的早晨使人毛骨悚然。</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"How strange. It hasn't happened in many years..."</span>
+        <span class="zh">「真奇怪，已經很多年沒有……」</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">The words stopped abruptly. Arthur saw Francis stiffen like a drawn bow. Following his gaze, he looked outside and widened his eyes. A boy of seven or eight was clinging to the high riverbank, his hands gripping the edge, one foot wedged on a loose rock in the cliff face. In the dry season, beneath him lay the exposed, rocky riverbed. Several slightly older children surrounded him; the one at their head had a backside as broad as an elephant's ears, his fingers gleaming with the sheen of gravy. The boy's thin, reedy arms stuck out from a brown shirt full of holes, his dirty little face flushed crimson. He hung from the riverbank like a falling leaf about to drift down.</span>
+        <span class="zh">話音戛然而止，亞瑟看到弗朗西斯繃緊了身子，像一張弓。他順著他的目光向外看去，瞪大了雙眼。一個七八歲的男孩掛在高聳的河岸上，雙手牢牢扒著河岸邊緣，一隻腳踩著峭壁上一塊鬆動的岩石。枯水季節，他的身體下方是大塊裸露的岩石河床。另外幾個稍大點的孩子圍在他周圍，為首的那個有像大象耳朵一樣寬闊的屁股，他的手指泛著肉汁的油光。男孩蘆葦一般的細胳膊從破了無數個洞的褐色襯衫中露出來，髒兮兮的小臉漲得通紅。他掛在河岸上，彷彿一片將要落下的枯葉。</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"Francis..."</span>
+        <span class="zh">「弗朗西斯……」</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">Arthur heard the great door slam shut. Moving faster than his own reflexes, Francis had already rushed outside. Arthur's heart began to pound with a sudden pain, tormented by fear. The air seemed to grow thin.</span>
+        <span class="zh">亞瑟聽見大門被狠狠摔上，遠超於他的反應速度，弗朗西斯早已衝出門。他的心突然痛得亂跳，被一陣恐懼折磨。他感到空氣變得稀薄起來。</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"Get away!"</span>
+        <span class="zh">「滾開！」</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">He heard the roar of a lion, as if all the fury in the universe had been gathered into it. Then came the shouts of panicked flight.</span>
+        <span class="zh">他聽見獅子的怒吼，彷彿積攢了整個宇宙的憤怒。然後是倉皇逃命的叫喊。</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">Francis carried the boy, wrapped in his cloak, back into the house. The scars on his face twitched like blood vessels. He shared his supper with the child, then escorted him back up the riverbank. After doing all this, he sat down on the porch. The setting sun shone on the well-tended azaleas, which glowed red as blood.</span>
+        <span class="zh">弗朗西斯抱著那孩子，用斗篷裹著他，退回到屋裡。他臉上的傷疤像血管一樣抽動。他把晚餐分給那孩子，接著護著他登上河岸。做完這一切後，他在門廊上坐下。夕陽照在開得很好的杜鵑花上，花兒像血一樣。</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">Arthur slowly walked around the stone pillar and sat down close beside him.</span>
+        <span class="zh">亞瑟慢慢繞過石柱，緊挨在他旁邊。</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"You should go home."</span>
+        <span class="zh">「你應該回家去。」</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">Francis turned his head to look at him.</span>
+        <span class="zh">他扭頭看他。</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"Let us leave this place. We could go to..."</span>
+        <span class="zh">「讓我們離開這裡，我們能去……」</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"No."</span>
+        <span class="zh">「不。」</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">Francis took his hand and placed it in his own sweaty palm, then closed his eyes.</span>
+        <span class="zh">弗朗西斯拉過他的手，將他的手放在自己汗津津的手心裡，闔上雙眼。</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"I am already exhausted beyond measure."</span>
+        <span class="zh">「我已經累到極點了。」</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">He took out a knife and scratched out the horizontal lines carved on the pillar called Joshua.</span>
+        <span class="zh">他拿出小刀，將「約書亞」柱子身上的橫線劃花。</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">Arthur kissed his eyes and pressed his hand against his shoulder. Their foreheads pressed together more intimately. Only breath, no words, noticing each other's minute expressions, heartbeats. Then he placed his hand on Francis's chest. Francis opened his weary eyes and gazed back at him with a piercing brightness.</span>
+        <span class="zh">亞瑟親吻他的眼睛，把手按在他的肩上。他們的前額更加親暱地貼在一起。只有呼吸，沒有語言，注意彼此的細微表情，心跳。接著他把手貼在他的胸口，他睜開疲憊的雙眼，炯炯地望著他。</span>
+    </div>
+
+    <div class="song-lyrics">
+        <span class="en">Through the damp chicory lying in the field, chicory like the sky.</span>
+        <span class="zh">穿過躺在田野裡濕答答的菊苣，菊苣如天。</span>
+    </div>
+
+    <div class="section-break">◇</div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">Guided by the boy, the people of Arles succeeded in destroying the stone staircase. Deep in the night, they lit torches and, under the pretext of hunting for bandits, marched in great numbers toward the Château de Tarascon. Every heart burned with a feverish excitement. The entire city became a sea of emotion—all manner of impulses, unadorned passions, sudden cruelties surged overwhelmingly toward the castle. Everyone went barefoot, on empty stomachs. Many children joined the marchers, their young faces wearing smiles of undisguised cruelty. The townsfolk laid a few logs across the river, smashed open the castle gates, and everything evil unfolded as naturally as a seed growing into a tree.</span>
+        <span class="zh">在男孩的指引下，阿爾勒人成功毀壞了石梯。他們在深夜點起了火把，以抓強盜為由，浩浩蕩蕩地向塔拉斯孔城堡進軍。每個人的心中都燃燒著火焰一般的亢奮。整個阿爾勒成了情緒的海洋，各種各樣的衝動、不加修飾的熱情、突發的殘忍，來勢洶洶地向塔拉斯孔城堡壓去。所有人都打著赤腳，空著肚子。許多兒童也加入遊行者的行列，幼態的臉上掛著毫不掩飾的殘忍微笑。鎮民把幾根圓木架在河上，砸開城堡大門，一切罪惡的發生就像種子長成大樹。</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">Arthur was locked in his house by the furious townsfolk. He forced the window open with his thin shoulders and jumped from the second floor, limping as he ran toward the castle. The beams of the great hall were the first to collapse, hissing as they burned. The crowd surrounded the castle, yet not one of them entered. The fire spread quickly upstairs. Through the second-floor windows, he saw a tall figure in blue standing silently before the glass. The heat deformed him—now hunched, now the size of a seven- or eight-year-old child. Arthur's vision grew increasingly blurred; the pain from his broken ribs was severe. To stay conscious, he kept his eyes fixed on that figure, which held its head high, casting its fervent gaze toward the star-filled sky.</span>
+        <span class="zh">亞瑟被憤怒的鎮民鎖在屋子裡，他用瘦削的肩膀撞開窗子，從二樓的窗戶跳下，一瘸一拐地朝著城堡奔跑。大廳的梁最先塌下來，發出嘶嘶的燃燒聲。人群把城堡團團圍住，卻沒有一個人進去。火勢很快蔓延上樓，透過二層的玻璃窗，他看見一個高大的藍色人影靜靜佇立在窗前，高溫把他變形，一會變得佝僂，一會又變成七八歲兒童。亞瑟的眼前越來越模糊，摔斷的肋骨發出劇烈疼痛。為了保持清醒，他一直看著那個人影，那個人影昂著頭，將狂熱的目光投向繁星密布的天空。</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">When he reached the castle, the crowd silently parted to make a path for him. He could feel their gazes—fearful, confused, malicious. Dragging his injured leg, he walked toward the endless flames.</span>
+        <span class="zh">他趕到城堡後，人群默默為他分出一條道路。他能感覺到那些眼神，恐懼的、混亂的、怨毒的。他拖著傷腿，走向無盡的烈火中。</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">Francis lay on his back, in the posture of the dead—only he was not dead, still looking at him with open eyes, those burning blue eyes. His legs were pinned beneath fallen stones. Gritting against the searing pain of his wounds, he reached out his arms to Arthur and drew him into his chest. His clothes had already caught fire; his whole body was enveloped in a brilliant glow. He was unaware that he was burning. Then, pressing against his ear, he sang.</span>
+        <span class="zh">弗朗西斯仰面躺著，死者的姿勢，只是他並沒有死，仍然睜著眼睛看他，那雙燃燒著的藍色眼睛。他的雙腿被倒下的石塊壓住。忍著傷口的劇痛，他向亞瑟伸出雙臂，將他圈進自己的胸膛。他的衣服已經被引燃，整個人籠罩在明亮的光輝中。他意識不到自己正在燃燒。接著他貼著他的耳朵唱歌。</span>
+    </div>
+
+    <div class="song-lyrics">
+        <span class="en">Through the damp chicory lying in the field, chicory like the sky.</span>
+        <span class="zh">穿過躺在田野裡濕答答的菊苣，菊苣如天。</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">In the beautiful, fertile region of Arles, people stumbled about like little dwarves with oversized heads, wavering uncertainly between childish legends and rational tears, between cruel rejection and sentimental compassion. Though the disaster had been eliminated, new tales of ghosts and wonders arrived on schedule. The wild azaleas in the castle—their flowers red as blood. Many men returning late from gambling and sleepless housewives claimed to have seen two strange, luminous beings riding a lame winged horse, rising from the blackened ruins of the castle. They rose very high, all the way up to the midnight moon.</span>
+        <span class="zh">美麗而豐饒的阿爾勒地區，人們像大腦袋的小矮人一樣跌跌撞撞，在幼稚的傳說和理性的眼淚之間，在殘忍的排異與傷感的同情之間蹣跚獨行。縱使災禍已除，新的鬼怪趣聞卻如期而至。城堡裡的野杜鵑，花兒像血一樣紅。曾有不少賭博夜歸的男子和失眠的主婦聲稱看見兩團奇妙的光輝乘著一匹瘸腿飛馬，從城堡焦黑的廢墟裡升上來。它們升得很高，一直升到午夜的月亮上去。</span>
+    </div>
+
+<!-- ================= RETURN ================= -->
+<div style="text-align:center;">
+  <a class="return-box" href="../index.html">
+    <span class="en">Return</span>
+    <span class="zh">返回</span>
+  </a>
+</div>
+
+<!-- ================= MUSIC（可替换模块） ================= -->
+<!-- 🔴 MUSIC MODULE START -->
+<audio id="bgm" loop>
+  <source src="../music/The_Elephant_Man.mp3" type="audio/mpeg">
+  <!-- 🔵 替换音乐路径即可 -->
+</audio>
+<!-- 🔴 MUSIC MODULE END -->
+
+<script>
+let lang = "en";
+
+function applyLang(mode) {
+  document.body.classList.remove("lang-en", "lang-zh");
+  document.body.classList.add("lang-" + mode);
+}
+
+function toggleLang() {
+  lang = (lang === "en") ? "zh" : "en";
+  applyLang(lang);
+}
+
+applyLang("en");
+
+/* music autoplay */
+document.addEventListener("click", () => {
+  const audio = document.getElementById("bgm");
+  if (!audio) return;
+  audio.volume = 0.6;
+  audio.play().catch(() => {});
+});
+</script>
+
+</body>
+</html>

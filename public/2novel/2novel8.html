@@ -1,0 +1,716 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>The Tree Frog / 雨蛙</title>
+
+<style>
+body {
+  background-color: #81A380;
+  color: #525288;
+  max-width: 720px;
+  margin: 100px auto;
+  line-height: 1.9;
+  font-family: Georgia, serif;
+  padding: 0 20px;
+}
+
+/* ================= LANGUAGE SYSTEM ================= */
+.zh, .en {
+  display: none;
+}
+
+body.lang-en .en {
+  display: inline;
+}
+
+body.lang-zh .zh {
+  display: inline;
+}
+
+/* switch */
+.lang-switch {
+  position: fixed;
+  top: 18px;
+  right: 18px;
+  border: 1px solid #7D5A44;
+  padding: 6px 12px;
+  cursor: pointer;
+  color: #7D5A44;
+  background: transparent;
+  z-index: 999;
+}
+
+.lang-switch:hover {
+  background: #7D5A44;
+  color: white;
+}
+
+/* title */
+h1 {
+  text-align: center;
+  font-weight: normal;
+  margin-bottom: 60px;
+  font-size: 28px;
+  letter-spacing: 1px;
+}
+
+/* divider */
+.divider {
+  border-top: 1px solid #7D5A44;
+  width: 100%;
+  margin: 60px 0;
+  opacity: 0.6;
+}
+
+/* text */
+p {
+  margin-bottom: 26px;
+}
+
+/* return */
+.return-box {
+  display: inline-block;
+  padding: 6px 14px;
+  border: 1px solid #7D5A44;
+  color: #7D5A44;
+  margin-top: 60px;
+  transition: 0.3s;
+}
+
+.return-box:hover {
+  background: #7D5A44;
+  color: white;
+}
+</style>
+</head>
+
+<body class="lang-en">
+
+<!-- LANGUAGE SWITCH -->
+<div class="lang-switch" onclick="toggleLang()">EN / 繁</div>
+
+<!-- ================= TITLE（可替换） ================= -->
+<h1>
+  <span class="en"><!-- 🔵 English Title -->The Tree Frog</span>
+  <span class="zh"><!-- 🔵 中文标题 -->雨蛙</span>
+</h1>
+
+<div class="divider"></div>
+
+<!-- ================= BODY（整段可扩展区域） ================= -->
+
+<!-- 🔵 这里是正文 -->
+    <div class="section-break">◇</div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">His rainy season.</span>
+        <span class="zh">他的陰雨。</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">Today, changing his woollen school blazer for a silk-blend one was one of the signs that spring had truly arrived. The raindrops were as fine as the dark green horizon far away, thick with wild garlic, slanting across the misted glass. His knee-high socks were pulled up to just below his knees, the garters fastened. The knee that had been struck by the teacher's cane yesterday had turned a deep purple, like earthworms coiled beneath the skin. Arthur jumped out of bed; a gust of wind slipping through his clothes made him shiver. The closer he got to the window, the colder the room became. He stood before the window, pressing his hand against the cool glass. He loved to trace the patterns left by rainwater on the glass: this one looked like a hat, that one like a peacock's footprint. And that one... the lonely silhouette of someone. He pressed his eye closer, trying to catch another glimpse of that fleeting mark. A tree frog leaped onto his right eye through the glass, a sticky, wet slap. These emerald-green creatures were always fragile yet full of life—another sign of spring's arrival. It crawled across the glass for a while, then finally stopped near where his hand lay. It was tiny, with a vivid orange spot on its arched back, like the eye of some reptile, making it look different from other tree frogs. Tree frogs usually nest in tall trees, laying their eggs near the rainy season so the tadpoles are spared the scorching sun. Arthur straightened up and looked into the distance; the nearest tall plane tree stood twenty metres away. And this one had come all this way. He arched his back again, brought his face close to it, and tapped gently on the glass. The tree frog tilted its little head. This was the silent moment of his dreams. He lived alone in the storage room at the end of the dormitory corridor; he could not remember how long it had been. Perhaps it had not always been this way. Or perhaps it had. But he had chosen to forget. In any case, there were no laughs or taunts this morning—only the crisp patter of rain on damp earth and the fragrance of grass blades.</span>
+        <span class="zh">他的陰雨。</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">In the faint, buzzing prelude of dawn, he closed his eyes, stretched his arms wide to the left and right, and let his body, steeped in the dust of the old school building, dissolve into the air. The joints and blood in his body made sounds; he felt a part of himself slowly transform into something else—a note of music, a flame, a continuous drizzle. These things built his self, gradually separating from his wandering thoughts and becoming part of the world. His body travelled to various places, flying over the high walls of the boarding school, scattering everywhere. And then, then... suddenly, the connecting thread snapped. A thumping sound came from the next room; someone was banging on his wall, laughing. He turned his head toward that grey wall, plastered with dark yellow, mouldy wallpaper. Red and blue seeped from his brain—the breath of anger and melancholy. The saw-like morning bell rang.</span>
+        <span class="zh">在黎明嗡嗡作響的微弱前奏中，他閉上眼、向左右遠遠地伸開手臂，將處在舊校舍灰塵中的身體融進空氣。身體各處的關節和血液發出聲響，他覺得某一部分的自我漸漸變為其他東西——一個音符，一團火，一陣連綿的陰雨。這些東西構築成了他的自我，隨著他漫無邊際的思緒，漸漸從腦中抽離，變為世界的一部分。他的身體到了各種地方，飛過寄宿學校的高高圍牆，散落在各處。然後，然後……突然間，那根連接的弦繃斷了。隔壁房間傳來咚咚的響聲，有人嬉笑著使勁敲他的牆壁。他扭過頭，看向那堵灰色的，貼著暗黃色發霉壁紙的牆。大腦裡滲出紅色與藍色——憤怒與憂鬱的氣息。如鋸子般的起床鈴響起了。</span>
+    </div>
+
+    <div class="section-break">◇</div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">He walked through the corridor, trying to keep his chest held high. In this moment, he was a walking mirror. As he walked, he thought about what "special ingredients" might be in his breakfast. Sometimes a wriggling green caterpillar, sometimes a dozen mosquitoes or two earthworms. These things did not happen every day, but they happened often, and they were hidden deeper and deeper each time. Once, he accidentally swallowed something and still had no idea what it was. He walked through the crowd—as if listening to the sound of fish swimming through the glass of an aquarium, he could not make out what anyone was saying. He reached his place, lifted the lid of his dish, and found the usual stewed peas and cream soup before him. Everything seemed impossibly normal. He picked up his spoon and searched carefully through the soup. A hard, slippery object sank to the bottom of the bowl, and he scooped it up with his spoon. In an instant, his anxious dark green eyes twitched in pain, almost merging with the tiny thing convulsing in the scalding soup. Like two shards of broken glass. A tree frog, belly up, its mouth open. He could see its thin intestines and other organs, like a pink cloud. It was not dead yet; it was still struggling. On its back, a striking orange spot.</span>
+        <span class="zh">他穿過走廊，盡力挺著胸。這個瞬間，他是一面行走著的鏡子。他走著，邊思考今天的早飯中會有什麼「特殊調料」。有時，是一條正在蠕動著的青蟲，有時會是十幾隻蚊子或是兩條蚯蚓。這些事並不會每天發生，但會常常發生，且隱藏得越來越深。有次，他不小心吞了個什麼東西進去，直到現在也毫無頭緒。他穿過人群——彷彿隔著水族箱的玻璃聽魚游動激起的水流聲，他聽不清他們任何一個人說話。走到自己的位置，掀開餐蓋，自己面前擺著常規的燉豌豆與奶油濃湯，一切看起來都正常得不可思議。他拿起勺子，在那碗湯中細細尋找。一個硬硬的，滑溜溜的東西沉入湯盆底部，被他用勺子撈起。頃刻間，他那雙充滿憂慮的深綠色眼睛痛苦地跳動起來，與這個小小的，正在滾燙的湯水裡抽搐的東西幾乎合為一體。如同兩塊破碎的玻璃。一隻雨蛙張開嘴，肚皮向上。他看見它細細的腸子與其他臟器，像一團粉紅色的雲。它還沒死，還在掙扎，背上一個醒目的橘色斑點。</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"Agh..."</span>
+        <span class="zh">「咳……」</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">After an irresistible dry heave, Arthur raised his head, trying to find a laughing face. But he failed. Everyone had their heads down. There were no whispers, no secret glee, no post-prank chatter. Everything was silent, as if he were the only discordant error in this harmonious scene. Thus, he could not locate the source of the malice. So he was the first to stand up, dump his breakfast, and prepare to put his tray in the return rack.</span>
+        <span class="zh">一陣不可抗拒的乾嘔之後，亞瑟抬起頭，試圖尋找某一張正在嬉笑的臉。但他失敗了，所有人都低著頭，私語和竊喜從未出現，沒有惡作劇成功後的交談，一切寂靜無聲，彷彿他即是這片祥和裡唯一錯亂的、不和諧的謬誤。這樣，他便無法定位惡意的來處了。於是，他第一個站起身，將早餐倒掉，準備將餐盤放進回收處。</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"Black sheep."</span>
+        <span class="zh">「黑羊崽。」</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">A tray was pressed down on top of his. The other person did not even call his name, because he did not know it. Arthur took in the exaggerated smile before him, trying to recall where and why he had crossed paths with this person. But he failed again. Perhaps out of disgust for him, perhaps out of amusement, perhaps because everyone else was doing it. In any case, more and more trays piled up in his hands, nearly blocking his view. He walked through the narrow corridor like an eagle with a broken wing. To keep everything balanced, he moved like a circus performer walking on a high wire—constantly alert, always careful. At any such moment, he might fall from a single distraction, a sway of the heavy load, or the laughter of the audience, shattering into pieces. Sometimes he could not understand his own intrusive thoughts, like reading a telegram code without any clues. He did not understand himself, and no one understood him.</span>
+        <span class="zh">一個餐盤壓了上來，他甚至沒有喊他的名字，因為他並不知道他的名字。亞瑟將面前誇張的笑容收進眼睛裡，努力回憶自己是在什麼地點，為什麼與這人產生了交集。但他依舊失敗了。也許出於對他的厭惡，也許是因為有趣，也許是因為其他人也這麼做。總之，他手中的餐盤越來越多，幾乎將視線全都擋住了。他在狹窄的走廊上穿過，如同一隻翅膀骨折的鷹。為了讓手中的東西保持平衡，他像一個在高空中行走的馬戲演員，時刻清醒，小心翼翼。任何一個這樣的瞬間，他都可能因為走神，手中重物的搖擺或是觀眾的笑聲摔下去，粉身碎骨。某些時候，他讀不懂自己內心的侵入性想法，就像毫無提示地閱讀一則電報上的密碼。他不了解自己，也沒有人了解他。</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">I can hold on.</span>
+        <span class="zh">我能堅持。</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">Good. At least that's safer.</span>
+        <span class="zh">好，那總歸安全一些。</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">Suddenly, someone bumped into him. The iron trays scattered across the floor like a shower of silver bullets shot from a gun. The cream soup, sauces, and bone fragments with pink flesh still attached splattered onto his calves. Some of the residue was still scalding hot, and through his knee-high socks, the injured area began to redden. He lowered his head, gazing for a long time at the slowly swelling burn on his skin. Somewhere deep inside his body, a sound of something shattering echoed.</span>
+        <span class="zh">突然，他被什麼人撞了一下，手中的鐵製餐盤全部散落在地，如一把銀光閃閃的子彈、脫槍而去。擦不乾淨的奶油湯、醬汁與粘連著粉嫩血絲的骨頭碎片，在他的小腿上紛紛濺落。有些殘渣仍是滾燙的，隔著小腿襪，受傷的部分開始發紅。他低下頭，長久地凝視那塊正在漸漸鼓起的燙傷皮膚，身體深處傳來什麼東西碎裂的聲音。</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"I'm sorry, are you hurt?"</span>
+        <span class="zh">「對不起，你受傷了嗎？」</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">A young, languid, gentle voice made him pause. He looked up. In the overcast rectangular hall, he could only make out a face slightly older than his own in the dim light. His gaze stumbled recklessly, bumping into those cornflower-blue eyes, like glass meeting glass. A cheerful smile. The other person crouched down. His wet, lusterless golden curls now hung around Arthur's neck. A droplet of water slid from the tip of his hair onto the corner of Arthur's mouth, like a heartbeat. The man was not wearing a uniform; he was soaked through, his face the only clean part. When Arthur did not answer, he took the initiative to help pick up the trays. Moved by some unknown emotion, Arthur reached out and grasped the slender fingers that were about to touch the tray.</span>
+        <span class="zh">一個年輕的、懶散又輕柔的聲音使他微微愣神。抬起頭，在陰雲籠罩下的長方形禮堂裡，他只能透過微弱的光線看見一張比他年長一些的臉孔。他的眼神莽撞地跌落了下來，磕磕碰碰地碰上那雙矢車菊般的眼睛，如同玻璃相觸。一個快活的笑容。對方蹲下身，那被雨水打濕，失去光澤的金色捲髮，此時正垂在亞瑟的脖頸周圍。從髮梢滑下的水珠滴落在他的唇角，如一次心跳。那個人沒有穿校服，渾身都濕透了，只有臉尚且乾淨。見他沒有回答，對方便自作主張地幫他撿起餐盤。被某種不知名的情緒觸動，亞瑟伸出手去，握住他將要觸碰到餐盤的纖細手指。</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"Don't help me. I don't need it."</span>
+        <span class="zh">「你不要幫我，我不需要。」</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">In response to his quiet protest, the other smiled and ignored it. He gathered all the greasy trays into his arms, stood up, and walked toward the return area. He walked quickly but steadily. Arthur followed behind him. The students were still eating; their gazes were like thin ropes, winding around their necks. He could not remember any of their faces—they were like a permanent, blurry fog in his memory. Their faces turned into cold dust and ash, fading with the wind. But in the end, not a single person looked up, as if they were all blind to this, or simply did not care.</span>
+        <span class="zh">對於他的低聲抗議，對方在笑容中置若罔聞。將佈滿油污的餐盤全部抱進雙臂，站起身，往回收處走去。他走得很快，卻穩穩噹噹，亞瑟跟在他的身後。同學們仍在進餐，他的目光正如一條細細的繩索，朝他們的脖子纏去，繞去。他記不住他們任何人的面孔，彷彿記憶中永久存在的一團模糊的霧，他們的臉化為冰冷的塵土與灰燼，隨風消逝。但最終，沒有一個人沒有抬起頭，彷彿對這一切熟視無睹，或是毫不在意。</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">He withdrew his gaze, followed the stranger in small steps into the dimly lit washroom, and stood by the sink. The only clear things now were the angel sculpture above the sink and the stranger's gentle face. His fingernail pressed against the angel's sharp wing; pain came suddenly. The other man crouched down again. He looked up at Arthur, searching for an answer in his eyes. Deep in his soul, Arthur felt a strange, ineffable guidance. He had seen this guidance in his dreams before—a gentle, colourful, transparent, formless radiant human shape. Indifferent words fell from its soft voice, like talking about the unrelated affairs of any stranger. But now, he entrusted himself to this guidance and nodded gently. The stranger laughed twice, washed his hands under the running water, then crouched down again, unfastening the garter from Arthur's calf. His fingertips were wet and hot, like sunlight brushing across his skin, like a warm ash floating down. Arthur trembled almost imperceptibly and closed his eyes. He hugged himself with hands full of unease, anger, and terrifying euphoria. This was it—his emotions had imploded.</span>
+        <span class="zh">收回目光，亞瑟小步跟在陌生人身後，走入燈光昏暗的盥洗室，在洗手池邊站定。現在對他來說，唯一清晰的東西，便是水池上的天使雕塑，以及陌生人的柔和臉孔。他的指甲正按在天使尖利的翅膀上，疼痛驟然而至。對方再次蹲下身子。在他面前抬起頭，用眼神尋找一個答案。在靈魂深處，亞瑟受到某種不可言說的奇怪指引。他曾經在夢中見過這種指引，一個柔和的、五彩繽紛的、透明但沒有形體的人形光輝。漠然的單詞從祂輕柔的語音中說出來，彷彿談論著任何一個陌生人的，不相干的事。但此時，他將自己交付於這種指引，輕輕點了頭。陌生人笑了兩聲，在水流底下把手洗淨，旋即再次蹲下身，解下他小腿襪上的襪帶。他的指腹濕潤而滾燙，如輕擦過他的肌膚的陽光，又似一片悠悠飄落、仍有餘溫的爐灰。亞瑟微不可察地顫抖，閉上雙目。他用充滿不安、憤怒、以及讓人恐懼的欣快的雙手抱緊自己。是這樣的，他的情緒發生了內爆。</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"The rain is cold, isn't it? Not a good day to enrol. I've just arrived in Kent.<a href="#fn1" class="footnote-link" id="ref1"><sup>①</sup></a> Third year. Francis Bonnefoy. Sorry you have to see me in such a sorry state so soon."</span>
+        <span class="zh">「雨水很涼，不是嗎？這不是一個入學的好天氣。我剛來肯特郡<a href="#fn1-zh" class="footnote-link" id="ref1-zh"><sup>①</sup></a>。三年級，弗朗西斯·波諾弗瓦。剛來就讓你看見我狼狽的樣子，真是抱歉。」</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">Like a persistent wolf, the stranger followed the path of the emotions flowing through Arthur's body. To reassure him, he talked about the weather. In a secular sense, there was no better way to bring two people closer. Sometimes, fate was moved in such ways.</span>
+        <span class="zh">陌生人像一隻鍥而不捨的狼，追循著情緒在他身體裡流過的路線。為了讓他安心，他與他談論天氣。世俗意義上，沒有比這更好的手段能拉進兩人之間的距離。有時，緣分便是這麼被搬運的。</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"Arthur Kirkland... Thank you, but I hope we can keep our distance. If you really get to know me, you'll regret helping me."</span>
+        <span class="zh">「亞瑟·柯克蘭……謝謝你，不過我希望我們以後可以保持距離，如果你真的了解我，一定會後悔幫了我。」</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">After a brief silence, Francis shook his head, his smile returning, and continued to wash the fresh burn with cold water. The redness slowly faded from his calf, then travelled through his blood vessels to his face. It was so hot here. Fortunately, he was wearing his spring uniform today. They had not had time to say much before the bell for first period rang. Geography—one of his favourite subjects; his understanding of the world came from it. Greenland, Africa, and that mysterious, seemingly unknowable Mariana Trench. How deep was the sea? In that darkness, he could walk through the water, pluck the faint glow of a plankton—his only connection to the real world. He swam toward them... The geography classroom was at the far end of the washroom. Arthur heard countless footsteps racing down the corridor in that direction. He cupped some cold water in his hands and splashed it on his face.</span>
+        <span class="zh">一小會兒的沉默後，弗朗西斯搖了搖頭，恢復笑容，繼續用冷水為他清洗剛剛的燙傷。那塊紅腫慢慢在他的小腿上消失，又跟著血管飛向他的臉。這裡好熱，好在他今天穿了春季校服。他們還沒來得及說太多話，第一節課的鈴聲響起了。地理課，這是他最喜歡的課之一，他對世界的了解便來自於此。格陵蘭、非洲、還有那個神秘的、彷彿永不可知的馬里亞納海溝。海到底有多深？身處那樣的黑暗，他可以在水中行走，摘下一朵浮游生物的微光，這便是他與現實世界的唯一連接，他向它們游去……地理教室遠在盥洗室的另一頭，亞瑟聽見無數的腳步踏過走廊，朝那個方向狂奔去。他用手掬了一點冷水，朝自己的臉潑去。</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"There."</span>
+        <span class="zh">「好了。」</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">The sensation of cold water on his injured calf vanished. Francis refastened the garter for Arthur, then stood up. The rain gradually stopped. The newborn sun broke through the clouds, flooding the washroom with golden light. Arthur noticed a drop of water in the shadow cast by his eyelashes—easy to miss if you didn't look carefully. The sun's tear.</span>
+        <span class="zh">受了傷的小腿處，冷水的觸感消失了，弗朗西斯為亞瑟重新扣上襪帶，隨後站起身。陰雨漸止，新生的太陽穿透烏雲，盥洗室內金光萬丈。亞瑟注意到他睫毛投下的陰影中有一滴水，不仔細看便會錯過。太陽的眼淚。</span>
+    </div>
+
+    <div class="section-break">◇</div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">Inevitably, Arthur was drawn to Francis, yet he could not ask anyone about his past. His secrets lay in a casket sunk to the bottom of the water, impossible for anyone to retrieve or discover. Nonetheless, he loved everything about him. He did not often run into Francis, but when they met, Francis was always alone. Most of the time, Francis wore his own shirt and shorts, loosely tucked into his belt, not his school uniform. This ease, sometimes, was love. When Francis walked toward him, he would smile and wave. He would come to him, talk about trivial things. His eyes were unforgettable; the scar from the burn still itched on his calf. Sometimes, he would come up to him, wrap his arms around him, and affectionately cup his face, as if they had known each other for a long time. He talked incessantly, laughed loudly, told him things beyond Kent. He used this to ease Arthur's loneliness.</span>
+        <span class="zh">不可避免地，亞瑟被弗朗西斯吸引，卻無法向任何人探聽他的過去。他的秘密藏在沉入水底的匣子裡，難以被任何人打撈和探知。儘管如此，他還是熱愛他的一切。他不常常碰到弗朗西斯，但他們相遇時，他總是孤身一人。很多時候，弗朗西斯穿著自己的襯衫與短褲，鬆鬆垮垮地把下擺塞進腰帶，沒有穿校服。這種輕鬆感，有時便會是愛。當弗朗西斯朝他走來時，會向他笑著招手。向他走來，與他談論一些無關緊要的事情。他的眼睛讓他難以忘記，燙傷的疤痕仍在小腿處發癢。有時，他走到他面前，用雙臂環繞住他，親暱地捧住他的臉，彷彿他們已經相識很久。他不停地說話，大笑，對他講一些肯特郡之外的事。他用這種方式削減他的孤單。</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"Francis, where do you come from?"</span>
+        <span class="zh">「弗朗西斯，你從哪個地方來？」</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"A very faraway place, a place with snowy mountains and soft clouds. You've never seen it, you should go see it."</span>
+        <span class="zh">「很遠的地方，一個有雪山和鬆軟的雲的地方。你一定沒見過，應該去見見。」</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">These conversations happened countless times, and each time his answer was different. But Arthur believed him without question. He was the first person to reach out to him, the one who leaned over to touch his wound. In a way, he had saved him. His art grades had always been poor. Otherwise, he would have painted Francis sooner. Tracing his contours in oils: the temporal bone, the occipital bone, the defined cheekbones. And then a painting that captured his soul. That painting would be a mass of black, or perhaps nothing at all. Francis, Arthur—I cannot possess you, but I do not want you to get lost.</span>
+        <span class="zh">這樣的對話，進行過無數次，每一次他的回答都各不相同。但對於他的話，他深信不疑。那是第一個朝他伸出手的人，那個傾過身體，觸碰他傷口的人。在某種程度上，他拯救了他。他的美術課成績一直不好。否則，他將更早地將弗朗西斯畫下來。用油彩循著他的輪廓。顳骨、枕骨、輪廓分明的顴骨。再畫一幅描摹他心靈的畫。這幅畫將是一團黑色，或是什麼也畫不出來。弗朗西斯，亞瑟，我無法擁有你，但我不想讓你迷失。</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">When they met again, Kent was still drizzly. By the tall window at the far end, two male statues leaned together, resting. Traces of corrosion from the rain wound down their surfaces like two black tear stains. In the damp air, the unreturned books piled together gave off a musty smell. A few wooden shelves made faint creaking sounds, like ancient breathing. Arthur had been locked in here for the entire night. Usually, the library was only locked during exams; by the next morning—close to dawn—the proctor would unlock the door for him. He knew these times well, because he had experienced them more than once. Perhaps a few years ago, or a dozen years ago, another equally fragile, quiet, withering child had sat here, enduring the abuse and insults of the night, the unprovoked violence of the whole universe. He was here, holding a few books—that was why he had come.</span>
+        <span class="zh">再次遇見他，肯特郡依舊陰雨連綿。最盡頭的高大落地窗前，兩尊男雕像靠在一起休憩，被雨水腐蝕的痕跡蜿蜒其上，宛如兩條黑色的淚痕。身處濕潤的空氣，堆在一起、尚未被歸位的書散發出霉味。某幾個木頭架子發出輕微的響聲，如同古老的呼吸。亞瑟被關進這裡，一整個晚上。通常，圖書館在考試時才不上鎖，隔天早上——接近黎明的時候，校監便會替他打開這扇門。他對這些時間瞭如指掌，因為他曾經歷過不止一次。也許就在他坐在這裡的幾年前、或者十幾年前，曾有一個同樣孱弱、安靜，枯萎著的孩子坐在這裡，承受著來自夜晚的虐待和辱罵、以及整個宇宙的無端暴力。他就在這裡，抱著幾本書，那便是他來到這裡的原因。</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"I'll take the sword myself. Here, thrust it into my heart—the seat of my pure love. Don't be afraid; there's nothing in it but sorrow."<a href="#fn2" class="footnote-link" id="ref2"><sup>②</sup></a></span>
+        <span class="zh">「我自己來拔劍吧，拿著，將它插入<br>我的心窩，那是我純潔愛情的所在。<br>不用害怕，裡面除了悲傷空無所有。」<a href="#fn2-zh" class="footnote-link" id="ref2-zh"><sup>②</sup></a></span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"I'll take the sword myself. Here! Thrust it into my heart—the seat of my pure love. Don't be afraid; there's nothing in it but sorrow."</span>
+        <span class="zh">「我自己來拔劍吧，拿著！將它插入我的心窩。那是我純潔愛情的所在。不用害怕，裡面除了悲傷空無所有。」</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">Amid his drowsy murmurs, another voice woke him, like an insect burrowing into his ear. That familiar, vibrant voice. He opened his bleary eyes. Francis stood across from him. He was wearing his uniform now, but still did not look like one of them, did not seem to belong anywhere—like a permanent, unsolvable mystery. By some light from outside, Arthur traced his tall silhouette in the darkness. He looked like a statue carved by the devil himself, hiding his horns and goat hooves—an abandoned cathedral, weathered early. His eyes were like erratic purple suns, his smile like venom, his voice like a string of dirges. Cymbeline—that was the same story Arthur held in his hands, only Francis's book was older, as if from centuries ago.</span>
+        <span class="zh">在他昏沉夢囈的同時，另一個聲音將他吵醒，像一隻蟲子鑽進耳朵。那個耳熟的、充滿生命力的聲音。睜開朦朧的睡眼，弗朗西斯站在他的對面。他現在穿著校服了，但仍舊不像他們中的一員，甚至不屬於任何一個地方，彷彿一個永久的，難解的謎。藉由外頭不知道什麼物體發出的光，亞瑟在黑暗中用眼睛印出他高大的輪廓。他彷彿是魔鬼親手雕刻的、一尊藏起尖角和羊蹄的塑像，一座被早早遺棄，風化的大教堂。他的眼睛像錯亂的紫色太陽，笑容如毒液，聲音像一串悼詞。《辛白林》，那是亞瑟手裡也拿著的故事，只不過弗朗西斯手中的書更舊，彷彿來自於幾個世紀前。</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"How did you get here?"</span>
+        <span class="zh">「你怎麼在這？」</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"Clearly, I've been locked in here."</span>
+        <span class="zh">「顯然，我被關在這裡了。」</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"Why?"</span>
+        <span class="zh">「為什麼？」</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"Because I missed closing time."</span>
+        <span class="zh">「因為我錯過了閉館時間。」</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"You know that's not what I'm asking."</span>
+        <span class="zh">「你知道我問的不是這個。」</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"Alright, then I can't answer."</span>
+        <span class="zh">「好吧，那我不能回答了。」</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">Francis suddenly stepped forward, bracing his hands on the bookshelf beside him, leaning close to Arthur. Their breaths mingled like two moths tangled together. Arthur could only tilt his head back and look up at him, throwing himself into another burning violet cage. Several books fell at his feet, their pages fluttering open in the wind. Above their heads, the two resting statues dripped black rain, black tears. They drew closer. Then, without any warning, Arthur clenched Francis's tie in his fist, like seizing the reins of his own life. They kissed, then loosened the tie, then kissed again. In this ancient dark space, full of moisture, secrets, and pain, they were like time, like light beams, like two parallel lines, eternally pursuing each other's bodies, craving passion. Their gasps were like whispers, like sobs. The cover of a copy of Faust<a href="#fn3" class="footnote-link" id="ref3"><sup>③</sup></a> was stained; Francis wiped it away with his thumb. This night was like an infinitely large sheet of paper, folded countless times into a chaotic, overlapping space. When they finally parted, he had not even felt any visible, tangible mark left on him by Francis. He hurriedly pulled his knee-high socks and silk-blend uniform back on, piece by piece, arming himself once more with propriety. He leaned against Francis's body, feeling his warmth, his twitching muscles, the sweat rolling off his skin. The other man wiped his hands; the handkerchief was like water, flowing between his fingers.</span>
+        <span class="zh">弗朗西斯突然向前一步，將手撐在書架上靠近他，呼吸如交纏在一起的兩隻飛蛾。他只能仰頭看著他，將自己投入另一個灼熱的紫色囚籠。幾本書掉在他的腳邊，被風翻開書頁。他們的頭上是那兩尊休憩著的雕像，黑色的雨水、淚水，向下滴去。他們靠近，接著，弗朗西斯的領帶被他沒有任何徵兆地攥緊在手裡，如同攥住自己生命的韁繩。他們接吻，又解下領帶，接著再接吻。在這個充滿水汽、秘密與痛苦的古老黑色空間裡，他們像時間、光束或是兩條平行線，永恆地追求著對方的身體，渴求歡愛。喘息聲如同低訴，又似哭聲。一本《浮士德》<a href="#fn3-zh" class="footnote-link" id="ref3-zh"><sup>③</sup></a>的封面被弄髒了，弗朗西斯用拇指擦去。這個夜晚彷彿一張無限大的紙，被摺疊了無數次，成為一個混亂的、重疊的空間。等到他們分開，他甚至還沒有感覺到弗朗西斯在他身上留下過任何可視的、可觸碰的痕跡。他慌慌張張地把小腿襪和蠶絲校服一件一件地套回身上，再次用禮儀將自己武裝起來。他靠著弗朗西斯的身體，感受他的體溫、跳動的肌肉與滾落在皮膚上的汗液。對方擦拭著雙手，手帕如水，在手指的縫隙間游移流動。</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"Let's get out of here."</span>
+        <span class="zh">「我們出去吧。」</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">Francis turned to him, speaking close to his ear. He returned Cymbeline to the shelf. When they reached the library door, he inserted a hairpin into the lock, fiddled with it for a few moments, and the door clicked open. Arthur still had countless questions he held back—like why Francis hadn't just left by himself. But now, they walked down the corridor, first walking, then running, then laughing, like two hunting dogs howling at the moon. They had to avoid the proctor, who might appear around any corner. But with Francis, Arthur was fearless. It was like suddenly having a seatmate on a train—he would treat the other as his confidant for a few hours, pouring out all his sorrow and fear, as if he would only have this one chance. Then, as the doors opened and closed, his body would fill with various tears and sentences, becoming a container permanently loaded with stories. And then, they would never meet again. They reached the high wall. Francis lifted Arthur over it, like an eagle skimming the moon. Leaving the school grounds, they walked toward the hilltop and sat down by the cliff's edge. The gap between this cliff and the next was only a little more than a step. Wind rose from the bottom of the cliff, a low, moaning sound.</span>
+        <span class="zh">弗朗西斯側過身，貼著他耳朵說話，將《辛白林》放回書架。來到圖書館門前，將頭上的卡子插入鎖眼搗了幾下，門應聲而開。亞瑟還有無數問題被壓下了，比如他為什麼不自己先出去。但此時，他們在走廊中先是行走，然後奔跑，大笑，如同對著月亮吠叫的兩隻獵犬。除了隨時出現在走廊拐角處的石雕，他們還必須避開校監。但是，他與弗朗西斯在一起時總是無所畏懼。彷彿在一列火車上突然出現的一個鄰座旅人。他會將對方當成自己幾個小時的密友，與他交談，將自己所有悲傷和恐懼和盤托出，彷彿一生僅有這一次機會。接著，隨著車門的開閉，他的身體將充滿各種淚水和句子，永久成為一具裝載著故事的容器。然後，他們將永遠不再見面。他們走到高高的圍牆邊上，弗朗西斯將他舉過高牆，如一隻鷹掠過月亮。離開校園，他們走向山頂，在斷崖邊上坐下。這邊的山崖離那一邊只有一步多的距離，風從崖底颳過，一陣嗚嗚的響聲。</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"Arthur, want to see something?"</span>
+        <span class="zh">「亞瑟，想不想看個東西。」</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">Suddenly, Francis pulled a damp match from his pocket and lit it, one after another. Ash fell onto the bare ground. The dawn rumbled like thunder. Behind him, the sun was rising, as if it were the flame of his match. That fiery, blood-red light pierced through his body. In his hand, he clutched the last match. He lit it, and the flame took the shape of a flower.</span>
+        <span class="zh">弗朗西斯突然從口袋裡掏出一把受了潮的火柴，一根一根點燃，灰塵掉落在光裸的土地上，破曉轟響如雷。他的身後，太陽正在升起，彷彿那是他火柴燃起的光焰。那陣火紅的，如血般的光芒穿透了他的身體。他的手中緊攥著最後一根火柴。點燃他，火焰的形狀宛如一枝花朵。</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"It's a Gypsy trick."</span>
+        <span class="zh">「這是一種吉普賽戲法。」</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">He explained. Arthur smiled faintly. The rain had stopped; he smelled the fragrance of grass blades and the reassuring scent of library ink. A tree frog jumped onto his foot, then hopped off and disappeared into the grass in the distance. He opened his arms, wanting to embrace Francis, but the other suddenly stepped forward and jumped over the narrow gap between the two cliffs.</span>
+        <span class="zh">他解釋道，亞瑟微微一笑。陰雨結束了，他聞見草葉的芬芳與圖書館使人安心的油墨氣味。一隻雨蛙跳上他的腳背，又跳下去，消失在遠處的草叢中。他張開雙臂，想要抱住弗朗西斯，但對方突然向前一步，跳過兩條山崖間狹窄的縫隙。</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">He jumped across, turned to look back at Arthur's face, then bent down and plucked a blooming wildflower from the edge of the cliff.</span>
+        <span class="zh">他跳過去，回頭看向亞瑟的臉，旋即弓下身子，從崖邊採下一朵正在盛放的不知名野花。</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"Paradise flower."<a href="#fn4" class="footnote-link" id="ref4"><sup>④</sup></a></span>
+        <span class="zh">「帕瑞戴斯花。」<a href="#fn4-zh" class="footnote-link" id="ref4-zh"><sup>④</sup></a></span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">In the moment Arthur wasn't paying attention, the other had already stepped back and tucked the flower behind Arthur's ear. Arthur reached out and grasped his warm hand. The touch of his skin was astonishing—it felt like holding nothing at all.</span>
+        <span class="zh">在亞瑟沒有注意到的時刻，對方已經跨了回來，將花插在他的耳朵邊。亞瑟伸出手去，握住他溫熱的手。他的皮膚觸感使人驚奇，握上去空若無物。</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"Arthur. Arthur. Arthur."</span>
+        <span class="zh">「亞瑟，亞瑟，亞瑟。」</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">Arthur looked up, waiting for Francis's next words. But the other only gave a simple, calm smile. The earlobe brushed by his fingers burned like a fresh wound. He pulled Francis's tie again, and when they kissed again, love was as fierce as hatred.</span>
+        <span class="zh">亞瑟抬起頭，等待著弗朗西斯的下一句話。而對方只是露出一個簡單從容的微笑。被他的手指擦過的耳廓滾燙如火傷。他又拉過對方的領帶，再次接吻時，愛意如同恨意。</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">Arthur, Arthur.</span>
+        <span class="zh">亞瑟，亞瑟。</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">My leg bones and arm bones will shatter to pieces.</span>
+        <span class="zh">我的腿骨和肱骨都會摔得粉碎。</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">You should try to jump, for you are an eagle.</span>
+        <span class="zh">你應該試著跳一次，因為你是一隻鷹。</span>
+    </div>
+
+    <div class="section-break">◇</div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">I love him. He is where my soul lives. His love moves me and exiles me at the same time. He cannot be defined by any stereotype imposed by society. He is different—refreshing and suffocating. He leaves me no choice but to admire him when he's not looking, like excavating a site no one has ever discovered, finding a rare gemstone, a broken statue, or an undecipherable ancient script. I wish I had known him earlier. His existence changed my life and my mind. Yes, merely his existence. He is not easily defined, like something fluid and intangible, floating through my disordered, painful mind, like a transparent, contradictory, multicoloured creature. I don't know. I don't know whether to think of him as an angel, a demon, or an unknown being.</span>
+        <span class="zh">我愛他，他是我心靈的所在。他的愛使我動容，同時又將我流放。他無法被社會強加的任何刻板印象所定義。他與眾不同，既讓人心耳目一新，又讓人窒息。他讓我別無選擇，只能在他不注意的時候欣賞他，彷彿挖掘一座從未有人發現過的遺址，接著發現一顆罕見的寶石，或殘缺的塑像。亦或是難解的古文字。我希望我能早早認識他，他的存在改變了我的生活和大腦。是的，僅僅是他的存在。他並不容易被定義，就像一種流動的、不可感知的東西，漂浮在我雜亂無序又痛苦不堪的腦海中，如同一種透明的、矛盾的、五彩繽紛的生物。我不知道。我不知道，該把他當成天使、惡魔還是未知的生物。</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">I only know him from afar; I don't know any of his personal details. So I cannot distinguish those kisses, those moments of passion, those embraces. The cold water he poured over my calf—was it a dream, a hallucination, or a hidden memory?</span>
+        <span class="zh">我只是從遠處了解他，不知道他的任何個人細節。因此，我無法區分那些吻、歡愛與擁抱。他澆下的，在我小腿上流瀉的冷水。那是夢境，是幻覺，還是隱藏的記憶？</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">On the last night, Arthur woke up covered in blood. What was the new accusation? He had already forgotten; his mind was too weary to think. The gears of the clock were stuck, the sound like a soft cough. He looked up, wanting to see the moon. On clear nights, the moon's position could tell him the time. But tonight, a torrential downpour fell. Dragging his wounded body, he walked like a sailor who had survived a shipwreck, trudging along the beach, stubbornly dragging his sail. He slowly moved to the window. Another tree frog clung to the glass, drawn by the light, looking inside. Arthur tapped the glass heavily and drove it away. Today, he was not in that mood. Dreams and thoughts lost all order; red and blue merged. His blood, his tears, the rain. He opened the window, swallowing the icy streams, his fingers pressing against the throbbing artery on his forehead. When he stopped, exhausted, he heard someone calling his name.</span>
+        <span class="zh">最後一個夜晚，亞瑟渾身血跡地醒過來。新的指控是什麼？他已經忘卻了，大腦疲於思考。掛鐘的齒輪被卡住，聲音如同輕咳。他抬起頭，想看看月亮。晴朗的夜晚，月亮的方位能使他知曉時間。而今天，暴雨傾瀉如瀑。拖動著傷痕累累的軀體，他像一個在海岸中倖存的水手，在沙灘上行走，固執地曳著自己的帆。他緩步移到窗前，玻璃上又趴著一隻雨蛙。被光亮吸引，它看向屋內。亞瑟重重敲敲玻璃，趕走了它。今天，他不在這種心情內。夢和思緒失去秩序，紅色與藍色相互融合。他的血、淚水與雨水。他打開窗子，吞嚥著冰冷的水流，手指貼著額頭跳動著的動脈。他筋疲力竭地停下來時，聽見有人叫他的名字。</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"Arthur."</span>
+        <span class="zh">「亞瑟。」</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"Ar—thur—"</span>
+        <span class="zh">「亞——瑟——」</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">He followed the sound to look downstairs. Unsurprisingly, Francis was there, under the tall plane tree where the tree frogs nested. He waved urgently, signalling him to take cover from the lightning.</span>
+        <span class="zh">他循聲望向樓下。不出所料，弗朗西斯站在那裡，那棵築著雨蛙巢穴的，高大的梧桐樹下。他急急忙忙地朝他揮手，告訴他躲避雷擊。</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"Ar—thur—"</span>
+        <span class="zh">「亞——瑟——」</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">Francis laughed, step by step walking beneath his narrow window. He was soaked through, but his face and eyes remained clean. He looked up at him. This scene had appeared in some novel—perhaps Romeo and Juliet. Their gazes met in the darkness, merging, like a photograph set in an old frame. He still stood there, arms open to him. Then, Arthur climbed over the windowsill and stood on it. The wind made him feel like a flag, or as if he had grown wings. He jumped, like a young man performing a courage test at the seaside, leaping without hesitation into the water, into his embrace.</span>
+        <span class="zh">弗朗西斯笑著，一步一步走到他狹窄的窗戶下面。他渾身都濕透了，臉和眼睛卻依舊整潔。他仰頭看著他，這一幕曾經出現在某本小說裡。可能是《羅密歐與茱麗葉》。他們的目光在黑暗種相觸，融合在一起，如同一張照片嵌在舊畫框裡。他仍站在那兒，朝他張開雙臂。然後，亞瑟翻過窗框，站在上面。風讓他感覺自己變為了一面旗幟，亦或是長出了雙翼。他跳了下去，如同一個在海邊進行勇氣測試的青年，毫無顧忌地跳入水中，落入他的懷抱。</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"Arthur."</span>
+        <span class="zh">「亞瑟。」</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">He took his hand. They were both soaked, like the two faded statues leaning together in the library. Then, they walked toward the cliff. It was almost their secret garden.</span>
+        <span class="zh">他牽起他的手，他們倆都濕透了，一如圖書館裡那兩尊靠在一起的褪色雕像。然後，他們向著斷崖走去。那裡幾乎可以算作他們的秘密花園。</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"So, tell me."</span>
+        <span class="zh">「如何，跟我說說吧。」</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">In the downpour, Francis let Arthur lean on his shoulder. Their fingers interlaced, their eyes open in the icy rain. He felt Arthur's faint breath moving through the tunnel of his trachea, like a deep blue glow. Listening to his sighs was like soothing a tired eaglet that had just crossed the entire sky.</span>
+        <span class="zh">暴雨中，他讓亞瑟靠在他的肩上。十指擠過他的手指縫隙，眼睛在冰冷的雨水中睜開。他感受著亞瑟微弱的呼吸，在他的氣管隧道中移動，如一團深藍的光輝。聆聽他的嘆息，就像安撫一隻疲累的，剛穿越整片天空的雛鷹。</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"I don't remember, Francis... so many things. They're all too blurry."</span>
+        <span class="zh">「我不記得了，弗朗西斯……很多很多事情，那些都太模糊了。」</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">Arthur leaned into Francis's embrace, close to his chest, gripping his strangely textured hand even tighter. Who were these people? Who were the people at school? Where had their hostility toward him gone? Was there a cause or an effect? Countless questions filled his mind.</span>
+        <span class="zh">亞瑟靠在弗朗西斯的懷裡，緊挨他的胸膛，將他觸感奇怪的手握得更緊。這些人是誰？學校裡的人是誰？對他的敵意去向何方？是有因還是有果？無數疑問將他的腦子佔滿了。</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"Arthur, want to see something?"</span>
+        <span class="zh">「亞瑟，想不想看個東西。」</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">It was not a question. Francis again pulled a damp match from his pocket. In the downpour, he still managed to light it, the flame like a flower. That flicker of fire trembled in his violet eyes, like a gem reflecting light. His eyes turned red; rain flowed down his face like blood.</span>
+        <span class="zh">這不是一個問句。弗朗西斯又從口袋中掏出一根濕乎乎的火柴。在暴雨中，他依舊點燃了它，火焰如同花朵。那簇火苗在他紫色的雙眼中顫動，如一塊反射著光彩的寶石。他的眼睛變成紅色，雨水如同血液，在他的臉上流動不止。</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"How did you..."</span>
+        <span class="zh">「你是怎麼……」</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"How did I?"</span>
+        <span class="zh">「我是怎麼？」</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">For the first time, he heard Francis's laugh turn painful. Arthur believed, in the pouring rain, that he was being turned into a frog by terrible truths and emotions.</span>
+        <span class="zh">頭一次，他聽見弗朗西斯的笑聲變得痛苦了。亞瑟在瓢潑大雨中相信，自己正在被可怕的真相和情感變成一隻青蛙。</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"Do you remember, Arthur? I didn't make it across."</span>
+        <span class="zh">「你記得嗎，亞瑟？我沒能跳過去。」</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"I didn't make it across."</span>
+        <span class="zh">「我沒能跳過去。」</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">Terrified, he reached out, trying to touch the hem of Francis's clothes, but only raindrops fell on his fingers. Francis turned his back to him. In the darkness, he leaped into the invisible, dark of the moon.</span>
+        <span class="zh">他驚恐萬分地伸出手去，想觸碰弗朗西斯的衣角，只有雨點打在手指上。弗朗西斯背對著他。在黑暗中，他縱身一躍，投入不可視的，月亮的黑暗。</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">He jumped across, and then he was gone.</span>
+        <span class="zh">他跳過去，然後消失了。</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">He would go to the library, not caring about any pain, searching through the rough pages until his fingers bled. In the library, there was neither Cymbeline nor Faust.</span>
+        <span class="zh">他會到圖書館，不在乎任何疼痛，在粗糙的書頁中翻找直至手指流血。圖書館裡，既沒有《辛白林》，也沒有《浮士德》。</span>
+    </div>
+
+    <div class="section-break">◇</div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"..."</span>
+        <span class="zh">「……」</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"That's my imaginary friend. His name is Francis Bonnefoy. I don't know why, but I can't see him anymore."</span>
+        <span class="zh">「這就是我和我的幻想朋友，他叫弗朗西斯·波諾弗瓦。不知道為什麼，我已經看不見他了。」</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">In this cassette tape in my hand comes the sound of something heavy falling. This is the final content of my case report.</span>
+        <span class="zh">我手中的這盤磁帶裡傳來重物落地的聲音，這是我案件報告的最後內容。</span>
+    </div>
+
+    <!-- 注释分割线 -->
+    <hr class="divider">
+
+    <!-- 注释部分 -->
+    <div class="footnote">
+        <div class="footnote-item" id="fn1">
+            <span class="en"><a href="#ref1" class="footnote-link">①</a> Kent: A county in southeastern England. Rural, ancient, conservative, an area dense with boarding schools.</span>
+            <span class="zh"><a href="#ref1-zh" class="footnote-link">①</a> 肯特郡，英格蘭東南部郡縣。鄉村、古老、保守、寄宿學校密集區域。</span>
+        </div>
+        <div class="footnote-item" id="fn2">
+            <span class="en"><a href="#ref2" class="footnote-link">②</a> Cymbeline tells the story of the British king Cymbeline, who, under the influence of his wicked queen, wrongfully banishes his daughter Imogen's husband Posthumus. Posthumus, deceived by Iachimo, doubts his wife's fidelity. Banished, he orders a servant to kill Imogen, but the servant instead helps her disguise herself as a boy and flee to the Welsh wilderness. There, Imogen reunites with her two long-lost brothers. In the end, with his children's help, Cymbeline defeats the Roman invaders, and the family's misunderstandings are resolved.</span>
+            <span class="zh"><a href="#ref2-zh" class="footnote-link">②</a> 《辛白林》講述了不列顛國王辛白林因聽信後妻讒言而錯怪女兒伊摩琴，伊摩琴丈夫波塞摩斯受亞基莫捉弄懷疑妻子忠貞。波塞摩斯被放逐後命令僕人殺死伊摩琴，僕人卻助其女扮男裝逃亡威爾斯荒野。伊摩琴在此與早年失散的兩個哥哥相遇，最終辛白林在子女協助下擊敗羅馬入侵者，家庭誤會得以解除。</span>
+        </div>
+        <div class="footnote-item" id="fn3">
+            <span class="en"><a href="#ref3" class="footnote-link">③</a> Faust: The devil Mephistopheles makes a bet with God to seduce the erudite old scholar Faust, who is weary of life yet seeks truth. Faust makes a pact with the devil: the devil will serve him and let him experience the extremes of life; once Faust is satisfied with a moment and says, "Stay, thou art so fair!" his soul will belong to the devil.</span>
+            <span class="zh"><a href="#ref3-zh" class="footnote-link">③</a> 《浮士德》魔鬼梅菲斯特與上帝打賭，要引誘一位追求真理卻對生活感到厭倦的博學老博士浮士德墮落。浮士德與魔鬼簽下契約：魔鬼作為僕人，帶他體驗人生的各種極致；一旦浮士德對某個瞬間感到滿足，說出「你真美啊，請停一停！」，他的靈魂就歸魔鬼所有。</span>
+        </div>
+        <div class="footnote-item" id="fn4">
+            <span class="en"><a href="#ref4" class="footnote-link">④</a> Paradise.</span>
+            <span class="zh"><a href="#ref4-zh" class="footnote-link">④</a> Paradise.</span>
+        </div>
+    </div>
+
+<!-- ================= RETURN ================= -->
+<div style="text-align:center;">
+  <a class="return-box" href="../index.html">
+    <span class="en">Return</span>
+    <span class="zh">返回</span>
+  </a>
+</div>
+
+<!-- ================= MUSIC（可替换模块） ================= -->
+<!-- 🔴 MUSIC MODULE START -->
+<audio id="bgm" loop>
+  <source src="../music/RememberingHer.mp3" type="audio/mpeg">
+  <!-- 🔵 替换音乐路径即可 -->
+</audio>
+<!-- 🔴 MUSIC MODULE END -->
+
+<script>
+let lang = "en";
+
+function applyLang(mode) {
+  document.body.classList.remove("lang-en", "lang-zh");
+  document.body.classList.add("lang-" + mode);
+}
+
+function toggleLang() {
+  lang = (lang === "en") ? "zh" : "en";
+  applyLang(lang);
+}
+
+applyLang("en");
+
+/* music autoplay */
+document.addEventListener("click", () => {
+  const audio = document.getElementById("bgm");
+  if (!audio) return;
+  audio.volume = 0.6;
+  audio.play().catch(() => {});
+});
+</script>
+
+</body>
+</html>

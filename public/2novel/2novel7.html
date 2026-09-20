@@ -1,0 +1,1099 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Longing / 渴望</title>
+
+<style>
+body {
+  background-color: #81A380;
+  color: #525288;
+  max-width: 720px;
+  margin: 100px auto;
+  line-height: 1.9;
+  font-family: Georgia, serif;
+  padding: 0 20px;
+}
+
+/* ================= LANGUAGE SYSTEM ================= */
+.zh, .en {
+  display: none;
+}
+
+body.lang-en .en {
+  display: inline;
+}
+
+body.lang-zh .zh {
+  display: inline;
+}
+
+/* switch */
+.lang-switch {
+  position: fixed;
+  top: 18px;
+  right: 18px;
+  border: 1px solid #7D5A44;
+  padding: 6px 12px;
+  cursor: pointer;
+  color: #7D5A44;
+  background: transparent;
+  z-index: 999;
+}
+
+.lang-switch:hover {
+  background: #7D5A44;
+  color: white;
+}
+
+/* title */
+h1 {
+  text-align: center;
+  font-weight: normal;
+  margin-bottom: 60px;
+  font-size: 28px;
+  letter-spacing: 1px;
+}
+
+/* divider */
+.divider {
+  border-top: 1px solid #7D5A44;
+  width: 100%;
+  margin: 60px 0;
+  opacity: 0.6;
+}
+
+/* text */
+p {
+  margin-bottom: 26px;
+}
+
+/* return */
+.return-box {
+  display: inline-block;
+  padding: 6px 14px;
+  border: 1px solid #7D5A44;
+  color: #7D5A44;
+  margin-top: 60px;
+  transition: 0.3s;
+}
+
+.return-box:hover {
+  background: #7D5A44;
+  color: white;
+}
+</style>
+</head>
+
+<body class="lang-en">
+
+<!-- LANGUAGE SWITCH -->
+<div class="lang-switch" onclick="toggleLang()">EN / 繁</div>
+
+<!-- ================= TITLE（可替换） ================= -->
+<h1>
+  <span class="en"><!-- 🔵 English Title -->Longing</span>
+  <span class="zh"><!-- 🔵 中文标题 -->渴望</span>
+</h1>
+
+<div class="divider"></div>
+
+<!-- ================= BODY（整段可扩展区域） ================= -->
+
+<!-- 🔵 这里是正文 -->
+    <div class="section-break">◇</div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">Arthur, what do you see? Can you tell me, what do you see?</span>
+        <span class="zh">亞瑟，你看到了什麼。你能告訴我，你看到了什麼嗎？</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">I see it. I see lightning striking a tower.<a href="#fn2" class="footnote-link" id="ref2"><sup>②</sup></a></span>
+        <span class="zh">我看見了。我看見一道閃電劈中高塔<a href="#fn2-zh" class="footnote-link" id="ref2-zh"><sup>②</sup></a>。</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">What kind of tower?</span>
+        <span class="zh">什麼樣子的塔？</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">A towering black pillar, a dog's yellow-green tooth... It's... Obsidian.<a href="#fn3" class="footnote-link" id="ref3"><sup>③</sup></a></span>
+        <span class="zh">高聳入雲的黑色巨塔，狗黃綠色的牙……那是…寶石青<a href="#fn3-zh" class="footnote-link" id="ref3-zh"><sup>③</sup></a>。</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">Where are you?</span>
+        <span class="zh">你在哪裡？</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">I'm not here... Wait, there's someone here, wait!</span>
+        <span class="zh">我不在這裡……等等，有個人在這裡，等等！</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">What kind of person?</span>
+        <span class="zh">什麼樣的人？</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">I can't see.</span>
+        <span class="zh">我看不見。</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">Why?</span>
+        <span class="zh">為什麼？</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">I... I'm... falling.</span>
+        <span class="zh">我…我在……掉下來。</span>
+    </div>
+
+    <div class="section-break">◇</div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">On this breezy evening, Arthur was turning twenty-one. He carried two bottles of whiskey but didn't know whom to pour for. Under the Ashen Tree<a href="#fn4" class="footnote-link" id="ref4"><sup>④</sup></a> at the Longshore Stacks, he sat in silence, breathing in the stench of garbage. In Dogtown,<a href="#fn5" class="footnote-link" id="ref5"><sup>⑤</sup></a> they had no cemeteries, no columbaria. Sometimes bodies weren't even dumped anywhere—they were eaten by something. In the beginning, a Mexican man hung a photo of his dead brother on this tree, pouring him a drink each month. Later, the residents of Dogtown followed suit. There had to be some place for them to mourn the departed, since no Zen master came to preach here. He had seen that original Mexican man; most of the time he sat under the tree with a bottle of alcohol, repeating nearly the same words every day:</span>
+        <span class="zh">這個有微風的夜晚，亞瑟正在過二十一歲生日。他拎著兩瓶威士忌，卻不知道該倒給誰。在長灘堆料場的骨灰樹<a href="#fn4-zh" class="footnote-link" id="ref4-zh"><sup>④</sup></a>下，他靜坐，感受著撲面而來的垃圾氣味。在狗鎮<a href="#fn5-zh" class="footnote-link" id="ref5-zh"><sup>⑤</sup></a>，他們沒有墓地，也沒有骨灰龕。甚至有時候屍體都不知道被丟在什麼地方，被什麼東西吃掉了。最開始，一個墨西哥人將自己死去兄弟的照片掛在這棵樹上，每月為他斟酒。後來，狗鎮居民紛紛效仿。總得有一個地方讓他們祭奠往生者，畢竟禪學家也不在此布道。他見過那個最初的墨西哥人，大多數時候他都坐在那棵樹下，拿著一瓶酒，每天重複幾乎一樣的話：</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"You could talk for three days and three nights about the stories of the past, but it's been ten years now."<a href="#fn6" class="footnote-link" id="ref6"><sup>⑥</sup></a></span>
+        <span class="zh">「過去的故事聊三天三夜都聊不完，但這都十年了。」<a href="#fn6-zh" class="footnote-link" id="ref6-zh"><sup>⑥</sup></a></span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">Arthur came here to talk to his parents. In truth, he didn't know if his parents were among these photos. But since childhood, the orphans who grew up together had chosen their parents from among the unattended photographs. Unattended photos were easy to distinguish—their corners were always flat. His father was a young man with long hair and a melancholy air; his mother was a short woman with a cheerful expression and brown eyes. They both had golden hair. They were also the parents of many others, he knew, so he always avoided the times when others came to mourn, coming alone late at night. What he needed was a place to set down his anxiety and longing, a place to strip away the ruthlessness and rationality needed to survive in Dogtown. These things had grown with him, almost like detachable cyberware. But he had to face his longing for warmth—like a lost animal, like an abandoned dog.</span>
+        <span class="zh">亞瑟來到這裡，與自己的父母說說話。事實上，他並不知道這裡面有沒有他的父母。不過自小時候，他們在一起長大的孤兒就在無人祭奠的照片中選定了自己的父母。無人祭奠的照片很好區分，邊角總是平整的。他的父親是一個留著長髮，氣質憂鬱的年輕男人，母親則是一個身材矮小，神情快活的棕眼睛女人。他們都有著金髮，他們同時還是很多人的父母，他知道，因此他總避開其他人祭奠的時間，在深夜獨自前往。他需要的是一个安放自己焦慮與渴望的地方，一個將在狗鎮生存需要的狠辣與理性完全脫去的地方。這些東西伴他而生，幾乎像一件可拆卸的義體。但他卻不得不正視自己對溫暖的渴求，如迷路的動物，如被拋棄的狗。</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">Dogtown.</span>
+        <span class="zh">狗鎮。</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">On nights without lullabies, Dogtown was filled with gunfire, the clash of metal, and the cracking of breaking bones—one of his companions had died on such a night; he never saw the body. His friend had been fourteen, the same age as him. In a more distant memory, he was fighting some kid in Dogtown, pinning him down and punching his nose until he could no longer cry. Then the child's father arrived. Arthur remembered how easily the man lifted him and threw him against the wall, as if picking up a feather. Broad hands, muscles, and a pair of sharp eyes. He held his groaning son in his arms, stroking his head. In that narrow, dark alley, the tall man curled up, protecting his son. That night, he walked a long way and lay down at the checkpoint between Dogtown and Night City.<a href="#fn7" class="footnote-link" id="ref7"><sup>⑦</sup></a> Discarded guns, fungal hyphae crawling over bones, chemical waste—piled high, stinking. But when he looked up at the window—past the spinning rotors of military helicopters and the cyan lights of the Heart of Duty club shooting into the sky—he saw that symbol. Lightning struck Obsidian, and he fell from the top of Obsidian. That was his revelation, an enigmatic sign. Later, he asked a famous Dogtown medium about it. It was the Tower, she said. A tarot card. Only those with souls could see it.</span>
+        <span class="zh">狗鎮。</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"Tragedy, final judgment, and self-destruction."</span>
+        <span class="zh">「悲劇，最終審判和自我毀滅。」</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">Dogtown.</span>
+        <span class="zh">狗鎮。</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">Leaving Dogtown.</span>
+        <span class="zh">離開狗鎮。</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">He never felt unease over the lives that had ended by his hand. His own life would never be peaceful; he would surely go to hell. On a distant container, a drenched man was shouting, but he didn't hear his voice until the man burst into flames. He had been doused in gasoline.</span>
+        <span class="zh">他從未因在他手下逝去的人命而不安。自己的生命永無寧日，一定會下地獄裡去。遠處的貨櫃上，一個渾身濕透的人正在大喊，他沒聽到他的聲音，直到那個人渾身燃起火焰。他身上澆的是汽油。</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"Hey, Arthur, there's a big job here. Pull this off, and you might just leave Dogtown."</span>
+        <span class="zh">「嘿，亞瑟，這兒有個大活，成了這單，你說不定能離開狗鎮。」</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">Amid the man's screams, his phone rang. The fixer didn't wait for an answer before continuing.</span>
+        <span class="zh">在那個人的慘叫聲中，他的手機響了起來，中間人沒等他答話就說下去。</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"You get into Obsidian and kill a Frenchman. You know, Obsidian is heavily guarded, so I need a small-time merc like you, someone nobody's heard of. Here's the plan: use the behavioral imprint<a href="#fn8" class="footnote-link" id="ref8"><sup>⑧</sup></a> I'm giving you to pretend to be that comedian Hideki Hino.<a href="#fn9" class="footnote-link" id="ref9"><sup>⑨</sup></a> I'll have someone tie him up and keep him out of sight, don't worry. You go in, find the Frenchman, lure him somewhere quiet, take him out, and then scurry out like a rat. Once it's done, you can leave Dogtown."</span>
+        <span class="zh">「你進寶石青，殺死一個法國人。你知道，寶石青戒備森嚴，所以得找你這種名不見經傳的小傭兵。計劃是這樣，你用我給你的行為印記<a href="#fn8-zh" class="footnote-link" id="ref8-zh"><sup>⑧</sup></a>，假裝成那個搞笑藝人日野秀智<a href="#fn9-zh" class="footnote-link" id="ref9-zh"><sup>⑨</sup></a>——我會找人暫時綁著他不讓他露面，你不用擔心。你進去，找到那個法國人，把他引到沒人的地方做掉，接著像老鼠一樣趕緊溜出來。事成之後，你就能離開狗鎮了。」</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">He carefully reviewed the information the fixer sent about the target: a thirty-year-old Frenchman, a representative of Kiroshi<a href="#fn10" class="footnote-link" id="ref10"><sup>⑩</sup></a> sent to negotiate with the Barghest.<a href="#fn10-zh" class="footnote-link" id="ref10-zh"><sup>⑩</sup></a> Three combat cyberware pieces: one monowire,<a href="#fn11" class="footnote-link" id="ref11"><sup>⑪</sup></a> two unscannable. A Trauma Team<a href="#fn12" class="footnote-link" id="ref12"><sup>⑫</sup></a> platinum member. He had long hair, and his eyes were confident yet melancholic. Then, then Arthur turned off his phone. Obsidian—he thought of that distant revelation. Would he fall, or would he fly?</span>
+        <span class="zh">他仔細審閱著中間人發過來的暗殺對象信息，三十歲的法國人，作為歧路司<a href="#fn10-zh" class="footnote-link" id="ref10-zh-2"><sup>⑩</sup></a>的代表來和幽冥犬<a href="#fn10-zh-3" class="footnote-link" id="ref10-zh-3"><sup>⑩</sup></a>和談。三件戰鬥義體，一件是單分子線<a href="#fn11-zh" class="footnote-link" id="ref11-zh"><sup>⑪</sup></a>，兩件無法掃描。創傷小組白金會員<a href="#fn12-zh" class="footnote-link" id="ref12-zh"><sup>⑫</sup></a>。他有一頭長髮，眼神自信又憂鬱。然後，然後亞瑟就關上了手機。寶石青，他想起那個遙遠的開示。他會墜落嗎，還是飛行？</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">Dogtown.</span>
+        <span class="zh">狗鎮。</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">Leaving Dogtown.</span>
+        <span class="zh">離開狗鎮。</span>
+    </div>
+
+    <div class="section-break">◇</div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">Before entering Obsidian, he went to that Asian ripperdoc to repair his long-outdated optics. As usual, the ripperdoc didn't charge him. They had spoken a few times; the doctor's mother was also far away, in another distant land.</span>
+        <span class="zh">進入寶石青之前，他找那個亞裔義體醫生修好了自己早已過時的義眼。像往常一樣，義體醫生沒有收他的錢。他與他談過幾次話，他的母親也不在身邊，在某個遙遠的國度。</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"Is she in Tycho?"<a href="#fn13" class="footnote-link" id="ref13"><sup>⑬</sup></a></span>
+        <span class="zh">「她在第谷<a href="#fn13-zh" class="footnote-link" id="ref13-zh"><sup>⑬</sup></a>嗎？」</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">The doctor smiled and shook his head. He couldn't think of any city farther than Tycho. The ripperdoc always kept a voice recorder in his breast pocket—an antique, from at least before 2023. Back then, Johnny Silverhand<a href="#fn14" class="footnote-link" id="ref14"><sup>⑭</sup></a> probably hadn't blown up Arasaka Tower yet.</span>
+        <span class="zh">那個醫生笑著搖頭。他已經想不到比第谷更遠的城市了。義體醫生的前胸口袋裡總是放著一支錄音筆，至少是2023年以前的古董。那時，說不定強尼·銀手<a href="#fn14-zh" class="footnote-link" id="ref14-zh"><sup>⑭</sup></a>還沒炸掉荒坂塔。</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"Perhaps when mother and I meet again, we'll have more to talk about."<a href="#fn15" class="footnote-link" id="ref15"><sup>⑮</sup></a></span>
+        <span class="zh">「或許我們娘倆再見面時，會有更多東西可以聊。」<a href="#fn15-zh" class="footnote-link" id="ref15-zh"><sup>⑮</sup></a></span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">The doctor's mother had said this in a gentle tone. He bid the doctor farewell, activated the behavioral imprint, and entered Obsidian speaking Japanese-accented English. He drank at the bar, waiting for the Frenchman. Someone tried to strike up a conversation: "You look exactly like my friend Takemura." A schizophrenic crew-cut man. He rolled his eyes, found a quiet spot, deactivated the imprint, and turned from the comedian back into Arthur. He returned to the banquet hall. That night, he drank a lot—he couldn't remember how much—to fortify himself for the coming operation. After a while, the lights dimmed. He glanced at the schedule: Lizzy Wizzy's<a href="#fn16" class="footnote-link" id="ref16"><sup>⑯</sup></a> performance time. The stage glittered with gold, like a pack of leopards competing in a room. He stood up, turned his glass upside down, and lingered by the stage. In an instant, enormous red wings unfurled behind the singer, like cutting open a person's skin to reveal throbbing muscles and fascia, or like the sunset burning in the dark room. But in the end, those wings dissolved into countless points of light, scattering in all directions. It was then that he saw him—his target.</span>
+        <span class="zh">醫生的母親在最後用一種溫和的語氣說著這句話。<a href="#fn15-zh" class="footnote-link" id="ref15-zh-2"><sup>⑮</sup></a>他向醫生告了別，開啟行為印記，操著一口日式英語進入寶石青，在吧檯邊喝酒邊等待那個法國人。有人朝他搭訕，「你跟我的朋友竹村長得一模一樣」。精神分裂的一個寸頭男人，他翻了个白眼，找了個沒人的地方關掉行為印記，從搞笑藝人變回亞瑟。他又回到宴會廳。這個夜晚他喝了很多酒，記不清有多少了，來為接下來的行動壯膽。過了一會兒，燈光暗了下來。他看了一眼日程表，麗茲·薇奇<a href="#fn16-zh" class="footnote-link" id="ref16-zh"><sup>⑯</sup></a>的表演時間。舞台上金光閃爍，如在房間裡競技的一群獵豹。他站起身，將酒杯倒扣，在舞台旁駐足。霎那，歌者身後張開巨大的紅色翅膀，彷彿割開一個人的皮膚，窺見他跳動不止的肌肉與筋膜，又似晚霞，在黑暗的房間中燃燒。但最後，那雙翅膀彌散成無數光點，向四方散去，他就在這時看到了他，他的暗殺對象。</span>
+    </div>
+
+    <div class="song-lyrics">
+        <span class="en">It makes me wanna die, I wanna die<br>
+        You said I ruin your life<br>
+        Love is the devil ahead and the devil doesn't sleep<br>
+        Baby, take it out on me<br>
+        Just reiterate everything<a href="#fn17" class="footnote-link" id="ref17"><sup>⑰</sup></a></span>
+        <span class="zh">我想要前赴死亡<br>
+        你說我毀了你的人生<br>
+        愛猶如前方的惡魔 永不休眠的惡魔<br>
+        親愛的 把氣都撒到我頭上來<br>
+        只需將一切重述<a href="#fn17-zh" class="footnote-link" id="ref17-zh"><sup>⑰</sup></a></span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">Suddenly, fireworks burst.</span>
+        <span class="zh">煙花突然綻放了。</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">As if sensing his gaze, his target paused his conversation. The spectacular fireworks blazed behind him, and Arthur could not make out his face. Through the blurry smoke and the light spots filling the banquet hall, the man raised his glass toward him and drained it in one go.</span>
+        <span class="zh">似乎感受到了他的注視，他的暗殺對象停下了與身邊人的交談，聲勢浩大的煙火便在他身後流竄，亞瑟看不清他的面容。透過模糊不清的煙霧與充滿宴會廳的光斑，那個人向他高舉手中的高腳杯，接著一飲而盡。</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">Arthur felt dizzy and got up to go to the bathroom. All the lights, the music, the smell of Black Lace,<a href="#fn18" class="footnote-link" id="ref18"><sup>⑱</sup></a> the strutting dolls<a href="#fn19" class="footnote-link" id="ref19"><sup>⑲</sup></a> at the banquet, even the smell of tequila—all of it made him sick. He hadn't been a mercenary long enough to get used to all this. He leaned over the toilet, dry heaving. A piece of charcoal, red-hot with longing, slid down his throat, burning his insides. He injected himself with an expired MaxDoc, opened the stall door, and stumbled to the sink, splashing cold water on his burning face.</span>
+        <span class="zh">亞瑟感到一陣眩暈，起身走進了廁所。所有的燈光和音樂、黑蕾絲<a href="#fn18-zh" class="footnote-link" id="ref18-zh"><sup>⑱</sup></a>的氣味、宴會上大搖大擺的性偶<a href="#fn19-zh" class="footnote-link" id="ref19-zh"><sup>⑲</sup></a>，甚至龍舌蘭的味道都讓他噁心。他做傭兵的時間還沒那麼長，尚未習慣這一切。他扶著馬桶乾嘔，一塊被渴望燒紅的木炭順著喉嚨吞下去，灼傷了他的內臟。他為自己打了一劑過期的傾力治，打開隔間門，跌跌撞撞地走向水池，將冷水潑向發熱的臉龐。</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"Are you alright?"</span>
+        <span class="zh">「你還好嗎？」</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">The man who spoke had a distinctive accent. He offered him a handkerchief. Arthur didn't take it. As he looked up, he felt a moment of dizziness. It was his father. No, it wasn't. Just as his hand, thin and slender, reached toward the man's face, he quickly withdrew it. It was his target. Minutes ago, they had looked at each other across the fireworks. He had unaugmented violet eyes. Those eyes were looking into his, lingering in his gaze like a drug, refusing to fade. But he quickly composed himself and cleared his throat.</span>
+        <span class="zh">與他交談的那個人有著獨特的口音，遞給他一塊手帕。他沒有接下，抬起頭的瞬間一陣恍惚。那是他的父親。不，不是，將細瘦的手伸向那人臉頰的瞬間，他又慌忙收回，那是他的暗殺對象。幾分鐘前，他們還隔著煙火對視。他有一雙未經義體改造的紫眼睛，那雙眼睛正望著他的眼睛，像迷藥般殘留在他的眼底，消散不去。但他很快整理了心情，輕咳了一聲。</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"I'm fine. Thank you."</span>
+        <span class="zh">「沒事，謝謝您。」</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"Uncomfortable? Me too. I'm thirty years old, and I'm still afraid of these occasions. Just now during the negotiations, someone tried to force me to inhale... I don't know what it was."</span>
+        <span class="zh">「不適應？我也是。我都三十歲了，還是害怕這種場合。剛剛在談判的時候，有人會逼著我吸……我不知道那是什麼東西。」</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">Arthur didn't answer. Now only the two of them were left in the bathroom. The quickhack he had uploaded had already locked the door. The target didn't have Kiroshi optics, so he wouldn't notice. This was the perfect moment to strike, as soon as the other let his guard down. The victim named Francis turned away, dipping his long fingers in cold water. Arthur gripped the knife in his suit pocket—he had taken it from a guard he'd knocked out. Weapons had all been thoroughly confiscated. He held his breath and approached him, his eyes fixed on his lower back. According to the data, there was no cyberware there—his most vulnerable spot. His palms were sweaty. Was this mission too difficult? No, it was only average. There had been much harder ones before. A buzzing sounded in his ears. The omen of the Tower entered his mind unbidden.</span>
+        <span class="zh">亞瑟沒有再答話，廁所現在只剩他們兩個，他上傳的快速破解已經將門反鎖。對方沒有義眼，不會注意到這一點。現在正是下手的好時機，只待對方放鬆警惕。名叫弗朗西斯的受害者轉過身去了，將修長的手指浸在冷水裡。亞瑟握緊西裝口袋裡的小刀，那是他放倒了一個警衛後搶來的，武器早被搜得乾乾淨淨。他屏住呼吸靠近他，眼睛盯著他的後腰。根據資料，那裡沒有義體，是他最脆弱的地方。手心被汗浸濕了，是這次任務太艱難了嗎？不，這只能算是普通級別，曾經有比這難得多的任務。蜂鳴聲在耳畔響起，那名為高塔的徵兆無端進入他的腦子。</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"Tragedy, final judgment, and self-destruction."</span>
+        <span class="zh">「悲劇，最終審判和自我毀滅。」</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"Arthur."</span>
+        <span class="zh">「亞瑟。」</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">Almost no one ever called his name. In a daze, his wrist was caught—a powerful grip. The knife fell from his hand to the floor. Francis kicked the blade away, tilted his head, and curled a smile. He pulled Arthur toward him; resistance was almost useless. A needle pierced his neck and remained there for a moment. A short-circuit sound came from his optics, and then his vision was swallowed.</span>
+        <span class="zh">幾乎從未有人叫過他的名字。一晃神的功夫，他的手腕被人捏住了，力道巨大，匕首從手中掉落在地上。弗朗西斯踢走那把匕首，歪頭對著他勾起一個微笑。他將他拽向自己的身邊，此時抵抗幾乎變得毫無作用。一根針刺進了他的脖頸，暫時停留在那裡。義眼傳來一陣短路聲，接著，他的視野被吞沒。</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"La vie, même avec des peines, vaut mieux que le sommet de la tombe."</span>
+        <span class="zh">"La vie, même avec des peines, vaut mieux que le sommet de la tombe."</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">When his optics failed, the translator also stopped working. He couldn't understand this French sentence, couldn't remember it. Beneath the skin of his restrained wrist, swollen blood vessels coiled, pulling at his young, anxious, yearning heart.</span>
+        <span class="zh">義眼失靈時，翻譯器也不起作用。他聽不懂他的這句法語，也記不下來。被禁錮的手腕皮膚下，鼓脹的血管蜿蜒流動，牽動著他那顆年輕的，充滿不安與渴求的心。</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"Arthur, is it?"</span>
+        <span class="zh">「亞瑟，是嗎？」</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">Francis switched back to his slightly accented English, bearing the angry glare of Arthur's now useless green eyes. Arthur glared at Francis, waiting for the foreign man's next move. The air was like dark water, wrapping tightly around him. He clenched his fists, struggling to breathe.</span>
+        <span class="zh">弗朗西斯又換上了他那略帶口音的英語，承受著他那如今失去作用的綠眼睛中的憤怒凝視。亞瑟瞪著弗朗西斯，等著這個來自異國的男人做出下一步舉動。空氣彷彿幽暗的水，將他牢牢包裹其中。他握緊拳頭，呼吸困難。</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"Don't you want to beg for mercy?"</span>
+        <span class="zh">「不想求個饒嗎？」</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"Aren't you curious who sent me?"</span>
+        <span class="zh">「你不好奇誰把我派來的嗎？」</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"Not really. But you're the first. I'm more curious about you."</span>
+        <span class="zh">「不好奇。不過你是第一個，我對你本人更加好奇。」</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"I just do what I'm paid for."</span>
+        <span class="zh">「我只是拿錢辦事。」</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"Oh? Do you know what level of job this is, young mercenary?"</span>
+        <span class="zh">「哦？你知道你是什麼級別的任務嗎，年輕的傭兵？」</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">In the darkness, he knew Francis had drawn closer. The other's breath was now at his ear; a shiver ran beneath his skin. His blood—now thorns scraping inside his body. A sharp pain came from his stomach; he could barely stand.</span>
+        <span class="zh">一片黑暗中，他知道弗朗西斯貼近了，對方的呼吸此刻在他的耳畔響起，肌膚下一陣戰慄。他的血液——此時是在他身體裡刮擦的荊棘，胃裡傳來劇痛，他要站不住了。</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"Arthur, they never intended to let you go to Night City. If I die, you die too, because they don't like people who know too much. Can you protect yourself, young mercenary?"</span>
+        <span class="zh">「亞瑟，他們根本沒想讓你去夜之城。我死了，你也會死，因為他們不喜歡有人知道太多。你能保護好自己嗎，年輕的傭兵？」</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">The needle in his neck was pulled out. The other's voice was gentle, as if speaking to a child, or singing a lullaby. Arthur tried not to believe the cruel truth revealed in his words. He hadn't considered that possibility—but how could he save himself and survive in Dogtown? By clinging to garbage, alcohol, and expired pneumatic injectors like the others, longing for nothing? He turned his gaze to Francis. This man wore a dark suit, impeccably dressed. How nice. He must have everything he ever wanted.</span>
+        <span class="zh">扎在他側頸上的那根針被拔了下來，對方的聲音輕柔得彷彿跟孩童對話，或是吟唱一首搖籃曲。亞瑟盡量不去相信他話中揭露的那個殘酷的真相。他並非沒考慮過這一點，但他又該如何保全性命，讓自己在狗鎮活下去？難道如其他人一般靠著垃圾桶、酒精和過期的氣動注射劑苟活一隅，不再渴望任何東西？他將目光投向弗朗西斯，這個男人穿著深色的西裝，儀容整齊。真好，他應該擁有了想要的一切。</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"So, what are you going to do with me?"</span>
+        <span class="zh">「所以，你要把我怎麼樣？」</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">Arthur lowered his head and closed his eyes, waiting for the inevitable judgment he had foreseen. But Francis let go of his wrist, tilted his head, and pulled open his collar with one hand, exposing his unprotected artery.</span>
+        <span class="zh">亞瑟低下頭，閉上眼睛，靜候預料中命定的裁決。而弗朗西斯卻鬆開了抓住他手腕的手，偏過頭，一隻手扯開領子，未經武裝的動脈赤裸裸地暴露在他的面前。</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"Go on."</span>
+        <span class="zh">「來吧。」</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">He smiled at him, a confident smile. Arthur held the knife he had picked up, his hands trembling but unable to act. A few seconds of silence, until Francis spoke again.</span>
+        <span class="zh">他對他展露出一個胸有成竹的微笑。亞瑟握著撿起來的匕首，雙手發抖卻遲遲不行動。幾秒鐘的沉默，直到弗朗西斯再次開口。</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"Go on."</span>
+        <span class="zh">「來吧。」</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">The hand that had been pulling open his collar now reached toward Arthur. Those hands. He thought of years ago, the hands of the tall man—the father—covering his bleeding son's forehead. But he placed his hand in Francis's palm. Perhaps all hope for the future would be nailed down at this moment. Perhaps there was no future at all. Francis gripped his hand tightly, then suddenly pushed him out the open window.</span>
+        <span class="zh">弗朗西斯扯住領子的那隻手，此時向他伸來。那雙手。他想到了數年前，覆在兒子流血的額頭上，那雙屬於高大男人，屬於父親的手。但是，他將手放在了弗朗西斯的手心，也許對於來日的期許將在此刻被釘死，也許，根本沒有來日。弗朗西斯握緊了他的手，卻突然用力將他從打開的窗戶中推了下去。</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">A towering black pillar, a dog's yellow-green tooth.</span>
+        <span class="zh">高聳入雲的黑色巨塔，狗黃綠色的牙。</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">Tragedy, final judgment, and self-destruction.</span>
+        <span class="zh">悲劇，最終審判和自我毀滅。</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">He closed his eyes. His eardrums ached with pressure. The wind was the only sound he could hear. Falling from a hundred-storey building—the inevitable end, shattered to pieces. Yet, in the midst of his endless fall, a pair of arms suddenly encircled him. He opened his eyes. It was Francis, holding him, his upper body bare. He saw the enormous metal skeleton extending from his naked back, roaring and beating ceaselessly, accompanied by a tremendous gust of wind. A mechanical angel held him. A dark god who would take everything from him. His... He raised his head. In the direction of the Pacífica Stadium, an explosion had occurred. The sky was red as fire.</span>
+        <span class="zh">高聳入雲的黑色巨塔，狗黃綠色的牙。</span>
+    </div>
+
+    <div class="section-break">◇</div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">Two months had passed since their escape from Obsidian. Arthur still wanted to leave Dogtown, but he wanted to understand Francis even more. To understand him—the him that optics couldn't scan, his heart, not just a string of digital code. Everything about him was dreamlike and unreachable, like lunar dust. They lived in an abandoned building on Cress Street.<a href="#fn20" class="footnote-link" id="ref20"><sup>⑳</sup></a> Someone like him could tolerate this place—sewage flowing everywhere, insects and rats covering the ground. The pillars in their room were covered in peeling green graffiti of curse words. A pile of drones sat in the corner; machine oil coated the floor. Sometimes he joked: yesterday he was driving the "Aerondight" Guinevere, and today he had to ride the "Rattler,"<a href="#fn21" class="footnote-link" id="ref21"><sup>㉑</sup></a> which might have transported rotten meat, to a vendor a few kilometres away to sell scrap metal, then bring home one-dollar pizza. The room had only a bloodstained sofa cushion and an old mattress. Many killers chose this place for their hits, so they had to stay constantly alert. They had taken care of one or two, knocking them out and tossing them down the garbage chute. They had become accomplices—even though everyone in this city had blood on their hands. From the damaged wall, you could see half-built skyscrapers and the ruins left by the Unification War.<a href="#fn22" class="footnote-link" id="ref22"><sup>㉒</sup></a> They sat in the window meditating. The wind was loud here, almost like the shriek of some creature. He looked at Francis, gazing at his monowire-equipped arm and his nostalgic violet eyes. He seemed like the last fetus born from the copulation of the new era and the old. His body was a locked book, impossible to see whole.</span>
+        <span class="zh">距離他們從寶石青出逃已經過去了兩個月，亞瑟仍想離開狗鎮，卻更想了解弗朗西斯。了解他，了解那個用義眼掃描不到的他，他的內心，而不是一串數字代碼。與他有關的一切都如夢似幻又難以觸及，如月球上的塵土。他們住在克雷斯街<a href="#fn20-zh" class="footnote-link" id="ref20-zh"><sup>⑳</sup></a>的廢棄大樓裡，像他那樣的人卻忍受得了這裡。這裡污水橫流，蟲鼠遍地。他們房間的柱子上畫滿已經剝落的綠色髒話塗鴉，角落堆著無人機，機油覆蓋地面。有時他打趣，昨天他還開著「湖女之劍」桂妮薇兒，今天就得坐在很可能運送過腐肉的「卷螺」<a href="#fn21-zh" class="footnote-link" id="ref21-zh"><sup>㉑</sup></a>裡，去幾公里外的商販處把廢品賣掉，接著換一元一塊的披薩回家。房間裡只有一張布滿血污的沙發墊，和一塊舊床墊。很多殺手都會選在這裡下手，他們不得不時刻保持警惕。他們曾處理過一兩個，將他們打暈後投進垃圾口。他們成為了共犯——即使這座城市裡每個人手上都沾著血。從那堵缺損的牆向外望去，可以看到建到一半的高樓，以及統一戰爭<a href="#fn22-zh" class="footnote-link" id="ref22-zh"><sup>㉒</sup></a>時期炸彈留下的廢墟。他們坐在窗口冥想，這裡風聲很大，幾乎像某種生物的尖嘯。他將看向弗朗西斯，凝視他那裝了單分子線的手臂和懷舊的紫色眼睛。他彷彿是新時代和舊時代媾和後誕下的最後一個胎兒，他的身體是一本上鎖的書，難以使人窺得全貌。</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"Francis."</span>
+        <span class="zh">「弗朗西斯。」</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"Hmm?"</span>
+        <span class="zh">「嗯？」</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"The cyberware on your back."</span>
+        <span class="zh">「你背後的那個義體。」</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"I used to be a mercenary too, Arthur."</span>
+        <span class="zh">「我也曾是個傭兵，亞瑟。」</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"Then how did you become a corpo dog?"</span>
+        <span class="zh">「那你怎麼成了公司狗呢？」</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">For the first time, he lowered his head and didn't answer. A storm was raging in Dogtown. The sounds of brawls and wailing came from the streets. They turned on the radio to Morro Rock Radio,<a href="#fn23" class="footnote-link" id="ref23"><sup>㉓</sup></a> trying to let the electric guitar drown out the noise outside.</span>
+        <span class="zh">第一次，他低下頭，沒有回答。狗鎮正在下暴風雨，街上傳來械鬥聲和哭號。他們打開收音機調到莫格搖滾<a href="#fn23-zh" class="footnote-link" id="ref23-zh"><sup>㉓</sup></a>，企圖讓電吉他聲蓋過此時樓外的噪音。</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"Has your fixer contacted you, Arthur?"</span>
+        <span class="zh">「你的中間人聯繫你了嗎，亞瑟？」</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"No. The line's dead. Maybe... a bigger fish ate him."</span>
+        <span class="zh">「沒有，電話已經打不通了。也許……更大的魚把他吃掉了。」</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">Francis nodded silently. Hansen<a href="#fn24" class="footnote-link" id="ref24"><sup>㉔</sup></a> abandoned by the law. Wars always ended abruptly because of politics. Those who had charged ahead were left behind, like expired medicine. When he thought of the past, he was always speechless. Memory exists in the brain. In this era, you could even store your memories in an external drive and make a copy in case of loss. He thought not. His memories existed in his stomach, like a sticky, constantly writhing acid. Whenever he tried to speak, his memories surged to his throat like magma, blocking his airways. Then his skin would melt, revealing the striated muscles and a handful of grass-like bones. Yet without these memories, his soul would cease to exist. Like a bird falling into a river, like a fly.</span>
+        <span class="zh">弗朗西斯無言地點點頭，不再說話。狗鎮，漢森<a href="#fn24-zh" class="footnote-link" id="ref24-zh"><sup>㉔</sup></a>被律法拋棄。戰爭總是因為政治而戛然而止，某些為其衝鋒陷陣的人被拋下，如同過期藥物。他在想起過去時總是無話可說。記憶是存在腦子裡的，甚至在這個時代，你可以把記憶存在外接盤裡，拷貝一份以防丟失。他想不是的，他的記憶存在胃裡，彷彿一種黏糊糊的，不停蠕動的酸性物質。每當他想要吐露什麼，記憶如岩漿般湧到喉嚨處，將氣道全部阻塞。接著，他那層皮就融化了，露出肌肉縱橫的紋路和一把枯草一樣的骨頭。然而沒有這些記憶，他的靈魂就不復存在。像墜入河流的鳥兒，像蒼蠅。</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"Francis."</span>
+        <span class="zh">「弗朗西斯。」</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"Hmm?"</span>
+        <span class="zh">「嗯？」</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"That French sentence you said the first time we met—what does it mean?"</span>
+        <span class="zh">「第一次見我，你說的那句法語是什麼意思。」</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"Not telling you."</span>
+        <span class="zh">「不告訴你。」</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"Oh."</span>
+        <span class="zh">「哦。」</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"Arthur, you know, the day you were about to finish me off, I wanted to end my own life."</span>
+        <span class="zh">「亞瑟，你知道嗎，你準備結果我的那一天，我想結束自己的生命。」</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">He turned his head to look at him, his gaze startled. The storm had passed. Darkness fell like a nightmare. Francis tilted his head toward him, leaning on his shoulder.</span>
+        <span class="zh">他轉過頭看他，目光錯愕。暴風雨已經結束，黑暗如噩夢般降落。弗朗西斯將頭偏向他，靠在他的肩膀上。</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"But then I met you. I wanted to wait a little longer."</span>
+        <span class="zh">「但是，我遇見你了。我想再等等。」</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">In the pitch-black safehouse, they listened to each other's breathing, searching for each other's faces in the darkness. Arthur knew that his unaugmented eyes couldn't see clearly in the dark, so he brought his face closer. The other's hand rested on his face. In the darkness, Francis let down his guard and closed his eyes. He stood, yet he looked as if he were lying in a coffin, fast asleep.</span>
+        <span class="zh">漆黑一片的安全屋內，他們聽著彼此的呼吸聲，用目光找尋對方的臉龐。亞瑟知道他那雙沒經過改造的眼睛看不清黑暗中的東西，於是將臉貼近他。對方的手放在了他的臉上。在黑暗中，弗朗西斯放鬆了警惕，閉上眼睛。他站著，卻宛如躺在棺材裡，正在沉睡。</span>
+    </div>
+
+    <div class="section-break">◇</div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">Gradually, understanding him turned into longing. Francis never showed him his complete self. That mysterious part of him stirred Arthur's imagination. Now, they were preparing to leave Dogtown—a dream finally about to come true. In the past few months, they had gone back to working as mercenaries. The life of moving upward made their blood race. Francis had a pistol that had been with him for a long time. A pistol was like a mercenary's lover, his life. Arthur had one too—it was called "Just a Dream," which he had won in a boxing match when he was sixteen. He didn't know what Francis's pistol was called, and he never scanned it without permission.<a href="#fn25" class="footnote-link" id="ref25"><sup>㉕</sup></a> Later, in a mission, Francis's eye was injured. A shard of glass pierced his right eye. Now he had a Kiroshi implant. It was a red eye, like a giant apple, like a flowing sunset. They found a new ripperdoc—his precision in cutting and severing was terrifying. But the follow-up care had to be done themselves. Now, he brought saline solution and carefully wiped away the blood scabs around the eye, checking for any new polyps. The moment that eye opened, its gaze flew toward his face like a moth. He looked away, unable to bite into that apple.</span>
+        <span class="zh">慢慢的，對他的了解變成了渴望。弗朗西斯從未把完整的自我展現給他看，那個詭秘的部分使他浮想聯翩。此時，他們正準備離開狗鎮，一個夢想終於能得以實現。幾個月內，他們做回了傭兵，向上走的生活讓人血液沸騰。弗朗西斯有一把跟著他很久的手槍，手槍如傭兵的情人，是他的生命。亞瑟就有一把，它叫「夢一場」，那是他在十六歲的一場拳賽中贏來的。他不知道弗朗西斯的那把叫什麼，也從不未經允許掃描它。<a href="#fn25-zh" class="footnote-link" id="ref25-zh"><sup>㉕</sup></a>後來的一場任務裡，弗朗西斯的眼睛受了傷，一片碎玻璃扎進了他的右眼。他現在有了一隻義眼。歧路司。那是一隻紅色的眼睛，宛如巨大的蘋果，又似流動不停的夕陽餘暉。他們找了一位新的義體醫生，切割和截斷的精準度簡直恐怖。只不過，後續的處理需要自己進行。現在，他拿來鹽水，小心地擦去眼睛周圍的血痂，檢查傷口周圍有沒有新生的息肉。那隻眼睁開的瞬間，目光如同飛蛾，撲向他的臉。他移開目光，不忍咬下那顆蘋果。</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"Wow, everything is so much clearer now."</span>
+        <span class="zh">「喔，看東西清晰了太多。」</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"Are you a dinosaur?"</span>
+        <span class="zh">「你是老古董嗎？」</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">Francis raised his right hand, covering that eye, and looked at Arthur with his remaining good, natural eye. That eye curved—he was smiling.</span>
+        <span class="zh">弗朗西斯伸出右手，遮住那隻眼睛，用那隻完好的，原生的眼睛看著亞瑟。那隻眼睛彎了起來，他在笑。</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"Arthur."</span>
+        <span class="zh">「亞瑟。」</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"Hmm?"</span>
+        <span class="zh">「嗯？」</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">Francis didn't answer again. He silently showed him the gig details. It was a routine job, a direct deal without a fixer. The client's background was clean—she seemed to be just a grieving mother, seeking revenge on the man who killed her beloved. Any deeper, and it was a realm beyond their reach, even with wings spread wide.</span>
+        <span class="zh">弗朗西斯沒有再回答，只是沉默地把這次的委託信息拿給他看。這是一次平常的任務，越過中間人直接交易。委託人的底細乾乾淨淨，看起來，她只是一個失去孩子的悲傷母親，要對殺死自己至愛的仇人復仇。再深一點，就是他們伸開雙翼也無法企及的領域。</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">A few days earlier, Francis had given Arthur the pass he had obtained, locking his own in the safe at their hideout on Cress Street. Late one night afterward, Arthur took his pass and smoothly passed through the checkpoint. Before him lay Night City's enormous, magnificent neon signs and endless streams of cars. Among them was one he had always wanted—a Quadra 66 "Cthulhu."<a href="#fn26" class="footnote-link" id="ref26"><sup>㉖</sup></a> After leaving Dogtown, he would drive it with Francis across the vast Badlands, kicking up dust, racing toward the setting sun. They would drink tequila together and casually knock out a few NCPD<a href="#fn27" class="footnote-link" id="ref27"><sup>㉗</sup></a> gigs. And then... further in the future, perhaps there would be two drinks named after them at the Afterlife.<a href="#fn29" class="footnote-link" id="ref29"><sup>㉙</sup></a> He had already thought of his own recipe: whiskey, lemon juice, strawberries, and an enormous, reckless, almost desperate longing. If Francis couldn't think of a recipe, he could help him with one. On these nights, he fell asleep holding these dreams. This was their last night in Dogtown. He tossed and turned, unable to sleep, as if this were his first gig, even though he had forgotten what that first one was.</span>
+        <span class="zh">前些日子，弗朗西斯將弄到的通行證交給亞瑟，把自己的鎖在他們在克雷斯街藏身處的保險箱裡。那之後的某個深夜，亞瑟拿著屬於自己的通行證，順利通過了邊關。那一刻，他的面前是夜之城巨大的，富麗堂皇的霓虹燈牌和川流不息的汽車。其中有一輛是他一直想要的，古德拉66式「克蘇魯」<a href="#fn26-zh" class="footnote-link" id="ref26-zh"><sup>㉖</sup></a>。離開狗鎮後，他會開著它和弗朗西斯一起，穿過廣袤的惡土，揚起沙塵，奔向落日。他們會對飲龍舌蘭，順手解決掉幾個NCPD<a href="#fn27-zh" class="footnote-link" id="ref27-zh"><sup>㉗</sup></a>的委託。然後……更遠的未來，來生說不定有兩款酒以他們命名。<a href="#fn29-zh" class="footnote-link" id="ref29-zh"><sup>㉙</sup></a>他已經想好了他自己的配方：威士忌，檸檬汁，草莓，還有巨大的、不顧一切的、近乎絕望的渴望。如果弗朗西斯想不出配方，他也可以幫他想一個。這些夜晚，他懷抱著這些夢入睡。這是他們在狗鎮的最後一晚，他輾轉難眠，彷彿這是他的第一個任務，儘管他已經忘了第一個任務是什麼。</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"Francis, are you asleep?"</span>
+        <span class="zh">「弗朗西斯，你睡著了嗎？」</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">Francis didn't answer. He took Arthur's wrist and gently shook it. Arthur understood the hint, snuggled into his arms, and looked up at him. In the darkness, only that red eye glowed, like a blood moon.</span>
+        <span class="zh">弗朗西斯沒有答話，握住他的手腕輕輕晃了晃。他對他的暗示心知肚明，鑽進他的懷裡抬頭看他。黑暗中只有那隻紅色的眼睛在閃光，宛如一輪血月。</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"Sleep. Think about the future."</span>
+        <span class="zh">「睡吧。想想未來。」</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">He wanted to share this vision with him, this longing, but in the end, he fell silent, closing his eyes. The red light before him gradually faded. They fell asleep in each other's arms.</span>
+        <span class="zh">他想與他分享這份圖景，這份渴望，但他最終啞然無聲，閉上雙眼。眼前的紅光逐步消失，他們相擁而眠。</span>
+    </div>
+
+    <div class="section-break">◇</div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">That night.</span>
+        <span class="zh">那天晚上。</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">They waited at the gig location, as scheduled. They were already close to the Dogtown border checkpoint—the blue sky almost within reach. It was late at night, silent all around, the moonlight dim. At this moment, Francis's cybernetic eye was like a sun burning in the darkness. He leaned against a pillar, his gaze fixed on the empty street. Arthur hid behind the pillar opposite him; between them, there was a lack of light, pitch black. Arthur checked his magazines and pistol again and again, ensuring everything was perfect. A low laugh came from the darkness. Francis took his hand.</span>
+        <span class="zh">按照委託上的時間，他們等在任務地點。已經很靠近狗鎮的邊防檢查處了，藍天觸手可得。此時是深夜，四周寂靜無聲，月色朦朧。此刻，弗朗西斯的那隻義眼，正如黑夜中燃燒著的太陽。他靠在柱子上，將目光投向無人的街道。亞瑟藏在與他相對的另一根柱子後，中間缺少燈光，一片漆黑。亞瑟一遍一遍地檢查著自己的彈夾和手槍，確保萬無一失。黑暗中傳來一聲低笑，弗朗西斯握住了他的手。</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"Francis."</span>
+        <span class="zh">「弗朗西斯。」</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"Hmm?"</span>
+        <span class="zh">「嗯？」</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"Are you really not going to tell me what that French sentence means?"</span>
+        <span class="zh">「你真的不告訴我，那句法語是什麼意思嗎？」</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"La vie, même avec des peines, vaut mieux que le sommet de la tombe."</span>
+        <span class="zh">"La vie, même avec des peines, vaut mieux que le sommet de la tombe."</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"That's not fair! Say it slower."</span>
+        <span class="zh">「這不公平！說慢點。」</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"Shh. Someone's coming."</span>
+        <span class="zh">「噓，有人過來了。」</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">He was about to retort, but was interrupted by a noise. Francis had spoken too softly and too quickly, and the translator had given up again. The sound of a car dispelled their drowsiness. They raised their guns. A beam of light approached from the distance. The tension magnified their senses infinitely; he could hear the sound of a small stone hitting a utility pole. The headlights were too bright; he couldn't make out the shape of the car. His optics were far inferior to Francis's newly installed model.</span>
+        <span class="zh">他正要發作，卻被一陣噪音打斷。弗朗西斯說得太輕太快，翻譯器又放棄了工作。車聲打消了睡意，他們舉起槍，一束燈光由遠及近。緊張感讓感官無限放大，他能聽見一顆小石子被崩在電線桿上的響聲。車燈太亮，他看不見車子的形狀，他的義眼遠不如弗朗西斯新裝的那隻高檔。</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"We'll follow the plan."</span>
+        <span class="zh">「那就跟計劃一樣吧。」</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">Francis said it casually, as if they were about to go on a picnic. Arthur nodded silently, following behind him.</span>
+        <span class="zh">弗朗西斯輕描淡寫地吐出這句話，彷彿他們將要進行一場野餐。亞瑟無聲地點點頭，跟在他身後。</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"Francis, something's wrong."</span>
+        <span class="zh">「弗朗西斯，有哪裡不對。」</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">He looked at the car. It wasn't the Rayfield Caliburn described in the gig, but a larger, heavier, all-black truck. It had a label from the European Zeiss company.</span>
+        <span class="zh">他看著那輛車，那並不是委託中所說的那輛石中劍，而是一輛更大的，更重的，塗裝全黑的卡車。車上有歐洲蔡司公司的標籤。</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"Francis, we should—"</span>
+        <span class="zh">「弗朗西斯，我們應該……」</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">Suddenly, the other turned to face him, smiling silently. His newly installed red cybernetic eye was blazing. The next second, Francis raised his monowire and, with a sense of guilt, short-circuited him. He fell, his eyes wide open. He had once imagined this scene, yet he had still given him all his trust. A gentle kiss touched his ear, and his face was turned toward the darkness.</span>
+        <span class="zh">對方突然轉過身來，對著他，無聲微笑。他新裝的那隻紅色義眼，此時正灼灼發光。下一秒，弗朗西斯舉起單分子線，懷著歉疚將他短路。他瞪著眼睛倒下，他曾設想過這個場景，卻仍將全部的信任給予了他。耳廓傳來柔和的吻，他的臉被轉向黑暗。</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"La vie, même avec des peines, vaut mieux que le sommet de la tombe."</span>
+        <span class="zh">"La vie, même avec des peines, vaut mieux que le sommet de la tombe."</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">Life, even with its sorrows, is better than the summit of the grave.</span>
+        <span class="zh">生命，即使有痛苦，也勝過墳墓之巔。</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">His ears were also sealed. Everything around him slowed down. Besides the wings and the monowire, the third piece of cyberware was the Apogee Sandevistan.<a href="#fn30" class="footnote-link" id="ref30"><sup>㉚</sup></a> He couldn't know how many people had gotten out of that truck. After that slowed-down time ended, the gunfire continued. He hid in the darkness, like a bird crashing into glass, unable to do anything. In the darkness before him, deep as the ocean, his dreams of Night City were dissolving. New dreams fissioned, shed their skin, and crawled out of his stomach, like some kind of monster. Later, he heard the truck drive away. The gunfire gradually stopped. There was no screaming. His body slowly recovered its function. Fighting back dizziness, he supported his legs and walked toward the street. The street was empty—not even traces of blood had been cleaned away. A gun lay in the middle of the street. He recognized it as Francis's gun. He reached out and touched the warm barrel, then put it in his backpack. Tonight's memories would flow into his stomach, becoming part of him. But he forgot how he got back to the Longshore Stacks. He hoped to light a candle at the Ashen Tree and leave something in memory. But he didn't have a single photograph of him.</span>
+        <span class="zh">他的耳朵也被封住。身邊的一切的變慢了，除了翅膀和單分子線，另一件義體是「遠地點」斯安威斯坦。<a href="#fn30-zh" class="footnote-link" id="ref30-zh"><sup>㉚</sup></a>他無法得知那輛車上下來了多少人，在那段變慢的時間結束後，槍聲仍在繼續。而他隱沒在暗處，如一隻撞向玻璃的鳥，什麼也不能做。在眼前的如同深海的黑暗中，他對夜之城的夢想正在消解，新的夢想裂變、蛻皮，從胃裡鑽出來，似某種怪物。後來，他聽見卡車開走的聲音，槍聲漸止，沒有一聲慘叫。他的身體漸漸恢復了機能。強忍著眩暈，他支撐著自己的雙腿，向街道走去。街道空無一人，甚至連血跡也被清理乾淨了。一把槍橫在街中間。他認出那是弗朗西斯的槍，伸出手觸碰溫熱的槍管，把它裝進自己的背包。今晚的記憶會流進胃袋，成為他的一部分。但是，他忘記了自己如何回到長灘堆料場，希望在骨灰樹下點一支蠟燭，留下紀念。然而，他沒有一張他的照片。</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">Dogtown.</span>
+        <span class="zh">狗鎮。</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">Leaving Dogtown.</span>
+        <span class="zh">離開狗鎮。</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">He immediately returned to Cress Street and opened the safe where Francis had kept his pass. His pupils contracted. There was nothing there.</span>
+        <span class="zh">他旋即回到克雷斯街，打開存放弗朗西斯通行證的那個保險箱。他的瞳孔縮緊了，那裡什麼都沒有。</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">He picked up Francis's gun again and scanned it for the first time.</span>
+        <span class="zh">他又拿起了弗朗西斯的那把槍，第一次掃描它。</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"Longing."</span>
+        <span class="zh">「渴望。」</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">That was the name of the gun.</span>
+        <span class="zh">那把槍的名字是。</span>
+    </div>
+
+    <!-- 注释分割线 -->
+    <hr class="divider">
+
+    <!-- 注释部分 -->
+    <div class="footnote">
+        <div class="footnote-item" id="fn1">
+            <span class="en"><a href="#ref1" class="footnote-link">①</a> This story is set in the world of Cyberpunk 2077, an open-world role-playing game developed by CD Projekt Red.</span>
+            <span class="zh"><a href="#ref1-zh" class="footnote-link">①</a> 本篇設定為賽博龐克2077，CD Projekt Red開發的開放世界角色扮演遊戲。</span>
+        </div>
+        <div class="footnote-item" id="fn2">
+            <span class="en"><a href="#ref2" class="footnote-link">②</a> Corresponds to the classic image of the Tower tarot card. Symbolising sudden change, destruction, revelation, collapse of the old order, self-destruction. In Cyberpunk 2077, tarot cards are closely linked to fate and psychological fragmentation. The protagonist V can scan tarot cards with different meanings at key locations related to missions, and different ending branches unlock different final cards.</span>
+            <span class="zh"><a href="#ref2-zh" class="footnote-link">②</a> 對應塔羅牌高塔的經典畫面。象徵突變、毀滅、啟示、舊秩序崩塌、自我毀滅。在《電馭叛客2077》中塔羅與命運、人格裂解密切相關。主人公V會在與任務相關的重要地點掃描到不同含義的塔羅牌，同時也會因選擇不同結局分支解鎖不同的最終牌卡。</span>
+        </div>
+        <div class="footnote-item" id="fn3">
+            <span class="en"><a href="#ref3" class="footnote-link">③</a> Obsidian has over 99 floors, the crown jewel of Dogtown. Outside of missions, players cannot freely access this location.</span>
+            <span class="zh"><a href="#ref3-zh" class="footnote-link">③</a> 寶石青擁有超過99層的樓層，是狗鎮的王冠之珠。除了任務，玩家不能隨心所欲地訪問這個地方。</span>
+        </div>
+        <div class="footnote-item" id="fn4">
+            <span class="en"><a href="#ref4" class="footnote-link">④</a> Longshore Stacks, a civilized area of Dogtown where people just want to live. In the centre stands a bare, withered tree. The tree is surrounded by lit lanterns and photos of the deceased, showing the irony that the only living thing in Dogtown is a place dedicated to remembering the dead—the Ashen Tree.</span>
+            <span class="zh"><a href="#ref4-zh" class="footnote-link">④</a> 長灘堆料場，狗鎮中文明的區域，這裡的人們只想生活。中心有一棵光禿禿乾枯的樹。這棵樹被點亮的燈籠和死者的照片圍繞著，顯示出一種諷刺，即狗鎮唯一活著的東西是一個專門紀念死者的地方——骨灰樹。</span>
+        </div>
+        <div class="footnote-item" id="fn5">
+            <span class="en"><a href="#ref5" class="footnote-link">⑤</a> Dogtown appears in the DLC Phantom Liberty. A closed district of Night City controlled by the warlord Hansen, where law has broken down, a gathering place for the poor and mercenaries.</span>
+            <span class="zh"><a href="#ref5-zh" class="footnote-link">⑤</a> 狗鎮出自資料片《自由幻局》，夜之城中被軍閥漢森控制的封閉區域，法律失效、貧民與傭兵聚集地。</span>
+        </div>
+        <div class="footnote-item" id="fn6">
+            <span class="en"><a href="#ref6" class="footnote-link">⑥</a> From actual NPC dialogue under the tree.</span>
+            <span class="zh"><a href="#ref6-zh" class="footnote-link">⑥</a> 出自樹下NPC的真實對話。</span>
+        </div>
+        <div class="footnote-item" id="fn7">
+            <span class="en"><a href="#ref7" class="footnote-link">⑦</a> Night City is the megacity in the Cyberpunk world, a place where corporate capital and violent power are highly concentrated, commonly known as the "City of Dreams." Night City is deeply divided—crime-ridden slums and the Badlands on one side, highly polished and modern corporate-controlled districts on the other. The living are trapped here; the dead may leave.</span>
+            <span class="zh"><a href="#ref7-zh" class="footnote-link">⑦</a> 夜之城為電馭叛客世界中的超級都市，企業資本與暴力權力高度集中之地，被人們普遍稱之為「逐夢之城」。夜之城是一座十分割裂的城市——貧民區與惡土犯罪頻發，大公司控制的區域卻高度整潔與現代化。生者困於此地，死者方可離開。</span>
+        </div>
+        <div class="footnote-item" id="fn8">
+            <span class="en"><a href="#ref8" class="footnote-link">⑧</a> Behavioral imprint is a disguise device. The protagonist V uses it in a Dogtown mission. It can change a person's height, appearance, voice, and behavioural habits.</span>
+            <span class="zh"><a href="#ref8-zh" class="footnote-link">⑧</a> 行為印記為一種易容裝置。主人公V在狗鎮的任務中使用過，可以改變人的身高、長相、聲線與行為習慣。</span>
+        </div>
+        <div class="footnote-item" id="fn9">
+            <span class="en"><a href="#ref9" class="footnote-link">⑨</a> Hideki Hino is a comedian in the game who looks exactly like the protagonist V's ronin friend Goro Takemura.</span>
+            <span class="zh"><a href="#ref9-zh" class="footnote-link">⑨</a> 日野秀智為遊戲中的搞笑藝人，長相酷似主人公V的浪人朋友竹村五郎。</span>
+        </div>
+        <div class="footnote-item" id="fn10">
+            <span class="en"><a href="#ref10" class="footnote-link">⑩</a> Kiroshi is an optical instrument manufacturing corporation in Cyberpunk 2077, producing high-quality cyber-optic implants and scanners, also involved in orbital aerospace engineering. Barghest is the de facto ruling military force in Dogtown, wielding enormous power.</span>
+            <span class="zh"><a href="#ref10-zh" class="footnote-link">⑩</a> 歧路司是電馭叛客2077中的一個光學儀器製造企業，擁有高品質的賽博光學植入體和掃描器，也參與軌道航空工程。幽冥犬是狗鎮實際掌權的軍隊，擁有巨大權力。</span>
+        </div>
+        <div class="footnote-item" id="fn11">
+            <span class="en"><a href="#ref11" class="footnote-link">⑪</a> Monowire: high-end combat cyberware that cuts targets with ultra-fine, high-energy molecular wire.</span>
+            <span class="zh"><a href="#ref11-zh" class="footnote-link">⑪</a> 單分子線，高階戰鬥義體，以極細高能分子線切割目標。</span>
+        </div>
+        <div class="footnote-item" id="fn12">
+            <span class="en"><a href="#ref12" class="footnote-link">⑫</a> Trauma Team: a corporate emergency armed response organisation. Platinum members enjoy priority rescue rights.</span>
+            <span class="zh"><a href="#ref12-zh" class="footnote-link">⑫</a> 創傷小組是企業化急救武裝組織，白金會員享有優先救援權。</span>
+        </div>
+        <div class="footnote-item" id="fn13">
+            <span class="en"><a href="#ref13" class="footnote-link">⑬</a> Tycho: a lunar colony city.</span>
+            <span class="zh"><a href="#ref13-zh" class="footnote-link">⑬</a> 第谷，月球上的殖民城市。</span>
+        </div>
+        <div class="footnote-item" id="fn14">
+            <span class="en"><a href="#ref14" class="footnote-link">⑭</a> Johnny Silverhand: a legendary figure of Night City, rock singer, anti-corporate terrorist, who blew up Arasaka Tower in 2023.</span>
+            <span class="zh"><a href="#ref14-zh" class="footnote-link">⑭</a> 強尼·銀手（Johnny Silverhand）夜之城傳奇人物，搖滾歌手、反企業恐怖份子，曾在2023年炸毀荒坂塔。</span>
+        </div>
+        <div class="footnote-item" id="fn15">
+            <span class="en"><a href="#ref15" class="footnote-link">⑮</a> Asian ripperdoc and his mother, "Qian Si Hu." The prototype is Wang Renfei (1997-2022), known online as "Qian Si Hu" or "Niu Niu," who loved the game and ran a 3D printing model shop, building a player community. On May 21, 2022, he passed away from Becker muscular dystrophy. His mother, Ren Hongmei, inherited the shop, completed outstanding orders, and completed corneal and organ donation procedures. CDPR learned of this and developed a tribute character, integrating the prototype's image into the game world. "Qian Si Hu" is a ripperdoc NPC in the Dogtown area. The character cannot be spoken to, focusing on cyberware repair work. The shop displays many arm models and 3D printing equipment, recreating the prototype's real-life workshop scene. In the DLC released in September 2023, the official constructed a digital continuation of the prototype's life trajectory through this character.</span>
+            <span class="zh"><a href="#ref15-zh" class="footnote-link">⑮</a> 亞裔義體醫生與母親，千寺狐。原型人物王任飛（1997-2022），網名「千寺狐」「牛牛」，生前酷愛該遊戲，經營3D列印模型店鋪並組建玩家社群。2022年5月21日因罕見病貝氏肌營養不良症離世，其母任紅梅繼承其店鋪完成未完成訂單，並完成眼角膜等器官捐贈手續。CDPR獲悉此事後啟動紀念角色開發，將原型人物形象融入遊戲世界。千寺狐是狗鎮區域的義體醫生NPC，該角色無法對話，專注於義體維修工作，其店鋪內陳列大量手臂模型與3D列印設備，還原了原型人物現實中的工作室場景。2023年9月上線的DLC中，官方透過該角色建構了虛擬世界對原型人物生命軌跡的數位化延續。</span>
+        </div>
+        <div class="footnote-item" id="fn16">
+            <span class="en"><a href="#ref16" class="footnote-link">⑯</a> Lizzy Wizzy is a game character, a fully body-sculpted pop star. The scene described is also the actual stage setting of the Obsidian mission—a giant red wing of light dots.</span>
+            <span class="zh"><a href="#ref16-zh" class="footnote-link">⑯</a> 麗茲·薇奇是原作角色，全身義體化的流行歌手。文中描述的也是寶石青任務的真實舞台場景，巨大的紅色光點翅膀。</span>
+        </div>
+        <div class="footnote-item" id="fn17">
+            <span class="en"><a href="#ref17" class="footnote-link">⑰</a> "Delicate Weapon" — a delicate weapon, or a fragile weapon. Perhaps all wars begin with love that is both delicate and fragile.</span>
+            <span class="zh"><a href="#ref17-zh" class="footnote-link">⑰</a> 《Delicate Weapon》，精緻的武器，或脆弱的武器。或許一切的戰爭都因精緻又脆弱的愛而起。</span>
+        </div>
+        <div class="footnote-item" id="fn18">
+            <span class="en"><a href="#ref18" class="footnote-link">⑱</a> Black Lace: a type of inhaled drug in the game.</span>
+            <span class="zh"><a href="#ref18-zh" class="footnote-link">⑱</a> 黑蕾絲為遊戲中一種吸食毒品。</span>
+        </div>
+        <div class="footnote-item" id="fn19">
+            <span class="en"><a href="#ref19" class="footnote-link">⑲</a> Joytoys: specially modified human beings dedicated to pleasure.</span>
+            <span class="zh"><a href="#ref19-zh" class="footnote-link">⑲</a> 性偶，接受過特殊改造，專用於滿足的真人。</span>
+        </div>
+        <div class="footnote-item" id="fn20">
+            <span class="en"><a href="#ref20" class="footnote-link">⑳</a> Elizabeth Kress is the President of the New United States of America. She has played a crucial role in maintaining unity and rebuilding the nation. Elizabeth has her own interests and has turned the New United States into an authoritarian state over the years. Cress Street is also where the protagonist V lives in Dogtown.</span>
+            <span class="zh"><a href="#ref20-zh" class="footnote-link">⑳</a> 伊莉莎白·克雷斯是新美利堅合眾國總統，她在保持團結和重建國家方面發揮了重要作用。伊莉莎白有自己的利益，多年來將新美國變成了一個獨裁國家。克雷斯街也是主人公V在狗鎮的居所。</span>
+        </div>
+        <div class="footnote-item" id="fn21">
+            <span class="en"><a href="#ref21" class="footnote-link">㉑</a> "Aerondight" Guinevere and "Rattler" are both nicknames for vehicles in the game, with vastly different prices.</span>
+            <span class="zh"><a href="#ref21-zh" class="footnote-link">㉑</a> 「湖女之劍」桂妮薇兒與「卷螺」均是遊戲中的車輛暱稱，售價差異巨大。</span>
+        </div>
+        <div class="footnote-item" id="fn22">
+            <span class="en"><a href="#ref22" class="footnote-link">㉒</a> The Unification War was a series of armed conflicts from January 2069 to June 2070. The belligerents were the New United States and the Free States. Northern California sided with the Free States, while Southern California supported the New United States. Night City remained independent throughout the conflict.</span>
+            <span class="zh"><a href="#ref22-zh" class="footnote-link">㉒</a> 統一戰爭是從2069年1月到2070年6月發生的一系列武裝衝突。交戰雙方為新美利堅和自由州。北加利福尼亞站在自由州一邊，而南加利福尼亞支持新美利堅。夜之城在衝突期間一直保持獨立。</span>
+        </div>
+        <div class="footnote-item" id="fn23">
+            <span class="en"><a href="#ref23" class="footnote-link">㉓</a> Morro Rock Radio: a radio station in the game, playing many songs by Johnny Silverhand's band.</span>
+            <span class="zh"><a href="#ref23-zh" class="footnote-link">㉓</a> 莫格搖滾為遊戲中的電台名，大量播放強尼·銀手的樂隊歌曲。</span>
+        </div>
+        <div class="footnote-item" id="fn24">
+            <span class="en"><a href="#ref24" class="footnote-link">㉔</a> Kurt Hansen disobeyed the order to withdraw his troops near the end of the Unification War. To protect himself, he set up his own territory in the Pacífica district stadium and surrounding areas, establishing the district of "Dogtown" and the separatist military force "Barghest." However, the plot suggests he was abandoned by the president.</span>
+            <span class="zh"><a href="#ref24-zh" class="footnote-link">㉔</a> 庫爾特·漢森在統一戰爭快結束時違抗撤軍的軍令，為了自保在太平州體育場及周邊地區自立山頭，建立了地區「狗鎮」和割據勢力「幽冥犬」。但劇情暗示其被總統拋棄。</span>
+        </div>
+        <div class="footnote-item" id="fn25">
+            <span class="en"><a href="#ref25" class="footnote-link">㉕</a> Iconic weapons in the game are unique to each save file and have special names. Cyber-optics can scan and reveal weapon information, including the name. For example, when the protagonist V chooses to kill the agent Reed, who was left in Dogtown by the president's orders and stubbornly adheres to the "American Dream," they can pick up his iconic weapon—"Pawn."</span>
+            <span class="zh"><a href="#ref25-zh" class="footnote-link">㉕</a> 遊戲中的不朽武器在存檔中唯一，均有特殊名字。義眼掃描可以看見包括名稱的武器信息。比如，當主人公V選擇擊殺因總統的命令而留在狗鎮，並堅持「美國夢」的特工李德時，會撿到他的不朽武器——棄子。</span>
+        </div>
+        <div class="footnote-item" id="fn26">
+            <span class="en"><a href="#ref26" class="footnote-link">㉖</a> Quadra 66 "Cthulhu": a streamer's beloved car.</span>
+            <span class="zh"><a href="#ref26-zh" class="footnote-link">㉖</a> 古德拉66式「克蘇魯」，主播的愛車。</span>
+        </div>
+        <div class="footnote-item" id="fn27">
+            <span class="en"><a href="#ref27" class="footnote-link">㉗</a> NCPD: the Night City Police Department.</span>
+            <span class="zh"><a href="#ref27-zh" class="footnote-link">㉗</a> NCPD，夜之城的警察。</span>
+        </div>
+        <div class="footnote-item" id="fn29">
+            <span class="en"><a href="#ref29" class="footnote-link">㉙</a> The Afterlife bar in Night City serves special cocktails inspired by legendary figures. If you want to appear on the drink menu too... you have to die first.</span>
+            <span class="zh"><a href="#ref29-zh" class="footnote-link">㉙</a> 夜之城的酒吧「來生」會提供以傳奇人物為靈感的特調酒。如果你也想出現在酒單上——你得先死。</span>
+        </div>
+        <div class="footnote-item" id="fn30">
+            <span class="en"><a href="#ref30" class="footnote-link">㉚</a> Apogee Sandevistan: a time-perception acceleration cyberware that gives the user superhuman reaction speed. The specific effect is that everything around the user slows down by 90%, except for the user themselves.</span>
+            <span class="zh"><a href="#ref30-zh" class="footnote-link">㉚</a> 「遠地點」斯安威斯坦，時間感知加速義體，使使用者獲得超常反應速度。具體表現是除了使用者，使用者周遭的一切都放慢90%。</span>
+        </div>
+
+<!-- ================= RETURN ================= -->
+<div style="text-align:center;">
+  <a class="return-box" href="../index.html">
+    <span class="en">Return</span>
+    <span class="zh">返回</span>
+  </a>
+</div>
+
+<!-- ================= MUSIC（可替换模块） ================= -->
+<!-- 🔴 MUSIC MODULE START -->
+<audio id="bgm" loop>
+  <source src="../music/NeverLookingBack.mp3" type="audio/mpeg">
+  <!-- 🔵 替换音乐路径即可 -->
+</audio>
+<!-- 🔴 MUSIC MODULE END -->
+
+<script>
+let lang = "en";
+
+function applyLang(mode) {
+  document.body.classList.remove("lang-en", "lang-zh");
+  document.body.classList.add("lang-" + mode);
+}
+
+function toggleLang() {
+  lang = (lang === "en") ? "zh" : "en";
+  applyLang(lang);
+}
+
+applyLang("en");
+
+/* music autoplay */
+document.addEventListener("click", () => {
+  const audio = document.getElementById("bgm");
+  if (!audio) return;
+  audio.volume = 0.6;
+  audio.play().catch(() => {});
+});
+</script>
+
+</body>
+</html>

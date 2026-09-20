@@ -1,0 +1,1398 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>The Weather Is Clear Far Away / 遠方天氣晴朗</title>
+
+<style>
+body {
+  background-color: #81A380;
+  color: #525288;
+  max-width: 720px;
+  margin: 100px auto;
+  line-height: 1.9;
+  font-family: Georgia, serif;
+  padding: 0 20px;
+}
+
+/* ================= LANGUAGE SYSTEM ================= */
+.zh, .en {
+  display: none;
+}
+
+body.lang-en .en {
+  display: inline;
+}
+
+body.lang-zh .zh {
+  display: inline;
+}
+
+/* switch */
+.lang-switch {
+  position: fixed;
+  top: 18px;
+  right: 18px;
+  border: 1px solid #7D5A44;
+  padding: 6px 12px;
+  cursor: pointer;
+  color: #7D5A44;
+  background: transparent;
+  z-index: 999;
+}
+
+.lang-switch:hover {
+  background: #7D5A44;
+  color: white;
+}
+
+/* title */
+h1 {
+  text-align: center;
+  font-weight: normal;
+  margin-bottom: 60px;
+  font-size: 28px;
+  letter-spacing: 1px;
+}
+
+/* divider */
+.divider {
+  border-top: 1px solid #7D5A44;
+  width: 100%;
+  margin: 60px 0;
+  opacity: 0.6;
+}
+
+/* text */
+p {
+  margin-bottom: 26px;
+}
+
+/* return */
+.return-box {
+  display: inline-block;
+  padding: 6px 14px;
+  border: 1px solid #7D5A44;
+  color: #7D5A44;
+  margin-top: 60px;
+  transition: 0.3s;
+}
+
+.return-box:hover {
+  background: #7D5A44;
+  color: white;
+}
+</style>
+</head>
+
+<body class="lang-en">
+
+<!-- LANGUAGE SWITCH -->
+<div class="lang-switch" onclick="toggleLang()">EN / 繁</div>
+
+<!-- ================= TITLE（可替换） ================= -->
+<h1>
+  <span class="en"><!-- 🔵 English Title -->The Weather Is Clear Far Away</span>
+  <span class="zh"><!-- 🔵 中文标题 -->遠方天氣晴朗</span>
+</h1>
+
+<div class="divider"></div>
+
+<!-- ================= BODY（整段可扩展区域） ================= -->
+
+<!-- 🔵 这里是正文 -->
+    <div class="section-break">◇</div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">Francis's breath landed on my shoulder. I kept pressing the accelerator, driving into the midnight sun. A few days ago, we had landed in Helsinki, walking out of the cabin hand in hand under the dazzling sunlight. The dryness before midsummer instantly stripped away the damp, warm air clinging to my body, like pulling off a sweater soaked with water. The sea wind flowed through our sweating fingers, like putting a hand through lake water.</span>
+        <span class="zh">弗朗西斯的呼吸在我肩膀上降落，我不斷加大油門，驅車駛入極晝。幾日前，我們降落在赫爾辛基，在耀眼的日光下牽手走出機艙。仲夏前的乾燥頃刻將我身上潮濕溫熱的空氣脫去，如同脫去一件吸飽水的毛衣。海風流過我們流著汗的十指，像把手穿過湖水。</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">Where did the memory of lake water come from? I had never swum. Being bare-chested in front of other children always made me unbearably shy. In the season when the sun was fiercest, I hid indoors. The laughter from the pool in the distance pounded against my chest. Never having been exposed to the sun, my skin was as white as moonlight. After I gradually grew into self-awareness, Francis was the first person who had ever seen me naked. He always brushed his burning fingertips over my thin shoulder blades before kissing me, over ribs like a row of piano keys and sharp knees. This was a body forever unrelated to beauty. Sometimes I felt he was more of an artist than I was.</span>
+        <span class="zh">關於湖水的記憶來自哪裡？我從未游過泳，在其他孩子面前赤裸上身永遠使我羞怯難當。在太陽最烈的季節，我都躲在屋子裡。遠處水池邊的笑聲砸向我的胸膛，沒有經過日曬，我的皮膚像月光一樣白。在我逐步成長出自我意識後，弗朗西斯是第一個見過我裸體的人。他總是在親吻之前用滾燙的指腹掠過我瘦削的肩胛，如一排琴鍵似的肋骨與尖尖的膝蓋。這是一具永遠與美無關的身體。有時候，我覺得他比我更像一位藝術家。</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">I passed through the takeoff and landing wind that smelled of garbage. The wind poured into my throat; I felt like I was biting into a rotting apple. Wildflowers were blooming beneath the silver-grey walls of the airport. Here, everything was timed by fragrance. When we arrived in the morning, the air smelled of lily of the valley wet with dew. The sun placed its frenzied heat on my forehead. The scent of wild roses, carrying a hint of honey and myrrh, filled my restless chest. In the evening we checked into an inn. A bouquet of lilacs stood in the vase on the table. I took one sprig and pressed it into my sketchbook. This was the first souvenir I took away. I am not good at farewells. The journey had only just begun, and I had already begun rehearsing the goodbye. We had slept for a long time on the plane, so we could only lie awake in the hotel waiting for the next fragrance. The trial that had just ended had left Francis exhausted; even after getting off the plane, he remained taciturn. He had defended a man accused of kidnapping and killing a little girl. The body had been burned. DNA, surveillance footage, search records—all the evidence pointed to him. The media called him a "monster." Like many murderers, the man's face was utterly ordinary—and that was exactly what Francis needed. He did not deny any of the evidence. Instead, he made the man human again. A depressed but habitually kind middle-aged man. A man whose marriage had failed. A man who ate the same sandwich for lunch every day, who didn't even dare to argue with his wife. He called psychologists, divorce lawyers, colleagues. In the end, he persuaded the jury. This was not a perfect murderer. This was a broken ordinary person who, under the side effects of medication, had developed intrusive thoughts. This kind of person could be found everywhere around us. He won. The man was convicted of manslaughter and faced twelve years in prison. First-degree murder and kidnapping did not hold. And the girl had not been twelve years old. That night, he came home with two bottles of wine and lazily rested his head on my shoulder.</span>
+        <span class="zh">我從散發著垃圾氣味的飛機起落風中穿過。風灌入喉嚨，我像咬著一口腐爛的蘋果。機場銀灰色的圍牆下野花正怒放。這裡的一切由香氣計時。早上我們到達時，空氣聞起來像沾著露水的鈴蘭。太陽把癲狂的燥熱放在我額頭上，帶著一點蜂蜜與沒藥氣息的野玫瑰香氣瀰漫在我心跳不止的胸膛中。傍晚我們入住旅社，桌子上的花瓶中插著一束丁香。我拿走一枝夾在我的速寫本裡。這是我帶走的第一個紀念品。我不擅長告別。旅程剛剛開始，我也同樣開始為告別做預演。我們在飛機上睡了很久，只能在旅館睜著眼睛等待下一陣香氣。剛結束的辯護讓弗朗西斯疲憊不堪，他下了飛機依舊少言寡語。他為一個被指控綁架並殺死了一個女童的男人辯護。屍體被焚燒過。DNA、監控、搜索記錄，所有的證據都指向他。媒體稱他為「怪物」。與很多殺人犯一樣，男人的臉普通得不能再普通——而這正是弗朗西斯所需要的。他沒有否認任何證據，而是讓男人做回一個普通人。一個抑鬱但習慣善良的中年人。一個婚姻失敗的人。一個每天吃同樣的三明治當午餐，連和妻子吵架都不敢的人。他傳喚了心理醫生、離婚律師、同事。他最終說服了陪審團。這不是一個完美的謀殺者，這是一個破碎的、在藥物副作用下產生了侵入性思想的普通人。這個人在我們身邊隨處可見。他勝利了，男人被判過失殺人，面臨十二年監禁。一級謀殺和綁架不成立。而那個女孩沒有十二歲。那天晚上，他拿著兩瓶酒回家，懶洋洋地把頭擱在我的肩膀上。</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"I should be used to it, Arthur."</span>
+        <span class="zh">「我應該習慣了，亞瑟。」</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">I was also going through a period of creative drought. Whether to leave or to re-enter life, we decided to leave home and clear our heads. In Helsinki during the day, we only ordered a bowl of cream of salmon soup; the peculiar saltiness killed our appetites. It was only when the hotel sent up cinnamon rolls that Francis managed to eat a little.</span>
+        <span class="zh">我一樣正經歷靈感枯竭的時期。無論為了離開，或是重新進入生活，我們決定離開家散心。在赫爾辛基的白天我們只點了一碗奶油三文魚湯，特殊的鹹味讓我們沒什麼胃口。直到酒店送來肉桂捲時，弗朗西斯才勉強吃了一點。</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">We did not stay long in Helsinki. The next day we took the night train toward Rovaniemi.<a href="#fn1" class="footnote-link" id="ref1"><sup>①</sup></a> I woke once at two in the morning; outside the window, the sky was still the blue of denim. The forest grew denser. I could not sleep, so I lay there drawing the blurry scene outside. The air conditioning had turned off at some point; sweat ran down my back. I sat up and silently counted the quiet time before the announcement. I could not understand the staccato murmur of Finnish, like an elf whispering spells in my ear. As with countless futile attempts before, I tried to construct the structure of the picture from scratch, but my mind was blank. I lay back down and turned my face toward Francis's berth. At some station along the way, an old man wearing antler ornaments had boarded. He was now sitting on Francis's bed, saying nothing. I whispered at him to leave. He raised his yellowed, bulging eyes and looked at me uncomprehendingly. We could not understand each other's language, so we each turned our heads away. Francis did not wake until we arrived. His breathing when asleep was very light; I often had to turn my head to confirm he was there.</span>
+        <span class="zh">我們沒在赫爾辛基待太久，第二天就坐夜火車向羅瓦涅米<a href="#fn1-zh" class="footnote-link" id="ref1-zh"><sup>①</sup></a>進發。凌晨兩點我醒來一次，窗外的天依舊是牛仔褲一樣的藍色。森林越來越密集，我睡不著，躺著畫窗外模糊的景象。空調不知什麼時候關閉了，汗水流過我的背。我坐起身，默默倒數著廣播響起前的安靜時間。我聽不懂芬蘭語頓挫的低語，就像精靈在我耳邊訴說咒語。和之前的無數次徒勞一樣，我試圖從頭構建起畫面的結構，但腦中只有一片空白。我又躺了回去，將臉轉向弗朗西斯的床鋪。中途的某站上來一個戴著鹿角飾品的老人，此時他正坐在弗朗西斯的床上，一言不發。我小聲驅趕他，他抬起昏黃突出的眼球，一臉不解地望著我。我們互相聽不懂彼此的語言，只能各自把頭轉回去。到站前，弗朗西斯都沒有醒。他睡著時的呼吸很輕，我經常要轉頭確認他的存在。</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">Reindeer stew had always baffled me. We sat in the centre of the restaurant. A fan gave off a gasoline smell, rotating cautiously. Like stray animals by the roadside cautiously approaching the road, drinking from a puddle covered with an oil film. Francis leaned back against a large middle-aged man, so he could only lean forward, nose to nose with me. The gentleman was clearly one of the staff who played Santa Claus, yet he was speaking Russian into the phone in a rough voice. The fan blew his long white beard, which then fell into the sauce on the reindeer meat, like a layer of dried white mould floating on the soup.</span>
+        <span class="zh">馴鹿燉肉這道菜一直讓我匪夷所思。我們坐在餐館的中心位置，風扇散發著一股汽油味，小心翼翼地旋轉。就像路邊的流浪動物謹慎地靠近馬路，從浮著油膜的水坑裡飲水。弗朗西斯背靠一位體格龐大的中年男人，因此只能向前趴，鼻子對著我的鼻子。那位先生顯然是扮演聖誕老人的工作人員之一，他卻對著電話，用粗獷的嗓音說俄語。風扇吹起他長長的白鬍鬚，又落在馴鹿肉上的醬汁裡，像湯裡飄著一層乾枯的白黴。</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"Don't you think it's strange? Santa eating his own mount."</span>
+        <span class="zh">「你不覺得奇怪嗎？聖誕老人吃自己的坐騎。」</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">Thank God, the posture gave Francis great convenience. He leaned forward completely inconspicuously and whispered in my ear. I couldn't help but laugh out loud at the association. The gentleman turned and glanced at me. I had to bury my head and continue cutting the reindeer meat.</span>
+        <span class="zh">謝天謝地，姿勢給了弗朗西斯極大的便利。他完全不引人注目地往前湊了湊，輕聲在我耳邊說。我實在忍不住被這種聯想逗得笑出聲，那位先生回頭看了我一眼。我只好又埋頭切起馴鹿肉。</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"Children mustn't know about this."</span>
+        <span class="zh">「小孩子可不能知道這些。」</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">Francis added. I laughed again. More people looked at me. I hurriedly paid the bill and backed out of the restaurant.</span>
+        <span class="zh">弗朗西斯又補上一句。我又笑了。更多人看向我。我匆忙結賬，倒退著離開餐廳。</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">Although it was not Christmas season, various Santa Claus decorations still hung from the trees in Rovaniemi. Large areas of red tangled with the emerald green of the forest, tiring my senses. I pressed my index finger and thumb against my brow to relieve the soreness in my eyes. Francis suggested we count how many Santa decorations there were along the way. Every few seconds he would call out a number. When he reached one hundred and five, he suggested we go to a souvenir shop and buy a commemorative coin, to decide who would drive to the final destination. The Santa engraved on one side smiled as usual. He handed it to me without opening the package, saying he would choose the reverse. His eyes trembled as he spoke; the dark circles under his eyes swayed like a lily pad. I looked at his eyes and frowned. I tossed the coin and pressed it onto the back of my hand.</span>
+        <span class="zh">儘管不是聖誕季，羅瓦涅米的樹上依舊掛著各式各樣的聖誕老人。大面積的紅色與森林的翠綠纏在一起，使我感官疲勞。我用食指與拇指按住眉心，緩解眼睛的酸痛。弗朗西斯則提議我們數一數沿途有多少個聖誕老人裝飾。他每隔幾秒就要念個數字。當數到第一百零五個時，他又提議我們去紀念品店買一枚紀念幣，以此決定誰來開向最終目的地。硬幣單面刻著的聖誕老人像往常一樣笑容可掬。他沒拆開包裝就遞給了我，說自己選反面。他說話時顫抖著雙眼，眼下的烏青如一片睡蓮葉似的晃動。我看著他的眼睛，皺了皺眉。拋起硬幣按在我的手背上。</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"It's heads. I'll drive."</span>
+        <span class="zh">「是正面，我來開。」</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"Oh? Oh... alright then. If you get too tired, you must wake me."</span>
+        <span class="zh">「哦？哦……那好吧，如果太累了，一定要叫醒我。」</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">We walked out of the restaurant that smelled of game and grease and got into the rented car. He had already predicted he would sleep like this. At first he forced himself to stay awake and talk to me, but after a while his breathing became soft. When we passed Lake Inari,<a href="#fn2" class="footnote-link" id="ref2"><sup>②</sup></a> we hit a bump. The car groaned a few times and then stopped completely. I was a little scared. I patted his shoulder, but he felt nothing. I could not wake him.</span>
+        <span class="zh">我們走出散發著膻味和油脂氣息的餐館，鑽進租來的小車裡。他已經預料到自己會如此刻一般沉睡，一開始強撐著精神跟我說話，但過了一會兒呼吸就變得輕柔。我們路過伊納里湖<a href="#fn2-zh" class="footnote-link" id="ref2-zh"><sup>②</sup></a>時經歷了一陣顛簸，車呻吟了幾句，徹底不動了。我有些害怕，拍拍他的肩膀，但他卻什麼也沒感覺到。我沒能把他叫醒。</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">Legends of bandits were widespread in this area. Bandits would place obstacles on the road, puncture travellers' cars, and then, when the travellers got out, rush out from the dense forest to rob them—a proper old Viking style. Nevertheless, I got out of the car alone. There were a few metres of drag marks behind the rear wheel. I bent down, supporting myself on the rear hood, and shone a flashlight inside. A severed deer leg had somehow become lodged in the wheel. I had no memory of hitting anything. I swept it out from deep inside with a bat. The stump bore the tooth marks of a wild animal; the blood was still bright red.</span>
+        <span class="zh">這一帶廣為流傳強盜的傳說。強盜會在路上放障礙，扎壞旅客的車之後，趁旅客下車就從密林衝出來搶奪錢財，一副老維京人做派。儘管如此，我還是獨自下車。後輪有幾米的拖行血跡。我扶著車後蓋彎下腰，用手電筒照著裡面。車輪裡不知什麼時候卡著一截鹿的斷肢。我沒有撞到過任何東西的記憶，用球棒將它從深處掃出來。斷口有野獸的齒痕，血依舊鮮紅。</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">I had never experienced the death of any living thing, and the smell of blood made my head swim. Yet I still felt I had an obligation to bury this severed limb. I wrapped it loosely in a handkerchief, lifted the still-warm limb, and walked toward the lake. As I placed the limb down, my fingers reached into the lake water. The limb sank immediately, carried away by the undercurrent. But in my mind, I smelled the scent of a swimming pool, the smell of chlorine. My ears were full of laughter. The cool lake water lured me. I took off my shoes, my socks stepping on the stones of the shore. The water passed my ankles, then my knees, finally my thighs. The lake water was cold, unlike June.</span>
+        <span class="zh">我沒有經歷過任何活物的死亡，血的气味也讓我頭腦昏沉，我卻依舊覺得自己對這根斷肢負有安葬的義務。我用手帕稍稍包裹著，抱起這根毛皮尚且溫熱的斷肢，走向湖邊。我的手指在安放斷肢的同時伸進湖水。斷肢馬上沉了下去，隨著湖底暗流被捲走。我的腦中卻聞到了泳池的氣味、氯的氣味。我的耳中都是歡笑。清涼的湖水引誘著我。我脫了鞋，襪子踩在湖岸的石頭上。水沒過腳踝，接著是膝蓋，最後是大腿。湖水冷得不像六月。</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"Cool?"</span>
+        <span class="zh">「涼快嗎？」</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">A light, cold breath suddenly came to my ear. Francis's arm around my neck was like a thick noose. Since he entered law school that year, he had kept up his fitness routine to this day. Sometimes there were emergencies—this was a reason I knew well. The people he defended were always a group of vicious murderers. But he could never entirely abandon his sensibility, like being unable to peel off a layer of skin, or losing his heart. His sensibility was a warm, bloody thing, something that needed to be hidden beneath the iron blade of rules. He had always done it well, so well that it seemed he had never possessed it. But sometimes, when I looked into his eyes during the hangovers after each trial, I still believed that the blindfolded woman's raised scales could not bear his anger, which was equal to his guilt.</span>
+        <span class="zh">我的耳邊突然傳來又輕又冷的呼吸，弗朗西斯環繞我脖子的胳膊如一圈粗絞索。自從那年入學法學院後，他便將健身習慣保持至今。有時會有突發情況——這是我熟知的理由。他的辯護對象永遠是一群窮凶惡極的殺人犯。但他卻永遠無法全然拋棄感性，就像剝不下一層皮膚，抑或是失去心臟。他所擅長的感性是一件帶有溫度的，血肉模糊的東西，需要在規則的鐵銬下隱藏的東西。他一直做得很好，好到彷彿從未擁有過。但有時候，當我在每個庭審之後的宿醉中望向他的眼睛。我依舊認為那架被蒙眼的女人高舉的天平，無法承受與罪惡相等的他的憤怒。</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"Mm."</span>
+        <span class="zh">「嗯。」</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">I gripped his hand on my shoulder tightly, like a lookout sailor gripping the mast. The lake rippled endlessly; waterweed tangled around my ankles.</span>
+        <span class="zh">我緊攥住他放在我肩上的手，像一個瞭望的水手緊抓住桅杆。湖波搖曳不止，水草纏住我的腳踝。</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"It's dangerous."</span>
+        <span class="zh">「很危險。」</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"Then pull me up quickly. No nonsense."</span>
+        <span class="zh">「那就趕緊拉我上去，不要廢話。」</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">He smiled almost imperceptibly and placed his other hand on my waist. Sunlight was like dozens of iron needles piercing through the leaves. My gaze crossed the treetops, trying to piece together some image of the sunset. But there was nothing. Everything was as white as a newly made robe. The night was bright; the sky was always light. I started the car and got back on the road, looking at Francis. At some point he had fallen asleep again.</span>
+        <span class="zh">他微不可察地笑了一下，將另一隻手放在我的腰上。太陽光如幾十根穿越樹葉的鐵針。我的目光越過樹冠，試圖拼湊起有關晚霞的一些圖景。但是什麼都沒有，一切都如新做的長袍一般潔白。夜晚是光明的，天永遠亮堂。我發動汽車重新上路，望向弗朗西斯。不知什麼時候他又睡著了。</span>
+    </div>
+
+    <div class="section-break">◇</div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">The village.</span>
+        <span class="zh">村莊。</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">I chose the destination by intuition. Sometimes I would write names of countries on cards, throw them into the air, and let that decide where I should go. This time, however, I was drawn directly to the website of a Finnish village. Its information came from a sidebar advertisement on a travel forum, suddenly discovered after a long dormancy. As if you only realise, when you decide to clean your room, that thirty rings of spiderwebs have already formed on the ceiling. The unknown distance has always captivated me. I long for the distance like a person without a homeland. I clicked twice; under a sky whose colour was unclear, whether from fading or from the midnight sun, stood a reindeer. A person in a dark blue robe straddled the deer's back, holding up a drum like a child held aloft. The low resolution made it impossible for me to see the wind-eroded characters on the drum's surface. But the reindeer's eyes were a translucent pale colour, as if sunk into the eternal daylight sky. It looked at the camera with a gaze that almost did not belong to an animal. Yet, apart from this strange person and beast, the webpage's title was in several completely outdated sapphire art fonts, like a string of meaningless hippie street graffiti. I couldn't help but sigh.</span>
+        <span class="zh">我用直覺確定旅行地。有時我會在卡片上寫上一些國家的名字，將他們拋向空中，以此確定自己該去往何處。這次我卻直接被這個芬蘭村莊的網站吸引。它的信息來自一個旅行論壇的邊欄廣告，在長久的蟄伏中突然被發現。彷彿你決定打掃房間時，才意識到天花板上已經結了三十圈的蜘蛛網。未知的遠方一向使我心馳神往。我渴求遠方，就像一個沒有故鄉的人。我點了兩下鼠標，在不知是因為褪色還是極晝的天空下站著一隻馴鹿。一個穿深藍色長袍的人跨在鹿背，像高舉著嬰孩那樣高舉一面鼓。低像素使我看不清鼓面上風蝕過的文字。但馴鹿的眼睛是通透的淺色，如同陷入永晝的天空。它用一種幾乎不屬於動物的眼神看著鏡頭。然而，脫離近乎奇異的人與獸，網頁的標題竟是幾個完全過時的寶藍色藝術字，彷彿一串毫無內容的嬉皮士街頭塗鴉。我忍不住嘆氣。</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"The Land of Daylight, where the soul sees its animal."</span>
+        <span class="zh">「白晝之地，靈魂看見它的動物。」</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">Below the page were tourist photos. Different masked people stood before the same fire pit, with grey grassland and sky behind them. They were smiling. Arms around each other's shoulders, bowls in their hands, or crouching beside a reindeer making victory signs. The wreaths around their necks were like nooses. I leaned back in my chair; the pencil tucked behind my ear was about to fall. I brought my ear close to my shoulder, trying to hold the pencil in place while contacting the website owner in the chat window.</span>
+        <span class="zh">網頁下展示著遊客合影。不同戴面具的人站在同一個火坑前，背後是灰色的草地和天空。他們笑著。摟著彼此的肩膀，手裡端著碗，或者蹲在一隻馴鹿旁邊比著勝利的手勢。他們的脖子上的花環如同絞索。我向後靠在椅背上，耳朵上夾著的鉛筆快要掉下來了。我把耳朵靠近肩膀，一邊試圖夾住那根鉛筆，一邊在聊天窗口中聯繫著網站負責人。</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"I'm Arthur Kirkland. You can find my past work on my website of the same name. Although it may be presumptuous, may I ask if you have considered updating your webpage? I mean, perhaps I could design a new version for you. If you don't mind, as an exchange, I only hope to use this opportunity to travel there."</span>
+        <span class="zh">「我是亞瑟·柯克蘭。您可以在我的同名網站上找到我的過往作品。雖然有些冒昧，但我想冒昧地問一句您的網頁是否考慮過更新？我的意思是我或許可以為您設計一版新的頁面。若您不嫌棄，作為交換，我只希望能藉此機會去那裡旅行一趟。」</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">The other party readily agreed and quickly sent an address—a few hours' drive from the nearest town. Francis came over from the kitchen with coffee, placed the cup beside my hand, and bent down over my head.</span>
+        <span class="zh">對面欣然同意，很快發來了地址，距離最近的鎮子還要開車幾個小時。弗朗西斯從廚房端了咖啡過來，把杯子放在我手邊，在我頭頂上俯下身子。</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"What's this?"</span>
+        <span class="zh">「這是什麼？」</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">He chuckled, straightened my head, tucked the pencil securely behind my ear again, and kissed my ear. I turned my head the other way.</span>
+        <span class="zh">他輕笑著扶正我的腦袋，把那根鉛筆重新穩穩當當地夾在我的耳朵上，又親親我的耳朵。我把頭轉向另一邊。</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"A travel destination. I guess it's a small local Finnish village."<a href="#fn3" class="footnote-link" id="ref3"><sup>③</sup></a></span>
+        <span class="zh">「一個旅行地。我猜是個芬蘭本地的小眾村莊。」<a href="#fn3-zh" class="footnote-link" id="ref3-zh"><sup>③</sup></a></span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">Francis stared at it for a few seconds. He reached over and took my mouse. Slowly, one by one, he flipped through the webpage photos, the way he usually scrutinised evidence. After a while, he opened another tab and searched the village's name. There was no Wikipedia entry, no news reports.</span>
+        <span class="zh">弗朗西斯盯著看了幾秒。伸手拿過我的鼠標。他緩慢地一張一張翻過網頁照片，就像平時審視證據那樣。過了一會兒，他打開另一個標籤頁，搜了村莊的名字。沒有任何維基百科和新聞報道。</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"We know nothing."</span>
+        <span class="zh">「我們什麼也不知道。」</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"Mm."</span>
+        <span class="zh">「嗯。」</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">He took a sip of coffee and looked at the screen. After a while, he curled his fingers and tapped my head, a low laugh escaping his throat.</span>
+        <span class="zh">他喝了一口咖啡，看著屏幕。過了一會兒，他屈起手指敲敲我的腦袋，喉嚨裡逸出一聲低笑。</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"But you like adventures, don't you?"</span>
+        <span class="zh">「不過你就喜歡冒險，不是嗎？」</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">I turned to look at him. His eyes reflected the blue light; in the glow of the monitor, they were like two bruises soaked in lake water for a long time. He looked like a man too tired to ask any more questions.</span>
+        <span class="zh">我轉頭看著他。他的眼睛反射著藍光，在顯示器的光線裡，像兩道被湖水泡了很久的淤青。他看起來像一個累到不再發問的人。</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"You've already been caught by it. Whatever is there, you'll keep thinking about it."</span>
+        <span class="zh">「你已經被它吸引了。不管那裡是什麼，你都會一直想它。」</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">I did not argue. He closed the tab and pushed the coffee cup toward me. This was the entire reason we stood before the village. This year, we were the only tourists. A strong villager helped us return the car. Standing on the hillside, I looked around. Endless grassland, giving off a strong fragrance, with wild roses and lilies of the valley blooming.</span>
+        <span class="zh">我沒有反駁。他關掉了標籤頁，把咖啡杯推到我面前。這就是我們站在村莊前的全部原因。今年的遊客只有我們。一個強壯的村人幫我們把車還了回去。站在山坡上，我瞭望四周。一望無際，散發著濃烈香味的草原上野玫瑰和鈴蘭綻放。</span>
+    </div>
+
+    <div class="section-break">◇</div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">In the fragrant morning, I turned my head to look at Francis's pale golden hair falling on the pillow. In the grey light, he almost blended into the colour of the linen. Something in his dream touched him lightly; his eyelashes and eyelids trembled faintly. I placed my hand on his forehead and breathed deeply and slowly. His brow gradually relaxed, and his breathing frequency matched mine, like two facing pages in a book. I looked up. The sun was probably in some direction, but I could not tell. Since arriving, I had never felt the warmth of summer.</span>
+        <span class="zh">香氣四溢的清晨，我側過頭看弗朗西斯垂落在枕上的淺金色長髮。在灰色光線裡，他幾乎要融進亞麻布的顏色裡去。有什麼東西在夢裡輕輕碰了碰他，他的睫毛與眼皮輕輕顫抖。我將手放在他的額頭上，又深又快地呼吸。他的眉頭逐漸舒展開，呼吸頻率也與我一致，像一本書中挨著的兩頁紙。我抬頭，太陽大概在某個方向，但我無法辨別。到來之後，我還從未感到過來自夏天的溫暖。</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">Still, I did not wake Francis. Instead, I picked up my sketchbook, turned to a new page, and began to draw his face. In a worldly sense, drawing was how I made my living. More often, drawing was how I fought against farewells. I looked at Francis's face for so long that sometimes I no longer recognised it. Then I would close my eyes and reconstruct him starting from his voice. His brow bone was high, the ends of his eyebrows slightly drooping, making him look as if he were always pondering a thorny matter. His lips only changed shape when he smiled. When I reached his chin, he turned over and buried his face in the pillow, leaving only one ear exposed. I drew that ear. The shape of the auricle was like a shell folding its wings, with a small hollow on the earlobe. I had noticed this the first time I saw him. His ear piercing was right beside this hollow. He used to wear a swaying moth earring, like a hippie. After he formally became a lawyer, that earring became my possession. I touched my ear; a hand caught my pencil. Francis opened his eyes and smiled at me silently. In the grey-white light, the colour of his eyes became a sombre violet, like the eyes of someone suffocating or dying. For several days we had been exhausted. We had not spoken to the villagers, sleeping soundly in the arranged wooden cabin. Now the dark circles under his eyes had faded considerably, but the fingers touching the back of my hand were still as cold as bone.</span>
+        <span class="zh">依舊，我沒有叫醒弗朗西斯，而是拿起速寫本，翻到新的一頁，開始畫他的臉。世俗上，繪畫是我謀生的手段。而更多時候，繪畫是我對抗告別的方式。我注視弗朗西斯的時間太久，有時會變得不認識這張臉。這時我會閉上眼睛，重新從他的聲音開始建構他。他的眉骨很高，眉尾有一點下垂，讓他看起來總是在思考一件棘手的事情。他的嘴唇只有在笑的時候才會變成另一種形狀。畫到他的下巴時，他翻了個身，把臉埋進枕頭裡，只露出一隻耳朵。我畫了那隻耳朵。耳廓的形狀像一隻收攏翅膀的貝殼，耳垂上有一個小小的凹陷。第一次見他時我就注意過這點。他的耳洞就扎在這個凹陷邊。以前他戴著一隻晃蕩著的飛蛾耳環，像個嬉皮士。在他正式成為律師後，那枚耳墜成為了我的所有物。我摸摸耳朵，一隻手抓住了我的畫筆。弗朗西斯睜開眼，對著我無聲地微笑。灰白色的光線裡，他眼睛的顏色變成一種沉鬱的紫，就像窒息或瀕死的人的眼睛。連續幾天我們都精疲力竭，我們沒有與村人交談，在安排好的木屋中酣眠。此刻他眼下的烏青淡了許多，但他碰著我手背的手指依舊冰冷如骨。</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"Good morning."</span>
+        <span class="zh">「早上好。」</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">He leaned over and kissed my forehead, affectionate like an animal. We walked out of the cabin; the damp grass was silent underfoot. The air was filled with floral fragrance and a faint smell of smoke. This isolated place was full of a soft, nostalgic atmosphere. I closed my eyes and took a deep breath. Francis had already walked a few steps ahead, then turned back to look at me, the corners of his mouth still holding that wicked, sweet curve. His gaze swayed endlessly.</span>
+        <span class="zh">他湊過來親親我的額頭，像動物一樣親暱。我們走出木屋，濕潤的草地踩上去寂靜無聲。空氣中充盈著花香與淡淡的煙味。這個與世隔絕的地方充滿柔軟的懷舊氣息。我閉上眼睛，深吸一口空氣。弗朗西斯在我前方已經走出去幾步，又回過頭看我，嘴角依舊帶有邪惡的甜美弧度。他的眼神晃蕩不止。</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"What are you doing? Little dog nose."<a href="#fn4" class="footnote-link" id="ref4"><sup>④</sup></a></span>
+        <span class="zh">「你在幹什麼？小狗鼻子。」<a href="#fn4-zh" class="footnote-link" id="ref4-zh"><sup>④</sup></a></span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"Smelling. The smell here is special."</span>
+        <span class="zh">「聞。這裡的味道很特別。」</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"How is it different?"</span>
+        <span class="zh">「哪裡不一樣？」</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"I can't say. Like... like something I smelled when I was little. Also like the smell of your old carpet."</span>
+        <span class="zh">「我說不上來。像……像是小時候聞過的某種東西。也像你家以前地毯的味道。」</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">Francis did not answer. He walked back to my side, pressed his index finger against my radial artery, and closed his eyes too. He had once said that my pulse could soothe him. When he was tormented by certain cases and could not sleep, he would press his burning forehead against my wrist. I could feel the curve of his cheek gently grinding against my skin. Finally, his restrained lips would peck my wrist. To me, this intimacy was like being preyed upon.</span>
+        <span class="zh">弗朗西斯沒有回答。他走回我身邊，將食指貼在我的橈動脈上，也閉上了眼睛。他曾說過我的脈搏能讓他安心。在他被某些案子折磨得睡不著的時候，他會把滾燙的額頭貼在我的手腕上。我能感受到他側臉的曲線輕柔碾過我的皮膚。最後，他充滿克制的嘴唇會啄我的手腕。對我來說，這種狎暱如同被捕食。</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"I can't smell it."</span>
+        <span class="zh">「我聞不到。」</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">He merely stated, but his voice was so sad. I gripped his hand tightly and walked toward the centre of the village. The person who had greeted us yesterday was an old man with long hair and a long beard. He was now sitting barefoot at the door of a wooden cabin, whittling a piece of wood. He looked like a butcher. The knife was raised like a flag, then swung down without hesitation. As if what he held was a piece of meat. I could not say what kind of tree it was; the wood shavings, fat-white and heavy, fell on his knees. He did not look up, but when our shadows fell on him, he paused, suspending the blade briefly above the wood.</span>
+        <span class="zh">他只是陳述，聲音卻如此悲傷。我握緊了他的手，向村莊中心走去。昨天迎接我們的是一位長髮，長鬍子的老者。此時他正赤著腳坐在一座木屋門口削一塊木頭。他的樣子像一個屠夫。刀像一面旗幟似的舉起來，然後毫不猶豫地一揮而下。彷彿他手裡的是一塊肉。我說不清那是什麼樹，如脂肪般花白厚重的木屑，落在他的膝蓋上。他沒有抬頭，但在我們的影子落在他身上的時候，他停了一下，將刀刃短暫地懸在木頭上方。</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"You've come."</span>
+        <span class="zh">「你們來了。」</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">He spoke in very standard English, his cloudy eyeballs rolling around, pausing only on my face for a long time. He then squinted, as if recognising a face on the street that he had seen a long time ago.</span>
+        <span class="zh">他用很標準的英語說道，渾濁的眼球四處轉動，只在我臉上久久停頓。他旋即瞇起眼，就像一個人在街上認出一張很久以前見過的臉。</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"What did you dream?"</span>
+        <span class="zh">「你夢見什麼了？」</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">As if he did not need an answer, he lowered his head as soon as he asked and continued whittling the wood. Francis's fingers tightened slightly in my palm.</span>
+        <span class="zh">他彷彿不需要一個回答，剛問完就低下頭，繼續削木頭。弗朗西斯的手指在我的手心裡微微收緊了一下。</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"What's wrong?"</span>
+        <span class="zh">「怎麼了？」</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">I tilted my head close to his ear, but he said nothing. We stood silently beside each other, watching until the old man finished whittling the stick, leaned it against the doorframe, and walked back inside. One end of the stick had been carved into the shape of a reindeer antler, its branching outline like a tree growing upside down. I took out my notebook and recorded all of this. This was because sometimes I did not trust my own memory.</span>
+        <span class="zh">我仰頭湊近他的耳朵，他卻一言不發。我們沉默地站在彼此身邊，一直看到那個老人削完了那根木棍，把它靠在門框上，走回屋裡。木棍的一頭被削成了馴鹿角的形狀，分叉的輪廓像一棵倒長的樹。我拿出筆記本，將這一切都記錄下來。這是因為有些時候我並不相信自己的記憶。</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">Francis pulled me forward. In the daylight as long as life itself, the sun smiled above our heads. The wooden cabins around me were as silent as graves. I stopped, lingering before an unusual symbol carved on a doorpost. A circle emitting several ray-like lines. At the centre of the circle was another hollow circle, beside which hung a slightly curved cross, its horizontal and vertical arms growing like vines. For some reason, this symbol reminded me of memories I had never possessed. I stood beneath the sun radiating benevolent and primal light, motionless like a pupa.</span>
+        <span class="zh">弗朗西斯拉著我向前走，如生命一樣漫長的白晝中，太陽在我們頭頂微笑。我身邊的木屋如同墳墓一樣寂靜。我停下來，因門柱上刻著的不同尋常的符號駐足。一個圓發出幾道類似光芒的射線。圓心的位置是另一個空心的圓，旁邊掛著一個微微彎曲的十字架，橫臂和豎臂像藤蔓一樣生長著。不知為何，這個符號讓我想起了完全沒擁有過的記憶。我站在散發著仁慈與原始光芒的烈日底下，像一顆蛹似的一動不動。</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"Arthur. Arthur."</span>
+        <span class="zh">「亞瑟。亞瑟。」</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">I came back to myself. Francis stood before me, tilting his head.</span>
+        <span class="zh">我回過神來。弗朗西斯站在我面前，歪著頭看我。</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"What's wrong with you?"</span>
+        <span class="zh">「你怎麼了？」</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"The light..."</span>
+        <span class="zh">「光……」</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">I could not continue. Language was flowing out of my throat like a mass of sand. In broad daylight, my mind began to dream. My senses were filled with a furry, warm, scented anomaly, almost suffocating me. At this moment, inspiration was blessing me again, and I greedily bathed in this arrogant grace. My fingers itched. I wanted to draw everything I saw. Everything was metaphor, rhetoric, poetry. And to draw lines according to the metre and rhythm of poetry... no, of animal instinct—that was creation. My sketchbook was in my hand, but I could not lift my hand. The images in my mind swept me away like ocean waves.</span>
+        <span class="zh">我說不下去了，語言正如一團沙子似的從我的喉嚨裡流走。在白天，我的腦子卻開始做夢。我的感官被毛茸茸的、溫熱的、帶有氣味的異狀佔滿，幾乎喘不過氣來。此刻靈感正重新賜福給我，而我也貪婪地沐浴著這種傲慢的恩澤。我的手指在發癢。我想把我看到的一切畫下來。所有的一切都是隱喻，都是修辭，都是詩。而依照詩……不，是動物本能的格律與韻律畫出線條，就是創作。我的速寫本在我的手裡，但我舉不起手，大腦裡的畫面像海浪一樣把我捲走了。</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"Arthur."</span>
+        <span class="zh">「亞瑟。」</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">Francis's hands cupped my cheeks, then slowly covered my ears. His palms were like a prison. I turned my head and rubbed his palm with my nose. His scent made me smile involuntarily. He then moved behind me and hugged me, his arms around my shoulders. Our bodies were so close that I could feel the clear pulse beneath his skin. He seemed thinner than last month.</span>
+        <span class="zh">弗朗西斯的雙手放在我的臉頰上，又慢慢捂住我的耳朵。他的雙掌像一座監獄。我側過頭，用鼻子蹭他的掌心。他的氣味使我不自覺地微笑。他又繞到我身後抱住我，雙手環住我的肩膀。我們的身體貼得如此近，我能感覺到他皮膚下清晰的脈搏。他似乎比上個月更瘦了。</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"Did you not eat while I was busy with the case, Arthur?"</span>
+        <span class="zh">「我忙案件的時候你沒吃東西嗎，亞瑟？」</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">Francis's nose bridge rubbed against the side of my neck. Without words, we understood each other. I opened my sketchbook. Beneath my trembling fingers, the lines rolled like waves of wheat. The sun in its prime, its chilling light like powerful antlers, like twisted tree roots. The pathways of light became the blood vessels throughout my body. I drew a swarm of moths flying into the sun. Francis remained silent, but his gaze followed the tip of my pen, like some secret dance step. I fell into a state of creative delirium. When I stopped, I had drawn four pages. I drew it. I did not draw it. Francis's hand rested on the back of my neck, his fingertips almost touching my carotid artery.</span>
+        <span class="zh">弗朗西斯的鼻梁在我頸側蹭了蹭，不需要言語，我們心意相通。我翻開速寫本。在我顫抖著的手指下，線條像麥浪似的翻滾。正值壯年的太陽，令人膽寒的光芒像強壯的鹿角，又似盤曲的樹根。光的通路變為我全身的血管。我畫了一群飛入太陽中去的飛蛾。弗朗西斯一直沉默不語，但他的目光一直跟隨我的筆尖跳動，如同某種隱秘的舞步。我陷入創作的譫妄狀態。等我停下來的時候，我已經畫了四頁。那是我畫的。那不是我畫的。弗朗西斯的手放在我的後頸上，指尖就快碰到我的頸動脈了。</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"This place is useful to you."</span>
+        <span class="zh">「這裡對你有用。」</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"Mm."</span>
+        <span class="zh">「嗯。」</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">He was silent for a moment.</span>
+        <span class="zh">他沉默了一會兒。</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"But you should go."</span>
+        <span class="zh">「但是你該走了。」</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">I looked up, gazing at the shadow cast by his eyelashes. I wanted to ask him why, but a child ran out of the wooden cabin. The girl's braids were tightly woven, the ends tied with a red string. She stopped before us, hopping like a rabbit.</span>
+        <span class="zh">我仰頭，凝視著他睫毛投下的陰影。我想問他為什麼，一個孩子卻從木屋裡跑出來。那個女孩辮子編得很緊，髮尾繫著一根紅繩子。她停在我們面前，像一隻兔子似的蹦蹦跳跳。</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"What animal are you?"</span>
+        <span class="zh">「你是什麼動物？」</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">I looked at Francis, finding the same bewilderment in his eyes.</span>
+        <span class="zh">我看向弗朗西斯，從他的眼睛裡找出一種同樣的茫然。</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"I don't know."</span>
+        <span class="zh">「我不知道。」</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">The child's eyes brightened. But she suddenly ran off. Francis straightened up and watched the direction the child had run. The man who had helped us return the car yesterday came out of the cabin. He brought us new robes. The material was strange, as soft as silk yet as resilient as linen. When I put it on, it flowed over my body like smoke. Mine was dark blue; Francis's was white. I turned around. Francis was taking off his shirt. His bare back was broad, like some kind of beast.</span>
+        <span class="zh">孩子的眼睛亮了一下。但又突然跑開。弗朗西斯直起身看著那個孩子跑遠的方向。昨天幫我們還車的那個男人從木屋裡出來。他為我們拿來嶄新的長袍。這種料子很奇特，像絲綢一樣柔軟，卻又有亞麻的韌性。當我穿上時，它就像一片煙似的流過我的身體。我的那件是深藍色的，弗朗西斯則是白色的。我回過頭，弗朗西斯正把上衣脫下來。裸露的脊背像某種猛獸般寬大。</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"Why should we go?"</span>
+        <span class="zh">「我們為什麼該走了？」</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">I turned away to tidy up this week. In that instant, Francis had already walked out of the cabin, as if what had just stood there was only an illusion.</span>
+        <span class="zh">我轉過頭去整理這週。而那一剎那，弗朗西斯已經走出屋子，彷彿剛剛站在那兒的只是一陣幻覺。</span>
+    </div>
+
+    <div class="section-break">◇</div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">Dinner was set outside the largest wooden cabin. The cabins here were all round like Eskimo igloos, yet it was impossible to say what style they were. The doors were very low; you had to bend down to enter. The doorframes were carved with those symbols I had seen. The only light source inside came from an iron basin in the centre of the room, where a few pieces of wood burned white. The flames were orange-red like a setting sun, but this place was experiencing the midnight sun, turning the sunset into a distant lie existing only in memory. The red-brown rust on the rim of the iron basin pressed against the colour of the flames; it was impossible to tell where the fire ended and the iron began. The villagers were already seated. No one spoke. Their hands rested on their knees, and they all looked at the fire in unison, saying nothing. The way they gazed was like a form of communication. I was seated beside the old man; the bench made a faint sound like bones rubbing when I sat down. Francis sat opposite me, on the brightest side of the fire. That seat was a little higher than the others, perhaps because he was tall. His shoulders floated out from everyone else's outlines. His face was lit from below by the firelight; the shadows beneath his cheekbones were pushed up above his eyes, turning his eye sockets into two holes. He sat there, back straight, wrists relaxed, fingertips touching fingertips—exactly the posture he used in court. And everyone around him wore animal masks. This scene tightened my throat. We did not wear masks because we had not found our animals. Several girls with the same braids brought in the main course—reindeer meat again, cut into thick slices, drenched in dark red sauce, the juices seeping into the grey-white grain of the meat. I always felt the taste was different from in the city, but I could not say where that aromatic, almost nauseating flavour came from. In the chilling silence, I searched for Francis's eyes. He had barely touched his food again.</span>
+        <span class="zh">晚餐設置在最大的那個木屋門外。這裡的木屋都像愛斯基摩人的冰屋一樣圓，但又說不清是什麼風格。門很低，進去的時候必須彎腰。門框上刻著那些我見過的符號。屋裡唯一的光源來自屋子中央的一隻鐵盆，幾塊木頭燒得發白。火焰橘紅如落日，但這裡正在經歷極晝，使落日變成了一個遙遠的、僅存在記憶裡的謊言。鐵盆的邊緣紅褐色的鏽和火焰的顏色靠在一起，分不清哪裡是火哪裡是鐵。村民已經就座。沒有人說話。他們的手放在膝蓋上，齊刷刷地看著火焰，一言不發。而那種凝視的方式，就彷彿是一種交流。我被安排在那個老人旁邊，條凳坐上去發出細微的、像骨頭摩擦的聲響。弗朗西斯則坐在我對面，火焰最亮的那一側。那個位置比其他人的高出一截，或許是因為他身材高大。他的肩膀從所有人的輪廓裡浮出來。他的臉被火光從下方照亮，顴骨下面的陰影被推到了眼睛上面，眼窩變成兩個洞。他坐在那裡，脊背挺直，手腕放鬆，指尖碰著指尖——和他在法庭上一模一樣的姿勢。而他身邊所有人都戴著動物面具。這副場景讓我的喉嚨發緊。我們沒有戴面具，因為我們沒有找到自己的動物。幾個同樣編辮子的女孩端進來主菜——還是馴鹿肉，被切成厚片，澆著深紅色的醬汁，汁液滲進灰白色的肉紋裡。我總覺得這味道與在城裡時不一樣，但又說不出那種芳香到令人噁心的口感來自何處。我在令人膽寒的沉默中尋找著弗朗西斯的眼睛，他又沒怎麼動食物。</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"Not tasty? I'm sorry."</span>
+        <span class="zh">「不好吃嗎？對不起。」</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">Francis looked at me. His eyes became even more blurred in this question. He smiled at me, and that smile filled my heart with reassurance. I laughed too. In the silence, my laughter was a growing thorn. Then the old man beside me twisted his neck to look at me. The corners of his mouth gradually lifted, and his eyes widened. Then he let out a great, animal-roar-like laugh. His laughter gave everyone the signal; everyone in the room shrieked with laughter. The laughter made my stomach ache terribly.</span>
+        <span class="zh">弗朗西斯看著我。他的眼睛在這句詢問裡變得更模糊了。他對我笑了笑，那笑容使我心中充滿了安心。我也大笑起來，在一片寂靜中，我的笑聲是生長的荊棘。緊接著，坐在我身邊的老人扭過脖子看我，他的嘴角逐漸向上提，眼睛也瞪大了。然後，他發出一陣巨大的、動物吼叫似的笑聲。他的笑給了所有人信號，屋子裡的所有人都尖聲大笑起來。大笑讓我的肚子劇痛無比。</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">That night, as we walked back to the cabin, we heard the sound of the lake. The distant sound of water leaped on the damp grass, like a heart beating beneath the soil. I knelt on the grass and pressed my ear to the ground. The lake water must have been striking the tree roots. The sound of breaking branches was like fire burning.</span>
+        <span class="zh">那天晚上，我們走回木屋時聽到了湖的聲音。遙遠的水聲在濕潤的草地上跳躍，彷彿心臟在泥土下的拍打。我跪在草地上，把耳朵貼近地面。湖水應該是拍在了樹根上。枝杈斷裂的聲音，就如同火在燃燒。</span>
+    </div>
+
+    <div class="section-break">◇</div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">During those days, the first thing I did upon waking was not open my eyes, but listen to Francis's breathing. With my eyes closed, I felt his breath falling evenly, like a small bird flying to my forehead. That was the only way I could wake up with peace of mind. Sometimes he was awake, sometimes asleep. When awake, he would look at me. His eyes, forever holding a melancholy expression, hung in their sockets like two grapes pecked hollow by birds. His gaze kissed me; those kisses were clear and divine, yet empty as nothing.</span>
+        <span class="zh">那些天裡，我醒來的第一件事不是睜眼，是聽弗朗西斯的呼吸。我閉著眼睛，感受他的呼吸均勻地下落，像一隻小鳥似的飛到我的額前。那是我能安心醒來的唯一方式。有時候他醒著，有時候睡著。醒著的時候他會看著我，他永遠帶著憂鬱神色的眼睛掛在眼眶中，像兩顆被鳥啄空的葡萄。他的目光親吻著我，那些吻澄澈含神，又空若無物。</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"You're looking at me again."</span>
+        <span class="zh">「你又在看我。」</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"I should be the one saying that."</span>
+        <span class="zh">「這應該我說。」</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"I woke up first."</span>
+        <span class="zh">「我先醒的。」</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"You look even when you're asleep."</span>
+        <span class="zh">「你睡著的時候也在看。」</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">He let out a laugh. He took my hand and pressed a light kiss to it.</span>
+        <span class="zh">他發出一陣笑聲。拉起我的手，放在唇邊輕吻。</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"Your hand. When you sleep, your hand moves. Like you're drawing."</span>
+        <span class="zh">「你的手。你睡著的時候手會動。像在畫畫。」</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">I looked down at my own hand. The slightly curled fingertips were stained with dried paint. I did not remember when I had gotten it on me.</span>
+        <span class="zh">我低頭看了看自己的手。微微蜷著的指尖上沾著乾掉的顏料。我不記得那是什麼時候弄上的。</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"What are you drawing?"</span>
+        <span class="zh">「你在畫什麼？」</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"I don't know."</span>
+        <span class="zh">「我不知道。」</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"Things from your dreams?"</span>
+        <span class="zh">「夢裡的事？」</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">I thought about it. The question flickered, scattering a layer of scale powder in my memory, like the radiance rising when a moth beats its wings.</span>
+        <span class="zh">我想了想，這個問題閃爍著，在我記憶中撒下一片鱗粉，如同飛蛾振翅時所飄起的光輝。</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"The lake. I'm drawing the lake. But... there seems to be fire too."</span>
+        <span class="zh">「湖。我在畫湖。但是，好像還有火。」</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">The memory of fire. Before arriving here, I had seen scenes of dancing around a bonfire on the website. Now, the villagers were beginning to carry birch wood to the fire pit. The bark had been stripped, revealing smooth, pale wood, piled beside the pit like a stack of bones drying in the sun. The women wove wreaths from willow branches, twined with lilies of the valley, wild roses, and lilacs. At certain moments, on the quiet hillside, someone would start without warning, singing a tune without lyrics. A few syllables like wind sounds, like the cries of birds and beasts, repeating, seeping out from between the cabins, then falling into the soil, receiving the scorching sun. It was a seed that had fallen from the sky. No source, everywhere present. The entire village was an animal parasitised by fungus.</span>
+        <span class="zh">火的記憶。到達此處之前，我在網站上看到過篝火旁跳舞的場景。此時，村民正開始往火坑裡搬白樺木。削去了樹皮，露出光滑蒼白的木質，堆在火坑邊上，像一堆正在晾乾的骨頭。女人們用柳條編花環，纏著鈴蘭、野玫瑰和丁香。某個時段，安靜的山坡上會有人毫無徵兆地起頭，開始唱沒有歌詞的調子。幾個如同風聲，鳥獸叫喊的音節，重複著，從木屋之間滲出來，又落入泥土裡，接受烈日的照耀。那是一顆從天上落下的種子。沒有源頭，無處不在。整個村莊是一隻被真菌寄生的動物。</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">I sat at the door, drawing those birch logs. The paint and paper merged together. I could not draw them. My pen scratched and scratched at the paper, layer after layer of graphite powder piled up, but that was not birch wood. That was not what I saw. I stopped and stared at the pile of wood. Had my body, like layers of overlapping paint, already reached saturation, unable to hold anything more?</span>
+        <span class="zh">我坐在門口，畫那些白樺木。顏料與畫紙融在一起。我畫不出來。我的筆在紙上劃了又劃，鉛粉堆了一層又一層，但那不是白樺木。那不是我看到的东西。我停下筆，盯著那堆木頭。難道我的身體已經如不同疊加的顏料一般趨近飽和，什麼也無法裝下了嗎？</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">Francis walked over and crouched beside me.</span>
+        <span class="zh">弗朗西斯走過來，蹲在我身邊。</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"Can't draw it?"</span>
+        <span class="zh">「畫不出來？」</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"Don't laugh at me. Please."</span>
+        <span class="zh">「別笑我。求你。」</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">He looked for a while.</span>
+        <span class="zh">他看了一會兒。</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"You drew wood. But what you want to draw is fire."</span>
+        <span class="zh">「你畫的是木頭。但你想畫的是火。」</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">His eyes, at this moment, were like that toneless language, drifting in my vision. That violet, like blooming cornflowers, carrying the smell of rust, stabbed into my eye socket like a knife. My body suddenly began to tremble, and tears as thick as blood flowed out.</span>
+        <span class="zh">他的眼睛，此時正如那種沒有調子的語言，在我的視野中飄蕩。那種如盛放的矢車菊般的紫色，帶著鐵鏽氣味，一把刀似的插進我的眼眶。我的身體突然開始顫抖，流出如血般濃稠的眼淚。</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"Francis."</span>
+        <span class="zh">「弗朗西斯。」</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">He reached out, took the sketchbook from my hand, turned to a new page, and placed it back on my knees.</span>
+        <span class="zh">他伸出手，把速寫本從我手裡抽走，翻到新的一頁，放回我的膝蓋上。</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"Draw my eyes."</span>
+        <span class="zh">「畫我的眼睛。」</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">I looked at his eyes. Those two pools of violet sank into bottomless thoughts, like two pieces of glass at the bottom of a lake. I picked up the pen but could not draw the shape. I looked up at him, but quickly averted my gaze, like a needle piercing the skin and quickly pulled out. In the gaze, his hand reached over and held my wrist.</span>
+        <span class="zh">我看著他的眼睛。那兩片紫色沉在深不見底的思緒中，像湖底的兩塊玻璃。我拿起筆卻無法畫出形狀。我抬頭看他，卻很快移開視線，像一根針扎進皮膚又飛快地拔出來。在對視中，他的手伸過來，握住我的手腕。</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"No need to draw. Trust your memory."</span>
+        <span class="zh">「不用畫了。相信你的記憶。」</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">Someone told us not to go near the lake. The lake was not far behind the village, yet no one ever mentioned it. Where the birch forest suddenly parted, the lake and the sky joined into a single cold mirror. The water surface had almost no ripples; the wind only wrinkled the light for a few seconds before escaping from that deathly silence. The lake was huge, so huge that the opposite shore was just a line. Do not go near the lake. But I was walking toward this deep, heavy body of water, like animal bodily fluids. My thoughts were swallowed by the lake, which was why I could draw nothing, only stare at the water surface motionless. The wind carried moisture and the fragrance of distant wildflowers. The more I stared at the lake surface, the more I felt something breathing beneath it. The lake surface exhaled hot, humid vapour; the sound of wind through the leaves was like wailing. I saw countless unsettled souls pressed at the bottom of the lake. These souls were building an underwater Tower of Babel, but this tower had no exit. My fingers began to itch again. I opened my sketchbook and began to draw its colours. Layer after layer of paint stacked, different greys pressed together. Like strata or tree rings, slowly, millimetre by millimetre, crawling upward on my paper. My fingers trembled. Francis said nothing. He just stood beside me, shoulder against shoulder. His body temperature—at this moment, like the lake's temperature—was silent. When I stopped, I was drenched in sweat, soaked all over. Like someone who had a high fever and then jumped into a glacier. Francis supported my arm with one hand. He leaned sideways against a rock, and I leaned against his shoulder. I watched the lines of our bodies pressed together, rising and falling before my eyes.</span>
+        <span class="zh">有人告訴我們不要靠近湖。湖就在村莊的後面不遠處，卻從沒有人提起。在白樺林突然分開的地方，湖與天空連成一整面冰冷的鏡子。水面幾乎沒有波紋，風只把光線揉皺幾秒，又從這種死亡般的寂靜中逃出去。湖很大，大到對岸只是一條線。不要靠近湖。但我正在走向這片幽深沉重，如動物體液一般的水體。我的思緒被湖吞噬，因此什麼也畫不出來，只能看著湖面一動不動。風帶著水汽和遠處野花的香味襲來。我越是盯著湖面，越覺得有東西正在底下呼吸。湖面吐出濕熱的水汽，風穿過樹葉的聲音宛如哭號。我看見湖底擠壓著無數個無處安放的靈魂。這些靈魂在建造一座水下巴別塔，但這座塔沒有出口。我的手指又開始發癢。我翻開速寫本，開始畫它的顏色。顏料一層一層疊加上去，不同的灰度壓在一起。如同地層或年輪，在我的畫紙上緩慢地、一毫米一毫米地向上生長爬行。我的手指在發抖。弗朗西斯沒有說話。他只是站在我身邊，肩膀貼著我的肩膀。他的體溫——此時正如湖的體溫，寂靜無聲。等我停下來的時候，我大汗淋漓，渾身濕漉漉的。彷彿一個發了高燒，又跳進冰川的人。弗朗西斯用一隻手扶住我的胳膊，他斜著身子靠在一塊石頭上，我靠著他的肩膀。我看著我們身體的線條貼在一起，在我眼前起伏。</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"Francis."</span>
+        <span class="zh">「弗朗西斯。」</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"Mm."</span>
+        <span class="zh">「嗯。」</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"Do you think I belong here?"</span>
+        <span class="zh">「你有沒有覺得我屬於這裡？」</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">He did not answer immediately. He was silent for so long that I thought he would not answer. The wind blew his hair.</span>
+        <span class="zh">他沒有立刻回答。他沉默了很久，久到我以為他不會回答了。風從吹動了他的頭髮。</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"I think this place belongs to you."</span>
+        <span class="zh">「我覺得這裡屬於你。」</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">Could not draw it. Could not draw it. I tore out page after page; the paper scraps fell on the rocks and were carried away by the wind. Francis sat beside me, sometimes with his eyes closed, sometimes watching me. His hand occasionally touched the back of my hand, reminding me he was still there. The light changed from grey-white to pale gold, then from pale gold back to grey-white. Dozens of pages had been torn from my sketchbook. Not a single villager approached us; the village was still asleep. But dozens of eyes grew in the forest. I could not describe the feeling of catching living things with my body. That feeling would not disappear, but my eyes would. My eyes would get used to it, and then I would never see it again. I had to draw it while I could still see it. Later, I remembered the severed limb that had been stuck in my wheel at the beginning of the journey. Who would murder a deer? My throat remembered the taste of reindeer meat, and the tooth marks and fresh blood on the severed deer leg echoed in my vision. I trembled again.</span>
+        <span class="zh">畫不出來。畫不出來。我撕掉了一頁又一頁，紙屑落在石頭上，被風捲走。弗朗西斯坐在我身邊，有時候閉著眼睛，有時候看著我。他的手偶爾碰一下我的手背，提醒我他還在。光線從灰白色變成淺金色，又從淺金色變回灰白色。我的速寫本被撕掉了十幾頁。沒有一個族人靠近我們，村莊還在沉睡。但森林裡生長出幾十隻眼睛。我說不上來那種用身體捕捉到活物的感覺，那種感覺不會消失，但我的眼睛會。我的眼睛會習慣它，然後我就再也看不到它了。我必須在我還能看到的時候畫下來。後來，我想起那隻在旅途開始時卡在我車輪裡的斷肢。有誰會謀殺一隻鹿？我的喉嚨回憶起馴鹿肉的滋味，而鹿斷肢處的齒痕與鮮血在我視野中迴盪。我又顫抖起來。</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">Francis took my hand away from the sketchbook, placed his fingers in my palm, and closed my hand.</span>
+        <span class="zh">弗朗西斯把我的手從速寫本上拿開，把他的手指放進我的手心裡，然後合上我的手。</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"Close your eyes."</span>
+        <span class="zh">「閉上眼睛。」</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">Through the fabric, he pressed his palm against my left chest, treating my trembling as a special kind of evidence. I could feel him looking at me, trying to find something in my eyes, but I kept them closed.</span>
+        <span class="zh">隔著衣服，他將掌心貼在我的左胸，將我的顫抖視作一種特別的證據。我能感受到他在看我，試圖從我的眼中找出什麼東西，但我閉著眼睛。</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"Do you know how a lion judges whether its prey is still alive on the savannah? Not by heartbeat or breathing. By the eyes. When the prey stops fleeing, something disappears from its eyes. Not fear—fear is always there. It's direction. They don't know where they're going, where they belong, what their fate is. At the end of life, we are all pitiful lost travellers."</span>
+        <span class="zh">「你知道在草原上，獅子怎麼判斷獵物是否還活著嗎？不是看心跳和呼吸。是看眼睛。當獵物不再逃跑的時候，它的眼睛裡會有一個東西消失。不是恐懼消失——恐懼一直在。是方向。它們不知道自己要去哪，屬於何處，不知道自己的命運。在生命的最後，我們都是可憐的迷路人。」</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">I once asked him what was different about the eyes of murderers.</span>
+        <span class="zh">我曾經問過他殺人犯的目光與他人有什麼不同。</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"My clients' eyes cannot see direction. So when they look at me, they are not seeking help. They want to find someone who still has direction, to confirm that it once existed."</span>
+        <span class="zh">「我的當事人眼睛裡看不見方向。所以他們看我的時候，不是在尋求幫助。他們是想找一個還有方向的人，確認它曾經存在過。」</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"Is that thing still in your eyes?"</span>
+        <span class="zh">「那你的眼睛裡還有那個東西嗎？」</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">He laughed.</span>
+        <span class="zh">他笑了一下。</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"In my eyes, the lion is yawning."</span>
+        <span class="zh">「我的眼睛裡獅子在打哈欠。」</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">He lowered his head and kissed my forehead, like a kiss left by the lake water. I saw the light of the villagers' torches and pulled him back to the cabin. That night, I woke once. Something dragged me out of sleep. Light leaked through the gap in the curtains, exactly the same as daytime. I turned my head. Francis was not in bed. I sat up. My heart beat heavily, as if pounding a drum. It was not the first time he had been gone. He would come back. I put on my shoes and walked to the yard. Daylight spilled over the ring-shaped cabins. Beside the central fire pit. Francis stood by the fire pit. His back was to me. He had rolled up the sleeves of his robe to his forearms, revealing wrists covered in leaf-vein-like blue vessels. I walked over. He was crying. Tears slid from the corners of his eyes, along the lines of his cheeks, to his chin, dripping onto the ground. There was no sound.</span>
+        <span class="zh">他低下头親了親我的額頭，像湖水留下的一個吻。我看到村人火把的光，拉著他逃回木屋。那天晚上，我醒來了一次。有什麼東西把我從睡眠裡拖了出來。光線從窗簾的縫隙漏進來，和白天一模一樣。我轉過頭。弗朗西斯不在床上。我坐起來。心跳得很重，像在用力敲一面鼓。他不是第一次不在。他會回來的。我穿上鞋，走到院子裡。日光灑在環形木屋上。中央的火坑邊上。弗朗西斯站在火坑旁邊。背對著我。他把長袍袖子挽到小臂，露出佈滿葉脈似的青筋的手腕。我走過去。他在哭。眼淚從他的眼角滑下來，沿著臉頰的紋路，流到下巴，滴在地上。沒有聲音。</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"What's wrong?"</span>
+        <span class="zh">「怎麼了？」</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"I had a dream. I dreamed I died."</span>
+        <span class="zh">「我做了一個夢。我夢見我死了。」</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">The wind stopped. Tears left two glowing trails on his cheekbones.</span>
+        <span class="zh">風停了，眼淚在他的顴骨上留下兩道發光的痕跡。</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"You're not dead. You're here."</span>
+        <span class="zh">「你沒有死，你在這裡。」</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"I'm not dead. I'm here."</span>
+        <span class="zh">「我沒有死，我在這裡。」</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">For some reason, I pulled him running toward the lake. Pebbles left blood marks on the soles of my feet; I did not notice I was not wearing shoes. Later, it became Francis running ahead of me. He walked into the water. The water passed his ankles, his calves, his knees. He did not stop. When the water reached his thighs, I called his name. His face was like a painting fading. Only his eyes remained thick, impossible to dilute. He reached out to me. I jumped into the water like a teenager taking a courage test, walked up to him, and took his hand. He placed my other hand on his shoulder and put his arm around my waist. We began to turn slowly. Our only accompaniment was the wind, the water, and the sound of our feet on the stones. Amid the colourless everything, his eyes held the last lustre before shattering.</span>
+        <span class="zh">不知道為什麼，我拉著他跑向湖水。石子在我腳底留下血痕，我沒有注意到自己沒穿鞋。後來，變成弗朗西斯跑在我前面。他走進水裡。水沒過他的腳踝，沒到他的小腿，沒到他的膝蓋。他沒有停下來。水沒到他的大腿的時候，我叫了他的名字。他的臉像一幅正在褪色的畫。只有眼睛依舊濃得化不開。他朝我伸出手。我像個參加試膽的青少年似的跳進水中，走到他面前，握住他的手。他把我的另一隻手放在他的肩上，環過我的腰。我們開始慢慢地轉圈。我們的伴奏只有風和水聲，以及我們踩在石頭上的腳步聲。在無色的萬物中間，他的眼睛帶著碎掉之前最後的光澤。</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">We turned until we were exhausted. His eyes unknowingly lost their lustre. I suddenly lowered my head. Only my reflection was on the lake surface. He stood before me, his arm around my waist, his hand holding mine, his breath falling on my forehead—but on the lake surface, there was only me. I stood there, arms slightly extended forward, as if embracing someone who did not exist. Toes lifted, centre of gravity tilted to one side, performing a paused dance step.</span>
+        <span class="zh">我們轉得不知疲倦，他的眼睛在不知不覺中失去光彩。我猛地低下了頭。湖面上只有我的倒影。他站在我面前，他的手臂環著我的腰，他的手握著我的手，他的呼吸落在我的額頭上——但湖面上只有我一個人。我站在那裡，雙臂微微向前伸著，像在擁抱一個不存在的人。腳尖踮起，重心歪向一側，進行著一個被暫停的舞步。</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"You saw it."</span>
+        <span class="zh">「你看到了。」</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">I opened my mouth. It felt like a piece of ice was stuck in my throat. The wind blew, moving the hair on his forehead.</span>
+        <span class="zh">我張了張嘴。喉嚨裡像卡著一塊冰。風吹過來，吹動了他額前的頭髮。</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">If I accepted it, I would stop. I would turn around and go home. And then I would be alone in that apartment, drawing things I did not want to draw, eating food whose taste I could not detect, sleeping in a bed where half of it would forever be empty. I turned around and started running. The lake water exploded beneath my feet; my calves were covered in wounds, hurting as if burned by fire. I did not look back. I ran over stones, over soft mud, over the birch forest. Branches scraped my face; I did not stop. I ran into the village, past those bright yellow cabins, past the central fire pit.</span>
+        <span class="zh">如果我接受了，我就會停下。我就會掉頭回家。然後我就會一個人待在那間公寓裡，畫那些我不想畫的東西，吃那些我嘗不出味道的食物，睡在那張半張床永遠空著的床上。我轉過身，開始跑。湖水在我腳下炸開，我的小腿遍佈傷口，疼得像被火灼燒過。我沒有回頭。我跑過石頭，跑過軟泥，跑過白樺林。樹枝刮過我的臉，我沒有停下來。我跑進村莊，跑過那些明黃色的木屋，跑過中央的火坑。</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">At this moment, all the villagers stood in front of the wooden cabins. Everyone wore an animal mask. Deer, bear, wolf, fox, eagle. The faces of real animals. Fur, eyes, nostrils, lips. They looked at me. All the eyes looked at me. The old man stepped out of the crowd. He wore a deer mask.</span>
+        <span class="zh">此時，所有的村民都站在木屋前面。每個人都戴著動物的面具。鹿，熊，狼，狐狸，鷹。真正的動物的臉。皮毛，眼睛，鼻孔，嘴唇。它們看著我。所有的眼睛都看著我。那個老人從人群中走出來。他戴著鹿的面具。</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"You know now."</span>
+        <span class="zh">「你知道了。」</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"Where is he?"</span>
+        <span class="zh">「他在哪裡？」</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"From beginning to end, there was only you."</span>
+        <span class="zh">「自始至終，只有你一個。」</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">I ran into every cabin, lifted every bed, opened every cabinet. I ran past every birch tree, every stone. I shouted his name until my throat was hoarse, until my voice became something I did not recognise. I did not find him. No clothes, no hair, no bloodstains. I sat down by the fire pit and buried my face in my knees.</span>
+        <span class="zh">我跑進每一間木屋，掀開每一張床，打開每一隻櫃子。我跑過每一棵白樺樹，每一塊石頭。我喊他的名字，喊到喉嚨啞了，喊到聲音變成一種我不認識的東西。我沒有找到他。沒有衣服，沒有頭髮，沒有血跡。我坐在火坑邊上，把臉埋進膝蓋裡。</span>
+    </div>
+
+    <div class="section-break">◇</div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">I remember the day he defended that ordinary man. It was an ordinary day. We had breakfast as usual. I burned the toast; he ate my portion. Before leaving in the morning, Francis stood at the door. If there was anything unusual, it was that we shared a long kiss that day.</span>
+        <span class="zh">我記得他為那個普通的男人辯護的那一天。那是一個普通的一天。我們一如既往地共進早餐，我烤焦了麵包，他把我那部分吃掉了。早上出門之前，弗朗西斯站在門口。如果非要說有什麼不尋常的，那就是這天我們進行了長久的親吻。</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"I might be late today."</span>
+        <span class="zh">「我今天可能會晚點回來。」</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"Goodbye."</span>
+        <span class="zh">「再見。」</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">Was that the last thing I said to him? The door closed. I stood in the studio, trying to find inspiration I had not seen for a long time. I did not look at him one last time. In the afternoon, the phone rang. I only felt irritated, so I did not answer. It rang again. I still did not answer. The third time, a stranger said many things. I could not understand. I knew every word, but put together, I could not understand. Was he speaking Finnish? A sound came through the phone. A lower, deeper sound, like something being crushed. I did not know that was my voice. I thought it was noise from the phone. Just as I did not know that the first two calls were also from Francis. If I had answered. If I had not distracted him. If he could have gotten in the car earlier. If any variable were added here.</span>
+        <span class="zh">這是我跟他說的最後一句話嗎？門關上了。我站在畫室裡，試圖找尋許久沒見的靈感。我沒有看他最後一眼。下午電話響了，我只覺得煩躁，因此沒接。它又響了。我依舊沒接。第三次，一個不認識的人說了很多話。我聽不懂。每一個字我都認識，但連在一起我聽不懂。他說的是芬蘭語嗎？電話裡傳來一種聲音。是一種更低的、更沉的、像什麼東西被壓碎的聲音。我不知道那是我的聲音。我以為那是電話裡的噪音。就像我不知道前兩次電話都是弗朗西斯打的一樣。如果我接了電話。如果我沒有使他分神。如果他能早一些上車。如果在這裡增加任何一個變量。</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">I hung up the phone. I did not have the strength to go to the morgue. I just sat in the studio for a whole day. The sky darkened. The sky brightened again.</span>
+        <span class="zh">我掛了電話。我沒力氣去停屍房。我只是坐在畫室裡坐了一整天。天黑了。天又亮了。</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">When a lion falls, the head is the last thing to touch the ground. This is important. This is too important. The body surrenders first. The suit, the tie, the briefcase, all the things he had spent half his life putting on, scrambled to leave him. But the head did not. That was his animal instinct, something older, written in the bones—the lion's head does not touch the ground before the body.</span>
+        <span class="zh">獅子倒下的時候，頭顱是最後一個著地的。這很重要。這太重要了。身體先投降。西裝、領帶、公文包、那些他花了半輩子穿上去的東西，爭先恐後地離開他。但頭沒有。那是他作為動物的本能，某種更古老的、寫在骨頭裡的東西——獅子的頭顱不先於身體著地。</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">I stared—I imagined that image over and over. I was waiting for the lion to close its eyes. But the lion did not. I could not see the closing motion. The lion's eyes remained open, from the first frame of falling to the last, always open. He was looking in a direction I could not enter. He was looking at the savannah. The lion's savannah—the one that had already begun to recede while Francis was still alive, receding another inch with every defense he made. The gun did not kill the lion. It opened the door to the savannah for the lion. Only the door opened too quickly, too quickly for the lion to tell anyone—the savannah had already dried up. It had dried up long ago.</span>
+        <span class="zh">我盯著——我想像著那個畫面看了一遍又一遍。我在等獅子閉上眼睛。但獅子沒有。我看不見閉的動作。獅子的眼睛一直睜著，從倒下的第一幀到最後一幀，一直睜著。他望著我進不去的方向。他望著草原。獅子的草原——那個在弗朗西斯還活著的時候就已經開始消退、在每一次說出辯護時又消退一寸的草原。槍沒能把獅子殺死，而是為獅子打開了回草原的門。只是這門開得太快了，快到獅子來不及告訴任何人——草原已經乾涸了。早就乾涸了。</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">So the lion fell on the concrete at the courthouse entrance, eyes open, head held high. It thought it was running toward the savannah. It did not know that was a parking lot.<a href="#fn5" class="footnote-link" id="ref5"><sup>⑤</sup></a></span>
+        <span class="zh">所以獅子倒在法庭門口的水泥地上，眼睛睜著，頭顱高昂。它以為自己正跑向草原。它不知道那是停車場。<a href="#fn5-zh" class="footnote-link" id="ref5-zh"><sup>⑤</sup></a></span>
+    </div>
+
+    <div class="section-break">◇</div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">My tears dripped onto the ashes, like rain on dry soil. I heard the forest weeping. Every tree, every leaf, every pine needle. A thousand throats sighing at once. The entire forest was crying. The sound of weeping reached the villagers, and the villagers wept with it, just as they had laughed with me at dinner that night.</span>
+        <span class="zh">我的眼淚滴在灰燼上，像雨打在乾土上。我聽到了森林的哭聲。每一棵樹，每一片葉子，每一根松針裡傳來的。一千個喉嚨同時發出嘆息。整個森林都在哭。那陣哭聲傳到村人面前，村人也跟著一起哭，正如那天晚餐他們跟著我一起笑。</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"Moth."</span>
+        <span class="zh">「飛蛾。」</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">I was always a moth, only temporarily wearing a human body.</span>
+        <span class="zh">我本來就是飛蛾，只是暫時穿著人的身體。</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"Fire will give it back to me. My lion. My dream. Fire will give them all back to me."</span>
+        <span class="zh">「火會把它還給我。我的獅子。我的夢。火會把它們都還給我。」</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">The reindeer walked up to me. He held a wreath in his hand—woven from willow branches, twined with lilies of the valley, wild roses, and lilacs. He placed it around my neck. The petals touched my carotid artery. Cold and wet, like a kiss from the dead. The villagers began to sing. At first, a low song, like a heartbeat. Then it became high and clear, singing of summer and all living things. The song came from every throat at once, like the breathing of a single person.</span>
+        <span class="zh">馴鹿走到我面前。他手裡拿著一隻花環——柳條編的，纏著鈴蘭、野玫瑰和丁香。他把它戴在我的脖子上。花瓣碰到了我的頸動脈。冰冷濕潤，如同死者的親吻。村民開始唱歌。一會兒是低沉、像心跳一樣的歌。一會兒又十分高亢，他們歌唱著夏天與一切生物。歌聲從每一個喉嚨裡同時出來，像同一個人的呼吸。</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">The rabbit raised a lit birch branch and walked toward the fire pit. He thrust it into the gap in the woodpile and paused. The flames leaped up, orange-red like a setting sun. I smelled the breath of the sun. I heard the language of the sun. I saw the dance of the sun, every beat saying:</span>
+        <span class="zh">兔子舉起一根點燃的白樺枝，走向火坑。他伸進柴堆的縫隙裡，停了一下。火焰竄起來了，橘紅色的火光就像落日。我聞見太陽的呼吸。我聽到了太陽的語言。我看見太陽的舞蹈，每一次跳動都在說：</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">Come. Come. Come.</span>
+        <span class="zh">來。來。來。</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">I walked toward the fire pit, barefoot on the stones. The villagers parted to make a path, like the birch forest suddenly widening at the end. They watched me. I walked to the edge of the fire pit. The flames licked my face. I turned my head and looked behind me. Yellow cabins, grey sky, villagers wearing animal masks. The red string on the rabbit's braid. Francis. He was not there. But he had always been there. I stepped in.</span>
+        <span class="zh">我向火坑走去，赤腳踩在石頭上。村民分開一條路，像在盡頭突然分大的白樺林。他們看著我。我走到火坑邊。火焰在舔我的臉。我轉過頭，看了看身後。黃色的木屋，灰色的天空，戴著動物面具的村民。兔子辮子上的紅繩。弗朗西斯。他不在那裡。但他一直在那裡。我跨了進去。</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">The flames swallowed my ankles, stripping away the reality of my body piece by piece—my shoes, my clothes, my skin, my name. The fire rose like water to my knees. To my thighs. To my waist. It was incomparably warm, the same warmth as a certain person's body a long time ago.</span>
+        <span class="zh">火焰吞沒我的腳踝，把我身上的現實性一件一件地脫掉——我的鞋，我的衣服，我的皮膚，我的名字。火焰如水一般沒到我的膝蓋。沒到我的大腿。沒到我的腰。它無比溫暖，和很久以前一個人的體溫一樣。</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">The flames rose to my chest. I looked up. Above the flames, the sky had turned another colour—a transparent, luminous, wing-like colour. With my instinct, I saw the moth unfolding its grey-white wings in the fire, the same colour as the sky. Then I saw the lion. It stood at the edge of the fire pit. Dark brown mane, glittering gold in the firelight. Its eyes were like a blooming field of cornflowers. It looked at me. I could read no sorrow or farewell in them. His eyes were simply looking at a lake.</span>
+        <span class="zh">火焰沒到我的胸口。我抬起頭。天空在火焰的上方變成了另一種顏色——一種透明的、發光的、像翅膀一樣的顏色。我用我的本能看見飛蛾在火焰裡展開灰白色的翅膀，和天空一樣的顏色。然後我看見了獅子。它站在火坑邊上。深棕色的鬃毛，在火光裡金光爍爍。它的眼睛像怒放著的矢車菊花海。它看著我。我讀不出任何的悲傷或告別，他的眼睛只是看著一面湖水。</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">The flames rose to my neck. I reached out, begging for the lion's embrace. The lion did not respond to me. It just stood there, looking at me with those eyes. Then it turned and walked into the flames. I followed behind it. The flames swallowed me.</span>
+        <span class="zh">火焰沒到我的脖子。我伸出手乞求獅子的懷抱。獅子沒有回應我。它只是站在那裡，用那雙眼睛看著我。然後它轉過身，走進了火焰。我跟在它後面。火焰吞沒了我。</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">Fire, water, light.</span>
+        <span class="zh">火，水，光。</span>
+    </div>
+
+    <!-- 註釋分割線 -->
+    <hr class="divider">
+
+    <!-- 註釋部分 -->
+    <div class="footnote">
+        <div class="footnote-item" id="fn1">
+            <span class="en"><a href="#ref1" class="footnote-link">①</a> Rovaniemi is located within the Arctic Circle and is the fifth-largest city in Finland. It is widely recognised as the hometown of Santa Claus.</span>
+            <span class="zh"><a href="#ref1-zh" class="footnote-link">①</a> 羅瓦涅米（Rovaniemi）位於北極圈內，也是芬蘭的第5大城市。廣泛認可的聖誕老人故鄉。</span>
+        </div>
+        <div class="footnote-item" id="fn2">
+            <span class="en"><a href="#ref2" class="footnote-link">②</a> Lake Inari is located in the Lapland region of Finland, north of the Arctic Circle.</span>
+            <span class="zh"><a href="#ref2-zh" class="footnote-link">②</a> 伊納里湖（Inarijärvi），位於芬蘭拉普蘭區，在北極圈以北。</span>
+        </div>
+        <div class="footnote-item" id="fn3">
+            <span class="en"><a href="#ref3" class="footnote-link">③</a> The Sámi are the indigenous people of the Lapland region in northern Finland. Before the arrival of European colonisers, the Sámi had lived on this land known as Sápmi for thousands of years. Their traditional livelihoods centred on reindeer herding, fishing, and hunting; the reindeer thus became the most important symbol in their culture. Sámi culture has a pronounced animistic character. They believe all things have spirits. Natural objects—specific rocks, mountains, lakes, ancient trees—are believed to house deities called "Sieidi," where people make sacrifices for blessings. The sacrifices are usually game animals, or red liquid boiled from alder bark smeared on sacred stones. Red represents the flow of life and also return. Their shamans (Noaidi) use a decorated shamanic drum, the surface of which is painted with the three-layered structure of the cosmos. The shaman enters a trance by drumming, causing the soul to leave the body and travel through different worlds in animal form. The Sámi do not believe the soul necessarily resides in the body. After death, the soul continues to exist in the land of the community in the form of animals, wind sounds, or dreams. The Sámi call themselves "children of the sun." The sun symbol is the most common pattern on shamanic drums and the core of summoning power in healing rituals. Today, the Sámi are one of the oldest surviving indigenous peoples in Europe, with a total population of about 80,000, scattered across Norway, Sweden, Finland, and the Kola Peninsula in Russia. In Finland, the Sámi are a legally protected indigenous people with their own parliament and cultural autonomy. But historically, they have long suffered colonisation, forced Christianisation, language bans, and land dispossession. Today, there are about 9,000 to 10,000 Sámi in Finland. The Sámi and Christianity. From the 17th century onward, the Swedish-Finnish kingdom and the Russian Empire imposed forced Christianisation on the Sámi region. Shamanic drums were burned, sacred stones destroyed, sacred trees felled, shamans arrested, fined, exiled, or even executed. Churches were deliberately built on former sacred sites to cover the traces of the old gods. The Sámi language was excluded from the sacred domain; religious rituals were conducted in Finnish or Swedish. The word of God replaced the word of the forest. But like many forcibly Christianised indigenous peoples, the Sámi retained the skeleton of their old beliefs beneath a surface conversion. Go to church on Sunday, still sacrifice to the sacred stone on Monday. This "dual faith" lasted for centuries, until the 20th century. Today, Sámi Christian belief and their tradition are not necessarily opposed. Many Sámi Christians incorporate shamanic elements into their own churches: shamanic drums replace organs, reindeer antlers are placed on both sides of the altar, sun symbols are embroidered on vestments, juxtaposed with the cross. This is not "heresy," but a way for the oppressed to reclaim their narrative. To tell their own story in the language of the conqueror. But in isolated, more ancient villages, this fusion may move in another direction. There, the two faiths do not coexist peacefully, but slowly, chaotically, unnoticed, devour each other. The sun symbol and the cross grow together; reindeer antlers and the Madonna hang on the same pillar. Fire is no longer merely a symbol of the Holy Spirit—it is the Holy Spirit itself. Entering the fire is not death, but going home. No one knows when this mixture began. Perhaps from the day the first church was built on sacred ground. Perhaps earlier.</span>
+            <span class="zh"><a href="#ref3-zh" class="footnote-link">③</a> 薩米人（Sámi）芬蘭北部拉普蘭地區的原住民。在歐洲殖民者到來之前，薩米人已在這片被稱為「薩米地區」（Sápmi）的土地上生活了數千年。他們的傳統生計以馴鹿放牧、捕魚和狩獵為核心，馴鹿因此成為其文化中最重要的象徵。薩米文化具有顯著的泛靈論特徵。他們相信萬物有靈。自然物——特定的岩石、山體、湖泊、古樹——被認為寄居著神靈，稱為「Sieidi」，人們在此獻祭以求庇佑。獻祭的祭品通常是獵物，或用赤楊樹皮熬煮的紅色汁液塗抹於聖石之上。紅色代表生命的流動，也代表歸還。他們的薩滿（Noaidi）使用一種飾有圖案的薩滿鼓，鼓面上繪有宇宙的三層結構。薩滿通過擊鼓進入出神狀態，使靈魂脫離身體，化作動物形態穿行於不同世界。薩米人不認為靈魂必然居於肉身之中。人死後，靈魂會以動物、風聲或夢境的形式繼續存留於共同體的土地之上。薩米人自稱「太陽之子」。太陽符號是薩滿鼓上最常見的圖案，也是治癒儀式中召喚力量的核心。如今，薩米人是歐洲現存最古老的原住民族之一，總人口約八萬，散佈在挪威、瑞典、芬蘭和俄羅斯的科拉半島。在芬蘭，薩米人是受法律保護的原住民，擁有自己的議會和文化自治權。但在歷史上，他們長期遭受殖民、強迫基督教化、語言禁止和土地剝奪。如今，芬蘭約有九千至一萬名薩米人。薩米人與基督教。從17世紀開始，瑞典-芬蘭王國和俄羅斯帝國對薩米地區推行強制基督教化。薩滿鼓被焚毀，聖石搗毀，聖樹被砍倒，薩滿被逮捕、罰款、驅逐甚至處決。教堂被刻意修建在原來的聖地上，以覆蓋舊神的痕跡。薩米語被排斥出神聖領域，宗教儀式改用芬蘭語或瑞典語。上帝的言語取代了森林的言語。但與許多被強制基督教化的原住民一樣，薩米人在表面的皈依之下，保留了舊信仰的骨骼。週日去教堂，週一仍然向聖石獻祭。這種「雙重信仰」持續了數百年，直至20世紀。如今，薩米人的基督教信仰與他們的傳統並不必然對立。許多薩米基督徒會在自己的教堂裡融入薩滿元素：薩滿鼓替代管風琴，馴鹿角置於祭壇兩側，太陽符號被繡在祭袍上，與十字架並置。這不是「異端」，而是被壓迫者奪回敘事的方式。用征服者的語言，講述自己的故事。但在與世隔絕的、更古老的村落裡，這種融合可能走向另一個方向。在那裡，兩種信仰並非和平共處，而是緩慢地、混亂地、無人察覺地彼此吞噬。太陽符號與十字架長在了一起，馴鹿角與聖母像掛在同一根柱子上。火不再只是聖靈的象徵——它就是聖靈本身。進入火焰不是死亡，是回家。沒有人知道這種混合始於何時。也許是從第一座教堂建在聖地上的那一天開始的。也許更早。</span>
+        </div>
+        <div class="footnote-item" id="fn4">
+            <span class="en"><a href="#ref4" class="footnote-link">④</a> The author uses "Sniffy" in English. But it felt slightly abrupt in English, so it was translated.</span>
+            <span class="zh"><a href="#ref4-zh" class="footnote-link">④</a> 作者用英語Sniffy。但感覺英語略顯突兀，遂翻譯。</span>
+        </div>
+        <div class="footnote-item" id="fn5">
+            <span class="en"><a href="#ref5" class="footnote-link">⑤</a> The system of defending murderers. The US Supreme Court established in Gideon v. Wainwright (1963) that for all criminal defendants who may be sentenced to imprisonment, if they cannot afford a lawyer, the state must provide one free of charge. Before that, Powell v. Alabama (1932) had already established the responsibility of the government to appoint defence counsel for poor defendants in capital cases. In that context, if a defendant accused of murder could not afford a lawyer, the court had to appoint one. This means that within the Western legal framework, appointing defence counsel for murderers is not an exception, but a constitutional obligation. Regarding capital cases, take Georgia's Indigent Defence Act as an example. It establishes qualification standards for appointed counsel in capital cases, requiring that the lead defence counsel in a capital case must meet specific experience, training, and competence requirements. In capital cases, the defence counsel appointed by the government is not "randomly assigned," but "meets strict qualification requirements." These lawyers are usually senior criminal defence attorneys with extensive experience in capital defence. In the German legal system, there is a similar institution of necessary defence (Notwendige Verteidigung). Under certain circumstances, a defence counsel must participate in criminal proceedings, including: cases handled at first instance by the Higher Regional Court or the lay judges' court, cases involving charges of felony, cases in pre-trial detention with serious suspicion, etc. In cases of necessary defence, even if the defendant does not apply, the court shall appoint a duty defence counsel ex officio. However, defence counsel in capital cases needs to meet specific qualification standards—usually requiring a certain number of years of criminal defence experience and a certain number of felony or capital case experiences. Similarly, the number of lawyers qualified to defend capital cases is very limited; in some regions, "specialised capital defence lawyers" are a small and closed group. In the public defender system, case assignment is internal. If Francis was systematically assigned to murder cases, perhaps he was trusted to handle the most complex cases—or, as Francis might have realised, he had been "domesticated," becoming part of the system. At the same time, the author believes that the "appointed counsel" system in Western legal systems is noble at the ideal level. But in practice, it produces a kind of schizophrenia. The lawyer's duty is not to "prove the client innocent," but to ensure the fairness of the procedure—to ensure that if the client is to be sentenced to death, it is the conclusion reached after a lawful process. But in the eyes of the public and the victims' families, this lawyer "speaks for murderers." He is a traitor, a moral monster, a person more hateful than the criminal himself. The more professional, serious, and effective he is, the deeper the public's hatred. Francis chose this profession, or this profession chose him. He wears this skin to enter the courtroom, cite precedents, cross-examine. But beneath this skin, the lion has learned to walk in a cage, from one end to the other, and back again. This is a learned stereotyped behaviour. When the victim's family raised the gun, what they saw was not Francis, not a person, not even a lawyer. What they saw was the system itself. A cold, murderer-serving machine of which he was a screw, indifferent to their pain.</span>
+            <span class="zh"><a href="#ref5-zh" class="footnote-link">⑤</a> 為殺人犯辯護的制度。美國聯邦最高法院在Gideon v. Wainwright (1963) 案中確立了對於所有可能被判處監禁的刑事被告人，如果其無力聘請律師，州政府必須為其免費提供律師。在此之前，Powell v. Alabama(1932)案已經確立了死刑案件中政府為貧窮被告人委派辯護人的責任。在當時的語境下，被指控謀殺罪的被告人如果無力聘請律師，法院必須為其指定律師。這意味著在西方的法律框架下，為殺人犯指定辯護律師不是例外，而是憲法義務。針對死刑案件，以佐治亞州的《貧困辯護法》為例。其確立了死刑案件中指派律師的資格標準，要求擔任死刑案件首席辯護律師的律師必須滿足特定的經驗、培訓和能力要求。在死刑案件中，政府安排的辯護律師不是「任意指派的」，而是「符合嚴格資質要求的」。這些律師通常是資深刑辯律師，擁有豐富的死刑辯護經驗。在德國法律體系中，存在類似的必要辯護（Notwendige Verteidigung）。在特定情形下，必須有辯護人參與刑事程序，包括：由州高等法院或參審法庭負責一審的案件、被指控重罪的案件、待審羈押中且存在重大嫌疑的案件等。在必要辯護的情形下，即使被告人未申請，法院也應當依職權為其指派一名義務辯護人。但是，死刑案件的辯護律師需要滿足特定的資格標準——通常要求有一定年限的刑事辯護經驗、一定數量的重罪或死刑案件經歷。同樣，具備死刑案件辯護資質的律師數量非常有限，在某些地區，「專業死刑辯護律師」是一個小而封閉的群體。在公設辯護人系統中，案件指派是內部進行的。如果弗朗西斯被系統地指派到殺人案件中，可能他被信任他處理最複雜的案件——或者，正如弗朗西斯可能會意識到的，他已經被「馴化」了，成為了這套系統的一部分。同時，作者認為西方法律體系的「指派律師」制度在理想層面是高尚的。但在實踐中，它產生了一種精神分裂。律師的職責不是「證明當事人無罪」，而是確保程序的公正性，即確保如果當事人要被判死刑，那是經過合法程序之後得出的結論。但在公眾以及受害者家屬眼中，這個律師「在為殺人犯說話」。他是一個叛徒，一個道德上的怪物，一個比罪犯本人更可恨的人。他越專業、越認真、越有效，公眾的仇恨就越深。弗朗西斯選擇了這個職業，或者這個職業選擇了他。他穿著這層皮出入法庭、引用判例、交叉質證。但這層皮下面，獅子已經學會了在籠子裡散步，從籠子的這頭走到那頭，再從那頭走回來。這是一種習得的刻板行為。當受害者家屬舉起了槍，他們看見的不是弗朗西斯，不是一個人，甚至不是一個律師。他們看見的是系統本身。一個冷酷的、為兇手服務的、無視他們痛苦的機器中的一顆螺絲釘。</span>
+        </div>
+    </div>
+
+    <!-- ==================== 分割線 ==================== -->
+    <hr class="divider">
+
+    <!-- ==================== 後記：我們是動物。 ==================== -->
+
+    <div class="title">我們是動物。</div>
+    <div class="subtitle">We Are Animals.</div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">I have always liked watching cult films, but I have also always struggled with how to create a horror atmosphere through words. I am personally very brave; nothing has ever scared me. So I don't know how much of this story will ultimately convey.</span>
+        <span class="zh">我一直喜歡看cult片，但也一直很苦惱怎麼用文字營造恐怖的氛圍。我本人膽子特別大，從來沒有什麼東西嚇到過我。因此我也不知道這個故事最終能表達出多少比例。</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">This story is inspired by animism, from a reinterpretation of the concept of "soul animals." In many cultural traditions, animal totems are often seen as symbols or guardians—a person resembles a certain animal, or a certain animal protects a person. But in the worldview of this story, it is not that humans possess animal souls, but that animal souls temporarily become human. Personality, profession, desire, trauma—these are merely the folds of that thin human-shaped garment under a particular light. Therefore, the villagers do not ask "Who are you?" but "What animal are you?" The difference between these two is the entrance to the entire world. "Who are you" expects a name, an identity, a history. "What animal are you" expects something else—something about instinct, about dreams.</span>
+        <span class="zh">這個故事受泛靈論啟發，來自對「靈魂動物」概念的一種重新理解。在許多文化傳統中，動物圖騰往往被視為象徵或守護者——人像某種動物，或者某種動物保護著人。但在這個故事的世界觀裡，不是人擁有動物靈魂，而是動物靈魂暫時成為了人。人格、職業、慾望、創傷，都只是那層薄薄的人形外衣在特定光線下的褶皺。因此，村民不會問「你是誰」，而會問「你是什麼動物」。這兩者之間的差別，是整個世界的入口。「你是誰」期待一個名字、一個身份、一段歷史。「你是什麼動物」期待的是另一種關於本能、關於夢境的東西。</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">Many legends have similar views on animism and external souls, like the Sámi culture borrowed in the text. The soul does not exist entirely within the body. It can be stored in trees, water, fire, or another animal. This means death is not a disappearance, but a displacement. In this story, after a person dies, the soul animal does not immediately disappear. It lingers in the village, appears in dreams, attaches itself between firelight and pollen. Perhaps this explains why Arthur can continue to "see" Francis—not necessarily because of hallucination, nor necessarily because Francis is still alive, but because the soul animal has its own time. But whether the village chose to let him see, or whether he chose to see because he refused to mourn, is left for you to judge.</span>
+        <span class="zh">許多傳說都有泛靈論以及靈魂外置的類似觀點，就像文中借用的薩米文化。靈魂並不完全存在於身體之內。它可以寄存在樹上、水中、火焰裡，或者另一隻動物身上。這意味著死亡不是一種消失，而是一種移位。在這個故事裡，人死後，靈魂動物並不會立刻消失。它會在村莊裡徘徊，出現在夢境中，附著在火光與花粉之間。也許這能解釋為什麼亞瑟能夠繼續「看見」弗朗西斯——不一定因為是幻覺，也不一定因為弗朗西斯還活著，而是因為靈魂動物有自己的時間。但這是村莊選擇讓他看見，還是因為他拒絕哀悼而自我選擇看見，就留給各位評說。</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">In The Golden Bough, it is described that in rituals, the scapegoat carries away the corruption of the community. But in this story, what the village needs is not a sinner, a villain, a punished person. What they need is a person hollowed out by modern society—tired, empty, sad, severed from the body, severed from dreams, severed from the capacity for empathy. Because this "hollowness" itself can be transformed by fire into new dreams. Burning is not destruction, but translation. Hollowness becomes dream, dream becomes the community's capacity for perception. Arthur's sorrow, exhaustion, loneliness, the crack between him and modern society—these things are his qualifications as a sacrifice. Entering the fire is completing a purifying return. This logic is completely self-consistent within the village, and this self-consistency is exactly where the danger of a cult lies.</span>
+        <span class="zh">《金枝》中描述，在儀式中，替罪羊會帶走共同體的腐壞。但在這個故事裡，村莊需要的不是罪人、惡人、被懲罰的人。他們需要的是被現代社會掏空的人——疲憊、空洞、悲傷、與身體斷裂、與夢境斷裂、與共感能力斷裂的人。因為這種「空洞」本身可以被火轉化為新的夢。燃燒不是銷毀，而是轉譯。空洞變成夢，夢變成共同體的感知能力。亞瑟的悲傷、倦怠、孤獨、與現代社會之間的那道裂縫——這些東西是他作為祭品的資格。進入火中，是完成淨化性的回歸。這種邏輯在村莊內部是完全自洽的，而這種自洽正是邪教最危險的地方。</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">There is a recurring logic in The Golden Bough: the person who is sanctified must ultimately be killed. Because sacred power decays, abundance moves toward corruption. If it is not renewed, the entire community withers together. In folk horror, sacrifice is often not punishment, but returning the most abundant life to the world. "The king must die." In this story, the "king" is "the person most completely animalised"—the person closest to their soul animal, the person least defined by modern personality, the person most able to share emotions. But not entirely a villager either, because villagers do not have modern diseases. Such a person becomes the centre of the ritual. The essence of the fire sacrifice is to let the soul re-enter the cycle. Arthur is willing to enter the fire because he has once again felt his own soul.</span>
+        <span class="zh">《金枝》裡有一個反覆出現的邏輯：被神聖化的人，最終必須被殺死。因為神聖力量會衰敗，豐盛會走向腐壞。如果不更新，整個共同體會一起枯萎。在folk horror中的獻祭，很多時候並不是懲罰，而是把最豐盛的生命交還給世界。「王必須死」。在這個故事裡，「王」是「動物化最完整的人」——最接近自己靈魂動物的人、最少現代人格的人、最能共享情緒的人。但又不是完全的村人，因為村人不會有現代病。這樣的人會成為儀式的中心。火祭的本質，是讓靈魂重新進入循環。亞瑟願意進入火中，也是因為他重新感受到了自己的靈魂。</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">Fire is transformation, depersonalisation, the manifestation of the soul, the melting of the boundary between human and animal. Only in the flames of the ritual do the boundaries between human and animal, dead and living, dream and reality temporarily disappear. "Visions in the fire" are not merely hallucinations, but the ritual temporarily altering reality. In the firelight, Arthur can truly see the soul animal, can truly see Francis, can hear that "language without words." Just as the moth does not rush toward the flame for destruction, but because the flame is the only place where it can truly see.</span>
+        <span class="zh">火是轉化，是去人格化，是靈魂顯形，是人獸邊界的融化。只有在祭典的火焰中，人與動物、死者與生者、夢與現實之間的界限才會暫時消失。「火中的幻視」不只是幻覺，而是儀式暫時改變了現實。在火光中，亞瑟可以真正看見靈魂動物，可以真正看見弗朗西斯，可以聽見那種「無語言」的交流。就像飛蛾不是為了毀滅而衝向火焰，而是因為火焰是它唯一能真正看見的地方。</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">Unlike fire, the prohibition against approaching the lake exists. Unlike the village's cyclical logic, the water surface appears motionless, its cycle invisible. If the village's faith is a cycle, the lake is where the cycle stops. Water enters, but does not leave. No exit, no return. No return, no cycle. No cycle, no life. Approaching the lake is approaching a place where "the cycle has already stopped." For the village, this is an ontological threat—it proves that the cycle is not a necessity of the universe, but only the village's choice. And a choice can be overturned.</span>
+        <span class="zh">與火不同，不要靠近湖水的禁令是存在的。與村莊信仰的循環邏輯不同，水體表面上看是靜止不動的，其循環是不可見的。如果村莊的信仰是循環，湖就是循環停止的地方。水進來了，但沒有離開。沒有出口，就沒有回歸。沒有回歸，就沒有循環。沒有循環，就沒有生命。靠近湖邊，就是靠近一個「循環已經停止」的地方。對於村莊來說，這是一種本體論的威脅——它證明循環不是宇宙的必然，只是村莊的選擇。而選擇是可以被推翻的。</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">The lake in The Golden Bough also points to personal experience. Frazer repeatedly describes the "tranquility" and "mirror surface" of Lake Nemi—the mirror surface belongs to the viewer alone. The reflection you see on the lake surface is your own, not someone else's. The lapping sound you hear on the shore is heard by your ears, not the community's ears. The lake does not create shared experience; it creates solitary experience. The village's faith aims to eliminate the boundary between individuals. The lake's reflection reinforces the boundary—you can only see yourself in the lake, not others. This is the loneliness in the mirror.</span>
+        <span class="zh">湖在《金枝》中的描述也指向個人經驗。弗雷澤多次描述內米湖的「寧靜」和「鏡面」——鏡面屬於觀看者個人。你在湖面看到的倒影是你自己的，不是別人的。你在岸邊聽見的拍打聲是你的耳朵聽見的，不是共同體的耳朵。湖不創造共享體驗，創造孤獨體驗。而村莊的信仰是為了消除個人與個人之間的邊界。湖面的倒影強化了邊界——你在湖中只能看見自己，無法看見別人。這是鏡中的孤獨。</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">Regarding sympathetic magic. The Golden Bough describes it as similar things influencing each other. Wearing antlers brings one closer to the deer, imitating animals attracts animal souls, sharing food shares emotions. This story is full of remnants of this logic. Villagers avoid saying true names because names "fix" a person's identity as human. Villagers exchange clothing because scent loosens the boundaries of the soul. Everyone walks barefoot because shoes isolate the dreams in the land. Certain flowers cannot be taken from the village because they will "remember" you. There is no absolute boundary between objects, between humans and animals, between life and death. Everything is fluid.</span>
+        <span class="zh">關於交感巫術。《金枝》描述為相似之物彼此影響。戴上鹿角會更接近鹿，模仿動物會吸引動物靈魂，分享食物會共享情緒。這個故事裡到處都是這種邏輯的殘餘。村民避免說真名，因為名字會把人的身份「固定」為人類。村民交換衣物，因為氣味能讓靈魂邊界鬆動。大家赤腳行走，因為鞋會隔絕土地中的夢。某些花不能帶離村莊，因為它們會「記住」你。物與物之間沒有絕對的邊界，人與動物之間沒有絕對的邊界，生與死之間沒有絕對的邊界。一切都是流動的。</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">Regarding Francis and Arthur. Francis is a criminal defence lawyer who specialises in defending murderers. The lawyer's work is built on language, rhetoric, and logical manipulation—and the village believes that language is the disease of modern humans. Animals do not need language; they communicate through emotion and perceptual synchrony. Francis's professional exhaustion, his silence, his repression, in the village's view, are his soul animal trying to break free from the constraints of "human personality." Francis is no longer a lion on the savannah, but a beast domesticated by civilisation. Elegant, controlled, suppressing aggression, living long-term in rationality and procedure. As a criminal defence lawyer, he deals daily with violence, lies, trauma, the darkest side of human nature. His "beastliness" has not been released, but trained into a highly civilised exhaustion, like a beast long caged, quiet, polite decline.</span>
+        <span class="zh">關於弗朗西斯與亞瑟。弗朗西斯是一個專門為殺人者辯護的刑辯律師。律師的工作建立在語言、修辭、邏輯操縱之上——而村莊認為，語言是現代人的疾病。動物之間不需要語言，它們通過情緒和感知同步交流。弗朗西斯的職業倦怠、他的沉默、他的壓抑，在村莊的視角裡，是他的靈魂動物正在試圖脫離「人類人格」的束縛。弗朗西斯不再是草原上的獅子，是被文明馴化後的猛獸。優雅，控制，壓抑攻擊性，長期活在理性與程序中。作為刑辯律師，他每天都在處理暴力、謊言、創傷、人性最暗的那一面。他的「獸性」沒有被釋放，而是被訓練成了一種高度文明化的疲憊，就像猛獸長期被關在籠子裡的、安靜的、禮貌的衰竭。</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">Arthur's soul animal is the moth. Fragile, nocturnal, carrying a kind of powdery uncertainty. Attracted by light, he cannot help but approach. Francis died before the story begins. But the villagers never question the existence of the Francis that Arthur sees; they leave a place for him, speak to the air. Is Arthur hallucinating? Is the village accommodating him? Or does Francis really exist in some form? We cannot determine, but this ambiguity is the core of the story. This cult does not force you to believe something false; instead, it provides a worldview more capable of holding pain than reality. This is also the inspiration from Midsommar. Arthur cannot bear the fact that "he is just dead." The narrative the village provides is: he did not disappear, he simply returned to the animal, to the fire, to the shared dream, to the daylight. This narrative catches Arthur's pain. The village does not even need to deceive him. Arthur completes the rest himself. Arthur finally enters the fire, not because of lover's suicide, but because this is now the only way he can exist. (Regarding the self-deception caused by inability to accept, there is actually a rather terrifying thought: the reindeer meat served at dinner—was it really reindeer, or something else? Only a brain unable to accept reality thinks it is reindeer?)</span>
+        <span class="zh">亞瑟的靈魂動物是飛蛾。脆弱，夜行，帶著一種粉塵般的不確定性。被光吸引，他無法不靠近。弗朗西斯在故事開始前已經死去。但村民從不質疑亞瑟所看見的弗朗西斯的存在，會給他留位置，會對空氣說話。是亞瑟在幻想？是村莊在配合他？還是弗朗西斯真的以某種形式存在？我們無法推斷，但這種模糊是這個故事的核心。這種cult並沒有強迫你相信假的，反而提供了一個比現實更能安放痛苦的世界觀。這也是《仲夏夜驚魂》帶來的啟發。亞瑟無法承受「他只是死了」這個事實。村莊提供的敘事是：他不是消失，他只是回歸了動物，回歸了火，回歸了共同夢境，回歸了白晝。這個敘事接住了亞瑟的痛苦。村莊甚至不需要騙他。亞瑟自己完成了剩下的部分。亞瑟最後進入火中，不是因為殉情，而是因為這現在是他存在的唯一方式。（關於無法接受所導致的自我欺騙，其實還有一個比較恐怖的想法，晚宴上端上來的馴鹿肉，是真的馴鹿，還是其他東西呢？只是無法接受現實的大腦認為那是馴鹿呢？）</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">The village is in the north, with extremely long daylight, summer never fully entering night. Poor signal, vague maps, rarely appearing in official travel materials. But it will be discovered by "people whose boundaries have loosened"—people in sorrow, people exhausted, people with creative drought, people lonely, people on the verge of mental breakdown. These people will "happen" to see that poster, will "happen" to feel that this road is worth driving into. Only those who no longer quite belong to modern society will be interested in it. And those still firmly rooted in language, profession, identity will not notice its existence at all.</span>
+        <span class="zh">村莊在北方，白晝極長，夏季不完全入夜。信號差，地圖模糊，很少出現在正式的旅遊資料裡。但它會被「邊界鬆動的人」發現——悲傷中的人、倦怠的人、創作枯竭的人、孤獨的人、精神瀕臨斷裂的人。這些人會「恰好」看見那張海報，會「恰好」覺得這條路值得開進去。只有那些已經不太屬於現代社會的人，才會對它產生興趣。而那些還牢牢紮根在語言、職業、身份裡的人，根本不會注意到它的存在。</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">Finally. This story is not about a cult. Not about murder. Not about the tragedy of "a man tricked into a fire and burned to death." It is about how modern society causes people to gradually lose their soul animals. We are alienated by language, disciplined by profession, fixed by identity, severed from the body and instinct, no longer dreaming, no longer able to perceive others, no longer knowing what animal we are. We are alive, but our soul animals are sleeping, shrinking, disappearing. That village—whether it exists or not, whether it should be called a cult or a community or something else—provides a response: you can become an animal again. You can walk barefoot, you can not speak, you can share dreams, you can cry, you can see the person you have lost in the firelight. The price is that you cannot return as a "modern person." The moth entered the fire. In the firelight, the moth finally saw the lion. The lion also saw him.</span>
+        <span class="zh">最後。這個故事不是關於邪教。不是關於謀殺。不是關於「一個男人被騙進火中燒死」的悲劇。它是關於現代社會如何讓人逐漸失去靈魂動物。我們被語言異化，被職業規訓，被身份固定，與身體和本能斷裂，不再做夢，不再能感知他人，不再知道自己是什麼動物。我們活著，但我們的靈魂動物在沉睡、萎縮、消失。那個村莊——無論它是否存在，無論它應該被稱為邪教還是共同體還是別的什麼——提供了一個回應：你可以重新成為動物。你可以赤腳走路，可以不說話，可以共享夢境，可以哭泣，可以在火光中看見你已經失去的人。代價是，你不能再作為「現代人」回來。飛蛾進入了火中。在火光中，飛蛾終於看見了獅子。獅子也看見了他。</span>
+    </div>
+
+<!-- ================= RETURN ================= -->
+<div style="text-align:center;">
+  <a class="return-box" href="../index.html">
+    <span class="en">Return</span>
+    <span class="zh">返回</span>
+  </a>
+</div>
+
+<!-- ================= MUSIC（可替换模块） ================= -->
+<!-- 🔴 MUSIC MODULE START -->
+<audio id="bgm" loop>
+  <source src="../music/Willowssong.mp3" type="audio/mpeg">
+  <!-- 🔵 替换音乐路径即可 -->
+</audio>
+<!-- 🔴 MUSIC MODULE END -->
+
+<script>
+let lang = "en";
+
+function applyLang(mode) {
+  document.body.classList.remove("lang-en", "lang-zh");
+  document.body.classList.add("lang-" + mode);
+}
+
+function toggleLang() {
+  lang = (lang === "en") ? "zh" : "en";
+  applyLang(lang);
+}
+
+applyLang("en");
+
+/* music autoplay */
+document.addEventListener("click", () => {
+  const audio = document.getElementById("bgm");
+  if (!audio) return;
+  audio.volume = 0.6;
+  audio.play().catch(() => {});
+});
+</script>
+
+</body>
+</html>

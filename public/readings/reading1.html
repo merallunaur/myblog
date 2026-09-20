@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>	The Screen Labyrinth / 	螢幕迷宮</title>
+
+<style>
+body {
+  background-color: #81A380;
+  color: #525288;
+  max-width: 720px;
+  margin: 100px auto;
+  line-height: 1.9;
+  font-family: Georgia, serif;
+  padding: 0 20px;
+}
+
+/* ================= LANGUAGE SYSTEM ================= */
+.zh, .en {
+  display: none;
+}
+
+body.lang-en .en {
+  display: inline;
+}
+
+body.lang-zh .zh {
+  display: inline;
+}
+
+/* switch */
+.lang-switch {
+  position: fixed;
+  top: 18px;
+  right: 18px;
+  border: 1px solid #7D5A44;
+  padding: 6px 12px;
+  cursor: pointer;
+  color: #7D5A44;
+  background: transparent;
+  z-index: 999;
+}
+
+.lang-switch:hover {
+  background: #7D5A44;
+  color: white;
+}
+
+/* title */
+h1 {
+  text-align: center;
+  font-weight: normal;
+  margin-bottom: 60px;
+  font-size: 28px;
+  letter-spacing: 1px;
+}
+
+/* divider */
+.divider {
+  border-top: 1px solid #7D5A44;
+  width: 100%;
+  margin: 60px 0;
+  opacity: 0.6;
+}
+
+/* text */
+p {
+  margin-bottom: 26px;
+}
+
+/* return */
+.return-box {
+  display: inline-block;
+  padding: 6px 14px;
+  border: 1px solid #7D5A44;
+  color: #7D5A44;
+  margin-top: 60px;
+  transition: 0.3s;
+}
+
+.return-box:hover {
+  background: #7D5A44;
+  color: white;
+}
+</style>
+</head>
+
+<body class="lang-en">
+
+<!-- LANGUAGE SWITCH -->
+<div class="lang-switch" onclick="toggleLang()">EN / 繁</div>
+
+<!-- ================= TITLE（可替换） ================= -->
+<h1>
+  <span class="en"><!-- 🔵 English Title -->	The Screen Labyrinth</span>
+  <span class="zh"><!-- 🔵 中文标题 -->	螢幕迷宮</span>
+</h1>
+
+<div class="divider"></div>
+
+<!-- ================= BODY（整段可扩展区域） ================= -->
+
+<!-- 🔵 这里是正文 -->
+<p>
+       <div class="bilingual-paragraph">
+        <span class="en">I can't sleep, so let me summarise my film-viewing aesthetics and my favourite films. From childhood to now, I have rarely been shaken by a film's values or the lessons it imparts. I may be a person who is not easily educated or indoctrinated with life philosophies. So what I generally like leans more toward pure sensory experience, atmospheric immersion, or unique worldviews.</span>
+        <span class="zh">睡不著，來總結一下我的觀影審美與喜愛電影。從小到大我很少會被電影的價值觀和輸出的道理撼動，我可能是個不太容易被教育和被灌輸人生理念的人。所以我一般喜歡的都更偏重純粹的感官體驗、氛圍沉浸或者獨特世界觀。</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"Nope" (2022) is absolutely my number one among all the films I have seen. Its mainstream rating is not high, nor is its recognition. First, it is a relatively unique Western-plus-science-fiction genre; the subject matter itself is exciting enough for me. I seem to be born with an extremely strong interest in inexplicable, grand, anomalous phenomena, so this film fits perfectly. At the same time, its core is something I deeply understand. Humanity's endless, ceaseless greed in chasing spectacle, wanting to film, possess, and commodify everything unknown, will ultimately be devoured by the spectacle. And even though I have not personally experienced racial discrimination, I can feel what the director wants to express—the process of ethnic minorities being erased from the history of the lens and reclaiming their gaze.</span>
+        <span class="zh">《不》（2022）我所有觀影裡我最喜歡的絕對第一。它的大眾評分並不高，知名度也一樣。首先，它是比較獨特的西部＋科幻類型，題材本身對我來說就足夠精彩。我好像天生對不可解釋的宏大異象抱有極強興趣，因此這部電影完全符合。同時它的內核也是我深有體會的。人類無止境、無休止的對奇觀的貪婪追逐，想要拍攝、佔有、商品化一切未知，最終會被奇觀反噬。並且，即時我沒有切身感受過種族歧視，我也能感受到導演想表達的，少數族裔在鏡頭史裡被抹去、重新奪回視線的過程。</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"MaXXXine" (2024) is mainly because of the line "I will not accept a life I do not deserve," which I very much agree with. The gore, violence, and grotesquerie are only the surface; MaXXXine's core is that I have my own goals, and I refuse to be assigned a life lower than my expectations. This resonates with me greatly.</span>
+        <span class="zh">《瑪克辛》（2024）主要是因為那句「我絕不接受與我不匹配的人生」，是我非常認同的。血漿暴力獵奇只是表面，瑪克辛的內核是我有屬於我自己的目標，我拒絕被分配一個低於我期待的人生。這點是於我很共鳴的。</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"The Little Mermaid" (1989) is my favourite Disney princess, and I first saw this film around 2008. I think what I understood was not just a love story, but more about bravery and curiosity. What impressed me most was actually the theme song "Part of Your World." She was not drawn to the surface merely by the prince; she had long been curious about that world. So she chose to act bravely, no matter what consequences this new world brought her. This film also participated to some extent in shaping my values, after all, it was a long time ago.</span>
+        <span class="zh">《小美人魚》（1989）這是我最喜歡的迪士尼公主，我在2008年左右第一次看了這部電影。我覺得我理解的不只是一個愛情故事，更多的是勇敢和好奇。我印象最深的其實是主題曲《part of your world》。她並不只是被王子吸引到海面上，她早早就對那個世界產生了好奇。因此她選擇去勇敢行動，無論這個新世界帶給她的是什麼後果。這部電影一定程度上也參與了我的價值觀塑造，畢竟是很久以前。</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"Rio" (2014) actually gave me a de-anthropocentric perspective. I saw the ways different life forms exist. The high-density rainforest world presents countless lives, each with its own complete system; every species has its own language, community, habits, and way of survival. Humans are not the only scale of nature and civilisation; all things coexist, each with its own order. This has made me always favour imagery of natural life subjects.</span>
+        <span class="zh">《里約大冒險》（2014）其實是帶給了我一種去人類中心化的視角。我看到了不同生命形式的存在方式。高密度的雨林世界呈現出無數生命各自完整的體系，每個物種都有自己的語言、社群、習性與生存方式，人類並不是自然和文明的唯一尺度，萬物共生、各有秩序，這讓我一直很偏愛自然生命題材的影像。</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"Pride & Prejudice" (2005) is first of all visually and aurally outstanding. This should be the second romance novel I read; the first was "Jane Eyre." I particularly dislike the latter because I completely cannot feel Rochester's respect and change. The former was strongly recommended by my English class teacher. This process of mutual scrutiny, mutual correction, and mutual pursuit also has some reference value for love today.</span>
+        <span class="zh">《傲慢與偏見》（2005）首先是視聽上就非常出色。這應該是我看的第二部愛情小說，第一部是《簡愛》。我特別不喜歡後者，因為我完全感受不到羅切斯特的尊重和變化。前者是我英語班的老師強烈推薦，這種雙向審視、雙向修正、雙向奔赴的過程，對現在的愛情也有一定參考性。</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"Amélie" (2001) is also first of all delicate in its imagery, cleverly shot, and full of a life-like tenderness. It can capture with particular detail the tiny, sincere kindness of ordinary people in a modern city. Actually, for me it is somewhat hard to understand. I cannot understand how someone can be so meticulous. I remember the glass man—I forgot his name—and what he said to the female protagonist left a deep impression on me. If you do not dare face an arriving emotion, in the end your heart will become as fragile as glass. I think it is precisely because the female protagonist and I have such different personalities that this film attracts me so much.</span>
+        <span class="zh">《天使愛美麗》（2001）首先也是畫面細膩、拍攝巧妙、充滿生活化的溫柔。它能特別細緻地捕捉到現代都市裡普通人微小、真誠的善意。其實對於我來說是有些不太能理解的。我無法理解有人能細緻成這樣。我記得那個玻璃先生，我忘了叫什麼了，對女主角說的話我印象極深。如果不敢面對到來的感情，最後內心會變得像玻璃一樣脆弱。我覺得恰恰是我和女主性格太不一樣了，這部電影才會很吸引我。</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"Edward Scissorhands" (1990) — the score is truly the soul of the film. Sometimes I cannot remember the plot clearly, yet I can still remember the scene, in the music, of the ice shavings falling from Edward's ice sculpture drifting onto the female protagonist's hair. That melody is especially cold and crystalline, quiet and fragile like snowflakes, carrying a trace of lingering melancholy. This may be the purest fairy-tale love in my heart, and of course also because I heavily shipped Depp and Winona off-screen. Joining the losing side in '49, that whole thing.</span>
+        <span class="zh">《剪刀手愛德華》（1990）配樂真是電影靈魂。有時候我的情節記不太清楚，我都能記得在音樂中，愛德華修剪冰雕落下的冰花飄在女主頭髮上的場景。那種旋律特別清冷晶瑩、像雪花一樣安靜又易碎，又帶著一絲揮之不去的悵然。這可能是我心裡最純粹的童話式愛情，當然也是因為我狠狠嗑過戲外德普與薇諾娜，49年入國黨這一塊。</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"The Addams Family" (1991) — I really like watching comedies, because I have never liked things that make me expend energy to understand, or expend spirit to empathise, or make me very sad. This is a black comedy I love. A gothic family that in the secular eye is bizarre and alternative, yet they have their own complete, self-consistent, stable values and life logic. They do not cater to the mainstream; within the family they fully accept each other, deeply love each other, and hold fast to themselves. The film's presentation is also especially humorous, and everyone's acting is excellent. Only one of the leads suffered a sudden cerebral haemorrhage not long after the second film was finished, passing away hastily in his fifties. Otherwise there should have been more to watch.</span>
+        <span class="zh">《亞當斯一家》（1991）我很喜歡看喜劇，因為我一直不喜歡會讓我費精力去理解，或者費神去共情，或是會讓我很悲傷的東西。這是我們很愛的黑色幽默喜劇，一個世俗眼裡怪異、另類的哥特家族，但他們自有一套完整、自洽、穩固的價值觀與生活邏輯。他們不迎合主流，家庭內部全然接納彼此、深愛彼此，堅守自我。這部電影的呈現方式也特別幽默，每個人演技都很好。只不過主演之一在第二部拍完沒多久就突發腦溢血，在五十多歲就草草離世。不然應該有更多可以看。</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"The Wicker Man" (1973) counts as one of my alternative aesthetic enlightenments. I am myself very interested in folk religion studies. The film was born after the Vietnam War, so it was an era full of social anxiety and hippie culture impacting the mainstream. In the eyes of others, hippies were a group of heretics endangering stability. The film more or less alludes to this. It uses the appearance of bright tenderness and pastoral ballads to wrap a complete set of ancient, closed, eerie pagan systems. That sense of strangeness beneath the daylight—quiet, absurd, faintly uneasy, unable to say what exactly is wrong—is very ahead of its time, and is also the source of folk horror aesthetics. It also inspired countless later works and one of my fanfictions.</span>
+        <span class="zh">《柳條人》（1973）也算是我的另類審美啟蒙之一。我本身對民俗宗教學非常感興趣。影片誕生在越戰之後，所以那是一個充滿社會焦慮、嬉皮文化衝擊主流的時代。在其他人眼中，嬉皮士就是一群危害穩定的異教徒。電影或多或少有影射這一點。它用明亮溫柔、田園歌謠的外表，包裹一整套古老、封閉、詭異的異教體系。那種日光之下安靜、荒誕、隱隱不安、說不出哪裡不對的怪異感非常超前，也是民俗恐怖美學的源頭。也啟發了日後無數作品以及我的一篇同人文。</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"The Birds" (1963) is my spiritual enlightenment for cult films, and it greatly influenced my film-viewing aesthetics. I saw this film around 2017. I am myself a very logical person who pursues cause and effect in everything, but this film completely breaks all conventions. From beginning to end it gives no explanation—no cause, no truth, no ending. It purely displays the absurdity of nature, the chaos of the unknown, the grand forces humans cannot control. This sense of logic failing, of being inexplicable, of being unable to resist the unknown, makes me both terrified and deeply fascinated.</span>
+        <span class="zh">《群鳥》（1963）是我的Cult片精神啟蒙，對我的觀影審美影響極大。我大概在2017年看了這部電影。我本身是非常講邏輯、凡事追求因果的人，但這部電影徹底打破所有常規。它從頭到尾沒有給出任何解釋，沒有原因、沒有真相、沒有結局。純粹展示自然的荒誕、未知的混沌、人類無法掌控的宏大力量。這種邏輯失效、不可解釋、不可對抗的未知感，讓我既恐懼又深深著迷。</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"Jurassic Park" (1993) — I watched it with my dad and mum in the 2000s. I myself really like big dinosaurs!! I have basically watched all prehistoric documentaries. Spielberg's camera调度 is extremely top-tier. And Dr. Malcolm's line "Life finds a way" is also a classic. Humans should not be self-centred, vainly attempting to control nature and life; all things have their own order, and excessive arrogance will ultimately be devoured. This year Sam Neill, who played Dr. Grant, passed away. He was a very excellent actor who created many screen classics. I never thought that what I saw in "Jurassic World Dominion" would be his last appearance before his death. May he rest in peace.</span>
+        <span class="zh">《侏羅紀公園》（1993）零幾年我和我爸我媽看的。我本身很喜歡大恐龍！！基本上所有史前紀錄片我都看了。斯皮爾伯格的鏡頭調度非常頂級。而且馬爾科姆博士那句「生命自有出路」也是經典台詞。人類不要以自我為中心，妄圖掌控自然與生命，萬物自有秩序，過度傲慢終將被反噬。今年格蘭特博士的飾演者山姆•尼爾去世了。他是位非常優秀的演員，塑造了很多螢屏經典。沒有想過我在《侏羅紀世界3》中看到的是他生前最後一面。願他安息。</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"Harry Potter" (2001) — most children would like this. It has a complete magical world, fully self-consistent rules and ecology, and its attraction to children is fatal. I like the stories before "The Goblet of Fire" the most, especially "The Philosopher's Stone." At this stage the magical world has not yet been shadowed by heavy war; it is simply children exploring a new world, experiencing a new life, and bravely adventuring—pure times. I am a Slytherin!</span>
+        <span class="zh">《哈利·波特》（2001）這應該大多數小孩都會喜歡。它有一個完整魔法世界，完全自洽的規則與生態，對於小孩子的吸引力是致命的。我最喜歡火焰杯之前的故事，尤其是《魔法石》，這個階段的魔法世界還沒有沉重的戰爭陰影，只是小孩探索新世界、體驗新生活、勇敢冒險的純粹時光。我是斯萊特林人！</span>
+    </div>
+
+<!-- ================= RETURN ================= -->
+<div style="text-align:center;">
+  <a class="return-box" href="../index.html">
+    <span class="en">Return</span>
+    <span class="zh">返回</span>
+  </a>
+</div>
+
+<!-- ================= MUSIC（可替换模块） ================= -->
+<!-- 🔴 MUSIC MODULE START -->
+<audio id="bgm" loop>
+  <source src="../music/IceDance.mp3" type="audio/mpeg">
+  <!-- 🔵 替换音乐路径即可 -->
+</audio>
+<!-- 🔴 MUSIC MODULE END -->
+
+<script>
+let lang = "en";
+
+function applyLang(mode) {
+  document.body.classList.remove("lang-en", "lang-zh");
+  document.body.classList.add("lang-" + mode);
+}
+
+function toggleLang() {
+  lang = (lang === "en") ? "zh" : "en";
+  applyLang(lang);
+}
+
+applyLang("en");
+
+/* music autoplay */
+document.addEventListener("click", () => {
+  const audio = document.getElementById("bgm");
+  if (!audio) return;
+  audio.volume = 0.6;
+  audio.play().catch(() => {});
+});
+</script>
+
+</body>
+</html>

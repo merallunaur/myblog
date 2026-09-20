@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>The Prince's Collection / 王子的珍藏</title>
+
+<style>
+body {
+  background-color: #81A380;
+  color: #525288;
+  max-width: 720px;
+  margin: 100px auto;
+  line-height: 1.9;
+  font-family: Georgia, serif;
+  padding: 0 20px;
+}
+
+/* ================= LANGUAGE SYSTEM ================= */
+.zh, .en {
+  display: none;
+}
+
+body.lang-en .en {
+  display: inline;
+}
+
+body.lang-zh .zh {
+  display: inline;
+}
+
+/* switch */
+.lang-switch {
+  position: fixed;
+  top: 18px;
+  right: 18px;
+  border: 1px solid #7D5A44;
+  padding: 6px 12px;
+  cursor: pointer;
+  color: #7D5A44;
+  background: transparent;
+  z-index: 999;
+}
+
+.lang-switch:hover {
+  background: #7D5A44;
+  color: white;
+}
+
+/* title */
+h1 {
+  text-align: center;
+  font-weight: normal;
+  margin-bottom: 60px;
+  font-size: 28px;
+  letter-spacing: 1px;
+}
+
+/* divider */
+.divider {
+  border-top: 1px solid #7D5A44;
+  width: 100%;
+  margin: 60px 0;
+  opacity: 0.6;
+}
+
+/* text */
+p {
+  margin-bottom: 26px;
+}
+
+/* return */
+.return-box {
+  display: inline-block;
+  padding: 6px 14px;
+  border: 1px solid #7D5A44;
+  color: #7D5A44;
+  margin-top: 60px;
+  transition: 0.3s;
+}
+
+.return-box:hover {
+  background: #7D5A44;
+  color: white;
+}
+</style>
+</head>
+
+<body class="lang-en">
+
+<!-- LANGUAGE SWITCH -->
+<div class="lang-switch" onclick="toggleLang()">EN / 繁</div>
+
+<!-- ================= TITLE（可替换） ================= -->
+<h1>
+  <span class="en"><!-- 🔵 English Title -->The Prince's Collection</span>
+  <span class="zh"><!-- 🔵 中文标题 -->王子的珍藏</span>
+</h1>
+
+<div class="divider"></div>
+
+<!-- ================= BODY（整段可扩展区域） ================= -->
+
+<!-- 🔵 这里是正文 -->
+    <div class="section-break">◇</div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">He could not speak. The first time I encountered him, he was hurriedly signing to his steward, coughing and flushed from the dust kicked up by a passing carriage.</span>
+        <span class="zh">他不會說話。我初次遇見他時，他正跟他的管家急匆匆地打著手語，路過馬車揚起的沙塵使他嗆得臉色通紅。</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">I pressed the shutter.</span>
+        <span class="zh">我按下快門。</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">The youngest son of the new manager of the East India Company—I had seen him on the front page of the Divaina, pasted into the rightmost edge of the black-and-white frame like a cutout from somewhere else, the gold-and-green Kirkland family crest pinned to his chest.</span>
+        <span class="zh">東印度公司新任經理的小兒子，我在《迪瓦納》頭版上見過他，像從其他地方被裁下來貼上似的站在黑白畫框的最右邊，胸前佩戴著柯克蘭家族的金綠色家徽。</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">The Sinhalese-language newspaper Divaina: first economic news, then the unrest in Kandy Province. At first, the fact that people died every day kept me awake through the night, but gradually the work of a journalist made me see human life as thin as paper. I used to keep sleeping pills under my pillow; now I keep a few gossip magazines there instead.</span>
+        <span class="zh">僧伽羅語報《迪瓦納》，先是經濟要聞，接下來是康提省的戰亂。起初，每天都有人死去這一事實使我徹夜難眠，記者的工作卻漸漸讓我把人命看得像紙一樣薄。我的枕頭下從前習慣性放著安眠藥，現在放著幾本花邊雜誌。</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">Before the gleaming, monumental marble gates of the East India Company, his figure looked rather frail. The instant he heard the shutter click, he turned his head and looked toward me. His eyes caught mine—a gaze both near and distant, like a bird whose shadow makes the sun flicker in and out of sight, so that people only look up when it passes overhead.</span>
+        <span class="zh">在東印度公司閃著光的宏偉大理石門前，他的身材顯得相當單薄。聽到快門聲的瞬間就扭頭望過來，他的眼睛抓住了我的眼睛，眼神既接近又遙遠，彷彿一隻飛翔的鳥兒，只有它的陰影讓太陽忽隱忽現的時候，人們才能抬頭看見。</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">That was the first time I had ever been caught—by a melancholy teenager with green eyes. Later, I became his lover.</span>
+        <span class="zh">那是我第一次被人逮住，被一個有著憂鬱綠眼睛的十幾歲少年。後來我成為了他的情人。</span>
+    </div>
+
+    <div class="section-break">◇</div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">I left home at seventeen to wander, for the foolish kind of reason called emptiness. The teenage years are a peculiar time. The world unfolds before you, but nothing has yet taken shape; you have not yet been struck in the face by reality, and you believe that not everything is fated.</span>
+        <span class="zh">我在十七歲時離開家流浪，為了愚蠢的空虛類的理由。十幾歲是個特殊的時期，這個時期世界正在眼前展開，但一切都尚未定型；尚未被現實當頭一擊，而相信一切都不是命定。</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">The teenage years are a peculiar time. Once you pass them, that searching, unrestrained, fantasy-filled soul is forced into society's little box, squeezing a young, flexible body into a stiff suit. Because there is still a way back during this period, there is always reason and foundation for melancholy.</span>
+        <span class="zh">十幾歲是一個特殊時期。一過十幾歲，那探求、奔放而裝滿幻想的靈魂就要被強塞進社會的小小的盒子裡，將年輕而靈活的身體擠進硬西裝內。這個時期因為尚有退路，總有憂鬱的理由和底氣。</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">At seventeen I was surrounded by crowds yet still felt alone. Eight years passed, and only my age grew; my wages still barely covered my expenses. I opened a photography studio in Odeon, backing onto Cinnamon Garden. The locals said the garden was at least two hundred years old. Cinnamon was considered a sacred tree; beneath them one could see coarse sugar pancakes and golden coconuts everywhere. Through the gaps in the dense leaves, not far away, lay a chaotic, sewage-streaked town. The equatorial summer heat was endless; in the cool, damp air beneath the trees, the fragrance of the tall trees mixed with the rank smell of bodily fluids. A neighbour gave me a bundle of jasmine-scented incense and told me to burn it by my bedside every night. In the evenings, the studio would be packed with customers, most of them coming to have fake passport photos taken. When they sat on the leather stool in their best clothes, it was easy to tell them apart at a glance.</span>
+        <span class="zh">十七歲時我被人群環繞卻仍覺得孤獨。八年過去，增長的只有年歲，工作的薪水依舊只能勉強支撐開銷。我在歐德開了家照相館，背靠肉桂花園。當地人說花園至少有兩百年的歷史。肉桂被看作神樹，樹底下隨處可見一些粗糖煎餅和金椰子。透過茂密的樹葉間隙，不遠處是雜亂的、污水橫流的市鎮。赤道的炎夏永無止盡，在樹下涼爽濕潤的空氣中，高大喬木散發的芬芳與體液的腥氣混合在一起。鄰居送了我一把茉莉花味熏香叫我每天點在床頭。照相館到了晚上便絡繹不絕，其中大多都來拍攝假護照照片。當他們穿著一件顯然是最好的衣服，侷促不安地黏在皮板凳上時，很容易一眼分辨。</span>
+    </div>
+
+    <div class="section-break">◇</div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">He came late at night, just as I was seeing off my last customer. A young woman. Her ship was sailing next week; like the others, she did not know its destination. When she spoke of the two children she was leaving behind, she fell silent.</span>
+        <span class="zh">他來的時候是深夜，我正送走最後一位客人。那是位年輕的姑娘，她的船下週啟航，她和其他人一樣，並不知道目的地。談起她拋下的兩個孩子時她就陷入沉默。</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">I turned the 'Open' sign over. Then I heard a tap at the window. The window facing the garden—I never locked it. Without waiting for my answer, he opened it himself, braced his hands on the frame, and hoisted himself inside like a stray cat. When he saw me, he blinked, snapped his fingers at me, and mouthed the word 'Francis.' He had taken my business card the first time he caught me. Even though the newspaper had published his photograph, it had never mentioned his name. After I placed a cup of black tea before him, he suddenly took my hand and wrote on my forearm with a pen.</span>
+        <span class="zh">我將營業中的牌子翻過來，接著聽見窗戶被敲了敲。面朝花園的那扇窗我從不上鎖，他不等我回應就自己打開窗戶，把手撐在窗框上，一使勁就翻了進來，像一隻野貓。看到我之後眨著眼對我打了個響指，用嘴型說道「弗朗西斯」。他逮住我時拿走了我的名片。即使報紙登載過他的照片，也從未提到過他的名字。我將紅茶放到他面前時他突然拉過我的手，用鋼筆在我的小臂上寫字。</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">Arthur.</span>
+        <span class="zh">亞瑟。</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">After writing the last letter, he shook the pen with childish extravagance, then looked up at me.</span>
+        <span class="zh">寫完最後一個字母後他十分任性地大力甩了甩鋼筆，接著抬頭盯著我。</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"Kirkland?"</span>
+        <span class="zh">「柯克蘭？」</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">I ventured. His expression suddenly darkened. He shook his head, then traced the letters again on my forearm.</span>
+        <span class="zh">我試探道。他臉上的表情突然陰沉下來，搖了搖頭，又用指尖在我的小臂上畫了一遍。</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"Arthur."</span>
+        <span class="zh">「亞瑟。」</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">After I spoke his name, he smiled and let out a long breath, stood up, stretched, and began flipping through the photographs hanging on my thin drying line, one by one.</span>
+        <span class="zh">在我叫出他的名字後他笑著長出了一口氣，站起來，伸了個懶腰，逐一翻看我掛在細晾衣繩上的照片。</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">One photograph I had taken: a Veddah high priest immolating himself. 3 June 1847, 5:04 p.m. Whenever I fall into memory, I inevitably connect the time of the dead with my own time. The day before, I had visited a temple. Then I came out of the film shop and watched as he walked straight through the crowd, stood before the gleaming company gates, and set his own robes on fire.</span>
+        <span class="zh">我所拍攝的這張照片，一位維達高僧自焚。1847年6月3日17點04分，每當陷入回憶，我便不可避免地把死者時間和自己的時間聯繫在一起。前一天，我去參觀了一座神廟。接著我從膠卷店出來，看著他徑直穿過人群，站在金碧輝煌的公司大門前，點燃了自己身上的袈裟。</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">In traditional Sinhalese sects, suicide is considered a grave taboo. I had heard that just the day before.</span>
+        <span class="zh">在錫蘭傳統教派中自殺被看作大忌，我前一天剛聽說。</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">Arthur turned the photograph over: 3 June 1847, Colombo, and my signature. He gently pinched my fingertips. With his other hand, he flipped to the next—a lion killing an antelope, taken five years earlier in the Congo. It was during that time, lodging with a family whose mistress had had her ear blown off by gunpowder, that I learned sign language.</span>
+        <span class="zh">亞瑟把照片翻過來，1847年6月3日，科倫坡，以及我的落款。他輕輕捏住我的指尖。用另一隻手去翻下一張，那是一幅獅子咬死羚羊的場景，五年前攝於剛果。當時我寄宿的那戶人家的女主人耳朵被火藥炸傷，就是在那時我學會了手語。</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">Tell me more of your stories.</span>
+        <span class="zh">再跟我說說你的故事吧。</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">He opened his mouth silently, his hands moved for a while, and finally he patted my chest lightly.</span>
+        <span class="zh">他無言地張了張嘴，兩隻手繞了好一陣子，最後輕輕拍了拍我的胸口。</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">Ten minutes later, Arthur and I bent together over the sink, watching the photographic paper drift through the acid solution tray. I taught him how to develop the Sri Lankan girl's photograph. In the crimson light, he used his nimble fingers to pat the paper gently, ensuring the colour was even. While waiting for the image to appear, he washed the developing tray as meticulously as a medical worker. Together we watched the pink rectangle, watching the black shapes slowly emerge. The developing grew faster and faster. Soon, on the water-soaked white paper, a few curved lines suddenly appeared—the girl's thin silhouette. First her jet-black hair, then the blank spaces that would become her dress, then her face. I had used expired film, so the result was poor. In this shoddy photograph, her smile didn't look very happy. Perhaps it wasn't a smile at all, but the result of despair or anger.</span>
+        <span class="zh">十分鐘後，亞瑟跟我一起彎腰俯在水槽上方，看著相紙在酸溶液托盤中穿梭。我教他如何洗出那位斯里蘭卡姑娘的照片。在深紅色的光線裡，他用他靈巧的手指輕輕拍打相紙，讓它著色均勻。在等待顯像的過程中，他像醫務工作者那般一絲不苟地洗淨浸泡板。我們兩人看著這粉色的矩形，看著它慢慢顯現黑色的圖形，現在顯影越來越快。不一會兒，吸滿水的白紙上突然顯現出幾條曲線，是那位姑娘瘦削的輪廓。最先出現的是烏黑的頭髮，空白部分是連衣裙，然後是面孔。我用的是過期膠卷，效果並不好。在這張蹩腳照片上，她的笑看起來並沒那麼開心，也許這根本不是笑容，而是由於絕望或氣憤。</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">Arthur picked up the photograph and held it high, showing it off to me with his hand on his hip. I clipped the photo to the drying line, took his hand, and dried the acid solution from his fingers with a towel. His hands were like a patient's—small and cold. During this time, I told him more about myself.</span>
+        <span class="zh">亞瑟拿起照片昂著頭向我炫耀，一隻手撐在腰上。我把照片夾上晾衣繩，拉過他的手，用毛巾擦乾他手上的酸溶液。他的手像病人的手，又小又冰。這段時間裡，我又說起我的事。</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"Once, I spent three whole months in Yellowknife. Do you know that place? In the far northwest of Canada. Three months, with no work, no income—just me and my camera, waiting for the northern lights. Prolonged solitude can drive a man mad. One day I drank too much and passed out; a homeless man wrapped his coat around me, or I would have frozen to death in the snow. Maybe he thought I was a homeless man too. But the northern lights still hadn't appeared when my editor called me back. There have to be some regrets in life, don't you think?"</span>
+        <span class="zh">「曾經有整整三個月，我住在黃刀鎮。你知道那地方嗎？在加拿大的最西北。整整三個月，沒有工作收入，我和我的相機在一起，靜候極光出現。長時間的孤獨狀態會令人發瘋。有天我喝多了酒昏了過去，一個流浪漢把他的衣服裹在我身上，我才不至於凍死在雪地裡。也許他認為我也是個流浪漢。但是極光還沒出現，我的主編就又召我回去。人生總要留點遺憾，不是嗎？」</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">Good manners kept him quiet; he seldom offered opinions. When I affected the air of an older man dispensing wisdom, he laughed out loud, his eyes glinting like a snake's scales. When the clock on the Ceylon Trading Company tower struck four, he rose to leave. As he had arrived, he braced himself on the windowsill, leapt, and landed lightly on the other side. He did not look back, disappearing into the darkness beneath the cinnamon trees. His footsteps were firm and strong. I could hear my heart pounding violently; my thoughts moved slowly.</span>
+        <span class="zh">教養使然，他靜靜地聽，很少發表自己的看法，在我故作年長者教誨時他笑了出來，眼睛像蛇的鱗片一樣閃光。錫蘭商行頂上的大鐘報時四點時，他起身離開，像來時一樣，撐著窗框起跳，在另一端輕輕落下。沒有回頭，消失在覆蓋肉桂樹的黑暗中。他的腳步聲堅定有力，我聽心跳得劇烈，思想緩慢地運轉。</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">I did not ask him to stay longer. There was too much work tonight. I developed a few more photographs and hung them on the rack. Then I cut out that candid shot by itself, placed the negative in the acid solution tray, and watched it bleach to grey. He had confiscated my film that day, but I had given him blank film instead.</span>
+        <span class="zh">我沒有邀他多留一會兒。今晚的工作太多。我又洗了幾張照片，掛到架子上。緊接著我把那張偷拍單獨裁出來，底片放進酸溶液托盤，看著它被漂成灰色。他那天沒收了我的膠卷，但我把空白膠卷給了他。</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">The boy, quiet as a white rose, leaned against a marble pillar, one hand running through his sweat-dampened golden hair, the other lightly touching his throat. His gaze passed over the heads of the crowd, looking into the distance. The dust kicked up by the carriages glowed in the setting sun like a woman's sari.</span>
+        <span class="zh">安靜得像白色玫瑰花一樣的少年斜靠著大理石柱子，一隻手摸著他那頭因炎熱而變得濕漉漉的金髮，另一隻手輕點著自己的喉嚨。他的目光掠過人群的頭頂，望向遠方。馬車揚起的塵埃在夕陽照射下，像女人的紗麗一樣閃著光。</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"Good night."</span>
+        <span class="zh">「晚安。」</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">After the photograph dried, I pressed it beneath my pillow. Loneliness descended once more on Cinnamon Garden. I sat by my bed, the thick green leaves, watching the dawn advance.</span>
+        <span class="zh">照片晾乾後，我將它壓在我的枕頭下。孤獨再次降臨肉桂花園，我坐在床邊，厚重的綠葉，看著黎明向前推進。</span>
+    </div>
+
+    <div class="section-break">◇</div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">Because of his disability, his father had no expectations of him. He came about two or three times a week—except for one time when he tore his silk shirt while climbing through the window and disappeared for two weeks. We rarely spoke. Sometimes he would bring a book to read, or just sit watching me work. I loved feeling his gaze on me, on the photographs, looking toward the cinnamon trees, toward the other side of the window. Those days drew me into more distant places in my dreams. What I was searching for was as clear as the starry sky. From sunrise until I walked through the chaotic night market and the foul-smelling houses, the dazzling sunlight before the rain, the cries of seabirds, the monsoon winds blowing from the southwest—everything filled me with ecstasy.</span>
+        <span class="zh">因為他的殘疾，父親對他毫無期望。一個星期裡他大約能來兩三次，除了有一次翻窗時不慎刮破了絲綢襯衫，消失了兩個星期。我們少有交談，他有時會帶一本書來讀，或是在旁邊看我工作。我喜歡感受他的目光在我身上，在相片上，望向肉桂樹，窗戶的另一邊。這些日子把我引向夢裡更遙遠的地方。我所尋找的東西像星空一樣澄澈。從太陽升起一直到我步行穿過雜亂的夜市和散發著臭氣的民居。雨水之前耀眼的陽光，海鳥的叫喊，西南方向吹來的季風，一切都讓我狂喜不已。</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">In mid-October, when the pomelos ripened in Colombo, he climbed through the window again. I stared at his slender limbs.</span>
+        <span class="zh">十月中旬科倫坡柚子成熟，他再一次翻過窗戶時我盯著他纖細的四肢。</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"Hey, maybe I could teach this kid to climb a tree."</span>
+        <span class="zh">「嘿，沒準我能教會這小子爬樹。」</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">Arthur showed an almost blind dependence on me. When I told him to climb up and pick the lowest pomelo, he didn't hesitate for a second. He grabbed the branch. I supported his waist from behind and lifted him upward. He raised one foot.</span>
+        <span class="zh">亞瑟對我展現出一種近乎盲目的依賴，當我讓他爬上去摘那顆最矮的柚子時他沒有絲毫猶豫就抓住了樹杈，我從背後扶住他的腰，將他的身體向上舉。他抬起一隻腳。</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"That's not safe."</span>
+        <span class="zh">「那裡不安全。」</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">I took his ankle and placed his foot in the fork of a thick branch. He reached forward, hugged the pomelo, and swayed back and forth like a rocking horse. I stood beneath the tree with my arms outstretched; the leaves he shook loose fell onto my face.</span>
+        <span class="zh">我握住他的腳踝，將他的腳放在粗枝的分叉處。他向前伸出手，抱住那顆柚子，像坐搖搖馬那樣晃來晃去。我在樹下張著手臂，被他抖落的樹葉落在我的臉上。</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"Good job!"</span>
+        <span class="zh">「做得好！」</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">He held the pomelo in his arms, brought it to his delicate nose, breathed in deeply, then threw it to me. After I caught it, he curved his lips and flicked his hair at me with a proud tilt. He turned his head and climbed higher. There were sunburn marks on his skin; the leg of his shorts revealed a flash of white skin with each movement.</span>
+        <span class="zh">他把摘下的柚子抱在懷裡，湊上他秀氣的鼻子，深吸了一口氣，接著把柚子扔給我。我接住後他勾起嘴角，朝我得意的甩了下頭髮。他扭過頭，又朝著更高處攀爬。他的皮膚上殘留著曬痕，短褲褲口隨著他的動作露出一截雪白的皮膚。</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"Arthur!"</span>
+        <span class="zh">「亞瑟！」</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">I called his name loudly from beneath the tree. He shook his head to refuse. The higher he climbed, the more violently the trunk of the pomelo tree swayed. Still, his movements remained light and agile, like a stray cat. Soon he stood on the highest branch, his sea-green eyes gazing curiously into the distance.</span>
+        <span class="zh">我在樹下大聲呼喊他的名字，他用搖頭來表示他的拒絕。他越向上爬，柚子樹的主幹就搖晃得越劇烈。他的動作仍然保持著輕快和靈巧，像一隻野貓。很快他就站上了最高處的枝杈，像海水一樣綠的眼睛好奇地望向遠方。</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"Come down when you've had enough fun."</span>
+        <span class="zh">「玩夠了就下來。」</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">I still stood beneath the tree with my arms outstretched. He suddenly closed his eyes and fell straight down from the highest point. The moment he reached me, he looped his arms around my neck. My arms ached from the impact. Before I could speak, he looked into my eyes and broke into a smile—innocent and sly. His eyes curved, his tassel-like lashes fluttered, and his cheeks flushed. A smile like a newborn baby's, a smile that appears only once in a lifetime—fragile and heartbreaking. Then he opened his eyes again, looked at me with those emerald eyes, testing, leaned his face in, and brushed his nose tip against mine. I still held him, my hand supporting his thin waist. His gaze darted downward for a moment, then met mine again. His arms tightened slightly around my neck. He turned his head and pressed his lips lightly against mine. When we parted, I set him down, held him tightly, and pressed my ear to his mouth—just wanting to hear him breathe, the chaotic breath inside him. His left hand rested on my neck, his right played with my hair. He tilted his head back, and we kissed again.</span>
+        <span class="zh">我仍然在樹下張著手臂。他突然閉上眼睛，直挺挺地從樹的最高處跳下，碰到我的一瞬間就用手環住我的脖子。我的雙臂被他砸得生疼。在我開口前，他望著我的眼睛，綻開了一個天真又狡黠的笑容。眼睛彎起，流蘇般的睫毛輕輕顫動，臉頰泛起紅暈。彷彿初生嬰兒似的笑容，一生只會展露一次的笑容，脆弱又令人心碎。接著他睜開眼，用那雙綠寶石般的眼睛試探我，湊過臉來，用鼻尖蹭了蹭我的鼻尖。我仍舊抱著他，用手托著他細瘦的腰。他的目光飛速向下瞟了一眼，又與我目光交匯。勾住我脖子的手微微發力，轉過頭，嘴唇輕輕壓著我的嘴唇。分開後我把他放下，緊緊抱著他，一隻耳朵湊到他嘴邊，只想聽聽他的呼吸，他體內混亂的呼吸。他的左手放在我的脖子上，右手玩著我的頭髮，仰起頭，我們再皮親吻。</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">I want you to believe me.</span>
+        <span class="zh">我希望你相信我。</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">He tapped my chest with his index finger.</span>
+        <span class="zh">他用食指敲敲我的胸口。</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">I clasped his hand, lowered my head, and brought his cold fingers to my lips, taking his fingertips into my mouth.</span>
+        <span class="zh">我扣住他的手，低下頭，將他冰涼的手送到我的嘴邊，用嘴唇含了含他的指尖。</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">Climb up. You can see the sea.</span>
+        <span class="zh">爬上去，能看到海。</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">The sign for 'sea' was made by pressing both palms down and moving them outward in waves. He looked like a seabird taking flight.</span>
+        <span class="zh">海的手語是雙手掌心向下，向兩旁做波浪形。他像一隻正在起飛的海鳥。</span>
+    </div>
+
+    <div class="section-break">◇</div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">When the dreary winter rains came, the most severe uprising in Kandy Province broke out. My editor gave me a box of film from the southern provinces and told me to develop it before the next issue went to press. Arthur disappeared for months. Then the Divaina published news of the East India Company's expansion into Kandy Province.</span>
+        <span class="zh">沉悶的冬雨來臨時，康提省爆發了有史以來最嚴重的起義。主編給我一盒從南方省份運來的膠卷，叫我在下一期雜誌出版之前沖印出來。亞瑟一連消失了好幾個月。接著，《迪瓦納》刊登了東印度公司在康提省擴張的消息。</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">One night in December, I heard a tap at the darkroom window. Arthur stepped over the sill with a weary smile and buried his head in my chest as soon as he saw me. I stroked his hair; it smelled of alcohol.</span>
+        <span class="zh">十二月的夜晚，我在暗房裡聽見敲窗戶的聲音。亞瑟帶著疲憊的笑容跨過窗框，一見我就把頭埋在我的胸口。我順著他的頭髮，他的頭髮散發出一股酒氣。</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">The film my editor had given me reeked of gunpowder and blood. Arthur watched as I clipped the developed photographs densely onto the thin string—burning barns, severed heads and arms, orphans who would not stop crying. Then he turned his head away, sat on my bed, and looked out the window. From a distance came the faint, intermittent sound of weeping and the low growls of men.</span>
+        <span class="zh">主編交給我的膠卷上沾著一股濃重的火藥味和血腥味。亞瑟看著我把洗出來的照片密密麻麻地夾在細繩上，燃燒的穀倉，斷掉的頭顱和手臂，失去親人的孤兒哭個不停。接著，他扭過頭去，坐在我的床上，望向窗外。我們的耳邊傳來遙遠的，斷斷續續的哭吟和男人的低吼。</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">I approached him. His face was taut, almost sad.</span>
+        <span class="zh">我靠近他，他的面孔緊繃，幾近憂傷。</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"Arthur, what are you thinking about?"</span>
+        <span class="zh">「亞瑟，你在想什麼？」</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">He started, turned his face to me, his eyes full of sorrow. Then he patted his own cheek and began to sign.</span>
+        <span class="zh">他嚇了一跳，把臉轉向我，眼裡充滿傷感。接著，他拍了拍自己的臉，做起手勢。</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">Thinking about impossible things.</span>
+        <span class="zh">想一些不可能的事情。</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"What things?"</span>
+        <span class="zh">「什麼事情？」</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">But he did not answer. Then he suggested a walk by the sea. The sunrise in the tropics follows a precise order. As we strolled along the breakwater, the light of the rising sun shone over us, magnifying everything. Arthur walked across the sand, shoes in hand, and stepped into the sea. In the slightly cold sea wind, the water flowed between his calves, pushing the edges of the waves. He took my hand and pulled me toward the ocean. We walked westward, where the coast still lay in darkness. The highest sky was still thick with stars. Plankton glowed with a faint blue-green fluorescence. The messy footprints on the sand were swallowed by the tide. The western end was blocked by a cliff; we could go no further. We stayed on the dunes, hearing only the wind in the caves and the roar of the receding tide. Apart from groups of ghost crabs emerging from their burrows, claws raised, there were no other living things. He rested his head lightly on my shoulder. The sun rose to its zenith in a silence like farewell, baking us at the centre of loneliness. The sea glittered with difficulty under the sun; the sea's embrace made us captives.</span>
+        <span class="zh">然而他沒有回答。之後，他提出去海邊走走。熱帶的日出時間守著精確的秩序，當我們在防波堤上漫步時，旭日的光線照耀過來，把一切變大。亞瑟走過沙灘，把鞋子提在手裡，踏入海水。微冷的海風中，海水在他小腿間流淌，推動波濤的邊緣。他握起我的手，把我拉向大海。我們向西走，那裡的海岸仍然隱在黑暗之中。最高的天空依舊繁星密布，浮游生物閃著淡淡的藍綠色螢光，沙灘上凌亂的腳印被潮水淹沒。西邊的盡頭被斷崖擋住，無法前行。我們待在沙丘上，只有洞穴裡的風聲和大海退潮的轟鳴。除了沙蟹一群接著一群從洞穴裡出來，豎起鉗子，沒有其他生物。他的頭輕輕挨著我的肩膀，太陽在訣別般的寂靜中升至天頂，在孤獨中央炙烤。大海艱難地閃耀在陽光下，大海的包容使我們淪為俘虜。</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">The sand dried on Arthur's hands and ankles, falling away in strands like silver rain, revealing pale skin. An unnamed sadness surged powerfully in my heart, burning on my skin like the scorching sun. We lay down, holding each other, as if we were the only human beings left on earth. His body was cold, with sand still clinging in places. I heard his breathing, felt his heartbeat, and felt his warmth on me—broad, stronger than the scorching heat of the days on the sea and in the desert. As if we were deep-diving, as if we were flying through the night sky, among the stars, listening to our breathing merged into one, like the breath of a sleeper, no longer feeling the cold of the sand.</span>
+        <span class="zh">沙子在亞瑟的手上、腳踝上變乾，像銀色的雨般一綹綹落下，露出蒼白的皮膚，不知名的悲傷強烈地湧上我心頭，像驕陽般灼燒在我皮膚上。我們躺下，互相依偎在一起，就像我們是大地上唯一生存的人類，他的身體冰涼，有些地方仍然覆蓋著沙子。我聽見他的呼吸，我感到他的心跳，還有在我身上他的熱度，寬廣，比海上和沙漠裡這些日子的灼熱更加強烈。彷彿我們在深潛，彷彿我們飛翔在黑夜的天空，在群星中，傾聽我們合為一體的呼吸聲，猶如熟睡者的呼吸，不再感到沙灘的寒冷。</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">When we parted at the marble gates, he made a sign I could not understand. He extended his index finger, held it vertically against his chest, then moved it downward slightly. Then he walked toward the gates without looking back. The next day, the Kandy Province rebels attacked a southbound convoy; casualties were unknown.</span>
+        <span class="zh">我們在大理石大門前分別時，他做了我看不懂的手語。伸出食指，指尖朝上貼於胸前，再向下微微劃動一下。接著，他頭也不回地邁向大門內。第二天，康提省的起義軍攻擊了南下的車隊，死傷未明。</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">The following spring, I volunteered to go to Kandy Province. By day it was dead silent; at night it was filled with wailing and cries. Along the way, I dug into the dry earth with my hands and found all kinds of traces among the stones: fragments of glass, rusted boxes, seashells. Now I could clearly see the wheels of carriages, the shoes of horses. Were these left behind by Arthur's convoy? What had happened to them? Had they died of fever and hunger, abandoned by everyone? I remained motionless among the ruins, tormented by immense disappointment. The sun burned again in the sky. I pushed through thorny bushes and scooped river water into my mouth. Countless times I lost myself in the mountains, surrounded by identical stones and shrubs. The scorched peaks rose in every direction against the gleaming sky. I called his name over and over: 'Ar—thur!' I stood facing the lush tropical trees and shouted: 'Ar—thur!' I heard the wind, scorching and blinding. 'Ar—thur!' I continued, turning north, this time toward the panting sea. I felt as if I were calling my own name, trying to awaken the echo of my life in this desolate landscape—the echo I had lost in my past life. 'Arthur! Ar—thur!' My voice grew hoarse. I wandered across the high plains, searching in vain for traces of wheels, human remains, signs of fire. Yet every place was empty. No trace of humans, no broken branch, not a single crease in the dry earth. Only sometimes, between two stones, a hundred-foot path would stretch.</span>
+        <span class="zh">第二年春季，我自願前往康提省。白天這裡一片死寂，晚上就環繞著慘叫和哭泣。沿途我用手挖開乾燥的土地，在石頭中間發現各種痕跡：玻璃塊，生鏽的盒子，貝殼。現在，我清楚地看見馬車的輪胎，馬匹的蹄鐵。這是亞瑟的車隊留下來的嗎？他們怎樣了？他們是否死於發熱和飢餓，被所有人拋棄？我一動不動，待在廢墟中，被巨大的失望所折磨。太陽重新在天空炙烤，我穿過帶刺的灌木叢把河水捧進嘴裡。我無數次迷失在山中，被相像的石頭和灌木叢包圍。曬焦的山峰在各個方向豎起，對著閃亮的天空。我數次呼喊他的名字：「亞——瑟！」我站立著，面向綠油油的熱帶喬木，我大喊：「亞——瑟」我聽見風聲，灼熱而迷眼的風。「亞——瑟」我繼續喊，轉向北邊，這一次，向喘息的大海。我似乎覺得，我在呼喊自己的名字，為了在荒蕪的風景中喚醒我生命的回聲，在過去的生命裡，我已經將它丟失。「亞瑟！亞——瑟」我的嗓音變得嘶啞，我遊蕩在高高的平原上，徒然地尋找車碾過的痕跡，人的遺骸，火跡。然而每個地方都空蕩蕩的。沒有人類的痕跡，沒有一根折斷的樹枝，乾燥的土地上沒有一絲皺褶。只是時而在兩塊石頭之間伸一條百英尺的小道。</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">Standing on the cobblestone driveway, I shouted at passing carriages. The sweat that broke from my body was like alcohol rising from me. When I think of him, I always think of him as that innocent and fragile Arthur, remembering all those soft, hidden emotions I had forgotten to let explode. Losing his company terrifies me. The wine-scented sweat drips onto the only photograph I carry on my chest. If I lift my head, the paper will get wet and the colours will run. His eyes will become a dark green forest and sea. When the damage to my vocal cords reached the point of no return, I carved his name into my forearm with glass.</span>
+        <span class="zh">站在鵝卵石鋪成的車道上，衝過路的車大喊。身上流出的汗是冒出我身體的酒精。我想起他的時候，總是想把他想成天真而脆弱的亞瑟，想起所有這種我忘了爆發的柔軟隱秘的情感。丟失他的陪伴令我驚恐。滿是酒味的汗流到我胸口放著的唯一一張相片上。當我抬起頭，相紙就會被弄濕，顏色會散開。他的眼睛會變成一片深綠的森林和海洋。聲帶的損傷到達不可逆的階段時我把他的名字用玻璃刻在了小臂上。</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">I have no voice, but I will scream.</span>
+        <span class="zh">我沒有聲音，但我要吶喊。</span>
+    </div>
+
+</div>
+
+<!-- ================= RETURN ================= -->
+<div style="text-align:center;">
+  <a class="return-box" href="../index.html">
+    <span class="en">Return</span>
+    <span class="zh">返回</span>
+  </a>
+</div>
+
+<!-- ================= MUSIC（可替换模块） ================= -->
+<!-- 🔴 MUSIC MODULE START -->
+<audio id="bgm" loop>
+  <source src="../music/Lovenwantiti.mp3" type="audio/mpeg">
+  <!-- 🔵 替换音乐路径即可 -->
+</audio>
+<!-- 🔴 MUSIC MODULE END -->
+
+<script>
+let lang = "en";
+
+function applyLang(mode) {
+  document.body.classList.remove("lang-en", "lang-zh");
+  document.body.classList.add("lang-" + mode);
+}
+
+function toggleLang() {
+  lang = (lang === "en") ? "zh" : "en";
+  applyLang(lang);
+}
+
+applyLang("en");
+
+/* music autoplay */
+document.addEventListener("click", () => {
+  const audio = document.getElementById("bgm");
+  if (!audio) return;
+  audio.volume = 0.6;
+  audio.play().catch(() => {});
+});
+</script>
+
+</body>
+</html>

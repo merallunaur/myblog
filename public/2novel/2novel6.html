@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Nine / 九</title>
+
+<style>
+body {
+  background-color: #81A380;
+  color: #525288;
+  max-width: 720px;
+  margin: 100px auto;
+  line-height: 1.9;
+  font-family: Georgia, serif;
+  padding: 0 20px;
+}
+
+/* ================= LANGUAGE SYSTEM ================= */
+.zh, .en {
+  display: none;
+}
+
+body.lang-en .en {
+  display: inline;
+}
+
+body.lang-zh .zh {
+  display: inline;
+}
+
+/* switch */
+.lang-switch {
+  position: fixed;
+  top: 18px;
+  right: 18px;
+  border: 1px solid #7D5A44;
+  padding: 6px 12px;
+  cursor: pointer;
+  color: #7D5A44;
+  background: transparent;
+  z-index: 999;
+}
+
+.lang-switch:hover {
+  background: #7D5A44;
+  color: white;
+}
+
+/* title */
+h1 {
+  text-align: center;
+  font-weight: normal;
+  margin-bottom: 60px;
+  font-size: 28px;
+  letter-spacing: 1px;
+}
+
+/* divider */
+.divider {
+  border-top: 1px solid #7D5A44;
+  width: 100%;
+  margin: 60px 0;
+  opacity: 0.6;
+}
+
+/* text */
+p {
+  margin-bottom: 26px;
+}
+
+/* return */
+.return-box {
+  display: inline-block;
+  padding: 6px 14px;
+  border: 1px solid #7D5A44;
+  color: #7D5A44;
+  margin-top: 60px;
+  transition: 0.3s;
+}
+
+.return-box:hover {
+  background: #7D5A44;
+  color: white;
+}
+</style>
+</head>
+
+<body class="lang-en">
+
+<!-- LANGUAGE SWITCH -->
+<div class="lang-switch" onclick="toggleLang()">EN / 繁</div>
+
+<!-- ================= TITLE（可替换） ================= -->
+<h1>
+  <span class="en"><!-- 🔵 English Title -->Nine</span>
+  <span class="zh"><!-- 🔵 中文标题 -->九</span>
+</h1>
+
+<div class="divider"></div>
+
+<!-- ================= BODY（整段可扩展区域） ================= -->
+
+<!-- 🔵 这里是正文 -->
+    <div class="section-break">◇</div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">Panem nostrum supersubstantialem da nobis hodie.<a href="#fn2" class="footnote-link" id="ref2"><sup>②</sup></a></span>
+        <span class="zh">Panem nostrum supersubstantialem da nobis hodie.<a href="#fn2-zh" class="footnote-link" id="ref2-zh"><sup>②</sup></a></span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">Grant us this day our supersubstantial bread.</span>
+        <span class="zh">祈求上帝賜予我們每日維生的麵包。<a href="#fn2-zh" class="footnote-link" id="ref2-zh-2"><sup>②</sup></a></span>
+    </div>
+
+    <div class="section-break">◇</div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">I once witnessed an execution. Of course, not on television or in any newspaper—the children of the Capitol can no longer see such horrors; they are well protected. It was at the end of the Dark Days,<a href="#fn3" class="footnote-link" id="ref3"><sup>③</sup></a> when the rebellion of the thirteen districts was about to be crushed. The Capitol began to try and execute the rebels from the districts. I remember pushing through the crowd, the strong smell of vomit filling my nostrils, and a wall of thighs blocking my view. I could barely see anything. That day, the rebels from District 9 were executed—thirteen people, the youngest just twenty, men and women, hanged together. Hanging, they say, the moment the condemned's head is looped into the noose, they feel a rush of heat to the brain, then their consciousness fades, as if drowning. Seconds later, the suspended body begins to convulse—the arms flailing, like a drowning person's desperate struggle, the feet walking in the air, swinging incessantly. Soon after, the hands and feet begin to twitch, then the whole body stiffens and trembles, like a fish on a cutting board. After the convulsions, they enter a state of suspended animation—the eyes bulge, breathing stops. At that point, the heart is still beating. It continues to beat for about ten minutes, and then death arrives. Some of the condemned had weights tied to their ankles, intended to break their cervical vertebrae instantly with the force of the fall.</span>
+        <span class="zh">我曾目睹過一場處決。當然，不可能是在電視，或是什麼報紙上，都城的孩子如今看不到這些慘象，他們被保護得好好的。那是在「黑暗時代」末期<a href="#fn3-zh" class="footnote-link" id="ref3-zh"><sup>③</sup></a>，13個區的叛亂將要終結時。都城開始對各區的叛軍加以審判和處決。我記得穿過人群，鑽入我鼻腔的濃烈嘔吐物氣味和擋在我眼前的成片的大腿。我幾乎什麼也看不見。那天，被執行的是第九區的叛軍，十三個人，最年輕的二十歲，有男有女，被同時絞死。絞刑，據說在被執行人腦袋被掛上去的一剎那，他們會感到頭腦發熱，接著意識模糊，彷彿溺水。幾秒後，被吊起的身體就會出現痙攣反應——手臂的揮舞，就像溺水的人的奮力掙扎，腳部則像在走路，不停地擺動著。過後不久，雙手雙腳開始抽動，緊跟著全身會挺直起來，顫動著，如同砧板上的魚。痙攣反應後，就進入了假死狀態——眼球突起、呼吸停止。這時候，仍有心跳。心臟還會持續跳動一陣子——大約十分鐘的樣子，接著死亡才會降臨。有的被執行人腳踝上還拴著重物，那是為了藉助墜落的衝擊力，在一瞬間折斷他們的頸椎。</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">All of this exists in my imagination. I was too short to see the gallows. But nevertheless, I witnessed an execution.</span>
+        <span class="zh">這些都存在於我的想像中，我太矮了，看不見行刑台。但是，總之，我目睹了一場處決。</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">After the Capitol quelled the rebellion, my father became a hero of the war. The first Hunger Games<a href="#fn1" class="footnote-link" id="ref1"><sup>①</sup></a> were designed by him. But he only served as designer for that single Games before being reassigned to command and train the military of District 2. My mother and I lived in the Capitol until the second coup. My mother was a designer. I loved to sing. By the time I fell in love with singing, the Dark Days had already ended, and I could sing freely, my voice ringing to the heavens, without fear of being discovered by anyone. Many children who died in the war did not have such good fortune.</span>
+        <span class="zh">我父親在都城平定叛亂後成為了功臣，第一屆飢餓遊戲<a href="#fn1-zh" class="footnote-link" id="ref1-zh"><sup>①</sup></a>便由他設計。不過他只當了這一屆設計師，便被調去指揮和訓練第二區的軍隊。我和母親一直住在都城，直到發生第二次政變。母親是一位設計師，我喜歡唱歌。在我愛上唱歌時，黑暗時代已經結束了，我得以自由地歌唱，音量響徹雲霄，不用擔心什麼人發現我。很多戰爭中死去的孩子沒有這種好運氣。</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">The first Hunger Games took place when I was eight. As the inaugural Games, they were more magnificent than any I remember. At that time, each district's tribute had a sponsor—a rule that was gradually abolished later; I don't know if it was ever reinstated. On the day of the reaping, I was at home helping my mother cut fabric. The effects of the war still lingered. The school I had once attended was now a ruin, with only wild cats scavenging among the rubble. The education system had not yet been fully restored, so I, like other Capitol children, stayed at home, waiting for the day when light would return. On the crackling television screen, the tributes' blurred expressions flickered in the static. From District 1 to District 12, as the numbers grew larger, their clothes and faces grew shabbier. That was because all their strength had been exhausted from the moment of their birth. In the years to come, even if they did not have to participate in the Hunger Games, they would still have to labour until death. Now they had turned from numbers into people, yet they still seemed like numbers—lifeless. I watched the numbers roll slowly. When it reached District 9, my mother raised the needle in her hand and pointed it at the screen. That child would come to live in our house. I raised my head. My eyes were pulled from near to far, aching and stinging. That child looked about eighteen, much older than me. He held his head high, his bright, wheat-golden hair falling in front of his face, hiding his expression. I could feel the rage surging beneath his powerful body. His hands were bound in shackles, his wrists bleeding.</span>
+        <span class="zh">第一屆飢餓遊戲進行時我八歲。由於是首屆舉辦，那屆飢餓遊戲比我記憶中的任何一屆都更加隆重。那時，每個區的選手都會有一名贊助商，這項規則後來慢慢被廢止了，是否被重新提起，我便不得而知。選手抽籤的那天，我在家裡幫助母親剪裁布料。戰爭的影響依然存在。我曾經上學的那座學校如今淪為廢墟，只有野貓在上面覓食。教育系統尚未全面復原，我和其他都城孩子都待在家裡，等待光明到來的那一天。滋滋作響的電視屏幕上，選手模糊的表情在電流聲中搖晃。從第一區到第十二區，隨著數字變大，他們的衣服和臉孔愈加破舊。那是因為在他們出生時，所有的力氣便已被耗盡。今後的數年，即使不參加飢餓遊戲，他們也不得不勞作致死。如今他們從數字變成人，卻彷彿還是數字，沒有生命。我看著數字慢慢滾動，到第九區時，母親舉起手中的針指向電視，那個孩子將住進我們家來。我抬起頭，眼球由近到遠被拉扯，發疼發酸。那個孩子看起來十八歲了，比我大上很多。他昂著頭，如麥穗般的亮金色長髮擋在臉前，看不清表情。我能感受到他那充滿力量的軀體下湧動著的憤怒，他的雙手戴著鐐銬，兩腕滲血。</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"Francis Bonnefoy."</span>
+        <span class="zh">「弗朗西斯·波諾弗瓦。」</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">He walked onto the stage, raised his head toward the camera, and revealed a pair of violet eyes, silent and chilling. His eyelashes trembled irregularly, like a halting, choked sob. I remembered that surname. That day at the execution ground, Bonnefoy—his father had been among them, likely lying somewhere among the Capitol's piles of corpses. I had not seen the face of any of the executed, but he must have looked very much like his father. I tried to watch further, but could not. He threw his head toward the camera. A sharp sound of shattering glass, the crack of whips through the air, two or three seconds of black screen. Then the reaping for District 10 began to play. I looked at my mother. She lowered her head, as if she had never raised it.</span>
+        <span class="zh">他走到台上來了，朝著攝像機抬起頭，一雙沉默得令人膽寒的紫羅蘭色眼睛。睫毛不規律地微微顫動，似某種斷斷續續的哽咽。我對這個姓氏留有記憶。那天在處刑場上，波諾弗瓦，他的父親位列其中，很可能在都城的某堆屍體裡。我沒見過任何一個被執行者的臉，但他一定很像他的父親。我試圖接著觀察，但難以繼續。他一頭撞向鏡頭。一聲玻璃碎裂的脆響，幾聲鞭子揮過空氣的響聲，兩秒三秒的黑屏。接著第十區的抽籤開始播放。我看向母親，她低下頭，彷彿從未抬起過。</span>
+    </div>
+
+    <div class="section-break">◇</div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">I held my mother's hand as I watched Francis step off the train. He was wearing the same clothes as on reaping day—a flat cap, a linen shirt, and a pair of khaki trousers that were too short. Nine.<a href="#fn4" class="footnote-link" id="ref4"><sup>④</sup></a> The number that ends every sequence. The number that signifies transcendence of personal gain and loss, the number of selfless love and sacrifice. The number that represents ending, culmination, and the cycle of life. District 9 was responsible for grain production and processing, one of the poorest districts. Half the people worked the fields, the other half in factories. It was harvest season, and everyone had to labour more than twelve hours a day. Some died of pneumonia, others from pesticide poisoning. Because they were so far from the Capitol, they received almost no protection or medical care. After the farm or factory work ended, they slept in huts on the ridges, their porches painted Haint Blue.<a href="#fn5" class="footnote-link" id="ref5"><sup>⑤</sup></a> An ancient legend, meant to mimic the sky or water, so that ghosts could not pass through. I had never seen such huts with my own eyes. When my mother and I still lived in the Capitol, we stayed in a three-story house. At night, the outer coating of the walls would glow blood-red, so that even if I played outside too late, I would never lose my way. I waved to Francis, but was almost ignored. He held his head high, staring straight ahead. Just as he was about to pass me, I grabbed his sleeve—the patch soaked in bloodstains. He had only left his district a few days ago, but his identity still clung to him. Family of rebels. He had not been chosen by lot, but pushed into this position. District 9 had only one tribute left; the other girl had committed suicide on the train. I saw them carry down her body. She had smothered herself with her skirt, her cheeks turned livid.</span>
+        <span class="zh">我握著母親的手，看著弗朗西斯走下火車。他穿著跟抽籤那天一樣的衣服，一件平頂帽，亞麻襯衫和短了一截的咔嘰布褲子。九<a href="#fn4-zh" class="footnote-link" id="ref4-zh"><sup>④</sup></a>，這個每一列序數結尾的數字。代表著超越個人得失喜樂，大愛的奉獻的數字。代表著結束、最高以及生命輪迴的數字。第九區負責穀物生產和加工，是最為貧窮的一個區之一。一半的人在田間耕種，另一半在工廠裡。此時正值收穫的季節，每個人不得不進行每日超過十二小時的勞作。他們當中有的人死於肺炎，有的人死於農藥中毒。因為離都城太遠，幾乎得不到防護和醫治。農耕或是工廠生活結束後，他們便睡在地壟上的棚屋裡。門廊漆成海特藍<a href="#fn5-zh" class="footnote-link" id="ref5-zh"><sup>⑤</sup></a>。那是幾百年前的古老傳說，為了模仿天空或是水，使鬼魂無法穿過。我此前從未親眼見過過這種棚屋，我和母親還在都城時，住在一座三層洋樓裡。一到晚上，牆面的外層塗料會發出如血一般的紅光。這樣，哪怕我在外面玩得太晚，也永遠不會迷路。我向弗朗西斯招手，幾乎遭到了無視。他昂著頭，目視前方。在他就要經過我身邊時我拉住了他的袖口，補丁浸滿血漬。他離開故鄉不過幾天，身份仍附著其上。叛軍的家眷，他並非通過抽籤，而是被推上這個位置。第九區僅餘一個參賽者，另一個女孩在來時的火車上自殺了。我看見有人抬下了她的屍體，她用裙擺悶死了自己，臉頰變成紺色。</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"You have to come with us."</span>
+        <span class="zh">「你得跟我們走。」</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">I looked up at him, reading mockery and scorn in his eyes. A stranger with sharp violet eyes, wearing a layer of wheat fragrance mixed with the smell of rust. He curled his lips, reaching his hand toward my face, the wounds on his wrists impossible to hide.</span>
+        <span class="zh">我仰頭看著他，從他眼睛裡讀出嘲諷和譏笑。一個有著銳利紫色眼睛的異鄉人，他穿著一層混合著鐵鏽味的麥香。他勾起唇角，手伸向我的臉，手腕上的傷痕無處可遁。</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"Sponsor?"</span>
+        <span class="zh">「贊助商？」</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">My mother nodded silently, holding my hand tightly as she fled the dusty platform, unconcerned whether he could follow. I turned my head. The space between us had already been filled by the crowd. I stood on tiptoe, trying to find him among the children dressed in similar clothes. His sly smile and whistle, suspended above the crowd, now fluttered like a bird's thin wings, beating weakly in the sulphur-tinged air of the Capitol. The moment I turned, he suddenly quickened his pace, shoved something into my palm, then lowered his eyes and fell back behind us. It was a hard, angular object. It felt like holding a sharp, narrow blade in my hand. It did not cut my skin, but it came close.</span>
+        <span class="zh">我的母親無言地點了點頭，緊緊拉著我的手，逃出塵土飛揚的站台，不在意他是否能跟上。我扭過頭去，我們中間的空隙已被人群填滿。我努力踮著腳，從一眾衣著打扮相似的孩子中找尋他的身影。他那懸吊在人群上方的狡猾微笑和口哨聲，此刻正如鳥的纖薄羽翼，在都城充斥著硫磺氣息的中無力拍打。我轉頭的剎那間，他突然快走幾步，將什麼東西塞進我的手心裡，旋即低垂著眉眼退到我們身後。那是個硬梆梆的，有稜角的東西。我的手中如同握著一把尖銳的窄刀片。它沒有刺破我的皮膚，但是已經快了。</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">He was placed in the basement, which had once been the servants' quarters, but most of them had died of the flu, and the rest had been dismissed. Few had survived the Dark Days. The first thing he had to do was bathe. He took off his shirt and walked into the bathroom. I would gaze at his back, the muscles covered in whip marks, old scars never fading before new wounds were added. He had to avoid those ghastly wounds while washing, as if avoiding monsters clinging to his back. Infection was deadly at any time. As he did all this, I stood beside him, separated only by a fogged glass door. I took the thing he had given me out of my pocket and held it in my palm. It was a medal engraved with the emblem of Panem—wheat, blades, and a soaring griffin.<a href="#fn6" class="footnote-link" id="ref6"><sup>⑥</sup></a> I turned it over to observe the small, worn indentations on the reverse side.</span>
+        <span class="zh">他被安置在地下室裡，那裡曾是傭人住的地方，只不過他們大部分死於流感，另一部分被遣散了。幾乎沒人挺得過黑暗時代。他要做的第一件事是洗澡，脫下襯衫走入浴室。我會凝視他的脊背，肌肉上佈滿鞭痕，甚至舊傷疤從未消減便又添新傷。他不得不在沖洗時避開那些猙獰的傷口，宛如避開附生在他脊背上的怪物。感染在任何時候都是致命的。他做著這一切時，我站在他身邊，只隔著一扇水汽氤氳的玻璃門。我將他塞給我的東西從口袋裡掏出來，擺在手心裡。那是一枚雕刻著施惠國國徽的勳章。麥穗、利刃與展翅高飛的獅鷲<a href="#fn6-zh" class="footnote-link" id="ref6-zh"><sup>⑥</sup></a>。我將它翻過來，以觀察背面已被磨平的細小凹痕。</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"District 9."</span>
+        <span class="zh">「第九區。」</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"Bonnefoy."</span>
+        <span class="zh">「波諾弗瓦。」</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">His father's name. As I was deep in thought, he came out of the bathroom, the scent of wheat rushing toward me. Seeing me standing at the door, he crouched down to my eye level and gave my cheek a hard pinch.</span>
+        <span class="zh">他父親的名字。他在我沉思時走出浴室，麥穗的香氣撲面而來。看到我站在門口，他蹲下身子與我平視，在我的臉頰上重重一捏。</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"What are you doing here, little one?"</span>
+        <span class="zh">「小不點，你在這裡幹什麼？」</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"My name isn't 'little one.' It's Arthur Kirkland."</span>
+        <span class="zh">「我不叫小不點，我叫亞瑟·柯克蘭。」</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"Alright, Arthur. What are you doing here?"</span>
+        <span class="zh">「好吧，亞瑟，你在這裡幹什麼？」</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"Mother is afraid you'll run away. She wants me to keep an eye on you."</span>
+        <span class="zh">「母親怕你逃走，要我看著你。」</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">A nearly exaggerated smile spread across his wheat-coloured face, the corners of his eyes sharply upturned, his pupils shaped like crescent moons. His gaze wandered and rolled over my face, like a peal of mocking laughter. His irises were silent as inorganic matter. In the cage of muscles and capillaries, two birds bared their sharp beaks, preening their violet tail feathers. His gaze, flowing like cold water, poured into my eyes. The birds screamed as they lunged at me. My eyes ached, as if they had just been gouged out. I covered my eyes, shaking my head from side to side, trying to shake off the phantom pain.</span>
+        <span class="zh">他那接近小麥色的臉上泛起一個近乎誇張的微笑，高高翹起的眼尾，彎月般的眼瞳。他的目光在我臉上游移翻卷，如一陣譏諷的笑聲。無機質般沉默的虹膜。肌肉和毛細組成的牢籠裡，兩隻鳥亮出鋒利的喙，細細梳理它們紫羅蘭色的尾羽。他那冷水般不斷流淌著的目光旋即灌進我的眼睛。鳥尖叫著向我撲來，我的眼睛感到疼痛，彷彿眼球剛剛被剜去。我捂著眼睛，左右搖晃腦袋，試圖甩開那陣幻痛。</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"I won't run away, Arthur."</span>
+        <span class="zh">「我不會逃走的，亞瑟。」</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">He spoke close to my ear, his voice both soothing and coaxing. At that moment, my mother came in and led him away. She would design his costume for the parade, and now she needed to take his measurements. This was the first Games; the Capitol's majesty and prosperity had to be displayed. He lay on the table like a bow drawn taut. Many people walked around him—my mother's assistants. From then on, all I remembered again was the wall of thighs blocking my view. I was too small to see the scene of him being deconstructed and reconstructed like a corpse. I only knew that the costume would be beautiful.</span>
+        <span class="zh">他貼著我的耳朵，既似安撫，又似誘哄。我的母親在這時走進來將他帶離。她將為他設計參與遊行的衣服，此刻要他去量尺寸。這是第一屆遊戲，都城的威嚴和繁榮必須體現。他躺在桌子上，像一張蓄勢待發的弓。很多人在他身邊走來走去，那是母親的助手。自此，我的記憶中又只有擋在我眼前的成片的大腿。我太小了，看不見他如屍體般被解構和再造的場景。我只知道，那件衣服會很漂亮。</span>
+    </div>
+
+    <div class="section-break">◇</div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">The costume my mother made was of thick, pleated brown cotton, like torn corrugated cardboard. The upper body was strung with crystals of decreasing size, like raindrops falling from him. In addition, he had to wear a corset. The night before the parade, I sneaked down to the basement, carrying ointment. The smell of dust and mould made my head heavy and drowsy. He lay on his side on the bed, facing the wall. I opened my mouth to call him, but he woke up before I could touch him, instinctively reaching under his pillow. If this were still the Dark Days, his knife would be there, ready for Peacekeepers<a href="#fn7" class="footnote-link" id="ref7"><sup>⑦</sup></a> bursting into the room at any moment. A keen sentinel in the darkness, his deep purple irises trembled slightly, like detuned sunlight, shimmering.</span>
+        <span class="zh">母親所製的這件衣服，厚重打褶的棕色棉布，如同被撕碎的瓦楞紙。上身串著由大到小的水晶，宛如雨滴正從他身上掉落。除此之外，他還必須要穿束腰。遊行的前一天晚上，我悄悄溜進地下室，帶著藥膏。灰塵和黴菌的氣味讓我的頭腦如醉般昏沉。他側躺在床上，面對著牆壁。我張開嘴想要叫他，他卻在我的手觸碰他之前就醒來，下意識摸向枕頭底下。如果還在黑暗時代，他的刀就放在這裡，以應對隨時衝進房間裡的維和軍<a href="#fn7-zh" class="footnote-link" id="ref7-zh"><sup>⑦</sup></a>。一個在黑暗中的敏銳哨兵，他深紫色的虹膜微微顫晃著，如同變調的日光，熠熠閃爍。</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"What are you doing here?"</span>
+        <span class="zh">「你來幹什麼？」</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">I did not answer, pointing to his wrists and back. He grabbed the hand holding the ointment—a habit he had developed during the war. These past few days, he had barely been allowed to eat, so that my mother's clothes would look even better. Even now, his strength could still easily smother me in this room. In the war years, on any given night, the murder of children took place throughout the twelve districts. They were unarmed, sacrificed to politics. Some held family photographs in their hands. Now, he snatched the thing from me, opened the lid, and coughed, choked by the herbal smoke.</span>
+        <span class="zh">我沒有回答，指指他的手腕和後背。他抓住我拿著藥膏的那隻手，這是他在戰爭中養成的習慣。這幾天，他幾乎不被允許吃飯，這樣，母親的衣服就會看起來更漂亮了。他如今的力氣依舊可以輕而易舉地把我悶死在這個房間裡。在戰爭年代，任何一個這樣的夜晚，對於孩童的謀殺都在十二個區的各處進行。他們手無寸鐵，成為政治的犧牲品，有人手中握著家庭合影。而此刻，他奪走我手裡的東西，打開蓋子，被草藥的熏煙嗆得一陣咳嗽。</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"Turn around."</span>
+        <span class="zh">「轉過身去。」</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">He gave me a deep look, then turned his back to me. The whip marks had sapped part of his strength, exposing his fragile wounds and skeleton to me. I gazed at the red, bleeding scars. Scenes of flogging and execution had rarely reached the Capitol since the rebellion was quelled, but one of the wounds had a thorn embedded in it, about a knuckle long. I carefully dipped my finger into the ointment, spread it on the back of my hand, warmed it with my body heat, and then applied it to his back. His whole body trembled, a muffled groan escaping him. His tall body tightened against my shoulder, making me bear part of his weight. He was indeed in terrible pain; sweat beaded on his smooth forehead. I could say nothing, because the wounds before me were whispering to me. Political murder is far more elusive. His body tensed sharply as I pulled out the thorn, squeezing my heart up into my throat. When I finished applying the ointment and lowered his shirt, we found ourselves holding each other tightly.</span>
+        <span class="zh">他深深地看了我一眼，背對著我，鞭痕刈除了他的一部分力氣，將他脆弱的傷口和骨骼暴露在我面前。我凝視著這幾條發紅的、流血的傷痕。鞭刑和處決場景在平定叛亂後很少傳到都城中來，但其中一條傷口中斷著一截刺，有一個指節長。我小心翼翼地用手指蘸了藥膏，在手背上抹開，用體溫加熱著，隨即抹向他的脊背。他渾身顫抖，發出悶哼，高大的身體勒緊了我的肩膀，好讓我承受他的一部分體重。他的確疼得太厲害了，光潔的額頭上冷汗直流。我說不出任何話，因為面前的傷口正在對我竊竊私語。政治的謀殺更加隱密難尋。他的身體在我拔出那根刺時猛然繃緊，把我的心往喉嚨擠。當我抹完藥膏，放下他的衣服時，我們發現彼此緊緊相擁。</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"Thank you, little one. I feel much better."</span>
+        <span class="zh">「謝謝你，小不點，我感觉好多了。」</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"My name isn't 'little one.' It's Arthur Kirkland."</span>
+        <span class="zh">「我不叫小不點，我叫亞瑟·柯克蘭。」</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"Alright, Arthur. What are you doing here again?"</span>
+        <span class="zh">「好吧，亞瑟，你又來幹什麼？」</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"I wanted to help you."</span>
+        <span class="zh">「我想幫你。」</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">My words fell into the air, as if into a dark pool, nowhere to be found. He remained silent. A low laugh came from the darkness.</span>
+        <span class="zh">我的話語落入空氣，彷彿落入漆黑的池水，無處可尋。他仍舊不發一語，黑暗中傳來一聲低笑。</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"You can't help me, Arthur."</span>
+        <span class="zh">「你幫不了我，亞瑟。」</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">He lay back down, turning his back to me. I noticed that he still wore the corset while sleeping. I opened my mouth, not noticing that my soul had split in two. I forgot to cap the ointment; the smoke attacked my eyes, a sharp sting. The words stuck in my throat, my heart—about to spill out. I hoped he would look back at me, but he did not.</span>
+        <span class="zh">他重新躺下，背對著我。我注意到他在睡覺時仍舊穿著束腰。我張了張口，沒有注意到自己的靈魂已經分裂成兩部分。我忘了蓋上手裡的藥膏，煙氣侵襲上我的眼睛，強烈的刺痛。原本哽在我喉頭的話，我的心，快要吐露出來了。我期盼著他向我回望，但他沒有。</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">The next day, he was taken away early for the parade. I was in the audience, having to stand on my toes so no one would block my view. The chariots gleamed in the sunlight, passing through the circular track with burning torches at its centre. At the end was the circular arena, where I saw the President and my father. I wanted to shout, to wave to my father, but the national anthem began to play. Everyone stood up, and once again all I saw was a wall of thighs.</span>
+        <span class="zh">第二天，他一早就被帶去了遊行。我在觀眾席上，必須站起身，才不會讓任何人擋住我的視線。戰車在陽光下金光閃閃，經過中間燃燒著火炬的環形車道。盡頭是圓形的競技場，在那裡，我看見了總統和我的父親。我想大叫，想向我的父親招手，但國歌響起了。所有人都站了起來，我的面前又只有成片的大腿。</span>
+    </div>
+
+    <div class="song-lyrics">
+        <span class="en">"The Horn of Plenty<br>
+        The Horn of Plenty for us all<br>
+        The Horn of Plenty!<br>
+        The Horn of Plenty overflows!<br>
+        Our flags will raise above,<br>
+        Panem shall reign above,<br>
+        May our nation never fall!<br>
+        The Horn of Plenty<br>
+        The Horn of Plenty for us all<br>
+        Though dark may fall<br>
+        Through darkness light will shine<br>
+        As the believe<br>
+        The darkness is the light,<br>
+        The Horn of Plenty Overflows!"<a href="#fn8" class="footnote-link" id="ref8"><sup>⑧</sup></a></span>
+        <span class="zh">「號角聲起，戰鼓敲響<br>
+        我們所有人吹出這豐饒的號角<br>
+        號角聲起，戰鼓敲響<br>
+        豐饒的號角已經吹響<br>
+        我們的旗幟高揚，飄蕩在城市的上空<br>
+        施惠國將建立祂的統治<br>
+        我們的子民絕不屈服<br>
+        戰鬥已經開始<br>
+        戰鬥的號角已經吹響<br>
+        黑暗可能會降臨<br>
+        但光明終會浸透黑暗<br>
+        這正是我們的信仰<br>
+        黑暗即是光明<br>
+        豐饒的號角已經吹響」<a href="#fn8-zh" class="footnote-link" id="ref8-zh"><sup>⑧</sup></a></span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">I saw him. Just like on reaping day, he held his head high. My eyes followed him as he moved. The costume my mother had designed made him look like a trampled and discarded toy, his soft-coloured eyes filled with hatred. The crowd fell into a strange silence, bodies swaying. To this day, there remains a blank in my memory of that entire parade. I only know that something unusual happened—torches fell before me, horses lost control. But being too close to the event was like standing next to an elephant—it was impossible to see the whole picture. The horses, startled and frantic, crashed into the audience. Several Capitol citizens were injured and dragged away by Peacekeepers. Then they fired their guns. The horses neighed and fell like a wall. Their limbs twitched for a moment, then all fell still. I looked at Francis. He was like a god who observed and controlled everything, smiling. As if sensing something, he looked toward me. I was crushed in the crowd, unsure if he could see my face. But he waved his hand. On his wrist, the shackles had left a thin scar, like a crack in parched earth.</span>
+        <span class="zh">我看見他了。如抽籤那天一樣，他高高昂著頭。我的眼睛一直隨著他移動，母親設計的那件衣服使他看起來像是一個被踐踏後再次丟棄的玩具，顏色柔和的眼睛被憤恨占滿。人群陷入詭異的寂靜，身子晃來晃去。直到今天，整個遊行在我的腦海裡仍留有一段空白。我只知道有不尋常的事情發生，在我面前倒下的火炬和失去控制的馬匹。但彷彿距離事件太近，如同靠近一頭大象，事情的全貌難以窺見。馬匹受驚發狂，撞向觀眾席，幾個都城人受傷，被維和軍拖下去。接著，他們開了槍，馬嘶叫著，像一堵牆似的倒下。四肢抽搐了一會，接著一齊下落。我看向弗朗西斯，他像是個縱觀並控制一切的神，面帶微笑。彷彿感應到了什麼，他向我看來，我被擠在人群中，不確定他是否看見了我的臉。不過，他揮了揮手。手腕上鐐銬留下一條細細的疤，彷彿乾涸土地上的一道裂痕。</span>
+    </div>
+
+    <div class="section-break">◇</div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">The next time I saw him was at midnight, just before the Games. I did not know where he had been during the day. Perhaps at home, perhaps being tortured. Even living in the same house, we could not see each other. We lived in different worlds, like two sides of a mirror, impossible to align. That midnight, I woke up thirsty, crept downstairs to pour a glass of water. A dark figure stood by the window, gazing out for a long time. I recognised him by his long golden hair and the bloodstains on his back. I walked to his side, but he seemed unaware of my presence, his gaze still searching outside the window. He stared at the tall grey buildings of the Capitol, at the low, fly-buzzing darkness, his hands pressed against the glass.</span>
+        <span class="zh">再次見到他時已是遊戲前的午夜。我不知道這幾天白天他在哪兒。可能在家裡，也可能在受刑。即使身處同一棟屋子，我們也見不上面，我們彼此身處不同的世界，如同身處鏡中和鏡外，無法重合。那個午夜，我因喉嚨乾渴而醒來，輕手輕腳地下樓，打算倒一杯水喝。落地窗前站著一個黑影，對著窗外久久凝望。我通過那金色的長髮和脊背上的血痕認出了他，走到他的身邊。而他彷彿意識不到我的存在，目光仍對著窗外探尋。他凝望著都城高大的灰色建築，凝望著低沉的、如蒼蠅般嗡嗡作響的黑暗，雙手貼著玻璃。</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"What are you thinking about?"</span>
+        <span class="zh">「你在想什麼？」</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"Home. Arthur, have you ever missed home? Or is the Capitol your home?"</span>
+        <span class="zh">「想家。亞瑟，你想過家嗎？還是說，都城就是你的家？」</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"I miss my father. He hasn't come home for many days."</span>
+        <span class="zh">「我想爸爸，他已經好多天沒有回家了。」</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">He let out a low laugh, looking at the water glass in my hand, as if his ability to think had been stolen by memories. Glass refracted thin beams of light onto his face, moving slowly with his expression, then rejoicing in his violet eyes. Like a moth just breaking free from its cocoon, about to fly into the flame.</span>
+        <span class="zh">他發出一聲低笑，看著我手裡的水杯，彷彿被回憶奪去了思考的能力。玻璃在他的臉上折射出纖細光束，隨著他的表情緩慢移動，又在他的紫眼睛中歡騰。彷彿一隻剛剛破繭而出，正要撲向火焰的飛蛾。</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"In District 9, the river water is black. Sometimes it's other colours, like green or purple. That's because the dyes from District 8 are dumped into the river. But it's not entirely their fault, since the other districts also contribute. My father would add alum to the water and cover it with a piece of gauze. That way, the next day, the water would be a little clearer. But some nights, the wind would blow the gauze away, and the next day we'd have to use nets and our fingers to fish out the flies and damselflies that had fallen into the water."</span>
+        <span class="zh">「在第九區，河水是黑色的。有時會是其他顏色，比如綠色或是紫色。那是因為第八區的染料倒進河裡了。不過也不全怪他們，因為其他幾個區也有功勞。我爸爸會往水裡加白礬，再蓋上一塊紗布。這樣第二天水就會清一點。不過有幾個晚上，紗布被風吹走，隔天我們就不得不用網子和手指撈出掉進水裡的蒼蠅和蟌。」</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">He tried to sketch out his childhood with sparse words, the time before the rebellion began, when his father was still alive. His eyes were full of pain, but even more so, nostalgia. He sat down against the glass window, moonlight roaring across his face. His eyes were closed, his trembling contained within the shadows of his features, like a person in high fever or under torture. I sat down next to him and rested my head in the crook of his elbow, a scent of wheat.</span>
+        <span class="zh">他試圖用少言寡語勾勒出孩提時代。在叛亂開始前，父親還在時的年代。他的眼神充滿痛苦，但更多的是懷念，靠著玻璃窗坐下，月光在他的臉上咆哮，他閉著眼，顫抖克制在五官的陰影中，宛若一個發著高熱或正在受刑的人。我挨著他坐下，將腦袋擱在他的肘彎，一陣麥穗的香氣。</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"Tell me more about District 9."</span>
+        <span class="zh">「再跟我說說第九區。」</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">He cast a faint glance at me, as if my response surprised him. But he closed his eyes again and spoke in a near-singing murmur. I stepped into his memory, into the endless golden fields of District 9, chasing rabbits between scarecrows and tree roots, returning empty-handed. Not far from me, Peacekeepers stood guard with weapons. On the dawn of the reaping, he was woken by the sound of rain. Rain pounded on the walls, the glass, the metal—louder than the harvesters. His body had forgotten everything it should remember: mosquito bites, the smell of damp straw, the slow-moving patrol flashlights, the endless rain, the angry cries of rain-soaked birds that could mimic the roar of beasts, the rumble of trains, the crackle of electrical sparks. The dark earth, the mouldy wallpaper, the sluggish air trapped by the rain. These were the few symbols of home left in his body. He wanted to stay in District 9 forever, lying in the empty, pitch-black hut, listening to all the sounds, waiting for his parents' souls to visit his dreams. But he slept here. Ants, like particles, bit him; he felt welts five times the size of their bodies rise on his skin. They were lifted by their own venom. This was the first time he had gone farther than the high wall at the boundary of District 9. He had once tried to climb it, almost reaching the top. His mother called him down. Invisible high-voltage electric wires surrounded the top—built after the war. When he finished speaking, he turned his gaze to me, then looked away. When I emerged from his memory, I felt I had become a vessel, my body filled with various laughs and sentences, growing heavy.</span>
+        <span class="zh">他對我投來淡淡一瞥，似乎我的回答使他驚訝。但是他再次閉上了眼睛，用近乎歌唱的語調低訴。我走進他的記憶，走進第九區那一望無際的金色原野，在稻草人和樹根間追逐野兔，無功而返。在離我不遠的地方，維和軍手持武器正在放哨。抽籤決定人選的那個黎明，他被雨聲吵醒。雨打在牆上、玻璃上、金屬上，雨聲蓋過了收割機的聲音。他的身體忘卻了應該記住的一切：蚊子咬的小包，潮濕的稻草的氣味，緩緩移動的巡邏手電筒，下個不停的雨，淋了雨的鳥生氣的叫聲，這些鳥能模仿野獸的吼叫聲、火車的隆隆聲和電火花的噼啪聲。深色的土地，長了霉的牆紙，為雨所困、緩緩流動的空氣。那是故鄉遺留在他身體裡為數不多的符號。他想要一直在第九區，在空蕩蕩的漆黑的棚屋裡傾聽各種聲音，等待父母的靈魂入夢。但他睡在這兒，微粒般的螞蟻咬了他一口，他感到有它們身體五倍大的包抬了起來。它們是被自身的毒素抬起來的。這是他第一次去到比第九區邊界的高牆更遠的地方，他曾試圖爬到那上面去過，幾乎要到頂了。母親把他叫了下來，最頂上圍著看不見的高壓電網，這是戰後建起來的。說完這些，他將目光轉向我，又移向別處。從他的記憶中走出來時，我感到自己成為了一件容器，我的身體裡充滿了各種笑聲和句子，因此變得沉甸甸的。</span>
+    </div>
+
+    <div class="song-lyrics">
+        <span class="en">"Are you, are you<br>
+        Coming to the tree<br>
+        Where dead man called out<br>
+        For his love to flee.<br>
+        Strange things did happen here<br>
+        No stranger would it be<br>
+        If we met at midnight<br>
+        In the hanging tree.<br>
+        Are you, are you<br>
+        Coming to the tree<br>
+        Wear a necklace of rope,<br>
+        Side by side with me.<br>
+        Strange things did happen here<br>
+        No stranger would it be<br>
+        If we met at midnight<br>
+        In the hanging tree."<a href="#fn9" class="footnote-link" id="ref9"><sup>⑨</sup></a></span>
+        <span class="zh">「你是否，是否會來到這樹旁<br>
+        這棵樹上，死者的魂靈呼喚著他的戀人一起逃走<br>
+        這裡有奇怪的事發生，簡直不能再詭異<br>
+        你我相約午夜在樹下相見<br>
+        你是否，是否會來到這樹旁<br>
+        頸上套著繩索的項鍊，吊在我身旁<br>
+        這裡有奇怪的事發生，簡直不能再詭異<br>
+        你我相約午夜在樹下相見」<a href="#fn9-zh" class="footnote-link" id="ref9-zh"><sup>⑨</sup></a></span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"You know, Arthur? My father was singing that song when he was hanged. The next day, my mother hanged herself. I was the only one left."</span>
+        <span class="zh">「亞瑟，你知道嗎？我的父親被絞死時就唱著這支歌。第二天，我的母親上吊自殺，只剩我一個了。」</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">The way he sang was almost like weeping. Crossing over the memories of war, after the soft echoes, he fell into a perfect silence, as if he had decided to put an end to his infinite life. A drop of water fell on the back of my hand. He suddenly opened his eyes, as if waking from a dream, and rubbed the corner of his eye with his finger.</span>
+        <span class="zh">他唱歌的樣子幾乎如同哭泣。越過戰亂的記憶，在輕柔反射的回音後陷入圓滿的沉默，彷彿他決意為自己無窮的一生畫上一個休止符。一滴水掉在我的手背上，他猛地睜開眼睛，彷彿從夢中醒過來，用手指摩擦眼角。</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"Tears should be collected too, for even tears are cleaner than the river water."</span>
+        <span class="zh">「眼淚也應該收集起來，因為眼淚也比河水要乾淨。」</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">He placed his hand on my head—a gentle touch from beyond the heavens. Then he stood up and walked back to the dark basement.</span>
+        <span class="zh">他將手放在我的腦袋上，來自天界的溫柔觸碰。接著，他站起身，走回黑暗的地下室。</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"Francis, why did you give this to me?"</span>
+        <span class="zh">「弗朗西斯，你為什麼要把這個給我？」</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">I held up the medal in my hand. The material from which it was cast turned any light that touched it into gold. In my palm, it was like a star undergoing fusion. His footsteps paused. The air was crowded and silent.</span>
+        <span class="zh">我向他舉起手裡的勳章。鑄造它的那種材料會把任何光線都變成金色的。我的手心裡彷彿孕育著一顆正在聚變的恆星。他的腳步頓了頓，空氣擁擠而沉默。</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"I want you to keep it safe."</span>
+        <span class="zh">「我想要你保管它。」</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"Francis, survive. Okay?"</span>
+        <span class="zh">「弗朗西斯，活下來，好不好。」</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">He did not answer. His silhouette was swallowed by the silent darkness.</span>
+        <span class="zh">他沒有回應，背影被無言的黑暗吞沒。</span>
+    </div>
+
+    <div class="section-break">◇</div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">It was years before I saw that Games. When the first Games took place, I was too young to be allowed to watch any bloody scenes. In that videotape, at the start of the Games, he climbed to the high ground and watched the tributes from District 1 ally with those from District 2. They first killed the girl from District 12—she was having an asthma attack. Then they surrounded the boy from District 8. They did not finish him off immediately, but stabbed him with a harpoon again and again. His dark brown hair was matted with blood, his intestines spilling out. For the first time, I saw living, pulsing organs, each one like an independent creature slowly escaping his thin body. I saw a flicker of pity in Francis's eyes, then calm returned. Somewhere in the arena, the sound of a metronome's needle ticking left and right—time passing. In the first hour of the Games, only ten of the twenty-three children remained. Francis stood on the high ground, his head raised, his gaze almost benevolent. He neither offered help nor actively joined the killing. No one knew what he wanted, so everyone feared him. Some tried to pull him down into the fray, but those people died. I found it hard to associate him with killing. He was skilled at using his charm as a tool, stopping at nothing. Yet I still did not know what he wanted; the rules of the arena cannot be judged by human nature. But one night, I heard him singing. Perhaps then he was finding himself again—the boy who ran across the wheat fields toward the hut painted Haint Blue. I saw him. He was the same age as me, eight years old. I wanted to talk to him, or hug him, touch him, but my arms held only tears and air.</span>
+        <span class="zh">幾年後我才看見那場遊戲。第一屆遊戲發生時我年紀太小，尚不被允許觀看任何血腥的場景。那卷錄影帶裡，遊戲一開始，他便爬到高地上，看著來自第一區的孩子與第二區的結盟。他們首先殺死了十二區的女孩——她得了哮喘，正在發作。接著，又將八區的男孩團團圍住。他們並沒有馬上結果他，而是用魚叉一下一下戳著他的身體。他那深褐色的頭髮被血漿黏在一起，腸子外流。我第一次見到跳動著的、活著的器官，彷彿每個器官都是某個獨立的生物，緩緩從他單薄的身體中逃離。我看見弗朗西斯的眼中閃過一剎那的憐憫，緊接著恢復平靜。競技場上的某處傳來了節拍器指標一左一右嘀嗒作響的聲音，那是時間正在流逝。遊戲發生的第一個小時裡，二十三個孩子僅剩下十個。而弗朗西斯站在高地上，昂著頭，目光近乎慈愛。他既不對施以援手，也不主動加入殺戮的隊伍。沒人知道他想幹什麼，因此人人都忌憚他。曾經有人想要把他拉下去，拉入爭鬥中。但這些人都死了。我難以把他和殺戮相聯繫，他善於運用自己的魅力，以此為工具，幾乎不擇手段。但我仍舊不知道他想要幹什麼，競技場上的規則無法用人性加以評判。只是某個夜晚，我聽見他在唱歌。也許那時他正找回自己，那個穿越麥田，向著漆成海特藍的棚屋奔跑的男孩。我看見他了，他跟我一樣，八歲大。我想跟他說話，或是擁抱並觸碰他，但我的臂彎中只餘淚水與空氣。</span>
+    </div>
+
+    <div class="song-lyrics">
+        <span class="en">"Are you, are you<br>
+        Coming to the tree<br>
+        Wear a necklace of rope,<br>
+        Side by side with me."</span>
+        <span class="zh">「你是否，是否會來到這樹旁<br>
+        頸上套著繩索的項鍊，吊在我身旁」</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">After long periods of killing and fighting—about two or three days, cut from the tape—only two children remained: him and the boy from District 1. A mischievous smile floated on his wheat-coloured face, dimples appearing and disappearing. Then a terrible cracking sound rang out, drowning out the music. The arena's chandeliers grew dimmer and dimmer, the flames flickering. The boy from District 1 screamed, not knowing what he was screaming, and ran out of the arena. As he ran, he confessed to his own treason—his father had been interrogated and nearly exiled. He was driven mad by those memories. But just as he reached the edge of the arena, someone shot him dead. I looked at Francis. He was squinting one eye, smoke rising from the barrel of his gun. He had survived. I jumped up with joy and shouted—until I heard the second gunshot. His body fell from the high ground, like a bird shot by an arrow, falling freely. The gun slipped from his hand. I do not know if he sensed something, but he looked at the camera, his purple pupils full of infinite rage, suddenly contracting. Then, amidst the sound of the Horn of Plenty rising everywhere, they quietly dilated. He was smiling. That was the end of the first Hunger Games. There was no victor. I never even saw his body. Political murder never leaves traces.</span>
+        <span class="zh">直到經過長久的廝殺和搏鬥，大概過去了兩三天，錄影帶中這些時間被剪掉了。只剩下了兩個孩子，他和一區的男孩。他那曬成小麥色的臉上浮出一絲惡作劇的笑容，酒窩若隱若現。這時，一個可怕的爆裂聲響起，蓋住了音樂聲，競技場的吊燈越來越暗，火苗在顫動。第一區的孩子尖叫起來，並不知道自己在叫些什麼，然後向競技場外面跑去。一邊跑，一邊口述著自己的叛國罪行，他的父親曾被拉去拷問過，幾乎要被流放了。他被那些記憶嚇得發狂，不過，在接近競技場邊緣時，有人開槍打死了他。我看向弗朗西斯，他瞇著一隻眼，手槍的槍口冒著煙。他活下來了。我驚喜地跳起來大叫，直到我聽見第二聲槍響。他的身體，從高地上落下來，像一隻被箭射傷的鳥兒，自由地墜落。那把槍從他的手中脫去。不知道他是否感應到了什麼，他看向鏡頭，那雙飽含著無限憤怒的紫色瞳孔，驟然收縮，接著四處響起的豐饒號角聲中，靜默地渙散。他在笑。這即是第一屆飢餓遊戲的結局。沒有勝者。我甚至沒有見過他的屍體。政治性的謀殺向來不留痕跡。</span>
+    </div>
+
+    <div class="section-break">◇</div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"Alright, Capitol! This is the interview with the District 9 tribute for the Ninth Hunger Games. Arthur Kirkland, whose father was exiled for rebellion a year ago. Let's wish Arthur well!"</span>
+        <span class="zh">「好的，都城！這就是第九屆飢餓遊戲九區的參賽者採訪。亞瑟·柯克蘭，一年前他的父親因為叛亂被流放。讓我們祝福亞瑟！」</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"Bless Arthur!"</span>
+        <span class="zh">「祝福亞瑟！」</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"Bless Arthur!"</span>
+        <span class="zh">「祝福亞瑟！」</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"Bless Arthur!"</span>
+        <span class="zh">「祝福亞瑟！」</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">The voices gradually blurred in my ears. I clutched the medal tightly. The Horn of Plenty sounded.</span>
+        <span class="zh">聲音漸漸在我耳邊模糊了，我握緊那枚勳章，豐饒的號角吹響了。</span>
+    </div>
+
+    <!-- 注释分割线 -->
+    <hr class="divider">
+
+    <!-- 注释部分 -->
+    <div class="footnote">
+        <div class="footnote-item" id="fn1">
+            <span class="en"><a href="#ref1" class="footnote-link">①</a> The Hunger Games: A national punishment and control system established in Panem after the Dark Days. Its origin was to punish the districts for their rebellion against the Capitol, maintaining political order through annual public violence. The system requires each district to select one male and one female tribute between the ages of 12 and 18 by public lottery, who are then placed in a man-made arena controlled by the Capitol. They must engage in a survival competition broadcast nationwide until only one survivor remains. Any form of killing and alliance is permitted during the Games. The arena environment and events are constantly manipulated by Gamemakers to ensure conflict and viewing appeal. Spectators can send supplies to tributes through a sponsorship system, linking survival to public image. The victor receives material privileges and is shaped into part of the national narrative, while the deaths of the fallen are ritualised as a collective warning to the districts, giving the Hunger Games the triple function of punishment, deterrence, and entertainment.</span>
+            <span class="zh"><a href="#ref1-zh" class="footnote-link">①</a> 本篇設定為飢餓遊戲，施惠國在「黑暗時代」後建立的一項國家級懲罰與統治制度，其起源旨在懲戒各區對都城的叛亂，並通過年度重複的公開暴力維持政治秩序。制度規定，每年由每個區通過公開抽籤選出一名12至18歲的男性與女性作為「貢品」，被送入由都城控制的人工競技場，在全國直播下進行生存競賽，直至僅剩一名倖存者。比賽過程中允許任何形式的殺戮與結盟，競技場環境與事件由遊戲製作人隨時操控，以確保衝突與觀看效果；觀眾可通過贊助系統向貢品投送物資，使生存與公眾形象直接掛鉤。勝者將獲得物質特權並被塑造成國家敘事的一部分，而失敗者的死亡則被儀式化為對各區持續有效的集體警告，從而使飢餓遊戲同時承擔懲罰、威懾與娛樂三重功能。</span>
+        </div>
+        <div class="footnote-item" id="fn2">
+            <span class="en"><a href="#ref2" class="footnote-link">②</a> Panem nostrum supersubstantialem da nobis hodie. Latin, from the Lord's Prayer. Literally "Grant us today our supersubstantial bread." In theology, "supersubstantialem" refers both to daily necessity and spiritual sustenance. "Panem" is also the etymological root of the nation Panem in The Hunger Games (Latin for "bread").</span>
+            <span class="zh"><a href="#ref2-zh" class="footnote-link">②</a> Panem nostrum supersubstantialem da nobis hodie.拉丁文，出自《主禱文》。直譯為「賜給我們今日超實質的麵包」，其中 supersubstantialem 在神學中既指日用之需，也指屬靈的糧。「Panem」亦為《飢餓遊戲》中國家 Panem 的詞源（拉丁語「麵包」）。</span>
+        </div>
+        <div class="footnote-item" id="fn3">
+            <span class="en"><a href="#ref3" class="footnote-link">③</a> The Dark Days: In The Hunger Games universe, the period of war after the thirteen districts rebelled against the Capitol. This period was characterised by public executions, collective punishment, and military repression. District 9 was responsible for grain production and processing, remaining in extreme poverty for a long time, bearing the burden of basic survival supplies while lacking political voice.</span>
+            <span class="zh"><a href="#ref3-zh" class="footnote-link">③</a> 黑暗時代（The Dark Days），《飢餓遊戲》世界觀中指十三個區反抗都城失敗後的戰爭時期。該時期以公開處刑、集體懲罰、軍事鎮壓為特徵。第九區負責穀物生產和加工，長期處於極端貧困狀態，承擔基礎生存物資卻缺乏話語權。</span>
+        </div>
+        <div class="footnote-item" id="fn4">
+            <span class="en"><a href="#ref4" class="footnote-link">④</a> "9" in many cultures represents ending, completion, cycle, and sacrifice. In Christian mysticism, nine is the number of the angelic hierarchy.</span>
+            <span class="zh"><a href="#ref4-zh" class="footnote-link">④</a> 「9」在多種文化中代表終結、完成、循環與獻祭。在基督教神秘主義中，九為天使階級之數。</span>
+        </div>
+        <div class="footnote-item" id="fn5">
+            <span class="en"><a href="#ref5" class="footnote-link">⑤</a> Haint Blue: Derived from Southern American folk tradition, porches or huts painted light blue to ward off ghosts (haints).</span>
+            <span class="zh"><a href="#ref5-zh" class="footnote-link">⑤</a> 海特藍（Haint Blue）源自美國南方民間傳統，門廊或棚屋漆成淺藍色，用以驅趕幽靈（haint）。</span>
+        </div>
+        <div class="footnote-item" id="fn6">
+            <span class="en"><a href="#ref6" class="footnote-link">⑥</a> Emblem of Panem:<br>
+            - Wheat: food control<br>
+            - Blades: violence<br>
+            - Griffin: a mythical creature that guards gold, symbolising power and plunder.</span>
+            <span class="zh"><a href="#ref6-zh" class="footnote-link">⑥</a> 施惠國國徽<br>
+            - 麥穗：糧食控制<br>
+            - 利刃：暴力<br>
+            - 獅鷲：神話中守護黃金
+
+<!-- ================= RETURN ================= -->
+<div style="text-align:center;">
+  <a class="return-box" href="../index.html">
+    <span class="en">Return</span>
+    <span class="zh">返回</span>
+  </a>
+</div>
+
+<!-- ================= MUSIC（可替换模块） ================= -->
+<!-- 🔴 MUSIC MODULE START -->
+<audio id="bgm" loop>
+  <source src="../music/TheHangingTree.mp3" type="audio/mpeg">
+  <!-- 🔵 替换音乐路径即可 -->
+</audio>
+<!-- 🔴 MUSIC MODULE END -->
+
+<script>
+let lang = "en";
+
+function applyLang(mode) {
+  document.body.classList.remove("lang-en", "lang-zh");
+  document.body.classList.add("lang-" + mode);
+}
+
+function toggleLang() {
+  lang = (lang === "en") ? "zh" : "en";
+  applyLang(lang);
+}
+
+applyLang("en");
+
+/* music autoplay */
+document.addEventListener("click", () => {
+  const audio = document.getElementById("bgm");
+  if (!audio) return;
+  audio.volume = 0.6;
+  audio.play().catch(() => {});
+});
+</script>
+
+</body>
+</html>

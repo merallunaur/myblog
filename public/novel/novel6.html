@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Love Letter / 情書</title>
+
+<style>
+body {
+  background-color: #81A380;
+  color: #525288;
+  max-width: 720px;
+  margin: 100px auto;
+  line-height: 1.9;
+  font-family: Georgia, serif;
+  padding: 0 20px;
+}
+
+/* ================= LANGUAGE SYSTEM ================= */
+.zh, .en {
+  display: none;
+}
+
+body.lang-en .en {
+  display: inline;
+}
+
+body.lang-zh .zh {
+  display: inline;
+}
+
+/* switch */
+.lang-switch {
+  position: fixed;
+  top: 18px;
+  right: 18px;
+  border: 1px solid #7D5A44;
+  padding: 6px 12px;
+  cursor: pointer;
+  color: #7D5A44;
+  background: transparent;
+  z-index: 999;
+}
+
+.lang-switch:hover {
+  background: #7D5A44;
+  color: white;
+}
+
+/* title */
+h1 {
+  text-align: center;
+  font-weight: normal;
+  margin-bottom: 60px;
+  font-size: 28px;
+  letter-spacing: 1px;
+}
+
+/* divider */
+.divider {
+  border-top: 1px solid #7D5A44;
+  width: 100%;
+  margin: 60px 0;
+  opacity: 0.6;
+}
+
+/* text */
+p {
+  margin-bottom: 26px;
+}
+
+/* return */
+.return-box {
+  display: inline-block;
+  padding: 6px 14px;
+  border: 1px solid #7D5A44;
+  color: #7D5A44;
+  margin-top: 60px;
+  transition: 0.3s;
+}
+
+.return-box:hover {
+  background: #7D5A44;
+  color: white;
+}
+</style>
+</head>
+
+<body class="lang-en">
+
+<!-- LANGUAGE SWITCH -->
+<div class="lang-switch" onclick="toggleLang()">EN / 繁</div>
+
+<!-- ================= TITLE（可替换） ================= -->
+<h1>
+  <span class="en"><!-- 🔵 English Title -->Love Letter</span>
+  <span class="zh"><!-- 🔵 中文标题 -->情書</span>
+</h1>
+
+<div class="divider"></div>
+
+<!-- ================= BODY（整段可扩展区域） ================= -->
+
+<!-- 🔵 这里是正文 -->
+    <div class="bilingual-paragraph">
+        <span class="en">Dear Arthur:</span>
+        <span class="zh">親愛的亞瑟：</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">Your letter flew faster than a goldfinch's wings. The postman's bicycle bell was skipping lightly outside my window when I was frying a pancake.</span>
+        <span class="zh">你的信比金翅雀的翅膀飛得還要快，郵差的車鈴聲從窗子外面輕快地跳進來時我正在煎一塊鬆餅。</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">If I were a painter, the inkblot that spilled during my pause might have made the Seine, which I had spent hours outlining, burst its banks. If I were a writer, behind the impassioned dialogue of my hero and heroine I might have written a string of meaningless words, then crumpled it all up and thrown it into the bin. If I were a violinist, the serenade Schubert had bestowed upon me would have fallen silent under a snapped string. Fortunately, I am none of these three, so my loss was only a pancake. Yes, a pancake that should have had a flawless, smooth body, bathed in sweet blueberry jam like a maiden, its wheat-coloured skin dusted with icing sugar. In the mere minutes it took me to wipe my hands carelessly on my apron and rush out to fetch the letter, her skin was scorched by the unprovoked flame. Alas, it is most impolite to compare a maiden's soft skin to charcoal, but by the time I returned to the house with your letter, the pancake was already burnt. I could only apologise on an empty stomach to that departed maiden. I still believe you should take responsibility for this rare mistake, so perhaps you will never again taste a pancake made by my own hands, Artie.</span>
+        <span class="zh">如果我是個畫家，停頓間筆下洇出的墨漬可能會讓花了數小時勾勒的塞納河沖出河床；如果我是個作家，男女主角深情對白後面說不定會寫上一串意義不明的單詞，再全揉碎扔進垃圾桶；如果我是個小提琴手，舒伯特恩賜給我的小夜曲會在崩斷的琴弦下噤聲。不過幸好我不是這三者中的一員，要不然我損失的可就不止一塊鬆餅了。嗯，一塊本該擁有光滑無瑕身體，像個少女般沐浴在香甜藍莓醬中，讓糖霜染上小麥色肌膚的鬆餅。就在我在圍裙上胡亂擦擦手衝出門取信的短短幾分鐘之內她的肌膚就被無妄的火焰灼傷。唉，拿黑碳來形容一位少女的柔膚真是太不禮貌了，但當我拿著你的信回到屋子裡鬆餅就已經煎糊了，我只能餓著肚子向那位死去的少女道歉。我至今還覺得你應該為這次為數不多的失誤負責，所以也許你以後再也吃不到我親手做的鬆餅了，亞蒂。</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">When I rushed out the door, I saw that the roses by the corner of the house had bloomed again. I had not tended them for a long time since we last parted. The two rose bushes had grown wild, laughing, dancing, splashing their colours about like flamenco dancers flinging their scarlet skirts—passionate and deep. Beneath those crystalline petals shimmering in the sunlight, the translucent emerald-carved stems stretched freely. Looking through them was like seeing your eyes. So I tore off only a small petal and pressed it between the pages, rather than plucking a whole flower. When you open this letter, you will surely detect a faint, elusive fragrance, as soothing as a glass of sweet berry wine. If the wisps of cloud over the English Channel were to form a bridge, allowing me to cross the blue abyss and alight by your side, I would break off a rose branch and lay it by your pillow every morning before dawn.</span>
+        <span class="zh">我衝出門時看到屋角的玫瑰又開了，其實自從上次我們分別後我已經很久沒有打理。兩叢玫瑰瘋了似的長，嬉笑著，舞蹈著，揮灑著色彩如弗拉明戈舞娘揮舞猩紅的裙裾，熱烈又深情。在那日光下明媚的水晶花瓣底下，綠寶石雕琢的通透花莖任意舒展，透過它們就彷彿看到了你的眼睛，所以我只撕下一小片花瓣夾在紙裡，而沒有摘一朵。你在打開信時一定能聞見若有似無的淡香，那香味會讓你像喝了杯甜果子酒般舒暢。如果加來海峽上空的細碎卷雲鋪開一架橋，讓我能跨過碧藍深淵在你身旁落腳，每天晨曦未露，我就會折一枝玫瑰在你枕旁。</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">The mailbox is old. The black paint has peeled away, revealing a rust-red skeleton stretching wide. I forgot to repaint it. The mailboxes around have been dismantled one by one. How pretty those little villa-like mailboxes once were! Now only the ugly iron poles remain. It is like the ancient, weather-beaten branches of an old tree being smashed to pieces; the remaining twigs point upward, accusing heaven. Those iron poles cry out the same. A mailbox separated from its house is like a sentry separated from his post. Our mailbox is almost an anomaly. If some little boy on a scooter happened to pass by and saw us—two old, toothless antiques, still clinging to the habits of the last century or even the one before in an age when a single email can connect anyone—he would surely widen his curious blue eyes.</span>
+        <span class="zh">信箱舊了，黑漆剝落下鏽紅骨架張狂地展開，我也忘了刷漆。周圍人家的信箱一個接一個拆毀，在原有的那些小別墅一樣的信箱多漂亮！現在只留下醜陋的鐵桿。好比一棵古樹飽經風霜的枝幹被粉碎，枝葉指向上空是對上蒼的指責，那些鐵桿也在發出同樣的吶喊。信箱離開房屋就像陣地失去了哨兵。我們的信箱幾乎算是異類，如果周圍有個什麼小男孩踩著滑板車經過，看到我們，兩個掉牙的老古董，在一封電郵就能溝通的年代還保留著上個世紀甚至上上個世紀的習慣，一定會睜大他好奇的藍眼睛。</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">Artie, despite all my rambling, I received the letter only moments after the postman's wheels had retreated. I took the letter, went back inside, cleaned up the burnt pancake, untied my apron, washed my hands carefully, then poured myself a martini, dropped in an olive, and sipped it while reading your letter.</span>
+        <span class="zh">亞蒂，別看我說了這麼多，我拿到信的時間比郵差的車輪撤退的時間晚不了多少。我拿了信，回到屋子裡，清理了被烤焦鬆餅，解下圍裙，仔細洗了洗手，然後倒了一杯馬提尼，放上一顆橄欖，邊品邊看你的來信。</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">Well, your handwriting, as always, is written in blue-black ink—stiff and dull, so flawless that it makes me wonder whether, if you made a single mistake, you would tear the page to shreds in frustration and start over on a fresh sheet. The salutation is 'Mr. Bonnefoy' again? Couldn't you use a more intimate form of address, my dear Mr. Kirkland? I won't bother to reproach you for not saying you miss me—you never change. Then you spend two long paragraphs explaining why you wrote to me. Very interesting: you say you didn't actually want to write, it was just that you had finished your work and had nothing else to do, and your blue ink was down to the last dregs, so you wanted to use it up. That's all. Oh my, if Artie ever openly admitted that he missed me, that he wanted to see me, that he wished to become a nightingale and perch on my windowsill, God's jaw would drop. He would fall from his gem-encrusted, gold-leafed throne, rub his eyes, part the layers of clouds before him, and ask some passing little angel to help him see clearly—because he would suspect he had grown senile.</span>
+        <span class="zh">嗯，你的筆跡一如既往地用藍黑墨水寫就，死板又無趣，完美得讓我懷疑你是不是每寫錯一個字都要把原來那張紙氣急敗壞地撕得稀碎，然後換一張紙重新寫。開頭又是波諾弗瓦先生？您就不能換一個更加親密的稱呼嗎，親愛的柯克蘭先生？我就不再譴責你不說想我了，反正你不會有任何改變。接下來你花了兩大段解釋你給我寫信的原因，有意思，你說你並不想給我寫信，只是工作做完突然無事可做，再加上自己那瓶藍墨水只剩一點底子，你想把它趕緊用完，僅此而已。噯呀，如果哪天亞蒂能大大方方地承認他就是想念我，想見到我，想變成夜鶯站在我的窗台的話，上帝的下巴都會驚掉的。他會從他鑲滿寶石的鍍金箔座位上摔下來，擦擦眼睛，再把眼前重重疊疊的雲朵撥開，讓周圍的什麼小天使幫他看個清楚。因為他懷疑自己已經老糊塗了。</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">You told me about your recent circumstances. From your tone, I can tell you are doing well—after all, when you are sad, you don't even have the energy to be sarcastic. Take last year, for example, when the Three Cats team lost the match. Not only did you drink two bottles of beer and hold onto me while singing 'God Save the Queen' all night, you also wandered dejectedly around the streets for a whole day, and later, because France won the championship, you slapped me twice. Oh, I never want to go through that again. It was even harder to bear than a dozen servals scratching my face with their filthy claws. You say your work is passable, that no one gives you trouble and no one is particularly close to you—that is your ideal state. Indeed, it is also my ideal state, because both kinds of people would be drowned in cheap perfume by me. No, just joking, Artie. You ran into Gilbert on the street? I haven't seen him for years. I heard he is on a honeymoon trip. Did he have a girl on his arm and show you his engagement ring? I don't need to be told it was Elizabeta—yes, our Lisa. Alas, such a slender, dazzlingly beautiful girl ended up in the arms of that stinky, hard-headed rascal, while I am left with only a foul-tempered little cat for company. How unjust fate is!</span>
+        <span class="zh">你向我談起你的近況，從你說話的語氣裡能看出你過得不錯，畢竟你難過時可是連譏諷別人的氣力都沒有。比如去年三貓子隊輸了比賽，你不僅在喝了兩瓶啤酒之後抱著我唱了一晚上天佑女皇，還在大街上垂頭喪氣地晃了一天，後來又因為法國奪冠打了我兩巴掌。哦，我可不想再經歷一次，那比十幾隻藪貓拿骯髒的尖爪子抓我的臉還要讓人難以忍受。你說你工作還過得去，沒有人為難你，也沒有人與你特別親近，這是你最理想的狀態。的確，也是我最希望的狀態，畢竟這兩種人都會被我拿廉價香水溺死。不，開個玩笑而已，亞蒂。你在大街上遇到了基爾伯特？我都已經好幾年沒有見到他了，聽說他正在旅行結婚。他是不是拉著一個姑娘，向你展示了他的訂婚戒指？不用說我也知道是伊莉莎白，對，我們的麗莎。唉，這麼身材窈窕，耀眼華美的姑娘到頭來還是投入了這個混小子又臭又硬的懷抱，然而我卻只能和一隻脾氣極差的小貓咪相伴，命運真是太不公正了。</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">Alright, my good cat, don't bristle just yet, and don't claw a hole in this letter paper—otherwise you won't be able to read what I have to say next, even though it is quite ordinary. By rights, I should tell you how I am doing, shouldn't I? Though you have never asked in your letters. Hmm, let me think.</span>
+        <span class="zh">好了，乖貓，先別炸毛，也別用你爪子在信紙上撓一個大窟窿 ，這樣你就看不到我接下來的話了，雖然它們平平無奇。照理我應該跟你談談我怎麼樣？雖然你從未在你的信裡問起過。嗯，讓我想想。</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">It feels as though there is a lump of honey lodged in my throat. When it is finally about to burst out, my lips touch only colourless foam. Very fine, very trivial—like summer fireflies igniting the stars. When the light pours down before me, I cannot grasp any of it; it slips through my fingers. Alright, Artie, you may frown now and put on that patented expression of yours—half disgust, half something else. You will certainly sneer at the sentimentality that follows.</span>
+        <span class="zh">好像有很多話像塊蜜糖堵在我的喉頭，當它們終於要衝出來時我的嘴唇觸及的卻只是無色的泡沫。很細碎，很煩瑣，像夏日的流螢點燃滿天星斗，光芒傾瀉在我面前時我卻什麼也抓不到，我的指縫任憑它們白白溜去。好吧，亞蒂，你現在可以皺起眉頭，擺出你專有的兼惡表情了，你絕對會對我接下來的深情嗤之以鼻。</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">The other day, while tidying the house, I came across a photo album. The first picture was of the two of us—we were only teenagers then, taken on a whim during summer break. We were playing baseball. Though we had known each other since we were very young, back then whenever I climbed over the wall and tumbled onto your soft green lawn, your older brother would always pick me up and toss me out. Scott is so insensitive. Still, I am grateful for his acceptance of us now. Give him my regards. When my fingertip brushed over that photograph, do you know what I was thinking? I was thinking: Arthur Kirkland is truly the most oblivious person in this world. The way I looked at you then was like the blue-violet aurora flowing over the North Pole. Under that canopy, the dark green forest glowed with light, yet its leaves merely trembled slightly. I saw you.</span>
+        <span class="zh">我前幾天整理屋子時翻出一本影集，第一張是我們的合影，那時我們才十幾歲，是一個暑假隨手拍的，我們在打棒球。雖然我們幾歲就認識了，不過以前我翻過圍牆，跌進你家柔軟的青草地時總會被你哥哥拎起來扔出去。斯科特真是不解風情，不過我依舊感謝他現在對我們的認可，代我向他問聲好。當我的指尖撫過合照時你知道我在想什麼嗎？我在想亞瑟·柯克蘭真是這個世界上最後知後覺的人，我那時看你的眼神就像北極上空流淌著的藍紫極光，穹頂之下深綠樹林光輝降臨，但樹葉只是輕輕顫了幾下。我看見了你。</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">We were two parallel planets. All the astronomers in the world calculated the changing laws of our orbits, but even if they bit their pencils to pieces and tore their hair out, they could not explain the convergence that occurred when we were teenagers. After all, reason offers no answer—feeling, on the other hand, is another matter. I held out my hand to you at the ball, but you did not place yours in mine. You slapped it away, apparently thinking I was playing a prank. So infuriating. You have no idea how many pretty girls I turned down for you that night, watching them blush, come running with their little deer-like steps, and then walk away with their heads bowed. When tears rolled from their limpid eyes, I felt as if I were committing a crime. So I pulled you out of the ballroom—that may have been the most reckless thing I have ever done. I pressed you against the rough school wall, cradling your head with my hand, and kissed you uncontrollably. You barely struggled. When we parted, you slapped me and called me every name under the sun—bastard, French frog, stubble-faced stinky man—but in the end, you sighed and embraced me.</span>
+        <span class="zh">我們是兩顆平行的星球，所有的天文學家都在計算我們的軌道的變化規律，可就算他們把鉛筆咬斷，頭髮撓掉都無法解釋我們在十幾歲時出現的並行。畢竟沒有理性給出答案，感性倒另當別論。我在舞會上向你伸出手，你卻沒有把你的手放在我的手上，你狠狠地打了一下，似乎以為我在惡作劇。太讓人生氣了，你不知道那天晚上我為了你拒絕了多少漂亮姑娘的邀約，看著她們紅著臉，邁著小鹿似的步伐跑來，又低頭離開。當她們水靈的眼睛裡滾下淚滴時我簡直感覺我在犯罪。於是我把你拉出了大廳，那可能是我做過的最魯莽的一件事了。我把你按在學校粗糙的牆面上，用手護著你的頭，控制不住地親吻你，你幾乎沒有掙扎。當我們分開時你扇了我一巴掌，把混蛋、法國青蛙、有鬍茬的臭男人輪著罵，最後卻嘆了口氣，抱住了我。</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">I never imagined we would be together for so long. Ten years? I don't know where to begin counting. Perhaps when I carried you, feverish, to the hospital at age ten? Perhaps when you and I took a kitten trapped in a sewer to the vet at age eight? Perhaps you were already imprinted on my heart when we first met at age three. Ah, back then, when you introduced yourself, your voice was crisp, your eyes large and bright, as if a bewitching potion had been poured into a crystal ball.</span>
+        <span class="zh">我從沒想過我們會在一起這麼久，十年？我不知道以何為起點，也許是十歲時我把高燒的你背去醫院？也許是八歲時你和我一起把被下水道卡住的小貓送去醫院？也許是三歲我們第一次相見時你就已經印在我心裡了。唉，那時候你介紹自己時講話脆生生的，眼睛很大很亮，像在水晶球中注入攝人心魄的魔藥。</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">Now you are nowhere near as adorable as you were then. How time flies. In those days you would tug at my coat and call me 'Fran-gor-gor.' Now your terms of address have degenerated into things like 'wine bastard' and the like. It has already been two years since you moved back home. I still remember going to the dock to see you off. You were wearing a long trench coat, carrying two large suitcases, and at the cabin door you waved to me with nonchalant elegance, then repeatedly reminded me not to forget your address. As you spoke, your cheeks flushed. You looked down and kicked at the small stones that lay everywhere on the dock, sending some into the sea where they raised silvery-white splashes, while others rolled to the roadside and were kicked farther by others. When you had no more stones to kick, you finally looked up at me. Your emerald eyes were burning hot, and like a skilled artisan, you branded your shadow deep into my eyes. I opened my arms and asked with a smile: 'No goodbye kiss?' You hesitated, glanced around, then cupped my face and pressed a gentle kiss to my lips.</span>
+        <span class="zh">現在你遠不如那時候可愛，過得真快，當年你還會牽著我的衣角叫我弗朗哥哥，現在你的稱呼已經變成什麼紅酒混蛋之類的了。自從你搬回國也已經兩年了，我還記得我去碼頭送你。你穿著一件長風衣，提著兩個大箱子，在艙門口瀟灑地向我揮了揮手，然後再三叮囑我不要忘了你的地址。你說話的時候臉色緋紅，低頭有一下沒一下地踢著碼頭上隨處可見的小石子，一部分掉進了海裡，激起碎銀子般的白浪，還有一部分滾到街邊，又被別人踢得更遠。當你終於沒有石子可踢的時候你終於抬起頭來看我了，祖母綠被火焰燒得滾燙，你像個精巧的工匠般把你的影子深烙在我的眼底。我張開雙臂，笑著問你不來個臨別的吻嗎，你猶豫了一下，看看周圍，捧住我的臉輕輕在我唇上印下一個吻。</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">It was not a final farewell, but it was too quick. By the time I tried to return the kiss, the sea wind had already taken your coat hem and whisked you away like a feather.</span>
+        <span class="zh">雖然不是生離死別，但也太快了，等我要回吻時海風已經牽著你的衣襟把你羽毛似的捎走了。</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">Well, I suppose this letter is coming to an end. As per custom, I will ask: how is the weather in London? Anything troubling you? When can we meet again? And please give my regards to all your family.</span>
+        <span class="zh">嗯，信大概要結尾了。按照慣例，我會問你倫敦天氣怎麼樣？有沒有什麼煩心事？什麼時候能再見面？然後讓你代我向你所有的家人問聲好。</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">I will say that I miss you terribly. At the beginning of this letter, I said I am not a painter, not a writer, not a violinist. If I could put a modifier before my unremarkable name, I would want it to be: an ordinary person who loves you.</span>
+        <span class="zh">我會說我非常想念你。開頭說我不是畫家，不是作家，也不是小提琴手。如果在我的平平無奇的名字前面冠一個定語的話，我希望是愛你的一個普通人。</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">Yours lovingly,<br>Francis</span>
+        <span class="zh">愛你的，<br>弗朗西斯</span>
+    </div>
+
+    <!-- 第一條分割線 -->
+    <hr class="divider">
+
+    <!-- 第二封信：亞瑟致弗朗西斯 -->
+    <div class="bilingual-paragraph">
+        <span class="en">Mr. Bonnefoy:</span>
+        <span class="zh">波諾弗瓦先生：</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">I received your letter long ago, but unlike you, I was not in a hurry to reply. Nor do I, as you claimed, swear and tear up the page every time I make a mistake. Though I did write several drafts, because I did not want you to have any shameful history to hold over me.</span>
+        <span class="zh">我早就收到了你的信，不過不像你，我並不著急給你回信。我也並非你所說的那樣寫錯一個字就一邊罵髒話一邊換一張紙，不過我的確寫了好幾封，因為我不想有不堪回首的歷史被你掌握。</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">Your envelope is the same as ever—like a rural country woman who fancies herself well-educated, with an incongruous, pretentious delicacy. Such women love to daydream, love poetic sentiment, love to wear the finest silk gowns and carelessly take new male companions to balls that anyone can pay to enter. The gold foil on your envelope looks as if it were pried from the gold teeth of such a woman's father, painstakingly glued into rows of golden leaf patterns. This time, however, to preserve the pure fragrance of the roses, you did not spray perfume as usual. Every time you spray perfume, I suspect you have smashed an entire bottle of musk onto the envelope. By the way, I pressed that petal between the pages of a thick dictionary and placed it on the top shelf of my bookcase.</span>
+        <span class="zh">你的信封和從前一樣，像個自以為受過良好教育的鄉間農婦似的，不倫不類的精緻。這類婦人愛異想天開，愛詩情畫意，愛穿著最考究的綢緞長裙，滿不在乎地挽著新男伴去參加花錢就可進入的舞會。你信封上的燙金就像從這類婦人老爹的金牙上摳下來，廢了好大心思才沾成一排金葉花紋。不過這次為了保持玫瑰花純潔的香氣，你沒有像往常一樣灑香水。每次你噴香水我都懷疑你是不是把整瓶麝香都打碎在了信封上。順便提一句，那枚花瓣被我夾在一本厚字典裡，放到了書架最上面。</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">You asked about the weather? Well, nothing special on the day the letter arrived. Fog is London's calling card, but that day the sun was shining, adorning the pointed roofs of Tower Bridge like giant pearls. When it fell on the green grass by the roadside, the grass turned into velvet. Cornflowers were blooming wildly, their blue-violet radiance so soft it was almost dreamlike, reminding me of the eyes of a certain fool who used to frequently tumble into my family's lawn a dozen or so years ago. Their shapes may not have been the same, but the expression in them was remarkably similar: bright with sky light, melting the frozen sky, impatiently revealing the remnant stars of a clear galaxy. Since London spends most of her time weeping, when she occasionally smiles, our spirits brighten as well.</span>
+        <span class="zh">你問我天氣？嗯，收信的那天倒沒什麼特別。霧氣是倫敦的名片，不過那天倒是陽光閃耀，點綴著塔橋的尖屋頂，像鑲嵌著巨大的珍珠。當它撒在路邊的青草地上時草地變成了天鵝絨。矢車菊在怒放，藍紫光輝柔和得近乎夢幻，讓我想到了十幾年前某個經常摔在我家草地上的笨蛋的眼睛，它們或許沒有一樣的形狀，但神情相差無幾，天光明亮，融化了凍結的天空，迫不及待地出露明朗銀河的遺星。因為倫敦大部分時間都在流淚不停，所以她偶爾笑一笑時我們也會心情明媚。</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">Scott is still the same. Because he works as a bodyguard, he is always on edge. He often says that if you treat me badly, he will make that handsome golden-haired head of yours part ways with your shoulders. Don't blame me—I am only repeating his exact words. Now, let me see what other terrible questions you raised. When can we meet again? That is something I may need to think about carefully.</span>
+        <span class="zh">斯科特還是老樣子，他因為給人當保鑣而神經兮兮的，經常跟我說如果你對我不好他就讓你那顆長滿漂亮金髮的頭從肩膀上搬家。別埋怨我，我只是複述了他的原話。嗯，讓我看你還提出了什麼可怕的問題。什麼時候能再見面？這個問題我可能要好好想一想了。</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">Alright, I just went to have a glass of rum and swallowed a scone. You would surely mock me for being able to swallow anything. If you were here, I would throw the scone in your face. The rum has made me a little dizzy; walking on the oak floor feels like walking on clouds. So what I am writing now is... damn, how did the ink leak! Never mind, don't worry about it. As for what I am about to write, read it or not, it's up to you. If you do read it, I hope you will tear it to shreds and throw it into the fireplace. When the ashes have cooled, sweep them up immediately, leaving no trace behind.</span>
+        <span class="zh">好了，我剛剛去喝了杯蘭姆酒，順便嚥了塊司康。你肯定又得嘲笑我什麼東西都能下嚥了，如果你在我眼前我一定會把司康摔在你臉上。蘭姆酒讓我有點暈乎乎的，踩在橡木地板上像踩在雲朵上，所以現在我給你寫的這些……見鬼，墨水怎麼滲出來了！算了，不去管它。接下來我寫的這些你愛看不看，如果你看了，希望你把它撕碎，扔進壁爐裡，灰燼冷卻時趕緊打掃乾淨，一點痕跡都別留下。</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">Actually, after I ran into Gilbert that day, I thought a lot. He and Elizabeta looked as happy as a pair of swallows. The wild, arrogant grin on Gilbert's face had softened considerably; when he looked at Elizabeta, his eyes became two pools of damp moonlight. Elizabeta's green eyes would dart nimbly over him when he wasn't looking, but when he turned to look at her, she would pretend to be looking elsewhere, a rosy blush blooming on her fair cheeks. I heard Elizabeta wants to ride a camel in Asia, and Gilbert has already booked the plane tickets. They will spend one night at some inn on the Thames and then leave. I remember Gilbert used to fight often, ride his motorcycle at high speed down the highway at midnight, climb onto the stage at music festivals, snatch the microphone from the singer, and shout at the crowd, 'I am the greatest!' Then he would improvise a song praising himself. But now, when they passed before me arm in arm, I saw only a sword returned to its sheath.</span>
+        <span class="zh">其實那天碰到基爾伯特之後我想了很多，他和伊莉莎白看起來像兩隻燕子那麼快活。基爾伯特臉上張狂的笑容收斂了不少，看向伊莉莎白時眼神就變成兩汪濕漉漉的月色。伊莉莎白的綠眼睛當基爾伯特不看她時就在他身上靈巧地打轉，然而基爾伯特看向她時又假裝在看別處，在白皙的臉龐上綻放出一片玫瑰色的羞顏。據說伊莉莎白想去亞洲騎駱駝，基爾伯特已經訂好了機票，他們在泰晤士河邊的某家旅館歇一個晚上就要走了。記得基爾伯特以前常常打架，半夜在公路上飆摩托車，音樂節爬上舞台搶了歌手的話筒對著台下吼「本大爺最帥」，然後即興編了一首誇讚自己的歌。但現在他們挽著手在我面前經過，我只看到一把歸鞘的劍。</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">Francis, I admit that I miss you a little—to an extent no greater than the mist that vanishes from Big Ben's waist at noon, or the snow that hastily melts on the beech trees in early spring. I must have drunk too much rum. The time we have been apart is nowhere near as long as the time we have known each other, yet your face is clearer now than it was then. To deflate your smug ego, I deliberately dug out that photograph. Your gaze was indeed ambiguous—like a hawk eyeing a plump rabbit. Your emotions are too obvious. Even a sapphire hidden among red bricks knows better how to conceal itself. I want to grab your ear and shout 'idiot' into it a dozen times, but now I need to drink a little more rum. Speaking to you so directly is killing me. If I had to choose between confessing my love to you and being hanged on the gallows, the latter would be my unequivocal choice.</span>
+        <span class="zh">弗朗西斯，我承認我有一點想你了，程度與午時大本鐘腰上消彌的霧氣和初春山毛櫸上急匆匆融化的雪不相上下。我一定是喝了太多蘭姆酒。我們相離的時間遠比不及我們相識的時間長，但你的輪廓卻比那時更加清晰。為了打擊你洋洋得意的氣焰我特意翻出那張合影，你的眼光確實曖昧不清，像鷂鷹見了圓滾滾的兔子。你的情感太顯而易見，紅磚堆裡混雜的藍寶石都比你更懂得隱藏。我真想揪住你的耳朵對裡面吼幾十句笨蛋，但我現在要再喝一點蘭姆酒了，對你這麼直白地說話簡直會要了我的命。如果在對你表白，和被送上絞刑架絞死之間選擇，後者會是我的不二之選。</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">My head is even dizzier now. It feels as though a dozen green-winged fairies are dancing on my skull and grinding their magic wands against the tip of my nose. Fran, when you were flirting with different girls as if no one else was around, did you ever expect that I had already fallen for you? Damn... I need to drink some cream of mushroom soup to wash down that sentence, which nearly rotted my teeth with sweetness. You certainly don't remember—after all, you never remember how good you are to others. That was... the rum seems to have corroded my memory... oh, seven years old. Unexpectedly early. But strangely, no momentous event gave my feelings any particular push. It was as if one morning a sparrow woke me, so I opened my eyes, got dressed in the pale purple dawn, and got out of bed. Just then, a song drifted over from the neighbouring house, the notes landing on my eardrums like rain on wild roses. As the song sounded, sunlight slipped through the gap in the unclosed curtains, tying a long, bright ribbon on the floor, sweeping over the white daisies on the table, and dyeing them yellow. The dust around was dancing. Your voice was as light and bright as that sunlight, reaching through the thick glass to embrace me. When I fell into it, it kissed my cheeks, each kiss lighter than a cherry blossom petal falling on skin. When the song stopped, I drew back the curtain. You were standing downstairs, looking up at me with a smile.</span>
+        <span class="zh">我的頭更暈了，像是有十幾個長著綠翅膀的精靈在我的腦袋上跳舞，並且在我的鼻尖上磨它們的魔法棒。弗朗吉，當你旁若無人地跟不同少女打情罵俏時應該沒有預料到我早早就喜歡上你了吧？見鬼……我要喝口奶油蘑菇湯來把剛才那句幾乎把我牙膩掉的話嚥下去。你一定不記得了，畢竟你從來不記得你對別人有多好。那時候……蘭姆酒好像把我記憶腐蝕掉了……哦，七歲，意想不到的早。但奇怪的是並沒有什麼有意義的大事給我的感情推波助瀾，就好像某天早上麻雀把我叫醒，於是我睜開眼睛，在淡紫色的清晨中穿好衣服下了床。正巧隔壁房子傳來一陣歌聲，音符落在我的耳膜上就像雨打在野薔薇上。當歌聲響起的時候陽光透過沒拉緊的窗簾細縫溜進來，在地板上繫上一條又長又亮的線，掃掠過桌上的白雛菊，並把它們染黃。周圍的灰塵都在跳舞。你的歌聲和陽光一樣又輕又亮，透過厚重的玻璃窗向我張開懷抱。當我投進去時它輕吻著我的臉頰，每一個吻的力度都比櫻花花瓣落在臉上要輕。當歌聲停止的時候我拉開窗簾，你站在樓下仰著臉對著我笑。</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">So I let myself sink into the dark pond where irises float. Cold water invaded my lungs, and I tasted the rich mellow flavour of red wine.</span>
+        <span class="zh">於是我任由自己深陷於鳶尾花漂浮的深暗池塘，冷水入侵我的肺，我嘗出紅酒的醇香。</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">I could never tell you that. I have never had such an intention. Oh, Francis is a heartthrob; every day several girls follow behind him offering chocolates. Hey, did you ever accept any? Ah, it doesn't matter. Though a few years later, the way you looked at me changed. You poured a gaze softer than ever before onto my face, but I thought you might just be lacking a bedmate—nothing more.</span>
+        <span class="zh">我不可能跟你說的，我從來沒這個打算。哦，弗朗西斯可是萬人迷，每天都有好幾個少女跟在他身後送巧克力。欸，你收過沒有？算了，這都不重要。雖然幾年後你看我的眼神不同了，你把比任何時候都要柔和的目光傾瀉在我的臉上，但是我認為你可能只是缺一位床伴，僅此而已。</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">I seem to admit that I am slow to realise things. I pushed away your hand when you held it out to me. But if you didn't smile so freely at others, I wouldn't have misunderstood. Reflect on that, you idiot Fran. When you kissed me, I still gave in—after all, I had been waiting for too long. A whiff of smoke, tinged with alcohol, wet lips and tongues entwined—the feeling was truly not good. You trapped me for ten years with a kiss as a cage, Fran. You placed the plump, red apple of Eden before me, but you did not trick me into eating it; you swallowed it together with me.</span>
+        <span class="zh">我似乎承認自己後知後覺了，我在你向我伸出手時推開了它。不過如果你不對其他人肆意微笑的話我就不會產生誤解，反思吧，笨蛋弗朗吉。你吻我時我還是妥協了，畢竟我已經期待了太久。一股煙味，帶著酒氣，濕潤的唇舌交纏，那感覺可真的算不上好。以吻為牢籠，你禁錮了我十年，弗朗吉。你把伊甸園飽滿紅潤的蘋果放在我面前，沒有騙我吃，而是和我一起嚥下。</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">My reason tells me I must stop reminiscing about the past, or I will surely regret it when you produce this letter in the future and laugh at me. A few days ago, with nothing better to do, I took a bus to the docks at Dover for a walk. Though London is often shrouded in fog—we used to argue over whether that fog was more like mung bean soup or mustard—the weather by the sea was fine. The clouds were like silk-cotton, the clear blue sky patched into a gown dotted with white blossoms. In the distance, the sea shimmered with golden liquid. It was as if a siren or Triton had knocked over a paint bottle, turning the blues—from those of the most precious gemstones to pale floating ice—toward the beach paved with fine white pearls. The seagulls' cries were a bit piercing and annoying, but always a few dozen metres away. The scent of the sea wind was like a mixture of seaweed and gold—perhaps the ghost of some ancient pirate luring people to search for his treasure. I hopped along the path paved with neat brick tiles until I saw a pair of lovers parting with a kiss, which reminded me that I should catch the bus back. It was then that I realised how much I hate farewells.</span>
+        <span class="zh">我的理智告訴我必須終止對過去的回憶，不然我一定會在將來你拿出這封信嘲笑我時後悔。前幾天我閒來無事，搭車去多佛爾的碼頭上散了散步。雖說倫敦城裡經常雲山霧罩，你我還爭論過那霧的顏色到底像綠豆湯還是像芥末，海邊天氣尚好。雲像是絲棉狀，澄碧如洗的天空被縫補成一件點綴著白花的衣裙。遠處的海面流金瀲灩，不知是塞壬還是川頓打翻了顏料瓶，深淺不一的藍從最昂貴的寶石打磨成淺淡的浮冰，向細白珍珠鋪成的沙灘靠攏。海鷗的叫聲有點刺耳討厭，不過總在幾十米外的天空。海風的氣息像是水草和金子混合而成的，也許那是古早的海盜亡靈在引誘人去找尋他的財寶？我在鋪著整齊方磚的小路上跳著走，直到看到一對離別的情侶擁吻時才想起要搭車回去。我那時才發現我真恨離別。</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">Well... the fairies on my head are dancing more and more merrily. I have to tap my skull to make them stop. The ink is almost gone too. I think this letter will end here. I don't have that much to say to you. Next, I will probably need to drink a glass of honey water, take a shower, and then get under the covers to watch a Liverpool match. What a charming night—no extra work, no neighbours' children wailing all year round, no garrulous Frenchman chattering beside me. Perfect!</span>
+        <span class="zh">嗯…我頭上的小精靈越跳越歡了，我得敲敲腦袋才能讓它們停下。墨水也快用完了，我想這封信就到這兒吧，我跟你沒有那麼多可說的。接下來我可能得灌上一杯蜂蜜水，沖個澡，然後鑽進被子裡看一場利物浦的球賽。真是個迷人的夜晚，沒有額外工作，沒有鄰居家一年四季都在哭鬧的孩子，沒有聒噪的法國男人在身邊嘰嘰喳喳，美極了！</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">This letter is terribly long and tedious. I had planned what I wanted to say, but I ended up telling you a lot of trivial little things as annoying as eraser crumbs. Damn, postage isn't cheap these days.</span>
+        <span class="zh">這封信真是又臭又長，我原本計劃好了跟你說什麼，但是我又跟你說了好多橡皮屑一樣煩擾的小事。見鬼，現在寄信似乎也不便宜。</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">Alright, the green-winged fairies are protesting. They are now tangling my hair around their magic wands—I don't know what they are planning. ...One of them seems to have flown into my brain. I really shouldn't have drunk so many glasses of rum. The fairy in my brain is making me write this sentence on the back of the letter, meaning that if you don't want to read it, you can just destroy it. Now I am going to turn the page over.</span>
+        <span class="zh">好了，綠翅膀的小妖精抗議了，它們現在把我的頭髮往魔法棒上纏，不知道要做什麼。……有一個好像飛進我的腦子裡了，我就不該喝那麼多杯蘭姆酒。我腦子裡的小精靈讓我把這句話寫在信紙背面，意思是你不想看就直接銷毀這封信，現在我要翻紙了。</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">I love you. I miss you terribly.</span>
+        <span class="zh">我愛你，非常想念你。</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">Sincerely,<br>Arthur</span>
+        <span class="zh">真誠的，<br>亞瑟</span>
+    </div>
+
+    <!-- 第二條分割線 -->
+    <hr class="divider">
+
+    <!-- 自白部分 -->
+    <div class="bilingual-paragraph">
+        <span class="en">As for this letter, you may file it under any label that suits you: perhaps 'A Sample of Sweet Fiction the Author Occasionally Botches,' or 'A Brief Distortion of a Serious Narrator.' I have no objection to this; in fact, I find it rather interesting. After all, classification itself is more reassuring than writing—it requires no understanding, no hesitation, no risk of being misread. It needs only a word, and then it neatly shelves everything.</span>
+        <span class="zh">至於這封信，你大可以把它歸檔進任何你順手的標籤裡：比如「作者偶爾失手寫出的甜文樣本」，或者「嚴肅敘事者的短暫失真記錄」。我對此並無異議，甚至頗感興趣。畢竟分類這件事，本身就比寫作更令人安心——它不需要理解，不需要停頓，更不需要承擔誤讀的風險，它只需要一個詞，然後把一切妥帖地收納進去。</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">You may be disappointed by its softness, as if a 'cold, serious, niche author' you had carefully displayed suddenly revealed an untimely warmth. Or you may be satisfied with its fluidity, seeing it as a kind of 'proof of ability,' as if I have finally managed to move toward the mainstream. Both reactions are perfectly reasonable—indeed, inevitable—because they both spring from the same premise: you have already decided in advance what I ought to be. And I happen to stand outside that premise, watching each of you make your own judgments.</span>
+        <span class="zh">你可以因為它的柔軟而失望，彷彿一個被你小心陳列的「冷峻嚴肅小眾作者」忽然露出不合時宜的溫情；也可以因為它的流暢而滿意，把它當作某種「能力證明」，彷彿我終於完成了一次向主流的靠攏。這兩種反應都很合理，甚至可以說是必然的——因為它們都來自同一個前提：你已經提前決定了我應該是什麼樣子。而我恰好站在這個前提之外，看著你們各自完成各自的判斷。</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">What is interesting is that this text does not resist these categorisations; in fact, it cooperates with them. It is sweet enough, complete enough, conforming enough to a certain proven emotional trajectory that you can almost predict its course at any point—reunion, memory, misplaced expression, belated confession. It does not break the rules; it simply executes them so cleanly that it almost seems impatient.</span>
+        <span class="zh">有趣的地方在於，這篇文本並不反抗這些歸類，它甚至配合它們。它足夠甜，足夠完整，足夠符合某種被驗證過的情感路徑，以至於你幾乎可以在任何一個節點預判它的走向——重逢、回憶、錯位的表達、遲來的承認。它沒有破壞規則，它只是把規則執行得過於乾淨，以至於顯得有些不耐煩。</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">But at the same time, it does not truly belong to these rules. Because the motive behind writing it came neither from conformity nor from resistance, but was closer to an experimental relaxation. It is like a person who, after having walked all the required paths, suddenly decides to take the flattest road, just to see what the road itself has to offer.</span>
+        <span class="zh">但與此同時，它又並不屬於這些規則。因為寫下它的動機，並不來自迎合，也不來自反抗，而更接近一種實驗性的鬆弛。就像一個人已經走過所有被要求的路徑之後，忽然決定走一條最平坦的路，看一看這條路本身到底有什麼。</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">So if you must read something into it, I would suggest you read something a little uncomfortable: it can be taken as candy, or as evidence; it can prove 'I can write this way too,' and also prove 'writing this way is not actually difficult.' And these two proofs do not point to the same conclusion.</span>
+        <span class="zh">所以如果你一定要從中讀出什麼，那我倒建議你讀出一點不太舒服的東西：它既可以當作糖，也可以當作證據；既可以證明「我也能這樣寫」，也可以證明「這樣寫其實並不難」。而這兩種證明，指向的並不是同一個結論。</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">As for what I was thinking when I wrote it—that indeed happened a long time ago, and I am no longer sure whether it is necessary to explain. Compared to my motives, I care more about how it is used now: anticipated, misrecognised, categorised, consumed. Once a text is completed, it no longer belongs to its writer, but to the person who reads it. Yet the way it is read often reveals the reader's position more than the text itself does.</span>
+        <span class="zh">至於我寫它時究竟在想什麼——那確實發生在很久以前，甚至連我自己也不太確定是否還具有解釋的必要。比起動機，我更在意它現在被如何使用：被期待、被誤認、被歸類、被消費。文本一旦完成，就不再屬於寫作者，而屬於閱讀它的人；但閱讀的方式，往往比文本本身更暴露立場。</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">So you may certainly continue to name it, place it in the drawer you know best, let it become a quiet specimen in your system of judgment. I will not interrupt you, nor will I correct you. It is only that if one day you find these drawers beginning to blur together, the labels losing their boundaries, it may not be that the text has changed.</span>
+        <span class="zh">所以你當然可以繼續為它命名，把它放進你熟悉的抽屜裡，讓它成為你判斷體系中一個安靜的樣本。我不會打斷你，也不會糾正你。只是如果哪一天你發現這些抽屜開始彼此混淆，標籤開始失去邊界，那也許不是文本發生了變化。</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">It is just that the way you originally used to distinguish them was never that stable in the first place.</span>
+        <span class="zh">只是你原本用來區分它們的方式，本來就不那麼穩固。</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">And if you must ask for my position—then let me speak even more plainly. I can write both the things you think I would not write, and the things you think I would only write. I can linger in the 'depth' you define, and I can also roam through the 'lightness' you know well. There is no gap to be crossed between these two; they are merely different uses of the same hand.</span>
+        <span class="zh">而如果非要問我的立場——那我只能把話說得再直白一點：我既寫得出你以為我不會寫的東西，也寫得出你以為我只會寫的東西。我既可以在你定義的「深度」裡停留，也可以在你熟悉的「輕盈」中游走。這兩者之間並不存在跨越，它們只是同一隻手的不同用法。</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">Which one you prefer is your freedom.</span>
+        <span class="zh">至於你更偏愛哪一種，那是你的自由。</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">That you have therefore misjudged anything is also your freedom.</span>
+        <span class="zh">至於你因此誤判了什麼，那也是。</span>
+    </div>
+
+<!-- ================= RETURN ================= -->
+<div style="text-align:center;">
+  <a class="return-box" href="../index.html">
+    <span class="en">Return</span>
+    <span class="zh">返回</span>
+  </a>
+</div>
+
+<!-- ================= MUSIC（可替换模块） ================= -->
+<!-- 🔴 MUSIC MODULE START -->
+<audio id="bgm" loop>
+  <source src="../music/Entry_of_the_Gladiators.mp3" type="audio/mpeg">
+  <!-- 🔵 替换音乐路径即可 -->
+</audio>
+<!-- 🔴 MUSIC MODULE END -->
+
+<script>
+let lang = "en";
+
+function applyLang(mode) {
+  document.body.classList.remove("lang-en", "lang-zh");
+  document.body.classList.add("lang-" + mode);
+}
+
+function toggleLang() {
+  lang = (lang === "en") ? "zh" : "en";
+  applyLang(lang);
+}
+
+applyLang("en");
+
+/* music autoplay */
+document.addEventListener("click", () => {
+  const audio = document.getElementById("bgm");
+  if (!audio) return;
+  audio.volume = 0.6;
+  audio.play().catch(() => {});
+});
+</script>
+
+</body>
+</html>

@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>A letter never sent beyond / 一封未曾出寄的信</title>
+
+<style>
+body {
+  background-color: #81A380;
+  color: #525288;
+  max-width: 720px;
+  margin: 100px auto;
+  line-height: 1.9;
+  font-family: Georgia, serif;
+  padding: 0 20px;
+}
+
+/* ================= LANGUAGE SYSTEM ================= */
+.zh, .en {
+  display: none;
+}
+
+body.lang-en .en {
+  display: inline;
+}
+
+body.lang-zh .zh {
+  display: inline;
+}
+
+/* switch */
+.lang-switch {
+  position: fixed;
+  top: 18px;
+  right: 18px;
+  border: 1px solid #7D5A44;
+  padding: 6px 12px;
+  cursor: pointer;
+  color: #7D5A44;
+  background: transparent;
+  z-index: 999;
+}
+
+.lang-switch:hover {
+  background: #7D5A44;
+  color: white;
+}
+
+/* title */
+h1 {
+  text-align: center;
+  font-weight: normal;
+  margin-bottom: 60px;
+  font-size: 28px;
+  letter-spacing: 1px;
+}
+
+/* divider */
+.divider {
+  border-top: 1px solid #7D5A44;
+  width: 100%;
+  margin: 60px 0;
+  opacity: 0.6;
+}
+
+/* text */
+p {
+  margin-bottom: 26px;
+}
+
+/* return */
+.return-box {
+  display: inline-block;
+  padding: 6px 14px;
+  border: 1px solid #7D5A44;
+  color: #7D5A44;
+  margin-top: 60px;
+  transition: 0.3s;
+}
+
+.return-box:hover {
+  background: #7D5A44;
+  color: white;
+}
+</style>
+</head>
+
+<body class="lang-en">
+
+<!-- LANGUAGE SWITCH -->
+<div class="lang-switch" onclick="toggleLang()">EN / 繁</div>
+
+<!-- ================= TITLE（可替换） ================= -->
+<h1>
+  <span class="en"><!-- 🔵 English Title -->A letter never sent beyond</span>
+  <span class="zh"><!-- 🔵 中文标题 -->一封未曾出寄的信</span>
+</h1>
+
+<div class="divider"></div>
+
+<!-- ================= BODY（整段可扩展区域） ================= -->
+
+<!-- 🔵 这里是正文 -->
+    <div class="bilingual-paragraph">
+        <span class="en">Two years ago, while I was studying abroad, I worked for a time at a document archive in London, sorting through various historical materials—including maps and letters excavated from various battlefields. The policy regarding these letters was simple: if a recipient could be found, the letter would be sent; if not, it would be sealed and stored. But due to the passage of so many years, most of the letters had been consigned to the bottommost shelves of the hundreds of enormous racks in the underground depository, where they lay just as they had been unearthed from the sand and soil—coated in thick, oblivious dust. I loved reading those letters. Most of them were torn and incomplete, their edges blackened with scorch marks from fire, their pages splattered with a few drops of long-dried blood. I loved reading them—not because their phrasing was particularly exquisite or ornate, but because through those long, elaborate declarations of love, through those tireless, earnest invocations, I could perceive, through those fragile paper mediums, the presence of deep-feeling souls, peering with eager anticipation from behind the fading handwriting at the expression of the one who would read them.</span>
+        <span class="zh">兩年前，我還在留學時，曾在倫敦的文獻館工作過一段時間，整理各類歷史資料，包括從各個戰場中清理出來的地圖和信件。對於這些信件的要求是：能找到收件人則寄出，找不到則封存。但由於年代過於久遠，大多數信件都被放在了地下文件庫那幾百個巨大架子的最底層，和它們被從沙土中挖出來時一樣，積滿不識趣的厚重灰塵。我愛讀這些信件，它們大多都殘缺不全，邊緣帶著火烤過的焦黑，紙面上飛濺著幾個早已乾涸的血點子。我愛讀它們，從不因為它們的措辭有多麼精美華麗，而是因為在那些冗長繁複的情話中，不厭其煩的殷切呼喚中，我能透過那些殘破的紙質媒介看見一個個深情靈魂，從那已經慢慢變淡的字跡中滿懷期待地窺視著讀信人的表情。</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">I often felt a sense of regret and helplessness at the fate of these letters. And so, I never imprisoned my imagination when reading them. In my mind, I would craft a happy ending for the author of each letter, as if that might somehow soothe the soul trapped within the paper. Take this next letter, for instance. I often imagine a man with tender, blue-violet eyes, standing at the ship's rail hours in advance—as if he had grown there, as if he belonged there. Then, catching sight of the crowd on shore, he would suddenly begin to run, his golden hair flying in the sea wind. He would lean over the ship's side and, from a great distance, wave to his dear, green-eyed little elf.</span>
+        <span class="zh">我常為這些信的命運而感到惋惜且無能為力。因此，我從不在讀信時囚禁我的想像，我在腦中給每封信的主人都安上一個圓滿結局，彷彿那樣就能安撫信中的靈魂。就如接下來的這一封，我時常幻想著一個有著藍紫色溫柔雙眸的人，提前幾個小時就立在甲板上靜候，就像他天生就長在那一樣。直到遠望見陸地上的人群時才突然奔跑起來，金色的長髮在海風中飛揚。他趴在船舷上，遠遠地，朝他親愛的，綠眼睛的小精靈揮手。</span>
+    </div>
+
+    <!-- 信的開頭 -->
+    <div class="bilingual-paragraph letter-salutation">
+        <span class="en">Dearest Arthur:</span>
+        <span class="zh">珍貴的亞瑟：</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">Forgive me for never having contacted you since the war began, and forgive me, too, for my hasty farewell back then. I am writing this letter to you from a trench three or five metres deep, pitch-dark, surrounded on all sides by earth and gravel, balancing the precious sheet of paper on my knee. The weather today is glorious. Drifting clouds, tinged with varying shades of light, are passing lazily over my head in flocks. In the distance, the desolate howl of artillery fire.</span>
+        <span class="zh">原諒我在戰爭開始之後就從未聯繫過你，也希望你能原諒我當初倉促的告別。我目前身在這三五米深，黑漆漆，四周都是泥土和沙礫的戰壕裡，將來之不易的信紙排在大腿上給你寫信。今天天氣好極了，流雲在陽光下呈現深淺不一的顏色，慢悠悠地成群結隊在我頭上掠過。遠處傳來淒厲的炮火聲。</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">For now, my body is in decent shape—though my right leg was wounded. A piece of shrapnel drove straight into my ankle when a bomb exploded. I didn't apply any medicine or seek treatment in time. After the nurse removed the fragment, as soon as I felt I could move, I went back to the front. So now I have some lasting aftereffects—I walk with a slight limp. Still, at least all my limbs are intact. I can already imagine how you'll make fun of me. Will it be 'lame rooster' or 'lame peacock'?</span>
+        <span class="zh">我現在身體尚佳，只不過右腿受過傷，一隻彈片在炸彈爆炸時直插進我的腳踝，我沒有及時上藥和治療，在護士把彈片取出來之後，感覺能動時我就重新上了戰場。因此落下了後遺症，走路有些跛。不過好在四肢健全，我已經能猜到你將如何取笑我了，是「瘸腿公雞」還是「瘸腿孔雀」？</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">Lately I've been stationed in a place whose name I cannot pronounce. Before that, I was somewhere else, and soon I'll be sent to yet another. Every one of them nameless to me. These places and I have only a passing acquaintance—less than an acquaintance, really. I briefly touch their cold fingertips, then reach out my hand to the next city mired in mud. I believe every city has a soul. When I ride in a truck, shuttling between different cities, my ears can catch their cries amidst the tangled, grating noise. The wheels roll over the earth as if over human skin. Everywhere there are water-filled craters, bare trees burnt down to half a trunk, and walls with one or half a window opened in them. Whatever protrudes—beams or branches—is hung with all manner of crosses. People pray indiscriminately to any god, always sinking into a despair from which they cannot save themselves. These cities have no boundaries. They are merely vague, sketchily drawn zones on a map—ashes of greyish-black, their broken souls imprisoned beneath the claws of jet-black griffins.</span>
+        <span class="zh">我最近駐紮在這個我叫不出名字的地方，前段時間又在另一個，過段時間又將去下一個，每一個我都叫不出名字。這些地方與我只有一面之緣——甚至連一面也算不上，我短暫地捏過它們冰冷的指尖，就又把手伸向下一座淤泥中的城市。我相信每座城市都有生命，當我坐著車，輾轉於不同的城市之間時，我的耳朵能在嘈雜繁複的噪聲中捕捉到它們的哭喊。車輪從泥土上碾過去，就如從人的皮膚上碾過去一般，隨處可見積滿水的彈坑﹑燒得只剩半個樹幹的光禿禿樹木和一面，或半面開了窗的牆壁。但凡伸出來的東西，房梁或枝條上，都掛上了各式各樣的十字架。人們不分神明地祈禱，總陷入無法自我拯救的絕望。這些城市沒有邊界，它們只是地圖上一塊用筆潦草勾勒出的模糊區域，一塊青灰的焦土，殘缺不全的靈魂被禁錮在那些烏黑獅鷲的爪下。</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">I keep thinking of my Paris. I think of her sacred, golden face. I think of her strong arms encircling every sleeping house. Every inch of her soil is planted with a lyric or a verse about to sprout. She is a Paris as selfless as rain. When we abandoned her, she simply stood there, letting the tolling funeral bells bore into her ears while she smiled and waved goodbye. The people around me ran, crying as they fled—some out of fear, others because that was the only way they knew to express emotion. Once upon a time, the epic of France thundered and surged, magnificent and boundless, each letter bursting with infinite glory. Now, looking across those pages pressed from gold leaf, all one sees are rows of numbers written in blood—each number corresponding to a person who is dying.</span>
+        <span class="zh">我總想到我的巴黎，想起她聖潔的金色的臉龐，想起她用堅固的臂彎環抱住每座安睡中的房子。她的每一寸土地都種著一句即將萌芽的歌詞或詩句。她是如甘霖般無私的巴黎，當我們拋下她時她只是靜靜佇立在那裡，一邊任由鳴響的喪鐘鑽進她的耳朵，一邊微笑著向我們揮手告別。我身邊的人一面哭著一面往外跑，有的是因為害怕，有的是因為這是他們表達情緒的唯一方式。原先，法蘭西的史詩雷奔電激，波瀾壯闊，從每個字母中都迸射著無限榮光。現在，從那一頁頁金箔壓制的書頁上看過去，只有用鮮血寫上的一行行數字，每個數字都對應著一個正在死去的人。</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">The city where I am now is not like my Paris—beautiful and resilient. To the right of our trench is a bare birch forest. To the left is a makeshift hospital propped up by a few tents. Yesterday we saw off a young soldier of twenty. He came from Madrid, with a head of soft, curly chocolate-coloured hair and a pair of lively, birdlike brown eyes. He brought with him a tattered, dog-eared poetry collection, and every night he would hold it to his chest and read aloud a passage from Shelley's 'Ode to the West Wind' before turning off the light to sleep. It was also his party piece the previous Christmas. Each time he reached the last two lines, his face would flush crimson. Spring was his favourite season. But here, it is winter. In yesterday's operation, his spine was shattered. We brought his body back, gathered some still-green leaves, and laid them beside him—to take the place of the spring he had longed for. We wrapped him in a sheet of white cloth. Souls from all directions gathered in those few square feet, then scattered again in another, more eternal form.</span>
+        <span class="zh">我現在所在的這個城市不如我的巴黎那樣，美麗又堅韌。我們的戰壕右側是一片光禿禿的樺樹林，左邊是用幾個帳篷臨時撐起來的醫院。昨天我們目送走一位二十歲的小士兵，他來自馬德里，有一頭捲柔軟的巧克力色鬈髮和一雙像鳥一樣快活的棕色眼睛。他帶著一本破破爛爛的詩集來報到，每天晚上都會把它捧在胸前，大聲朗讀一遍雪萊的《西風頌》再關燈睡覺。這也是他上個聖誕節的節目，每次讀到最後兩句話他的臉都會漲得通紅。他最喜歡春天，只不過這兒現在是冬天，昨天的行動中他的脊柱被炸斷了。我們把他的屍體帶回來，採下一些仍是綠色的樹葉放在他身邊，代替他所期盼的春天。我們把他包進一匹白布，四面八方的靈魂都在這幾英尺的地方聚集，又以另一種更永恆的形式四散開。</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">I had to wrest these sheets of paper from a comrade. The ink took a long time to save up, drop by drop, to this meagre amount. So I must compress the endless words rising in my throat into these few lines of pale ink. Two days ago, we marched through a small town. It lay beside a clear blue stream, where trout swam to and fro without a care. The town seemed to be known for its roses—but everyone had already evacuated, and the roses in the flowerbeds were untended. They had assumed a raw, savage ugliness. Their thorny branches entwined with each other; broad, sharp leaves covered the petals of neighbouring plants, crawling crookedly toward the sky. I wanted to pluck one to bring back to you, but in the end I let them remain kneeling in the flowerbeds as they were. In these dark, grim times, it seems even roses have become captives of fear, just like humans. I cannot help but think of the days we used to stroll along Kopsius Lane: the gravel paths, the thick shade cast by the plane trees, the little red-domed houses that belonged in a fairy-tale forest, the cold white spring water, the mountains in dozens of different shades of green... and that romantic old woman with her two braids. She always wore a necklace of fresh jasmine and sold roses for threepence each. Her face was always lit with an innocent smile. Having devoted her entire life to that fragrant trade, she looked younger than others of her age...</span>
+        <span class="zh">我這些信紙是從戰友那裡搶來的，墨水攢了不少時間才攢夠了這一點點。因此，我必須將我喉頭無盡的話語縮短為短短幾行的蒼白油墨。前兩天我們行軍經過一個小鎮，這個小鎮在一條青色的小溪旁，溪水裡有鱒魚在無憂無慮地游來游去。這個小鎮似乎以種植玫瑰而出名，但所有人都已經撤走，花圃裡的玫瑰無人修剪。它們顯露出一種原始的，野蠻的醜態，帶刺的枝條互相糾纏在一起，寬大鋒利的葉子蓋在另一株的花瓣上，歪歪扭扭地向天空爬行。我本想摘下一朵帶回來給你，但還是讓它們以原有的姿勢跪趴在花圃裡。在這陰暗漆黑的時期，玫瑰彷彿和人一樣成為了恐懼的俘虜。我不禁想起我們以前在科普斯山路上漫步的時光了：鋪滿碎石子的小道；沿途梧桐灑下的濃蔭；童話森林中才存在的紅圓頂小房子；冷白色的泉水；有著幾十種不同深淺的青綠的群山……還有那位扎兩個麻花辮的浪漫老婦人，她總是戴著一圈新鮮茉莉串成的項鍊，賣三個便士一朵的玫瑰花。她的臉上總洋溢著天真的微笑，身體因為把自己的一生都奉獻給了芬芳馥郁的事業而比同年齡人顯得更加年輕……</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">Since I've been far from home, my memories have become abrupt and frequent. More and more often, I find myself recalling the thousands of days and nights we spent together. On every sleepless night at the front, I swallow each scene like a drink of water. My uniform is missing its left pocket, so I sewed one onto the inside myself and placed our only photograph inside, close to my chest. It was the day before you returned to London—I dragged you to have our picture taken. I had bought a new suit, shaved, and even tied back my hair. I was grateful you reluctantly agreed to come. I was secretly pleased when I saw that you, too, were wearing new leather shoes—though that photograph was only a bust. I mercifully refrained from making fun of you that day. I put my hand on your shoulder, and you didn't pull away, though I knew you must have been rolling your eyes at that innocent hand of mine. When I wanted to take a few more, you put me off, saying there would be plenty of time in the days ahead. So I suppose I shall have to wait until after the war to grant that wish of yours.</span>
+        <span class="zh">身在異鄉後我的回憶總是唐突而頻繁。我越來越常回憶我們在一起度過的那幾千個日夜，每個戰場上無眠的夜裡我都把每一個場景像喝水般嚥下。我的軍裝缺少左邊口袋，於是我在裡側自己縫上了一個，將我們唯一一張照片貼著放在裡面。那是你回倫敦去的前一天，我硬拉著你去照相。我穿了新買的西裝，刮了鬍子，還綁了頭髮。我很感激你勉強赴我之約，當我看見你也穿著新皮鞋後我小小地開心了一下，雖然我們那天照的是張半身像，但我那天也大發慈悲地沒有取笑你。我把手放在你的肩膀上，你沒有躲開，但是我知道你一定在對那隻無辜的手翻白眼。我想多照幾張時你以來日方長推脫。那我只好等戰爭結束後再滿足你這個願望。</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">I like photographs, because they are a distillation of us as we were then—vivid and alive. They can console my eyes, which cannot yet see you. Right now, for instance, this photograph is lying beside my hand. I imagine that on some hazy, sunlit morning, you would walk through the pale purple lilacs and the flourishing holly, push open the dewy white-painted wooden gate, and approach from the other side. You would sit quietly beside me, listening as I, with slightly flushed cheeks, read aloud the poems I had written. More than once, you asked me who those 'boring rhymes and metres' were written for. But I think you only asked that question to confirm an answer you had already determined in your heart. So I never gave you the answer you wanted. I would simply invent the name of some girl and then watch with satisfaction as your face twisted with contempt. Nevertheless, you still came to me every sun-washed morning. And now, when I shoulder my rifle on such a morning and march off to do battle with the darkness, every step I take is a step toward you.</span>
+        <span class="zh">我喜歡相片，因為它是那時生動鮮活的我們的縮影，它能代替你來安慰我現在還見不到你的眼睛。就像現在我手邊正擺著這張照片，我想像著在某個陽光朦朧的清晨，你穿過淺紫色的丁香叢和長勢極好的冬青，打開沾著露水的白漆木柵欄門，從另一側走來，安安靜靜地坐在我身邊聽我微紅著臉讀我寫的詩。你不止一次地問我那些「無聊的押韻與格律」是寫給誰的，但我覺得你問這個問題只不過是想要證實你早已在心裡確定的答案，因此我從不回答你想要的答案，我總是隨便扯出一個女孩的名字，然後滿意地看著你鄙夷的表情。儘管如此，你還是在每個被陽光洗滌過的清晨向我走來。當我在這樣的清晨扛起槍支，向著黑暗開戰時，我踏出的每一步都是在走向你。</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">What keeps me alive now is, in part, the memories of the past, and in part, the vision of the future. War is a barrier that cuts through time. Our time has been broken from a continuous line into countless insignificant, isolated points. Time no longer flows; it simply counts down, one city after another set ablaze, ticking in mechanical, staccato bursts. Our lives roll forward and yet stand still—like a boat struggling against the current. We try not to let this time spent on the battlefield enter our memories. If, in a few years, I try to pour this recollection out of my mind, there may be nothing left but an abstract blank of blood-red and white. We soldiers all have the mind of an idealist. When we lie on our bunks at night, we talk to each other about our visions for the future. My commanding officer is an old man with white hair and beard. He fought in the Great War and often boasts to us about a thirty-centimetre scar on his left arm.</span>
+        <span class="zh">現今支撐著我活下去的，一部分是過去的回憶，一部分是對未來的願景。戰爭是一道切斷時間的屏障，我們的時間已經由線斷開成一個一個微不足道的小點。時間不再流動，只在一個又一個燃起火焰的城市中進行著倒計時，發出一頓一頓的機械嘀嗒聲。我們的生活在不斷向前滾動中又停滯不前，宛如逆水行舟。我們努力不讓這段在戰場上度過的時光進入我們的記憶，當我過幾年努力從我的腦子裡倒出這段回憶時可能只有一片抽象的血紅和空白。我們士兵都有一個理想主義者的腦子，當我們半夜躺在舖子上時就會互相談論起彼此對未來的設想。我的長官是個鬍子和頭髮都花白的老頭，他參加過一戰，時常向我們炫耀他左臂上一條三十公分的傷疤。</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"I took on three men by myself!" he would always begin his reminiscences with a puff of smoke, his curled moustache twitching excitedly. Then he would launch into the same old story of his heroic deeds, pulling out from his shirt a necklace strung with some kind of metal part—a memento from a bone fracture sustained on some urgent mission, his 'highest medal of honour.' Once he had exhausted those old tales, he would furrow his brows, light a fourth or fifth cigarette, and talk about his hometown and his two-year-old granddaughter. He said she had big, puppy-clear, lively eyes. His greatest wish was to survive the war, to live long enough to see his granddaughter married.</span>
+        <span class="zh">「我一個人對三個！」他總在吸一口煙中開始回憶，捲捲的八字鬍鬚興奮地上下跳動。接著他就不厭其煩地講起他的英勇往事，從衣服裡扯出一條掛著某種金屬部件的項鍊，這是他某次緊急任務中不慎骨折後留下的紀念品，他的「最高榮譽勳章」。等這些陳年舊事都說完了，他就該皺起眉頭，點著第四，或是第五根煙，講起他家鄉的事情和他兩歲的孫女。他說她的孫女有著大大的，小狗般清澈又活潑的眼睛，他最大的願望就是活著回去，活到能看著他孫女出嫁的年紀。</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"If that rotten boy ever treats her badly..." He never finished the sentence, always ending with a few knowing chuckles and a pat of his rifle.</span>
+        <span class="zh">「那臭小子要是對她不好……」他從不說完這句話，會用嘿嘿笑幾聲與拍一拍他的槍收尾。</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">The young man in the cot next to mine is called Bernard, about our age. He's a war correspondent, with a romantic nature—we get along well. He's like a shy, introverted boy, spending more time on fantasies than on reality. His camera records everything—not just things on the battlefield. He photographs mushrooms breathing secretly beneath withered pine needles, a translucent cicada shell, or other such things: a perfectly ordinary clump of wildflowers, a bird's nest. I always tell him to be more sparing with his film, but he just flips through his photographs one by one, telling me that these are for his fiancée to see. Once he starts talking about his fiancée, he becomes effusive. He describes her as a 'towering goddess'—vivid and radiant, with hair blacker than a raven's wing. 'When she walks past me,' he says, his eyes following a flock of geese passing through the sky, 'I feel as if all the sunlight is drawn to her.' His fiancée was born in a small village. Before he left, they promised that he would travel around and choose the most beautiful place for their wedding.</span>
+        <span class="zh">我鄰床的小伙子叫伯納德，跟我們差不多年紀。他是戰地記者，有著浪漫的本性，我們很聊得來。他是個羞澀內斂的大男孩，花在幻想上的時間比花在現實上的時間長多了。他的相機會記錄一切東西，不只是戰場上的東西。他會拍下枯松針底下偷偷呼吸的蘑菇，一個透明蟬蛻，或是其他什麼東西，像一叢再平常不過的野花，或是一隻鳥巢。我總勸他省著點膠卷，但他這時候只會一邊一張張翻看他的照片，一邊跟我說這是拍給他未婚妻看的。他談論起他的未婚妻就滔滔不絕，他描述她為一座「昂昂然的神像」，她明豔動人，有著比烏鴉翅膀還黑的長髮。「當她走過我身邊時。」他說，眼睛望向從這片天空中路過的雁群，「我覺得陽光全被吸引在了她身上。」他的未婚妻出生在小鄉村，他臨行前與她約定了與她約定了他會四處多看看，選一個最滿意的地方舉行他們的婚禮。</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">I am always hesitant to talk about my own vision for the future—not because it would be difficult to achieve, but because it is perhaps too ordinary. I tell them that I want to go back to Paris, and then every Friday night take the midnight train to Brest, buy the earliest boat ticket to Plymouth, stay there for two days, and then take the latest boat back on Sunday. Or perhaps I won't go back at all. Perhaps, just as the gangway is being drawn up, I will jump back down and hide out in an inn until I grow tired of it.</span>
+        <span class="zh">我總是怯於談論我對未來的設想，雖然那並沒有多難實現，但那未免太過普通。我跟他們說，我想回到巴黎，以後每個週五半夜就坐火車去布雷斯特，買最早的船票去普利茅斯，在那待上兩天，再坐週日最晚的船回去。或者我乾脆不回去了，在上船的樓梯收起時突然跳下來，躲在一家旅館裡一直待到厭煩為止。</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">I haven't cut my hair in a long time. It's as tangled as a handful of dead grass. My beard is much longer than when I arrived. With no change of clothes and no water to wash, I have an unpleasant smell about me—but I will make sure to tidy myself up completely before I see you again. We have not seen each other for three years, but I believe that no matter how many years pass, you will be just as you always were: back straight, refined and aloof, lean without being fragile... while I, by now, am hardly different from a beggar in the shadow of Notre-Dame. I have never believed that a person should be ashamed of the occasional unkemptness of his appearance—but I do believe that he ought to repent for having innocent blood on his hands. Artie, I hope that when I see you again, you will still allow me to embrace you, just as before.</span>
+        <span class="zh">我的頭髮很久沒剪了，亂得像一捧枯草；鬍子也比來的時候長了許多；由於沒有衣服換，也缺洗澡水，我的身上有一股難聞的氣味，不過我一定會在見你之前把它們全都整理乾淨的。我們已經三年沒有見了，但我相信無論我們多少年沒見你都會像往常一樣，脊背挺直，清虛疏朗，瘦削卻不顯得脆弱……而我現在卻跟聖母院陰影裡的乞丐沒什麼區別。我從不認為一個人應該為他外貌偶爾的不得體而羞愧，卻覺得他應該為了自己手上沾了無辜者的鮮血而懺悔。亞蒂，我希望再見到你時，你還能像以前一樣，容許我擁抱你。</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">I suppose this is where I must stop, Artie. Too many memories and too much emotion are never a blessing for a man at the front. Tomorrow we will cross the English Channel and set foot once more on my proud France, carved from glory. In these past few years, we may have brushed past each other on the same soil countless times, yet been unable to find each other. My ink is almost gone. Goodbye, Artie. I send you the brightest cloud on the horizon.</span>
+        <span class="zh">我想就該到此為止了，亞蒂，過多的回憶與感情對於一個在戰場上的人而言從來都不是一件幸事。明天我們將橫渡拉芒什海峽，再次踏上我驕傲的，用榮光切割成的法蘭西。這幾年裡我們可能數次在同一片土地上擦肩而過，卻難以找尋彼此的身影。墨水快用完了。再見，亞蒂，寄我天邊最亮的雲給你。</span>
+    </div>
+
+    <!-- 簽名部分 -->
+    <div class="bilingual-paragraph signature">
+        <span class="en">Francis Bonnefoy</span>
+        <span class="zh">弗朗西斯·波諾弗瓦</span>
+    </div>
+
+    <div class="bilingual-paragraph date-note">
+        <span class="en">Goldfinch Day, Chamomile Month, 1944</span>
+        <span class="zh">一九四四年金翅雀月甘菊日</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">*I often forget the date, so I have decided to mark my days by the first two beautiful things I see each morning when I open my eyes. This morning, I pulled back the thick canvas of my tent and saw a little creature with golden-orange feathers shaking out its wings on a branch. It buried its beak in its fluffy plumage, alternating its water-pink claws. When it had finished preening, it lifted its black-bean eyes and looked at me, tilting its head as if in inquiry. Then it spread its wings, dove down, and skimmed past the petals of a chamomile flower.</span>
+        <span class="zh">*我常常忘了日期，於是我決定用每天睜開眼看到的前兩樣美好的東西記事，比如我今早拉開帳篷的厚布，看見這只有金橙色羽毛的小傢伙在樹枝上抖擻翅膀。牠把喙埋在蓬鬆的羽毛中，水紅色的爪子交替站著。當牠梳洗完畢時抬起黑豆般的眼睛看了我一眼，彷彿探尋似的歪了歪頭，然後張開翅膀，俯衝下去，掠過一朵洋甘菊的花瓣。</span>
+    </div>
+
+    <!-- 結尾場景 -->
+    <div class="bilingual-paragraph">
+        <span class="en">"I beg your pardon, could you repeat your name?" I raised the teacup before me, took a sip of black tea, and asked the young man once more. He had clear, washed blue-violet eyes and hair the colour of wheat. He was gazing at the letter I had placed before him with a grave expression.</span>
+        <span class="zh">「不好意思，請您重複一遍您叫什麼？」我端起眼前的茶杯，啜了口紅茶，再次詢問眼前的年輕男子。他有一雙澄碧如洗的藍紫眼睛和一頭麥穗般的金髮，他正面容凝重地凝視著我放在他面前的信。</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"Francis," he replied, looking at me with a smile. "Francis Kirkland."</span>
+        <span class="zh">「弗朗西斯。」他看向我，微笑著回答，「弗朗西斯·柯克蘭。」</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">He said no more. He gently brushed the envelope before him with his fingertip and fell into thought.</span>
+        <span class="zh">他不再說話，用指腹輕輕擦過放在他面前的信封，陷入了沉吟。</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"My father would have been very happy," he said softly. "If he were still alive."</span>
+        <span class="zh">「我父親一定會很高興。」他輕聲說，「如果他還在世。」</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"I am very sorry."</span>
+        <span class="zh">「我很抱歉。」</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"It's all right. Don't worry about it." He stood up and placed the envelope in his bag. I rose as well, and we shook hands.</span>
+        <span class="zh">「沒關係，不用在意。」他說，站起身來，把信封放進包裡。我也站起身來，我們握了手。</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"In any case, thank you very much." He patted his briefcase. "I will discuss with my mother how to dispose of this letter."</span>
+        <span class="zh">「總之，非常謝謝您。」他拍拍公文包，「我會與我的母親討論一下如何處置這封信。」</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">With those words, he turned and walked away. I watched his departing figure. He wore a long trench coat, lean and straight-backed, his golden hair falling to the nape of his neck. His gait was determined, almost rigid. I tried to understand what identity, besides blood, he held in his father's eyes. Perhaps a continuation of life—or perhaps an ending.</span>
+        <span class="zh">他說完這句就轉身離去了，我目送著他離去的背影，他穿著長風衣，瘦削而挺拔，金髮垂落在後頸周圍，走路的步調堅定得有些僵硬。我試圖理解他除了血緣之外是以一種什麼身份活在他父親的眼中。可能是生命的延續，抑或是終結。</span>
+    </div>
+
+</div>
+
+<!-- ================= RETURN ================= -->
+<div style="text-align:center;">
+  <a class="return-box" href="../index.html">
+    <span class="en">Return</span>
+    <span class="zh">返回</span>
+  </a>
+</div>
+
+<!-- ================= MUSIC（可替换模块） ================= -->
+<!-- 🔴 MUSIC MODULE START -->
+<audio id="bgm" loop>
+  <source src="../music/Winter_Flower.mp3" type="audio/mpeg">
+  <!-- 🔵 替换音乐路径即可 -->
+</audio>
+<!-- 🔴 MUSIC MODULE END -->
+
+<script>
+let lang = "en";
+
+function applyLang(mode) {
+  document.body.classList.remove("lang-en", "lang-zh");
+  document.body.classList.add("lang-" + mode);
+}
+
+function toggleLang() {
+  lang = (lang === "en") ? "zh" : "en";
+  applyLang(lang);
+}
+
+applyLang("en");
+
+/* music autoplay */
+document.addEventListener("click", () => {
+  const audio = document.getElementById("bgm");
+  if (!audio) return;
+  audio.volume = 0.6;
+  audio.play().catch(() => {});
+});
+</script>
+
+</body>
+</html>

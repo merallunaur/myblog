@@ -1,0 +1,738 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Poulet aux Prunes / 梅子雞之味</title>
+
+<style>
+body {
+  background-color: #81A380;
+  color: #525288;
+  max-width: 720px;
+  margin: 100px auto;
+  line-height: 1.9;
+  font-family: Georgia, serif;
+  padding: 0 20px;
+}
+
+/* ================= LANGUAGE SYSTEM ================= */
+.zh, .en {
+  display: none;
+}
+
+body.lang-en .en {
+  display: inline;
+}
+
+body.lang-zh .zh {
+  display: inline;
+}
+
+/* switch */
+.lang-switch {
+  position: fixed;
+  top: 18px;
+  right: 18px;
+  border: 1px solid #7D5A44;
+  padding: 6px 12px;
+  cursor: pointer;
+  color: #7D5A44;
+  background: transparent;
+  z-index: 999;
+}
+
+.lang-switch:hover {
+  background: #7D5A44;
+  color: white;
+}
+
+/* title */
+h1 {
+  text-align: center;
+  font-weight: normal;
+  margin-bottom: 60px;
+  font-size: 28px;
+  letter-spacing: 1px;
+}
+
+/* divider */
+.divider {
+  border-top: 1px solid #7D5A44;
+  width: 100%;
+  margin: 60px 0;
+  opacity: 0.6;
+}
+
+/* text */
+p {
+  margin-bottom: 26px;
+}
+
+/* return */
+.return-box {
+  display: inline-block;
+  padding: 6px 14px;
+  border: 1px solid #7D5A44;
+  color: #7D5A44;
+  margin-top: 60px;
+  transition: 0.3s;
+}
+
+.return-box:hover {
+  background: #7D5A44;
+  color: white;
+}
+</style>
+</head>
+
+<body class="lang-en">
+
+<!-- LANGUAGE SWITCH -->
+<div class="lang-switch" onclick="toggleLang()">EN / 繁</div>
+
+<!-- ================= TITLE（可替换） ================= -->
+<h1>
+  <span class="en"><!-- 🔵 English Title -->Poulet aux Prunes</span>
+  <span class="zh"><!-- 🔵 中文标题 -->梅子雞之味</span>
+</h1>
+
+<div class="divider"></div>
+
+<!-- ================= BODY（整段可扩展区域） ================= -->
+
+<!-- 🔵 这里是正文 -->
+<p>
+      <div class="bilingual-paragraph">
+        <span class="en">I never thought I would see him again decades later. By then, I already had two noisy children and a nagging wife. He was also with his grandson. We had both aged terribly, yet the moment we passed each other, the terrible passions in my blood—like a dormant volcano that had been silent for years—began to stir and surge. I recognized him at a single glance. I never imagined that the few short years we spent together would have such an indelible impact on our lives. But God, this merciless, evil creator—with what cruel intention did he give two such strikingly similar faces to us in our old age? Our crisscrossing wrinkles, our drooping brows, the annoying silver strands mixed with the golden hair that once shimmered like satin—all bore the same expression, like a frozen sea that can no longer raise surging white waves: both painful and calm.</span>
+        <span class="zh">我沒想到幾十年後我還能再見到他，那時我已有了兩個吵吵鬧鬧的孩子和一個囉囉嗦嗦的妻子。他也帶著他的孫子。我們都已經老得不成樣，可在我們擦身而過的一剎那，我血液裡像一座沉寂多年的死火山的可怕情愫開始暗湧、翻騰。我一眼就認出了他。我從未想過我們在一起的那短短幾年光景會對我們的一生有什麼不可磨滅的影響，可是上帝啊，這個無情的、邪惡的造物主，他是懷著一種怎樣殘忍的心情，給了年老的我們兩張極其相似的臉龐？我們縱橫交錯的皺紋、低垂的眉眼、惱人銀絲中夾雜的曾如綢緞般閃閃發亮的金髮，都浮現出同一種表情，像封凍的海面再也無法掀起洶湧的白浪，既痛苦又沉靜。</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"Artie!" I couldn't help but call out to him.</span>
+        <span class="zh">「亞蒂！」於是我迫不及待地叫住他。</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">He turned around and gazed at me with those eyes that, even after decades, remained as green as deep pool water. Decades ago, I had drowned in the rippling waves of those eyes, but now the cold stillness of that pool flowed into my heart. The pool was utterly still. The pool was dead. His eyes did not hold the same look of surprise that I had expected, the same look that I felt.</span>
+        <span class="zh">他轉過身，用那雙就算經過幾十年也依舊如深潭水般碧綠的眼眸凝視著我。幾十年前我就曾沉溺於流轉在那眼裡的碧波，而現在的潭水的冷清流進我的心裏。潭水毫無波瀾。潭水已經死了。他的眼裡沒有我所期待的、和我一樣的驚喜神情。</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">I stepped forward and took off my hat so that he could see my face clearly, and even more, to drive away the shadow the hat cast over my eyes, so that it would not obscure his face. I suppressed the urge to hug him and kiss him fiercely. After all, time had already driven its blade into every inch of our skin, every organ. We were now just two aged pine trees.</span>
+        <span class="zh">我向前一步，把帽子從頭上摘下來好讓他看清我的臉，更為了把那帽子在我眼前投下的陰影驅走，不要遮住他的面龐。我壓抑著抱住他、狠狠吻他的衝動，畢竟時間早把他的刀刃劃進我們的每一寸肌膚、每一個器官，我們現在只是兩棵蒼老的松樹。</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">I must have been trembling, my eyes filled with tears. I heard my voice, every syllable stumbling out of my mouth: "Don't you remember me?"</span>
+        <span class="zh">我當時一定眼含淚水、渾身顫抖。我聽見我的聲音、我話裡的每一個音節從口中踉踉蹌蹌地衝出來：「你不記得了我了嗎？」</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"Sorry, to be honest, I don't remember you at all." He shook his head, his expression as flat as a windless desert. "Do we know each other?"</span>
+        <span class="zh">「抱歉，說真的，我一點都不記得。」他搖搖頭，表情平淡得像一片無風的沙漠，「我們認識嗎？」</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"Do we know each other?" Those were the very first words he had ever said to me.</span>
+        <span class="zh">「我們認識嗎？」這曾是他跟我說的第一句話。</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">To this day, I am still grateful for the clever arrangement of time in those few years, for letting me meet the love of my life, even though it then tore him away from me, leaving me alone once more.</span>
+        <span class="zh">時至今日我依舊感謝時間在那幾年的巧妙安排，讓我遇到我的一生摯愛，即使它又把他從我身邊狠狠奪走，讓我又成了孤身一人。</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">I was twenty-three then, still a greenhorn studying the violin in Iran. Ah, at least old age hasn't taken my memory away, allowing me to still recall the afternoon I first saw him. The subtropical afternoon sun was a hazy color mixed from the clarity of fallen leaves and the gold of gravel. It was this kind of dreamy sunlight that painted the unremarkable little Iranian town. I was sitting on the stone steps, smoking out of boredom, when he suddenly jumped into my sight.</span>
+        <span class="zh">那時我二十三歲，還是個在伊朗學琴的毛頭小子。哦，還好年老並未奪去我的記憶，讓我還能回憶起初見他的那個下午。亞熱帶午後的陽光是落葉的澄澈和沙礫的金黃混合在一起調出的朦朧色彩，就是這樣夢幻的陽光塗抹著平平淡淡的伊朗小城。我坐在石板臺階上百無聊賴地抽著煙，他突然跳入我的視線。</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">His ivory-colored nape, his golden hair that seemed tinted by moonlight and sunlight, his lean and tall body—they made me suspect he was a deity walking out of a golden-white radiance. Seeing him felt like a blind person using their hands to see the liveliness of a flowing mountain spring, or a deaf person using their eyes to hear the sound of a butterfly trembling its wings. If love at first sight truly exists in this world, then the one who plucked the slack string in my heart was undoubtedly him. By the time I came to my senses, he had already walked far away.</span>
+        <span class="zh">他那象牙色的後頸、彷彿月光和日光著色過的金髮、瘦削頎長的身體，讓我懷疑他是從金白色的光輝中走出來的神明。見到他，那感覺就像盲人用手看到了流動山泉的活潑、失聰者用眼聽見了蝴蝶顫翅的聲響。如果世間真當有一見鍾情的話，那拉響我心中那根一直鬆弛著的弦的人無疑就是他了。當我反應過來時他已經走遠。</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">As if possessed, I trotted after him, following behind. I bumped into a few children and got scolded a few times. To avoid his gaze, I even hid inside a discarded oil barrel, dirtying my favorite light coffee-colored suit.</span>
+        <span class="zh">我鬼使神差地一路小跑著追上他，跟在他身後，撞到過幾個小孩，挨了幾句罵。為了躲避他的視線我還藏在廢棄的油桶裡面，弄髒了我最愛的一件淺咖啡色西裝。</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">He went into a watch shop and spoke with his father, the shop owner. When he spoke, his thick eyebrows lifted slightly, his cheeks flushed a little, and those mesmerizing green eyes flickered like stars shrouded in mist. While he spoke, I hid behind a delicate, bulky grandfather clock, watching him: watching his long, slightly trembling eyelashes, his thin lips parting and closing, and the pearl-white teeth between them.</span>
+        <span class="zh">他進了一家鐘錶店，與他的父親——鐘錶店的店長交談。他講話時，濃密的眉毛微微上揚，雙頰有些緋紅，那使我著迷的碧綠眼睛像被雲霧籠罩的星星般忽明忽暗。他講話時，我就躲在一座精緻的、笨重的大鐘後面看他。看他微微顫抖著的長睫毛，一張一合的薄唇和其中珍珠般潔白的牙齒。</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">I can't remember exactly when I fell in love with him. Perhaps I was already deeply captivated back then. When he finished talking with his father and turned to leave, he walked past me. His light, harmonious steps fell on my heart. Noticing me staring at him, he assumed I was a customer and smiled at me.</span>
+        <span class="zh">我已經記不起什麼時候愛上他了，可能我那時就已經深深著迷了。當他與他父親談完話，轉身離開時，路過我的身邊。和諧輕徐的腳步踏在我的心上，他注意到我看他，以為我是個客人，於是對我微笑。</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">It was then that I understood why writers never spare generous ink to describe their lover's face in the sunlight. When he smiled, the corners of his mouth lifted playfully—it was an extremely innocent expression, yet his brows and eyes were veiled in mist. The sunlight, which happened to pass through the bright display window of the watch shop, painted his face into an oil painting half in light and half in shadow, and scattered golden light over the deep, dark pool in his face. The light reflected from the pool fell into my eyes.</span>
+        <span class="zh">我那時才知道為什麼作家們總不吝嗇用大幅筆墨描寫自己的愛人在陽光下的臉。他笑時嘴角俏皮地上揚，那是種極為純真的表情，眉眼間卻是一片雲山霧罩。那剛好穿過鐘錶店明亮櫥窗的陽光把他的臉繪成一幅半明半暗的油畫，又給他臉上那又深又暗的潭水灑下金光，潭水反射出的光線落入我的眼中。</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">Our eyes met. My body and soul involuntarily followed him, but his father caught me.</span>
+        <span class="zh">我與他便眼神交匯了。我的身心不由自主地隨著他去，卻被他父親纏住了。</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"You have a good eye," his father said excitedly, pointing to the large clock I had been hiding behind. "The finest Swiss clock, with a dial made entirely of gold, accurate to the second, and a chime as clear as the heavens."</span>
+        <span class="zh">「您真有眼光。」他的父親激動地指著我身前那座我用來藏身的大鐘，「最高級的瑞士鐘，鐘面全金打造，準到分秒不差，鐘聲清澈響徹雲霄。」</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">The price to see him was truly steep. Helpless, I spent one hundred Toman to buy that gleaming golden clock.</span>
+        <span class="zh">要見他一面付出的代價可真大，我無可奈何地花一百土曼買下了那口金光燦燦的鐘。</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">The clock was indeed very ornate, with gold leaf adorning its case. Beside the obsidian-like, shimmering dial stood a handsome soldier holding a gun. Unfortunately, I took it home and made it my victim. Time and again, I deliberately used a screwdriver to take it apart, slow down its hands, and scratch its decorations, just so I could return to the watch shop, meet him once more, and take another look at him.</span>
+        <span class="zh">那口鐘確實很華麗，金葉粉飾著鐘殼，黑曜石般閃爍著的鐘面旁站著一個漂亮的、拿著槍的戰士。可惜它被我拿回了家，成為了我的犧牲品。我一次一次故意用螺絲刀把它的零件拆下，指標撥慢，裝飾刮花，只為再回到那鐘錶店，再遇他一次，再看他一眼。</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">Each time, as his father put on his glasses and carefully examined the clock, my attention was focused only on the window, waiting for him to walk in one day. I broke the clock five or six times. Every time his father saw me, he would wear a pained expression and hold his head in his hands: "You truly are a curse to clocks!"</span>
+        <span class="zh">每次他父親戴上眼鏡仔細地檢查那鐘時，我的注意力只放在窗外，我等著他某天走進來。鐘被我弄壞了五六次，他的父親每次看到我都表情痛苦，用手捂著頭：「您真是鐘錶的剋星啊！」</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">Until one afternoon, again bathed in perfect sunlight, I went into the shop and happened to catch him just as he was going out. The moment I saw him, I froze at the door, holding the clock, watching as his figure was gradually replaced by the layered, crowded throng of people.</span>
+        <span class="zh">直到一個同樣陽光正好的午後，我進店裡去，恰巧他出門。一見到他我就抱著鐘呆立在門口，看著他的身影漸漸地被重重疊疊的人群所替代。</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">His father walked over and spread his hands: "No way…"</span>
+        <span class="zh">他的父親走過來，攤開雙手：「不會吧……」</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"I just came to tell you it's keeping perfect time," I said with an awkward smile, holding up the clock to his father, while hastily backing out the door, nearly tripping over the threshold. Holding the bulky clock, I hurriedly chased after him again and shouted from behind: "Sir!"</span>
+        <span class="zh">「我只是來告訴你它準得很。」我有點尷尬地笑著對他父親舉起那口鐘，一邊說一邊匆匆忙忙地退出門，差點兒被門檻絆倒。我抱著那笨重的鐘又急匆匆地追上他，在他的身後喊：「先生！」</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">He kept walking with his head down. I mustered my courage and called his name: "Arthur!"</span>
+        <span class="zh">他還是低著頭向前走，我鼓起勇氣喊了他的名字：「亞瑟！」</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">He finally looked back at me, gave a slight nod, and wore his usual, gentle, sunlit smile: "Do we know each other?"</span>
+        <span class="zh">他終於回過頭看著我，微微頷首，帶著他一如既往的、柔和陽光般的微笑：「我們認識？」</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"We do," I almost blurted out, but then felt it was too abrupt. Embarrassed, I scratched my head. "I mean, we don't. I've seen you in your father's shop. I wanted to ask you…"</span>
+        <span class="zh">「認識。」我幾乎衝口而出，又覺得似乎太過唐突，不好意思地撓撓頭，「不認識。我在你父親的店裡見過你。我想問你……」</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">Before I could finish, the large clock, which I had completely forgotten I was holding, suddenly began to chime with a resounding voice. I'm sure it was taking revenge on me. Usually, it would remain silent, letting me destroy it as I pleased, but now it suddenly became loquacious. I frantically pressed all the buttons and switches, but they were already broken from my previous tampering. My face flushed red with shame, and I wanted nothing more than to smash that hundred-Toman clock onto the ground. Damn clock! It had ruined our first conversation!</span>
+        <span class="zh">我還沒說完，懷裡被我遺忘的大鐘就突然用嘹亮的聲音打起鳴來。我敢肯定這是它對我的報復。它每天悶聲悶氣地任由我在它身上搞破壞，此時卻突然喋喋不休起來。我手忙腳亂地按下各個開關，可那開關早就被我弄壞了。我羞愧得臉漲得通紅，恨不得把那一百土曼的鐘就往地上一摔，這該死的鐘啊，它毀了我們的第一次交談！</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">Arthur laughed. A ripple seemed to pass across his cheeks, and two small flames rose in his eyes. His laughter was not the dull sigh of Weber's cello, nor the coming and going of Watteau's wild colors. Instead, it was the rose-colored, splendid, magnificent morning glow mixed with the crisp morning birdsong. The clock chimed clearly more than a dozen times, but I lost all track of time.</span>
+        <span class="zh">亞瑟笑了，好像有一道漣漪劃過他的臉頰，又在眼裡升起兩簇火苗。他的笑不是韋伯大提琴似的沉悶嘆息，也不是瓦托與瘋狂色彩的來來往往，而是薔薇色的、輝煌而壯麗的朝霞混合著晨間清脆鳥鳴。鐘聲清晰地連續打了十幾下，我卻忘了時間。</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">When the obnoxious chime finally fell silent, he asked me again: "What did you want to ask me…?"</span>
+        <span class="zh">等那不識趣的鐘聲終於歸於沉寂，他重新問我：「你想問我……？」</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"Can I… walk with you for a while?" That might have been the most correct thing I've ever done in my otherwise useless life.</span>
+        <span class="zh">「我可以……陪你走一段嗎？」這可能是我一無是處的人生中做過的最正確的事了。</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">He was taken aback for a moment. "Alright." Unexpectedly, he agreed easily.</span>
+        <span class="zh">他愣了一下：「可以。」意料之外，他輕易答應了我。</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">I accompanied him to the foot of his apartment building. My blood was singing, my heart was tirelessly playing my violin, and my mind was writing wild poetry. As we parted, I called out: "Arthur."</span>
+        <span class="zh">我陪他走到他家樓下，我的血液都在歌唱，我的心臟不知疲倦地拉著我的小提琴，我的腦子寫著狂亂的詩句。離別時我叫住他：「亞瑟。」</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">He turned around, leaned against the stair railing, and raised an eyebrow. "Hmm?"</span>
+        <span class="zh">他轉身，靠在樓梯的欄杆上，挑起眉：「嗯？」</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"Can I see you again?" My fingers nervously rubbed the little soldier on the clock's base. My back was drenched in sweat, partly due to my embarrassment in front of him, and partly because the clock I had been carrying was simply too heavy.</span>
+        <span class="zh">「我還能再見你嗎？」我的手指不安地搓著手裡鐘座上的小士兵，後背被汗水打濕，一方面是因我在他面前我的窘迫，一方面是因為我一直抱著的那鐘實在是太重了。</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"Whatever," he said casually, brushing off the question. In my mind, that was as good as a yes.</span>
+        <span class="zh">「隨便吧。」他輕描淡寫地略過這個問題，在我看來這就是答應了。</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">We were not strangers. I could even puff out my chest and proudly say that we felt like we had known each other for a long time—like a round tenon and a round mortise, like Cézanne and his two or three plump fruits, like Monet and the delicate, bashful water lilies hiding in the pond.</span>
+        <span class="zh">我們並不陌生。我甚至還可以挺起胸脯，驕傲地說我們像認識了很久，像圓枘和圓鑿，像塞尚和那兩瓣、三瓣飽滿的水果，莫內和嬌滴滴地躲在池子裡的恬淡的睡蓮。</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">I remember asking him to a movie. In those days, movies were still a rare novelty. We watched a pretty stupid horror film. The actors' performances and costumes were as rough as freshly quarried stone. No, even rougher than that. Yet this boy was actually scared. The lighting was so dim it was hard to adjust to, but when the monster appeared, I could clearly see his face turn as pale as paper. He trembled uncontrollably, yet still sat ramrod straight. He had been putting on airs like that ever since I first met him.</span>
+        <span class="zh">我記得約他看電影，那個年代電影還算是個稀奇的玩意兒。我們看了部相當弱智的恐怖片，演員的表演和服裝都像剛開採出來的石頭一般粗糙。不，比那更粗糙。可這男孩居然被嚇到了。光線昏暗得讓人難以適應，但在鬼怪上場時我能清楚地看到他臉色蒼白如紙，他整個人不住地發抖，但還坐得筆直，從我認識他就這麼能裝模作樣。</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">I reached out my hand and gently covered the back of his. The moment I felt the warmth of his hand, he pulled away. How frustrating. But just as the movie was about to end, he suddenly reached out and took my hand. His fingers were warm; mine were cold as ice. It was like a hand of flesh and blood suddenly gripping a handful of lifeless bones.</span>
+        <span class="zh">我把手伸過去，輕輕覆上他的手背，剛感受到他手背的溫度，他就躲開了，真令人沮喪。而電影即將落幕時，他卻突然把手伸過來，拉住了我的。他的手指溫熱，我的手指冷得像冰，好像一隻有血有肉的手突然握住了一把死氣沉沉的骨頭。</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">The movie ended with a strange subtitle: "I want to prove to you how much I love you."</span>
+        <span class="zh">電影最後是一段奇奇怪怪的字幕：「我要向你證明我有多愛你。」</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">But Arthur, I cannot prove to you how much I love you. I don't want to use any poetic adjective to describe you, because they are all too mediocre. I don't want to use any unit of time to measure my love for you, because they are all too brief.</span>
+        <span class="zh">但是亞瑟，我無法向你證明我有多愛你。我不想拿任何一個詩化的形容詞去描述你，因為它們都太過平庸。我不想拿任何一個時間單位去衡量我對你的愛，因為它們都太過短暫。</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">I cannot express to you how I felt when you held my hand. It was like someone who had been bedridden for a long time finally waking from a long dream, pulling open the curtains, and the first thing they saw was no longer the gray houses, but the tender spring leaves dyed green, tinged with citrus hues and gold, and the magpies and nightingales singing and frolicking among them.</span>
+        <span class="zh">我無法向你表達你握住我的手時的感覺，就好像久臥病床的人終於從冗長的夢中甦醒，拉開窗簾，第一眼看到的再也不是灰暗的房屋，而是染上碧綠，塗上柑橘色澤和金光的春季嫩葉，和葉間歌唱著、嬉戲著的喜鵲和夜鶯。</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">For me, the sound of the violin was the best way to express love. Countless mornings, afternoons, and evenings, I stood in front of him, playing my violin. He would sit in the chaise lounge before me, chin propped on his hand, sometimes gazing at me with a smile, sometimes with his eyes closed.</span>
+        <span class="zh">對於我來說，琴聲是表達愛意的最好方式。無數個清晨、午後、夜晚，我站在他身前，拉著我的小提琴。他就坐在我面前的躺椅上，手撐著下巴，有時微笑著凝視我，有時閉著眼睛。</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">Outside our window stretched an endless, picturesque landscape of Iranian residential houses. These houses were built from the dust of centuries. They were already decrepit, each passing day bringing them closer to oblivion, a stark contrast to Arthur Kirkland, this vibrant, colorful spirit.</span>
+        <span class="zh">我們的窗外是一望無際的、如畫般的伊朗民居。民居是用數百年滄桑的塵土堆積起來的，他們已經老態龍鍾，每過一天都是在走向消亡，與亞瑟·柯克蘭，這個鮮活、多彩的精靈格格不入。</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">I loved him. His golden hair was sprinkled with gold dust. His lips pouted slightly like a young girl's. Every inch of his skin shimmered with a subtle luster. He was a thick stroke of oil paint on Van Gogh's canvas, a series of gorgeous notes on Liszt's staff. I always felt that this dazzling, radiant person should not be locked up in this drab little town.</span>
+        <span class="zh">我愛他，他的金髮灑了砂金，他的嘴唇像少女般微微噘起，他的每一寸肌膚都閃著微妙的光澤。他是梵谷畫布上一抹濃烈的油彩，是李斯特譜紙裡幾串華麗的音符。我一向覺得這個流光溢彩的人不應該被關在這灰頭土臉的小城裡。</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">The thought of taking him away was born in my mind.</span>
+        <span class="zh">我萌生了帶他逃走的念頭。</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">I arranged to meet him in the corridor. I waited for him—from the time the sleeping town was first awakened by birdsong until it once again fell into a deep slumber wrapped in star-studded darkness. I rubbed my hands nervously, pacing restlessly in the corridor.</span>
+        <span class="zh">我和他約好在迴廊上見面。我等他，從酣眠著的小城初被鳥鳴喚醒，到它再次裹著繁星點綴著的黑夜沉沉睡去。我不安地搓著手，焦躁地在迴廊裡踱來踱去。</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">Large clusters of hydrangeas, calla lilies, and anthuriums grew in the corridor. They huddled together, laughing and bustling with eagerness. Sometimes, dejectedly, I would crouch down and talk to the frolicking flowers, asking them if he would come.</span>
+        <span class="zh">迴廊裡種著大朵大朵的繡球花、馬蹄蓮、紅掌。它們擁成一團，熱切地笑著、鬧著。我有時失魂落魄地蹲下來與正在嬉戲著的花兒們交談，問它們他是否會來。</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">I lit several cigarettes. By the time he arrived, the ground was littered with the stubs I had thrown down.</span>
+        <span class="zh">我點著了好幾根煙，他來時地上還都是我扔下的煙蒂。</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">He approached with the dim sunset behind him, his entire silhouette blurred in the afterglow like autumn leaves. All the complaints and dissatisfactions I had carefully rehearsed in my mind vanished the moment I saw his green eyes.</span>
+        <span class="zh">他走來時揹著昏暗的夕陽，整個人的輪廓都模糊在秋天落葉般的餘暉中。我腦子裡仔細排練的所有抱怨、不滿，在看到他的碧綠眼眸的一刻，全都煙消雲散了。</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">I handed him the rose I had prepared beforehand, its thorns already removed one by one. He took it and immediately tucked it into his breast pocket.</span>
+        <span class="zh">我把事先準備好的玫瑰花遞給他，那刺已經被我一一剔除。他接過，馬上把它插進胸前的口袋。</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"Dear Artie, where have you been hiding?" I embraced him, ruffling his disheveled golden hair, listening to his dissatisfied grunts in my arms.</span>
+        <span class="zh">「親愛的亞蒂，你藏到哪裡去啦？」我擁住他，揉他蓬亂的金髮，聽他在我懷裡發出不滿的哼哼聲。</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"Father's shop needed my help," he said, pulling away, straightening his clothes, and then taking my hand. "Sorry, Fran."</span>
+        <span class="zh">「父親的店，需要我幫忙。」他掙開，理理衣服，又拉住我的手，「對不起，弗朗吉。」</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"It's alright." I turned around and ruffled my own hair to match his messiness. "Arthur, would you be willing to leave this city with me?"</span>
+        <span class="zh">「沒關係。」我轉過身，把我的頭髮揉得跟他一樣亂，「亞瑟，你可願意和我離開這座城市？」</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"So this is why you called me here?" He was playing with the rose in his hand, bringing it to the tip of his nose, then holding it above his head. "How did you manage to get a rose here in the desert, Fran?"</span>
+        <span class="zh">「這就是你把我叫來的目的？」他正玩著手裡的玫瑰，把它湊近鼻尖，又舉過頭頂，「你居然能在這裡弄到玫瑰，弗朗吉。」</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"A flower in the desert is a miracle," I said, looking into the deep forest in his eyes. Just like you.</span>
+        <span class="zh">「沙漠裡的花朵，是個奇蹟。」我看著他眼中深深的叢林。像你。</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"I will," he suddenly said softly, like a puff of air.</span>
+        <span class="zh">「我願意。」他突然輕聲說，像吹了口氣。</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">How cunning he was, agreeing to me when I was completely off guard. I bet he was trying hard not to laugh at the stupid look on my face.</span>
+        <span class="zh">他真狡猾，在我毫無防備的時候答應了我。我打賭他當時看著我蠢表情的時候一定在努力地忍著笑。</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">I clenched his hand tightly. My heart was like a fledgling just learning to fly, soaring carefreely among the clouds and leaves.</span>
+        <span class="zh">我攥緊了他的手。我的心像隻剛會飛的雛鳥，在雲間和葉間飄飄然地四處翱翔。</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">I wished I could hold my heart out in front of him, let him see that every surface of it was carved with his silhouette and engraved with his name. I held his face in my hands. He let me trace the contours and bones of his face. His eyes sparkled like stars, his lips slightly parted, his breath fluttering against my lips like a butterfly. My hand touched those two soft lips, and I suppressed the urge to kiss him. I knew this reserved lover would just pull away again.</span>
+        <span class="zh">我恨不能把我的心捧在他面前，讓他看看那心上沒有一面不雕刻著他的剪影，鐫刻著他的姓名。我捧住他的臉，他任由我摩挲著他臉部的輪廓和骨節。他的眼神璀璨如星，嘴唇微張，呼出的氣息如蝴蝶般撲在我的嘴唇上。我的手觸上那兩片柔軟的唇，抑制住吻他的衝動。我知道這保守的愛人一定會再躲開。</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">I packed all my luggage within an hour. That night, I lay on my bed, looking out at the lush, swaying shadows of the trees outside the window, thinking of my lover's eyes. In such a pitch-black night, those carefully polished and cut emeralds must be shining even more brilliantly. My lover was Gabriel; I had trespassed into the forbidden zone of his heaven. Everything about him was beautiful in just the right measure. His eyes were my stars; he was my sun.</span>
+        <span class="zh">我在一小時之內收拾完了所有行李，夜晚我躺在床上，看著窗外蓊蓊鬱鬱的婆娑樹影，想著我愛人的眼睛。在這樣黑沉沉的夜晚裡，那精心打磨和切割過的祖母綠寶石，一定更閃耀著灼灼光華。我的愛人是加百列，我踏入他天堂的禁區。他所有的一切都美得恰到好處。他的眼睛是我的星星，他是我的太陽。</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">I waited aimlessly in the corridor again, but instead, his father came. That graceful, capable, eagle-eyed father of his stood cold-faced in the corridor. His tightly pressed lips, his raised chin—he was as aloof as a marble statue of Hercules.</span>
+        <span class="zh">我又在迴廊裡漫無目的地等了，卻等來了他的父親。他那風度翩翩，精明能幹，眼光像鷹的父親冷著臉立在迴廊裡，那緊緊抿著的嘴唇，揚起的下頜，冷漠得像一尊海格力斯的大理石雕像。</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"Filthy rat," he said, standing on the corridor while looking down at me. "How dare you court my son?"</span>
+        <span class="zh">「骯髒的老鼠。」我站在迴廊下，他居高臨下地看著我，「你怎敢向我兒子求愛？」</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">Like an ancient emperor descending the red carpet from a throne inlaid with pearls and draped in silk, he walked down the corridor and patted my shoulder. "Look at yourself, you poor musician. Throughout history, how many musicians have ever lived a decent life?"</span>
+        <span class="zh">像舊時皇帝踏著紅毯走下嵌滿珠翠、鋪上羅綺的寶座，他走下迴廊，拍著我的肩膀：「看看你自己，窮音樂家，從古至今有幾個音樂家有過體面的生活？」</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"I can go to work!" I shouted back, looking him straight in the eye, refusing to back down.</span>
+        <span class="zh">「我可以去工作！」我正視著他傲慢的細長瞳孔，不甘示弱地大喊。</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">He shook his head with a sneer. "I know very well that passion and love are two different things. I don't mind that you are both male, but what about others? I can imagine my son's future. The neighbors would point at his back and curse him. Ill-bred children would throw stones at him. Even stray dogs would mock him with their sharp barks. My son deserves a better future."</span>
+        <span class="zh">他譏笑著搖了搖頭：「我很清楚，激情和愛情是兩回事。我並不忌諱你與我兒子是同性，但是其他人呢？我能想像到我兒子今後的生活，他會被街坊們戳著脊梁骨辱罵，會被沒教養地扔石子，連野狗也會對他發出尖聲嘲笑。我的兒子應該有更好的前程。」</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"I love him, and he loves me," I said, gritting my teeth, my fingernails digging into the flesh of my palms.</span>
+        <span class="zh">「我愛他，他也愛我。」我咬著牙，指甲陷進手心的肉裡。</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"Before long, you will forget him, and he will forget you."</span>
+        <span class="zh">「過不了多久，你就會忘了他，他也會忘了你。」</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">His father released a bundle of lightning from the sky, pregnant with a storm, that pierced my body. Dark, surging seawater, or dark, surging clouds—I could no longer tell. My brain gave up thinking; my heart stopped beating. The remnants of my reason, along with that green-eyed angel, floated away to the ends of the earth.</span>
+        <span class="zh">他的父親從天上放下一束孕育著暴風雨的雷電，狠狠貫穿我的身體。我的眼前湧出黑沉沉的海水，或是黑沉沉的暗雲，我已經分不清楚。大腦放棄思考，心臟停止跳動。我殘存的理性，此時都隨著那綠眼睛的天使，一同飄到九霄雲外去了。</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"I assure you, I will never forget your son," I heard my voice, like gravel, say. My body, dragging my buzzing brain along, fled from what felt like a gap in hell.</span>
+        <span class="zh">「我向您保證，我永遠都不會忘了您兒子。」我聽到我口中沙礫般的聲音。我的身體搶先拖著我一直在嗡嗡響個不停的大腦，從那彷彿地獄的縫隙間逃走了。</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">I spent all my money on alcohol. It was the only time in my life—and I have always had a good tolerance—that I drank myself into complete oblivion. I might have stumbled home in a daze, or I might have slept covered in sand on the street, or perhaps I stood under his building all night, playing my violin and singing until the entire town burst into sobs, until the dashing desert wind wept uncontrollably, until the large hydrangeas in the corridor withered with mournful cries.</span>
+        <span class="zh">我花光所有的錢買酒，那是一向酒量不錯的我一生中唯一一次喝得不省人事。我可能恍恍惚惚地回了家，也可能在大街上蓋著風沙睡了一夜，或是在他家樓下拉著小提琴唱了一宿的歌，唱到整座小城都爆發出慟哭，沙漠瀟灑的狂風止不住地悲泣，迴廊裡大朵的繡球花哀鳴著凋謝。</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">The pallor of dawn, the demon attached to the human body, silently, bit by bit, burrowed into my sleeping body, seizing my skin fiercely. Every organ of mine began to tremble involuntarily in the bone-chilling cold. Like a puppet or a doll that had just been brought to life in a fairy tale, I rose with an extremely uncoordinated posture, dragging my creaking joints. I washed up quietly. In the mirror, I was pale, my cheeks sunken, my beard poking out like weeds, my eyes crawling with parasitic red veins. A filthy rat. A decadent musician. I suddenly realized that his father might have been right.</span>
+        <span class="zh">黎明的蒼白，附在人身上的惡魔，悄無聲息地一點一點鑽進我還在沉睡的身體，狠狠抓住我的肌膚，我的每個器官都在刻骨的寒涼下不由自主地顫抖起來。我像個童話裡剛剛獲得生命的木偶或娃娃，以一種極不協調的姿勢拖著我吱嘎作響的關節起了身。我靜靜地洗漱，鏡子裡的我臉色蒼白，雙頰凹陷，鬍子也像雜草似的探出頭來，我的眼睛爬滿寄生蟲般的血絲。一隻骯髒的老鼠，一個頹廢的音樂家。我突然意識到他的父親也許是正確的。</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">Like driving a sharp iron nail deep into the brain, the sudden clarity was not pleasant. I smashed that poor mirror violently, and it, not to be outdone, cut my hand into pieces of shattered glass. I returned to my room, wrapped my hand haphazardly with bandages, swallowed a piece of hard, dry black bread, and sipped a little water into my chapped lips. These things did not soothe me; instead, they made my internal organs ache and smoke. For the next ten-plus hours, I lay in the chaise lounge he had sat in, doing nothing at all.</span>
+        <span class="zh">就像把銳利的鐵釘狠狠刺入大腦，突如其來的清醒並不好受，我狠狠地打碎那面可憐的鏡子，它也不甘示弱地把我的手劃成幾片碎裂的玻璃。我回到房裡，拿繃帶把手胡亂纏了幾下，又嚥下去一塊乾硬的黑麵包，往皸裂的嘴唇裡送了點兒水。這幾樣東西沒有安撫我，反而讓我的五臟六腑疼得冒煙。之後的十幾個小時，我任由自己躺在他坐過的躺椅上，什麼也不幹。</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">The pallor of dawn slowly turned into old yellow, and then into the color of my lover's eyes. My lover's eyes were poison; the sky was the bottle. The sinister, burning green churned in the bottle, like a marsh that glowed with green fireflies on dark, sickly nights. I seemed to see my violin floating in the air, cutting its own strings.</span>
+        <span class="zh">黎明的蒼白漸漸變成老舊的黃，又變成我戀人的眼睛。我戀人的眸子是毒藥，天空是藥瓶。詭譎又熾熱的碧綠在藥瓶中翻滾，好像一到昏暗的病態夜晚就泛著綠瑩瑩螢火的沼澤。我彷彿看到我的小提琴飄浮起來，把自己的弦割斷。</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">In the corner stood a large flowerpot with a rosebush that I had bought for fifty Toman from a dishonest Iranian merchant. The rose's crimson blood poured into my eyes, mixed with their sharp thorns. My entire eyeballs were seized by the red, and a burning pain climbed up every optic nerve. I struggled to my feet and snipped off the flowers one by one with scissors. The broken petals they left on the ground suddenly sprouted wrinkles, as if in an instant they had grown from delicate young girls into old women. Seeing the petals on the ground merge into a river of blood, I knew I was going mad, or perhaps I had already gone mad.</span>
+        <span class="zh">角落裡放著一個大號花盆，盆裡種著玫瑰花，那是我花五十土曼從一個黑心伊朗商人那兒買來的。玫瑰的猩紅血液灌進我的眼睛，其中混合著她們尖利的刺，我的整個眼球被紅色攫取，灼燒般的疼痛爬上我的每一根視神經。我艱難地起身，拿剪刀把那花朵一一剪掉。她們鋪在地上的殘破花瓣陡然生出皺紋，彷彿在一瞬間，她們就從嬌豔的少女長成了老婦。看著一地的花瓣匯成血河，我知道我快瘋了，或者已經瘋了。</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">The clock I had broken had already chimed God knows how many times, neurotically, when the calm Iranian sky suddenly poured with rain. Now the sky seemed like my eyes: the clear mirror seemed to reflect the huge irises on the distant horizon, and the listless blue-purple dreamscape had trapped them. The sky cried out in the cage made from my eyes, pounding on the cold iron bars, shedding fiery tears.</span>
+        <span class="zh">那被我弄壞的鐘已經神經兮兮地打了不知多少下，伊朗風平浪靜的天空突然下起瓢潑大雨。此時的天空卻像我的眼睛了，那明鏡彷彿倒映著遙遠地平線上巨大的鳶尾花，無精打采的藍紫夢境把它收入羅網。天空在我眼睛做成的牢籠中叫喊，拍打著那冰冷的鐵欄杆，落下熾熱的眼淚。</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">The rain in Iran is always depressing. It always carries a hint of warmth, and those hoping to stroll, reflect, or atone in the rain are sure to lose all interest. I walked to the window—or maybe I crawled. The raindrops stepped through the unclosed window and onto my tired face. I pointed at the sky: "Hey! Put away your tears!"</span>
+        <span class="zh">伊朗的雨總令人沮喪，它永遠帶著若有似無的暖意，那些期盼在雨中漫步的，思索的，贖罪的，定將興致全無。我走到窗前，也可能是匍匐著爬過去。雨絲踏過未關的窗，踏上我疲倦的面孔。我用手指著天空：「喂！你把眼淚收起來！」</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">I heard the chime a few more times. The beast of the night, transformed, stretched its enormous wings and descended upon the shivering little town. The demons of "A Night on Bald Mountain," singing their chaotic songs, reveled in the night sky, replacing my lover's eyes and my own. I lit a flickering oil lamp, its glow as faint as striking a match. Amorous poets and musicians would, under such dim oil lamps, on a pitch-black, rainy night, think of their lover's face and write illogical verses and melodies. But I could do nothing but tremble.</span>
+        <span class="zh">又不知聽到了幾聲鐘聲，黑夜幻化的野獸伸著巨大的翅膀，降臨在了瑟縮著的小城。荒山之夜高唱著混亂曲子的惡魔在夜空中狂歡，取代了我戀人的眼睛，和我的眼睛。我點燃一盞搖曳的油燈，光亮像劃著一根火柴一般微弱。多情的詩人和音樂家會在這樣昏黃的油燈底下，在漆黑的、下著雨的夜晚，一邊思念著戀人的臉，一邊寫著不合邏輯的詩句和旋律。可是我除了顫抖什麼都做不了。</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">I missed my Arthur, and the pitiful goddess of fate sent him to me. A light footstep sounded outside the door, mingled with ragged breathing, stopping at my door. Seconds, or perhaps minutes, passed. My dear Artie pushed open my old, creaky wooden door. To me, he looked like a mass of radiance descending from the heavens. He had been caught in the rain and stumbled in. His wet hair stuck to his pale forehead, also covering his eyes. Through the golden, string-like wet hair, he poured his tender, painful gaze onto my face. His green eyes were blurry, squinted into a line, and from that pool, hot mist kept rising, humidifying the entire room.</span>
+        <span class="zh">我思念我的亞瑟，可悲的命運女神就將他遣來。門外響起一陣輕巧的腳步聲，混合著粗重的喘息停在我的門口。過去了幾秒，或是幾分鐘，我親愛的亞蒂推開我那扇吱吱呀呀的老舊木門，我看他好像是一團光輝從天上下來了。他淋了雨，踉踉蹌蹌地走進來。濕漉漉的頭髮黏在他蒼白的前額上，也遮住了他的眼睛。他透過金色的、琴弦似的濕髮把溫柔痛苦的眼波傾注在我的臉上。他碧綠的眼睛模模糊糊地瞇成一條線，從那潭水中不斷蒸騰起灼熱的霧氣，浸潤了整個屋子。</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"Arthur, you've finally come!" My stagnant, numb, ice-soaked soul became active again.</span>
+        <span class="zh">「亞瑟，你終於來了！」我凝滯、麻木、已經在冰窟裡浸泡過的靈魂又重新活動起來。</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"I've come to say goodbye forever," his mouth uttered merciless syllables, but his eyes told me he did not want to.</span>
+        <span class="zh">「我是來與你永別的。」他的嘴裡講出無情的音節，他的眼睛卻與我說他不願。</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">I reached out a trembling hand to touch his face, but he dodged it. "Don't make things more complicated than they already are. This is hard enough."</span>
+        <span class="zh">我伸出手，顫抖著想撫上他的臉，卻被他躲開了：「別把事情複雜化，已經夠難的了。」</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">For a few minutes, neither of us spoke. We looked into each other's eyes, desperately trying to remember the expressions they had once held. Eyes are the creator's most treacherous creation. They are the lucky lover's camera. When lovers wander through the deep alleys of Tehran, sing on the banks of the Seine, or pour out their hearts by a warm fireplace, the eyes take in the depth of their love. But when lovers are separated, the sole image of the lover in their eyes becomes the hardest thing to let go of.</span>
+        <span class="zh">有那麼幾分鐘我們都不說話，我們看著對方的眼睛，拚命地記住它們曾有過的神情。眼睛是造物主最詭計多端的產物，它們是幸運戀人的照相機，當戀人們漫步於德黑蘭的深巷時，在塞納河畔放歌時，在溫暖的爐火旁互訴衷腸時，它們把戀人的深情看在眼裡。可當戀人們天各一方，眼中戀人的唯一影像又變成了最難捨難分的東西。</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">I looked into Arthur's clear green eyes, watching as my reflection in that bottomless swamp, that witch's poison, gradually froze, mixed with his tears.</span>
+        <span class="zh">我看著亞瑟澄碧的眼眸，看著我在那深不見底的沼澤、女巫煉製的毒藥中逐漸混合在他的淚水裡凍結了。</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">He was the first to break the heavy silence between us: "My father's pride is everything to him. Losing it would kill him."</span>
+        <span class="zh">他率先打破我們之間厚重的沉寂：「我父親的驕傲是他的一切，沒有驕傲會害死他的。」</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">He left without looking back, not even once.</span>
+        <span class="zh">他說完就走了，一次也沒有回頭。</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">I collapsed on the floor in agony, my fingernails carving into the hard wooden planks. My internal organs seemed to twist. My face was out of control. Only my lips moved, like a drowning person gasping for help: "Arthur Kirkland…"</span>
+        <span class="zh">我痛苦地伏在地上，指甲刻進堅硬的木地板裡。五臟六腑彷彿在扭曲，我的臉也不受控制，只有嘴唇還囁嚅著，像瀕死的溺水者在呼救：「亞瑟·柯克蘭……」</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">As if hearing my cry for help, he silently returned. I stood up from the floor and gazed at him. He held my face in his hands, and his lips, cold from the rain, firmly pressed against my burning lips. I closed my eyes. Our lips and teeth intertwined. He kissed me deeply.</span>
+        <span class="zh">像是聽到我的求救，他又默默地回來了。我從地上站起身，凝望著他。他捧起我的臉，被雨打得冰涼的嘴唇堅定地貼上我滾燙的嘴唇，我閉著眼睛，我們唇齒交纏，他深深地吻我。</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"Fran, take me away. Tonight."</span>
+        <span class="zh">「弗朗吉，今天晚上，帶走吧我。」</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">I felt his breath approach my ear, his voice like a wisp of smoke. As if granted permission, I wrapped my arms around his thin, slender body, lifted him up, and covered his eyes.</span>
+        <span class="zh">我感受到他的氣息湊近我的耳朵，聲音像一縷薄煙。我像得到了許可，摟住懷裡單薄瘦削的身軀，將他抱起，摀住他的眼睛。</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">What should I do with you, my Kirkland?</span>
+        <span class="zh">我該拿你怎樣，我的柯克蘭？</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">I caught every one of his breaths as we parted and let them all pass into my heart. I removed the hand covering his eyes and pressed my lips to that misty, sorrowful emerald. The light of that gem was more brilliant than I had ever seen it before.</span>
+        <span class="zh">我抓住我們分開時他的每一次喘息，把它們全數渡入我的心裏。遮在他眼睛上的手被我拿開，我將嘴唇貼在那霧濛濛的憂傷綠寶石上。那寶石的光，比我之前見過的任何一次都要璀璨。</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"Artie…" My kisses fell on his seemingly icy, pale face, the tip of his nose, his ivory neck. "Smile for me one more time, will you?"</span>
+        <span class="zh">「亞蒂……」我的吻落在他似乎結了冰的蒼白臉上，鼻尖上，象牙色的脖頸上。「再對我微笑一次好嗎？」</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">And so he smiled, just as I had seen him smile on that Iranian afternoon, through the golden dust floating in the air and the overlapping crystal shadows.</span>
+        <span class="zh">於是他笑了，一如我那日在那伊朗的午後，透過那空氣中浮著的金色沙塵和重重疊疊的水晶影子看到的那樣。</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">The oil lamp had long burned out. An atmosphere blacker than a raven's feather, mixed with the beaded, fragmented candlelight, flowed into our room. His eyes were so clear in the darkness that I could not bear to profane them with my gaze. I gripped his bony shoulder blades and imprinted bright kiss marks on those thin, emaciated wings.</span>
+        <span class="zh">油燈早就燃盡了，比烏鴉羽毛更漆黑的大氣夾雜著碎珠般的燈燭流進我們的房間。他的眼睛在黑暗中清透得讓我不忍用眼光去褻瀆。我抓著他瘦骨嶙峋的肩胛，在那清癯的翅膀上印下一個個鮮豔的吻痕。</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"Fran…" He parted his two pale lips, a hoarse voice coming from his throat. "Take me away now…"</span>
+        <span class="zh">「弗朗……」他張開兩片蒼白的嘴唇，喉嚨裡發出嘶啞的聲音，「現在就來帶走我吧……」</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">Our souls then intertwined, unable to separate for a long time. The blanket, the table, the tiles, the bed with its thin cotton sheet—everything in the room spun with us, like intertwining vines. Listening to my lover's hoarse nasal sounds, I buried my head in his hair. The air playing among his golden locks and the slightly fishy rainwater greeted me. My tears fell among his hair.</span>
+        <span class="zh">我們的靈魂於是糾纏在一起久久不能分開。房間裡的毯子，桌子，瓷磚，鋪著單薄棉被的床都隨著我們一起旋轉如纏繞的藤蔓。聽著我戀人沙啞的鼻音，我把頭埋在他的髮間。他金髮中嬉戲著的空氣和帶著些許腥氣的雨水迎接了我，我的淚水滑落在他的髮間。</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"Don't cry, you bastard!" He slapped my face hard. Hearing his voice tremble, I turned my head. He was looking at me with an extremely cold expression, like a pool of dead water. I touched the corner of his eyes, only to find that they too were already wet.</span>
+        <span class="zh">「別哭，混蛋！」他狠狠地打上我的臉，聽到他聲音顫抖，我扭頭，他正以一種極其冷漠的神色看著我，一潭死去的湖水。我撫摸著他的眼角，卻發現那裡也早已濕潤。</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"Don't touch me," he said, grabbing my hand, but then bringing it to his lips, gently pecking my fingertips. "These fingers will be pressing someone else's strings someday," he teased, dragging out the sentence in a light tone.</span>
+        <span class="zh">「別碰我。」他抓住我的手，卻把它放在自己的唇邊，輕輕啄吻著我的指尖，「它們以後就要給別人按琴弦啦。」他用輕鬆的語氣，拉扯出這句話。</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">We stayed together, crossing from the night into an even deeper night. He slept beside me. I held his hand, slightly smaller than mine, and gently cradled it in my own. Outside, the lights were blazing brilliantly, but we were already old.</span>
+        <span class="zh">我們在一起，從黑夜跨到更深的黑夜。他睡在我的身邊，我抓著他比我小一點的手，把它輕輕托在手裡。外面燈火正輝煌，我們卻已經老了。</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">Another pale dawn arrived. The light, sieved into quadrilaterals by the window, seized my Arthur. He looked as if he were about to fly out of that glow.</span>
+        <span class="zh">又是一個蒼白的黎明，被窗子篩成四邊形的光線攫住了我的亞瑟。他像要從那輝光中飛出去一樣。</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"Go, Arthur… good lad, your father will be worried," I said, kissing his pale forehead.</span>
+        <span class="zh">「走吧，亞瑟……好小子，你父親該擔心啦。」我吻他蒼白的額頭。</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">He rose silently, buttoning his shirt wrong three times before getting it right, then looked everywhere for his shoes. I clearly remembered putting them neatly under the bed, but when he was about to leave, one was under the table and the other near the wardrobe. He dressed slowly. Neither of us said a word.</span>
+        <span class="zh">他沉默地起身，釦子扣錯了三次才把襯衫穿好，又四處找他的鞋。我明明記得被我整整齊齊地擺在床底下，臨走的時候卻一隻在桌子下面，一隻在衣櫃附近。他慢吞吞地穿好衣服，我們誰都沒有說話。</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"Hey, Fran," he said suddenly, turning around before leaving and winking at me. "Don't forget me."</span>
+        <span class="zh">「喂，弗朗吉。」出門前他突然轉過身，對著我眨了下眼，「可別忘了我。」</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">I remembered his words. I haven't forgotten him for decades.</span>
+        <span class="zh">我記著他的話，幾十年都沒忘他。</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">There's nothing much to say about what happened afterward. Everyone is probably tired of listening to this blabbering old man. But I'll say a few more words, briefly.</span>
+        <span class="zh">後來的一切都沒什麼可說的了，大家也聽膩了我這個喋喋不休的糟老頭子的話了。但我還是簡單說兩句吧。</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">Our two lines, after intersecting at a single point, were destined to go their separate ways. I returned to my own line, went back to my teacher to study the violin. When I picked up the violin again, my hands trembled uncontrollably, inevitably. Tears flowed through the gaps between my strings. The melody was not beautiful at all. That strict teacher, the one who once said my playing was crap, said to me: "I have nothing left to teach you. You have captured that sigh."</span>
+        <span class="zh">我們這兩條線，相交在一個點後就注定分道揚鑣。我回到我的線，回去找我的老師學琴。我的手再拿起小提琴時已經不可避免止不住地顫抖了，眼淚從我琴弦的間隙中淌出來，那旋律一點都不美妙。那個嚴厲的老師，那個曾說我的琴聲是狗屁的那個老師卻對我說：「我已經沒什麼可教你的了，你已經抓住了那聲嘆息。」</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">He passed on to me the violin that his own teacher had passed on to him.</span>
+        <span class="zh">他把他老師傳給他的小提琴傳給我。</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"Love is eternal."</span>
+        <span class="zh quote-line">「愛是永恆的。」</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"From now on, everything you lose will turn into the notes beneath your fingers."</span>
+        <span class="zh quote-line">「從今以後，你失去的一切，都會化作你指下的音符。」</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"He will always be your breath and your sigh."</span>
+        <span class="zh quote-line">「他永遠都會是你的呼吸和嘆息。」</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">For the next twenty-one years, I walked from Tehran to Budapest, from Budapest to San Francisco, and from San Francisco to other nameless places. I almost traveled the entire world. Just as my teacher had predicted, no matter where I was, when I performed, Arthur was by my side. He existed in every one of my notes, every one of my chords.</span>
+        <span class="zh">今後的二十一年，我從德黑蘭走到布達佩斯，從布達佩斯走到聖法蘭西斯科，又從聖法蘭西斯科走到其他不知名的什麼地方。我幾乎把世界翻了個遍。誠如老師所預言，無論身處何方，當我表演時，亞瑟都伴在我的身旁。他存在於我的每個音符，每個和弦。</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">At the age of forty-four, I returned to my hometown and ushered in a tragic plot twist: I got married.</span>
+        <span class="zh">我在四十四歲時回到家鄉，迎來一個悲劇性的情節，我結婚了。</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">My poor wife. The only thing she understood about me was that she knew my palate's habits and would make my favorite chicken with plums. My poor wife. She loved me, but she couldn't understand my violin. She couldn't stand that tormenting sound. After one argument, she snatched my violin from me and smashed it to pieces.</span>
+        <span class="zh">我可憐的妻子，她唯一理解我的地方，就是她深知我味蕾的習性，會給我做我最愛的梅子雞。我可憐的妻子，她愛我，卻聽不懂我的琴。她總受不了那折磨人的琴聲，一次爭吵後，她奪過我的琴，把他摔得粉碎。</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">So I returned to Tehran, searching everywhere for a violin to replace it, but I failed. My lover was a ship sunk into a lost sea, a diamond meteor streaking across the sky, a lightning bolt in a fluffy thundercloud—irreplaceable by anyone.</span>
+        <span class="zh">於是我回德黑蘭到處尋找能替代他的琴，但我失敗了。我的戀人是沉入失落海底的船隻，是劃破天空的鑽石流星，是蓬鬆雷雨雲中的閃電，無人可以替代。</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">Seeing him was unexpected. But my boy—the boy who smiled like the shattering dawn, the boy with a boundless expanse of green in his eyes, the boy who grinned mischievously yet with red-rimmed eyes told me not to forget him—he seemed to have forgotten me.</span>
+        <span class="zh">見到他是我意料之外的事。可是我的男孩，那個微笑得像拂曉碎裂朝陽的男孩，那個眼中一碧萬頃的男孩，那個壞笑著，卻紅著眼睛讓我不要忘了他的男孩——他似乎忘記我了。</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"Sorry, I must have mistaken you for someone else," I said, putting my hat back on.</span>
+        <span class="zh">「對不起，我八成認錯人。」我把帽子重新戴上。</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"No, it's quite alright, sir," he said politely, nodding.</span>
+        <span class="zh">「不，沒關係，這位先生。」他禮貌地點了點頭。</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"Grandpa, I'm tired of walking. Let's go!" his grandson called out in a babyish voice. He took the child's hand and left. His thin, frail back was covered by a loose white coat. The wind billowed his clothes, as if the heavenly god had finally noticed an angel's dereliction of duty and was taking him back to the sky. He never looked back, not even once.</span>
+        <span class="zh">「爺爺我走累了，走啦！」他的孫子奶聲奶氣地叫著。他拉著他的手離開，瘦削的背影上罩著一件寬大的白風衣。風把他的衣服吹得鼓起，好像天神終於發現天使的失職，要把他重新帶回天上。他一次也沒有回頭。</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">Finally, I have a happy ending. My Arthur, just as I had hoped, now has a wider field of irises. As I wished, he finally forgot me.</span>
+        <span class="zh">我終於迎來了一個喜劇的結局。我的亞瑟，他像我所希望的那樣，有了更廣闊的鳶尾花田。如我所願，他終於忘了我。</span>
+    </div>
+
+<!-- ================= RETURN ================= -->
+<div style="text-align:center;">
+  <a class="return-box" href="../index.html">
+    <span class="en">Return</span>
+    <span class="zh">返回</span>
+  </a>
+</div>
+
+<!-- ================= MUSIC（可替换模块） ================= -->
+<!-- 🔴 MUSIC MODULE START -->
+<audio id="bgm" loop>
+  <source src="../music/Danser_sous_la_pluie.mp3" type="audio/mpeg">
+  <!-- 🔵 替换音乐路径即可 -->
+</audio>
+<!-- 🔴 MUSIC MODULE END -->
+
+<script>
+let lang = "en";
+
+function applyLang(mode) {
+  document.body.classList.remove("lang-en", "lang-zh");
+  document.body.classList.add("lang-" + mode);
+}
+
+function toggleLang() {
+  lang = (lang === "en") ? "zh" : "en";
+  applyLang(lang);
+}
+
+applyLang("en");
+
+/* music autoplay */
+document.addEventListener("click", () => {
+  const audio = document.getElementById("bgm");
+  if (!audio) return;
+  audio.volume = 0.6;
+  audio.play().catch(() => {});
+});
+</script>
+
+</body>
+</html>
