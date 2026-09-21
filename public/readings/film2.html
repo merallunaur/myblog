@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>	Film 2 / 	影評 2</title>
+
+<style>
+body {
+  background-color: #81A380;
+  color: #525288;
+  max-width: 720px;
+  margin: 100px auto;
+  line-height: 1.9;
+  font-family: Georgia, serif;
+  padding: 0 20px;
+}
+
+/* ================= LANGUAGE SYSTEM ================= */
+.zh, .en {
+  display: none;
+}
+
+body.lang-en .en {
+  display: inline;
+}
+
+body.lang-zh .zh {
+  display: inline;
+}
+
+/* switch */
+.lang-switch {
+  position: fixed;
+  top: 18px;
+  right: 18px;
+  border: 1px solid #7D5A44;
+  padding: 6px 12px;
+  cursor: pointer;
+  color: #7D5A44;
+  background: transparent;
+  z-index: 999;
+}
+
+.lang-switch:hover {
+  background: #7D5A44;
+  color: white;
+}
+
+/* title */
+h1 {
+  text-align: center;
+  font-weight: normal;
+  margin-bottom: 60px;
+  font-size: 28px;
+  letter-spacing: 1px;
+}
+
+/* divider */
+.divider {
+  border-top: 1px solid #7D5A44;
+  width: 100%;
+  margin: 60px 0;
+  opacity: 0.6;
+}
+
+/* text */
+p {
+  margin-bottom: 26px;
+}
+
+/* return */
+.return-box {
+  display: inline-block;
+  padding: 6px 14px;
+  border: 1px solid #7D5A44;
+  color: #7D5A44;
+  margin-top: 60px;
+  transition: 0.3s;
+}
+
+.return-box:hover {
+  background: #7D5A44;
+  color: white;
+}
+</style>
+</head>
+
+<body class="lang-en">
+
+<!-- LANGUAGE SWITCH -->
+<div class="lang-switch" onclick="toggleLang()">EN / 繁</div>
+
+<!-- ================= TITLE（可替换） ================= -->
+<h1>
+  <span class="en"><!-- 🔵 English Title -->	Film 2</span>
+  <span class="zh"><!-- 🔵 中文标题 -->	影評 2</span>
+</h1>
+
+<div class="divider"></div>
+
+<!-- ================= BODY（整段可扩展区域） ================= -->
+
+<!-- 🔵 这里是正文 -->
+<p>
+   <div class="bilingual-paragraph">
+        <span class="en">"The Substance" (2024) has a very famous heavy cult-film flavour. One of its features is the use of distorted camera lenses to present the male gaze and gender issues. It is very direct. I think there is no hierarchy between metaphor and directness—it is not that making the viewer guess is more sophisticated, it is just a different mode of presentation. I actually hate being a riddler. When I watched the shot-by-shot analysis, I also saw that the camera language uses many mirrors and angles to reflect the dynamic relationships between characters. The score is also a highlight, a layered humming sound like insects or machinery. The rhythm also gives a sense of urgency, reminding me of a YouTube edit about the Bosnian War, with music that skips like an alarm or a heart monitor. The directness of the theme fits the film's pure horror expression—blood, organs falling off, etc. It also accidentally created the famous meme "Nà zhǒng wùzhì" (That Substance).</span>
+        <span class="zh">《某種物質》（2024）很有名的濃厚cult片味，一個特點就是用畸變鏡頭展現男凝問題和性別問題。不過是非常直給的，我覺得隱喻和直給沒有高下之分，不是說讓觀者猜就更加高級，只是呈現方式不同。我其實很討厭當謎語人。看拉片的時候也看到鏡頭語言中運用很多鏡子與夾角來體現角色之間的動態關係。還有配樂也是一大亮點，一種類似昆蟲，機械的有層次的嗡鳴聲。節奏也給人一種緊迫感，讓我想到油管上一個波黑戰爭的剪輯視頻，也是這種跳得像警報或是心電監護儀的音樂。直給的主旨很符合這部電影純粹的恐怖表現，血，器官脫落等等。還陰差陽錯地創造了名梗「娜種物質」。</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"Beau Is Afraid" (2023). Two or three years ago? A very long, boring, stream-of-consciousness presentation. It portrays the conflict and fear toward family to the fullest. I estimate most East Asian children can relate. There are many metaphors and hints in the imagery; you can tell the director had a great time filming. At the time it sparked controversy over the director's personal expression versus audience reception. For me, although the presentation is quite personal, I can still feel the emotions the director wanted to express. Some chapters are presented in a very children's-theatre or fairy-tale way. I feel this kind of presentation generally exists in the depiction of the grotesque or the uneasy, but in this film it should be a way of confronting trauma. Similar to how a young child who suffers sexual abuse might imagine their experience as Hansel and Gretel, to fight against an unbearable harm. If you don't understand it, watching it straight through can be a bit boring; you can watch a shot-by-shot analysis.</span>
+        <span class="zh">《博很恐懼》（2023）兩三年前？的電影，很長時間的無聊的意識流表現。把對家庭的矛盾和恐懼展現得淋漓盡致，我估計是大多數東亞小孩能共情的一部。畫面中的隱喻和暗示都很多，能看出來導演拍爽了。當時就引發了對導演個人表達和觀眾接受取捨方面的爭議。對於我而言雖然呈現方式比較個人化，我還是能感受到導演想表達的情緒的。有些篇章的呈現非常兒童劇化，或者童話化。感覺這種表現一般都存在於怪誕或者不安的呈現，不過這個片子里應該是對抗創傷的表現。類似於一個幼童遭受性侵時，他可能會把自己的經歷想象成漢塞爾和格雷特，以此對抗這種無法接受的傷害。如果不懂自己看下去會有點無聊，可以看拉片。</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"Death of a Unicorn" (2025). A terrible film. A very low-value slasher-type film, except the killer is a unicorn. Maybe they wanted to create contrast with a legendary beautiful and powerful creature, but it is truly shoddily made.</span>
+        <span class="zh">《獨角獸之死》（2025）大爛片。非常沒有含金量的一部殺人魔類型電影，只不過主角換成了獨角獸。可能是想通過傳說中美麗強大的生物來製造反差，但實在是粗製濫造。</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"Sinners" (2025). I thought Jordan Peele directed it. First of all, MBJ is so handsome. The music montage section is the essence of the film's theme of racial inclusivity; the fusion of music + colonial conflict + vampires + the West is very novel. It is a film that can provoke thought; the different fates of the two protagonist brothers might also illustrate that marginalized groups must give up something to integrate into mainstream society. And neither path is a good ending. It is a film worth watching! Even just for MBJ's face.</span>
+        <span class="zh">《罪人》（2025）我還以為喬丹皮爾拍的。首先麵包機好帥。音樂蒙太奇那一段是展現電影種族包容主旨的精華，音樂+殖民矛盾+吸血鬼+西部的融合很新穎。是一部能引發人思考的電影，主角兄弟兩的不同命運可能也就說明了邊緣群體融入主流社會必須要放棄某些東西。並且哪一條都不是好結局。是一部值得看的電影！衝著麵包機老公的臉也可以看。</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"Bring Her Back" (2025). A kitchen knife growing into the gums looks so painful!! The film basically lays out the female protagonist's scheme openly, but it still makes you feel terror and suffocation. In a family environment that should be full of love and support, the male protagonist falls into an isolated and helpless situation. Watching it makes your blood pressure spike. The brother and sister are so pitiful. But aside from the body horror segments, the film's core doesn't hold up to scrutiny. I really hate this kind of film where one person's selfish desire drags in many people; maybe that's one of the themes. But I don't think she deserves any sympathy at all, and she didn't get the punishment she deserved.</span>
+        <span class="zh">《復活她》（2025）菜刀生卡牙齦看著很痛啊！！影片對女主角的陰謀基本上是明牌呈現，但依舊讓人感覺到恐怖和窒息。在家庭這種本該充滿愛與支持的環境裡，男主角陷入孤立無援的境地。看得人血壓蹭蹭往上漲。哥妹好慘。但是除了身體恐怖的橋段，影片的內核經不起推敲。我很討厭這種因一己私慾捲入很多人的電影，可能這是主題之一吧。但我覺得一點都不值得同情，她也根本沒有得到應有的懲罰。</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"Together" (2025). How was it promoted as comparable to The Substance? Very average. However, expressing the symbiotic strangulation of intimate relationships directly through the body is a relatively clever method. For a new director, it is very smart. Other aspects are neither here nor there.</span>
+        <span class="zh">《同甘共苦》（2025）怎麼就宣傳比肩某種物質了，很一般。不過把親密關係的共生絞殺通過身體，直觀地表現出來還是比較討巧的方法。對於新導演來說很聰明。其他方面無功無過。</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"Identity" (2003). At a time when split personality is no longer a niche and novel subject, this film still uses its exquisite plot and suspense setup to make the audience completely fall into it. The ending is unexpected yet reasonable, reminding me a bit of the twist in Dead Silence; the feeling is similar. I don't know whose perspective is correct in this film, because the protagonist's perspective is completely subjective—we do not watch this film as bystanders. So I kept guessing whether the protagonist killed someone without realizing it.</span>
+        <span class="zh">《致命ID》（2003）在人格分裂不是小眾新穎題材的當下，這部電影依舊用他精妙的劇情與懸念設定使觀眾完完全全陷進去了。結局出乎意料又合乎情理，讓我有點想到看死寂時的反轉，感覺上差不多。這部電影不知道誰的視角是正確的，因為主角的視角是完全主觀的，我們並不以旁觀者的身份觀看這部電影。所以我當時一直在猜是不是主角無意之間殺人。</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"Eddington" (2025). I don't like it. I wouldn't call it disappointing either; anyway, you can feel that Ari Aster definitely had a great time filming, and that's good. Joaquin playing a pathetic loser is always solid. I don't really understand what it's trying to express. It feels like a post-pandemic reflection on the pandemic era, but maybe my comprehension is insufficient; I only saw a conspiracy theory packaged as a DLC.</span>
+        <span class="zh">《愛丁頓》（2025）不喜歡。也談不上失望，反正能感覺阿里艾斯特本人肯定拍爽了，這就很好了。華金演窩囊廢一直可以的。我不太明白想要表達什麼，感覺就是一個後疫情時代對疫情時代的反思，但是可能也是我理解功力不足，只看到了一個陰謀論打包dlc。</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"Babygirl" (2024). I've never seen such a filthy film filled with the director's vulgar sexual fantasies about powerful, successful women. Revolting. I thought there would be a specific theme, but it turned out to be the beautiful Nicole Kidman and a young handsome guy acting for an hour and a half. If it's supposed to be sexual liberation, why does it have to be filmed so filthily?</span>
+        <span class="zh">《小心肝兒》（2024）沒見過這麼充斥著導演對有權力成功女人的下流性幻想的爛電影。惡臭至極。我以為會有一個特定主題，結果大美女妮可基德曼和一個年輕帥哥演了一個半小時的片兒。如果硬要說是性解放，那為什麼一定要拍得這麼下流呢？</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"No Other Choice" (2025). A remake I really like. Actually, it doesn't integrate much reflection on Korean workplace culture. Rather than a realistic satire, it might be positioned more as a dark comedy for me. But who hasn't wanted to take an axe and chop down everyone ahead of them in line when they can't find a job?</span>
+        <span class="zh">《選擇有罪》（2025）很喜歡的一部翻拍電影。其實對韓國本土的職場思考融入的不是非常多。比起現實諷刺片，可能在我這裡的定位更偏向於灰色幽默喜劇片。不過找不到工作的時候誰又不想拿著斧頭把排自己前面的人都砍了呢。</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"Regretting You" (2025). A fairly typical American family comedy. I saw the trailer when Fallen Angels was re-released, because it had familiar actors—Mckenna Grace + the female lead from Get Out—and it looked like a relatively straightforward theme. And it is indeed the story of lovers missing each other, told countless times; the missed lover is betrayed by both their partners, and in the end the lovers don't miss each other. Very boring. I'm gradually discovering I'm not the audience for this kind of film anymore.</span>
+        <span class="zh">《愛•憾事》（2025）比較典型的美式合家歡。當時看墮落天使重映的時候看到了預告，因為有眼熟的演員麥肯娜+逃出絕命鎮的女主角，而且看起來是比較直白的主題。也確實是拍過無數次的愛人錯過，錯過的愛人被自己的伴侶雙雙背叛，最後愛人不錯過的劇情。很無聊，漸漸發現這種片子我不是受眾了。</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"The Other World" (2025). A very excellent Hong Kong animation. The art style and core are not inferior to any animated film of the same period. The presentation of the reincarnation theme is relatively novel, and the visual impact is very strong. The plot contains pain and anger, but also shows the power of the purest promise. Some parts are quite dark. I just don't know why it cannot be found anywhere on the internet.</span>
+        <span class="zh">《世外》（2025）非常棒的一部香港動畫，美術風格和內核都是不輸給任何同期動畫電影的。對於輪迴主題的展現比較新穎，畫面衝擊力非常強。情節也是包含著痛苦、憤怒，但又展現了最純粹的承諾的力量。部分情節比較黑暗。就是不知為什麼在任何互聯網都查無此片。</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"The Sun Rises in the Middle of the Sky" (2025). When I went to Shenzhen to get a haircut, I didn't know what to do and didn't want to go back to Hong Kong, so I watched this film. I also really don't know what's good about it. My disgust for the character played by Xin Zhilei might have completely blinded me to her acting, and I also question her Best Actress award. This is a typical story of solving the debt collector because you can't pay the debt. But the plot is truly乏善可陈; I don't think any emotional climax pushes the protagonist toward the only path of murder. A lot of the narration relies on voiceover, which I find especially speechless.</span>
+        <span class="zh">《日掛中天》（2025）我去深圳剪頭髮的時候不知道幹嘛，又不想回香港，就看了這部電影。也實在不知道這部電影好在哪裡。對辛芷蕾飾演的這個人物的厭惡，可能完全蒙蔽了我對她演技的評價，我也對她的影后產生了質疑。這是一個典型的因為還不起債就解決還債人的故事。但劇情實在乏善可陳，我覺得沒有任何一個情緒爆發點能推主角走向殺人這條唯一的道路。很多敘述都靠旁白補充，覺得特別無語。</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"Zootopia 2" (2025). Thematically, I think it's inferior to the first one. But I originally prefer watching how the various animals live in this kind of film, like exploring the map as side quests. So I'm happy that more different animals were made into the film. I actually don't really ship this pair... because I neither like people who act rashly nor people who act sluggishly. So if the internet's selling point is just the fox-rabbit CP, I might become even more wary of everyone on the internet.</span>
+        <span class="zh">《瘋狂動物城2》（2025）主題上我覺得不如第一部。但我本來就更喜歡看這種電影裡各種動物怎麼生活，類似跟支線任務一樣探索地圖。所以我很高興能有更多不同的動物被製作進電影。我本來就不太嗑這對……因為我既不喜歡做事莽撞的，又不喜歡做事拖沓的。所以如果你的互聯網賣點只是狐兔cp的話，我可能會進一步對互聯網任何人都保持警惕。</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"Project Hail Mary" (2026). A very excellent film! Compared to science fiction, it's more like a literary film. The score and visuals work very well together. The fishing scene is a stroke of genius. Finding oneself in the lonely, vast universe, and gaining a soulmate in the process, is an eternal and moving theme. The actress is the female lead from Anatomy of a Fall; you can feel she is a very sincere actress.</span>
+        <span class="zh">《末日聖母號》（2026）非常棒的一部電影！比起科幻片更像文藝片。配樂與畫面配合得很好。釣魚的那一段神來之筆。在孤獨而浩瀚的宇宙中找尋到自己，同時在這個過程中收穫了知己，是一個永恆的讓人感動的主題。女演員是墜落的審判的女主角，能感覺到是位很真誠的演員。</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"Raise the Red Lantern" (1991). A film from a long time ago; I think it's Zhang Yimou's peak. This year I watched it because I'm writing a Republican-era novel. The film's symmetry and cold-warm composition are very aesthetically pleasing, and the symbolisation of the master is also very inspiring. The film moves the original novel from Jiangnan to northern Shanxi, which is a very successful adaptation. The Jiangnan courtyard, because of its landscaping, is actually more lively, while that Shanxi courtyard is tall and dark, like a carved coffin stone. Also, the music every time someone dies should come from folk songs, with a relatively bright rhythm, but it sounds especially scary. Some note must have been deliberately raised by a semitone, very dissonant.</span>
+        <span class="zh">《大紅燈籠高高掛》（1991）很久以前的電影，我覺得是老謀子的巔峰了。今年因為要寫一個民國長篇才來看。影片的對稱和冷暖構圖非常具有美感，同時對於老爺進行符號化也非常具有啟發性。電影把原著從江南搬到北方山西省，是一次非常成功的改編。江南的院子因為造景其實還是比較靈動的，而山西的那個院子又高又暗，就像一塊雕好的棺材石頭。還有每次死人的那個配樂，應該是來自民歌，比較明快的節奏，但是聽起來特別嚇人。應該是哪個音刻意地升半音了，非常不和諧。</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"The Devil Wears Prada 2" (2026). You can truly feel the economic downturn. I really liked Matilda's high-and-mighty feeling in the first film, but in the second she can only curry favour with people and can only fly economy. I almost cried watching it.</span>
+        <span class="zh">《穿prada的惡魔2》（2026）切切實實感覺到經濟下行啊。我很喜歡瑪蒂爾達第一部高高在上的感覺，但是她第二部只能去討好一些人，還只能坐經濟艙，簡直要看哭了。</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"The Reveal Day" (2026?). Fairly boring, so much so that I can't even remember what it was about. Riddler + Fast & Furious, and even three hours long. It makes you drowsy. The imagination of aliens is still stuck in the last century.</span>
+        <span class="zh">《揭秘日》（2026？）比較無聊，以至於我都記不清楚說了什麼了。謎語人+速度與激情，甚至有三個小時，看得人昏昏欲睡。對外星人的想象還停留在上世紀。</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"The Backrooms" (2026?). A bit disappointing. I know this film, as a hot internet concept, might itself carry relatively high expectations, but overall it didn't give me that nostalgic yet uneasy feeling. The score is good, with a very dreamcore musical tonality. The monster design is also very good. But the dual narrative lines each remain unclear.</span>
+        <span class="zh">《後室》（2026？）有點失望，我知道這部片子作為互聯網大熱概念可能本身就背負比較大的期待，但是整體並沒有給我那種既懷舊又不安的感覺。配樂不錯，很有夢核音樂的調性。怪物的設計也很好。但雙線並行每條線都沒說清楚。</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"Obsession" (2026?). Now it has become a niche fashion item again. So now whenever I hear "forever" I get airplane ears. Setting aside these off-screen things, it is indeed very successful at achieving much with little. The female protagonist's uncanny-valley quality is presented very appropriately. Here too, achieving much with little, for example, when the female protagonist is in the dark, it uses the horror-valley makeup trend that was popular on TikTok last year to exaggerate facial grooves and expressions. A very creative film!</span>
+        <span class="zh">《痴迷》（2026？）現在又成為小眾時尚單品了。導致我現在一聽到forever就會飛機耳。拋開這些螢屏外的東西，以小博大確實很成功。女主的那種偽人感展現得非常合適。這裡也是以小博大，比如女主在暗處的時候運用了去年洋抖很火的恐怖谷妝容趨勢放大面部溝壑和表情。非常有創造力的電影！</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"Fall 2" (2026?). I really cannot accept suddenly going crazy and arguing with a drug dealer near the top. Setting that aside, the high-altitude selling point is completely gone. The camera work is simply amateur level, only using GoPro overhead shots. I still remember the shot in the first film where the ladder loosens and she falls: it first films the female protagonist's expression from inside the ladder, then follows the falling ladder as it rotates, throwing the female protagonist down. The ladder's frame has a natural framing composition; because it reduces the peripheral field of view, it can also make the audience focus more on the distant ground. You won't see this kind of shot in the second film.</span>
+        <span class="zh">《墜落2》（2026？）我實在無法認同快到頂突然發瘋跟毒販吵架。拋開這些不談，高空賣點也完全沒有了。鏡頭運用簡直是門外漢水準，只會gopro俯拍視角。還記得第一部梯子鬆動掉下去的鏡頭是先在梯子內側拍女主的表情，然後跟著下落的梯子旋轉，將女主角甩下去。梯子的框有一個自然的框架構圖，因為減少了四周視野，也能讓觀眾更加集中在很遠的地面。這種鏡頭第二部別想看見。</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"Welcome to the Dragon Restaurant" (2026?). Went to see it with my parents! Everyone's acting is very moving. Actually, I'm not too used to netizen water armies either, but I think this film itself is worth watching. I've also written war-themed fiction before; the harm war does to a country is truly too great. I'm very glad that this film has no stereotyped villains or bad people; it mainly presents things from the perspective of ordinary people, which is very good.</span>
+        <span class="zh">《歡迎來龍餐館》（2026？）跟父母一起去看的！每個人的演技都很感人。其實我也看不太慣網友自來水，但我覺得這部電影本身是值得看的。之前我也有寫過戰爭題材的小說，戰爭對一個國家的傷害實在是太大了。我很慶幸這部電影裡沒有臉譜化的反派或是壞人，主要還是以普通人視角呈現，這點很好。</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"The Odyssey" (2026?). Actually quite cult; it is a film worth watching. The growth arc of Holland's character is relatively weak. Every scene is particularly exciting. Nolan made a modernised adaptation of the Odyssey's core; this is indeed a story that can still resonate today. The big scenes are also very satisfying. Although it's a bit like Pirates of the Caribbean, the commercialisation should be more successful than that.</span>
+        <span class="zh">《奧德賽》（2026？）其實比較cult，是一部值得一看的電影。對荷蘭弟角色的成長線表現比較弱。每個場面都特別精彩。諾蘭對奧德賽的內核做了現代化的改編，這確實是一個現在也可以引起共鳴的故事。大場面也确实很爽。雖然有點像加勒比海盜，但是商業化應該比這是更加成功。</span>
+    </div>
+
+    <div class="empty-line"></div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">"Lust, Caution" (2007). The aesthetic beauty of the visuals is undoubtedly successful. I can understand that sex can sometimes breed love, but I really cannot understand why it must be expressed with large-scale nude scenes. If your artistic expression must sacrifice a female actor's body and future, then this expression itself is fragile. I do not deny that Ang Lee is a good director, but these segments in this film are hard to understand.</span>
+        <span class="zh">《色戒》（2007）畫面的美感無疑是成功的。我能理解有時性能滋生出愛慾，但我實在無法理解為什麼一定需要用裸露的大尺度鏡頭表達。如果你的藝術表達一定要用獻祭一個女演員的身體和前途表達，那麼這種表達本身就是脆弱的。我不否認李安是一位好導演，但是這部片子的這些片段讓人難以理解。</span>
+    </div>
+
+<!-- ================= RETURN ================= -->
+<div style="text-align:center;">
+  <a class="return-box" href="../index.html">
+    <span class="en">Return</span>
+    <span class="zh">返回</span>
+  </a>
+</div>
+
+<!-- ================= MUSIC（可替换模块） ================= -->
+<!-- 🔴 MUSIC MODULE START -->
+<audio id="bgm" loop>
+  <source src="../music/The Substance.mp3" type="audio/mpeg">
+  <!-- 🔵 替换音乐路径即可 -->
+</audio>
+<!-- 🔴 MUSIC MODULE END -->
+
+<script>
+let lang = "en";
+
+function applyLang(mode) {
+  document.body.classList.remove("lang-en", "lang-zh");
+  document.body.classList.add("lang-" + mode);
+}
+
+function toggleLang() {
+  lang = (lang === "en") ? "zh" : "en";
+  applyLang(lang);
+}
+
+applyLang("en");
+
+/* music autoplay */
+document.addEventListener("click", () => {
+  const audio = document.getElementById("bgm");
+  if (!audio) return;
+  audio.volume = 0.6;
+  audio.play().catch(() => {});
+});
+</script>
+
+</body>
+</html>
