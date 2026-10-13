@@ -4,8 +4,8 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <link rel="icon" type="image/gif" href="logo.gif">
-  
+<link rel="icon" type="image/gif" href="logo.gif">
+
 <title>The Conjecture of a Crocodile</title>
 
 <style>
@@ -22,6 +22,36 @@
   --line: rgba(125, 90, 68, 0.48);
 }
 
+/* ========================================================= */
+/* ===================== LOCAL FONTS ======================== */
+/* ========================================================= */
+
+/* 请将以下三个 .otf 字体文件放在 index.html 同一目录。 */
+@font-face {
+  font-family: "Huiwen Tsukiji";
+  src: url("./汇文筑地五号明朝体1.0.otf") format("opentype");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Nympha Light";
+  src: url("./Nympha-Light.otf") format("opentype");
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Tsuku Old Min";
+  src: url("./1-筑紫旧明朝体TsukuOldMinL.otf") format("opentype");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
+
 html {
   scroll-behavior: smooth;
 }
@@ -37,7 +67,7 @@ body {
 
   line-height: 1.85;
 
-  font-family: Georgia, serif;
+  font-family: "Tsuku Old Min", Georgia, serif;
 
   -webkit-font-smoothing: antialiased;
 }
@@ -95,6 +125,28 @@ body.lang-zh .zh {
 body.lang-zh span.zh {
   display: inline;
 }
+
+/* 中文统一使用汇文筑地五号明朝体 */
+.zh {
+  font-family: "Huiwen Tsukiji", serif;
+}
+
+/* 英文标题使用 Nympha-Light */
+h1 .en,
+.block-title .en {
+  font-family: "Nympha Light", Georgia, serif;
+  font-weight: 300;
+}
+
+/* 英文引文、说明文字与普通内容使用筑紫旧明朝体 */
+.quote .en,
+.desc .en,
+.special-desc .en,
+.subitem .en,
+.music-note .en {
+  font-family: "Tsuku Old Min", Georgia, serif;
+}
+
 
 
 /* ========================================================= */
@@ -170,6 +222,48 @@ h1:hover {
   letter-spacing: 0.08em;
 }
 
+
+/* ========================================================= */
+/* ======================= TITLE IMAGE ======================= */
+/* ========================================================= */
+
+.title-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 12px auto 24px;
+  padding: 0;
+  text-align: center;
+}
+
+.title-image img {
+  display: block;
+  width: 160px;
+  max-width: 55%;
+  max-height: 140px;
+  height: auto;
+  margin: 0 auto;
+  object-fit: contain;
+  transform-origin: center center;
+  transition: opacity 0.8s ease, filter 0.8s ease;
+}
+
+/* 鼠标悬停时轻柔呼吸；移开后自然恢复 */
+.title-image img:hover {
+  animation: logo2Breathing 2.8s ease-in-out infinite;
+}
+
+@keyframes logo2Breathing {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 0.88;
+  }
+  50% {
+    transform: scale(1.045);
+    opacity: 1;
+  }
+}
 
 /* ========================================================= */
 /* ========================== QUOTE ========================== */
@@ -733,6 +827,16 @@ a:hover {
     font-size: 29px;
   }
 
+  .title-image {
+    margin: 10px auto 18px;
+  }
+
+  .title-image img {
+    width: 130px;
+    max-width: 50%;
+    max-height: 115px;
+  }
+
   .quote {
     font-size: 0.96em;
   }
@@ -801,10 +905,42 @@ a:hover {
   .site-mark,
   h1,
   .music-note::after,
-  .footer-logo img {
+  .footer-logo img,
+  .title-image img {
     transition: none;
+    animation: none !important;
   }
 
+  .title-image img:hover {
+    animation: none !important;
+  }
+
+}
+
+/* ===== 中文目录字号微调：与英文保持视觉协调 ===== */
+
+.block-title .zh {
+  font-size: 0.76em;
+}
+
+.item > a .zh {
+  font-size: 0.9em;
+}
+
+.item > .desc .zh {
+  font-size: 0.9em;
+}
+
+.special-title .zh {
+  font-size: 0.9em;
+}
+
+.special-desc .zh {
+  font-size: 0.9em;
+}
+
+.subitem .zh {
+  font-size: 0.9em;
 }
 
 </style>
@@ -814,13 +950,6 @@ a:hover {
 <body class="lang-en">
 
 
-<!-- ========================================================= -->
-<!-- ========================= AUTHOR ========================= -->
-<!-- ========================================================= -->
-
-<div class="site-mark">
-  merallunaur
-</div>
 
 
 <!-- ========================================================= -->
@@ -841,9 +970,14 @@ a:hover {
   <span class="en">The Conjecture of a Crocodile</span>
 </h1>
 
-<div class="title-mark">
-  ☽ &nbsp; · &nbsp; ☾
+<!-- ====================== TITLE IMAGE ====================== -->
+<div class="title-image" aria-label="Title illustration">
+  <img src="logo2.png" alt="鳄鱼的猜想标题插图" loading="eager">
 </div>
+
+
+
+
 
 
 <!-- ========================================================= -->
