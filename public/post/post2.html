@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,80 +7,55 @@
 <title>Materialized Fantasies / 實體化幻想</title>
 
 <style>
-body {
-  background-color: #81A380;
-  color: #525288;
-  max-width: 720px;
-  margin: 100px auto;
-  line-height: 1.9;
-  font-family: Georgia, serif;
-  padding: 0 20px;
+:root{--sage:#81A380;--ink:#525288;--ornament:#7D5A44}
+@font-face{font-family:"Huiwen Tsukiji";src:url("../汇文筑地五号明朝体1.0.woff2") format("woff2");font-style:normal;font-weight:400;font-display:swap}
+@font-face{font-family:"Nympha Light";src:url("../Nympha-Light.otf") format("opentype");font-style:normal;font-weight:300;font-display:swap}
+@font-face{font-family:"Tsuku Old Min";src:url("../1-筑紫旧明朝体TsukuOldMinL.otf") format("opentype");font-style:normal;font-weight:400;font-display:swap}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
+body{background:var(--sage);color:var(--ink);max-width:720px;margin:0 auto;padding:104px 28px 72px;line-height:1.9;font-family:"Tsuku Old Min",Georgia,serif;font-size:16px;font-weight:400;letter-spacing:.015em;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+.zh,.en{display:none}
+body.lang-en .en{display:inline}
+body.lang-zh .zh{display:inline}
+body.lang-zh{font-family:"Huiwen Tsukiji","Noto Serif CJK TC",serif;letter-spacing:.035em;line-height:2}
+body.lang-en{font-family:"Tsuku Old Min",Georgia,serif;letter-spacing:.015em}
+.lang-switch{position:fixed;top:18px;right:18px;border:1px solid var(--ornament);padding:5px 12px;cursor:pointer;color:var(--ornament);background:var(--sage);z-index:999;font:inherit;font-size:12px;letter-spacing:.08em;transition:background-color .25s ease,color .25s ease}
+.lang-switch:hover{background:var(--ornament);color:#fff}
+h1{text-align:center;font-family:"Nympha Light","Tsuku Old Min",Georgia,serif;font-weight:400;font-size:clamp(25px,3.8vw,30px);line-height:1.45;letter-spacing:.035em;margin:0 0 18px}
+body.lang-zh h1{font-family:"Huiwen Tsukiji","Noto Serif CJK TC",serif;font-size:27px;letter-spacing:.1em;line-height:1.6}
+h2{text-align:left;font-family:"Nympha Light","Tsuku Old Min",Georgia,serif;font-weight:400;font-size:clamp(21px,3.2vw,25px);line-height:1.5;letter-spacing:.025em;margin:0 0 22px}
+body.lang-zh h2{font-family:"Huiwen Tsukiji","Noto Serif CJK TC",serif;font-size:23px;letter-spacing:.075em;line-height:1.65}
+.desc{text-align:center;font-size:14px;line-height:1.9;letter-spacing:.02em;opacity:.85;margin:0 0 40px}
+body.lang-zh .desc{font-size:14px;line-height:2.1;letter-spacing:.045em}
+.divider{border-top:1px solid var(--ornament);width:100%;margin:48px 0;opacity:.58}
+p{font-size:16px;line-height:2;margin:0 0 25px;overflow-wrap:anywhere}
+body.lang-zh p{font-size:16px;line-height:2.15;letter-spacing:.04em;margin-bottom:25px}
+.img-group{margin:0}
+.img-group img{display:block;width:100%;height:auto;margin:0 0 10px}
+a{color:var(--ornament);text-decoration:none;text-underline-offset:3px;transition:color .25s ease}
+a:hover{color:#fff}
+.return-box{display:inline-block;padding:5px 16px;border:1px solid var(--ornament);color:var(--ornament);margin-top:44px;font-size:13px;letter-spacing:.08em;text-decoration:none;transition:background-color .25s ease,color .25s ease,transform .25s ease}
+.return-box:hover{background:var(--ornament);color:#fff;transform:translateX(3px);text-decoration:none}
+@media(max-width:768px){
+ body{padding:82px 23px 52px;font-size:15px}
+ h1{font-size:25px;line-height:1.5;margin-bottom:16px}
+ body.lang-zh h1{font-size:24px}
+ h2{font-size:22px;margin-bottom:19px}
+ body.lang-zh h2{font-size:21px}
+ .desc{font-size:13px;line-height:1.95;margin-bottom:34px}
+ body.lang-zh .desc{font-size:13px;line-height:2.05}
+ p{font-size:15px;line-height:1.95;margin-bottom:22px}
+ body.lang-zh p{font-size:15px;line-height:2.05;margin-bottom:22px}
+ .divider{margin:38px 0}
+ .img-group img{margin-bottom:8px}
 }
-
-/* LANGUAGE */
-.zh, .en { display: none; }
-body.lang-en .en { display: inline; }
-body.lang-zh .zh { display: inline; }
-
-/* switch */
-.lang-switch {
-  position: fixed;
-  top: 18px;
-  right: 18px;
-  border: 1px solid #7D5A44;
-  padding: 6px 12px;
-  cursor: pointer;
-  color: #7D5A44;
-}
-
-/* title */
-h1 {
-  text-align: center;
-  font-weight: normal;
-  margin-bottom: 30px;
-  font-size: 28px;
-}
-
-/* desc */
-.desc {
-  text-align: center;
-  margin-bottom: 40px;
-  font-size: 14px;
-  opacity: 0.8;
-}
-
-/* divider */
-.divider {
-  border-top: 1px solid #7D5A44;
-  margin: 50px 0;
-  opacity: 0.6;
-}
-
-/* images */
-.img-group img {
-  width: 100%;
-  margin-bottom: 10px;
-}
-
-/* return */
-.return-box {
-  display: inline-block;
-  padding: 6px 14px;
-  border: 1px solid #7D5A44;
-  color: #7D5A44;
-  margin-top: 60px;
-}
-
-.return-box:hover {
-  background: #7D5A44;
-  color: white;
-}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{transition-duration:.01ms!important}}
 </style>
 </head>
 
 <body class="lang-en">
 
-<div class="lang-switch" onclick="toggleLang()">EN / 繁</div>
+<button class="lang-switch" type="button" onclick="toggleLang()" aria-label="Switch language">EN / 繁</button>
 
 <h1>
   <span class="zh">實體化幻想</span>
@@ -89,16 +64,16 @@ h1 {
 
 <div class="desc">
   <span class="zh">一些精美而可笑的得意之作。</span>
-  <span class="en">Some Exquisite Yet Ridiculous Masterpieces of Pride.</span>
+  <span class="en">Some Exquisite Yet Ridiculous Triumphs of Vanity.</span>
 </div>
 
 <div class="divider"></div>
 
 <!-- 引言 -->
 <p class="zh">
-这些是我已经实体化的著作合集。它们可能并不精美，也可能并不巧妙，但这都是我个人最真实的展现。
-如果你希望获得一本，你可以给我的邮箱 merallunaur@gmail.com 发邮件，并阐释必要性。
-它们是完全免费的——你甚至不需要付邮费。
+這些是我已經實體化的著作合集。它們或許不夠精美，也未必巧妙，但都是我最真實的呈現。
+如果你想要一本，可以寄信至 merallunaur@gmail.com，並說明你希望獲得它的理由。
+它們完全免費——你甚至不需要支付郵費。
 </p>
 
 <p class="en">
@@ -138,24 +113,24 @@ They are entirely free—you won’t even need to cover shipping.
 </p>
 
 <p class="en">
-Enamel Teapot is a container.<br>
-It does not hold works, but fragments of time that no longer function.<br><br>
+Enamel Teapot is a vessel.<br>
+It does not hold works, but fragments of time that have ceased to function.<br><br>
 
 Between 2019 and 2023, sentences settled inside it—<br>
-unstable, uneven, some too light, some too heavy, some written before they could even become meaning.<br><br>
+unstable, uneven, some too light, some too heavy, some written before they had even acquired meaning.<br><br>
 
-There is a slow deformation:<br>
-language attempts to move toward a center that never truly exists.<br><br>
+A slow transformation takes place:<br>
+language begins to approach a center that has never existed.<br><br>
 
-Beneath that lies a loss that cannot be retrieved.<br>
+Deeper still lies a loss that cannot be undone.<br>
 When I wrote these lines in high school, I did not know what they were;<br>
 now, I can no longer write in that way.<br><br>
 
 It is not a loss of technique,<br>
 but a disappearance of a certain capacity to feel.<br><br>
 
-This collection does not quite hold together.<br>
-It simply preserves moments that can no longer occur again.
+This collection never quite coheres.<br>
+It preserves moments that can never happen again.
 </p>
 
 <div class="img-group">
@@ -198,14 +173,14 @@ It simply preserves moments that can no longer occur again.
 
 <p class="en">
 The Little Lamb is not a story.<br>
-It is closer to a structure that slowly spreads.<br><br>
+It is more like a structure that slowly spreads.<br><br>
 
 The cult is only a surface.<br>
-Beneath it, there is a continuous corrosion of “God.”<br><br>
+Beneath it lies the ongoing corrosion of “God.”<br><br>
 
 Motherhood is not gentle here,<br>
 and war does not erupt—<br>
-they seep into each other as two indistinguishable forms.<br><br>
+they seep into one another as two interwoven forms.<br><br>
 
 The characters are incomplete.<br>
 They are not shaped, but forced into emergence under pressure,<br>
@@ -215,7 +190,7 @@ only to begin dissolving at the moment they appear.<br><br>
 yet everything moves around a void.<br><br>
 
 The work never reaches completion.<br>
-It keeps drifting away from itself as it forms,<br>
+As it takes shape, it continually drifts away from itself,<br>
 leaving behind only an unstable echo.
 </p>
 
@@ -260,20 +235,13 @@ leaving behind only an unstable echo.
 它更像是一種被精心製造出來的表面。
 </p>
 
-<div class="img-group">
-  <img src="../pictures/9.jpg">
-  <img src="../pictures/10.jpg">
-  <img src="../pictures/11.jpg">
-  <img src="../pictures/12.jpg">
-</div>
-
 <p class="en">
-A Frivolous Structure of Exploitation is a tightening.<br>
-Language becomes sharp, its boundaries precisely cut.<br><br>
+A Frivolous Structure of Exploitation is an act of tightening.<br>
+Language grows sharper, its boundaries cut with precision.<br><br>
 
 Writing no longer spills over.<br>
 It is arranged, structured, controlled—<br>
-each sentence knows exactly where it stands.<br><br>
+each sentence knows exactly where it belongs.<br><br>
 
 Emotion still exists,<br>
 but it is compressed into the structure,<br>
@@ -288,13 +256,20 @@ they lose a certain kind of danger.<br><br>
 Writing shifts from exposure<br>
 to construction.<br><br>
 
-Within these works, I do become a kind of “self.”<br>
+In these works, I do become a kind of “self.”<br>
 But that self is not transparent—<br>
 it is closer to a carefully manufactured surface.
 </p>
 
+<div class="img-group">
+  <img src="../pictures/9.jpg">
+  <img src="../pictures/10.jpg">
+  <img src="../pictures/11.jpg">
+  <img src="../pictures/12.jpg">
+</div>
+
 <div style="text-align:center;">
-  <a class="return-box" href="../index.html">
+  <a class="return-box" href="../index.html" style="text-decoration:none;">
     <span class="en">Return</span>
     <span class="zh">返回</span>
   </a>
@@ -311,6 +286,7 @@ let lang = "en";
 function applyLang(mode) {
   document.body.classList.remove("lang-en", "lang-zh");
   document.body.classList.add("lang-" + mode);
+  document.documentElement.lang = (mode === "zh") ? "zh-Hant" : "en";
 }
 
 function toggleLang() {
