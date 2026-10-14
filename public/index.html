@@ -784,6 +784,128 @@ a:hover {
 /* ================= MESSAGE BOARD ================= */
 
 
+.echo-container {
+
+    max-width:620px;
+
+    margin:120px auto 80px;
+
+    text-align:center;
+
+    transition:
+
+        max-height 1s ease,
+
+        background .8s ease;
+
+    overflow:hidden;
+
+}
+
+
+.echo-hint {
+
+    margin-top:10px;
+
+    font-size:0.75em;
+
+    opacity:0.45;
+
+    letter-spacing:0.15em;
+
+    transition:opacity .5s ease;
+
+}
+
+
+.echo-container:hover .echo-hint {
+
+    opacity:0;
+
+}
+
+
+.echo-title {
+
+    font-family:"Nympha", serif;
+
+    font-size:1.25em;
+
+    letter-spacing:0.12em;
+
+    margin-top:45px;
+
+    margin-bottom:15px;
+
+    cursor:pointer;
+
+    position:relative;
+
+    display:inline-block;
+
+    transition:opacity .6s ease;
+
+}
+
+
+.echo-title:hover {
+
+    opacity:0.55;
+
+}
+
+
+
+.echo-quote {
+
+    font-size:0.85em;
+
+    opacity:0.65;
+
+    margin-bottom:30px;
+
+    line-height:1.8;
+
+}
+
+
+
+/* 默认隐藏留言内容 */
+
+#messages {
+
+    opacity:0;
+
+    max-height:0;
+
+    overflow:hidden;
+
+    transition:
+    opacity 1s ease,
+    max-height 1.2s ease;
+
+}
+
+
+
+.echo-container.open #messages {
+
+    opacity:1;
+
+    max-height:1200px;
+
+}
+
+
+.echo-container.open .message-box {
+
+    opacity:1;
+
+    max-height:300px;
+
+}
+
+
 .message-board {
 
 margin-top:90px;
@@ -824,9 +946,15 @@ margin-bottom:35px;
 
 .message-board {
 
-    margin-top: 120px;
+    max-width:620px;
 
-    margin-bottom: 80px;
+    margin:100px auto 40px;
+
+    padding:60px 35px 55px;
+
+    border:1px solid var(--line);
+
+    text-align:center;
 
 }
 
@@ -836,13 +964,13 @@ margin-bottom:35px;
 
     text-align: center;
 
-    font-size: 1.35em;
+    font-size: 1.5em;
 
     color: var(--accent);
 
-    letter-spacing: .08em;
+    letter-spacing: 0.18em;
 
-    margin-bottom: 12px;
+    margin-bottom: 18px;
 
 }
 
@@ -852,13 +980,32 @@ margin-bottom:35px;
 
     text-align: center;
 
-    font-size: .9em;
+    font-size: 1em;
+    
+    line-height:1.8;
 
     opacity: .75;
 
     font-style: italic;
 
-    margin-bottom: 35px;
+    margin-bottom: 25px;
+   
+    letter-spacing:0.05em;
+
+    transition:
+        color 0.7s ease,
+        transform 0.8s ease,
+        letter-spacing 0.8s ease;
+
+.message-board:hover .message-title {
+
+    color:white;
+
+    transform:translateX(4px);
+
+    letter-spacing:0.2em;
+
+}
 
 }
 
@@ -947,6 +1094,388 @@ margin-bottom:35px;
     background: var(--accent);
 
     color: white;
+
+}
+
+
+.message {
+
+    padding:14px 10px;
+
+    border-bottom:1px solid var(--line);
+
+    text-align:left;
+
+}
+
+
+
+.message-content {
+
+    font-size:0.95em;
+
+    line-height:1.8;
+
+    letter-spacing:0.05em;
+
+}
+
+
+
+.message-date {
+
+    margin-top:6px;
+
+    font-size:0.65em;
+
+    opacity:0.55;
+
+    letter-spacing:0.08em;
+
+}
+
+#echo-quote {
+
+    position: fixed;
+
+    top:50%;
+
+    left:50%;
+
+    transform:translate(-50%, -50%);
+
+    text-align:center;
+
+    z-index:9999;
+
+    opacity:0;
+
+    pointer-events:none;
+
+    transition: opacity 1.5s ease;
+
+    font-family:"Huiwen Tsukiji", serif;
+
+    max-width:700px;
+
+    width:80%;
+
+}
+
+
+
+#echo-quote.show {
+
+    opacity:1;
+
+}
+
+
+
+.quote-en {
+
+    font-family:"Nympha", serif;
+
+    font-size:1.45em;
+
+    font-style:italic;
+
+    line-height:1.9;
+
+    color:#6b4a32;
+
+    letter-spacing:0.03em;
+
+    margin-bottom:28px;
+
+}
+
+
+
+.quote-zh {
+
+    font-family:"Huiwen Tsukiji", serif;
+
+    font-size:1.15em;
+
+    line-height:2;
+
+    color:#80634a;
+
+    letter-spacing:0.08em;
+
+}
+
+
+.message-actions {
+
+
+    margin-top:4px;
+
+    display:flex;
+
+    gap:12px;
+
+}
+
+
+.message-actions button {
+
+    background:transparent;
+
+    border:none;
+
+    padding:0;
+
+    font-family:"Nympha", serif;
+
+    font-size:0.75em;
+
+    letter-spacing:0.15em;
+
+    color:var(--accent);
+
+    opacity:0.55;
+
+    cursor:pointer;
+
+    transition:opacity .4s ease;
+
+}
+
+
+.message-actions button:hover {
+
+    opacity:1;
+
+}
+
+
+.reply {
+
+    margin-left:40px;
+
+    padding-left:20px;
+
+    border-left:1px solid var(--line);
+
+    opacity:0.85;
+
+}
+
+
+/* 回复下面的回复取消继续缩进 */
+
+.reply .reply {
+
+    margin-left:0;
+
+    padding-left:0;
+
+    border-left:none;
+
+}
+
+.reply-input {
+
+    width:100%;
+
+    height:80px;
+
+    resize:none;
+
+    background:transparent;
+
+    border:1px solid var(--line);
+
+    padding:15px;
+
+    box-sizing:border-box;
+
+    font-family:"Nympha Light", Georgia, serif;
+
+    color:var(--ink);
+
+    outline:none;
+
+}
+
+
+.reply-input:focus {
+
+    border-color:var(--accent);
+
+}
+
+.reply-send {
+
+    background:transparent;
+
+    border:1px solid var(--accent);
+
+    padding:7px 24px;
+
+    color:var(--accent);
+
+    font-family:"Nympha Light", Georgia, serif;
+
+    cursor:pointer;
+
+}
+
+.reply .message-content {
+
+font-size:0.82em;
+
+}
+
+
+.reply .message-date {
+
+font-size:0.55em;
+
+}
+
+
+.reply .message-actions button {
+
+font-size:0.65em;
+
+}
+
+.replies .replies {
+
+    margin-left:0;
+
+}
+
+.replies .reply {
+
+    margin-left:0;
+
+}
+
+/* ================= REPLY SIZE FIX ================= */
+
+
+/* 回复输入框缩小 */
+
+.reply-input {
+
+    height:42px;
+
+    padding:7px 10px;
+
+    font-size:0.72em;
+
+}
+
+
+/* 回复按钮缩小 */
+
+.reply-send {
+
+    padding:5px 18px;
+
+    font-size:0.8em;
+
+}
+
+
+
+/* 回复文字整体缩小 */
+
+.reply .message-content {
+
+    font-size:0.78em;
+
+}
+
+
+.reply .message-date {
+
+    font-size:0.5em;
+
+}
+
+
+/* 回复操作按钮 */
+
+.reply .message-actions button {
+
+    font-size:0.6em;
+
+}
+
+/* 回复折叠动画 */
+
+.replies {
+
+    display:grid;
+
+    grid-template-rows:0fr;
+
+    opacity:0;
+
+    transition:
+    grid-template-rows 1.2s cubic-bezier(0.22,1,0.36,1),
+    opacity .8s ease;
+
+}
+
+
+.replies-inner {
+
+    min-height:0;
+
+    overflow:hidden;
+
+}
+
+.parent-message.open > .replies {
+
+    grid-template-rows:1fr;
+
+    opacity:1;
+}
+
+
+.message.open > .replies {
+
+    grid-template-rows:1fr;
+
+    opacity:1;
+
+}
+
+/* ================= LINE FIX ================= */
+
+
+/* 默认所有留言不显示底线 */
+
+.message {
+
+    border-bottom:none;
+
+}
+
+
+
+/* 只有第一层母留言显示横线 */
+
+#messages > .message {
+
+    border-bottom:1px solid var(--line);
+
+}
+
+
+
+/* 回复取消横线 */
+
+.reply {
+
+    border-bottom:none;
 
 }
 
@@ -2081,8 +2610,6 @@ margin-bottom:35px;
 
 <!-- ================= MESSAGE BOARD ================= -->
 
-<!-- ================= MESSAGE BOARD ================= -->
-
 <div class="message-board">
 
   <div class="message-title">
@@ -2110,13 +2637,12 @@ margin-bottom:35px;
 
   </div>
 
-
-  <div class="message-box">
+<div class="message-box">
 
     <textarea id="messageInput"></textarea>
 
 
-    <button>
+    <button onclick="addMessage()">
 
       <span class="zh">
         留下
@@ -2130,6 +2656,34 @@ margin-bottom:35px;
 
   </div>
 
+<div class="echo-container">
+
+
+<div class="echo-title" ondblclick="toggleEcho()">
+
+    <span class="zh">
+      遠方回聲錄
+    </span>
+
+    <span class="en">
+      Archive of Distant Echoes
+    </span>
+
+  </div>
+
+<div class="echo-hint">
+
+  <span class="zh">
+    展開回聲
+  </span>
+
+  <span class="en">
+    Open the echoes
+  </span>
+
+</div>
+
+<div id="messages"></div>
 
 </div>
 
@@ -2154,6 +2708,21 @@ margin-bottom:35px;
 <!-- ========================================================= -->
 <!-- ============================ JS =========================== -->
 <!-- ========================================================= -->
+
+<div id="echo-quote">
+
+  <div class="quote-en">
+    The force that through the green fuse drives the flower<br>
+    Drives my green age
+  </div>
+
+
+  <div class="quote-zh">
+    通過綠色莖管催動花朵的力<br>
+    也催動我的綠色年華
+  </div>
+
+</div>
 
 <script>
 
@@ -2184,9 +2753,11 @@ function toggleLang() {
 
 
 /* 默认英文 */
-
 applyLang("en");
 
+setTimeout(()=>{
+    loadMessages();
+},300);
 
 /* 点击页面播放音乐 */
 
@@ -2207,8 +2778,64 @@ document.addEventListener("click", () => {
 // ================= MESSAGE BOARD =================
 
 
-const API_URL = "https://echoes-api.merallunaur.workers.dev/";
+const API_URL = "https://echoes-api.merallunaur.workers.dev";
 
+let openedMessages = [];
+let openedReplies = [];
+
+// 判断是不是自己的留言
+
+function isMyMessage(id){
+
+    const messages = JSON.parse(
+        localStorage.getItem("myMessages") || "[]"
+    );
+
+
+    return messages.some(
+        m => Number(m.id) === Number(id)
+    );
+
+}
+
+
+
+
+// 保存自己的留言token
+
+function saveMyMessage(data){
+
+    if(!data.id || !data.token){
+        return;
+    }
+
+
+    let messages = JSON.parse(
+        localStorage.getItem("myMessages") || "[]"
+    );
+
+
+    messages.push({
+
+        id:data.id,
+
+        token:data.token
+
+    });
+
+
+    localStorage.setItem(
+        "myMessages",
+        JSON.stringify(messages)
+    );
+
+}
+
+
+
+
+
+// 发布留言
 
 async function addMessage(){
 
@@ -2225,13 +2852,15 @@ async function addMessage(){
     }
 
 
-    await fetch(API_URL,{
+
+    const res = await fetch(API_URL,{
 
         method:"POST",
 
         headers:{
             "Content-Type":"application/json"
         },
+
 
         body:JSON.stringify({
 
@@ -2242,7 +2871,18 @@ async function addMessage(){
     });
 
 
+
+    const data = await res.json();
+
+
+    saveMyMessage(data);
+
+
+
     input.value="";
+
+
+    showEchoQuote();
 
 
     loadMessages();
@@ -2252,55 +2892,753 @@ async function addMessage(){
 
 
 
+
+// 加载留言
+
 async function loadMessages(){
 
-
-    const res =
-    await fetch(API_URL);
+    try{
 
 
-    const messages =
-    await res.json();
+        const res =
+        await fetch(API_URL);
 
 
-
-    const box =
-    document.getElementById("messages");
+        const data =
+        await res.json();
 
 
 
-    box.innerHTML="";
+        const box =
+        document.getElementById("messages");
+
+
+        box.innerHTML="";
 
 
 
-    messages.forEach(m=>{
+        data.forEach(msg=>{
 
 
-        box.innerHTML += `
+            if(!msg.parent_id){
 
-        <div class="message">
+                box.innerHTML +=
+                renderMessage(msg,data);
 
-        ${m.content}
-
-        <br>
-
-        <small>
-        ${m.created_at}
-        </small>
-
-        </div>
-
-        `;
+            }
 
 
-    });
+        });
+
+bindParentMessage();
+
+document
+.querySelectorAll(".parent-message, .reply")
+.forEach(msg=>{
+
+
+    const id = msg.dataset.id;
+
+
+    if(
+        openedMessages.includes(id) ||
+        openedReplies.includes(id)
+    ){
+
+        msg.classList.add("open");
+
+    }
+
+
+});
+
+    }catch(error){
+
+        console.error(
+            "留言加载失败",
+            error
+        );
+
+    }
+
+}
+
+
+
+
+
+// 主留言
+
+function renderMessage(msg,all){
+
+
+    const replies = getReplies(msg.id,all);
+
+
+    return `
+
+<div class="message parent-message" data-id="${msg.id}">
+
+
+<div class="message-content">
+${msg.content}
+</div>
+
+
+<div class="message-date">
+${msg.created_at || ""}
+</div>
+
+
+<div class="message-actions">
+
+
+<button onclick="replyMessage(${msg.id})">
+
+<span class="zh">回聲</span>
+<span class="en">Reply</span>
+
+</button>
+
+
+${deleteButton(msg.id)}
+
+
+</div>
+
+
+<div id="reply-${msg.id}"></div>
+
+
+<div class="replies">
+
+<div class="replies-inner">
+
+${replies.map(
+r=>renderReply(r,all)
+).join("")}
+
+</div>
+
+</div>
+
+
+</div>
+
+`;
+
+}
+
+
+
+
+// 回复
+
+function renderReply(msg,all){
+
+
+const children =
+getReplies(msg.id,all);
+
+
+
+return `
+
+<div class="message reply" data-id="${msg.id}">
+
+<div class="message-content">
+${msg.content}
+</div>
+
+
+<div class="message-date">
+${msg.created_at || ""}
+</div>
+
+
+
+<div class="message-actions">
+
+<button onclick="replyMessage(${msg.id})">
+
+<span class="zh">
+回聲
+</span>
+
+<span class="en">
+Reply
+</span>
+
+</button>
+
+
+${deleteButton(msg.id)}
+
+
+</div>
+
+
+<div id="reply-${msg.id}"></div>
+
+
+<div class="replies">
+
+<div class="replies-inner">
+
+${children.map(
+r=>renderReply(r,all)
+).join("")}
+
+</div>
+
+</div>
+
+
+</div>
+
+`;
+
+}
+
+
+
+
+function getReplies(id,all){
+
+    return all.filter(
+        m =>
+        Number(m.parent_id)
+        ===
+        Number(id)
+    );
+
+}
+
+
+
+
+
+// 删除按钮
+
+function deleteButton(id){
+
+
+    if(!isMyMessage(id)){
+        return "";
+    }
+
+
+
+return `
+
+<button
+onclick="confirmDelete(${id},this)"
+>
+
+<span class="zh">
+消聲
+</span>
+
+<span class="en">
+Mute
+</span>
+
+</button>
+
+
+`;
+
+}
+
+
+
+
+
+// 二次确认删除
+
+function confirmDelete(id,button){
+
+
+
+    if(button.dataset.confirm==="yes"){
+
+
+        deleteMessage(id);
+
+
+        return;
+
+    }
+
+
+
+    button.dataset.confirm="yes";
+
+
+    button.innerHTML=`
+
+<span class="zh">
+再次確認
+</span>
+
+<span class="en">
+Confirm
+</span>
+
+`;
+
+
+
+setTimeout(()=>{
+
+
+    button.dataset.confirm="";
+
+
+    button.innerHTML=`
+
+<span class="zh">
+消聲
+</span>
+
+<span class="en">
+Mute
+</span>
+
+`;
+
+
+},3000);
 
 
 }
 
 
 
+
+
+
+// 删除留言
+
+async function deleteMessage(id){
+
+
+    const messages =
+    JSON.parse(
+        localStorage.getItem("myMessages")
+        ||
+        "[]"
+    );
+
+
+
+    const target =
+    messages.find(
+        m =>
+        Number(m.id)
+        ===
+        Number(id)
+    );
+
+
+
+    if(!target){
+
+        alert("无法找到删除权限");
+
+        return;
+
+    }
+
+
+
+
+    try{
+
+
+        const res =
+        await fetch(API_URL,{
+
+
+            method:"DELETE",
+
+
+            headers:{
+
+                "Content-Type":
+                "application/json"
+
+            },
+
+
+            body:JSON.stringify({
+
+                id:Number(id),
+
+                token:target.token
+
+            })
+
+        });
+
+
+
+        const result =
+        await res.json();
+
+
+        console.log(result);
+
+
+
+        loadMessages();
+
+
+
+    }catch(error){
+
+
+        console.error(
+            "删除失败",
+            error
+        );
+
+
+    }
+
+
+}
+
+
+
+
+
+
+function toggleEcho(){
+
+    const container =
+    document.querySelector(".echo-container");
+
+    container.classList.toggle("open");
+
+}
+
+const echoContainer =
+document.querySelector(".echo-container");
+
+
+
+function bindParentMessage(){
+
+    const messages =
+   document.querySelectorAll(".message");
+
+
+    messages.forEach(msg=>{
+
+
+        msg.addEventListener("mouseenter",()=>{
+
+            msg.classList.add("open");
+
+        });
+
+
+       let clickTimer;
+
+
+msg.addEventListener("click",(e)=>{
+
+
+    if(
+        e.target.closest("button") ||
+        e.target.closest("textarea") ||
+        e.target.closest(".reply-input") ||
+        e.target.closest(".reply-send")
+    ){
+        return;
+    }
+
+
+    clearTimeout(clickTimer);
+
+
+    clickTimer = setTimeout(()=>{
+
+
+        msg.classList.add("open");
+
+
+        const id = msg.dataset.id;
+
+
+        if(!openedMessages.includes(id)){
+
+            openedMessages.push(id);
+
+        }
+
+
+    },250);
+
+
+});
+
+
+
+msg.addEventListener("dblclick",(e)=>{
+
+
+    if(
+        e.target.closest("button") ||
+        e.target.closest("textarea") ||
+        e.target.closest(".reply-input") ||
+        e.target.closest(".reply-send")
+    ){
+        return;
+    }
+
+
+    clearTimeout(clickTimer);
+
+
+    msg.classList.remove("open");
+
+
+    const id = msg.dataset.id;
+
+
+    openedMessages =
+    openedMessages.filter(
+        x=>x!==id
+    );
+
+
+});
+
+
+    });
+
+}
+
+echoContainer.addEventListener("mouseenter",()=>{
+
+
+    if(!echoContainer.classList.contains("open")){
+
+        echoContainer.classList.add("open");
+
+    }
+
+
+});
+
+// 回复输入框
+
+function replyMessage(id){
+
+
+const box =
+document.getElementById(
+"reply-"+id
+);
+
+
+
+box.innerHTML=`
+
+<textarea
+
+class="reply-input"
+
+id="reply-input-${id}"
+
+placeholder="留下低語"
+
+></textarea>
+
+
+
+<button
+
+class="reply-send"
+
+onclick="sendReply(${id})"
+
+>
+
+<span class="zh">
+送出
+</span>
+
+
+<span class="en">
+Send
+</span>
+
+
+</button>
+
+
+`;
+
+}
+
+
+
+
+
+// 发送回复
+
+async function sendReply(id){
+
+
+const input =
+document.getElementById(
+"reply-input-"+id
+);
+
+
+
+const text =
+input.value.trim();
+
+
+
+if(!text){
+
+    return;
+
+}
+
+
+
+const res =
+await fetch(API_URL,{
+
+
+method:"POST",
+
+
+headers:{
+
+"Content-Type":
+"application/json"
+
+},
+
+
+body:JSON.stringify({
+
+content:text,
+
+parent_id:id
+
+})
+
+
+});
+
+
+
+const data =
+await res.json();
+
+
+
+saveMyMessage(data);
+
+
+
 loadMessages();
+
+
+
+}
+
+
+
+
+
+
+// 管理员删除
+
+async function adminDeleteMessage(id){
+
+
+const key =
+prompt("管理员密钥");
+
+
+
+if(key !== "228221"){
+
+
+alert("密钥错误");
+
+
+return;
+
+
+}
+
+
+
+
+await fetch(API_URL,{
+
+
+method:"DELETE",
+
+
+headers:{
+
+"Content-Type":
+"application/json"
+
+},
+
+
+body:JSON.stringify({
+
+id:id,
+
+adminKey:key
+
+})
+
+
+});
+
+
+
+loadMessages();
+
+
+}
+
+// ================= ECHO QUOTE =================
+
+function showEchoQuote(){
+
+    const quote = document.getElementById("echo-quote");
+
+
+    if(!quote){
+        return;
+    }
+
+
+    quote.classList.add("show");
+
+
+    setTimeout(()=>{
+
+        quote.classList.remove("show");
+
+    },5000);
+
+}
 
 </script>
 
