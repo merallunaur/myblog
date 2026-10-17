@@ -37,6 +37,31 @@ body.lang-zh h1{font-family:"Huiwen Tsukiji","Noto Serif CJK TC",serif;font-size
 .return-box:hover{background:var(--ornament);color:#fff;transform:translateX(3px);text-decoration:none}
 @media(max-width:768px){body{padding:82px 23px 52px;font-size:15px}h1{font-size:25px;line-height:1.5;margin-bottom:16px}body.lang-zh h1{font-size:24px}.divider{margin:38px 0}}
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{transition-duration:.01ms!important}}
+<div class="page-emblem">
+  <img src="public/logo3.png" alt="Boundless Scenery decorative emblem">
+</div>
+
+.page-emblem {
+  width: 78%;
+  max-width: 440px;
+  margin: 0 auto 28px;
+  text-align: center;
+}
+
+.page-emblem img {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  .page-emblem {
+    width: 92%;
+    max-width: 360px;
+    margin-bottom: 22px;
+  }
+}
 </style>
 </head>
 
@@ -44,6 +69,10 @@ body.lang-zh h1{font-family:"Huiwen Tsukiji","Noto Serif CJK TC",serif;font-size
 
 <button type="button" class="lang-switch" onclick="toggleLang()" aria-label="Switch language">EN / 繁</button>
 
+<div class="page-emblem">
+  <img src="/logo3.png" alt="Boundless Scenery decorative emblem">
+</div>
+  
 <h1>
   <span class="en">Boundless Scenery</span>
   <span class="zh">風光無限</span>
