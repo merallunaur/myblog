@@ -221,58 +221,6 @@ h1:hover {
 
   letter-spacing: 0.08em;
 }
-/* ================= TITLE ANIMALS ================= */
-
-.title-wrap {
-  position: relative;
-  width: fit-content;
-  max-width: 100%;
-  margin: 0 auto;
-}
-
-.title-wrap h1 {
-  position: relative;
-  z-index: 1;
-  margin: 0;
-}
-
-.title-animal {
-  position: absolute;
-  width: 90px;       /* 原来是 120px，再调小 */
-  height: 90px;      /* 原来是 120px，再调小 */
-  object-fit: contain;
-  opacity: 1;
-  pointer-events: none;
-  z-index: 2;
-}
-
-.title-animal-left {
-  right: calc(100% + 8px);
-  top: 50%;
-  transform: translateY(-50%);
-}
-
-.title-animal-right {
-  left: calc(100% + 8px);
-  top: 50%;
-  transform: translateY(-50%);
-}
-
-/* 手机端（保持不变） */
-@media (max-width: 768px) {
-  .title-animal {
-    width: 60px;
-    height: 60px;
-  }
-
-  .title-animal-left {
-    right: calc(100% + 2px);
-  }
-
-  .title-animal-right {
-    left: calc(100% + 2px);
-  }
-}
 /* ========================================================= */
 /* ======================= TITLE IMAGE ======================= */
 /* ========================================================= */
@@ -831,25 +779,77 @@ a:hover {
   opacity: 0.6;
 }
 
+
+
+/* ===== MUSIC NOTE ANIMALS ===== */
+
+.music-animal {
+  position: absolute;
+  width: 90px;
+  height: 90px;
+  object-fit: contain;
+  opacity: 1;
+  pointer-events: auto;
+  z-index: 2;
+  cursor: pointer;
+  transform: scale(1);
+  transition: transform 0.6s ease, opacity 0.6s ease;
+}
+
+.music-animal-left {
+  left: 2%;
+  top: 0;
+  transform-origin: left top;
+}
+
+.music-animal-right {
+  right: 2%;
+  bottom: 0;
+  transform-origin: right bottom;
+}
+
+
+.music-animal-left:hover,
+.music-animal-right:hover {
+  animation: animalHoverBreathing 2.8s ease-in-out infinite;
+}
+
+@keyframes animalHoverBreathing {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 0.88;
+  }
+
+  50% {
+    transform: scale(1.045);
+    opacity: 1;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .music-animal {
+    width: 60px;
+    height: 60px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .music-animal {
+    transition: none;
+  }
+}
+
 /* ================= MESSAGE BOARD ================= */
 
 
 .echo-container {
-
-    max-width:620px;
-
-    margin:120px auto 80px;
-
-    text-align:center;
-
-    transition:
-
-        max-height 1s ease,
-
-        background .8s ease;
-
-    overflow:hidden;
-
+    max-width: 620px;
+    margin: 120px auto 80px;
+    text-align: center;
+    position: relative;
+    overflow: visible;
+    max-height: none;
 }
 
 
@@ -920,41 +920,29 @@ a:hover {
 
 
 
-/* 默认隐藏留言内容 */
-
+/* 默认收起留言 */
 #messages {
-
-    opacity:0;
-
-    max-height:0;
-
-    overflow:hidden;
-
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
     transition:
-    opacity 1s ease,
-    max-height 1.2s ease;
-
+        opacity 1s ease,
+        max-height 1.2s ease;
 }
 
-
-
+/* 展开后不再限制留言总高度 */
 .echo-container.open #messages {
-
-    opacity:1;
-
-    max-height:1200px;
-
+    opacity: 1;
+    max-height: none;
+    overflow: visible;
 }
 
-
+/* 展开时输入区域不受固定高度限制 */
 .echo-container.open .message-box {
-
-    opacity:1;
-
-    max-height:300px;
-
+    opacity: 1;
+    max-height: none;
+    overflow: visible;
 }
-
 
 .message-board {
 
@@ -1627,6 +1615,45 @@ font-size:0.65em;
     margin-top: 100px;
   }
 
+/* 手机竖屏：留言内容完整展开，页面自然延长 */
+@media (max-width: 768px) {
+    .echo-container {
+        overflow: visible;
+        max-height: none;
+    }
+
+    .echo-container.open #messages {
+        max-height: none;
+        overflow: visible;
+    }
+
+    .echo-container.open .message-box {
+        max-height: none;
+        overflow: visible;
+    }
+
+    .message-board {
+        box-sizing: border-box;
+        width: 100%;
+        max-width: 620px;
+        padding: 35px 18px;
+    }
+
+    .message-box {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .message-box textarea {
+        max-width: 100%;
+    }
+
+    .footer-logo img {
+        max-width: 100%;
+        height: auto;
+    }
+}
+
 }
 
 
@@ -1715,20 +1742,13 @@ font-size:0.65em;
 
 <div class="title-wrap">
 
-  <img class="title-animal title-animal-left"
-       src="logo3.png"
-       alt=""
-       aria-hidden="true">
+
 
   <h1>
     <span class="zh">長吻的猜想</span>
     <span class="en">Kissed by the Snout</span>
   </h1>
 
-  <img class="title-animal title-animal-right"
-       src="logo4.png"
-       alt=""
-       aria-hidden="true">
 
 </div>
 
@@ -1780,7 +1800,18 @@ font-size:0.65em;
 <!-- ======================== MUSIC NOTE ====================== -->
 <!-- ========================================================= -->
 
+
 <div class="music-note">
+
+  <img class="music-animal music-animal-left"
+       src="logo3.png"
+       alt=""
+       aria-hidden="true">
+
+  <img class="music-animal music-animal-right"
+       src="logo4.png"
+       alt=""
+       aria-hidden="true">
 
   <span class="zh">
     在任何頁面，你都可以點擊兩下播放音樂——每個頁面不同。
