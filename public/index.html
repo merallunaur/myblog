@@ -221,8 +221,58 @@ h1:hover {
 
   letter-spacing: 0.08em;
 }
+/* ================= TITLE ANIMALS ================= */
 
+.title-wrap {
+  position: relative;
+  width: fit-content;
+  max-width: 100%;
+  margin: 0 auto;
+}
 
+.title-wrap h1 {
+  position: relative;
+  z-index: 1;
+  margin: 0;
+}
+
+.title-animal {
+  position: absolute;
+  width: 180px;
+  height: 180px;
+  object-fit: contain;
+  opacity: 1;
+  pointer-events: none;
+  z-index: 2;
+}
+
+.title-animal-left {
+  right: calc(100% + 8px);
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.title-animal-right {
+  left: calc(100% + 8px);
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/* 手机端 */
+@media (max-width: 768px) {
+  .title-animal {
+    width: 90px;
+    height: 90px;
+  }
+
+  .title-animal-left {
+    right: calc(100% + 2px);
+  }
+
+  .title-animal-right {
+    left: calc(100% + 2px);
+  }
+}
 /* ========================================================= */
 /* ======================= TITLE IMAGE ======================= */
 /* ========================================================= */
@@ -1663,10 +1713,24 @@ font-size:0.65em;
 <!-- ========================== TITLE ========================== -->
 <!-- ========================================================= -->
 
-<h1>
-  <span class="zh">長吻的猜想</span>
-  <span class="en">Kissed by the Snout</span>
-</h1>
+<div class="title-wrap">
+
+  <img class="title-animal title-animal-left"
+       src="logo3.png"
+       alt=""
+       aria-hidden="true">
+
+  <h1>
+    <span class="zh">長吻的猜想</span>
+    <span class="en">Kissed by the Snout</span>
+  </h1>
+
+  <img class="title-animal title-animal-right"
+       src="logo4.png"
+       alt=""
+       aria-hidden="true">
+
+</div>
 
 <!-- ====================== TITLE IMAGE ====================== -->
 <div class="title-image" aria-label="Title illustration">
@@ -2602,6 +2666,25 @@ font-size:0.65em;
           </span>
         </div>
       </div>
+
+<div class="item">
+        <a href="3novel/3novel5.html">
+          <span class="zh">誰殺死了酒神</span>
+          <span class="en">Who Killed Dionysus</span>
+        </a>
+
+        <div class="desc">
+          <span class="zh">
+           一個正常的人，就是一個理想中的完人。
+          </span>
+
+          <span class="en">
+            A normal person is an ideal, complete person.
+          </span>
+        </div>
+      </div>
+
+
 
     </div>
   </div>
