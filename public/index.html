@@ -59,17 +59,36 @@ html {
 body {
   background: var(--bg);
   color: var(--ink);
-
-  max-width: 720px;
-  margin: 0 auto;
-
-  padding: 90px 28px 80px;
-
+  position: relative;
+  box-sizing: border-box;
+  width: 100%;
+  margin: 0;
+  padding: 0;
   line-height: 1.85;
-
   font-family: "Tsuku Old Min", Georgia, serif;
-
   -webkit-font-smoothing: antialiased;
+}
+
+/* Outer page frame: spans the page margins and scrolls with the document. */
+body::before {
+  content: "";
+  position: absolute;
+  z-index: 20;
+  pointer-events: none;
+  top: 16px;
+  left: 16px;
+  right: 16px;
+  bottom: 16px;
+  border: 1px solid rgba(125, 90, 68, 0.28);
+  box-shadow: inset 0 0 0 5px rgba(125, 90, 68, 0.035);
+}
+
+.page-content {
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 776px;
+  margin: 0 auto;
+  padding: 90px 28px 80px;
 }
 
 
@@ -1556,7 +1575,7 @@ font-size:0.65em;
 
 @media (max-width: 768px) {
 
-  body {
+  .page-content {
     padding: 65px 20px 60px;
   }
 
@@ -1944,11 +1963,206 @@ font-size:0.65em;
   }
 }
 
+
+
+/* ===== Editorial refinements: mobile title, menu alignment, book-cover details ===== */
+/* The menu keeps a restrained double rule; remove the extra vertical rules. */
+.directory-menu {
+  outline: 1px solid rgba(125, 90, 68, 0.24);
+  outline-offset: 5px;
+}
+.directory-menu::before,
+.directory-menu::after {
+  content: none;
+}
+.menu-heading .menu-word,
+.menu-subtitle,
+.quote {
+  font-style: italic;
+}
+/* Keep the Menu heading centered, while the actual contents read like a book index. */
+.directory-menu > .block,
+.directory-menu .block-title,
+.directory-menu .items,
+.directory-menu .items-inner,
+.directory-menu .item,
+.directory-menu .special-item,
+.directory-menu .special-title,
+.directory-menu .special-expand-inner,
+.directory-menu .special-desc,
+.directory-menu .subitem {
+  text-align: left;
+}
+.directory-menu .block-title {
+  max-width: 100%;
+  text-wrap: pretty;
+}
+/* Book-cover treatment: editorial ornamentation stays in the document flow. */
+.title-wrap {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+}
+.title-wrap::before {
+  content: "✧   EX LIBRIS   ✧";
+  display: block;
+  margin: 0 auto 24px;
+  color: var(--ornament);
+  font-size: 9px;
+  line-height: 1.5;
+  letter-spacing: .28em;
+  opacity: .82;
+}
+.title-main {
+  position: relative;
+  gap: clamp(14px, 3vw, 25px);
+}
+.title-main img.title-logo5 {
+  filter: drop-shadow(0 2px 1px rgba(57, 48, 42, .10));
+}
+.title-main h1 {
+  text-wrap: balance;
+  line-height: 1.45;
+}
+.title-author {
+  position: relative;
+  margin-top: 8px;
+  margin-bottom: 20px;
+  padding-bottom: 14px;
+  letter-spacing: .34em;
+}
+/* Removed the paired diamond ornament beneath the author name. */
+.quote {
+  max-width: 100%;
+  margin-top: 26px;
+  margin-bottom: 28px;
+  font-style: italic;
+  text-wrap: pretty;
+}
+.quote .zh,
+.quote .en {
+  position: relative;
+}
+.divider {
+  width: min(180px, 42%);
+  height: 1px;
+  margin: 30px auto 34px;
+  background: var(--line);
+  position: relative;
+  opacity: .8;
+}
+.divider::after {
+  content: "✦";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  padding: 0 10px;
+  color: var(--ornament);
+  background: var(--bg);
+  font-size: 10px;
+}
+/* A little more restraint around the menu contents on narrow screens. */
+@media (max-width: 768px) {
+  .page-content {
+    padding: 65px 20px 60px;
+  }
+  body::before {
+    top: 9px;
+    left: 9px;
+    right: 9px;
+    bottom: 9px;
+    box-shadow: inset 0 0 0 3px rgba(125, 90, 68, 0.03);
+  }
+  .title-main {
+    gap: 9px;
+    align-items: center;
+    width: 100%;
+  }
+  .title-main img.title-logo5 {
+    width: 88px;
+    max-width: 31%;
+    max-height: 90px;
+  }
+  .title-main h1 {
+    flex: 1 1 0;
+    min-width: 0;
+    margin: 0 0 8px;
+    font-size: clamp(17px, 5.1vw, 22px);
+    line-height: 1.35;
+    letter-spacing: 0;
+    overflow-wrap: normal;
+    text-wrap: balance;
+  }
+  .title-main h1:hover {
+    letter-spacing: 0;
+  }
+  .title-wrap::before {
+    margin-bottom: 17px;
+    font-size: 8px;
+    letter-spacing: .2em;
+  }
+  .title-author {
+    margin-top: 5px;
+    margin-bottom: 15px;
+    padding-bottom: 12px;
+    font-size: 9px;
+    letter-spacing: .22em;
+  }
+  .quote {
+    margin-top: 19px;
+    margin-bottom: 21px;
+    font-size: .92em;
+    line-height: 1.9;
+  }
+  .divider {
+    margin: 24px auto 27px;
+  }
+  .directory-menu {
+    padding: 23px 20px 25px;
+    margin: 30px auto 32px;
+  }
+  .directory-menu::before,
+  .directory-menu::after {
+    content: none;
+  }
+  .menu-heading {
+    justify-content: center;
+    gap: 10px;
+  }
+  .menu-heading .menu-word {
+    font-size: 22px;
+  }
+  .menu-heading .menu-rule {
+    width: 24px;
+  }
+  .menu-subtitle {
+    font-size: 9px;
+    letter-spacing: .08em;
+    text-transform: none;
+  }
+  .directory-menu .block-title {
+    font-size: 1.04em;
+    line-height: 1.65;
+  }
+  .directory-menu .block-title span.en {
+    font-size: .88em;
+  }
+  .directory-menu .item,
+  .directory-menu .special-item {
+    padding-left: 10px;
+  }
+  .directory-menu .subitem {
+    padding-left: 16px;
+  }
+}
+
 </style>
 </head>
 
 
 <body class="lang-en">
+<div class="page-content">
 
 
 
@@ -2972,11 +3186,11 @@ font-size:0.65em;
   <div class="message-title">
 
     <span class="zh">
-      來自遠方的回聲
+      味覺批注
     </span>
 
     <span class="en">
-      Echoes from Afar
+      Tasting Notes
     </span>
 
   </div>
@@ -2985,11 +3199,11 @@ font-size:0.65em;
   <div class="message-subtitle">
 
     <span class="zh">
-      留下一句話，讓它穿過時間。
+      寫下你的味覺印象，讓餘韻留下。
     </span>
 
     <span class="en">
-      Leave a word, let it travel through time.
+      Leave a tasting note; let the aftertaste linger.
     </span>
 
   </div>
@@ -3002,11 +3216,11 @@ font-size:0.65em;
     <button onclick="addMessage()">
 
       <span class="zh">
-        留下
+        留下批注
       </span>
 
       <span class="en">
-        Leave
+        Submit Note
       </span>
 
     </button>
@@ -3019,11 +3233,11 @@ font-size:0.65em;
 <div class="echo-title" ondblclick="toggleEcho()">
 
     <span class="zh">
-      遠方回聲錄
+      食評簿
     </span>
 
     <span class="en">
-      Archive of Distant Echoes
+      The Review Ledger
     </span>
 
   </div>
@@ -3031,11 +3245,11 @@ font-size:0.65em;
 <div class="echo-hint">
 
   <span class="zh">
-    展開回聲
+    翻開食評
   </span>
 
   <span class="en">
-    Open the echoes
+    Open the reviews
   </span>
 
 </div>
@@ -3341,8 +3555,8 @@ ${msg.created_at || ""}
 
 <button onclick="replyMessage(${msg.id})">
 
-<span class="zh">回聲</span>
-<span class="en">Reply</span>
+<span class="zh">回應</span>
+<span class="en">Respond</span>
 
 </button>
 
@@ -3408,11 +3622,11 @@ ${msg.created_at || ""}
 <button onclick="replyMessage(${msg.id})">
 
 <span class="zh">
-回聲
+回應
 </span>
 
 <span class="en">
-Reply
+Respond
 </span>
 
 </button>
@@ -3799,7 +4013,7 @@ class="reply-input"
 
 id="reply-input-${id}"
 
-placeholder="留下低語"
+placeholder="寫下你的味覺印象"
 
 ></textarea>
 
@@ -5037,5 +5251,7 @@ quote.classList.remove("show");
 
 </script>
 
+
+</div>
 </body>
 </html>
