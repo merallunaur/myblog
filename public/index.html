@@ -15,9 +15,9 @@
 /* ========================================================= */
 
 :root {
-  --bg: #81A380;
-  --ink: #525288;
-  --accent: #7D5A44;
+  --bg: #7F906F;
+  --ink: #5B5675;
+  --accent: #75665C;
   --soft: rgba(82, 82, 136, 0.58);
   --line: rgba(125, 90, 68, 0.48);
 }
@@ -197,7 +197,7 @@ h1 {
 
   margin: 0 0 18px;
 
-  font-size: 38px;
+  font-size: 43px;
 
   letter-spacing: 0.015em;
 
@@ -1524,28 +1524,29 @@ font-size:0.65em;
 
 .footer-logo {
   display: flex;
-
   justify-content: flex-end;
-
+  align-items: flex-end;
+  gap: 8px;
   margin-top: 125px;
-
   padding-bottom: 10px;
-
   opacity: 0.78;
 }
 
-.footer-logo img {
-  width: 250px;
+.footer-logo .logo-main {
+  width: 180px;
+  height: auto;
+  transition: opacity 0.5s ease, transform 0.8s ease;
+}
 
-  transition:
-    opacity 0.5s ease,
-    transform 0.8s ease;
+.footer-logo .logo-side {
+  width: 160px;
+  height: auto;
+  transform: translateY(8px);
+  transition: opacity 0.5s ease, transform 0.8s ease;
 }
 
 .footer-logo img:hover {
   opacity: 0.62;
-
-  transform: translateX(-3px);
 }
 
 
@@ -1560,7 +1561,7 @@ font-size:0.65em;
   }
 
   h1 {
-    font-size: 29px;
+    font-size: 33px;
   }
 
   .title-image {
@@ -1648,10 +1649,21 @@ font-size:0.65em;
         max-width: 100%;
     }
 
-    .footer-logo img {
-        max-width: 100%;
-        height: auto;
-    }
+.footer-logo {
+  margin-top: 100px;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 6px;
+}
+
+.footer-logo .logo-main {
+  width: 135px;
+}
+
+.footer-logo .logo-side {
+  width: 120px;
+  transform: translateY(6px);
+}
 }
 
 }
@@ -1718,6 +1730,220 @@ font-size:0.65em;
   font-size: 0.9em;
 }
 
+
+
+/* 标题下方的独立字母主视觉 */
+.title-logos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px auto 34px;
+  max-width: 100%;
+}
+
+.title-logos .title-logo5 {
+  display: block;
+  width: 300px;
+  max-width: 62%;
+  height: auto;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
+.title-logos .title-logo5:hover { transform: scale(1.035); }
+
+/* 目录刊头：细线框与手绘植物装饰 */
+.directory-menu {
+  position: relative;
+  box-sizing: border-box;
+  width: min(760px, 100%);
+  margin: 48px auto 42px;
+  padding: 30px 54px 34px;
+  border: 1px solid var(--line);
+  outline: 1px solid rgba(125, 90, 68, 0.20);
+  outline-offset: 6px;
+  text-align: center;
+}
+
+.directory-menu::before,
+.directory-menu::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 1px;
+  height: 62%;
+  background: var(--line);
+  opacity: .65;
+  transform: translateY(-50%);
+}
+.directory-menu::before { left: 16px; }
+.directory-menu::after { right: 16px; }
+
+.menu-heading {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 18px;
+  margin-bottom: 12px;
+  color: var(--ink);
+}
+.menu-heading .menu-word {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 27px;
+  letter-spacing: .16em;
+}
+.menu-heading .menu-rule {
+  display: block;
+  width: 46px;
+  height: 1px;
+  background: var(--line);
+}
+.menu-subtitle {
+  margin: 0 auto 18px;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 10px;
+  letter-spacing: .22em;
+  text-transform: uppercase;
+  opacity: .68;
+}
+.menu-emblem {
+  display: block;
+  width: 112px;
+  max-width: 34%;
+  max-height: 108px;
+  object-fit: contain;
+  margin: 0 auto 18px;
+  transition: transform .3s ease;
+}
+.menu-emblem:hover { transform: scale(1.035); }
+.menu-decoration {
+  position: absolute;
+  z-index: 0;
+  object-fit: contain;
+  pointer-events: none;
+  opacity: .78;
+}
+.menu-decoration.logo6 {
+  width: 110px;
+  left: -45px;
+  top: -30px;
+  transform: rotate(-7deg);
+}
+.menu-decoration.logo7 {
+  width: 108px;
+  right: -42px;
+  top: 22px;
+  transform: rotate(7deg);
+}
+.menu-decoration.logo8 {
+  width: 78px;
+  left: -26px;
+  bottom: -26px;
+  transform: rotate(-8deg);
+}
+.menu-decoration.logo9 {
+  width: 118px;
+  right: -42px;
+  bottom: -30px;
+  transform: rotate(6deg);
+}
+
+@media (max-width: 768px) {
+  h1 { font-size: 33px; }
+  .title-logos { margin: 16px auto 28px; }
+  .title-logos .title-logo5 { width: 205px; max-width: 64%; }
+  .directory-menu {
+    width: calc(100% - 8px);
+    margin: 36px auto 34px;
+    padding: 25px 28px 28px;
+  }
+  .directory-menu::before { left: 9px; }
+  .directory-menu::after { right: 9px; }
+  .menu-heading { gap: 11px; }
+  .menu-heading .menu-word { font-size: 23px; }
+  .menu-heading .menu-rule { width: 25px; }
+  .menu-subtitle { font-size: 9px; letter-spacing: .14em; }
+  .menu-emblem { width: 90px; max-height: 88px; margin-bottom: 14px; }
+  .menu-decoration.logo6 { width: 70px; left: -19px; top: -25px; }
+  .menu-decoration.logo7 { width: 68px; right: -19px; top: 25px; }
+  .menu-decoration.logo8 { width: 53px; left: -14px; bottom: -18px; }
+  .menu-decoration.logo9 { width: 74px; right: -20px; bottom: -22px; }
+}
+
+
+/* ===== TITLE LAYOUT ===== */
+
+.title-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.title-wrap h1 {
+  order: 1;
+  margin-bottom: 8px;
+}
+
+.title-author {
+  order: 2;
+  width: 100%;
+  text-align: center;
+  font-size: 11px;
+  letter-spacing: 5px;
+  color: var(--accent);
+  opacity: 0.72;
+  margin: 0 0 12px;
+  text-transform: uppercase;
+}
+
+.title-logos {
+  order: 3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 12px auto 34px;
+}
+
+.title-logos .title-logo5 {
+  display: block;
+  width: 300px;
+  max-width: 62%;
+  height: auto;
+  object-fit: contain;
+}
+
+
+/* 修复 logo5 尺寸 */
+
+.title-main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 22px;
+  width: 100%;
+}
+
+.title-main img.title-logo5 {
+  display: block;
+  width: 300px;
+  max-width: 28%;
+  height: auto;
+  object-fit: contain;
+  flex: 0 0 auto;
+}
+
+/* 手机端 */
+@media (max-width: 768px) {
+  .title-main img.title-logo5 {
+    width: 90px;
+    max-width: 25%;
+  }
+}
+
 </style>
 </head>
 
@@ -1740,23 +1966,23 @@ font-size:0.65em;
 <!-- ========================== TITLE ========================== -->
 <!-- ========================================================= -->
 
+
+
+
 <div class="title-wrap">
 
+  <div class="title-main">
+    <img class="title-logo5" src="logo5.png" alt="Merallúnaur 字母标志">
 
+    <h1>
+      <span class="zh">長吻的猜想</span>
+      <span class="en">Kissed by the Snout</span>
+    </h1>
+  </div>
 
-  <h1>
-    <span class="zh">長吻的猜想</span>
-    <span class="en">Kissed by the Snout</span>
-  </h1>
-
+  <div class="title-author">Merallúnaur</div>
 
 </div>
-
-<!-- ====================== TITLE IMAGE ====================== -->
-<div class="title-image" aria-label="Title illustration">
-  <img src="logo2.png" alt="鳄鱼的猜想标题插图" loading="eager">
-</div>
-
 
 
 
@@ -1790,6 +2016,7 @@ font-size:0.65em;
     ——Horace, Odes II.19
   </div>
 
+
 </div>
 
 
@@ -1803,16 +2030,6 @@ font-size:0.65em;
 
 <div class="music-note">
 
-  <img class="music-animal music-animal-left"
-       src="logo3.png"
-       alt=""
-       aria-hidden="true">
-
-  <img class="music-animal music-animal-right"
-       src="logo4.png"
-       alt=""
-       aria-hidden="true">
-
   <span class="zh">
     在任何頁面，你都可以點擊兩下播放音樂——每個頁面不同。
   </span>
@@ -1823,6 +2040,31 @@ font-size:0.65em;
 
 </div>
 
+
+<!-- ========================================================= -->
+<!-- ===================== DIRECTORY MENU ===================== -->
+<!-- ========================================================= -->
+
+<div class="directory-menu" aria-label="Portfolio contents">
+  <img class="menu-decoration logo6" src="logo6.png" alt="" aria-hidden="true">
+  <img class="menu-decoration logo7" src="logo7.png" alt="" aria-hidden="true">
+  <img class="menu-decoration logo8" src="logo8.png" alt="" aria-hidden="true">
+  <img class="menu-decoration logo9" src="logo9.png" alt="" aria-hidden="true">
+
+  <img class="menu-emblem" src="logo2.png" alt="甜点与手术刀插图">
+<div class="menu-heading">
+  <span class="menu-rule" aria-hidden="true"></span>
+  <span class="menu-word">
+    <span class="en">Menu</span>
+    <span class="zh">目錄</span>
+  </span>
+  <span class="menu-rule" aria-hidden="true"></span>
+</div>
+
+<div class="menu-subtitle">
+  <span class="en">A little guide to the collection</span>
+  <span class="zh">一份關於作品的簡箋</span>
+</div>
 
 <!-- ========================================================= -->
 <!-- ======================== BLOCK 1 ========================== -->
@@ -2807,7 +3049,7 @@ font-size:0.65em;
 <!-- ========================================================= -->
 
 <div class="footer-logo">
-  <img src="logo.gif" alt="merallunaur">
+<img src="logo.gif" class="logo-main" alt="Logo">
 </div>
 
 
