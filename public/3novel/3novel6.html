@@ -1,0 +1,781 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Throughness / 香象渡河</title>
+
+<style>
+:root {
+  --sage: #E5E9DF;
+  --ink: #66617F;
+  --ornament: #A18A78;
+}
+@font-face{font-family:"Huiwen Tsukiji";src:url("../汇文筑地五号明朝体1.0.woff2") format("woff2");font-style:normal;font-weight:400;font-display:swap}
+@font-face{font-family:"Nympha Light";src:url("../Nympha-Light.otf") format("opentype");font-style:normal;font-weight:300;font-display:swap}
+@font-face{font-family:"Tsuku Old Min";src:url("../1-筑紫旧明朝体TsukuOldMinL.otf") format("opentype");font-style:normal;font-weight:400;font-display:swap}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
+body{background:var(--sage);color:var(--ink);max-width:720px;margin:0 auto;padding:104px 28px 72px;line-height:1.9;font-family:"Tsuku Old Min",Georgia,serif;font-size:16px;font-weight:400;letter-spacing:.015em;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+.zh,.en{display:none}
+body.lang-en .en{display:inline}
+body.lang-zh .zh{display:inline}
+body.lang-zh{font-family:"Huiwen Tsukiji","Noto Serif CJK TC",serif;letter-spacing:.035em;line-height:2}
+body.lang-en{font-family:"Tsuku Old Min",Georgia,serif;letter-spacing:.015em}
+.lang-switch{position:fixed;top:18px;right:18px;border:1px solid var(--ornament);padding:5px 12px;cursor:pointer;color:var(--ornament);background:var(--sage);z-index:999;font:inherit;font-size:12px;letter-spacing:.08em;transition:background-color .25s ease,color .25s ease}
+.lang-switch:hover{background:var(--ornament);color:#fff}
+h1{text-align:center;font-family:"Nympha Light","Tsuku Old Min",Georgia,serif;font-weight:400;font-size:clamp(25px,3.8vw,30px);line-height:1.45;letter-spacing:.035em;margin:0 0 18px}
+body.lang-zh h1{font-family:"Huiwen Tsukiji","Noto Serif CJK TC",serif;font-size:27px;letter-spacing:.1em;line-height:1.6}
+.divider{border-top:1px solid var(--ornament);width:100%;margin:48px 0;opacity:.58}
+.bilingual-paragraph{margin:0 0 26px}
+.empty-line{height:1.1em}
+.section-break{text-align:center;margin:38px 0;color:var(--ornament);opacity:.7;letter-spacing:.3em}
+.song-lyrics{margin:24px 0 30px;padding-left:20px;border-left:1px solid var(--ornament);line-height:1.9}
+.letter-quote{margin:26px 0;padding-left:20px;border-left:1px solid var(--ornament)}
+.footnote{margin-top:40px;font-size:14px;line-height:1.85}
+.footnote-item{margin-bottom:18px}
+.footnote-link{color:var(--ornament);text-decoration:none;transition:color .25s ease}
+.footnote-link:hover{color:#fff}
+.return-box{display:inline-block;padding:5px 16px;border:1px solid var(--ornament);color:var(--ornament);margin-top:44px;font-size:13px;letter-spacing:.08em;text-decoration:none;transition:background-color .25s ease,color .25s ease,transform .25s ease}
+.return-box:hover{background:var(--ornament);color:#fff;transform:translateX(3px);text-decoration:none}
+@media(max-width:768px){body{padding:82px 23px 52px;font-size:15px}h1{font-size:25px;line-height:1.5;margin-bottom:16px}body.lang-zh h1{font-size:24px}.divider{margin:38px 0}}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{transition-duration:.01ms!important}}
+</style>
+</head>
+
+<body class="lang-en">
+
+<button type="button" class="lang-switch" onclick="toggleLang()" aria-label="Switch language">EN / 繁</button>
+
+<h1>
+  <span class="en">Throughness<a href="#fn1" class="footnote-link" id="ref1"><sup>①</sup></a></span>
+  <span class="zh">香象渡河<a href="#fn1-zh" class="footnote-link" id="ref1-zh"><sup>①</sup></a></span>
+</h1>
+
+<div class="bilingual-paragraph">
+        <span class="en">The past mind cannot be grasped, the present mind cannot be grasped, the future mind cannot be grasped.<br>— The Diamond Sutra</span>
+        <span class="zh">過去心不可得，現在心不可得，未來心不可得。<br>——《金剛般若波羅蜜經》</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">Should the ship strike the reef, spices will scatter on the stream, and silk will enrobe the roaring waters.<br>— The Merchant of Venice</span>
+        <span class="zh">船若觸礁，香料便會散落水面，絲綢將鋪滿咆哮的海浪。<br>——《威尼斯商人》</span>
+    </div>
+
+
+<div class="divider"></div>
+
+
+
+    <div class="section-break">◇</div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">He put away his toolbox and walked the dim road home. Arthur caught sight of a man standing at his door with gold in his mouth.</span>
+        <span class="zh">收好工具箱，走上昏暗的回家路。亞瑟瞥見家門口站著一個嘴裡含著金子的人。</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">“Ah, nephew, long time no see. Come mend my boots?”</span>
+        <span class="zh">「哦，侄子，好久不見。來幫我縫一下靴子？」</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">The other had long since changed beyond recognition; only in his murky eyes could one glimpse a trace of past brilliance. His uncle was smoking. Cheap tobacco had once cost him a tooth, and now that lateral incisor had been replaced with gold. Arthur said nothing, half-knelt, and carefully set his toolbox on the ground. In his line of sight, those leather boots were flawless, gleaming like a woman's thighs.</span>
+        <span class="zh">對方早已經改頭換面，只能從他渾濁的眼睛裡瞥見一縷往日光彩。他的叔叔正在吸煙，廉價煙草曾使他掉了一顆牙齒，現在那顆側切牙換成了金牙。亞瑟一言不發地半跪下去，小心翼翼地將工具箱放在地上。視線裡那雙皮靴完美無瑕，像女人的大腿一樣發光。</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">“I'm joking. I bought a new pair before I came. I have to meet your family in style.”</span>
+        <span class="zh">「我開玩笑的，我來之前買了一雙新的。我得隆重地見你們這一家。」</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">Arthur's shoulders stiffened almost imperceptibly, then relaxed at once. He remained half-kneeling, putting the needles and thread he had already taken out back into the toolbox one by one. The movement pulled at the nerves in his lower back, sending waves of dull pain. Today was market day; kneeling a little longer than usual meant earning three more pence. Lead plaster cost ninepence a pound, and he had only ever received it as a Christmas gift. The plaster stank of animals and did nothing for the pain. He propped himself up by the waist and looked up; moonlight stroked his face. Black smoke rose from the kitchen; his mother coughed as she held his months-old brother. Under the dim oil lamp, his father and uncle had already started playing cards. He put the toolbox by the door and took the baby from his mother's arms. The wrinkled child sucked his fingers, giving off a smell of dung.</span>
+        <span class="zh">亞瑟的雙肩微不可察地僵住，又立馬放鬆下來。他依舊半跪著身子，將已經取出來的針線一根一根重新排進工具箱。手臂牽動著腰部神經，傳來陣陣隱痛。今天是趕集日，比平時多跪一會兒，就能多賺三便士。鉛膏藥九便士一磅，他只在聖誕收到過這種禮物。膏藥有一股動物臭氣，對疼痛毫無幫助。他扶著腰抬頭，月光撫摸他的臉。灶房升起黑煙，母親抱著幾個月大的弟弟咳嗽。昏黃的油燈底下，父親和叔叔已經開始玩牌。他把工具箱收在門口，從母親懷裡抱走弟弟。皺皺巴巴的小孩吃著手指，身上傳來一陣糞臭。</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">He hated all this without light. But that day at the dinner table, he had gained a fable about the East—about his uncle's fortune-making business.</span>
+        <span class="zh">他討厭這沒有亮光的一切。不過那天在飯桌上，他收穫了一則關於東方的寓言。關於他叔叔發財的生意。</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">“You're young, you can endure hardship. Going out to make your way is better than staying at home.”</span>
+        <span class="zh">「你年輕，能吃苦，出去闖一闖總比留在家裡強。」</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">“As long as you're willing to work, one day you'll make it.”</span>
+        <span class="zh">「只要肯幹，總有一天能熬出頭。」</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">The East, the East.<br>China, China.<br>Go to China.</span>
+        <span class="zh">東方，東方。<br>中國，中國。<br>到中國去。</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">He felt the weight of that country settle on his heart, like a colossus. He sprang to his feet, clenched his fists, and looked into his uncle's murky, sharp eyes. He knelt again, as if by muscle memory.</span>
+        <span class="zh">他感受著那個國度落在他心上的重量，如同一座巨像。他「噌」地站起來，握緊拳頭，望著叔叔那雙渾濁而銳利的眼睛。他再一次跪下，彷彿肌肉記憶。</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">“I beg you, take me with you. I'm willing to learn. I'm the earliest earner among my brothers and sisters.”</span>
+        <span class="zh">「求您，帶我走吧。我願意學，我是兄弟姐妹幾個裡賺錢最早的。」</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">His uncle tapped his pipe; a spark flew like a ladybug toward Arthur's knee. Arthur hurriedly struck a match to relight it for him.</span>
+        <span class="zh">叔叔彈彈煙斗，一點火星像一隻瓢蟲，飛向亞瑟的膝蓋。亞瑟連忙劃著一根火柴為他續上火。</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">“My company is small, not much chance of making money. But a friend's ship still has a place.”</span>
+        <span class="zh">「我的公司小，沒那麼大的賺錢機會。不過，我朋友的船還有位置。」</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">His uncle smiled and spread his hands. His father played his last card and stood up in ecstasy. He had won. His father's lunge knocked over the oil lamp. There was nothing of value in this room; the burning oil crawled across the cabinet. His mother put two rye breads in his pack. The waves rocked him like a gale shaking a moth. But he thought of China. China—the most renowned, most blessed, most fertile land in Asia. Gold and silver fell like rain from the sky; the clinking of jade drowned out the sound of springs. He leaned against a barrel and daydreamed. Across from him, the first mate was sodomising a young sailor. He was lucky; they did not like his eyes.</span>
+        <span class="zh">叔叔笑著攤手，父親打出最後一張牌，欣喜若狂地站起。他贏了。父親的衝撞打翻了油燈。這個房間裡沒有值錢的東西，燃燒的燈油在櫃子上爬行。母親在他的行囊裡放了兩個黑麥麵包。海浪搖晃他的時候，就像狂風搖撼一隻飛蛾。但他想著中國。中國，亞洲最為知名、最受福佑、最為豐饒之地。金銀像天上的雨一般落下，翡翠碰撞的聲音蓋過了泉水。他靠著木桶做白日夢。在他對面，大副正雞姦一個年輕水手。他是幸運的，他們不喜歡他的眼神。</span>
+    </div>
+
+    <div class="section-break">◇</div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">No one had told him that a hundred out of a thousand on the great ships to China would die. It took only three days for a sailor to go from coughing blood to coughing teeth; they could throttle him in three minutes and throw him into the sea. Arthur witnessed these crimes; the sailors' screams left fine scratches on his heart, breaking him into pieces. He clung to a bollard, a foulness rising in his stomach, as if he had just shared the flesh of a departed companion. After a few months, some of his companions went mad, while he kept silent.</span>
+        <span class="zh">從沒人告訴他一千個水中中的一百個會死在去往中國的大船上。一個水手從咳出血到咳出牙不過三天，他們可以用三分鐘掐斷他的喉嚨，把他扔進海裡。亞瑟目睹過這些罪行，水手的尖叫在他心中劃下了細痕，令他支離破碎。他扶著纜樁，胃裡翻出一陣臭氣，彷彿剛剛分食了往生同伴的肉。過了幾個月，他的一部分同伴精神失常，而他保持著沉默。</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">He took on part of the lookout's duties, and so was the first to discover the destination. At dawn, sunlight was like water, shining into his eyes. And in his vision, the horizon, like petals washed by morning dew, slowly filled with a magnificent outline. He stood stunned for a while, then spread his arms and let out an ecstatic scream.</span>
+        <span class="zh">他承擔著一部分瞭望員的職責，因此得以第一個發現目的地。清晨，日光如水，照在他眼中。而他的視線中，如朝露浥浥的花瓣般的地平線，慢慢在眼前填滿輝煌的輪廓。他愣了好一陣，隨即伸開手臂，發出狂喜的尖叫。</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">“Hey!”</span>
+        <span class="zh">「嗨！」</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">The ship swayed as it docked. Arthur jumped down from the gunwale, and the hard ground punched him. He staggered to his knees, his palms pressed into the mud, and it was a while before he stood up. He raised his head; China spread before him like a carpet. Like dew, like lightning, like bubbles, like shadows. The fierce sun could not press down the vermilion mountains. Glittering flying eaves soared into the clouds, raising huge phoenix heads and bird beaks. One pressed upon another, layer upon layer, like peonies blooming on a silver plate. Among the countless pavilions like a sea, bells echoed. People walked in the sky, and their skirts stirred up a wind that teased out a tinkling music. The sun poured down gold foil, spilling over painted boats on the river that gave off the fragrance of wine. In the ripples, the light was as light as feathers, and where shade met light it was as heavy as blood. In the sea, the Dragon King summoned wind and rain, raising great waves from the seabed, and rare treasures splashed toward the shops on both sides of the street. A woman pushed open a window on the second floor; her nails were red like discarded crab shells. The crab shells shattered into several pieces on the white jade stone pavement. The people below looked up and cursed; the one above laughed and tossed down a copper coin. The man laughed too, bent to pick it up, and joyfully merged into the market. A peddler carrying a pole bumped Arthur's shoulder; he turned to look, but the man was already gone. A monk struck a wooden fish, a Daoist shook a bell, and from afar came a chant he could not understand. Incense smoke rose from under the temple eaves, wound past layer upon layer of flying eaves, and drifted toward higher pavilions.</span>
+        <span class="zh">船靠岸時一陣晃動，亞瑟跳下船緣，堅硬的地面給了他一拳。他踉蹌著跪倒，手掌按進爛泥裡，半晌才站起來。抬頭，中國如一張地毯於他面前鋪開。如露如電，如泡如影。烈日壓不住朱紅色的山。閃光的飛簷翹上雲霄，昂起巨大鳳首與鳥喙。一座壓著一座，一層疊著一層，如銀盤上盛開的牡丹。如海般的無數樓閣之間迴響著鈴聲。天上有人走動，裙裾便揚起一陣風，逗響琤琮一陣樂。太陽潑下金箔，漫過河面上散發酒香的畫舫。水波中光輕得似羽毛，蔭蔽交界處又沉得像血。海中有龍王呼風喚雨，掀起海底巨浪，奇珍濺向街道兩側的商鋪。一個女人從二樓推開窗，指甲如扔下的蟹殼一般紅。蟹殼在白玉石板上碎成幾瓣。樓下的人仰頭罵了一句，樓上的人便笑著拋下一枚銅錢。那人也笑了，彎腰拾起來，歡天喜地地匯入集市。挑擔的小販撞了亞瑟的肩膀，他回頭看去，卻已經尋不見來人。和尚敲木魚，道士搖鈴鐺，遠處傳來一陣聽不懂的誦經聲。香煙從廟宇的簷下升起來，繞過重重飛簷，飄向更高的樓閣。</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">Arthur suddenly did not know where he should look; there was so much here that it was like a disaster. His uncle's gold tooth flashed once in his dim mind, and he summoned the courage to look up again. On the mountain outside the city sat a Buddha. A Buddha—if he had not seen the ears hanging to its shoulders—was also a mountain. Its body rose from the mountaintop, clouds like silk wound around its shoulders, and the top of its head disappeared into the endless blue sky. The Buddha's face was painted with gold lacquer. Its forehead, nose bridge, and lips were lit by the sun, bright almost to whiteness. Its eyes were half-closed, not looking at the people in the city. And the sun also shone on Arthur's forehead, making the bells in his ears grow dim. At the first bell, the market clamoured. At the second bell, someone in a tavern laughed aloud. At the third bell, a cloud on the mountain happened to cover the Buddha's eyes. Arthur tilted his head back until his neck ached, and still could not see it whole. The sunlight stung him into tears. He did not know whether he was looking at a Buddha or at a mountain that had been worshipped for countless years. This was not Middle-earth. This was Avalon.<a href="#fn2" class="footnote-link" id="ref2"><sup>②</sup></a> This was El Dorado.<a href="#fn3" class="footnote-link" id="ref3"><sup>③</sup></a> This was China. He lowered his head and found his boots still stuck in the mud. The first mate slapped the back of his head and ordered him to carry the sacks off the cart. He ran over and hoisted a sack; the smell of spices seized his throat, and he almost wanted to cry.</span>
+        <span class="zh">亞瑟忽然不知道自己應該看向哪裡，這裡的東西多到像一種災禍。叔叔的那顆金牙在他昏暗的腦子裡閃過一下，他再鼓起勇氣抬眼。城外的山上坐著一尊佛。一尊佛——如果他沒有看見垂到肩膀的耳朵——也是一座山。它的身體從山頂升起，肩膀上纏繞著蠶絲似的雲，頭頂沒入無窮碧空。佛像的臉上塗著金漆。額頭、鼻樑和嘴唇被太陽照耀，亮得近乎白色。它半閉著眼，不看城裡的人。而太陽也照著亞瑟的額頭，令他耳中的鐘聲變得昏沉。第一聲鐘響，集市喧鬧。第二聲鐘響，酒樓裡有人放聲大笑。第三聲鐘響，山上的雲恰好遮住了佛的眼。亞瑟仰起頭到脖子發酸，仍然看不清它的全貌。日光刺得他流下眼淚。他不知道自己究竟是在看一尊佛，還是在看一座被人供奉了無數年的山。這裡不是中庭。這裡是阿瓦隆<a href="#fn2-zh" class="footnote-link" id="ref2-zh"><sup>②</sup></a>。這裡是埃爾多拉多<a href="#fn3-zh" class="footnote-link" id="ref3-zh"><sup>③</sup></a>。這是中國。他低下頭，發現自己的靴子還陷在爛泥裡。大副用手掌扇了他的後腦勺，指揮他去搬板車上的麻袋。他小跑著過去扛起麻袋，香料的氣味扼住他的脖頸，他幾乎想要流淚。</span>
+    </div>
+
+    <div class="section-break">◇</div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">Arthur was used to calculating everything. When Francis set a bowl of hot soup before him, he calculated the price of the meal. A white porcelain bowl with chipped glaze, filled with pale yellow broth like lamp oil. The peas settled at the bottom were like jade, surrounded by cabbage and chicken the colour of mutton fat jade. One of Francis's hands also wore a string of jade beads, blinking along with his green eyeballs. With his other hand he placed a piece of bread beside the bowl. The crust was baked to a honey colour, still warm inside. A few days earlier, Arthur had seen Francis give this food to beggars. On such a vast, golden stretch of land, he could hardly imagine where beggars came from. The glittering grime in their fingernails, their ebony skin. Their protruding wrist bones, like a ruyi sceptre. Their chewing movements were small and light, like kisses. Even the beggars here seemed noble. Arthur's stomach throbbed like a pulse. He had not eaten a full meal in two days. The foreman had withheld his wages. But his stomach still retained a stubborn vigilance—a vigilance from his homeland, almost a kind of nostalgia.</span>
+        <span class="zh">亞瑟習慣了計算一切。當弗朗西斯將一碗熱湯放在他面前時，他計算了這頓飯的價錢。一隻掉了釉的白瓷碗，盛滿燈油似的淺黃色湯汁。底部沉著的豌豆，就像翡翠，環繞在羊脂玉色的白菜與雞肉之中。弗朗西斯的一隻手也戴著一串翡翠珠子，隨著他不停地眨動綠色眼球。他用另一隻手把一塊麵包放在碗邊。麵包皮烤出蜂蜜似的色澤，裡面仍然溫熱。前幾天，亞瑟看到過弗朗西斯把這些食物分給乞丐。這麼一大片金燦燦的廣袤土地上，他幾乎想象不出乞丐的來處。那些指甲縫裡的閃光污垢，黑檀似的皮膚。突出的腕骨，就像一把如意。他們咀嚼的動作又小又輕，如同親吻。連同這裡的乞丐也顯得高貴。亞瑟的胃跳動不已，就似脈搏。他已經兩天沒有吃過一頓完整的飯。工頭克扣了他的工錢。但他的胃裡卻仍然保留著一種固執的警惕——這種警惕是來自故鄉的記憶，幾乎算是一種鄉愁。</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">“Try it, child.”</span>
+        <span class="zh">「試試吧，孩子。」</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">Francis was a tall, lean man who, standing, was like a silent knight's statue. His smile poured out softness, yet his gaze was restless, like a purple beast forever running. He had golden hair. Gold—he belonged here. Arthur swallowed. A few days earlier he had not accepted the soup; today he asked Francis how much the meal cost. Francis was tending plants by the window and turned his head at his voice. He did not immediately understand what he meant.</span>
+        <span class="zh">弗朗西斯是一個身材高大瘦削，站起來如同一尊沉默的騎士雕像的人。他的微笑傾瀉著柔軟，而他的目光，卻如同一直在奔跑的紫色野獸般躁動不安。他有一頭金髮。金，他屬於這裡。亞瑟嚥了口唾沫。前幾日他沒有接下這碗湯，今天他則問了問弗朗西斯這頓飯需要多少錢。弗朗西斯在窗邊侍弄花草，聽見他的聲音便回過頭來。他沒有立刻理解他的意思。</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">“How much does this meal cost?”</span>
+        <span class="zh">「這頓飯需要多少錢？」</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">Arthur looked at the moss in the corner and raised a hand to his head. Two red clouds flew to his cheeks.</span>
+        <span class="zh">亞瑟看著牆角的青苔，抬起手摸摸腦袋。兩片紅雲飛上他的雙頰。</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">“I can chop wood, wash dishes. Also, I see the chair by the door has lost its paint—I'll repaint it... I, I can do any kind of work.”</span>
+        <span class="zh">「我可以劈柴、洗碗。還有，看到門邊那張椅子掉漆了，我會重新漆一遍……我，我什麼活兒都會幹。」</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">Francis's head was still slightly tilted, his eyes lowered to Arthur's twisted fingers.</span>
+        <span class="zh">弗朗西斯的腦袋依舊微微仰著，垂下眼睛看亞瑟絞在一起的手指。</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">“Drink the soup first.”</span>
+        <span class="zh">「先把湯喝了吧。」</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">He squinted and smiled. Arthur put a hand to his neck and turned his head aside. He did not like being spoken to in that tone. He was no longer a child in need of care; given the chance, he could exchange labour for things. He was not his naive, ignorant little brother. Francis was silent for a moment, then suddenly laughed and apologised in a low voice. He pulled out the chair and sat down facing Arthur, slowly peeling an orange. Orange juice ran over his long fingers. His hands, now, were like the varada mudra<a href="#fn4" class="footnote-link" id="ref4"><sup>④</sup></a>, pouring golden nectar. Arthur watched the juice lingering between his fingers and took a deep breath. The air was full of a clean, bitter fragrance. Finally, he grabbed the soup bowl and drained it. Francis did not look at him; he placed the peeled orange on a white porcelain dish and pushed it to the centre of the table. The seven-coloured radiance leaking through the church windows cut his face into many geometric planes.</span>
+        <span class="zh">他瞇眼露出一個微笑。亞瑟將手扶在脖子上，將頭扭向一旁。他不喜歡別人用這種語氣和他說話。他已經不是一個需要被照顧的小孩，只要有機會，他就能夠用勞動與人交換東西。他不是他天真而無知的弟弟。弗朗西斯沉默了一會兒，突然笑著低聲道了句歉。他把椅子拉開，與亞瑟面對面坐下，慢慢剝掉一顆橘子的皮。橘子汁流過他修長的手指。他的手，此時如同結了與願印<a href="#fn4-zh" class="footnote-link" id="ref4-zh"><sup>④</sup></a>，流注著金黃甘露。亞瑟看著停留在他手指間的汁液，深吸一口氣。空中裡滿是清苦香氣。最後，他抓起湯碗一飲而盡。弗朗西斯沒有看他，把剝好的橘子放進一隻白瓷碟，推到桌子中央。教堂玻璃窗漏下來的七色輝光，把他的臉分割成很多個幾何面。</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">Francis had lived in China for many years and was fluent in Chinese, English, Latin, French, and Italian. Yet he had never shown the confusion that sometimes appears in those who master many languages. He was precise and ornate, like a blade. He did not always wear a priest's robe; sometimes he wore an old coat with worn cuffs. He lived not far from the church, in a room with several rows of bookshelves, a narrow bed, and a copper kettle for boiling water. On the windowsill stood two nameless plants with slender leaves and white flowers like sickles. Arthur had once assumed they were some kind of medicinal herb, until one day he saw Francis pick one and put it in a glass bottle filled with clean water. He did not understand why anyone would grow plants that could not be eaten, sold, or used as medicine—and Francis's life was full of such things. The fruit he bought always had imperfect skins. After rain, he would stop by the bridge arch to see whether any small animal corpses had been washed in. As he ferried them to the other shore, he pressed his palms together, revealing the piety of another country. Occasionally he bought wine, but drank little. More often he simply left the bottle on the table, waiting for some familiar boatman or merchant to come and talk with him about the sea.</span>
+        <span class="zh">弗朗西斯在中國住了很多年，中文、英文、拉丁文、法文，加上意大利文都相當流利。儘管如此，他身上從未出現過偶爾出現在多語言掌握者身上的混亂。他精密又華麗，像一把刀。他並不總是穿著神父的長袍，有時也穿一件袖口磨得發白的舊外套。他住的地方離教堂不遠，屋子裡有幾排書架、一張窄床和一隻用來燒水的銅壺。窗台上擺著兩盆不知名的植物，葉子細長，開著鐮刀似的白花。亞瑟曾經以為那些花是某種藥材，直到有一天看見弗朗西斯把其中一朵摘下來，插進了一個裝著清水的玻璃瓶。他並不明白一個人為什麼要專門種植不能吃、不能賣，也不能拿來治病的植物，而弗朗西斯的生活裡有很多這樣的東西。他買的水果總是表皮不太完整。他會在雨後經過橋洞時停下來，看看有沒有被水沖進來的小動物屍體。他將它們渡往彼岸時雙手合十，顯現出另一個國度的虔誠。偶爾他會買酒，但喝得不多。更多時候，他只是把酒瓶放在桌上，等某個熟識的船夫或者商人過來，和他們談談海上的事。</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">Arthur did not think these habits had any use; he had more important things to do. Every morning he stood at the docks, endlessly calculating the time and wages required for hauling. The degree of wear on his soles, the thickness of the stitching, whether the leather would mould in damp weather. This was the part of his life most familiar to him. He saved his wages and bought the same tools as in his homeland. These tools would slowly grow old, just like his life. After hauling, he set up a stall in the market and did the work he knew. He learned to distinguish the accents of different merchants, and to keep a suitable silence when bargaining. His first customer was Francis. The heel of the shoe he brought was split, the upper had a deep scratch, and the lining had come loose. Arthur examined every part carefully and told Francis it was not worth repairing—buying a new pair would be cheaper. Francis insisted on leaving the shoe.</span>
+        <span class="zh">亞瑟不認為這些習慣有什麼用處，他自己有更重要的事情要做。每天清晨他都站在碼頭，無盡地計算搬運所需的時間和工錢。鞋底磨損的程度、縫線的粗細、皮革在潮濕天氣裡會不會發霉。這是他生活中最熟悉的部分。他攢了自己的工錢，買下與故鄉同樣的工具。這些工具會和他的生活一樣慢慢變舊。搬完東西，他便在街市擺攤，做熟悉的工作。他學會了分辨不同商人的口音，也學會了在討價還價時適當地沉默。他的第一個客戶是弗朗西斯。他拿來的這雙鞋的鞋跟開裂，鞋面上有一道很深的划痕，裡面的襯布也已經脫落。亞瑟細細檢查著每一處，告訴弗朗西斯不值得修，重新買一雙更便宜。弗朗西斯卻堅持把鞋留下。</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">“They're comfortable to wear, the soles aren't worn out, they just need a new lining.”</span>
+        <span class="zh">「它穿起來很舒服，鞋底也沒有壞，只是需要換一層襯布。」</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">“If you insist.”</span>
+        <span class="zh">「如果您堅持的話。」</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">Arthur did not look up at him; he silently took the shoes and quoted a price higher than usual. Francis did not haggle, which made Arthur a little uncomfortable—he had already prepared a whole speech. Francis simply put the money on the counter and did not even check the change. Arthur counted it and found that the other had given him two extra copper coins, so he chased after him to return them. Francis took the money, thanked him, and then handed him a pear he had just bought.</span>
+        <span class="zh">亞瑟沒有抬頭看他，沉默地收下鞋子，報了一個比平時高一些的價錢。弗朗西斯沒有還價，這讓亞瑟有些不自在——他本來已經準備好一套說辭。弗朗西斯只是把錢放在櫃檯上，甚至沒有檢查他找回來的零錢。亞瑟低頭數了一遍，對方多給了兩枚銅錢，便追出去還給他。弗朗西斯接過錢，向他道謝，隨後把一隻剛買來的梨遞到他手裡。</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">“You've already paid.”</span>
+        <span class="zh">「你已經付過錢了。」</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">Arthur stuffed the pear back. Francis seemed to find it a little funny; he patted his shoulder and put the pear in his pocket. Arthur stood there blankly for a while, and in the end picked up the pear and put it in his mouth. Eating a pear. The flesh was sweet; the juice ran down his wrist. His hands, too, were full of nectar. But the closer to the core, the sourer it became; his fingers were sticky. He frowned and ate the last bite, then placed the core on the windowsill. From where he lived, he could see that Buddha statue. The Buddha in the night, without lamplight. Like a towering building.</span>
+        <span class="zh">亞瑟把梨塞回去。弗朗西斯似乎覺得有些好笑，低頭拍了拍他的肩膀，把梨放在他的口袋裡。亞瑟呆站了一會兒，最後還是把梨拿起來，放進嘴裡。吃掉一顆梨。梨肉很甜，汁水順著手腕流下來。他的手中也盛滿甘露。但越靠近梨核就越酸，手指間黏糊糊的。他皺著眉頭吃下最後一口，把梨核放在窗台上。他住的地方能看見那尊佛像。黑夜中的佛像，沒有燈火。如一座巨廈。</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">Arthur began to occasionally visit the church to see Francis. Francis never asked why he came. Arthur watched him arrange books, write letters, clean wounds, and occasionally heard him recite in a low voice in a language he was not familiar with. Those sounds came from his throat, passed through his tongue and teeth, like water flowing over stone. Arthur did not understand them; they were somewhat similar to the chanting in the city's temples, like a language already lost.</span>
+        <span class="zh">亞瑟開始偶爾去教堂找弗朗西斯，弗朗西斯從不追問他為什麼來。亞瑟看他整理書籍、寫信、清洗傷口，偶爾聽見他用一種自己不熟悉的語言低聲念誦。那些聲音從喉嚨裡出來，經過舌尖和牙齒，像水流經過石頭。亞瑟聽不懂，它們與城裡寺院的誦經聲有些相似，像是已經失傳的語言。</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">“Does the Lord believe in reincarnation?”</span>
+        <span class="zh">「主相信輪迴嗎？」</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">“No.”</span>
+        <span class="zh">「不相信。」</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">“Where does a person go after death?”</span>
+        <span class="zh">「那人死了以後會去哪裡？」</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">“That depends on God's will.”</span>
+        <span class="zh">「那要看神的旨意。」</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">Arthur wrinkled his nose and gave a soft hum.</span>
+        <span class="zh">亞瑟皺了皺鼻子，輕哼一聲。</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">“Then if a person lives very badly in this life, can they live better in the next?”</span>
+        <span class="zh">「那如果一個人這一生過得很壞，下一生可以過得好一些嗎？」</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">“The Lord does not understand human life in that way.”</span>
+        <span class="zh">「主並不這樣理解人的生命。」</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">Arthur stopped asking and looked out the window. A beggar, a merchant, a woman holding a feverish child. People knelt; ten thousand wishes pierced the body of God. So-called fulfilment is God's blood dripping into the eye, making the reality one sees into illusion. Can God really hear these prayers? Should one believe that God can hear? If so, do the suffering suffer because their prayers are not sincere, or because their vows are not deep enough? I do not know, I do not know. The Way is not a matter of knowing, nor a matter of not knowing. Knowing is deluded perception; not knowing is blankness. Francis therefore did not quite seem like a priest. God's apostle should know many things, at least be able to give some kind of answer. Yet he confessed his ignorance so thoroughly, like fish flesh split open on a stall. In London, many preached in the streets, telling people how to live, endure, or atone, so as to gain eternal happiness after death. Their voices were loud, their gestures forceful. Francis was silent as a stone. Sometimes he would tell Arthur that a person need not think himself punished by God simply because he did not get what he wanted. Sometimes he would say that kindness did not mean a person could disregard his own life. Arthur did not understand how much theological difference lay behind these words.</span>
+        <span class="zh">亞瑟不再問了，向窗外看去。一個乞丐、一個商人，一個女人抱著高燒的孩子。人跪下，千萬個願刺進神的身體。所謂實現，是神的血滴進眼中，使所見的現實成了虛幻。神是否真的能夠聽見這些祈禱？是否該相信神能夠聽見？如果真是這樣，受苦的人是因為祈禱的心不誠，還是願不深？不知道，不知道。道不屬知，不屬不知。知是妄覺，不知是無記。弗朗西斯因此不夠像一個神父。神的使徒應該知道很多事情，至少應該能夠給出某種答案。而他卻把自己的無知坦白得如此徹底，如剖開攤上的魚肉。在倫敦，很多人在街頭講道，他們會告訴人們應該如何生活、忍耐或贖罪，以此在死後得到永恆的幸福。他們聲音洪亮，手勢有力。而弗朗西斯沉默得像一塊石頭。他有時會告訴亞瑟，人不必因為沒有得到想要的東西就認為自己受到了神的懲罰。有時也會說，善良並不意味著一個人可以不顧自己的生命。亞瑟聽不懂這些話背後究竟有多少神學上的區別。</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">He did not like God. What right did He have to decide his fate?</span>
+        <span class="zh">他不喜歡神。祂憑什麼替他決定他的命。</span>
+    </div>
+
+    <div class="section-break">◇</div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">God did not need him. The gate of the God of Wealth temple in the south of the city was crowded all year round. Before the market opened, worshippers came in an endless stream. Arthur had once seen a shipowner place a gold ring before the statue, only to be beaten bloody the next day for shorting his sailors half a month's wages. God permitted this; permitted wealth stolen by two hands. I want everything too. I want gold and silver, want my desires dissolved. I want wealth in this life, and blessings in the next. For my wishes, I kneel by day and dream by night. Francis sometimes passed through the south of the city too. He did not go to the temples thick with incense, but he knew the old woman who sold flowers outside the temple gate. She always put the unsold flowers into a broken clay pot and brought them out again the next day. Francis occasionally bought one or two stems and took them back to the windowsill, to place with the white flowers. Once Arthur met him in front of the God of Wealth temple. He stood below the stone steps, holding a paper package wrapped around a few hot pastries. He seemed to have just come from the market; a little rain clung to his cuffs, and the damp had pressed his golden hair slightly flat. Arthur was crouching by the temple gate, counting the money he had earned that day. Copper coins slid one by one across his palm, their edges polished bright. He divided them into several portions. Francis did not ask how much he had earned; he only placed the paper package beside him.</span>
+        <span class="zh">神不需要他。城南財神廟門前常年擠滿了人。開市前香客絡繹不絕。亞瑟曾見過一個船主把一枚金戒指放在神像面前，第二日卻為了少付水手半個月的工錢，被打得頭破血流。神許可這件事，許可用手偷來的富貴。我也什麼都想要。我想要金銀財報，想要被消解的慾望。我想要今生的富貴，也想要來世的福報。為了我的願，我日間跪拜，夜裡做夢。弗朗西斯有時也會經過城南。他不去那些香火旺盛的廟宇，卻認識廟門外賣花的老婦人。老婦人總把賣剩下的花插進一隻破陶罐裡，第二天再拿出來賣。弗朗西斯偶爾會買下一兩枝，帶回去放在窗台上，和白花插在一起。某次亞瑟在財神廟前遇見他，他站在石階下面，手裡拿著的紙包裹著幾塊熱乎乎的糕點。他似乎剛從街市回來，袖口沾著一點雨水，金髮被潮氣壓得微塌。亞瑟正蹲在廟門旁數自己當天賺來的錢。銅幣一枚一枚從掌心滑過去，邊緣磨得發亮。他把他們分成幾份。弗朗西斯沒有問他賺了多少錢，只把紙包放在他旁邊。</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">“Still saving money?”</span>
+        <span class="zh">「你還在攢錢？」</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">Arthur put the last copper coin into his purse.</span>
+        <span class="zh">亞瑟把最後一枚銅幣收進錢袋。</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">“Of course.”</span>
+        <span class="zh">「當然。」</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">“To go home?”</span>
+        <span class="zh">「為了回家？」</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">“So that after I go home, I won't have to live like this anymore.”</span>
+        <span class="zh">「為了回家以後不必再過這樣的日子。」</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">Francis did not answer. He glanced down at the glittering statue inside the temple gate, then at Arthur's hands.</span>
+        <span class="zh">弗朗西斯沒有接話。他低頭看了一眼廟門裡金光閃閃的神像，又看了看亞瑟的手。</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">“That's good.”</span>
+        <span class="zh">「那很好。」</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">He grinned and pushed the pastries toward him. Arthur did not take them; he did not want to let himself grow used to accepting such things again. Francis did not insist either; he simply stood up, brushed the dust from his robe, and walked along the street in the direction of the church. The bell inside the temple gate and the bell of the distant church rang one after the other, mingling with the cries of the market. Arthur lowered his head again and put the copper coins away. Francis's paper package still lay on the steps. In an instant, the rain poured down.</span>
+        <span class="zh">他咧嘴笑了，把糕點往他那邊推了推。亞瑟沒有拿，他不願再讓自己習慣於接受這些東西。弗朗西斯也沒有堅持，只是站起身，拂掉袍子上的灰塵，沿著街道往教堂的方向走去。廟門裡的鐘聲與遠處教堂的鐘聲先後響起來，混在一片叫賣聲中。亞瑟重新低下頭，把那些銅幣收好。弗朗西斯的紙包還躺在台階上，大雨頃刻間落下。</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">And Arthur? Arthur wanted to live. He still wanted to go home, but he had never received a letter from home. Occasionally he would remember the smell that filled the house after the fire had burned down—rye bread mixed with damp wood. That was his first revelation.<a href="#fn5" class="footnote-link" id="ref5"><sup>⑤</sup></a> Whenever the fear and anger toward his crumbling homeland gained the upper hand, there was nothing he could do. All he could do was grip the silver in his hand, bring it to his nose, and use the smell of metal to press down the homeland. He was always scheming to save money from his meagre wages, and so in a foreign land he embarked on the bitter journey of Sisyphus.<a href="#fn6" class="footnote-link" id="ref6"><sup>⑥</sup></a> He had already saved quite a lot. After buying a boat ticket, there would still be enough to add a few decent pieces of furniture to the house. A little more, and he could buy his brother a new set of clothes; a little more, and his mother would not have to scrimp over salt and flour; a little more, and perhaps his father would not have to go out to work. As for his uncle, he would surely be happy to see Arthur return with a decent fortune, rather than as a young man who had failed to make a living abroad, squeezing back into that low-ceilinged room and holding a newborn reeking of milk and dung.</span>
+        <span class="zh">亞瑟呢？亞瑟想活下去。他仍然想回家，但他從未收到家信。偶爾他會想起爐火燒盡以後，屋子裡那股混著黑麥麵包和潮濕木頭的氣味。那是他最初的開示<a href="#fn5-zh" class="footnote-link" id="ref5-zh"><sup>⑤</sup></a>。每當對故鄉搖搖欲墜的恐懼和憤怒佔據上風，他無事可做。唯有攥緊手中的銀子，把銀子湊向鼻尖，用金屬的氣味壓過故鄉。他總盤算著從微薄的薪水中省錢，無奈在異鄉步入西西弗斯<a href="#fn6-zh" class="footnote-link" id="ref6-zh"><sup>⑥</sup></a>的苦旅。他已經攢了不少。買一張船票後，還可以讓家裡添置幾件像樣的傢具。若是再多一些，便可以給弟弟買一套新衣服；再多一些，母親就不必為了買鹽和麵粉精打細算；再多一些，父親也許可以不再出門做工。至於叔叔，他應該會很樂意看見亞瑟帶著一筆像樣的財產回去，而不是像個在異國討生活失敗的年輕人，重新擠進那間低矮的屋子，抱著散發著奶臭與糞臭的新生兒。</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">When Arthur worked, goods were dumped at his feet, fragrance spilling everywhere. A wooden crate was pried open, the white porcelain glaze flashing like teeth. Silk was smoother than human skin. The merchants conversed in a language he could not understand. That language was like a giant fishing net spread over the sea, its meshes inlaid with gold, silver, pearls, and jade, rising and falling with the tide. He still kept in touch with the sailors from the ship he had come on. They could not be called friends, but they had taken part in the process of killing together. Each of them had a reason not to go home, and he had not saved enough money. God could not decide his fate. Money could.</span>
+        <span class="zh">亞瑟工作時，貨物就砸在他的腳邊，香氣四溢。一隻木箱被撬開，白瓷釉面像牙齒似的閃光。絲綢比人皮更光滑。商人們用他聽不懂的語言交談。這種語言像一張鋪在海上的巨大漁網，網眼裡嵌滿金銀珠玉，跟著潮水漲落。他仍與他來的那條船上的水手保持著聯繫。他們並不可以稱作朋友，但他們一起參與過殺人的過程。他們每個都有不能回家的理由，而他沒攢夠錢。神不能決定他的命。錢可以。</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">Sometimes at night he dreamed of his homeland. In the dream the house was as dim as in memory; the fire had burned down to red embers. His mother sat at the table, his brother tucked his feet under the chair. On the table was a pot of soup so thin that almost no solid could be seen. Arthur wanted to take money from his bosom, only to find that what he had brought back was not silver coins but handfuls of pearls. The pearls rolled across the floor, burrowing under the table legs and into the cracks in the wall. His mother bent to pick them up; his brother crawled too, and cut his fingers on the broken pearls. Arthur wanted to call out to them, but his mouth was stuffed with something and he could make no sound. Then the thing fell to the ground, and he found that he too was spitting out gold. He knelt in a panic to gather it, and the gold suddenly turned to blood. Behind him came a choking sound; his brother had stuffed the pearls into his throat, his small face turning purple.</span>
+        <span class="zh">他有時會在夜裡夢見故鄉。夢裡的屋子與記憶中一樣昏暗，爐火燒得只剩下紅色的炭。母親坐在桌邊，弟弟把腳縮在椅子下面。桌上有一隻鍋，盛著稀得幾乎看不見固體的湯。亞瑟想從懷裡拿出錢來，卻發現自己帶回去的不是銀幣，而是一把把珍珠。珍珠滾落在地，鑽進桌腳和牆縫，母親彎腰去撿，弟弟也爬著，手指被珍珠碎塊劃破了。亞瑟想叫住他們，可他的嘴裡塞滿了什麼東西，發不出聲音。那東西旋即掉在地上，他發現自己也吐出了金子。他跪下身子慌忙去撿，金子又突然變成血。他的身後傳來一陣窒息聲，弟弟把珍珠塞進喉嚨裡，小臉憋得青紫。</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">He had been in China a long time, but he still looked forward to news from home. Many merchant ships returned early; the crews said the western ports were recruiting sailors. The news spread through the taverns, from the taverns to the docks, and finally into the countless languages of the street cries. Arthur of course knew what that meant. He had seen cannons and knew how they could destroy city walls; he had also seen the sailors returned from distant seas, and what they spoke of was no ordinary trade. Among those men there had once been his uncle.</span>
+        <span class="zh">他在中國的時間已經很久，但他仍舊期待著故鄉的消息。很多商船提前返航，船員說西邊的港口正在徵召水手。消息在酒館裡傳開，又從酒館傳到碼頭，最後混進街巷裡無數種語言的叫賣聲中。亞瑟當然知道那意味著什麼。他見過火炮，知道它們能夠怎樣摧毀城牆；也見過那些從遠洋歸來的水手，他們談論的並不是一場尋常的買賣。那些人中曾有他的叔叔。</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">He had never thought of becoming a hero. He wanted to become a person.</span>
+        <span class="zh">他沒有想過自己會成為英雄，他想成為一個人。</span>
+    </div>
+
+    <div class="section-break">◇</div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">On the day the fleet arrived, there was no fog on the sea. The ships appeared one after another in the distance, their black hulls pressing down the horizon, masts towering, canvas unfurling in the wind. Dark clouds hung high, pregnant with thunder and lightning. The first to spot them rang the alarm; the sound travelled along the river into the city, startling flocks of birds from under the eaves. In the market, people stopped their work and, shouting, scattered in all directions. The monk's wooden fish kept beating—tok, tok, tok—as if from beyond the three realms.</span>
+        <span class="zh">艦隊抵達的那天海面上沒有霧。遠處的船一艘接著一艘出現，黑色的船身壓低了海平線，桅杆高聳，帆布在風裡展開。烏雲高懸在天，孕育著雷電。最先發現它們的人敲響了警鐘，聲音沿著河道傳進城內，驚起屋簷下成群的鳥。街市上的人紛紛停下手裡的活計，大叫著向四周散去。僧人手中的木魚卻還在敲，篤、篤、篤，聲音彷彿來自三界外。</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">Arthur stood in the crowd, watching those ships. The banners hanging high swayed before his eyes, and a heat close to ecstasy surged in his chest. He knew that what those ships brought was no cargo to be calmly handed over. Yet he smiled until the corners of his mouth ached, like a believer who had finally received an oracle. He slipped his fingers into his pocket and gently rubbed the few silver coins he carried. They still weighed only so much, light as feathers. The ships on the sea drew closer. The familiar smell of spices rose around him, and the shouts were unending. Arthur pushed a few steps forward, past the panicked people, toward the docks. He heard someone behind him call his name, mingled with the sound of the alarm bell. He did not look back. His homeland at this moment was in his mind like a string of old photographs scattered by the tide. The fleet's banners unfurled in the wind; the cannons on the hulls revealed their dark muzzles.</span>
+        <span class="zh">亞瑟站在人群裡望著那些船。高懸的旗幟在他眼中晃動，使他胸口湧起一陣近乎狂喜的熱意。他知道那些船所帶來的並非什麼可以平靜交割的貨物。可他笑得嘴角發酸，像一個終於等到神諭的信徒。他把手指伸進衣袋，輕輕摩挲那幾枚隨身攜帶的銀幣。它們仍舊只有那麼一點重量，輕得像羽毛。海上的船越來越近。他周圍飄起熟悉的香料味，叫喊聲不絕於耳。亞瑟向前擠了幾步，越過那些驚慌失措的人，朝碼頭的方向走去。他聽見身後有人喊他的名字，與警鐘的聲音混在一起。他沒有回頭。故鄉此刻在他腦海中，如同一串被潮水沖散的舊照片。艦隊的旗幟在風裡展開，船身上的火炮露出黑洞洞的炮口。</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">“Hey!”</span>
+        <span class="zh">「嗨！」</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">Arthur's arms rose high toward the sky like those banners. He cheered, tears streaming down his face.</span>
+        <span class="zh">亞瑟的雙臂如那些旗幟一般，高高舉向天空。他流著淚歡呼。</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">When he saw Francis in the crowd, the fleet's advance ship had already docked. The sailors threw the mooring ropes to the shore; the thick ropes traced an arc through the air and landed in the hands of the blond, blue-eyed soldiers already waiting there. The crowd on the shore was still retreating, but Arthur alone went against the flow, walking toward the ships.</span>
+        <span class="zh">在人群中看見弗朗西斯時，艦隊的先遣船已經靠岸。水手們將纜繩拋向岸邊，粗大的繩索在空中劃過一道弧線，落進早已等候在那裡的，金髮碧眼的士兵手中。岸上的人群仍在向後退，唯獨亞瑟逆著人流，朝著那些船隻走去。</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">“Where are you going?”</span>
+        <span class="zh">「你要去哪裡？」</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">Francis called out to stop him.</span>
+        <span class="zh">弗朗西斯叫住他。</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">“You saw those ships.”</span>
+        <span class="zh">「你看见那些船了。」</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">“I asked where you are going.”</span>
+        <span class="zh">「我問你要去哪裡。」</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">Arthur did not answer. His gaze passed over Francis and fell on the other end of the dock. Several familiar sailors were already standing there; one of them waved to him, and beside him an officer was holding a map, waiting for someone to point out the way from the port into the inner city.</span>
+        <span class="zh">亞瑟沒有回答。他的目光越過弗朗西斯，落在碼頭另一頭。幾個熟悉的水手已經站在那裡，其中一個朝他招手，身旁的軍官正拿著一張地圖，等待有人為他們指認港口的方向。</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">“Child, don't go over there.”</span>
+        <span class="zh">「孩子，別過去。」</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">Francis reached out to stop him, his voice almost like a plea. The hand used little strength, yet Arthur felt angry.</span>
+        <span class="zh">弗朗西斯伸手攔住他，聲音幾乎如同祈求。那隻手並沒有用多少力氣，亞瑟卻覺得惱怒。</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">“Do you know who they are?”</span>
+        <span class="zh">「你知道他們是誰嗎？」</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">“They are my countrymen.”</span>
+        <span class="zh">「是我的同胞。」</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">“Do you know what they have come to do?”</span>
+        <span class="zh">「你知道他們來做什麼？」</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">“I know.”</span>
+        <span class="zh">「我知道。」</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">Francis's fingers tightened slightly. His eyes looked even paler in the ashen daylight, the pupils reflecting the distant sails like a sea mist. Arthur turned his face to say something. Perhaps about his life in London. Perhaps about the life after returning to London. About how he had once believed that if only he worked hard enough, he could take his family's fate out of that damp room. These words stopped on his tongue and suddenly seemed utterly ridiculous.</span>
+        <span class="zh">弗朗西斯的手指微微收緊。他的眼睛在慘白的日光下顯得更淺，眼瞳映著遠處的帆影，如一陣海霧。亞瑟轉過臉來想說些什麼。或許是關於他在倫敦的生活。或許是回到倫敦後的生活。關於他曾經以為自己只要足夠勤勉，就能夠帶著一家人的命運離開那間潮濕的屋子。這些話停在他的舌尖，忽然顯得十分可笑。</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">“You're asking me to stay?”</span>
+        <span class="zh">「你讓我留下來？」</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">“I'm asking you not to go and help them.”</span>
+        <span class="zh">「我讓你不要去幫助他們。」</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">“They need someone familiar with this place.”</span>
+        <span class="zh">「他們需要一個熟悉這裡的人。」</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">“Arthur.”</span>
+        <span class="zh">「亞瑟。」</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">“I have nowhere to go.”</span>
+        <span class="zh">「我無處可去。」</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">Francis looked at him as if he had a thousand things to say, yet his face remained as inorganic as a statue. Someone was urging them from afar; a horn sounded from the ship, loud as thunder. The sailors carried rows of spears and matchlocks down from the deck. Fine wood shavings littered the stone steps of the dock; the tide pushed them toward the shore, then slowly carried them away. Francis's hand still rested on his arm. Arthur glanced down; the fingers were distinct, with a shallow old scar in the palm. He suddenly remembered the first time he had walked into the church and Francis had set a bowl of hot soup before him, while he stood by the table like a lamb, not knowing how to place his hands. He had once found Francis's kindness deeply suspicious. Francis asked for nothing, while he was full of demands. In the end, Francis slowly looked away and let go. Arthur bit his lip hard and walked past him. His sleeve brushed the dark robe, stirring a very light wind. He did not look back, walking toward the ships. The closer he came, the heavier his legs felt. Someone handed him a knife. Arthur weighed it in his palm. It was heavier than he had imagined, with a faint notch on the blade. He thrust it into his waist, then took the map and pointed out for the officer the road from the port into the inner city.</span>
+        <span class="zh">弗朗西斯看著他，似有千言萬語，但面容依舊如雕像般無機。遠處有人在催促，船上的號角響了一聲，聲如驚雷。水手們將一排排長矛與火繩槍搬下甲板。碼頭的石階上落滿了細碎的木屑，潮水把它們推向岸邊，又緩慢地帶走。弗朗西斯的手仍然放在他的手臂上。亞瑟低頭看了一眼，那隻手指節分明，掌心有一道淺淺的舊傷。他忽然想起自己第一次走進教堂，弗朗西斯把一碗熱湯放在他面前。自己卻如一隻羔羊似的站在桌旁，不知道應該如何安放雙手。他曾覺得弗朗西斯的善意十分可疑。弗朗西斯什麼也不索取，而他充滿著索求。最後，弗朗西斯慢慢移開目光，鬆了手。亞瑟狠狠地咬了下唇，從他身邊走過。衣袖擦過那件深色長袍，帶起一陣很輕的風。他沒有回頭，走向那些船隻。他走得越近，雙腿便越沉重。有人把一把刀遞給他。亞瑟試著在掌心掂著那把刀。刀比他想象中沉，刀刃上有一道不太明顯的缺口。他將它插進腰間，隨後拿起那張地圖，替軍官指出了港口通往內城的道路。</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">By the time the cannons were unloaded from the ships, the alarm bells in the city had been ringing for a long time. The first to be attacked was the city wall outside the port; the stone was blown apart, and fragments flew like bullets falling into the river, raising a grey-white smoke from the water. Merchant ships scattered along the shore; some tried to untie their moorings, while others were squeezed onto the narrow pier, unable even to turn around. The sailors on the ships shouted excitedly; the smell of gunpowder blew into the city on the sea wind, mixing with the stench of fish, spices, and damp wood. Arthur followed the fleet into the city he knew so well. On the stone bridge outside the city gate there had once been a small stall that sold hot pancakes. The owner was a woman with greying hair. Her pancakes were always spread very thin, their edges slightly browned. Arthur had stopped there once on a winter day and discovered, when paying, that he was one copper coin short. The woman had not made an issue of it; she simply handed him the pancake and told him to pay the next time he came. The next day he ran back, and she smiled and gave him a bowl of hot soup. Now the stall's wooden frame lay on the ground, flour spilled everywhere, trampled into grey-white mud. The woman was not there. Her bamboo basket had rolled into the drainage ditch by the street, a few charred pancakes left inside. Looking up, someone was running onto the bridge with a baby in their arms. A gunshot rang out, and they fell by the roadside. The child rolled out of their arms, its cries drowned by the unending explosions. Arthur did not stop. He followed the people ahead deeper into the streets, the knife handle wet with sweat, his palm slippery. The shops that had once been packed tight now had their doors flung open, shelves toppled. Tall soldiers smashed open counters and seized the silver and jewels inside; short soldiers dragged a bolt of silk from a shelf, the whole roll trailing on the ground, the fabric trampled by boots, stained with dust and blood. In the spice shops, many wooden boxes had been knocked over; pepper, cinnamon, cloves, and cardamom mixed together, the pungent smell almost suffocating—just as on the day he had arrived. When the wind blew, the fragrance grew even stronger. It was as if the entire city were being forced to burn its own body.</span>
+        <span class="zh">火炮從船上卸下來時，城中的警鐘已經敲了很久。最先遭到攻擊的是港口外側的城牆，石塊被炸開，碎片如落進河裡的子彈，水面上升起一陣灰白色的煙。岸邊商船四散，有人試圖解開纜繩，有人卻被擠在狹窄的棧橋上，連轉身都做不到。船上的水手興奮地大聲叫喊，火藥味順著海風吹進城裡，混合著魚腥、香料和潮濕木材的氣味。亞瑟跟著艦隊走進他熟悉的這座城。城門外的石橋上有一座小攤，過去常常賣熱餅。攤主是個頭髮花白的女人。她的餅總是攤得很薄，邊緣微微焦黃。亞瑟在某個冬日光顧過一次，付錢時才發現自己少了一枚銅幣。女人沒有追究，只是把餅遞給他，讓他下次再來時補上。第二天他就跑了回去，女人笑著給他盛了一碗熱湯。此刻，那處攤子的木架倒在地上，麵粉灑了一地，被人踩成灰白色的泥漿。女人不在。她的竹籃滾進了街邊的排水溝，裡面剩下幾張燒黑的餅。往上看，有人懷抱著嬰兒跑上橋。槍聲響起後摔倒在路邊。孩子從他的懷裡滾出來，哭聲被接連不斷的爆炸聲淹沒。亞瑟沒有停下腳步。他跟著前面的人繼續向街道深處走，手裡的刀柄被汗水浸濕，掌心有些發滑。曾經擠得水洩不通的商鋪，此刻門板大開，貨架傾倒。高大的士兵砸開櫃檯，抓起裡面的銀器和珠寶；矮小的士兵將一匹絲綢從架子上扯下來，整卷拖在地上，綢緞被鞋底踩過，沾上灰塵和血。香料鋪子裡打翻了許多木匣，胡椒、肉桂、丁香和豆蔻混在一起，濃烈的氣味幾乎令人窒息——如他來的那一日。風吹過時，香氣反而更加濃郁。彷彿整座城市正在被迫焚燒自己的身體。</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">He suddenly heard a shattering sound; a jade Buddha fell at his feet. Beside the Buddha's head lay his knife, the blade bearing a thin layer of blood. He suddenly felt nauseous and stumbled back to the church along streets he could no longer recognise. The church doors stood wide open; half the stone pillars were blackened by fire. Arthur rushed inside; his nostrils were filled with the smell of damp ash, and he coughed. Several windows had been smashed; fragments of coloured glass lay on the ground, reflecting the firelight. The holy icons had fallen from the walls, half their faces buried in rubble. His gaze passed through the broken opening toward the mountain; the great Buddha was still white as cloud. At the Buddha's feet someone was praying, tiny as an ant from this distance. A soldier raised his blade and cut off the person's head. Arthur turned his gaze back, a line of hot tears sliding down his cheek. He walked further in and finally saw Francis near the altar. Francis sat on the ground, his back against a stone pillar, his clothes covered in ash, his golden hair hanging at his shoulder. He did not seem injured; he simply had his eyes closed, his hands folded before his chest, as if in prayer.</span>
+        <span class="zh">他突然聽見碎裂聲，一尊玉佛摔在他的腳邊。佛頭的一旁，他的刀耷拉著，刀刃上有一層薄薄的血跡。他突然感到一陣噁心，沿著那些他已經辨認不了的街道跌跌撞撞衝回教堂。教堂大敞著門，石柱被火燒黑了一半。亞瑟衝進去，鼻腔被潮濕的灰燼味佔滿，一陣咳嗽。幾扇窗戶被打碎，彩色玻璃碎片落在地上，輝映著火光。聖像從牆上脫落，半邊臉埋在碎石之中。他的目光穿過破洞，望向山間，那尊大佛依舊潔白如雲。佛像腳下有人正在祈禱，遠看小得像螞蟻一般。一個士兵揮起刀刃，斬下那人的頭顱。亞瑟轉回目光，一行熱淚滑過臉頰。他繼續往裡走，終於在靠近祭台的地方看見了弗朗西斯。弗朗西斯坐在地上，背靠著一根石柱，衣服上沾了灰，金髮垂在肩側。他似乎沒有受傷，只是閉著眼睛，雙手合在胸前，像是在祈禱。</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">“Francis.”</span>
+        <span class="zh">「弗朗西斯。」</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">He did not open his eyes. Arthur crouched down and reached out to touch his shoulder.</span>
+        <span class="zh">他沒有睜眼。亞瑟蹲下來，伸手碰了碰他的肩膀。</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">“Do you hear me?”</span>
+        <span class="zh">「你聽見我說話了嗎？」</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">Francis's fingers moved slightly.</span>
+        <span class="zh">弗朗西斯的手指微微動了一下。</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">“You're back.”</span>
+        <span class="zh">「你回來了。」</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">His voice was very light, like the cry of a weary animal. Arthur's tears froze in his eyes, then he suddenly pulled the corners of his mouth into a huge smile. Perhaps because the sentence sounded too ordinary, as if the burned streets and the dead outside had nothing to do with them. Sensing the long gaze, Francis finally opened his eyes. There was no reproach in his eyes, nor the anger Arthur had expected. And Arthur suddenly felt he could not bear that gaze.</span>
+        <span class="zh">他的聲音很輕，像是疲憊動物的叫聲。亞瑟的淚水頃刻凝在眼眶中，又突然扯開嘴角，露出一個巨大的微笑。也許是因為這句話聽起來太過平常，彷彿外面那些被燒毀的街道和死去的人都與他們無關。察覺到長久注視，弗朗西斯終於睜開眼睛。他的眼睛裡沒有責備，也沒有亞瑟所期待的憤怒。而亞瑟卻忽然覺得自己無法忍受這種目光。</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">“God has abandoned us, Arthur.”</span>
+        <span class="zh">「神放棄了我們，亞瑟。」</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">“God? Where was your God when my whole family was starving? Asleep? Or never awake? I have never sinned, and now you say my sins will be forgiven.”</span>
+        <span class="zh">「神？我全家忍飢挨餓的時候你的那位神在哪？睡著了嗎，還是從未醒來？我從未犯罪，現在竟說會赦免我的罪。」</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">He felt his heart pounding against his chest and pressed a hand to it. Tears ran into his mouth; he tasted the rot in them.</span>
+        <span class="zh">他感到心臟在胸中衝撞，用一隻手按住胸口。淚水流進嘴裡，他嘗到淚水中的腐爛氣息。</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">“I am not a wisp of angry ghost. I am a person. You have never seen God—how can you judge that my flesh is baser than God's flesh? You say you will not watch me fall into an evil path, but how is my life any different from an evil path?”</span>
+        <span class="zh">「我不是一縷嗔魂，我是一個人。你從沒見過神，怎就斷定我的血肉比神的血肉低賤。你說不肯看我墮入惡道，可我的生活又與惡道有何分別。」</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">Francis's shoulders trembled; his eyes were closed, his palms pressed together, the jade beads swaying on his wrist. But his hands were suddenly seized, and the warmth of those palms was so scalding that it was almost as if his skin were being tortured by fierce fire.</span>
+        <span class="zh">弗朗西斯的肩膀顫抖著，閉眼合掌，翡翠珠子在手腕上晃蕩。他的雙手卻被突然握住，那掌心的溫度如此滾燙。幾乎令他的皮膚遭受著猛火燒炙的劇苦。</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">“Father. Look at these hands of yours. Where did your calluses come from? Did you also suffer hard labour before you were enlightened? Don't lie, Father.”</span>
+        <span class="zh">「神父。瞧瞧您這雙手。你的繭子從何而來？難道是你在悟道之前，也受過苦役嗎？別撒謊了，神父。」</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">He still did not open his eyes.</span>
+        <span class="zh">他還是沒有睜眼。</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">“Francis, I am not asking you to speak with God now. I only want you to open your eyes and look at me.”</span>
+        <span class="zh">「弗朗西斯，我現在不讓你與神對話，我只要你睜開眼看看我。」</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">Francis opened his eyes. The way he looked at Arthur was no different from usual. He took Arthur's hand in return, folding the young man's anger closed like a lotus.</span>
+        <span class="zh">弗朗西斯睜開眼睛，看向亞瑟的樣子與平時並無分別。他反握住亞瑟的手，將年輕人的憤怒如一朵蓮花般合攏。</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">“The calluses on my hands are from holding reins and a lance. That is my evil karma.”</span>
+        <span class="zh">「我的手上的繭子，是因為手握韁繩與騎槍。那是我的惡業。」</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">Arthur did not let go. He saw the rough lines in Francis's palm and suddenly realised that he had never truly known this person. Those calluses did not come from prayer or from years of lifting a wine cup. They came from somewhere far away, from battlefields, horses, and weapons he had never seen, from another life he could not imagine. Francis had once held reins and chased something on horseback. Perhaps he, like Arthur, had believed that if only he tried hard enough, he could obtain something. And Arthur had assumed that he possessed something Arthur could never possess, and could therefore stand on high ground and speak calmly of sin, forgiveness, and the life to come.</span>
+        <span class="zh">亞瑟沒有鬆開手。他看見弗朗西斯掌心那些粗糙的紋路，忽然意識到自己從未真正了解過這個人。那些繭子並不來自於祈禱或是長年端起酒杯。它們來自某個遙遠的地方，來自他不曾見過的戰場、馬匹和武器，來自另一種他無法想象的生活。弗朗西斯曾經握過韁繩，在馬背上追逐過什麼。也許他和他一樣，以為自己只要足夠用力，就能夠得到某種東西。而亞瑟卻以為他擁有某種自己永遠無法擁有的東西，因而能夠站在高處，平靜地談論罪、寬恕和來世。</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">Sin, forgiveness, the life to come.</span>
+        <span class="zh">罪、寬恕、來世。</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">After a long time, Arthur let go. He stood up, walked a few steps toward the church door, then stopped and looked back. Francis was still sitting there, like a statue.</span>
+        <span class="zh">過了很久，亞瑟才鬆開手。他站起來，往教堂門口走了幾步，又停下來，回頭看了一眼。弗朗西斯仍然坐在那裡，像一尊塑像。</span>
+    </div>
+
+    <div class="section-break">◇</div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">For the first few months Arthur could still hear gunfire; later there was only the sound of wind passing through broken walls. He always remembered the way Francis folded his hands, remembered the string of jade beads swaying at his wrist, like green peas sunk at the bottom of a bowl. Where was God, had He seen all this, could He really decide a person's fate. He always confessed by way of asking, yet received no answer. Father, how does God see me—I have committed monstrous sins. He walked his pilgrimage one last time. There was no one in the church; the broken glass on the ground had been washed by rain, leaving a few deeply coloured shards wedged between the stones. The altar cloth had burned; only a few broken wooden slats remained of the pews along the wall. Arthur walked once around the walls and did not see Francis, nor find anything he had left behind. Further out, the door of Francis's room stood half-open; the plant leaves on the windowsill had curled, their colour turned grey-green. One of the bed boards had broken; the sheet was torn, revealing the yellowed cotton wadding inside. Beside the copper kettle was a jade bead. He put the bead in his pocket and held it for a moment like a silver coin.</span>
+        <span class="zh">起初的幾個月亞瑟還能聽見槍聲，後來只剩下風吹過斷牆的聲音。他總是想起弗朗西斯合起雙手的樣子，想起那串在手腕上晃動的翡翠珠子，如同沉在碗底的青豌豆。神在哪裡，有沒有看見這一切，是否真的能夠決定人的命運。他總是通過發問的方式告罪，卻得不到任何答案。神父，神該如何看我，我已犯下滔天的罪行。他最後一次走上他的朝聖之路，教堂裡沒有人，地面上的碎玻璃被雨水沖洗過，剩下幾塊顏色很深的碎片，嵌在石縫之間。祭台上的布幔已經燒毀，牆邊的長椅只剩下幾根斷裂的木條。亞瑟沿著牆壁走了一圈，沒有看見弗朗西斯，也沒有找到他留下的任何東西。再往外，弗朗西斯的房間門半掩著，窗台上的植物葉片蜷縮起來，顏色變成灰綠色。窄床的床板斷了一根，床單被撕開，露出裡面發黃的棉絮。銅壺旁邊有一枚翡翠珠子，他將珠子收進衣袋，像握一枚銀幣似的握了握。</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">No one knew where Francis had gone. He seemed to be searching for something long since carried away by the current. Arthur wandered the city for a long time and finally came to a lane near the foot of the mountain. Broken bricks were piled by the roadside; a few birds perched on them, pecking at the rotten meat on the ground. And there Arthur saw Francis. The body lay beside a broken wall, clothes soaked through with muddy water, the dark fabric clinging to the skin. Golden hair was spread on the ground, stained with dust and blood. Arthur stood where he was, and only after a long time walked over.</span>
+        <span class="zh">沒有人知道弗朗西斯去了哪裡，他像是在尋找一件早已被水流帶走的東西。他在城中晃蕩了很久，最後走到一處靠近山腳的街巷。路邊堆著許多碎磚，幾隻鳥停在上面，低頭啄食地上的爛肉。就在那裡，亞瑟看見了弗朗西斯。那具身體躺在一堵斷牆旁邊，衣服被泥水浸透，深色的布料貼在身上。金散落在地面上，沾著灰塵和血。亞瑟站在原地，過了很久才走過去。</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">Francis's head was not on the body. The wound had already clotted; the blood at the side of the neck had been washed open by rain, leaving dark red traces along the collar and the ground. Arthur did not see a knife, nor anything that could explain when or how he had been executed. He did not even know why he had found him here. He looked up, wanting to ask whether this was truly God's will, but above him there were only heavy black clouds. He knelt and touched the body; his fingertips met cold fabric. Francis's hand hung at his side, palm upward, a few fingers slightly curled. Arthur turned the hand over and saw the old calluses. At the base of the palm was a very shallow crack.</span>
+        <span class="zh">弗朗西斯的頭顱不在身體上。傷口已經凝結，頸側的血跡被雨水沖開，沿著衣領和地面留下暗紅色的痕跡。亞瑟沒有看見刀，也沒有看見任何能夠說明他究竟何時、如何被處決的東西。他甚至不知道自己為什麼會在這裡找到他。他抬起頭，妄圖詢問這是否真是神的旨意，頭頂卻只餘黑壓壓的雲。他跪下來，碰了碰那具身體，指尖觸到冰冷的布料。弗朗西斯的手垂在一旁，掌心朝上，幾根手指微微彎曲。亞瑟將他的手翻過來，看見那些舊繭子。掌根處有一道很淺的裂紋。</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">“I once held reins and a lance.”</span>
+        <span class="zh">「我曾經握過韁繩與騎槍。」</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">Arthur remembered those words.</span>
+        <span class="zh">亞瑟想起那句話。</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">“That is my evil karma.”</span>
+        <span class="zh">「是我的惡業。」</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">Was this God's punishment?</span>
+        <span class="zh">這是神的懲罰嗎？</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">He placed the hand gently back, then reached out both arms and lifted Francis's head. The head was very heavy. Golden hair hung down between his arms. Gold—they had never belonged here, yet they had tried to possess it. Arthur lowered his head; the face was covered in ash. He reached out and brushed the hair from Francis's forehead. It was fully dark now. On the distant mountain, the body of the Buddha showed as a heavy black shadow in the night. Arthur carried Francis and walked along the road leading up the mountain.</span>
+        <span class="zh">他把那隻手輕輕放回去，隨後伸出雙臂，將弗朗西斯的頭顱抱了起來。那顆頭很沉。金髮從他的手臂間垂下來。金，他們從未屬於這裡，卻妄圖擁有這裡。亞瑟低下頭，那張臉上沾著灰。他伸手替弗朗西斯撥開額前的頭髮。天已經完全黑了。遠處的山上，佛的身軀在夜色裡顯出沉沉的黑影。亞瑟抱著弗朗西斯，沿著那條通往山上的路走去。</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">Those who climbed this mountain could seek a share of purity before the Buddha. On festivals, pilgrims came from all over the city, climbing the stone steps one by one. The long stairway to heaven had countless steps; they carried offerings of fruit, incense, and candles, and slips of paper covered in wishes. Halfway up they were already gasping for breath, yet they still refused to stop. Arthur had never been here before. The stone steps had been polished smooth by footsteps; their edges had been rounded by rain, and small mosses grew in the crevices. Arthur's arms gradually grew sore. Every so often he had to stop and steady Francis's head again. His boots made a dull sound on the stone steps. Several times he nearly slipped, and had to turn his body sideways to shield the head in his arms. His clothes were soaked with sweat.</span>
+        <span class="zh">登上這座山的人，便能在佛前求得一份清淨。每逢節日，香客們從城中各處趕來，沿著石階一步一步向上走。長階通天無數級，他們帶著供果、香燭和寫滿願望的紙條，走到半途便已經氣喘吁吁，卻仍然不肯停下。亞瑟從未來過這裡。石階已被腳步磨得十分光滑，邊緣也被雨水沖刷得圓鈍，縫隙間長出細小的青苔。亞瑟的雙臂漸漸發酸。每走過一段便要停下來，將弗朗西斯的頭顱重新抱穩一些。他的靴子在石階上發出沉悶的聲音。有幾次他差點滑倒，便不得不側過身體，將懷裡的頭顱護住。他的衣服已經被汗水浸濕。</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">Many stories circulated in China. Most of them came from the ports. Some said a kind of monster had come from the sea—golden-haired, blue-eyed, pale-skinned—that crawled out of the hold at night and ate sleeping sailors. Others said they were not human at all, but something ancient from the seabed that had taken human form. They could imitate human speech but had no human heart. If you looked into their eyes, you would be taken out to sea and never find your way home. Once, after work, Arthur was walking home through a narrow alley. Several children were playing by the wall. One of them saw him and suddenly stopped, pointing at his hair and eyes and shouting that he was a monster. He happened to understand that word. The other children laughed and began throwing stones at him. Arthur did not stop; he only pulled his collar up a little higher and kept walking. Francis was not far away. He walked over, stood in front of the children, and said a few words to them. Arthur did not hear clearly; he only remembered that the children soon scattered. Later Francis turned to look at him and reached out to brush the dust from his shoulder.</span>
+        <span class="zh">中國流傳過許多故事。那些故事大多從港口傳來。有人說海上來過一種妖物，金髮碧眼，皮膚蒼白，夜裡會從船艙裡爬出來，吃掉熟睡的水手。也有人說他們並不是人，而是海底某種古老的東西變成的人。能夠模仿人的語言，卻沒有人的心。若是看見他們的眼睛，便會被帶到海上，再也找不到回家的路。某次，亞瑟結束工作，經過窄巷回家。幾個孩子正在牆邊玩耍。有人看見他，忽然停下來，指著他的頭髮和眼睛，大聲喊他是怪物。他恰好聽得懂這個詞。其他孩子跟著笑起來，有人撿起石子朝他扔過來。亞瑟沒有停下腳步，只是將衣領拉高了一些，繼續往前走。弗朗西斯就在不遠處。他走過來，擋在那些孩子面前，對他們說了幾句話。亞瑟沒有聽清楚，只記得那些孩子很快便散開了。後來弗朗西斯回頭看他，伸手替他拂掉肩上的灰。</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">“You are not a monster. You are a person.”</span>
+        <span class="zh">「你不是怪物，你是一個人。」</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">Arthur did not answer; he even felt that sentence was somewhat superfluous. Of course he was a person. A person who felt hunger and cold, who could be hurt or fall ill. A person with his own desires. Apart from his hair and eyes, he was no different from those children. The one who had once stood in front of him now slept in his arms. And he had set out on a road of awakening with no end. Had they once walked this road together? Perhaps. Arthur could not remember clearly. Those days had grown very distant, like paper soaked through by river water.</span>
+        <span class="zh">亞瑟沒有回答，他甚至覺得那句話有些多餘。自己當然是一個人。一個會感到飢餓和寒冷，會受傷或生病的人。一個有自己慾望的人。除了頭髮和眼睛，他和那些孩子沒有什麼不同。曾經擋在他面前的人，如今在他懷中沉睡。而他走上了一條沒有盡頭的覺路。他們曾經一起走過這條路嗎？也許有過。亞瑟記不清了。那些日子已經變得十分遙遠，像是被河水泡過的紙張。</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">He finally reached the summit and walked to the foot of the great Buddha he had seen on his first visit. The Buddha still sat upright on the lotus seat. Its golden body towered, its brows and eyes lowered. Its palm pressed down toward his head; the lotus petals layered upon one another, their edges gilded with a dim gold. Arthur carried Francis to the front of the Buddha. Now he was closest to the Buddha, yet still had to look up from afar. He raised his arms, wanting to bring Francis's forehead close to the Buddha's forehead, trying to push his head forward. But the Buddha was beyond reach; between them there was always an impassable gulf. He stood on tiptoe, his arms trembling, his shoulders aching terribly. In the end, all he could do was rest Francis's forehead gently against the edge of the Buddha's lotus seat. Nothing happened. The Buddha still lowered its eyes; the lamplight swayed on its face. Some of the gold leaf on the lotus seat had peeled away, revealing the dark wood beneath. Arthur lowered his head and found the wood densely covered with ants. The blood on Francis's forehead had congealed into a small dark red mark, running down through his golden hair and dripping onto one petal of the lotus, slowly spreading. The golden lotus became a red lotus.</span>
+        <span class="zh">他終於到達了山頂，走到他第一次來時看到的那尊大佛底下。那尊佛仍然端坐在蓮花座上。金身高聳，眉目低垂。它的手掌向下壓著他的腦袋，蓮花的花瓣層層疊疊，邊緣鍍著一層暗淡的金色。亞瑟抱著弗朗西斯走到佛前，現在的他離佛最近，卻仍然需要遙望。他舉起手臂想讓弗朗西斯的額頭靠近佛的額頭，試著將他的頭向前送。而佛像遙不可及，他們之間永遠隔著天塹。他踮起腳，手臂發抖，肩膀疼痛不已。最後，他也只能將弗朗西斯的額頭輕輕抵在佛像的蓮花座邊緣。什麼也沒發生。佛像仍然低垂著眼睛，燈火在它的面容上搖晃。蓮花座上的金箔已經有些剝落，露出底下暗沉的木胎。亞瑟垂下頭，發現木胎上密密麻麻爬滿螞蟻。弗朗西斯額前的血凝成一小塊暗紅色的痕跡，順著金髮流下來，滴在蓮花的一瓣上，慢慢洇開。金蓮變成了紅蓮。</span>
+    </div>
+
+    <hr class="divider">
+
+    <div class="footnote">
+        <div class="footnote-item" id="fn1">
+            <span class="en"><a href="#ref1" class="footnote-link">①</a> Like the Ganges, three beasts all cross: the rabbit, the horse, and the fragrant elephant. The rabbit does not reach the bottom, floating across the surface; the horse may or may not reach the bottom; the elephant reaches all the way down.</span>
+            <span class="zh"><a href="#ref1-zh" class="footnote-link">①</a> 如恒河水，三獸俱渡，兔、馬、香象。兔不至底，浮水而過；馬或至底，或不至底；象則盡底。 </span>
+        </div>
+        <div class="footnote-item" id="fn2">
+            <span class="en"><a href="#ref2" class="footnote-link">②</a> Avalon: the blessed isle guarded by the fae in Arthurian legend. Its core is not wealth but healing, mystery, and waiting. It first appears in Geoffrey of Monmouth's Historia Regum Britanniae (1136). In Welsh its name means “the Isle of Apples,” symbolising fertility and the Otherworld. It is where King Arthur's sword was forged. Wounded at the Battle of Camlann, Arthur was carried to Avalon by Morgan le Fay and eight other fairy queens, in hope of healing his mortal wound. It thus symbolises a hope that one “has not truly died and will one day return,” rather than a mere place of pleasure.</span>
+            <span class="zh"><a href="#ref2-zh" class="footnote-link">②</a> 阿瓦隆（Avalon）：亞瑟王傳說中精靈守護的樂土。阿瓦隆的核心不在於財富，而在於治癒、神秘與等待。它最早出現在蒙茅斯的傑弗里1136年的《不列顛諸王史》中。在威爾士語中，其名字意為「蘋果島」，象徵著豐饒與彼世。這裡是亞瑟王聖劍的鍛造地。在劍欄之戰中身受重傷的亞瑟王，被摩根勒菲等九位仙后帶往阿瓦隆，以期治癒他的致命傷。因此，它象徵著一種「並未真正死去，終將歸來」的希望，而不單純是一個享樂之地。 </span>
+        </div>
+        <div class="footnote-item" id="fn3">
+            <span class="en"><a href="#ref3" class="footnote-link">③</a> El Dorado: the legendary land of gold. Its origin is not fiction but a real tribal ritual, distorted by the greed of the colonisers into a geographical dream. The Spanish original means “the gilded man.” The legend derives from the Muisca (Chibcha) custom in what is now Colombia. When a new chief was crowned, he was covered entirely in gold dust, rowed out onto Lake Guatavita, and washed clean, while his subjects threw gold and gems into the lake as offerings. When 16th-century Spanish colonisers heard the tale, they ignored the religious meaning entirely and understood only that “there was inexhaustible gold there.” Thus “the gilded man” quickly became a legend of an empire or city paved with gold. From 1530 onward, Spanish, German, and even English explorers penetrated deep into the South American interior in search of it. This centuries-long search found no golden city, but it killed countless explorers through disease, hunger, and infighting, while also greatly expanding Europeans' geographical knowledge of South America. Only in the early 19th century did scientists largely disprove its existence as a specific place.</span>
+            <span class="zh"><a href="#ref3-zh" class="footnote-link">③</a> 埃爾多拉多（El Dorado）：傳說中遍地黃金的理想國。它的起點並非虛構，而是一場真實存在的部落儀式，但被殖民者的貪婪扭曲成了地理上的迷夢。西班牙語原意為「鍍金人」。傳說源於今哥倫比亞境內的穆伊斯卡人（奇布查人）習俗。新酋長加冕時，會全身塗滿金粉，乘坐木筏到瓜塔維塔湖中洗去金粉，臣民則向湖中投擲黃金與寶石作為祭品。16世紀的西班牙殖民者聽到這個傳聞後，完全忽略了儀式的宗教含義，只將其理解為「那裡有取之不盡的黃金」。於是，「鍍金人」迅速演變成了遍地黃金的帝國或城市的傳說。從1530年起，西班牙、德國乃至英國的探險者紛紛深入南美腹地尋找。這場持續數百年的搜尋沒有找到任何黃金之城，卻導致了無數探險者死於疾病、飢餓或內鬥，同時也極大地擴充了歐洲人對南美地理的認知。直到19世紀初，科學家才基本證偽了其作為具體地點的存在。 </span>
+        </div>
+        <div class="footnote-item" id="fn4">
+            <span class="en"><a href="#ref4" class="footnote-link">④</a> The varada mudra primarily symbolises the Buddhas and bodhisattvas responding to the prayers of sentient beings, fulfilling wishes and granting blessings. The gesture is made with the palm open, fingers extended and pointing downward. The Mahāvairocana-abhisaṃbodhi-sūtra says: “The hand of giving: extend the fingers, open the palm downward, and pour forth nectar.”</span>
+            <span class="zh"><a href="#ref4-zh" class="footnote-link">④</a> 與願印的核心作用是象徵佛菩薩回應眾生的祈求，滿足願望、給予恩惠。與願印的印相是「仰掌舒五指而向下」。《大日經疏》說：「與願手，舒指仰掌向下流注甘露水。」 </span>
+        </div>
+        <div class="footnote-item" id="fn5">
+            <span class="en"><a href="#ref5" class="footnote-link">⑤</a> Simply put, it points toward awakening. The Lotus Sutra: “opening, showing, awakening, and entering the Buddha's knowledge and vision.”</span>
+            <span class="zh"><a href="#ref5-zh" class="footnote-link">⑤</a> 簡單來說指向覺悟。《法華經》「開、示、悟、入佛之知見」。 </span>
+        </div>
+        <div class="footnote-item" id="fn6">
+            <span class="en"><a href="#ref6" class="footnote-link">⑥</a> Sisyphus is a figure from Greek mythology. He was punished by the gods to push a boulder up a mountain; each time the boulder reached the top it rolled back down, and he had to walk back down and push it again, endlessly.</span>
+            <span class="zh"><a href="#ref6-zh" class="footnote-link">⑥</a> 西西弗斯是希臘神話裡的人物。被眾神懲罰，把一塊巨石推上山頂，石頭一到山頂就滾下來，他再走下去重新推，永無止境。 </span>
+        </div>
+    </div>
+
+    <hr class="divider">
+
+    <div class="bilingual-paragraph">
+        <span class="en">This piece is destined to receive little feedback or understanding—I was certain of that when I was writing it. “The Fragrant Elephant Crosses the River” is an extremely difficult piece to write, one that only came into being because I deliberately wanted to challenge myself. In a sense, it can be called ambitious. Ambition is one of the most precious qualities I possess. The consequence, however, was a writing process unimaginably arduous. By the end, I felt it was a very poor work. But perhaps that, too, is a part of myself I want to keep.</span>
+        <span class="zh">這篇作品注定得不到太多反饋與理解，是我在寫的時候就已經確認的事情。《香象渡河》是一篇寫作難度特別大的文章，也是我有意想要挑戰自己之後才誕生的文章。某種程度上可以說是野心勃勃。野心是我身上最寶貴的品質之一。然而後果是整個寫作過程艱難得無法想象。寫到最後，我覺得這是一篇非常不好的作品。不過或許這也是我想要保留的自我的一部分。</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">In the period of “A Frivolous Structure of Exploitation,” I still seemed to care especially about moral purity. Then, from “Veriditas” onward, I no longer required characters to remain morally spotless or chaste, nor did I believe that a character deserved to be taken seriously only when sufficiently kind and innocent. In this piece especially, I do not think a teenage boy whose basic survival is not yet secured can be expected to possess a pure, complete, and mature moral judgment. People can of course make moral choices, but we cannot pretend that a person's living conditions, upbringing, and environment have no influence on those choices. A person long immersed in scarcity will first think of how to survive, how to obtain wealth, how not to be ruled by hunger and poverty. These wishes are neither inherently noble nor inherently base. They are first of all a person's wishes.</span>
+        <span class="zh">《一種輕浮的剝削結構》時期的我，似乎還特別注重道德意義上的純潔性。那麼從《維里狄塔斯》，我不再要求人物必須保持道德上的無垢或者貞潔，也不再認為一個人物只有在足夠善良、足夠無辜的時候，才值得被認真描寫。在本篇中，我尤其不認為一個十幾歲的少年，在連溫飽都尚未得到保障的時候，就能夠被奢求擁有多麼純潔、完整而成熟的道義判斷。人當然可以有道德上的選擇，但我們也不能假裝一個人的生活條件、成長經歷和所處環境對這些選擇毫無影響。一個長期處於匱乏中的人，首先想到的或許是怎樣活下去，怎樣獲得財富，怎樣不再被飢餓和貧窮支配。這些願望並不天然高尚，也不天然卑劣。它們首先是一個人的願望。</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">Arthur in this piece is such a person. Part of his tragedy does not come entirely from what happens later; it existed before the story began. His family tacitly allows him to become part of an exchange of interests, sending him onto a long voyage in return for the chance to change the family's circumstances. The opening already mentions that some of the sailors on such voyages die. His family is not entirely unaware of this risk, yet still accepts the bargain. And afterward Arthur never receives a single letter from home. I am reluctant to summarise Arthur in any language. He wants money, wants to go home, wants his family to live well, and wants to no longer be in a position where others arrange his life. These wishes have their concrete origins. But I do not intend to excuse the choices he later makes. He knows what that fleet means, and he knows he is helping an invasion take place. He gradually turns from a person whose life was arranged by others' desires into a person willing to let others pay the price for his own desires. The two are not entirely the same, but there is a connection between them that I am unwilling to ignore.</span>
+        <span class="zh">本篇中亞瑟就是這樣一個人。他身上有一部分悲情並不完全來自後來發生的事情，而是從故事開始之前就已經存在了。他的家人默許他成為一次利益交換的一部分，將他送上遠航的船，以換取家庭改變處境的可能。開篇已經提到，遠航的水手中有人會死掉。對於這樣的風險，他的家人並非全然不知情，卻仍然接受了這筆交易。並且亞瑟後來也沒有收到一封家書。我不太願意用任何語言概括亞瑟。他想要錢，想要回家，想讓家人過上好生活，也想讓自己不再處於那種任人安排的境地。這些願望有它們具體的來處。但我也不打算因此替他後來做出的選擇開脫。他知道那支艦隊意味著什麼，也知道自己正在幫助一場侵略發生。他從一個曾經被他人的慾望安排的人，逐漸成為了一個願意讓別人為自己的慾望付出代價的人。兩者並不完全相同，但它們之間存在著我不願意忽略的聯繫。</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">I do not think a person who has been hurt must remain innocent forever, nor do I think that a person who later hurts others thereby erases the harm he once suffered. I dislike using the identities of victim and perpetrator to summarise a person's entire life. They are certainly important moral facts, but they are not a person's entirety. The same is true of Francis. I do not want him to become Arthur's moral answer, still less a flawless saint. He has his own past and his own “evil karma.” The calluses on his hands are no cleaner than Arthur's. They each have their own lives and histories; they merely met once in the same city. Francis can give Arthur food, can tell him he is a person when others call him a monster, but he cannot decide how Arthur should live, nor bear the choices Arthur makes for him.</span>
+        <span class="zh">我不認為一個人曾經受到過傷害就必須永遠保持無辜，也不認為一個人後來傷害了別人，就足以抹去他曾經遭受過的傷害。我不太喜歡用受害者和加害者這樣的身份，替一個人的全部生命作出總結。它們當然是重要的道德事實，卻不是一個人的全部。弗朗西斯也是如此。我不想讓他成為亞瑟的道德答案，更不想讓他成為一個毫無瑕疵的聖人。他有自己的過去，也有自己的「惡業」。他手上的繭子並不比亞瑟的雙手更加清白。他們各自有自己的生活和歷史，只是曾經在同一座城市裡相遇過。弗朗西斯可以給予亞瑟食物，可以在別人稱他為怪物時告訴他，他是一個人，但他不能替亞瑟決定如何生活，也不能替他承擔他所做出的選擇。</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">What I wanted to write is not salvation, nor a sinner obtaining redemption. I hope they can exist as two concrete people, rather than bearing some prearranged allegory for each other.</span>
+        <span class="zh">我想寫的不是拯救，也不是罪人獲得救贖。我希望他們能夠作為兩個具體的人存在，而不是彼此承擔某種預先安排好的寓意。</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">As for the China in the story, I think it is also necessary to explain. “The Fragrant Elephant Crosses the River” does not correspond to any specific historical period, nor is it a novel attempting to reconstruct a particular historical event. When I first conceived it, I wanted more than anything to build a space that could contain this story. Given the characters' original regional backgrounds and other settings, a specific historical and geographical arrangement would have brought many constraints. I do not want readers to feel they must find a historical prototype in it.</span>
+        <span class="zh">至於故事中的中國，我想也有必要說明一下。《香象渡河》並沒有特別對應某一段具體的歷史背景，也不是一篇試圖還原某個歷史事件的小說。最初構思時，我更多是希望搭建一個能夠容納這段故事的空間。考慮到人物原本的地域背景以及其他設定，具體的歷史和地理安排反而會帶來許多限制。我並不希望讀者一定要從中找到某個歷史原型。</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">Nor did I intend for the gods to give an answer at the end. People pray to the gods for wealth, peace, and blessings in the life to come; Arthur trusts more in his own hands and in the money he can actually obtain. He hopes to change his fate through wealth, hopes that what he has saved can guarantee his future life. But human desire does not stop once satisfied, and karma is not an account that can be settled.</span>
+        <span class="zh">我也沒有打算讓神明在最後給出一個答案。人們向神祈求財富、平安與來世的福報，亞瑟則更相信自己的雙手和能夠實際得到的錢財。他希望通過財富改變命運，希望那些積攢下來的東西能夠保證自己往後的生活。可是，人的慾望不會因為得到滿足就停止，因果也不是一筆可以結清的賬。</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">Even after writing this, I still cannot make a final judgment for Arthur. I allow him to have greed, resentment, weakness, and baseness, and I also allow that he once truly loved and truly longed for a better life. These things do not cancel each other out. To understand a person is not to forgive him, and to acknowledge his suffering is not to deny the harm he caused.</span>
+        <span class="zh">寫到這裡我仍舊沒有辦法替亞瑟作出一個最終的判斷。我允許他有貪念、怨恨、軟弱和卑劣，也允許他曾經真切地愛過，真切地渴望過一種更好的生活。這些東西並不互相抵消。理解一個人不等於寬恕他，承認他的苦難也不等於否認他造成的傷害。</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">It was difficult, but it is finished. Give me a round of applause.</span>
+        <span class="zh">雖然艱難但是寫完了，鼓鼓掌吧。</span>
+    </div>
+
+    <div class="bilingual-paragraph">
+        <span class="en">The above.</span>
+        <span class="zh">以上。</span>
+    </div></div>
+
+
+<div style="text-align:center;">
+  <a class="return-box" href="../index.html">
+    <span class="en">Return</span>
+    <span class="zh">返回</span>
+  </a>
+</div>
+
+<audio id="bgm" loop>
+  <source src="../music/宝船.mp3" type="audio/mpeg">
+</audio>
+
+<script>
+let lang = "en";
+
+function applyLang(mode) {
+  document.body.classList.remove("lang-en", "lang-zh");
+  document.body.classList.add("lang-" + mode);
+  document.documentElement.lang = (mode === "zh") ? "zh-Hant" : "en";
+}
+
+function toggleLang() {
+  lang = (lang === "en") ? "zh" : "en";
+  applyLang(lang);
+}
+
+applyLang("en");
+
+document.addEventListener("click", () => {
+  const audio = document.getElementById("bgm");
+  if (!audio) return;
+  audio.volume = 0.6;
+  audio.play().catch(() => {});
+});
+</script>
+
+</body>
+</html>
